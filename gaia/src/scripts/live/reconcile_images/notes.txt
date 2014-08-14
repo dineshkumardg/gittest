@@ -1,0 +1,204 @@
+cho_binx_1927-1928_0004_000_0000  	172  	II. - Principal Dates in the History of th...  	  	DGWMMV369855361  	2013-08-28 10:26:02 
+
+------------
+
+This is the example of a missing image.
+
+ 
+
+Thanks
+
+Rose
+
+ 
+
+Data Services Manager, Digital Solutions
+Cengage Learning EMEA Cheriton House
+North Way, Andover, SP10 5BE
+(o) +44 (0)1264 342810 (h) (0)118 926 5937 (m) +44 (0)7585 915376 (e) rose.oleary@cengage.com | www.cengage.com
+
+ 
+
+From: Demowbray, Julia
+Sent: 20 November 2013 15:19
+To: O'Leary, Rose (CL EMEA)
+Subject: CHOA - page images not loading
+
+ 
+
+Rose,
+
+Is there are reason why so many of the journal pages are not loading in Dev.
+
+ 
+
+Example: DGWMMV369855361
+
+ 
+
+Julia
+
+ 
+
+Julia de Mowbray
+
+Publisher: History and Politics
+
+Gale, Cengage Learning EMEA
+
+ 
+
+mobile: +44 (0)7900 910369
+
+email: julia.demowbray@cengage.com
+
+ 
+
+Head office:
+
+Cengage Learning
+
+Cheriton House
+
+North Way
+
+Andover SP10 5BE
+
+UK
+
+(switchboard: 01264 332424)
+
+ 
+------------------------------------------------
+
+grep '\-F' '/home/jsears/Desktop/missing_images/CHOA_report_20131121.csv' > 1
+
+sed 's/image.*$//g' 1 > 2
+
+sed 's/-F,/.jpg/g' 2 > 3
+
+manually remove 'extra' images from 3
+
+find ~/SYSTEM_TEST/WORK/cho/outbox -name "*.jpg" -type f -printf "%f\n" > outbox
+
+sort outbox -o 4
+
+export as csv released_items as 5 + drop first column
+
+
+copy tbl_callisto from '/home/jsears/GIT_REPOS/gaia/src/scripts/live/reconcile_images/3' CSV; 
+copy tbl_gaia_outbox from '/home/jsears/GIT_REPOS/gaia/src/scripts/live/reconcile_images/4' CSV;
+copy tbl_gaia_released from '/home/jsears/GIT_REPOS/gaia/src/scripts/live/reconcile_images/5' CSV;
+
+----------------------------------------------
+
+DGWMMV369855361 = cho_binx_1927-1928_0004_000_0000 = reported by Julia
+
+1.PROBLEM items_released_but_not_on_callisto.sql == 32 items
+SELECT 
+  distinct left(tbl_gaia_released.psmid, 24) as psmid
+FROM 
+  tbl_gaia_released
+left outer join
+  tbl_callisto
+on  
+  left(tbl_gaia_released.psmid, 24) = left(tbl_callisto.psmid, 24)
+where
+  tbl_callisto.psmid is null
+ order by psmid asc 
+
+--
+
+we have more files in the outbox than on calisto - only some of which we released
+select 
+	tbl_gaia_outbox.psmid
+from 
+	tbl_gaia_outbox 
+left outer join 
+	tbl_callisto 
+on 
+	tbl_gaia_outbox.psmid = tbl_callisto.psmid
+where
+    tbl_callisto.psmid is null and
+    tbl_gaia_outbox.psmid not like '%TESTLESS%' and 
+    tbl_gaia_outbox.psmid not like 'cho_iaxx_2010_7771%' and
+    tbl_gaia_outbox.psmid not like 'cho_meet_2010_7771%' and    
+    tbl_gaia_outbox.psmid not like '%TESTUBE%' and
+    tbl_gaia_outbox.psmid not like 'cho_bcrc_1954_0000_000_% %' and 
+    tbl_gaia_outbox.psmid not like 'cho__c%'
+order by 
+	psmid asc;
+
+--    
+
+2. PROBLEM released_files_that_no_on_callisto.sql == 29599 files
+select 
+	tbl_gaia_outbox.psmid
+from 
+	tbl_gaia_outbox 
+left outer join 
+	tbl_callisto 
+on 
+	tbl_gaia_outbox.psmid = tbl_callisto.psmid
+where
+    tbl_callisto.psmid is null and
+    tbl_gaia_outbox.psmid not like '%TESTLESS%' and 
+    tbl_gaia_outbox.psmid not like 'cho_iaxx_2010_7771%' and
+    tbl_gaia_outbox.psmid not like 'cho_meet_2010_7771%' and
+    tbl_gaia_outbox.psmid not like '%TESTUBE%' and
+    tbl_gaia_outbox.psmid not like 'cho_bcrc_1954_0000_000_% %' and 
+    tbl_gaia_outbox.psmid not like 'cho__c%' and
+    
+    left(tbl_gaia_outbox.psmid, 24) not in (
+	SELECT 
+		distinct left(psmid, 24) as psmid
+	FROM 
+		tbl_gaia_released
+    )
+
+order by 
+	psmid asc;
+
+-----------------------------------------------------------
+
+-- items released
+SELECT 
+  distinct left(psmid, 24) as psmid
+FROM 
+  tbl_gaia_released
+ order by psmid asc;
+
+-- items on callisto
+SELECT 
+  distinct left(psmid, 24) as psmid
+FROM 
+  tbl_callisto
+ order by psmid asc;
+
+-----------------------------------------------------------
+
+-- files in outbox
+select 
+	tbl_gaia_outbox.psmid 
+from 
+	tbl_gaia_outbox 
+where
+    tbl_gaia_outbox.psmid not like '%TESTLESS%' and 
+    tbl_gaia_outbox.psmid not like 'cho_iaxx_2010_7771%' and
+    tbl_gaia_outbox.psmid not like 'cho_meet_2010_7771%' and    
+    tbl_gaia_outbox.psmid not like '%TESTUBE%' and
+    tbl_gaia_outbox.psmid not like 'cho_bcrc_1954_0000_000_% %' and 
+    tbl_gaia_outbox.psmid not like 'cho__c%'
+order by 
+	tbl_gaia_outbox.psmid asc;
+
+-- files on callisto
+select 
+	tbl_callisto.psmid
+from 
+	tbl_callisto 
+order by 
+	psmid asc;
+
+
+-- released items

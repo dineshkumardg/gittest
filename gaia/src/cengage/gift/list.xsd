@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2005 rel. 3 U (http://www.altova.com) by Gale User (Gale Group) -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:list="http://www.gale.com/goldschema/list" xmlns:essay="http://www.gale.com/goldschema/essay" xmlns:pres="http://www.gale.com/goldschema/pres" xmlns:xatts="http://www.gale.com/goldschema/xatts" targetNamespace="http://www.gale.com/goldschema/list" elementFormDefault="qualified" attributeFormDefault="unqualified" version="3.0">
+	<xs:import namespace="http://www.gale.com/goldschema/essay" schemaLocation="essay.xsd"/>
+	<xs:import namespace="http://www.gale.com/goldschema/pres" schemaLocation="presentation.xsd"/>
+	<xs:import namespace="http://www.gale.com/goldschema/xatts" schemaLocation="xhtml-atts.xsd"/>
+	<xs:annotation id="list-purpose">
+		<xs:documentation>This schema is necessary to handle the different varieties of lists in our content</xs:documentation>
+	</xs:annotation>
+<!--
+	======================================================================
+                           CHANGE HISTORY
+	======================================================================
+	3.0		12/04/2013		js
+	1. Removed the schema owner part
+	2. Added namespace 'list' in namespace declaration part.
+	3. Added namespace 'list' with the elements li, title, ol, ul, list-type, dt, dd.
+	4. Reorganized the elements and ComplexTypes.
+	======================================================================
+-->
+	<!-- 
+	============================================================================   
+                    ELEMENT DECLARATIONS
+	============================================================================   
+	-->
+	<!--                    OL                    -->
+	<xs:element name="ol">
+		<xs:annotation>
+			<xs:documentation>Defines an ordered list. It uses a letter or a numeric sequential prefix.</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:complexContent>
+				<xs:extension base="list:list-type">
+					<xs:attribute name="ol-type" type="xs:string"/>
+				</xs:extension>
+			</xs:complexContent>
+		</xs:complexType>
+	</xs:element>
+	<!--                    UL                    -->
+	<xs:element name="ul">
+		<xs:annotation>
+			<xs:documentation>Defines an unordered list, use no prefix character.</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:complexContent>
+				<xs:extension base="list:list-type">
+					<xs:attribute name="ul-type" type="xs:string"/>
+				</xs:extension>
+			</xs:complexContent>
+		</xs:complexType>
+	</xs:element>
+	<!--                    DL                    -->
+	<xs:element name="dl">
+		<xs:annotation>
+			<xs:documentation>Defines a description list.</xs:documentation>
+		</xs:annotation>
+		<xs:complexType mixed="true">
+			<xs:choice maxOccurs="unbounded">
+				<xs:element ref="list:title" minOccurs="0"/>
+				<xs:element ref="essay:p" minOccurs="0"/>
+				<xs:element ref="list:dt"/>
+				<xs:element ref="list:dd"/>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+	<!--                    DT                    -->
+	<xs:element name="dt">
+		<xs:annotation>
+			<xs:documentation>Defines a term/name in a description list.</xs:documentation>
+		</xs:annotation>
+		<xs:complexType mixed="true">
+			<xs:choice>
+				<xs:group ref="essay:flow-group" minOccurs="0" maxOccurs="unbounded"/>
+			</xs:choice>
+			<xs:attributeGroup ref="xatts:coreAtts"/>
+		</xs:complexType>
+	</xs:element>
+	<!--                    DD                    -->
+	<xs:element name="dd">
+		<xs:annotation>
+			<xs:documentation>Defines a description/value of a term in a description list.</xs:documentation>
+		</xs:annotation>
+		<xs:complexType mixed="true">
+			<xs:choice>
+				<xs:group ref="essay:flow-group" minOccurs="0" maxOccurs="unbounded"/>
+			</xs:choice>
+			<xs:attributeGroup ref="xatts:coreAtts"/>
+		</xs:complexType>
+	</xs:element>
+	<!--                    LI                    -->
+	<xs:element name="li">
+		<xs:annotation>
+			<xs:documentation>Defines a list item.</xs:documentation>
+		</xs:annotation>
+		<xs:complexType mixed="true">
+			<xs:group ref="essay:flow-group" minOccurs="0"/>
+			<xs:attributeGroup ref="xatts:basic-atts"/>
+		</xs:complexType>
+	</xs:element>
+	<!--                    TITLE                    -->
+	<xs:element name="title" type="essay:pres-text">
+		<xs:annotation>
+			<xs:documentation>Defines the list title.</xs:documentation>
+		</xs:annotation>
+	</xs:element>	
+	<!-- 
+	============================================================================   
+                    COMPLEX TYPE DECLARATIONS
+	============================================================================   
+	-->
+	<!--                    LIST-TYPE                    -->
+	<xs:complexType name="list-type">
+		<xs:choice maxOccurs="unbounded">
+			<xs:element ref="list:title" minOccurs="0"/>
+			<xs:element ref="essay:p" minOccurs="0"/>
+			<xs:element ref="list:li"/>
+			<xs:element ref="pres:page-break" minOccurs="0"/>
+			<xs:choice minOccurs="0" maxOccurs="unbounded">
+				<xs:element ref="list:ol"/>
+				<xs:element ref="list:ul"/>
+			</xs:choice>
+		</xs:choice>
+		<xs:attribute name="start-value" type="xs:string" default="type"/>
+		<xs:attribute name="term-id" type="xs:unsignedLong" use="optional"/>
+		<xs:attribute name="term-source" type="xs:normalizedString" use="optional"/>
+		<xs:attribute name="list-order" default="descending">
+			<xs:simpleType>
+				<xs:restriction base="xs:string">
+					<xs:enumeration value="ascending"/>
+					<xs:enumeration value="descending"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attributeGroup ref="xatts:basic-atts"/>
+	</xs:complexType>
+</xs:schema>

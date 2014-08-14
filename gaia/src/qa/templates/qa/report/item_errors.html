@@ -1,0 +1,75 @@
+{% extends "qa/filter_paginator.html" %}
+{% block title %}item errors{% endblock %}
+
+{% block content %}
+<h1> item errors </h1>
+
+{% if context or  request.GET.filter_by or request.GET.search_by%}
+{% block content_side_bar %}
+    {{ block.super }}
+{% endblock %}
+ 
+{% block content_table %}
+<div id="result_table">
+ {% if context %}   
+ 
+<form action="{% url reports_item_errors %}" method="post" name="move_back_into_qa">{% csrf_token %}
+<table>
+<thead>
+    <tr>
+    {% for value, key in sort_fields_list.items  %}
+    <th id={{ key }} onclick="sort_header('{{ key }}', '{{ request.GET.filter_by }}' ,'{{ request.GET.search_by }}','{{ page_obj.number }}')">
+       <div class="text" >{{ value }}</div>
+     </th>
+    {% endfor %}
+    <th>
+       <div class="text" >admin</div>
+     </th>
+    </tr>
+</thead>
+<tbody>
+{% for error in context %}
+    <tr class="{% cycle 'row1' 'row2' %}">
+    <td nowrap="nowrap">{{error.when}}</td>
+    <td> {{error.item.dom_id}}</td>
+    <td>{{error.err_type}}</td>
+    <td><div class="err_msg">{{error.err_msg}}</div></td>
+    <td><input type="checkbox" value="{{error.item.dom_id}}" name="move_back_into_qa"/></td>
+    </tr>
+{% endfor %}
+</tbody>
+</table>
+<p>
+<input type="submit" class="button" value="move back into qa"/>
+</p>
+<br/>
+</form>
+
+{% else %}
+    {% if request.GET.filter_by and request.GET.search_by %}
+        <p>no items under this condition: <br/><b>filter by: "{{ request.GET.filter_by }}" search by: "{{ request.GET.search_by }}"</b> <br/><br/></p>
+    {% elif request.GET.filter_by %}
+        <p><br/>no items under this condition: <b>filter by: "{{ request.GET.filter_by }}"</b></p>
+    {% elif request.GET.search_by %}
+        <p><br/>no items under this condition: <b>search by: "{{ request.GET.search_by }}"</b></p>
+    {% else %}
+        <p>no items</p>
+    {% endif %}
+{% endif %}
+</div>
+{% endblock %}
+
+{% block content_paginate %}
+    {{ block.super }}
+{% endblock %}
+
+{% else %}
+<p>No items with errors.</p>
+
+{% endif %}
+
+{% block sort_script %}
+    {{ block.super }}
+{% endblock %}
+
+{% endblock %}

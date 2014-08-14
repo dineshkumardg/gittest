@@ -1,0 +1,123 @@
+{% extends "qa/base.html" %}
+{% block title %}{{ project_code }}{% endblock %}
+{% block head %}{% endblock %}
+
+{% load util_tags %}
+
+
+
+{% block sort_script %}
+<script type="text/javascript">
+{% block onload %}
+// to change the icon on the header of a table  in sorting
+var current_url = document.URL;
+var url_p1 = current_url.split("?");
+var url_p2 = url_p1[1].split("&");
+ 
+for (var i = 0; i < url_p2.length; i++) // checks all the parameters of the url 
+{
+    if (url_p2[i].indexOf('sort_by') != -1) // check of its a 'sort_by' parameter  
+    {
+    sort_by=url_p2[i].split("=")[1]
+    
+    if (sort_by.indexOf('-') != -1){
+    sort_by = sort_by.substring(1)
+    var NAME = document.getElementById(sort_by);
+    NAME.className='inc_sort';
+    }
+    else
+    {
+    sort_by="-"+sort_by 
+    var NAME = document.getElementById(sort_by);
+    NAME.className='dec_sort';
+    }
+    }
+}
+{% endblock %}
+
+function sort_header(sort_by, filter_by, search_by, page, search_for="", search_feed="")
+{
+   // sort the headers by re-requesting this page with the new parameters
+   address = "?sort_by="+sort_by+"&filter_by="+filter_by+"&search_by="+search_by+"&search_for="+search_for+"&search_feed="+search_feed+"&page="+page;
+   window.location.href = address;
+}
+</script>
+{% endblock %}
+
+{% block content %}
+{% block content_table %}
+<div class="content1">
+{% endblock %}
+
+
+
+
+{% block content_paginate %}
+  {% if is_paginated %}
+
+        <div class="pagination">
+        <span class="step-links">
+        <span class="paginator">
+        {% if page_obj.has_previous %}
+            <a href="?sort_by={{ request.GET.sort_by }}&page={{ page_obj.previous_page_number }}&filter_by={{ request.GET.filter_by }}&search_by={{ request.GET.search_by }}">&nbsp;&nbsp;-&nbsp;&nbsp;</a>
+        {% else %}
+            &nbsp;&nbsp;-&nbsp;&nbsp;
+        {% endif %}
+
+        {{page_obj.number}} / {{page_obj.paginator.num_pages}}
+
+        {% if page_obj.has_next %}
+            <a href="?sort_by={{ request.GET.sort_by }}&page={{ page_obj.next_page_number }}&filter_by={{ request.GET.filter_by }}&search_by={{ request.GET.search_by }}">&nbsp;&nbsp;+&nbsp;&nbsp;</a>
+        {% else %}
+            &nbsp;&nbsp;+&nbsp;&nbsp;
+        {% endif %}
+        </span>
+        </span>
+    </div>
+</div>
+    {% endif %}
+</div>   
+{% endblock %}
+
+
+
+
+{% block content_side_bar %}
+<div style="overflow: hidden">
+<div id="side_bar">
+{% block type_filter %}
+{% if filter_types|length > 1  %}
+<h3>filter by</h3>
+<ul>
+    <li{% if not request.GET.filter_by %} class="selected" {% endif %}><a href="?sort_by={{ request.GET.sort_by }}&filter_by&page=1">all</a></li>
+    {% for error in filter_types %}
+    <li{% ifequal error request.GET.filter_by %} class="selected" {% endifequal %}><a href="?sort_by={{ request.GET.sort_by }}&filter_by={{ error }}&page=1">{{ error }}</a></li>
+    {% endfor %}
+</ul>
+{% endif %}
+{% endblock %}
+{% block date_filter %}
+{% if date_filter_name_list %}
+<h3>by date</h3>
+<ul>
+    <li{% if not request.GET.filter_by %} class="selected" {% endif %}><a href="?sort_by={{ request.GET.sort_by }}&filter_by&page=1">all</a></li>
+    {% for type in date_filter_name_list%}
+    <li{% ifequal type.split|join:'-' request.GET.filter_by %} class="selected" {% endifequal %}><a href="?sort_by={{ request.GET.sort_by }}&filter_by={{ type.split|join:'-' }}&page=1">{{ type }}</a></li>
+    {% endfor %}
+</ul>
+{% endif %}
+{% endblock %}
+</div>
+</div>
+{% endblock %}
+{% endblock %}
+
+
+
+
+{% block search_bar%}
+<form name="input" action="" method="get" style="display:inline" >
+<input type="text" id="search_by_box" name="search_by" / value= "{{ request.GET.search_by }}">
+<a href="javascript:document.input.submit()" ><img src="{{STATIC_URL}}/admin/img/icon_searchbox.png" alt="Search" type="submit"/></a>
+</form>
+{% endblock %}

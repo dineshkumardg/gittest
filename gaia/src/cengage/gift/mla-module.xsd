@@ -1,0 +1,521 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2005 rel. 3 U (http://www.altova.com) by Wendy Lewis (Gale Group) -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:mla="http://www.gale.com/goldschema/mla" xmlns:meta="http://www.gale.com/goldschema/metadata" xmlns:vault-link="http://www.gale.com/goldschema/vault-linking" xmlns:shared="http://www.gale.com/goldschema/shared" targetNamespace="http://www.gale.com/goldschema/mla" elementFormDefault="qualified" attributeFormDefault="unqualified" version="3.0">
+	<xs:annotation id="mla-schema-purpose">
+		<xs:documentation>This module was created to support the MLA content. More specifically the MLA-D content.</xs:documentation>
+	</xs:annotation>
+	<!--
+	======================================================================
+                           CHANGE HISTORY
+	======================================================================
+	3.0		12/04/2013		js
+	1. Removed the schema owner part.
+	2. Updated the folder path of <xs:import>.
+	3. Reorganized the elements and element groups.
+	4. Externalized the elements 'address' 'languages-published', 'date-last-confirmed' and 'year-began'.
+	5. Removed the element 'electronic-comment' as it is unused.
+	======================================================================
+-->
+	<xs:import namespace="http://www.gale.com/goldschema/metadata" schemaLocation="metadata.xsd"/>
+	<xs:import namespace="http://www.gale.com/goldschema/vault-linking" schemaLocation="vault_linking.xsd"/>
+	<xs:import namespace="http://www.gale.com/goldschema/shared" schemaLocation="shared.xsd"/>
+	<!-- 
+	============================================================================   
+                    ELEMENT DECLARATIONS
+	============================================================================   
+	-->
+	<!--                    ADDRESS                                   -->
+	<xs:element name="address">
+		<xs:annotation>
+			<xs:documentation>Defines postal address for a person or an organization.</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="mla:street"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<!--                    CONTACT-INFO                                   -->
+	<xs:element name="contact-info">
+		<xs:annotation>
+			<xs:documentation>Provides address, phone numbers and e-mail information.</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:choice minOccurs="0" maxOccurs="unbounded">
+					<xs:element ref="mla:line"/>
+					<xs:element ref="mla:address"/>
+					<xs:element ref="mla:country"/>
+					<xs:element ref="mla:phone"/>
+					<xs:element ref="mla:fax"/>
+					<xs:element ref="mla:email"/>
+					<xs:element ref="mla:zip"/>
+				</xs:choice>
+			</xs:sequence>
+			<xs:attribute name="contact-info-type">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:enumeration value="main"/>
+						<xs:enumeration value="secondary"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+		</xs:complexType>
+	</xs:element>
+	<!--                    COUNTRY                                   -->
+	<xs:element name="country" type="xs:string">
+		<xs:annotation>
+			<xs:documentation>Defines the country name.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--                    DATE-LAST-CONFIRMED                                   -->
+	<xs:element name="date-last-confirmed">
+		<xs:annotation>
+			<xs:documentation>Contains date when MLA record was verified.</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="meta:standard-date"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<!--                    EDITORIAL-DETAILS                                   -->
+	<xs:element name="editorial-details">
+		<xs:annotation>
+			<xs:documentation>Wrapper for information about editors.</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:choice maxOccurs="unbounded">
+					<xs:element name="publisher" type="xs:string" minOccurs="0">
+						<xs:annotation>
+							<xs:documentation>PUB Publisher</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+					<xs:element ref="meta:editors">
+						<xs:annotation>
+							<xs:documentation>PED Editorial Name Index</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+					<xs:element ref="mla:contact-info" minOccurs="0" maxOccurs="4">
+						<xs:annotation>
+							<xs:documentation>
+								PEA		Editorial Address	
+								PEZ		Editorial Zip		
+								PCO		Editorial Country	
+								PEE		Editorial Extra Address	
+								PEP		Editorial Phone	
+								PEF		Editorial Fax	
+								PEM		Editorial E-mail
+							</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+				</xs:choice>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<!--                    EMAIL                                   -->
+	<xs:element name="email" type="xs:string">
+		<xs:annotation>
+			<xs:documentation>Inline markup identifying an email address.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--                    ELECTRONIC-VERSION-AVAILABLE                                   -->
+	<xs:element name="electronic-version-available" type="xs:string">
+		<xs:annotation>
+			<xs:documentation>ECL Electronic version available?</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--                    FAX                                   -->
+	<xs:element name="fax" type="xs:string">
+		<xs:annotation>
+			<xs:documentation>Defines the fax number.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--                    FREQUENCY-OF-E-PUBLICATION                                   -->
+	<xs:element name="frequency-of-E-publication" type="xs:string">
+		<xs:annotation>
+			<xs:documentation>EFR Frequency of E-publication</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--                    INTERNET-ADDRESS                                   -->
+	<xs:element name="internet-address">
+		<xs:annotation>
+			<xs:documentation>INT Internet address</xs:documentation>
+		</xs:annotation>
+		<xs:complexType mixed="true">
+			<xs:choice minOccurs="0" maxOccurs="unbounded">
+				<xs:element ref="vault-link:vault-link"/>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+	<!--                    JSTOR-LINK                                   -->
+	<xs:element name="jstor-link">
+		<xs:annotation>
+			<xs:documentation>Contains information about linking to JSTOR digital library of academic journals, books, and primary sources.</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="vault-link:vault-link"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<!--                    LANGUAGE-PUBLISHED                                   -->
+	<xs:element name="languages-published">
+		<xs:annotation>
+			<xs:documentation>PLP Languages Published</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:all>
+				<xs:element ref="meta:descriptive-indexing"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<!--                    LINE                                   -->
+	<xs:element name="line" type="xs:string">
+		<xs:annotation>
+			<xs:documentation>A line of text in the address.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--                    PERIODICAL-DETAILS                                   -->
+	<xs:element name="periodical-details">
+		<xs:annotation>
+			<xs:documentation>PER	Periodical Details	This field may contain  subfields:</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:choice minOccurs="0" maxOccurs="unbounded">
+					<xs:element name="scope-of-publication" type="xs:string">
+						<xs:annotation>
+							<xs:documentation>SCO Scope of publication</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+					<xs:element ref="meta:descriptive-indexing">
+						<xs:annotation>
+							<xs:documentation>SIT Subject Index Terms</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+					<xs:element ref="meta:peer-reviewed">
+						<xs:annotation>
+							<xs:documentation>EPR Peer Reviewed</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="publishes-book-reviews" type="xs:string">
+						<xs:annotation>
+							<xs:documentation>PBR Publishes Book Reviews</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="publishes-short-notes" type="xs:string">
+						<xs:annotation>
+							<xs:documentation>PSN Publishes Short Notes</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="publishes-abstract" type="xs:string">
+						<xs:annotation>
+							<xs:documentation>PAB Publishes Abstracts</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+					<xs:element ref="mla:languages-published"/>
+					<xs:element name="circulation" type="xs:string">
+						<xs:annotation>
+							<xs:documentation>CIR Circulation</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="frequency-of-publication" type="xs:string">
+						<xs:annotation>
+							<xs:documentation>FRE Frequency of publication</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="accepts-advertising" type="xs:string">
+						<xs:annotation>
+							<xs:documentation>AAD Accepts advertising?</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="advertising-rates" type="xs:string">
+						<xs:annotation>
+							<xs:documentation>ARA Advertising rates</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="microforms-available" type="xs:string">
+						<xs:annotation>
+							<xs:documentation>MIC Are microforms available? If relevant, "Available in microforms".</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="microforms-distributor" type="xs:string">
+						<xs:annotation>
+							<xs:documentation>MID Microform distributor</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="pagination" type="xs:string">
+						<xs:annotation>
+							<xs:documentation>PPG Pagination</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="ISSN" type="xs:string" maxOccurs="unbounded">
+						<xs:annotation>
+							<xs:documentation>ISN International Standard Serial Number</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="sponsoring-organization" type="xs:string">
+						<xs:annotation>
+							<xs:documentation>Contains the name of a sponsoring institution, such as an archival institution.</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+				</xs:choice>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<!--                    PHONE                                   -->
+	<xs:element name="phone" type="xs:string">
+		<xs:annotation>
+			<xs:documentation>Defines the phone number.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--                    PRINT-ELECTRONIC-AVAILABLE                                   -->
+	<xs:element name="print-electronic-available" type="xs:string">
+		<xs:annotation>
+			<xs:documentation>PTE Print and electronic available</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--                    STREET                                   -->
+	<xs:element name="street">
+		<xs:annotation>
+			<xs:documentation>Defines the street name.</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="mla:line" maxOccurs="unbounded"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<!--                    SUBSCRIPTION-DETAILS                                   -->
+	<xs:element name="subscription-details">
+		<xs:annotation>
+			<xs:documentation>SUB Subscription Details This field may contain subfields.</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:choice minOccurs="0" maxOccurs="unbounded">
+					<xs:element ref="mla:contact-info">
+						<xs:annotation>
+							<xs:documentation>
+	SUA	Subscription address		
+	SUZ		Subscription zip	
+	SUC		Subscription country	
+	SUS		Extra subscription address	
+	SUP		Subscription telephone	
+	SUX		Subscription fax
+</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="subscription-rate" type="xs:string">
+						<xs:annotation>
+							<xs:documentation>SUR Subscription rate</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="year-to-which-rate-refers" type="xs:string">
+						<xs:annotation>
+							<xs:documentation>SUY Year to which rate refers</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+				</xs:choice>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<!--                    SUBMISSION-ENTRY-DETAILS                                   -->
+	<xs:element name="submission-entry-details">
+		<xs:annotation>
+			<xs:documentation>SED Submission Entry Details This field may contain subfields</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="restriction-on-contributors" type="xs:string">
+					<xs:annotation>
+						<xs:documentation>ROC Restrictions on contributors</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="charge-for-submission" type="xs:string">
+					<xs:annotation>
+						<xs:documentation>CHS Charge for submission?</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="cost-of-submission" type="xs:string">
+					<xs:annotation>
+						<xs:documentation>CSF Cost of submission fee</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="charge-for-pages" type="xs:string">
+					<xs:annotation>
+						<xs:documentation>CHP Charge for pages?</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="cost-of-page-charges" type="xs:string">
+					<xs:annotation>
+						<xs:documentation>CPC Cost of page charges</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="suggested-length-articles" type="xs:string">
+					<xs:annotation>
+						<xs:documentation>SLA Suggested length of articles</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="suggested-length-of-book" type="xs:string">
+					<xs:annotation>
+						<xs:documentation>SLB Suggested length of book</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="suggested-length-book-reviews" type="xs:string">
+					<xs:annotation>
+						<xs:documentation>SLR Suggested length of book reviews</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="suggested-length-of-notes" type="xs:string">
+					<xs:annotation>
+						<xs:documentation>SLO Suggested length of notes</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="editorial-style-preferred" type="xs:string">
+					<xs:annotation>
+						<xs:documentation>ESP Editorial style preferred</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="number-of-manuscripts-required" type="xs:string">
+					<xs:annotation>
+						<xs:documentation>NCM Number of copies of manuscript required</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="blind-submission-policy" type="xs:string">
+					<xs:annotation>
+						<xs:documentation>BLI Blind submission policy</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="special-submission-requirements" type="xs:string">
+					<xs:annotation>
+						<xs:documentation>SSR Special submission requirements</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="copyright-holder" type="xs:string">
+					<xs:annotation>
+						<xs:documentation>COP Copyright holder</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="disposition-rejected-manuscripts" type="xs:string">
+					<xs:annotation>
+						<xs:documentation>REJ Disposition of rejected manuscripts</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="time-btw-submission-pub-decision" type="xs:string">
+					<xs:annotation>
+						<xs:documentation>TSP Time between submission and publication decision</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="time-btw-decision-pub" type="xs:string">
+					<xs:annotation>
+						<xs:documentation>TDP Time between decision and publication</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="number-readers-prior-to-pub-decision" type="xs:string">
+					<xs:annotation>
+						<xs:documentation>NOR Number of readers prior to publications decision</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="articles-submitted-per-year" type="xs:string">
+					<xs:annotation>
+						<xs:documentation>ASY Articles submitted per year</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="articles-published-per-year" type="xs:string">
+					<xs:annotation>
+						<xs:documentation>APY Articles published per year</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="books-submitted-per-year" type="xs:string">
+					<xs:annotation>
+						<xs:documentation>BSY Books submitted per year</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="books-published-per-year" type="xs:string">
+					<xs:annotation>
+						<xs:documentation>BPY Books published per year</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="notes-submitted-per-year" type="xs:string">
+					<xs:annotation>
+						<xs:documentation>NSY Notes submitted per year</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="notes-published-per-year" type="xs:string">
+					<xs:annotation>
+						<xs:documentation>NPY Notes published per year</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="book-reviews-published-per-year" type="xs:string">
+					<xs:annotation>
+						<xs:documentation>BRP Book reviews published per year</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="book-reviews-submitted-per-year" type="xs:string">
+					<xs:annotation>
+						<xs:documentation>BRY Book reviews submitted per year</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element ref="mla:date-last-confirmed"/>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+	<!--                    SPONSORING-ORGANIZATION                                   -->
+	<xs:element name="sponsoring-organization" type="xs:normalizedString">
+		<xs:annotation>
+			<xs:documentation>Contains the name of a sponsoring institution, such as an archival institution.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--                    YEAR-BEGAN                                   -->
+	<xs:element name="year-began">
+		<xs:annotation>
+			<xs:documentation>PYB Year Began</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="meta:standard-date"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<!--                    ZIP                                   -->
+	<xs:element name="zip" type="xs:string">
+		<xs:annotation>
+			<xs:documentation>Postal code used in address.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!-- 
+	============================================================================   
+                    ELEMENT GROUPS
+	============================================================================   
+	-->	
+	<xs:group name="mla-group">
+		<xs:sequence>
+			<xs:element name="journal-acronym" type="xs:string" maxOccurs="unbounded">
+				<xs:annotation>
+					<xs:documentation>ACR =Required. Alphabetic only.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="publication-active-status" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>ACT</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element ref="mla:year-began" minOccurs="0"/>
+			<xs:element name="periodical-type" type="xs:string" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Contains information about type of the publication.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element ref="mla:editorial-details"/>
+				<xs:element ref="shared:electronic-information"/>
+				<xs:element ref="mla:subscription-details"/>
+				<xs:element ref="mla:periodical-details"/>
+				<xs:element ref="mla:submission-entry-details"/>
+			</xs:choice>
+		</xs:sequence>
+	</xs:group>
+</xs:schema>

@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2005 rel. 3 U (http://www.altova.com) by Gale User (Gale Group) -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:table="http://www.gale.com/goldschema/table" xmlns:meta="http://www.gale.com/goldschema/metadata" xmlns:essay="http://www.gale.com/goldschema/essay" xmlns:pres="http://www.gale.com/goldschema/pres" xmlns:xatts="http://www.gale.com/goldschema/xatts" targetNamespace="http://www.gale.com/goldschema/table" elementFormDefault="qualified" attributeFormDefault="unqualified" version="3.0">
+	<xs:import namespace="http://www.gale.com/goldschema/essay" schemaLocation="essay.xsd"/>
+	<xs:import namespace="http://www.gale.com/goldschema/xatts" schemaLocation="xhtml-atts.xsd"/>
+	<xs:import namespace="http://www.gale.com/goldschema/pres" schemaLocation="presentation.xsd"/>
+	<xs:import namespace="http://www.gale.com/goldschema/metadata" schemaLocation="metadata.xsd"/>
+	<xs:annotation id="table-schema-purpose">
+		<xs:documentation>This schema defines a generic table model (xhtml).</xs:documentation>
+	</xs:annotation>
+	<!--
+	======================================================================
+                           CHANGE HISTORY
+	======================================================================
+	3.0		12/04/2013		js
+	1. Removed the schema owner part.
+	2. Updated the folder path of <xs:import>. 
+	3. Added namespace 'table' with the url "http://www.gale.com/goldschema/table" .
+	4. The namespace xmlns:list="http://www.gale.com/goldschema/list" is been removed as it doesn't have appropriate <xs:import> and 
+		the namespace is not been used anywhere in that schema.
+	5. Added the namespace “table” with the following elements & attributes: Caption, col, colgroup, thead, tfoot, tbody, tr, valign, align, th and td.
+	6. Reorganized the attributes and attribute groups.
+	======================================================================
+-->
+	<!-- 
+	============================================================================   
+                    ELEMENT DECLARATIONS
+	============================================================================   
+	-->
+	<!--                    TABLE                    -->
+	<xs:complexType name="table-type">
+		<xs:sequence>
+			<xs:element ref="table:caption" minOccurs="0"/>
+			<xs:choice>
+				<xs:element ref="table:col" minOccurs="0" maxOccurs="unbounded"/>
+				<xs:element ref="table:colgroup" minOccurs="0" maxOccurs="unbounded"/>
+			</xs:choice>
+			<xs:choice>
+				<xs:sequence>
+					<xs:element ref="table:thead" minOccurs="0"/>
+					<xs:element ref="table:tfoot" minOccurs="0"/>
+					<xs:element ref="table:tbody" maxOccurs="unbounded"/>
+				</xs:sequence>
+				<xs:choice>
+					<xs:element ref="table:tr" maxOccurs="unbounded"/>
+				</xs:choice>
+			</xs:choice>
+		</xs:sequence>
+		<xs:attribute name="border" type="xs:string"/>
+		<xs:attribute name="cellpadding" type="xs:string"/>
+		<xs:attribute name="cellspacing" type="xs:string"/>
+		<xs:attribute name="summary" type="xs:string"/>
+		<xs:attribute name="width" type="xs:string"/>
+	</xs:complexType>
+	<xs:element name="table" type="table:table-type">
+		<xs:annotation>
+			<xs:documentation>Defines a table.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--                    CAPTION, THEAD, TFOOT                    -->
+	<xs:element name="caption" type="meta:caption-type">
+		<xs:annotation>
+			<xs:documentation>Defines a table caption.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="thead" type="table:tr-type">
+		<xs:annotation>
+			<xs:documentation>Groups the header content in a table.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="tfoot" type="table:tr-type">
+		<xs:annotation>
+			<xs:documentation>Groups the footer content in a table.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--                    TBODY                    -->
+	<xs:element name="tbody" type="table:tr-type">
+		<xs:annotation>
+			<xs:documentation>Groups the body content in a table.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:complexType name="tr-type">
+		<xs:sequence maxOccurs="unbounded">
+			<xs:element ref="table:tr"/>
+		</xs:sequence>
+		<xs:attributeGroup ref="xatts:basic-atts"/>
+		<xs:attribute ref="table:valign"/>
+		<xs:attribute ref="table:align"/>
+	</xs:complexType>
+	<!--                    COLGROUP                    -->
+	<xs:element name="colgroup">
+		<xs:annotation>
+			<xs:documentation>Specifies a group of one or more columns in a table for formatting.</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence minOccurs="0" maxOccurs="unbounded">
+				<xs:element ref="table:col"/>
+			</xs:sequence>
+			<xs:attributeGroup ref="table:common-table-atts"/>
+		</xs:complexType>
+	</xs:element>
+	<!--                    COL                    -->
+	<xs:element name="col">
+		<xs:annotation>
+			<xs:documentation>Specifies column properties for each column within a 'colgroup' element.</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:complexContent>
+				<xs:restriction base="xs:anyType">
+					<xs:attributeGroup ref="table:common-table-atts"/>
+				</xs:restriction>
+			</xs:complexContent>
+		</xs:complexType>
+	</xs:element>
+	<!--                    TR                    -->
+	<xs:element name="tr">
+		<xs:annotation>
+			<xs:documentation>Defines a row in a table.</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element ref="table:th"/>
+				<xs:element ref="table:td"/>
+			</xs:choice>
+			<xs:attributeGroup ref="xatts:basic-atts"/>
+			<xs:attribute ref="table:align"/>
+			<xs:attribute ref="table:valign"/>
+		</xs:complexType>
+	</xs:element>
+	<!--                    TD                    -->
+	<xs:element name="td">
+		<xs:annotation>
+			<xs:documentation>Defines a cell in a table.</xs:documentation>
+		</xs:annotation>
+		<xs:complexType mixed="true">
+			<xs:choice minOccurs="0" maxOccurs="unbounded">
+				<xs:group ref="essay:flow-group"/>
+			</xs:choice>
+			<xs:attributeGroup ref="table:tdth-atts"/>
+		</xs:complexType>
+	</xs:element>
+	<!--                    TH                    -->
+	<xs:element name="th">
+		<xs:annotation>
+			<xs:documentation>Defines a header cell in a table.</xs:documentation>
+		</xs:annotation>
+		<xs:complexType mixed="true">
+			<xs:choice minOccurs="0" maxOccurs="unbounded">
+				<xs:group ref="essay:flow-group"/>
+			</xs:choice>
+			<xs:attributeGroup ref="table:tdth-atts"/>
+		</xs:complexType>
+	</xs:element>
+	<!-- 
+	============================================================================   
+                    ATTRIBUTES AND ATTRIBUTE GROUPS
+	============================================================================   
+	-->
+	<xs:attribute name="align">
+		<xs:simpleType>
+			<xs:restriction base="xs:NMTOKEN">
+				<xs:enumeration value="left"/>
+				<xs:enumeration value="center"/>
+				<xs:enumeration value="right"/>
+				<xs:enumeration value="justify"/>
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:attribute>
+	<xs:attribute name="valign">
+		<xs:simpleType>
+			<xs:restriction base="xs:NMTOKEN">
+				<xs:enumeration value="top"/>
+				<xs:enumeration value="middle"/>
+				<xs:enumeration value="bottom"/>
+				<xs:enumeration value="baseline"/>
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:attribute>
+	<!--                    COMMON-TABLE-ATTS                    -->
+	<xs:attributeGroup name="common-table-atts">
+		<xs:attributeGroup ref="xatts:basic-atts"/>
+		<xs:attribute name="span" type="xs:string" default="1"/>
+		<xs:attribute name="width" type="xs:string"/>
+		<xs:attribute ref="table:valign"/>
+		<xs:attribute ref="table:align"/>
+	</xs:attributeGroup>
+	<!--                    TDTH-ATTS                    -->
+	<xs:attributeGroup name="tdth-atts">
+		<xs:attributeGroup ref="xatts:basic-atts"/>
+		<xs:attribute name="abbr" type="xs:string"/>
+		<xs:attribute ref="table:align"/>
+		<xs:attribute name="axis" type="xs:string"/>
+		<xs:attribute name="headers" type="xs:IDREFS"/>
+		<xs:attribute name="scope">
+			<xs:simpleType>
+				<xs:restriction base="xs:NMTOKEN">
+					<xs:enumeration value="col"/>
+					<xs:enumeration value="rowgroup"/>
+					<xs:enumeration value="colgroup"/>
+					<xs:enumeration value="row"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="rowspan" type="xs:string" default="1"/>
+		<xs:attribute name="colspan" type="xs:string" default="1"/>
+		<xs:attribute ref="table:valign"/>
+	</xs:attributeGroup>
+</xs:schema>

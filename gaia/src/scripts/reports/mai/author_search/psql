@@ -1,0 +1,13 @@
+psql -U postgres -p 5433 log4
+
+copy tbl_consolidated_author_extract_091013 from '/mnt/home/jsears/GIT_REPOS/gaia/src/scripts/reports/mai/author_search/Consolidated_Author_Extract_Report 091013.csv' DELIMITERS '|' CSV;
+
+copy tbl_consolidated_author_extract from '/mnt/home/jsears/GIT_REPOS/gaia/src/scripts/reports/mai/author_search/Consolidated_Author_Extract_311013_1stPass_FINAL_Sheets.csv' DELIMITERS '|' CSV;
+
+copy tbl_log from '/mnt/home/jsears/GIT_REPOS/gaia/src/scripts/reports/mai/author_search/log' DELIMITERS '|' CSV;
+
+copy tbl_log2 from '/mnt/home/jsears/GIT_REPOS/gaia/src/scripts/reports/mai/author_search/log2' DELIMITERS '|' CSV;
+
+copy tbl_log4 from '/home/jsears/GIT_REPOS/gaia/src/scripts/reports/mai/author_search/rose_reports4/log4.csv' DELIMITERS '|' CSV;
+
+copy tbl_mercury_ids from '/mnt/home/jsears/GIT_REPOS/gaia/src/scripts/reports/mai/author_search/mercury_ids.csv' DELIMITERS '|' CSV;

@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2008 rel. 2 sp2 (http://www.altova.com) by Wendy Lewis (Gale Group) -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:dir="http://www.gale.com/goldschema/dir" xmlns:shared="http://www.gale.com/goldschema/shared" xmlns:essay="http://www.gale.com/goldschema/essay" xmlns:media="http://www.gale.com/goldschema/media" xmlns:vault-link="http://www.gale.com/goldschema/vault-linking" xmlns:pres="http://www.gale.com/goldschema/pres" xmlns:meta="http://www.gale.com/goldschema/metadata" xmlns:xatts="http://www.gale.com/goldschema/xatts" xmlns:mla="http://www.gale.com/goldschema/mla" xmlns:xi="http://www.w3.org/2001/XInclude" targetNamespace="http://www.gale.com/goldschema/dir" elementFormDefault="qualified" attributeFormDefault="unqualified" version="3.0">
+	<xs:annotation id="directory-purpose">
+		<xs:documentation>Essay makes up the main body elements (divisions, paragraphs and others)</xs:documentation>
+	</xs:annotation>
+	<!--
+	======================================================================
+                           CHANGE HISTORY
+	======================================================================
+	3.0		12/04/2013		js
+	1. Removed the schema owner part.
+	2. Updated the folder path of <xs:import>.
+	3. Removed the namespace xmlns:gift-doc="http://www.gale.com/goldschema/gift-doc" as it doesn't have appropriate <xs:import> 
+		and the namespace is not been used anywhere in that schema.
+	4. Externalized the element 'contact-info-structured'.
+	5. Removed the element uri-info as it is unused.
+	======================================================================
+-->
+	<xs:import namespace="http://www.gale.com/goldschema/pres" schemaLocation="presentation.xsd"/>
+	<xs:import namespace="http://www.gale.com/goldschema/essay" schemaLocation="essay.xsd"/>
+	<xs:import namespace="http://www.gale.com/goldschema/xatts" schemaLocation="xhtml-atts.xsd"/>
+	<xs:import namespace="http://www.gale.com/goldschema/vault-linking" schemaLocation="vault_linking.xsd"/>
+	<xs:import namespace="http://www.gale.com/goldschema/media" schemaLocation="media.xsd"/>
+	<xs:import namespace="http://www.gale.com/goldschema/shared" schemaLocation="shared.xsd"/>
+	<xs:import namespace="http://www.gale.com/goldschema/metadata" schemaLocation="metadata.xsd"/>
+	<!-- 
+	============================================================================   
+                    ELEMENT DECLARATIONS
+	============================================================================   
+	-->
+	<!--                    DIRECTORY                                    -->
+	<xs:element name="directory" type="dir:directory-type">
+		<xs:annotation>
+			<xs:documentation>This is the top level element of directory only document. It can be inserted parallel with the element document</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:complexType name="directory-type">
+		<xs:choice>
+			<xs:element ref="dir:directory-entry" maxOccurs="unbounded"/>
+		</xs:choice>
+		<xs:attribute name="type" type="xs:string"/>
+		<xs:attribute name="id" type="xs:string"/>
+	</xs:complexType>
+	<!--                    DIRECTORY-ENTRY                                    -->
+	<xs:element name="directory-entry">
+		<xs:annotation>
+			<xs:documentation>A single directory entry. Can be included in a document or directory basically at any level</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element ref="dir:contact-info-group" minOccurs="0" maxOccurs="unbounded"/>
+				<xs:element ref="dir:introductory-group" minOccurs="0" maxOccurs="unbounded"/>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+	<!--                    INTRODUCTORY-GROUP                                    -->	
+	<xs:element name="introductory-group" type="dir:introductory-type">
+		<xs:annotation>
+			<xs:documentation>Contains introduction or other explanatory text that can be included in the directory entry.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:complexType name="introductory-type" mixed="true">
+		<xs:choice maxOccurs="unbounded">
+			<xs:element ref="essay:div" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element ref="essay:p" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:choice>
+	</xs:complexType>
+	<!--                    CONTACT-INFO-GROUP                                    -->
+	<xs:element name="contact-info-group">
+		<xs:annotation>
+			<xs:documentation>Wrapper for contact information either in the structured or composed format.</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:choice>
+				<xs:sequence>
+					<xs:element ref="dir:contact-info-structured" maxOccurs="unbounded"/>
+					<xs:element ref="dir:contact-info-composed" minOccurs="0"/>
+				</xs:sequence>
+				<xs:element ref="dir:contact-info-composed" minOccurs="0"/>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+	<!--                    CONTACT-INFO-COMPOSED                                    -->	
+	<xs:element name="contact-info-composed">
+		<xs:annotation>
+			<xs:documentation>Contact information that is already formatted and ready for rendering.</xs:documentation>
+		</xs:annotation>
+		<xs:complexType mixed="true">
+			<xs:group ref="essay:flow-group" minOccurs="0"/>
+			<xs:attributeGroup ref="essay:defineDivisions"/>
+			<xs:attributeGroup ref="xatts:hypertextAtts"/>
+			<xs:attributeGroup ref="xatts:coreAtts"/>
+		</xs:complexType>
+	</xs:element>
+	<!--                    CONTACT-INFO-STRUCTURED                                    -->	
+	<xs:element name="contact-info-structured" type="dir:contact-info-type">
+		<xs:annotation>
+			<xs:documentation>Contact information that is in structured form.</xs:documentation>
+		</xs:annotation>
+	</xs:element>	
+	<xs:complexType name="contact-info-type">
+		<xs:sequence>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element ref="dir:contact-name"/>
+				<xs:element ref="dir:address"/>
+				<xs:element ref="dir:phone"/>
+				<xs:element ref="dir:email"/>
+				<xs:element ref="dir:uri"/>
+			</xs:choice>
+		</xs:sequence>
+		<xs:attribute name="type" type="xs:string" use="optional"/>
+	</xs:complexType>
+	<!--                    CONTACT INFO                                    -->
+	<xs:element name="contact-name" type="dir:contact-name-type">
+		<xs:annotation>
+			<xs:documentation>Wrapper for contact information such as contact person or contact organization name.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:complexType name="contact-name-type">
+		<xs:choice>
+			<xs:element ref="dir:person-name" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element ref="dir:organization-name" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:choice>
+	</xs:complexType>
+	<!--                    PERSON-NAME                                    -->
+	<xs:element name="person-name" type="meta:name-type">
+		<xs:annotation>
+			<xs:documentation>Container element to hold all the name information for an individual such as an author, editor, contributor, etc.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--                    ORGANIZATION-NAME                                    -->
+	<xs:element name="organization-name" type="xs:string">
+		<xs:annotation>
+			<xs:documentation>An organization such as a university or a corporation that is associated with the chapter or document, for example 
+				as the creator of document content, when that creator is a committee, board, corporation, or other organization rather than a person. 
+				Might be used to generate the company name index.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!-- 
+   ============================================================================   
+                   					ADDRESS
+   ============================================================================   
+   -->
+	<!--                    ADDRESS                                    -->	
+	<xs:element name="address">
+		<xs:annotation>
+			<xs:documentation>Defines postal address for a person or an organization.</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element ref="dir:address-structured" minOccurs="0" maxOccurs="unbounded"/>
+				<xs:element ref="dir:address-composed" minOccurs="0" maxOccurs="unbounded"/>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+	<!--                    ADDRESS-STRUCTURED                                    -->	
+	<xs:element name="address-structured" type="dir:address-property">
+		<xs:annotation>
+			<xs:documentation>Wrapper element for street, city, state,country, etc.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:complexType name="address-property">
+		<xs:sequence>
+			<xs:element ref="dir:postal-address-type" minOccurs="0"/>
+			<xs:element ref="dir:street" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element ref="dir:city" minOccurs="0"/>
+			<xs:element ref="dir:state" minOccurs="0"/>
+			<xs:element ref="dir:country" minOccurs="0"/>
+			<xs:element ref="dir:postal1" minOccurs="0"/>
+			<xs:element ref="dir:postal2" minOccurs="0"/>
+			<xs:element ref="dir:subdivision" minOccurs="0"/>
+			<xs:element ref="dir:county" minOccurs="0"/>
+		</xs:sequence>
+		<xs:attribute name="id-optional-att" type="xs:string" use="optional"/>
+	</xs:complexType>
+	<!--                    ADDRESS-COMPOSED                                    -->
+	<xs:element name="address-composed">
+		<xs:annotation>
+			<xs:documentation>Content model for address.</xs:documentation>
+		</xs:annotation>
+		<xs:complexType mixed="true">
+			<xs:group ref="essay:flow-group" minOccurs="0"/>
+			<xs:attributeGroup ref="essay:defineDivisions"/>
+			<xs:attributeGroup ref="xatts:hypertextAtts"/>
+			<xs:attributeGroup ref="xatts:coreAtts"/>
+		</xs:complexType>
+	</xs:element>
+	<!--                    CITY                                    -->	
+	<xs:element name="city" type="dir:string-property">
+		<xs:annotation>
+			<xs:documentation>City name used in address.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--                    POSTAL2                                    -->
+	<xs:element name="postal2" type="dir:string-property">
+		<xs:annotation>
+			<xs:documentation>Postal1 and postal2 are for zip/postal codes.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--                    POSTAL-ADDRESS-TYPE                                    -->
+	<xs:element name="postal-address-type" type="dir:validated-string-property">
+		<xs:annotation>
+			<xs:documentation>A type of the postal address e.g. "Mailing" or "Office".</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--                    STREET                                    -->
+	<xs:element name="street">
+		<xs:annotation>
+			<xs:documentation>Street name used in address.</xs:documentation>
+		</xs:annotation>
+		<xs:complexType mixed="true">
+			<xs:annotation>
+				<xs:documentation>Content mode for elements containing plain strings.</xs:documentation>
+			</xs:annotation>
+			<xs:simpleContent>
+				<xs:extension base="xs:string">
+					<xs:attribute name="number" type="xs:string" use="optional"/>
+					<xs:attribute name="id-optional-att" type="xs:string" use="optional"/>
+				</xs:extension>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<!--                    STATE                                    -->	
+	<xs:element name="state" type="dir:validated-string-property">
+		<xs:annotation>
+			<xs:documentation>State name used in address.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--                    COUNTRY                                    -->	
+	<xs:element name="country" type="dir:validated-string-property">
+		<xs:annotation>
+			<xs:documentation>Country name used in address.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--                    SUBDIVISION                                    -->	
+	<xs:element name="subdivision" type="dir:validated-string-property">
+		<xs:annotation>
+			<xs:documentation>Subdivision name used in address.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--                    POSTAL1                                    -->	
+	<xs:element name="postal1" type="xs:string">
+		<xs:annotation>
+			<xs:documentation>Postal1 and postal2 are for zip/postal codes</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--                    COUNTY                                    -->	
+	<xs:element name="county" type="dir:string-property">
+		<xs:annotation>
+			<xs:documentation>A geographical region of a country used for administrative or other purposes.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--                    PHONE                                    -->	
+	<xs:complexType name="phone-property">
+		<xs:sequence>
+			<xs:element ref="dir:phone-type" minOccurs="0"/>
+			<xs:element ref="dir:area-code" minOccurs="0"/>
+			<xs:element ref="dir:city-code" minOccurs="0"/>
+			<xs:element ref="dir:country-calling-code" minOccurs="0"/>
+			<xs:element ref="dir:phone-number" minOccurs="0"/>
+			<xs:element ref="dir:phone-text" minOccurs="0"/>
+		</xs:sequence>
+		<xs:attribute name="id-optional-att" type="xs:string" use="optional"/>
+	</xs:complexType>
+	<xs:element name="phone" type="dir:phone-property">
+		<xs:annotation>
+			<xs:documentation>Wrapper element for 'phone-number', 'phone-text' etc.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--                    PHONE-NUMBER                                   -->
+	<xs:element name="phone-number" type="dir:string-property">
+		<xs:annotation>
+			<xs:documentation>Phone number of any type used in address.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="phone-text" type="dir:string-property">
+		<xs:annotation>
+			<xs:documentation>Textual description of phone.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--                    PHONE-TYPE                                   -->
+	<xs:element name="phone-type" type="dir:string-property">
+		<xs:annotation>
+			<xs:documentation>Datatype for phone element.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--                    AREA-CODE                                   -->	
+	<xs:element name="area-code" type="xs:string">
+		<xs:annotation>
+			<xs:documentation>Defines the area code.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--                    COUNTRY-CALLING-CODE                                   -->
+	<xs:element name="country-calling-code" type="xs:string">
+		<xs:annotation>
+			<xs:documentation>Defines the country code.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--                    CITY-CODE                                   -->
+	<xs:element name="city-code" type="xs:string">
+		<xs:annotation>
+			<xs:documentation>Defines the city code.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--                    EMAIL                                    -->
+	<xs:element name="email" type="dir:email-property"/>
+		<xs:annotation>
+			<xs:documentation>Wrapper element for 'Email'</xs:documentation>
+		</xs:annotation>
+	<xs:complexType name="email-property">
+		<xs:sequence>
+			<xs:element ref="dir:email-address" minOccurs="0"/>
+			<xs:element ref="dir:email-text" minOccurs="0"/>
+		</xs:sequence>
+		<xs:attribute name="id-optional-att" type="xs:string" use="optional"/>
+	</xs:complexType>
+	<!--                    EMAIL-ADDRESS                                    -->
+	<xs:element name="email-address" type="dir:string-property">
+		<xs:annotation>
+			<xs:documentation>Inline markup identifying an email address.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--                    EMAIL-TEXT                                    -->
+	<xs:element name="email-text" type="dir:string-property">
+		<xs:annotation>
+			<xs:documentation>Textual description of email.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--                    URI                                    -->	
+	<xs:element name="uri" type="dir:uri-info-property">
+		<xs:annotation>
+			<xs:documentation>Wrapper element for uri information.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:complexType name="uri-info-property">
+		<xs:sequence>
+			<xs:element ref="dir:main-uri" minOccurs="0"/>
+			<xs:element ref="dir:additional-uri" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+		<xs:attribute name="id-optional-att" type="xs:string" use="optional"/>
+	</xs:complexType>
+	<!--                    MAIN-URI, ADDITIONAL-URI                                    -->	
+	<xs:element name="main-uri" type="dir:uri-property">
+		<xs:annotation>
+			<xs:documentation>Primary URI of the company or organization.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="additional-uri" type="dir:uri-property">
+		<xs:annotation>
+			<xs:documentation>Secondary URI of the company or organization.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:complexType name="uri-property">
+		<xs:choice>
+			<xs:element ref="vault-link:vault-link" minOccurs="0"/>
+			<xs:sequence>
+				<xs:element ref="dir:uri-address" minOccurs="0"/>
+				<xs:element ref="dir:uri-text" minOccurs="0"/>
+			</xs:sequence>
+		</xs:choice>
+		<xs:attribute name="id-optional-att" type="xs:string" use="optional"/>
+	</xs:complexType>
+	<!--                    URI-ADDRESS                                    -->	
+	<xs:element name="uri-address" type="dir:string-property">
+		<xs:annotation>
+			<xs:documentation>Uniform Resource Indicator, an address on the World Wide Web intended as a live link. 
+				Also used inside a list item in a uri-list.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--                    URI-TEXT                                    -->
+	<xs:element name="uri-text" type="dir:string-property">
+		<xs:annotation>
+			<xs:documentation>Textual description of the URI link.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!-- 
+	============================================================================   
+                    COMPLEX TYPE DECLARATIONS
+	============================================================================   
+	-->
+	<!--                    STRING                                    -->
+	<xs:complexType name="string-property">
+		<xs:annotation>
+			<xs:documentation>Content mode for elements containing plain strings.</xs:documentation>
+		</xs:annotation>
+		<xs:simpleContent>
+			<xs:extension base="xs:string">
+				<xs:attribute name="id-optional-att" type="xs:string" use="optional"/>
+			</xs:extension>
+		</xs:simpleContent>
+	</xs:complexType>
+	<!--                    VALIDATED STRING  - VALIDATION REQUIRED                                    -->
+	<xs:complexType name="validated-string-property">
+		<xs:simpleContent>
+			<xs:extension base="xs:string">
+				<xs:attribute name="id-optional-att" type="xs:string" use="optional"/>
+				<xs:attribute name="idref-required-atts" type="xs:string" use="optional"/>
+				<xs:attribute name="type" type="xs:string" use="optional"/>
+			</xs:extension>
+		</xs:simpleContent>
+	</xs:complexType>
+</xs:schema>

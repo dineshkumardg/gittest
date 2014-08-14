@@ -1,0 +1,20 @@
+The only available feed file is here: V:\Production\Feedfiles\CHOA Feedfiles\SI GIFT Merged Feedfiles
+
+Xpaths:
+NB: There may be more than one subject and org in each document instance.
+
+= /gold:feed/gold:document-instance/gift-doc:document/gift-doc:metadata/gift-doc:document-metadata/meta:descriptive-indexing/meta:indexing-term/meta:term/meta:term-type[text()='SUBJECT']
+
+/gold:feed/gold:document-instance[1]/gift-doc:document/gift-doc:metadata/gift-doc:document-metadata/meta:descriptive-indexing/meta:indexing-term[13]/meta:term/meta:term-type
+    = /gold:feed/gold:document-instance[1]/gift-doc:document/gift-doc:metadata/gift-doc:document-metadata/meta:descriptive-indexing/meta:indexing-term[13]/meta:term/meta:term-value
+/gold:feed/gold:document-instance[3]/gift-doc:document/gift-doc:metadata/gift-doc:document-metadata/meta:descriptive-indexing/meta:indexing-term[8]/meta:term/meta:term-type
+    = /gold:feed/gold:document-instance[3]/gift-doc:document/gift-doc:metadata/gift-doc:document-metadata/meta:descriptive-indexing/meta:indexing-term[8]/meta:term/meta:term-value
+
+----------------------
+
+= /gold:feed/gold:document-instance/gift-doc:document/gift-doc:metadata/gift-doc:document-metadata/meta:descriptive-indexing/meta:indexing-term/meta:term/meta:term-type =ORG
+
+/gold:feed/gold:document-instance[1]/gift-doc:document/gift-doc:metadata/gift-doc:document-metadata/meta:descriptive-indexing/meta:indexing-term[12]/meta:term/meta:term-type
+    = /gold:feed/gold:document-instance[1]/gift-doc:document/gift-doc:metadata/gift-doc:document-metadata/meta:descriptive-indexing/meta:indexing-term[12]/meta:term/meta:term-value
+/gold:feed/gold:document-instance[9]/gift-doc:document/gift-doc:metadata/gift-doc:document-metadata/meta:descriptive-indexing/meta:indexing-term[12]/meta:term/meta:term-type
+    = /gold:feed/gold:document-instance[9]/gift-doc:document/gift-doc:metadata/gift-doc:document-metadata/meta:descriptive-indexing/meta:indexing-term[12]/meta:term/meta:term-value 

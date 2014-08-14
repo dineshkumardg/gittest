@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2005 rel. 3 U (http://www.altova.com) by Gale User (Gale Group) -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:shared="http://www.gale.com/goldschema/shared" xmlns:vault-link="http://www.gale.com/goldschema/vault-linking" xmlns:essay="http://www.gale.com/goldschema/essay" xmlns:pres="http://www.gale.com/goldschema/pres" xmlns:dict="http://www.gale.com/goldschema/dictionary" targetNamespace="http://www.gale.com/goldschema/vault-linking" elementFormDefault="qualified" attributeFormDefault="unqualified" version="3.0">
+	<xs:annotation id="schema-purpose">
+		<xs:documentation>This module defines the "vault-link" element that resolves codes or IDs in content records with metadata documents in the Core Vault, 
+			such as those for Atlas and publication metadata delivered to GOLD.</xs:documentation>
+	</xs:annotation>
+	<!--
+	======================================================================
+                           CHANGE HISTORY
+	======================================================================
+	3.0		12/04/2013		js
+	1.	Removed the schema owner part.
+	2.	Updated the folder path of <xs:import>.
+	3.	Reorganized the elements and complexTypes.
+	4.	Externalized the elements 'action', 'data-type', 'display-link', 'display-point', 'document', 'doc-ID', 'document-nodes', 'element', 'link-type', 
+		'link-category', 'metadata-service', 'path', 'publication-nodes', 'select', 'search', 'target', 'where' and 'vocabulary-nodes'.
+	======================================================================
+-->
+	<xs:import namespace="http://www.gale.com/goldschema/pres" schemaLocation="presentation.xsd"/>
+	<xs:import namespace="http://www.gale.com/goldschema/essay" schemaLocation="essay.xsd"/>
+	<xs:import namespace="http://www.gale.com/goldschema/dictionary" schemaLocation="dictionary-module.xsd"/>
+	<xs:import namespace="http://www.gale.com/goldschema/shared" schemaLocation="shared.xsd"/>
+	<!-- 
+	============================================================================   
+                    ELEMENT DECLARATIONS
+	============================================================================   
+	-->
+	<!--                    VAULT-LINK                    -->
+	<xs:element name="vault-link">
+		<xs:annotation>
+			<xs:documentation>The "vault-link" element provides a generic content model for representing links in GIFT</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="vault-link:link-type"/>
+				<xs:element ref="vault-link:link-category" minOccurs="0"/>
+				<xs:element ref="vault-link:data-type" minOccurs="0"/>
+				<xs:element ref="vault-link:action"/>
+				<xs:element ref="vault-link:where"/>
+				<xs:element ref="vault-link:select" minOccurs="0"/>
+				<xs:element ref="vault-link:display-point" minOccurs="0"/>
+				<xs:element ref="vault-link:display-link" minOccurs="0"/>
+			</xs:sequence>
+			<xs:attribute name="link_indicator" use="optional">
+				<xs:simpleType>
+					<xs:restriction base="xs:normalizedString">
+						<xs:enumeration value="inactive"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+		</xs:complexType>
+	</xs:element>
+	<!--                    ACTION                    -->
+	<xs:element name="action">
+		<xs:annotation>
+			<xs:documentation>Describes the action to take for a link with one of two enumerated values: "point", "subsume" and "embed".</xs:documentation>
+		</xs:annotation>
+		<xs:simpleType>
+			<xs:restriction base="xs:normalizedString">
+				<xs:enumeration value="point"/>
+				<xs:enumeration value="embed"/>
+				<xs:enumeration value="subsume"/>
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+	<!--                    DATA-TYPE                    -->
+	<xs:element name="data-type" type="xs:normalizedString">
+		<xs:annotation>
+			<xs:documentation>Describes data type of document or file that is being linked with standard media types: "text/xml", "text/html", 
+				"application/pdf", "image/jpeg", "image/gif", "image/png", and so on.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--                    DISPLAY-POINT                    -->
+	<xs:element name="display-point" type="xs:normalizedString">
+		<xs:annotation>
+			<xs:documentation>Indicates an exact point in a document to display; if absent, the target node is the display point</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--                    DOCUMENT-NODES                    -->
+	<xs:element name="document-nodes" type="vault-link:select-nodes-type">
+		<xs:annotation>
+			<xs:documentation>Identifies actual part of the document to retrieve for a link (i.e., the "target). The node identified 
+				in the path is the implied root for the target.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--                    LINK-TYPE                    -->
+	<xs:element name="link-type">
+		<xs:annotation>
+			<xs:documentation>Describes the type of link with enumerated values: "external", "internal", or "url".</xs:documentation>
+		</xs:annotation>
+		<xs:simpleType>
+			<xs:restriction base="xs:normalizedString">
+				<xs:enumeration value="external"/>
+				<xs:enumeration value="internal"/>
+				<xs:enumeration value="url"/>
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+	<!--                    LINK-CATEGORY                    -->
+	<xs:element name="link-category">
+		<xs:annotation>
+			<xs:documentation>Describes the legacy category of the link to allow for handling of groupings, headers and placement/manipulation for display specs. 
+				(i.e. related documents)</xs:documentation>
+		</xs:annotation>
+		<xs:complexType mixed="true">
+			<xs:attribute name="term-id" type="xs:unsignedLong" use="optional"/>
+			<xs:attribute name="term-source" type="xs:normalizedString" use="optional"/>
+		</xs:complexType>
+	</xs:element>
+	<!--                    WHERE                    -->
+	<xs:element name="where">
+		<xs:annotation>
+			<xs:documentation>The "where" element specifies two things: the document in the vault needed and the element within that document 
+				that will be the implied root of nodes specified by the "select" element.</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="vault-link:document" minOccurs="0"/>
+				<xs:element ref="vault-link:path"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<!--                    SELECT                    -->
+	<xs:element name="select">
+		<xs:annotation>
+			<xs:documentation>Identifies the resolving elements relative to the implied "root" of the vault link.</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:choice>
+				<xs:element ref="vault-link:document-nodes"/>
+				<xs:element ref="vault-link:vocabulary-nodes"/>
+				<xs:element ref="vault-link:publication-nodes"/>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+	<!--                    DISPLAY-LINK                    -->
+	<xs:element name="display-link">
+		<xs:annotation>
+			<xs:documentation>Contains text to display to the end user as the link. Allows for presentation markup</xs:documentation>
+		</xs:annotation>
+		<xs:complexType mixed="true">
+			<xs:choice minOccurs="0" maxOccurs="unbounded">
+				<xs:group ref="pres:style-group"/>
+				<xs:element ref="shared:media"/>
+				<xs:element ref="essay:key-term"/>
+				<xs:element ref="dict:term"/>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+	<!--                    DOCUMENT                    -->
+	<xs:element name="document">
+		<xs:annotation>
+			<xs:documentation>Identifies either a document  by vault ID or "metadata-service": a virtual document in the vault that is called 
+				to resolve codes or IDs with Atlas or publication metadata documents.</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:choice minOccurs="0">
+				<xs:element ref="vault-link:search"/>
+				<xs:element ref="vault-link:doc-ID"/>
+				<xs:element ref="vault-link:metadata-service"/>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+	<!--                    DOC-ID                    -->
+	<xs:element name="doc-ID" type="xs:NMTOKEN">
+		<xs:annotation>
+			<xs:documentation>Contains the vault ID of the document.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--                    ELEMENT                    -->
+	<xs:element name="element">
+		<xs:annotation>
+			<xs:documentation>Specifies an element needed to identify the document.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--                    METADATA-SERVICE                    -->
+	<xs:element name="metadata-service">
+		<xs:annotation>
+			<xs:documentation>Indicates that the metadata-service "document " is needed; output as an empty node.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--                    PATH                    -->
+	<xs:element name="path">
+		<xs:annotation>
+			<xs:documentation>Identifies the node in the document that contains a unique identifier. This node is also the implied 
+				root of nodes in the "select" element. For metadata documents, the path starts with "/pub-data" for publication metadata 
+				or "/vocabulary" for Atlas metadata.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--                    PUBLICATION-NODES                    -->
+	<xs:element name="publication-nodes" type="vault-link:select-nodes-type">
+		<xs:annotation>
+			<xs:documentation>Identifies elements in a publication metadata document. It allows for mixed content.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--                    SEARCH                    -->
+	<xs:element name="search">
+		<xs:annotation>
+			<xs:documentation>The "search" element is used  if the document needs to be identified by more than one element.</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="vault-link:element" maxOccurs="unbounded"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<!--                    TARGET                    -->
+	<xs:element name="target" type="xs:string">
+		<xs:annotation>
+			<xs:documentation>Identifies a node in the document to retrieve for a link.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--                    VOCABULARY-NODES                    -->
+	<xs:element name="vocabulary-nodes" type="vault-link:select-nodes-type">
+		<xs:annotation>
+			<xs:documentation>Identifies elements in an Atlas document. It allows for mixed content.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!-- 
+	============================================================================   
+                    COMPLEX TYPE DECLARATIONS
+	============================================================================   
+	-->
+	<xs:complexType name="select-nodes-type" mixed="true">
+		<xs:sequence>
+			<xs:element ref="vault-link:target" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>

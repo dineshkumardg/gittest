@@ -1,0 +1,63 @@
+{% extends "qa/filter_paginator.html" %}
+{% block title %}qa{% endblock %}
+
+{% block content %}
+{%if context or request.GET.search_by %}
+<h1>qa statistics</h1>
+<h2>summary of items in QA</h2>
+{% block content_table %}
+<div id="result_table" style="width:35em;">
+{% if items_info %}
+<table><thead>
+    <tr>
+    {% for value, key in sort_fields_list.items  %}
+    <th id={{ key }} onclick="sort_header('{{ key }}', '{{ request.GET.filter_by }}' ,'{{ request.GET.search_by }}','{{ page_obj.number }}')">
+       <div class="text">{{ value }}</div>
+       <div class="clear"></div></th>
+    {% endfor %}
+    <th scope="col">
+       <div class="text"><a>qa</a></div>
+       <div class="clear"></div></th>
+    <th scope="col">
+       <div class="text"><a>pages</a></div>
+       <div class="clear"></div></th></tr>
+</thead><tbody>
+ {% for items, info in items_info.iteritems %}
+        <tr class="{% cycle 'row1' 'row2' %}">
+        <td><a href="{% url item items.id %}">{{items.dom_id}}</a></td>
+        <td>{{items.id}}</td>
+        <td>{{info.page_qa_count}} / {{info.total_pages}}</td>
+        <td>({{info.percent}}%) {{info.who}}</td>
+        </tr>
+    {% endfor %} 
+</tbody></table>
+{% else %}
+    {% if request.GET.search_by %}
+        <p><br/>no items under this condition: <b>search by: "{{ request.GET.search_by }}"</b></p>
+    {% else %}
+        <p>no items </p>
+    {% endif %}
+{% endif %}
+{% endblock %}
+</div>
+<h1>Summary</h1>
+<p>Average number of pages per item: <span style="font-weight: bold; color:red;">{{average_num_pages_per_item}}</span></p>
+<p>Average percentage of page QA per item: <span style="font-weight: bold; color:red;">{{average_percent_page_qa_per_item}}%</span></p>
+
+{% block content_paginate %}
+    {{ block.super }}
+{% endblock %}
+
+{% else %}
+    <p>No Items currently in QA.</p>
+{% endif %}
+
+{% block sort_script %}
+    {{ block.super }}
+{% endblock %}
+{% endblock %}
+
+{% block search_bar %}
+    {{ block.super }}
+{% endblock %}
+

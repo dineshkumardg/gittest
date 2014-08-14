@@ -1,0 +1,20 @@
+! file: ftim.opt
+
+! Used by Perl converter
+log_dir:		/gale/prod-i1/data/workflow/conversion_workflow/dvi_content_conversion/ocm_space/bl_ncukp/logs/FTIM/
+completed_dir:		/gale/prod-i1/data/workflow/conversion_workflow/dvi_content_conversion/ocm_space/bl_ncukp/manifests/completed/FTIM/
+output_dir:		/gale/prod-i1/data/workflow/conversion_workflow/dvi_content_conversion/ocm_space/bl_ncukp/output/FTIM/FTIM_output/
+input_dir:		/gale/prod-i1/data/workflow/conversion_workflow/dvi_content_conversion/ocm_space/bl_ncukp/ftp_data/FTIM/FTIM_input/
+headnote_dir_unix:	/auto/groups/history_team/projects/DVI_Newspapers/control_files/headnotes/
+headnote_dir_vms:	DMR:[DB.FTIM.HEADNOTES]
+metadata_file_unix:     /auto/groups/history_team/projects/DVI_Newspapers/control_files/ftim_lookup.txt
+metadata_file_vms:	DMR:[DB.FTIM.META]ftim_lookup.txt
+dvi_ng_map_unix:        /auto/groups/history_team/projects/DVI_Newspapers/control_files/DVI_NG_FTmap.txt
+dvi_il_map_unix:        /auto/groups/history_team/projects/DVI_Newspapers/control_files/DVI_IL_map.txt
+dvi_ng_map_vms:         QRFCPS3:[PE.NCUP.CONTROL_FILES]DVI_NG_FTmap.txt
+dvi_il_map_vms:         QRFCPS3:[PE.NCUP.CONTROL_FILES]DVI_IL_map.txt
+PageIDList_unix:	/auto/groups/history_team/projects/DVI_Newspapers/control_files/FTIMPageIDList.txt
+PageIDList_vms:		QRFCPS3:[PE.NCUP.CONTROL_FILES]FTIMPageIDList.txt
+dvi_name:               ftim
+xxrn:			CT
+email:			ryan.cartmill@cengage.com

@@ -1,0 +1,16 @@
+*.pyc
+*.class
+*.exe
+*.o
+*.swp
+*.swo
+tags
+,*
+*.db
+*.OLD
+*.old
+*.backup
+*.BACKUP
+.preferences
+.settings
+.workspace.xml

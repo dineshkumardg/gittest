@@ -1,0 +1,20 @@
+{% extends "qa/base.html" %}
+
+{% block title %}{{ project_code }}{% endblock %}
+
+{% block content %}
+
+{% if items %}
+<h1>{{items|length}} items rejected</h1>
+<p>query:<pre>{{ expert_analysis_query }}</pre></p>
+<p>reason:<pre>{{ reason }}</pre></p>
+<p>
+rejected items:
+<ol>
+{% for item in items %}
+<li>{{item.dom_id}}
+{% endfor %}
+</ol>
+</p>
+{% endif %}
+{% endblock %}

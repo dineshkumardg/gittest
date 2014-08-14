@@ -1,0 +1,11 @@
+{% extends "qa/base.html" %}
+{% block title %}manage items{% endblock %}
+
+{% block content %}
+<h1>manage qa</h1>
+<ul>
+<li><a href="{% url release %}">release items</a> - an item can only be released if it has an mcode, and all related document(s) / media are present
+<li><a href="{% url unrelease %}"><b>un</b>-release items</a> - once egested, move a released item back into <a href="{% url item_index %}">qa items</a>
+</ul>
+
+{% endblock %}

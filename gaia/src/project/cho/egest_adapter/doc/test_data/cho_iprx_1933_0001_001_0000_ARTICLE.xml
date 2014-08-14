@@ -1,0 +1,1327 @@
+<gold:document-instance>
+  <gift-doc:document>
+    <gift-doc:metadata>
+      <gift-doc:node-metadata>
+        <meta:descriptive-indexing>
+          <meta:indexing-term>
+            <meta:term>
+              <meta:term-type>PUB_SEG_TYPE</meta:term-type>
+              <meta:term-source>Atlas</meta:term-source>
+              <meta:term-id>14242630</meta:term-id>
+              <meta:term-value>Article</meta:term-value>
+            </meta:term>
+          </meta:indexing-term>
+        </meta:descriptive-indexing>
+        <meta:volume-number>1</meta:volume-number>
+        <gift-doc:pagination-group>
+          <gift-doc:pagination>
+            <meta:total-pages>2</meta:total-pages>
+            <meta:ranges>
+              <meta:range>
+                <meta:begin-page>[1]</meta:begin-page>
+                <meta:end-page>[2]</meta:end-page>
+              </meta:range>
+            </meta:ranges>
+          </gift-doc:pagination>
+        </gift-doc:pagination-group>
+      </gift-doc:node-metadata>
+      <gift-doc:document-metadata>
+        <meta:document-ids>
+          <meta:id type="Gale asset">
+            <meta:value>DXOPVQ400060084</meta:value>
+          </meta:id>
+        </meta:document-ids>
+        <meta:bibliographic-ids>
+          <meta:id type="PSM">
+            <meta:value>cho_iprx_1933_0001_001_0000</meta:value>
+          </meta:id>
+          <meta:id type="isbn">
+            <meta:value>1234567891012</meta:value>
+          </meta:id>
+          <meta:id type="issn">
+            <meta:value>1234-5678</meta:value>
+          </meta:id>
+        </meta:bibliographic-ids>
+        <meta:mcode>4XJF</meta:mcode>
+        <meta:publication-date>
+          <meta:structured-date>
+            <meta:year>1933</meta:year>
+            <meta:month>08</meta:month>
+            <meta:day>01</meta:day>
+            <meta:day-of-week>Wednesday</meta:day-of-week>
+          </meta:structured-date>
+          <meta:standard-date type="Start date">19330801</meta:standard-date>
+          <meta:standard-date type="End date">19330801</meta:standard-date>
+        </meta:publication-date>
+        <meta:record-admin-info>
+          <meta:standard-date type="Original">20121202</meta:standard-date>
+        </meta:record-admin-info>
+        <gift-doc:document-titles>
+          <meta:title-display>Front Matter</meta:title-display>
+          <meta:title-sort>Front Matter</meta:title-sort>
+          <meta:title-open-url>Front Matter</meta:title-open-url>
+        </gift-doc:document-titles>
+        <meta:publication-title>Institute of Pacific Relations</meta:publication-title>
+        <meta:languages>
+          <meta:language term-id="13858590" ocr="English" ocr-term-id="13858590" primary="Y">English</meta:language>
+        </meta:languages>
+        <meta:ocr-confidence>30.98</meta:ocr-confidence>
+        <meta:authors>
+          <meta:author>
+            <meta:sobriquet>
+              <meta:name>Admiral Chatfield</meta:name>
+            </meta:sobriquet>
+            <meta:composed-name>Admiral Chatfield</meta:composed-name>
+          </meta:author>
+        </meta:authors>
+        <meta:editors>
+          <meta:editor>
+            <meta:structured-name>
+              <meta:prefix>Mr</meta:prefix>
+              <meta:first-name>James</meta:first-name>
+              <meta:middle-name>J</meta:middle-name>
+              <meta:last-name>Sears</meta:last-name>
+              <meta:suffix>SE</meta:suffix>
+            </meta:structured-name>
+            <meta:composed-name>Mr James J Sears SE</meta:composed-name>
+          </meta:editor>
+        </meta:editors>
+        <meta:descriptive-indexing>
+          <meta:indexing-term>
+            <meta:term>
+              <meta:term-type>DOC_INFO_TYPE</meta:term-type>
+              <meta:term-source>Atlas</meta:term-source>
+              <meta:term-id>22199438</meta:term-id>
+              <meta:term-value>Conference proceedings</meta:term-value>
+            </meta:term>
+          </meta:indexing-term>
+          <meta:indexing-term>
+            <meta:term>
+              <meta:term-type>DOC_INFO_TYPE</meta:term-type>
+              <meta:term-source>Atlas</meta:term-source>
+              <meta:term-id>21817803</meta:term-id>
+              <meta:term-value>Front matter</meta:term-value>
+            </meta:term>
+          </meta:indexing-term>
+          <meta:indexing-term>
+            <meta:term>
+              <meta:term-type>CONT_REC_TYPE</meta:term-type>
+              <meta:term-source>Atlas</meta:term-source>
+              <meta:term-id>17234672</meta:term-id>
+              <meta:term-value>Text</meta:term-value>
+            </meta:term>
+          </meta:indexing-term>
+          <meta:indexing-term>
+            <meta:term>
+              <meta:term-type>CONT_TYPE</meta:term-type>
+              <meta:term-source>Atlas</meta:term-source>
+              <meta:term-id>21901547</meta:term-id>
+              <meta:term-value>DVI-Periodical</meta:term-value>
+            </meta:term>
+          </meta:indexing-term>
+          <meta:indexing-term>
+            <meta:term>
+              <meta:term-type>FUNC_TYPE</meta:term-type>
+              <meta:term-source>Atlas</meta:term-source>
+              <meta:term-id>21787856</meta:term-id>
+              <meta:term-value>Issue-volume article record</meta:term-value>
+            </meta:term>
+          </meta:indexing-term>
+          <meta:indexing-term>
+            <meta:term>
+              <meta:term-type>ART_LANG</meta:term-type>
+              <meta:term-source>Atlas</meta:term-source>
+              <meta:term-id>13858590</meta:term-id>
+              <meta:term-value>English</meta:term-value>
+            </meta:term>
+          </meta:indexing-term>
+        </meta:descriptive-indexing>
+        <meta:source-institution>
+          <meta:institution-name>Chatham House</meta:institution-name>
+          <meta:institution-location>London</meta:institution-location>
+          <meta:copyright-statement>Copyright Royal Institute of International Affairs</meta:copyright-statement>
+        </meta:source-institution>
+        <meta:holding-institution>
+          <meta:institution-name>Chatham House</meta:institution-name>
+          <meta:institution-location>London</meta:institution-location>
+        </meta:holding-institution>
+        <meta:source-citation-group>
+          <meta:source-citation>
+            <meta:content-date>
+              <meta:structured-date>
+                <meta:year>1933</meta:year>
+                <meta:month>08</meta:month>
+                <meta:day>01</meta:day>
+              </meta:structured-date>
+              <meta:standard-date type="Start date">19330801</meta:standard-date>
+              <meta:standard-date type="End date">19330801</meta:standard-date>
+            </meta:content-date>
+          </meta:source-citation>
+        </meta:source-citation-group>
+        <meta:product-content-type type="CHO">Conference Series</meta:product-content-type>
+      </gift-doc:document-metadata>
+    </gift-doc:metadata>
+    <gift-doc:body>
+      <essay:div document-segment-type="Body text" term-id="14214508" term-source="Atlas">
+        <essay:div document-segment-type="DVI newspaper article clip" term-id="21918445" term-source="Atlas">
+          <essay:complex-meta>
+            <meta:page-id-number>0001</meta:page-id-number>
+            <meta:folio>
+              <meta:start-number>[1]</meta:start-number>
+            </meta:folio>
+          </essay:complex-meta>
+          <shared:media>
+            <media:image data-type="jpeg" width="2953" height="4122" image-type="page view" layout="single" color-mode="color" folio="[1]" sequence="0001">
+              <vault-link:vault-link>
+                <vault-link:link-type>external</vault-link:link-type>
+                <vault-link:action>point</vault-link:action>
+                <vault-link:where>
+                  <vault-link:path>cho_iprx_1933_0001_001_0001</vault-link:path>
+                </vault-link:where>
+              </vault-link:vault-link>
+            </media:image>
+            <media:image data-type="jpeg" width="2953" height="4122" image-type="inline" layout="single" color-mode="color" folio="[1]" sequence="0001">
+              <vault-link:vault-link>
+                <vault-link:link-type>external</vault-link:link-type>
+                <vault-link:action>point</vault-link:action>
+                <vault-link:where>
+                  <vault-link:path>cho_iprx_1933_0001_001_0001</vault-link:path>
+                </vault-link:where>
+              </vault-link:vault-link>
+              <media:caption>HELP!</media:caption>
+              <meta:descriptive-indexing>
+                <meta:indexing-term>
+                  <meta:term>
+                    <meta:term-type>DOC_INFO_TYPE</meta:term-type>
+                    <meta:term-source>Atlas</meta:term-source>
+                    <meta:term-id>14211704</meta:term-id>
+                    <meta:term-value>Line drawing</meta:term-value>
+                  </meta:term>
+                </meta:indexing-term>
+              </meta:descriptive-indexing>
+            </media:image>
+            <media:image data-type="jpeg" width="2953" height="4122" image-type="inline" layout="single" color-mode="color" folio="[1]" sequence="0001">
+              <vault-link:vault-link>
+                <vault-link:link-type>external</vault-link:link-type>
+                <vault-link:action>point</vault-link:action>
+                <vault-link:where>
+                  <vault-link:path>cho_iprx_1933_0001_001_0001</vault-link:path>
+                </vault-link:where>
+              </vault-link:vault-link>
+              <meta:descriptive-indexing>
+                <meta:indexing-term>
+                  <meta:term>
+                    <meta:term-type>DOC_INFO_TYPE</meta:term-type>
+                    <meta:term-source>Atlas</meta:term-source>
+                    <meta:term-id>14211704</meta:term-id>
+                    <meta:term-value>Line drawing</meta:term-value>
+                  </meta:term>
+                </meta:indexing-term>
+              </meta:descriptive-indexing>
+            </media:image>
+          </shared:media>
+          <vault-link:vault-link>
+            <vault-link:link-type>external</vault-link:link-type>
+            <vault-link:link-category term-id="21902636" term-source="Atlas">DVI page</vault-link:link-category>
+            <vault-link:action>point</vault-link:action>
+            <vault-link:where>
+              <vault-link:path>//gift-doc:document-metadata/meta:document-ids/meta:id[@type="Gale asset"]/meta:value[.="KSBTXI002537702"]</vault-link:path>
+            </vault-link:where>
+            <vault-link:select>
+              <vault-link:document-nodes>
+                <vault-link:target>ancestor::gift-doc:document</vault-link:target>
+              </vault-link:document-nodes>
+            </vault-link:select>
+          </vault-link:vault-link>
+          <vault-link:vault-link>
+            <vault-link:link-type>external</vault-link:link-type>
+            <vault-link:link-category term-id="22176901" term-source="Atlas">DVI volume</vault-link:link-category>
+            <vault-link:action>point</vault-link:action>
+            <vault-link:where>
+              <vault-link:path>//gift-doc:document-metadata/meta:document-ids/meta:id[@type="Gale asset"]/meta:value[.="JFVPAC940924998"]</vault-link:path>
+            </vault-link:where>
+            <vault-link:select>
+              <vault-link:document-nodes>
+                <vault-link:target>ancestor::gift-doc:document</vault-link:target>
+              </vault-link:document-nodes>
+            </vault-link:select>
+          </vault-link:vault-link>
+          <essay:div document-segment-type="Body text" term-id="14214508" term-source="Atlas">
+            <essay:p>5!^ II I &apos; M II II ll i . .......i.....MIK.il UNDED D D 0 D i J^frary Cfiatfiam J~&#163;busd StrjamessSciuari XoncCoTv ur@i</essay:p>
+          </essay:div>
+        </essay:div>
+        <essay:div document-segment-type="DVI newspaper article clip" term-id="21918445" term-source="Atlas">
+          <essay:complex-meta>
+            <meta:page-id-number>0002</meta:page-id-number>
+            <meta:folio>
+              <meta:start-number>[2]</meta:start-number>
+            </meta:folio>
+          </essay:complex-meta>
+          <shared:media>
+            <media:image data-type="jpeg" width="2810" height="3896" image-type="page view" layout="single" color-mode="color" folio="[2]" sequence="0002">
+              <vault-link:vault-link>
+                <vault-link:link-type>external</vault-link:link-type>
+                <vault-link:action>point</vault-link:action>
+                <vault-link:where>
+                  <vault-link:path>cho_iprx_1933_0001_001_0002</vault-link:path>
+                </vault-link:where>
+              </vault-link:vault-link>
+            </media:image>
+            <media:image data-type="jpeg" width="2810" height="3896" image-type="inline" layout="single" color-mode="color" folio="[2]" sequence="0002">
+              <vault-link:vault-link>
+                <vault-link:link-type>external</vault-link:link-type>
+                <vault-link:action>point</vault-link:action>
+                <vault-link:where>
+                  <vault-link:path>cho_iprx_1933_0001_001_0002</vault-link:path>
+                </vault-link:where>
+              </vault-link:vault-link>
+              <media:caption>Illustration 2</media:caption>
+              <meta:descriptive-indexing>
+                <meta:indexing-term>
+                  <meta:term>
+                    <meta:term-type>DOC_INFO_TYPE</meta:term-type>
+                    <meta:term-source>Atlas</meta:term-source>
+                    <meta:term-id>14211704</meta:term-id>
+                    <meta:term-value>Line drawing</meta:term-value>
+                  </meta:term>
+                </meta:indexing-term>
+              </meta:descriptive-indexing>
+            </media:image>
+          </shared:media>
+          <vault-link:vault-link>
+            <vault-link:link-type>external</vault-link:link-type>
+            <vault-link:link-category term-id="21902636" term-source="Atlas">DVI page</vault-link:link-category>
+            <vault-link:action>point</vault-link:action>
+            <vault-link:where>
+              <vault-link:path>//gift-doc:document-metadata/meta:document-ids/meta:id[@type="Gale asset"]/meta:value[.="JROVYD254408302"]</vault-link:path>
+            </vault-link:where>
+            <vault-link:select>
+              <vault-link:document-nodes>
+                <vault-link:target>ancestor::gift-doc:document</vault-link:target>
+              </vault-link:document-nodes>
+            </vault-link:select>
+          </vault-link:vault-link>
+          <vault-link:vault-link>
+            <vault-link:link-type>external</vault-link:link-type>
+            <vault-link:link-category term-id="22176901" term-source="Atlas">DVI volume</vault-link:link-category>
+            <vault-link:action>point</vault-link:action>
+            <vault-link:where>
+              <vault-link:path>//gift-doc:document-metadata/meta:document-ids/meta:id[@type="Gale asset"]/meta:value[.="JFVPAC940924998"]</vault-link:path>
+            </vault-link:where>
+            <vault-link:select>
+              <vault-link:document-nodes>
+                <vault-link:target>ancestor::gift-doc:document</vault-link:target>
+              </vault-link:document-nodes>
+            </vault-link:select>
+          </vault-link:vault-link>
+          <essay:div document-segment-type="Body text" term-id="14214508" term-source="Atlas">
+            <essay:p>ID No Shelf location &apos;: Cicssified I Cai Labelled ...,....!</essay:p>
+          </essay:div>
+        </essay:div>
+      </essay:div>
+    </gift-doc:body>
+  </gift-doc:document>
+</gold:document-instance>
+<gold:document-instance>
+  <gift-doc:document>
+    <gift-doc:metadata>
+      <gift-doc:node-metadata>
+        <meta:descriptive-indexing>
+          <meta:indexing-term>
+            <meta:term>
+              <meta:term-type>PUB_SEG_TYPE</meta:term-type>
+              <meta:term-source>Atlas</meta:term-source>
+              <meta:term-id>14242630</meta:term-id>
+              <meta:term-value>Article</meta:term-value>
+            </meta:term>
+          </meta:indexing-term>
+        </meta:descriptive-indexing>
+        <meta:volume-number>1</meta:volume-number>
+        <gift-doc:pagination-group>
+          <gift-doc:pagination>
+            <meta:total-pages>3</meta:total-pages>
+            <meta:ranges>
+              <meta:range>
+                <meta:begin-page>2a</meta:begin-page>
+                <meta:end-page>4</meta:end-page>
+              </meta:range>
+            </meta:ranges>
+          </gift-doc:pagination>
+        </gift-doc:pagination-group>
+      </gift-doc:node-metadata>
+      <gift-doc:document-metadata>
+        <meta:document-ids>
+          <meta:id type="Gale asset">
+            <meta:value>GAANUL122904644</meta:value>
+          </meta:id>
+        </meta:document-ids>
+        <meta:bibliographic-ids>
+          <meta:id type="PSM">
+            <meta:value>cho_iprx_1933_0001_001_0000</meta:value>
+          </meta:id>
+          <meta:id type="isbn">
+            <meta:value>1234567891012</meta:value>
+          </meta:id>
+          <meta:id type="issn">
+            <meta:value>1234-5678</meta:value>
+          </meta:id>
+        </meta:bibliographic-ids>
+        <meta:mcode>4XJF</meta:mcode>
+        <meta:publication-date>
+          <meta:structured-date>
+            <meta:year>1933</meta:year>
+            <meta:month>08</meta:month>
+            <meta:day>01</meta:day>
+            <meta:day-of-week>Wednesday</meta:day-of-week>
+          </meta:structured-date>
+          <meta:standard-date type="Start date">19330801</meta:standard-date>
+          <meta:standard-date type="End date">19330801</meta:standard-date>
+        </meta:publication-date>
+        <meta:record-admin-info>
+          <meta:standard-date type="Original">20121202</meta:standard-date>
+        </meta:record-admin-info>
+        <gift-doc:document-titles>
+          <meta:title-display>AVäant Pharmaceuticals</meta:title-display>
+          <meta:title-sort>AVäant Pharmaceuticals</meta:title-sort>
+          <meta:title-open-url>AVäant Pharmaceuticals</meta:title-open-url>
+        </gift-doc:document-titles>
+        <meta:publication-title>Institute of Pacific Relations</meta:publication-title>
+        <meta:languages>
+          <meta:language term-id="13858590" ocr="English" ocr-term-id="13858590" primary="Y">English</meta:language>
+        </meta:languages>
+        <meta:ocr-confidence>27.10</meta:ocr-confidence>
+        <meta:authors>
+          <meta:author>
+            <meta:structured-name>
+              <meta:prefix>Miss</meta:prefix>
+              <meta:first-name>Sarah</meta:first-name>
+              <meta:middle-name>J</meta:middle-name>
+              <meta:last-name>Neate</meta:last-name>
+              <meta:suffix>PHD</meta:suffix>
+            </meta:structured-name>
+            <meta:composed-name>Miss Sarah J Neate PHD</meta:composed-name>
+          </meta:author>
+        </meta:authors>
+        <meta:editors>
+          <meta:editor>
+            <meta:structured-name>
+              <meta:prefix>Mr</meta:prefix>
+              <meta:first-name>James</meta:first-name>
+              <meta:middle-name>J</meta:middle-name>
+              <meta:last-name>Sears</meta:last-name>
+              <meta:suffix>SE</meta:suffix>
+            </meta:structured-name>
+            <meta:composed-name>Mr James J Sears SE</meta:composed-name>
+          </meta:editor>
+        </meta:editors>
+        <meta:descriptive-indexing>
+          <meta:indexing-term>
+            <meta:term>
+              <meta:term-type>DOC_INFO_TYPE</meta:term-type>
+              <meta:term-source>Atlas</meta:term-source>
+              <meta:term-id>22199438</meta:term-id>
+              <meta:term-value>Conference proceedings</meta:term-value>
+            </meta:term>
+          </meta:indexing-term>
+          <meta:indexing-term>
+            <meta:term>
+              <meta:term-type>DOC_INFO_TYPE</meta:term-type>
+              <meta:term-source>Atlas</meta:term-source>
+              <meta:term-id>21817803</meta:term-id>
+              <meta:term-value>Front matter</meta:term-value>
+            </meta:term>
+          </meta:indexing-term>
+          <meta:indexing-term>
+            <meta:term>
+              <meta:term-type>CONT_REC_TYPE</meta:term-type>
+              <meta:term-source>Atlas</meta:term-source>
+              <meta:term-id>17234672</meta:term-id>
+              <meta:term-value>Text</meta:term-value>
+            </meta:term>
+          </meta:indexing-term>
+          <meta:indexing-term>
+            <meta:term>
+              <meta:term-type>CONT_TYPE</meta:term-type>
+              <meta:term-source>Atlas</meta:term-source>
+              <meta:term-id>21901547</meta:term-id>
+              <meta:term-value>DVI-Periodical</meta:term-value>
+            </meta:term>
+          </meta:indexing-term>
+          <meta:indexing-term>
+            <meta:term>
+              <meta:term-type>FUNC_TYPE</meta:term-type>
+              <meta:term-source>Atlas</meta:term-source>
+              <meta:term-id>21787856</meta:term-id>
+              <meta:term-value>Issue-volume article record</meta:term-value>
+            </meta:term>
+          </meta:indexing-term>
+          <meta:indexing-term>
+            <meta:term>
+              <meta:term-type>ART_LANG</meta:term-type>
+              <meta:term-source>Atlas</meta:term-source>
+              <meta:term-id>13858590</meta:term-id>
+              <meta:term-value>English</meta:term-value>
+            </meta:term>
+          </meta:indexing-term>
+        </meta:descriptive-indexing>
+        <meta:source-institution>
+          <meta:institution-name>Chatham House</meta:institution-name>
+          <meta:institution-location>London</meta:institution-location>
+          <meta:copyright-statement>Copyright Royal Institute of International Affairs</meta:copyright-statement>
+        </meta:source-institution>
+        <meta:holding-institution>
+          <meta:institution-name>Chatham House</meta:institution-name>
+          <meta:institution-location>London</meta:institution-location>
+        </meta:holding-institution>
+        <meta:source-citation-group>
+          <meta:source-citation>
+            <meta:content-date>
+              <meta:structured-date>
+                <meta:year>1933</meta:year>
+                <meta:month>08</meta:month>
+                <meta:day>01</meta:day>
+              </meta:structured-date>
+              <meta:standard-date type="Start date">19330801</meta:standard-date>
+              <meta:standard-date type="End date">19330801</meta:standard-date>
+            </meta:content-date>
+          </meta:source-citation>
+        </meta:source-citation-group>
+        <meta:product-content-type type="CHO">Conference Series</meta:product-content-type>
+      </gift-doc:document-metadata>
+    </gift-doc:metadata>
+    <gift-doc:body>
+      <essay:div document-segment-type="Body text" term-id="14214508" term-source="Atlas">
+        <essay:div document-segment-type="DVI newspaper article clip" term-id="21918445" term-source="Atlas">
+          <essay:complex-meta>
+            <meta:page-id-number>0003</meta:page-id-number>
+            <meta:folio>
+              <meta:start-number>2a</meta:start-number>
+            </meta:folio>
+          </essay:complex-meta>
+          <shared:media>
+            <media:image data-type="jpeg" width="2841" height="3910" image-type="page view" layout="single" color-mode="color" folio="2a" sequence="0003">
+              <vault-link:vault-link>
+                <vault-link:link-type>external</vault-link:link-type>
+                <vault-link:action>point</vault-link:action>
+                <vault-link:where>
+                  <vault-link:path>cho_iprx_1933_0001_001_0003</vault-link:path>
+                </vault-link:where>
+              </vault-link:vault-link>
+            </media:image>
+          </shared:media>
+          <vault-link:vault-link>
+            <vault-link:link-type>external</vault-link:link-type>
+            <vault-link:link-category term-id="21902636" term-source="Atlas">DVI page</vault-link:link-category>
+            <vault-link:action>point</vault-link:action>
+            <vault-link:where>
+              <vault-link:path>//gift-doc:document-metadata/meta:document-ids/meta:id[@type="Gale asset"]/meta:value[.="BBLVHZ877755586"]</vault-link:path>
+            </vault-link:where>
+            <vault-link:select>
+              <vault-link:document-nodes>
+                <vault-link:target>ancestor::gift-doc:document</vault-link:target>
+              </vault-link:document-nodes>
+            </vault-link:select>
+          </vault-link:vault-link>
+          <vault-link:vault-link>
+            <vault-link:link-type>external</vault-link:link-type>
+            <vault-link:link-category term-id="22176901" term-source="Atlas">DVI volume</vault-link:link-category>
+            <vault-link:action>point</vault-link:action>
+            <vault-link:where>
+              <vault-link:path>//gift-doc:document-metadata/meta:document-ids/meta:id[@type="Gale asset"]/meta:value[.="JFVPAC940924998"]</vault-link:path>
+            </vault-link:where>
+            <vault-link:select>
+              <vault-link:document-nodes>
+                <vault-link:target>ancestor::gift-doc:document</vault-link:target>
+              </vault-link:document-nodes>
+            </vault-link:select>
+          </vault-link:vault-link>
+          <essay:div document-segment-type="Body text" term-id="14214508" term-source="Atlas">
+            <essay:p>A Guide to the Banff Discussions. ,--N i The Purpose and Conduct of Round TablesL ^^^ ^ A Research Program in the Pacific Area.^/&lt;V- ^Conflict and Control in the Pacific by W.L. Holland. Land Utilization Investigations and Their Bearing on International Rela- by Carl L.Alsberg. Some Social Aspects of World Economic B ; &apos; by ] .7/. Martin, International Labour Office. Unemployment and Public Works Policies in Pacific Countries t^4-~ j... k International Labour Office.</essay:p>
+          </essay:div>
+        </essay:div>
+        <essay:div document-segment-type="DVI newspaper article clip" term-id="21918445" term-source="Atlas">
+          <essay:complex-meta>
+            <meta:page-id-number>0004</meta:page-id-number>
+          </essay:complex-meta>
+          <shared:media>
+            <media:image data-type="jpeg" width="2810" height="3896" image-type="page view" layout="single" color-mode="color" sequence="0004">
+              <vault-link:vault-link>
+                <vault-link:link-type>external</vault-link:link-type>
+                <vault-link:action>point</vault-link:action>
+                <vault-link:where>
+                  <vault-link:path>cho_iprx_1933_0001_001_0004</vault-link:path>
+                </vault-link:where>
+              </vault-link:vault-link>
+            </media:image>
+          </shared:media>
+          <vault-link:vault-link>
+            <vault-link:link-type>external</vault-link:link-type>
+            <vault-link:link-category term-id="21902636" term-source="Atlas">DVI page</vault-link:link-category>
+            <vault-link:action>point</vault-link:action>
+            <vault-link:where>
+              <vault-link:path>//gift-doc:document-metadata/meta:document-ids/meta:id[@type="Gale asset"]/meta:value[.="KBVVVP310450204"]</vault-link:path>
+            </vault-link:where>
+            <vault-link:select>
+              <vault-link:document-nodes>
+                <vault-link:target>ancestor::gift-doc:document</vault-link:target>
+              </vault-link:document-nodes>
+            </vault-link:select>
+          </vault-link:vault-link>
+          <vault-link:vault-link>
+            <vault-link:link-type>external</vault-link:link-type>
+            <vault-link:link-category term-id="22176901" term-source="Atlas">DVI volume</vault-link:link-category>
+            <vault-link:action>point</vault-link:action>
+            <vault-link:where>
+              <vault-link:path>//gift-doc:document-metadata/meta:document-ids/meta:id[@type="Gale asset"]/meta:value[.="JFVPAC940924998"]</vault-link:path>
+            </vault-link:where>
+            <vault-link:select>
+              <vault-link:document-nodes>
+                <vault-link:target>ancestor::gift-doc:document</vault-link:target>
+              </vault-link:document-nodes>
+            </vault-link:select>
+          </vault-link:vault-link>
+        </essay:div>
+        <essay:div document-segment-type="DVI newspaper article clip" term-id="21918445" term-source="Atlas">
+          <essay:complex-meta>
+            <meta:page-id-number>0005</meta:page-id-number>
+            <meta:folio>
+              <meta:start-number>4</meta:start-number>
+            </meta:folio>
+          </essay:complex-meta>
+          <shared:media>
+            <media:image data-type="jpeg" width="2808" height="3910" image-type="page view" layout="single" color-mode="color" folio="4" sequence="0005">
+              <vault-link:vault-link>
+                <vault-link:link-type>external</vault-link:link-type>
+                <vault-link:action>point</vault-link:action>
+                <vault-link:where>
+                  <vault-link:path>cho_iprx_1933_0001_001_0005</vault-link:path>
+                </vault-link:where>
+              </vault-link:vault-link>
+            </media:image>
+          </shared:media>
+          <vault-link:vault-link>
+            <vault-link:link-type>external</vault-link:link-type>
+            <vault-link:link-category term-id="21902636" term-source="Atlas">DVI page</vault-link:link-category>
+            <vault-link:action>point</vault-link:action>
+            <vault-link:where>
+              <vault-link:path>//gift-doc:document-metadata/meta:document-ids/meta:id[@type="Gale asset"]/meta:value[.="PILQJY247882019"]</vault-link:path>
+            </vault-link:where>
+            <vault-link:select>
+              <vault-link:document-nodes>
+                <vault-link:target>ancestor::gift-doc:document</vault-link:target>
+              </vault-link:document-nodes>
+            </vault-link:select>
+          </vault-link:vault-link>
+          <vault-link:vault-link>
+            <vault-link:link-type>external</vault-link:link-type>
+            <vault-link:link-category term-id="22176901" term-source="Atlas">DVI volume</vault-link:link-category>
+            <vault-link:action>point</vault-link:action>
+            <vault-link:where>
+              <vault-link:path>//gift-doc:document-metadata/meta:document-ids/meta:id[@type="Gale asset"]/meta:value[.="JFVPAC940924998"]</vault-link:path>
+            </vault-link:where>
+            <vault-link:select>
+              <vault-link:document-nodes>
+                <vault-link:target>ancestor::gift-doc:document</vault-link:target>
+              </vault-link:document-nodes>
+            </vault-link:select>
+          </vault-link:vault-link>
+          <essay:div document-segment-type="Body text" term-id="14214508" term-source="Atlas">
+            <essay:p>Central Secretariat Papers. a Guide to the Banff Discussion&#174; Tne Purpose and Conduct of Round Tables &#169;search Program in tne Pacifio Area &#169;onfliet and Control in the Pacific - by W.UHolland Land Utilization Investigations and Their Bearing on International Relations * by Carl L*Alsberg Some floolal Aspects of V.orld Economic Planning * by P&#187;W.Martln, International Labour Office Unemployment and iublic Vorks Policies in Pacific Countries - International Labour Office*</essay:p>
+          </essay:div>
+        </essay:div>
+      </essay:div>
+    </gift-doc:body>
+  </gift-doc:document>
+</gold:document-instance>
+<gold:document-instance>
+  <gift-doc:document>
+    <gift-doc:metadata>
+      <gift-doc:node-metadata>
+        <meta:descriptive-indexing>
+          <meta:indexing-term>
+            <meta:term>
+              <meta:term-type>PUB_SEG_TYPE</meta:term-type>
+              <meta:term-source>Atlas</meta:term-source>
+              <meta:term-id>14242630</meta:term-id>
+              <meta:term-value>Article</meta:term-value>
+            </meta:term>
+          </meta:indexing-term>
+        </meta:descriptive-indexing>
+        <meta:volume-number>1</meta:volume-number>
+        <gift-doc:pagination-group>
+          <gift-doc:pagination>
+            <meta:total-pages>2</meta:total-pages>
+            <meta:ranges>
+              <meta:range>
+                <meta:begin-page>5</meta:begin-page>
+              </meta:range>
+            </meta:ranges>
+          </gift-doc:pagination>
+        </gift-doc:pagination-group>
+      </gift-doc:node-metadata>
+      <gift-doc:document-metadata>
+        <meta:document-ids>
+          <meta:id type="Gale asset">
+            <meta:value>LPAAXR052224646</meta:value>
+          </meta:id>
+        </meta:document-ids>
+        <meta:bibliographic-ids>
+          <meta:id type="PSM">
+            <meta:value>cho_iprx_1933_0001_001_0000</meta:value>
+          </meta:id>
+          <meta:id type="isbn">
+            <meta:value>1234567891012</meta:value>
+          </meta:id>
+          <meta:id type="issn">
+            <meta:value>1234-5678</meta:value>
+          </meta:id>
+        </meta:bibliographic-ids>
+        <meta:mcode>4XJF</meta:mcode>
+        <meta:publication-date>
+          <meta:structured-date>
+            <meta:year>1933</meta:year>
+            <meta:month>08</meta:month>
+            <meta:day>01</meta:day>
+            <meta:day-of-week>Wednesday</meta:day-of-week>
+          </meta:structured-date>
+          <meta:standard-date type="Start date">19330801</meta:standard-date>
+          <meta:standard-date type="End date">19330801</meta:standard-date>
+        </meta:publication-date>
+        <meta:record-admin-info>
+          <meta:standard-date type="Original">20121202</meta:standard-date>
+        </meta:record-admin-info>
+        <gift-doc:document-titles>
+          <meta:title-display>A First Speech.</meta:title-display>
+          <meta:title-sort>First Speech</meta:title-sort>
+          <meta:title-open-url>First Speech</meta:title-open-url>
+        </gift-doc:document-titles>
+        <meta:publication-title>Institute of Pacific Relations</meta:publication-title>
+        <meta:languages>
+          <meta:language term-id="13858590" ocr="English" ocr-term-id="13858590" primary="Y">English</meta:language>
+        </meta:languages>
+        <meta:ocr-confidence>35.14</meta:ocr-confidence>
+        <meta:authors>
+          <meta:corporate-author>The Organisation</meta:corporate-author>
+        </meta:authors>
+        <meta:editors>
+          <meta:editor>
+            <meta:structured-name>
+              <meta:prefix>Mr</meta:prefix>
+              <meta:first-name>James</meta:first-name>
+              <meta:middle-name>J</meta:middle-name>
+              <meta:last-name>Sears</meta:last-name>
+              <meta:suffix>SE</meta:suffix>
+            </meta:structured-name>
+            <meta:composed-name>Mr James J Sears SE</meta:composed-name>
+          </meta:editor>
+        </meta:editors>
+        <meta:descriptive-indexing>
+          <meta:indexing-term>
+            <meta:term>
+              <meta:term-type>DOC_INFO_TYPE</meta:term-type>
+              <meta:term-source>Atlas</meta:term-source>
+              <meta:term-id>22199438</meta:term-id>
+              <meta:term-value>Conference proceedings</meta:term-value>
+            </meta:term>
+          </meta:indexing-term>
+          <meta:indexing-term>
+            <meta:term>
+              <meta:term-type>DOC_INFO_TYPE</meta:term-type>
+              <meta:term-source>Atlas</meta:term-source>
+              <meta:term-id>14242630</meta:term-id>
+              <meta:term-value>Article</meta:term-value>
+            </meta:term>
+          </meta:indexing-term>
+          <meta:indexing-term>
+            <meta:term>
+              <meta:term-type>CONT_REC_TYPE</meta:term-type>
+              <meta:term-source>Atlas</meta:term-source>
+              <meta:term-id>17234672</meta:term-id>
+              <meta:term-value>Text</meta:term-value>
+            </meta:term>
+          </meta:indexing-term>
+          <meta:indexing-term>
+            <meta:term>
+              <meta:term-type>CONT_TYPE</meta:term-type>
+              <meta:term-source>Atlas</meta:term-source>
+              <meta:term-id>21901547</meta:term-id>
+              <meta:term-value>DVI-Periodical</meta:term-value>
+            </meta:term>
+          </meta:indexing-term>
+          <meta:indexing-term>
+            <meta:term>
+              <meta:term-type>FUNC_TYPE</meta:term-type>
+              <meta:term-source>Atlas</meta:term-source>
+              <meta:term-id>21787856</meta:term-id>
+              <meta:term-value>Issue-volume article record</meta:term-value>
+            </meta:term>
+          </meta:indexing-term>
+          <meta:indexing-term>
+            <meta:term>
+              <meta:term-type>ART_LANG</meta:term-type>
+              <meta:term-source>Atlas</meta:term-source>
+              <meta:term-id>13858590</meta:term-id>
+              <meta:term-value>English</meta:term-value>
+            </meta:term>
+          </meta:indexing-term>
+        </meta:descriptive-indexing>
+        <meta:source-institution>
+          <meta:institution-name>Chatham House</meta:institution-name>
+          <meta:institution-location>London</meta:institution-location>
+          <meta:copyright-statement>Copyright Royal Institute of International Affairs</meta:copyright-statement>
+        </meta:source-institution>
+        <meta:holding-institution>
+          <meta:institution-name>Chatham House</meta:institution-name>
+          <meta:institution-location>London</meta:institution-location>
+        </meta:holding-institution>
+        <meta:source-citation-group>
+          <meta:source-citation>
+            <meta:content-date>
+              <meta:structured-date>
+                <meta:year>1933</meta:year>
+                <meta:month>08</meta:month>
+                <meta:day>01</meta:day>
+              </meta:structured-date>
+              <meta:standard-date type="Start date">19330801</meta:standard-date>
+              <meta:standard-date type="End date">19330801</meta:standard-date>
+            </meta:content-date>
+          </meta:source-citation>
+        </meta:source-citation-group>
+        <meta:product-content-type type="CHO">Conference Series</meta:product-content-type>
+      </gift-doc:document-metadata>
+    </gift-doc:metadata>
+    <gift-doc:body>
+      <essay:div document-segment-type="Body text" term-id="14214508" term-source="Atlas">
+        <essay:div document-segment-type="DVI newspaper article clip" term-id="21918445" term-source="Atlas">
+          <essay:complex-meta>
+            <meta:page-id-number>0006</meta:page-id-number>
+            <meta:folio>
+              <meta:start-number>5</meta:start-number>
+            </meta:folio>
+          </essay:complex-meta>
+          <shared:media>
+            <media:image data-type="jpeg" width="2756" height="4103" image-type="page view" layout="single" color-mode="color" folio="5" sequence="0006">
+              <vault-link:vault-link>
+                <vault-link:link-type>external</vault-link:link-type>
+                <vault-link:action>point</vault-link:action>
+                <vault-link:where>
+                  <vault-link:path>cho_iprx_1933_0001_001_0006</vault-link:path>
+                </vault-link:where>
+              </vault-link:vault-link>
+            </media:image>
+          </shared:media>
+          <vault-link:vault-link>
+            <vault-link:link-type>external</vault-link:link-type>
+            <vault-link:link-category term-id="21902636" term-source="Atlas">DVI page</vault-link:link-category>
+            <vault-link:action>point</vault-link:action>
+            <vault-link:where>
+              <vault-link:path>//gift-doc:document-metadata/meta:document-ids/meta:id[@type="Gale asset"]/meta:value[.="EWYGVZ314761502"]</vault-link:path>
+            </vault-link:where>
+            <vault-link:select>
+              <vault-link:document-nodes>
+                <vault-link:target>ancestor::gift-doc:document</vault-link:target>
+              </vault-link:document-nodes>
+            </vault-link:select>
+          </vault-link:vault-link>
+          <vault-link:vault-link>
+            <vault-link:link-type>external</vault-link:link-type>
+            <vault-link:link-category term-id="22176901" term-source="Atlas">DVI volume</vault-link:link-category>
+            <vault-link:action>point</vault-link:action>
+            <vault-link:where>
+              <vault-link:path>//gift-doc:document-metadata/meta:document-ids/meta:id[@type="Gale asset"]/meta:value[.="JFVPAC940924998"]</vault-link:path>
+            </vault-link:where>
+            <vault-link:select>
+              <vault-link:document-nodes>
+                <vault-link:target>ancestor::gift-doc:document</vault-link:target>
+              </vault-link:document-nodes>
+            </vault-link:select>
+          </vault-link:vault-link>
+          <essay:div document-segment-type="Body text" term-id="14214508" term-source="Atlas">
+            <essay:p>&apos;xft</essay:p>
+          </essay:div>
+        </essay:div>
+        <essay:div document-segment-type="DVI newspaper article clip" term-id="21918445" term-source="Atlas">
+          <essay:complex-meta>
+            <meta:page-id-number>0007</meta:page-id-number>
+          </essay:complex-meta>
+          <shared:media>
+            <media:image data-type="jpeg" width="2788" height="4103" image-type="page view" layout="single" color-mode="color" sequence="0007">
+              <vault-link:vault-link>
+                <vault-link:link-type>external</vault-link:link-type>
+                <vault-link:action>point</vault-link:action>
+                <vault-link:where>
+                  <vault-link:path>cho_iprx_1933_0001_001_0007</vault-link:path>
+                </vault-link:where>
+              </vault-link:vault-link>
+            </media:image>
+          </shared:media>
+          <vault-link:vault-link>
+            <vault-link:link-type>external</vault-link:link-type>
+            <vault-link:link-category term-id="21902636" term-source="Atlas">DVI page</vault-link:link-category>
+            <vault-link:action>point</vault-link:action>
+            <vault-link:where>
+              <vault-link:path>//gift-doc:document-metadata/meta:document-ids/meta:id[@type="Gale asset"]/meta:value[.="CZPJLP541227087"]</vault-link:path>
+            </vault-link:where>
+            <vault-link:select>
+              <vault-link:document-nodes>
+                <vault-link:target>ancestor::gift-doc:document</vault-link:target>
+              </vault-link:document-nodes>
+            </vault-link:select>
+          </vault-link:vault-link>
+          <vault-link:vault-link>
+            <vault-link:link-type>external</vault-link:link-type>
+            <vault-link:link-category term-id="22176901" term-source="Atlas">DVI volume</vault-link:link-category>
+            <vault-link:action>point</vault-link:action>
+            <vault-link:where>
+              <vault-link:path>//gift-doc:document-metadata/meta:document-ids/meta:id[@type="Gale asset"]/meta:value[.="JFVPAC940924998"]</vault-link:path>
+            </vault-link:where>
+            <vault-link:select>
+              <vault-link:document-nodes>
+                <vault-link:target>ancestor::gift-doc:document</vault-link:target>
+              </vault-link:document-nodes>
+            </vault-link:select>
+          </vault-link:vault-link>
+          <essay:div document-segment-type="Body text" term-id="14214508" term-source="Atlas">
+            <essay:p>Fifth Biennial Conference of the Institute of Pacific Relations August 14 - 28, 1933 Part I - A Guide To The Banff Discussions Part II - The Purpose and Conduct of Round Tables Part III - A Research Program In The Pacific Area (Proof Editions) Prepared by the Secretariat of the Institute of Pacific Relations Honolulu 1933</essay:p>
+          </essay:div>
+        </essay:div>
+      </essay:div>
+    </gift-doc:body>
+  </gift-doc:document>
+</gold:document-instance>
+<gold:document-instance>
+  <gift-doc:document>
+    <gift-doc:metadata>
+      <gift-doc:node-metadata>
+        <meta:descriptive-indexing>
+          <meta:indexing-term>
+            <meta:term>
+              <meta:term-type>PUB_SEG_TYPE</meta:term-type>
+              <meta:term-source>Atlas</meta:term-source>
+              <meta:term-id>14242630</meta:term-id>
+              <meta:term-value>Article</meta:term-value>
+            </meta:term>
+          </meta:indexing-term>
+        </meta:descriptive-indexing>
+        <meta:volume-number>1</meta:volume-number>
+        <gift-doc:pagination-group>
+          <gift-doc:pagination>
+            <meta:total-pages>1</meta:total-pages>
+            <meta:ranges>
+              <meta:range>
+                <meta:begin-page>[1]</meta:begin-page>
+              </meta:range>
+            </meta:ranges>
+          </gift-doc:pagination>
+        </gift-doc:pagination-group>
+      </gift-doc:node-metadata>
+      <gift-doc:document-metadata>
+        <meta:document-ids>
+          <meta:id type="Gale asset">
+            <meta:value>LNHPIU989878736</meta:value>
+          </meta:id>
+        </meta:document-ids>
+        <meta:bibliographic-ids>
+          <meta:id type="PSM">
+            <meta:value>cho_iprx_1933_0001_001_0000</meta:value>
+          </meta:id>
+          <meta:id type="isbn">
+            <meta:value>1234567891012</meta:value>
+          </meta:id>
+          <meta:id type="issn">
+            <meta:value>1234-5678</meta:value>
+          </meta:id>
+        </meta:bibliographic-ids>
+        <meta:mcode>4XJF</meta:mcode>
+        <meta:publication-date>
+          <meta:structured-date>
+            <meta:year>1933</meta:year>
+            <meta:month>08</meta:month>
+            <meta:day>01</meta:day>
+            <meta:day-of-week>Wednesday</meta:day-of-week>
+          </meta:structured-date>
+          <meta:standard-date type="Start date">19330801</meta:standard-date>
+          <meta:standard-date type="End date">19330801</meta:standard-date>
+        </meta:publication-date>
+        <meta:record-admin-info>
+          <meta:standard-date type="Original">20121202</meta:standard-date>
+        </meta:record-admin-info>
+        <gift-doc:document-titles>
+          <meta:title-display>Table of Contents</meta:title-display>
+          <meta:title-sort>Table of Contents</meta:title-sort>
+          <meta:title-open-url>Table of Contents</meta:title-open-url>
+          <meta:subtitle>Second Day</meta:subtitle>
+        </gift-doc:document-titles>
+        <meta:publication-title>Institute of Pacific Relations</meta:publication-title>
+        <meta:languages>
+          <meta:language term-id="13858590" ocr="English" ocr-term-id="13858590" primary="Y">English</meta:language>
+        </meta:languages>
+        <meta:ocr-confidence>37.53</meta:ocr-confidence>
+        <meta:authors>
+          <meta:author>
+            <meta:sobriquet>
+              <meta:name>Researcher</meta:name>
+            </meta:sobriquet>
+            <meta:composed-name>Researcher</meta:composed-name>
+          </meta:author>
+          <meta:corporate-author>Secretariat of the Institute of the Pacific Relations</meta:corporate-author>
+        </meta:authors>
+        <meta:editors>
+          <meta:editor>
+            <meta:structured-name>
+              <meta:prefix>Mr</meta:prefix>
+              <meta:first-name>James</meta:first-name>
+              <meta:middle-name>J</meta:middle-name>
+              <meta:last-name>Sears</meta:last-name>
+              <meta:suffix>SE</meta:suffix>
+            </meta:structured-name>
+            <meta:composed-name>Mr James J Sears SE</meta:composed-name>
+          </meta:editor>
+        </meta:editors>
+        <meta:descriptive-indexing>
+          <meta:indexing-term>
+            <meta:term>
+              <meta:term-type>DOC_INFO_TYPE</meta:term-type>
+              <meta:term-source>Atlas</meta:term-source>
+              <meta:term-id>22199438</meta:term-id>
+              <meta:term-value>Conference proceedings</meta:term-value>
+            </meta:term>
+          </meta:indexing-term>
+          <meta:indexing-term>
+            <meta:term>
+              <meta:term-type>DOC_INFO_TYPE</meta:term-type>
+              <meta:term-source>Atlas</meta:term-source>
+              <meta:term-id>14242630</meta:term-id>
+              <meta:term-value>Article</meta:term-value>
+            </meta:term>
+          </meta:indexing-term>
+          <meta:indexing-term>
+            <meta:term>
+              <meta:term-type>CONT_REC_TYPE</meta:term-type>
+              <meta:term-source>Atlas</meta:term-source>
+              <meta:term-id>17234672</meta:term-id>
+              <meta:term-value>Text</meta:term-value>
+            </meta:term>
+          </meta:indexing-term>
+          <meta:indexing-term>
+            <meta:term>
+              <meta:term-type>CONT_TYPE</meta:term-type>
+              <meta:term-source>Atlas</meta:term-source>
+              <meta:term-id>21901547</meta:term-id>
+              <meta:term-value>DVI-Periodical</meta:term-value>
+            </meta:term>
+          </meta:indexing-term>
+          <meta:indexing-term>
+            <meta:term>
+              <meta:term-type>FUNC_TYPE</meta:term-type>
+              <meta:term-source>Atlas</meta:term-source>
+              <meta:term-id>21787856</meta:term-id>
+              <meta:term-value>Issue-volume article record</meta:term-value>
+            </meta:term>
+          </meta:indexing-term>
+          <meta:indexing-term>
+            <meta:term>
+              <meta:term-type>ART_LANG</meta:term-type>
+              <meta:term-source>Atlas</meta:term-source>
+              <meta:term-id>13858590</meta:term-id>
+              <meta:term-value>English</meta:term-value>
+            </meta:term>
+          </meta:indexing-term>
+        </meta:descriptive-indexing>
+        <meta:source-institution>
+          <meta:institution-name>Chatham House</meta:institution-name>
+          <meta:institution-location>London</meta:institution-location>
+          <meta:copyright-statement>Copyright Royal Institute of International Affairs</meta:copyright-statement>
+        </meta:source-institution>
+        <meta:holding-institution>
+          <meta:institution-name>Chatham House</meta:institution-name>
+          <meta:institution-location>London</meta:institution-location>
+        </meta:holding-institution>
+        <meta:source-citation-group>
+          <meta:source-citation>
+            <meta:content-date>
+              <meta:structured-date>
+                <meta:year>1933</meta:year>
+                <meta:month>08</meta:month>
+                <meta:day>01</meta:day>
+              </meta:structured-date>
+              <meta:standard-date type="Start date">19330801</meta:standard-date>
+              <meta:standard-date type="End date">19330801</meta:standard-date>
+            </meta:content-date>
+          </meta:source-citation>
+        </meta:source-citation-group>
+        <meta:product-content-type type="CHO">Conference Series</meta:product-content-type>
+      </gift-doc:document-metadata>
+    </gift-doc:metadata>
+    <gift-doc:body>
+      <essay:div document-segment-type="Body text" term-id="14214508" term-source="Atlas">
+        <essay:div document-segment-type="DVI newspaper article clip" term-id="21918445" term-source="Atlas">
+          <essay:complex-meta>
+            <meta:page-id-number>0008</meta:page-id-number>
+            <meta:folio>
+              <meta:start-number>[1]</meta:start-number>
+            </meta:folio>
+          </essay:complex-meta>
+          <shared:media>
+            <media:image data-type="jpeg" width="2815" height="4076" image-type="page view" layout="single" color-mode="color" folio="[1]" sequence="0008">
+              <vault-link:vault-link>
+                <vault-link:link-type>external</vault-link:link-type>
+                <vault-link:action>point</vault-link:action>
+                <vault-link:where>
+                  <vault-link:path>cho_iprx_1933_0001_001_0008</vault-link:path>
+                </vault-link:where>
+              </vault-link:vault-link>
+            </media:image>
+          </shared:media>
+          <vault-link:vault-link>
+            <vault-link:link-type>external</vault-link:link-type>
+            <vault-link:link-category term-id="21902636" term-source="Atlas">DVI page</vault-link:link-category>
+            <vault-link:action>point</vault-link:action>
+            <vault-link:where>
+              <vault-link:path>//gift-doc:document-metadata/meta:document-ids/meta:id[@type="Gale asset"]/meta:value[.="LZTVUH023721629"]</vault-link:path>
+            </vault-link:where>
+            <vault-link:select>
+              <vault-link:document-nodes>
+                <vault-link:target>ancestor::gift-doc:document</vault-link:target>
+              </vault-link:document-nodes>
+            </vault-link:select>
+          </vault-link:vault-link>
+          <vault-link:vault-link>
+            <vault-link:link-type>external</vault-link:link-type>
+            <vault-link:link-category term-id="22176901" term-source="Atlas">DVI volume</vault-link:link-category>
+            <vault-link:action>point</vault-link:action>
+            <vault-link:where>
+              <vault-link:path>//gift-doc:document-metadata/meta:document-ids/meta:id[@type="Gale asset"]/meta:value[.="JFVPAC940924998"]</vault-link:path>
+            </vault-link:where>
+            <vault-link:select>
+              <vault-link:document-nodes>
+                <vault-link:target>ancestor::gift-doc:document</vault-link:target>
+              </vault-link:document-nodes>
+            </vault-link:select>
+          </vault-link:vault-link>
+          <essay:div document-segment-type="Body text" term-id="14214508" term-source="Atlas">
+            <essay:p>TABLE OF CONTENTS PART I Page Foreword 1 &#8226; Introduction..................... &#8226;......&#171;&#9830;....&#171;.&#171;.............. 1 IJ&#187; Areas of Concentration...............................&#8226;&#8226;&#8226;&#171;&#8226;&#8226;&#8226;&#8226;*&#171; 2 a&#187; Areas of Conflict.........................&#8226;&#8226;.....&#8226;.....&#8226;</essay:p>
+          </essay:div>
+        </essay:div>
+      </essay:div>
+    </gift-doc:body>
+  </gift-doc:document>
+</gold:document-instance>
+<gold:document-instance>
+  <gift-doc:document>
+    <gift-doc:metadata>
+      <gift-doc:node-metadata>
+        <meta:descriptive-indexing>
+          <meta:indexing-term>
+            <meta:term>
+              <meta:term-type>PUB_SEG_TYPE</meta:term-type>
+              <meta:term-source>Atlas</meta:term-source>
+              <meta:term-id>14242630</meta:term-id>
+              <meta:term-value>Article</meta:term-value>
+            </meta:term>
+          </meta:indexing-term>
+        </meta:descriptive-indexing>
+        <meta:volume-number>1</meta:volume-number>
+        <gift-doc:pagination-group>
+          <gift-doc:pagination>
+            <meta:total-pages>1</meta:total-pages>
+            <meta:ranges>
+              <meta:range>
+                <meta:begin-page>[1]</meta:begin-page>
+              </meta:range>
+            </meta:ranges>
+          </gift-doc:pagination>
+        </gift-doc:pagination-group>
+      </gift-doc:node-metadata>
+      <gift-doc:document-metadata>
+        <meta:document-ids>
+          <meta:id type="Gale asset">
+            <meta:value>BICBFH745617056</meta:value>
+          </meta:id>
+        </meta:document-ids>
+        <meta:bibliographic-ids>
+          <meta:id type="PSM">
+            <meta:value>cho_iprx_1933_0001_001_0000</meta:value>
+          </meta:id>
+          <meta:id type="isbn">
+            <meta:value>1234567891012</meta:value>
+          </meta:id>
+          <meta:id type="issn">
+            <meta:value>1234-5678</meta:value>
+          </meta:id>
+        </meta:bibliographic-ids>
+        <meta:mcode>4XJF</meta:mcode>
+        <meta:publication-date>
+          <meta:structured-date>
+            <meta:year>1933</meta:year>
+            <meta:month>08</meta:month>
+            <meta:day>01</meta:day>
+            <meta:day-of-week>Wednesday</meta:day-of-week>
+          </meta:structured-date>
+          <meta:standard-date type="Start date">19330801</meta:standard-date>
+          <meta:standard-date type="End date">19330801</meta:standard-date>
+        </meta:publication-date>
+        <meta:record-admin-info>
+          <meta:standard-date type="Original">20121202</meta:standard-date>
+        </meta:record-admin-info>
+        <gift-doc:document-titles>
+          <meta:title-display>&quot;Refugees&quot;</meta:title-display>
+          <meta:title-sort>Refugees</meta:title-sort>
+          <meta:title-open-url>Refugees</meta:title-open-url>
+          <meta:subtitle>Is it a problem?</meta:subtitle>
+        </gift-doc:document-titles>
+        <meta:publication-title>Institute of Pacific Relations</meta:publication-title>
+        <meta:languages>
+          <meta:language term-id="13858590" ocr="English" ocr-term-id="13858590" primary="Y">English</meta:language>
+        </meta:languages>
+        <meta:ocr-confidence>37.53</meta:ocr-confidence>
+        <meta:authors>
+          <meta:author>
+            <meta:sobriquet>
+              <meta:name>Researcher</meta:name>
+            </meta:sobriquet>
+            <meta:composed-name>Researcher</meta:composed-name>
+          </meta:author>
+          <meta:corporate-author>Secretariat of the Institute of the Pacific Relations</meta:corporate-author>
+        </meta:authors>
+        <meta:editors>
+          <meta:editor>
+            <meta:structured-name>
+              <meta:prefix>Mr</meta:prefix>
+              <meta:first-name>James</meta:first-name>
+              <meta:middle-name>J</meta:middle-name>
+              <meta:last-name>Sears</meta:last-name>
+              <meta:suffix>SE</meta:suffix>
+            </meta:structured-name>
+            <meta:composed-name>Mr James J Sears SE</meta:composed-name>
+          </meta:editor>
+        </meta:editors>
+        <meta:descriptive-indexing>
+          <meta:indexing-term>
+            <meta:term>
+              <meta:term-type>DOC_INFO_TYPE</meta:term-type>
+              <meta:term-source>Atlas</meta:term-source>
+              <meta:term-id>22199438</meta:term-id>
+              <meta:term-value>Conference proceedings</meta:term-value>
+            </meta:term>
+          </meta:indexing-term>
+          <meta:indexing-term>
+            <meta:term>
+              <meta:term-type>DOC_INFO_TYPE</meta:term-type>
+              <meta:term-source>Atlas</meta:term-source>
+              <meta:term-id>14242630</meta:term-id>
+              <meta:term-value>Article</meta:term-value>
+            </meta:term>
+          </meta:indexing-term>
+          <meta:indexing-term>
+            <meta:term>
+              <meta:term-type>CONT_REC_TYPE</meta:term-type>
+              <meta:term-source>Atlas</meta:term-source>
+              <meta:term-id>17234672</meta:term-id>
+              <meta:term-value>Text</meta:term-value>
+            </meta:term>
+          </meta:indexing-term>
+          <meta:indexing-term>
+            <meta:term>
+              <meta:term-type>CONT_TYPE</meta:term-type>
+              <meta:term-source>Atlas</meta:term-source>
+              <meta:term-id>21901547</meta:term-id>
+              <meta:term-value>DVI-Periodical</meta:term-value>
+            </meta:term>
+          </meta:indexing-term>
+          <meta:indexing-term>
+            <meta:term>
+              <meta:term-type>FUNC_TYPE</meta:term-type>
+              <meta:term-source>Atlas</meta:term-source>
+              <meta:term-id>21787856</meta:term-id>
+              <meta:term-value>Issue-volume article record</meta:term-value>
+            </meta:term>
+          </meta:indexing-term>
+          <meta:indexing-term>
+            <meta:term>
+              <meta:term-type>ART_LANG</meta:term-type>
+              <meta:term-source>Atlas</meta:term-source>
+              <meta:term-id>13858590</meta:term-id>
+              <meta:term-value>English</meta:term-value>
+            </meta:term>
+          </meta:indexing-term>
+        </meta:descriptive-indexing>
+        <meta:source-institution>
+          <meta:institution-name>Chatham House</meta:institution-name>
+          <meta:institution-location>London</meta:institution-location>
+          <meta:copyright-statement>Copyright Royal Institute of International Affairs</meta:copyright-statement>
+        </meta:source-institution>
+        <meta:holding-institution>
+          <meta:institution-name>Chatham House</meta:institution-name>
+          <meta:institution-location>London</meta:institution-location>
+        </meta:holding-institution>
+        <meta:source-citation-group>
+          <meta:source-citation>
+            <meta:content-date>
+              <meta:structured-date>
+                <meta:year>1933</meta:year>
+                <meta:month>08</meta:month>
+                <meta:day>01</meta:day>
+              </meta:structured-date>
+              <meta:standard-date type="Start date">19330801</meta:standard-date>
+              <meta:standard-date type="End date">19330801</meta:standard-date>
+            </meta:content-date>
+          </meta:source-citation>
+        </meta:source-citation-group>
+        <meta:product-content-type type="CHO">Conference Series</meta:product-content-type>
+      </gift-doc:document-metadata>
+    </gift-doc:metadata>
+    <gift-doc:body>
+      <essay:div document-segment-type="Body text" term-id="14214508" term-source="Atlas">
+        <essay:div document-segment-type="DVI newspaper article clip" term-id="21918445" term-source="Atlas">
+          <essay:complex-meta>
+            <meta:page-id-number>0008</meta:page-id-number>
+            <meta:folio>
+              <meta:start-number>[1]</meta:start-number>
+            </meta:folio>
+          </essay:complex-meta>
+          <shared:media>
+            <media:image data-type="jpeg" width="2815" height="4076" image-type="page view" layout="single" color-mode="color" folio="[1]" sequence="0008">
+              <vault-link:vault-link>
+                <vault-link:link-type>external</vault-link:link-type>
+                <vault-link:action>point</vault-link:action>
+                <vault-link:where>
+                  <vault-link:path>cho_iprx_1933_0001_001_0008</vault-link:path>
+                </vault-link:where>
+              </vault-link:vault-link>
+            </media:image>
+          </shared:media>
+          <vault-link:vault-link>
+            <vault-link:link-type>external</vault-link:link-type>
+            <vault-link:link-category term-id="21902636" term-source="Atlas">DVI page</vault-link:link-category>
+            <vault-link:action>point</vault-link:action>
+            <vault-link:where>
+              <vault-link:path>//gift-doc:document-metadata/meta:document-ids/meta:id[@type="Gale asset"]/meta:value[.="LZTVUH023721629"]</vault-link:path>
+            </vault-link:where>
+            <vault-link:select>
+              <vault-link:document-nodes>
+                <vault-link:target>ancestor::gift-doc:document</vault-link:target>
+              </vault-link:document-nodes>
+            </vault-link:select>
+          </vault-link:vault-link>
+          <vault-link:vault-link>
+            <vault-link:link-type>external</vault-link:link-type>
+            <vault-link:link-category term-id="22176901" term-source="Atlas">DVI volume</vault-link:link-category>
+            <vault-link:action>point</vault-link:action>
+            <vault-link:where>
+              <vault-link:path>//gift-doc:document-metadata/meta:document-ids/meta:id[@type="Gale asset"]/meta:value[.="JFVPAC940924998"]</vault-link:path>
+            </vault-link:where>
+            <vault-link:select>
+              <vault-link:document-nodes>
+                <vault-link:target>ancestor::gift-doc:document</vault-link:target>
+              </vault-link:document-nodes>
+            </vault-link:select>
+          </vault-link:vault-link>
+          <essay:div document-segment-type="Body text" term-id="14214508" term-source="Atlas">
+            <essay:p>PART III Page I&#171; Introduction &#171;..........,...*&#8226;&#8226;...............................</essay:p>
+          </essay:div>
+        </essay:div>
+      </essay:div>
+    </gift-doc:body>
+  </gift-doc:document>
+</gold:document-instance>

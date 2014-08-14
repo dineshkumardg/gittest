@@ -1,0 +1,472 @@
+<gold:document-instance>
+  <gift-doc:document>
+    <gift-doc:metadata>
+      <gift-doc:node-metadata>
+        <meta:descriptive-indexing>
+          <meta:indexing-term>
+            <meta:term>
+              <meta:term-type>PUB_SEG_TYPE</meta:term-type>
+              <meta:term-source>Atlas</meta:term-source>
+              <meta:term-id>14242630</meta:term-id>
+              <meta:term-value>Article</meta:term-value>
+            </meta:term>
+          </meta:indexing-term>
+        </meta:descriptive-indexing>
+        <gift-doc:pagination-group>
+          <gift-doc:pagination>
+            <meta:total-pages>9</meta:total-pages>
+          </gift-doc:pagination>
+        </gift-doc:pagination-group>
+      </gift-doc:node-metadata>
+      <gift-doc:document-metadata>
+        <meta:document-ids>
+          <meta:id type="Gale asset">
+            <meta:value>0</meta:value>
+          </meta:id>
+        </meta:document-ids>
+        <meta:bibliographic-ids>
+          <meta:id type="PSM">
+            <meta:value>cho_meet_1972_3498_000_0000</meta:value>
+          </meta:id>
+        </meta:bibliographic-ids>
+        <meta:mcode>5XFF</meta:mcode>
+        <meta:publication-date>
+          <meta:structured-date>
+            <meta:year>1972</meta:year>
+            <meta:month>06</meta:month>
+            <meta:day>05</meta:day>
+            <meta:day-of-week>Monday</meta:day-of-week>
+          </meta:structured-date>
+          <meta:standard-date type="Start date">19720605</meta:standard-date>
+          <meta:standard-date type="End date">19720605</meta:standard-date>
+        </meta:publication-date>
+        <meta:record-admin-info>
+          <meta:standard-date type="Original">20121202</meta:standard-date>
+        </meta:record-admin-info>
+        <gift-doc:document-titles>
+          <meta:title-display>La Politica Exterior Del Gobierno De La Unidad Popular En Chile</meta:title-display>
+          <meta:title-sort>La Politica Exterior Del Gobierno De La Unidad Popular En Chile</meta:title-sort>
+          <meta:title-open-url>La Politica Exterior Del Gobierno De La Unidad Popular En Chile</meta:title-open-url>
+        </gift-doc:document-titles>
+        <meta:publication-title>Chatham House Meetings and Speeches</meta:publication-title>
+        <meta:languages>
+          <meta:language term-id="13858600" ocr="Spanish" ocr-term-id="13858600" primary="Y">Spanish</meta:language>
+        </meta:languages>
+        <meta:ocr-confidence>84.36</meta:ocr-confidence>
+        <meta:authors>
+          <meta:author>
+            <meta:structured-name>
+              <meta:prefix>Professor</meta:prefix>
+              <meta:first-name>Clodomiro</meta:first-name>
+              <meta:middle-name>Almeyda</meta:middle-name>
+              <meta:last-name>Medina</meta:last-name>
+            </meta:structured-name>
+            <meta:composed-name>Professor Clodomiro Almeyda Medina</meta:composed-name>
+          </meta:author>
+        </meta:authors>
+        <meta:descriptive-indexing>
+          <meta:indexing-term>
+            <meta:term>
+              <meta:term-type>DOC_INFO_TYPE</meta:term-type>
+              <meta:term-source>Atlas</meta:term-source>
+              <meta:term-id>17525832</meta:term-id>
+              <meta:term-value>Meeting transcript</meta:term-value>
+            </meta:term>
+          </meta:indexing-term>
+          <meta:indexing-term>
+            <meta:term>
+              <meta:term-type>CONT_REC_TYPE</meta:term-type>
+              <meta:term-source>Atlas</meta:term-source>
+              <meta:term-id>17234672</meta:term-id>
+              <meta:term-value>Text</meta:term-value>
+            </meta:term>
+          </meta:indexing-term>
+          <meta:indexing-term>
+            <meta:term>
+              <meta:term-type>CONT_TYPE</meta:term-type>
+              <meta:term-source>Atlas</meta:term-source>
+              <meta:term-id>21901545</meta:term-id>
+              <meta:term-value>DVI-Monograph</meta:term-value>
+            </meta:term>
+          </meta:indexing-term>
+          <meta:indexing-term>
+            <meta:term>
+              <meta:term-type>FUNC_TYPE</meta:term-type>
+              <meta:term-source>Atlas</meta:term-source>
+              <meta:term-id>14214546</meta:term-id>
+              <meta:term-value>Megametadocument</meta:term-value>
+            </meta:term>
+          </meta:indexing-term>
+          <meta:indexing-term>
+            <meta:term>
+              <meta:term-type>ART_LANG</meta:term-type>
+              <meta:term-source>Atlas</meta:term-source>
+              <meta:term-id>13858600</meta:term-id>
+              <meta:term-value>Spanish</meta:term-value>
+            </meta:term>
+          </meta:indexing-term>
+        </meta:descriptive-indexing>
+        <meta:source-institution>
+          <meta:institution-name>Chatham House</meta:institution-name>
+          <meta:institution-location>London</meta:institution-location>
+          <meta:copyright-statement>COPYRIGHT Royal Institute of International Affairs</meta:copyright-statement>
+        </meta:source-institution>
+        <meta:holding-institution>
+          <meta:institution-name>Chatham House</meta:institution-name>
+          <meta:institution-location>London</meta:institution-location>
+        </meta:holding-institution>
+        <meta:source-citation-group>
+          <meta:source-citation type="speech">
+            <meta:publication-date>
+              <meta:structured-date>
+                <meta:year>1972</meta:year>
+                <meta:month>06</meta:month>
+                <meta:day>05</meta:day>
+                <meta:day-of-week>Monday</meta:day-of-week>
+              </meta:structured-date>
+              <meta:standard-date type="Start date">19720605</meta:standard-date>
+              <meta:standard-date type="End date">19720605</meta:standard-date>
+            </meta:publication-date>
+            <meta:reference-number>
+              <meta:reference-number-display>RIIA/8/3498</meta:reference-number-display>
+            </meta:reference-number>
+            <meta:geo-location>Chatham House, London</meta:geo-location>
+            <meta:organization>Chatham House</meta:organization>
+            <meta:content-date>
+              <meta:structured-date>
+                <meta:year>1972</meta:year>
+                <meta:month>06</meta:month>
+                <meta:day>05</meta:day>
+              </meta:structured-date>
+              <meta:standard-date type="Start date">19720605</meta:standard-date>
+              <meta:standard-date type="End date">19720605</meta:standard-date>
+            </meta:content-date>
+          </meta:source-citation>
+        </meta:source-citation-group>
+        <shared:media>
+          <media:audio filesize="1" data-type="mp3" audio-type="inline">
+            <meta:descriptive-indexing>
+              <meta:indexing-term>
+                <meta:term>
+                  <meta:term-type>DOC_INFO_TYPE</meta:term-type>
+                  <meta:term-source>Atlas</meta:term-source>
+                  <meta:term-id>198465964</meta:term-id>
+                  <meta:term-value>Audio file</meta:term-value>
+                </meta:term>
+              </meta:indexing-term>
+            </meta:descriptive-indexing>
+            <vault-link:vault-link>
+              <vault-link:link-type>external</vault-link:link-type>
+              <vault-link:data-type>mp3</vault-link:data-type>
+              <vault-link:action>point</vault-link:action>
+              <vault-link:where>
+                <vault-link:path>cho_meet_1972_3498_000_0000.mp3</vault-link:path>
+              </vault-link:where>
+            </vault-link:vault-link>
+            <media:title>La Politica Exterior Del Gobierno De La Unidad Popular En Chile</media:title>
+          </media:audio>
+        </shared:media>
+        <meta:product-content-type type="CHO">Meetings and Speeches</meta:product-content-type>
+        <meta:content-filter type="CHO rule">No</meta:content-filter>
+      </gift-doc:document-metadata>
+    </gift-doc:metadata>
+    <gift-doc:body>
+      <essay:div document-segment-type="Body text" term-id="14214508" term-source="Atlas">
+        <essay:div document-segment-type="Page" term-id="21922233" term-source="Atlas">
+          <essay:complex-meta>
+            <meta:page-id-number>0001</meta:page-id-number>
+          </essay:complex-meta>
+          <essay:p>THE ROYAL INSTITUTE OF INTERNATIONAL AFFAIRS Chatham House, 10 St James&apos;s Square, London, S.W.I Tel. 01-930-2233 CHATHAM HOUSE ON Monday 5 June 1972 Subjects LA POLITICA EXTERIOR DEL GOBIERNO DE LA IHTIDAD POPULAR ffl CHILE Speaker; PROFESSOR CLODOMIRO ALMEYDA MEDINA Chairman2 Dp- SI^IUEL DE KADT Members are reminded that in any use made of information received at a meeting the speaker&apos;s name should not be quoted nor the fact that they heard it at Chatham House. These conditions apply equally to information obtained from written records of meetings. PRIVATE DISCUSSION MEETING HELD AT</essay:p>
+          <shared:media>
+            <media:image data-type="jpeg" width="3148" height="5135" image-type="page view" layout="single" color-mode="color" sequence="0001">
+              <vault-link:vault-link>
+                <vault-link:link-type>external</vault-link:link-type>
+                <vault-link:action>point</vault-link:action>
+                <vault-link:where>
+                  <vault-link:path>cho_meet_1972_3498_000_0001</vault-link:path>
+                </vault-link:where>
+              </vault-link:vault-link>
+            </media:image>
+          </shared:media>
+          <vault-link:vault-link>
+            <vault-link:link-type>external</vault-link:link-type>
+            <vault-link:link-category term-id="21902636" term-source="Atlas">DVI page</vault-link:link-category>
+            <vault-link:action>point</vault-link:action>
+            <vault-link:where>
+              <vault-link:path>//gift-doc:document-metadata/meta:document-ids/meta:id[@type="Gale asset"]/meta:value[.="page-1"]</vault-link:path>
+            </vault-link:where>
+            <vault-link:select>
+              <vault-link:document-nodes>
+                <vault-link:target>ancestor::gift-doc:document</vault-link:target>
+              </vault-link:document-nodes>
+            </vault-link:select>
+          </vault-link:vault-link>
+        </essay:div>
+        <essay:div document-segment-type="Page" term-id="21922233" term-source="Atlas">
+          <essay:complex-meta>
+            <meta:page-id-number>0002</meta:page-id-number>
+            <meta:folio>
+              <meta:start-number>[1]</meta:start-number>
+            </meta:folio>
+          </essay:complex-meta>
+          <essay:p>Address by the Chilean Foreign Minister, Senor Clodomiro Almeyda, delivered at Chatham House, 5th* June, 1972* It is for the Government of Chile a distinction and for myself an honour to have &quot;been invited to this meeting which gathers, in this Royal Institute of International Affairs, representative personalities of the academic community, industry, commercial and banking activities, and journalists specialized in Latin American affairs. This high tribune provides me with a valuable opportunity to talk in a direct and frank manner on some aspects of my country&apos;s foreign policy&#174; Political communities live under the impact of certain vital interests that project emotional reactions and rational beliefs, which are crystallized into social values and perfected into common objectives. All of them possess aspirations endowed with certain permanence and vigour, being the fruit of the historic process of each people and the development of its economic and social structures. Quite independently of her size and capabili&#172; ties as a State, every nation requires, to attain her international objectives, a sense of unity in her common destiny. Such unity, in its highest degree, can only originate within a force of deep popular content, intensely committed to the historic struggles of the people, to their suffering and their ideals* It is a very simple truth that the effective possibi&#172; lity of implementing a genuine foreign policy, independent and dynamic, is strongly qualified by the forms of popular participation in the inception, in the administration and in the periodical revision of the fundamental guidelines of that policy&#174; However, this truth is reflected in many ways in the design of Chile&apos;s international policy and in</essay:p>
+          <shared:media>
+            <media:image data-type="jpeg" width="3149" height="5130" image-type="page view" layout="single" color-mode="color" folio="[1]" sequence="0002">
+              <vault-link:vault-link>
+                <vault-link:link-type>external</vault-link:link-type>
+                <vault-link:action>point</vault-link:action>
+                <vault-link:where>
+                  <vault-link:path>cho_meet_1972_3498_000_0002</vault-link:path>
+                </vault-link:where>
+              </vault-link:vault-link>
+            </media:image>
+          </shared:media>
+          <vault-link:vault-link>
+            <vault-link:link-type>external</vault-link:link-type>
+            <vault-link:link-category term-id="21902636" term-source="Atlas">DVI page</vault-link:link-category>
+            <vault-link:action>point</vault-link:action>
+            <vault-link:where>
+              <vault-link:path>//gift-doc:document-metadata/meta:document-ids/meta:id[@type="Gale asset"]/meta:value[.="page-2"]</vault-link:path>
+            </vault-link:where>
+            <vault-link:select>
+              <vault-link:document-nodes>
+                <vault-link:target>ancestor::gift-doc:document</vault-link:target>
+              </vault-link:document-nodes>
+            </vault-link:select>
+          </vault-link:vault-link>
+        </essay:div>
+        <essay:div document-segment-type="Page" term-id="21922233" term-source="Atlas">
+          <essay:complex-meta>
+            <meta:page-id-number>0003</meta:page-id-number>
+            <meta:folio>
+              <meta:start-number>2</meta:start-number>
+            </meta:folio>
+          </essay:complex-meta>
+          <essay:p>the manner it is executed.&#174; Because the popular orientation of a particular policy does not transform it automatically into a unilateral manifestation, univocal and without nuances&#169; On the contrary, it enriches that policy with those tensions springing from our situation as developing countries ? as dependent nations resolved to attain the full measure of our own sovereignty and9 in the specific case of Chile, with the pluralism that is an integral part of our national path towards socialism&#174; The presence of the people as the actors of their own historical drama appears in the great principles of Chile&apos;s international actions the defense of national sovereignty, non-intervention in the internal affairs of others States, self-determination for all peoples, the rule of law in the relations among all States&#174; Paradoxically, it is also expressed in the revolutionary character of our internal and external policies, in our moral committment to the cause of the liberation of the oppressed peoples, and in our consistent search for a more just system of interna&#172; tional relations&#174; The popular content emerges in the dia lectical relationship &quot;between diplomacy and design, con&#172; tinuity and change, tradition and revolution&#174; On one side, foreign policy does not exist on a plane different from the rest of human activities&#174; To a certain extent, it will be explicable in terms of concrete social and economic interests and of the geographical or geo&#172; political situation, and all the dangers and involvements arising from these&#174; The making and the execution of foreign policy will be inextricably involved with each other and diplomacy will not, in the ordinary exercise of its func&#172; tion, uproot itself from its society or become emancipated from the will of the people&#174;</essay:p>
+          <shared:media>
+            <media:image data-type="jpeg" width="3148" height="5135" image-type="page view" layout="single" color-mode="color" folio="2" sequence="0003">
+              <vault-link:vault-link>
+                <vault-link:link-type>external</vault-link:link-type>
+                <vault-link:action>point</vault-link:action>
+                <vault-link:where>
+                  <vault-link:path>cho_meet_1972_3498_000_0003</vault-link:path>
+                </vault-link:where>
+              </vault-link:vault-link>
+            </media:image>
+          </shared:media>
+          <vault-link:vault-link>
+            <vault-link:link-type>external</vault-link:link-type>
+            <vault-link:link-category term-id="21902636" term-source="Atlas">DVI page</vault-link:link-category>
+            <vault-link:action>point</vault-link:action>
+            <vault-link:where>
+              <vault-link:path>//gift-doc:document-metadata/meta:document-ids/meta:id[@type="Gale asset"]/meta:value[.="page-3"]</vault-link:path>
+            </vault-link:where>
+            <vault-link:select>
+              <vault-link:document-nodes>
+                <vault-link:target>ancestor::gift-doc:document</vault-link:target>
+              </vault-link:document-nodes>
+            </vault-link:select>
+          </vault-link:vault-link>
+        </essay:div>
+        <essay:div document-segment-type="Page" term-id="21922233" term-source="Atlas">
+          <essay:complex-meta>
+            <meta:page-id-number>0004</meta:page-id-number>
+            <meta:folio>
+              <meta:start-number>3</meta:start-number>
+            </meta:folio>
+          </essay:complex-meta>
+          <essay:p>As President Allende stated on his assumption of power, &quot;in our case and in this hour the pursuit and defense of the traditional principles of Chile&#167;s foreign policy re&#172; present for the Government of the Popular Unity the nece&#8482; * ssary conditions for the fulfillment of their vast and ambitious programme of social transformations, since they imply as a counterparty the recognition &quot;by all the other States of the Chilean right to choose the social system freely decided upon by the people, without any alien interference, and of the right to struggle to break the links of economic, political and cultural dependence that limit her effective autonomy and impede her development towards higher forms of life&#174;&quot; However, together with the exact value attributed to established practices, we must open the way to new ideas&#174; Policy is determined by men&#174; It is not a demoniacal force controlling the destiny of nations in a way beyond rational controlo Where statesmen cling to dogma; where they appeal to fate; where they pursue ends in disregards of means or of consequences; then they have abandoned policy and denied the power of reason&#174; On the contrary, the revolutionary drive of the policy of the Government of Chile is founded upon a rational and lucid design&#174; That is why we can maintain with serenity the legiti&#172; macy of our actions and the genuinely contemporary charac ter of our policy&#174; You all know the reasons for our decision to re-establish diplomatic relations with Cuba and to establish them with the Peoples Republic of China, the German Democratic Republic and other Socialist countries&#174; It is no other than a coherent application of the rule of universality to international relations0 It is the international pluralism that logically flows from the internal pluralism&#174;</essay:p>
+          <shared:media>
+            <media:image data-type="jpeg" width="3149" height="5130" image-type="page view" layout="single" color-mode="color" folio="3" sequence="0004">
+              <vault-link:vault-link>
+                <vault-link:link-type>external</vault-link:link-type>
+                <vault-link:action>point</vault-link:action>
+                <vault-link:where>
+                  <vault-link:path>cho_meet_1972_3498_000_0004</vault-link:path>
+                </vault-link:where>
+              </vault-link:vault-link>
+            </media:image>
+          </shared:media>
+          <vault-link:vault-link>
+            <vault-link:link-type>external</vault-link:link-type>
+            <vault-link:link-category term-id="21902636" term-source="Atlas">DVI page</vault-link:link-category>
+            <vault-link:action>point</vault-link:action>
+            <vault-link:where>
+              <vault-link:path>//gift-doc:document-metadata/meta:document-ids/meta:id[@type="Gale asset"]/meta:value[.="page-4"]</vault-link:path>
+            </vault-link:where>
+            <vault-link:select>
+              <vault-link:document-nodes>
+                <vault-link:target>ancestor::gift-doc:document</vault-link:target>
+              </vault-link:document-nodes>
+            </vault-link:select>
+          </vault-link:vault-link>
+        </essay:div>
+        <essay:div document-segment-type="Page" term-id="21922233" term-source="Atlas">
+          <essay:complex-meta>
+            <meta:page-id-number>0005</meta:page-id-number>
+            <meta:folio>
+              <meta:start-number>4</meta:start-number>
+            </meta:folio>
+          </essay:complex-meta>
+          <essay:p>Cooperation based upon equality,, independence and mutual interest represents the only solid foundation for international relations&#174; But the desire to ennoble and liberalize those relations is obstinately opposed by the forces of &quot;statu quo&quot;, representing the actual domination and possession, in the international as in the internal fields&#174; Among those forces we must count imperialism which creates a state of latent intimidation; corrodes and absorbs; finds in agression arguments to sacrifice its own citizens; constantly obsessed with its own security trig&#172; gers the arms race; and blindly precipitates towards a final collission whose result could only be the enslave&#172; ment or the destruction of Humanity&#174; The objective of liberating our basic resources from its domination by foreign imperialism has imposed a heavy burden on Chilean international policy2 to face straightly and with the dignity of a free people the economic power entrenched in our country9 Our constant concern has been to maintain a vigilant attitude to prevent political isolation and to evade any deceiptful manoeuvre of external provocation&#174; So far we have been successful in this policy&#174; We have made of the concept of ideological pluralism a force that by its own weight imposes itself upon Latin America and defeats the other9 dangerous and anachronistic policy of the so called &quot;ideological frontiers&quot;&#174; We have succeeded in maintaining normal relations with the United States of America; we have consolidated as never before the close ties which bind us indissolubly with the Latin American nations; our relations with the Argentine Republic, whose boundaries with Chile extend for more than 4 thousand kilometers, are at present at their highest level both in</essay:p>
+          <shared:media>
+            <media:image data-type="jpeg" width="3148" height="5135" image-type="page view" layout="single" color-mode="color" folio="4" sequence="0005">
+              <vault-link:vault-link>
+                <vault-link:link-type>external</vault-link:link-type>
+                <vault-link:action>point</vault-link:action>
+                <vault-link:where>
+                  <vault-link:path>cho_meet_1972_3498_000_0005</vault-link:path>
+                </vault-link:where>
+              </vault-link:vault-link>
+            </media:image>
+          </shared:media>
+          <vault-link:vault-link>
+            <vault-link:link-type>external</vault-link:link-type>
+            <vault-link:link-category term-id="21902636" term-source="Atlas">DVI page</vault-link:link-category>
+            <vault-link:action>point</vault-link:action>
+            <vault-link:where>
+              <vault-link:path>//gift-doc:document-metadata/meta:document-ids/meta:id[@type="Gale asset"]/meta:value[.="page-5"]</vault-link:path>
+            </vault-link:where>
+            <vault-link:select>
+              <vault-link:document-nodes>
+                <vault-link:target>ancestor::gift-doc:document</vault-link:target>
+              </vault-link:document-nodes>
+            </vault-link:select>
+          </vault-link:vault-link>
+        </essay:div>
+        <essay:div document-segment-type="Page" term-id="21922233" term-source="Atlas">
+          <essay:complex-meta>
+            <meta:page-id-number>0006</meta:page-id-number>
+            <meta:folio>
+              <meta:start-number>5</meta:start-number>
+            </meta:folio>
+          </essay:complex-meta>
+          <essay:p>the political and in the commercial fields, a solid personal friendship links President Allende and Lanusse, and I dare to venture that never before in our history have all these bonds of affection &quot;been stronger than now*. We have also strengthened our relations with the countries of the Andean Pact, specially Peru, Colombia and Ecuador, whose govern&#172; ments invited President Allende to a successful visit of their countries&#8226; The visit of the President of Mexico to Chile, last April, was a significant expression of support to the Chilean foreign policy of recuperation of our basic resources and to our fight against imperialism&#174; We have put the foundations of a historic cooperation with the Socia&#172; list countries; we have reinforced and emphasized our economic links with Japan and Western Europe, fostering a policy of mutually advantageous understandings* Finally, we have succeeded in making the scope of our internal effort fully understood, thereby obtaining support for our request of renegotiation of the external debt&#174; Because we oppose blocks and we favour an overall system of collective security, Chile became officially a member last year of the Group of Non Aligned countries and has the firm intention of carrying an active participation in its meetings held under the principles and ends con&#172; tained in the Chart of the Lusaka Conference&#187; We are faith ful members, since its creation, of the United Nations and we cooperate with enthusiasm in all her organizations&#174; We participate in every meeting of the regional organism of our hemisphere, the Organization of American States, but we have pointed very frankly that it must reform itself to put an end to two mistaken assumptions: that there is an identity of interests between the United States and Latin America and that there can be juridical equality among its members, that is the most rich country of the</essay:p>
+          <shared:media>
+            <media:image data-type="jpeg" width="3149" height="5130" image-type="page view" layout="single" color-mode="color" folio="5" sequence="0006">
+              <vault-link:vault-link>
+                <vault-link:link-type>external</vault-link:link-type>
+                <vault-link:action>point</vault-link:action>
+                <vault-link:where>
+                  <vault-link:path>cho_meet_1972_3498_000_0006</vault-link:path>
+                </vault-link:where>
+              </vault-link:vault-link>
+            </media:image>
+          </shared:media>
+          <vault-link:vault-link>
+            <vault-link:link-type>external</vault-link:link-type>
+            <vault-link:link-category term-id="21902636" term-source="Atlas">DVI page</vault-link:link-category>
+            <vault-link:action>point</vault-link:action>
+            <vault-link:where>
+              <vault-link:path>//gift-doc:document-metadata/meta:document-ids/meta:id[@type="Gale asset"]/meta:value[.="page-6"]</vault-link:path>
+            </vault-link:where>
+            <vault-link:select>
+              <vault-link:document-nodes>
+                <vault-link:target>ancestor::gift-doc:document</vault-link:target>
+              </vault-link:document-nodes>
+            </vault-link:select>
+          </vault-link:vault-link>
+        </essay:div>
+        <essay:div document-segment-type="Page" term-id="21922233" term-source="Atlas">
+          <essay:complex-meta>
+            <meta:page-id-number>0007</meta:page-id-number>
+            <meta:folio>
+              <meta:start-number>6</meta:start-number>
+            </meta:folio>
+          </essay:complex-meta>
+          <essay:p>world and twenty four underdeveloped nations&#174; While these fictions are maintained, the OAS will not be able to accomplish a useful task in our continent&#174; On the other hand, we fully support the liberating action of CECLA, a body that unites the just aspirations of our developing countries&#171; However we must realize that the forces of &quot;status quo&quot; are not just those embodied by economic or political imperialism&#174; They are all the obscure, accomplices, that attempt to ignore that in an interdependent world wealth and poverty have become indivisible and that the power and increasing welfare of those nations endowed with superior means of economic productivity is partly the result of exploitation of the weak&#174; At the Third UNCTAD, which I was honoured to preside, Chile emphasized the necessity that the new international monetary system that will replace the mould existent since Bretton Woods be structured in democratic consultation with all the countries of the worlds My country maintained the convenience of creating a mechanism of automatic renegotia&#172; tions of the heavy external debt that the poor countries must bear&#174; She requested the respect of all countries for the decisions adopted by the less powerful countries within their own juridical framework and in the context of Inter&#172; national law&#174; Finally, the Chilean Government vehemently insisted upon the urgency of replacing a war economy by a peace economy to serve all mankind&#174; The greatest threat to the present international system, and its principal shortcoming, is the narrow- mindedness and selfishness of certain social groups&#174; This selfishness seeks to deny to other men and nations rights previously claimed for one&apos;s own group; modern science is</essay:p>
+          <shared:media>
+            <media:image data-type="jpeg" width="3148" height="5135" image-type="page view" layout="single" color-mode="color" folio="6" sequence="0007">
+              <vault-link:vault-link>
+                <vault-link:link-type>external</vault-link:link-type>
+                <vault-link:action>point</vault-link:action>
+                <vault-link:where>
+                  <vault-link:path>cho_meet_1972_3498_000_0007</vault-link:path>
+                </vault-link:where>
+              </vault-link:vault-link>
+            </media:image>
+          </shared:media>
+          <vault-link:vault-link>
+            <vault-link:link-type>external</vault-link:link-type>
+            <vault-link:link-category term-id="21902636" term-source="Atlas">DVI page</vault-link:link-category>
+            <vault-link:action>point</vault-link:action>
+            <vault-link:where>
+              <vault-link:path>//gift-doc:document-metadata/meta:document-ids/meta:id[@type="Gale asset"]/meta:value[.="page-7"]</vault-link:path>
+            </vault-link:where>
+            <vault-link:select>
+              <vault-link:document-nodes>
+                <vault-link:target>ancestor::gift-doc:document</vault-link:target>
+              </vault-link:document-nodes>
+            </vault-link:select>
+          </vault-link:vault-link>
+        </essay:div>
+        <essay:div document-segment-type="Page" term-id="21922233" term-source="Atlas">
+          <essay:complex-meta>
+            <meta:page-id-number>0008</meta:page-id-number>
+            <meta:folio>
+              <meta:start-number>7</meta:start-number>
+            </meta:folio>
+          </essay:complex-meta>
+          <essay:p>exploited for certain interests and a small number of men instead of being employed to benefit humanity as a whole; using atomic energy and rocket power to intimidate other men&#174; Man has conquered nature, but instead of using his power to broaden his horizons and enrich his society, he applies it to squabbling over the world which thus becomes ever smaller and more oppressive0 In recent years a particular form of Latin American nationalism has intensified, as a reaction to this exclusi- vism of Western civilization&#174; Such sentiment coincides with the realization that one of Latin America&apos;s basic problems is her growing external dependence in the economic, cultural and political fields&#174; This acknowledgement, combined with the realisation that the other continents and sub-continents- Europa, the United States, and the Socialist countries - have unity, is producing a new nationalims, which tracends former national rivalries&#174; It is the result of a conviction, which has matured for economic reasons, but which extends to the political and cultural sphere, thus creating a Latin American style, thought and personality&#174; Trascending all doctrinaire considerations, Latin America is our own cir&#172; cumstance e A Latin America which can only develop united, facing without complexes, on a equal basis, co-operating, negotiating, participating or disagreeing with all its interlocutors &#8226; I trust that these explanations may serve to give you an image, a profile of those values and priorities that inspire Chile&apos;s international policy* The policy of a government that proposes to achieve in Chile the revolu&#172; tionary transformations that are indispensable to overcome under-development must of necessity be coordinated through an articulate international action with all those forces which work at the world level to eliminate backwardness,</essay:p>
+          <shared:media>
+            <media:image data-type="jpeg" width="3149" height="5130" image-type="page view" layout="single" color-mode="color" folio="7" sequence="0008">
+              <vault-link:vault-link>
+                <vault-link:link-type>external</vault-link:link-type>
+                <vault-link:action>point</vault-link:action>
+                <vault-link:where>
+                  <vault-link:path>cho_meet_1972_3498_000_0008</vault-link:path>
+                </vault-link:where>
+              </vault-link:vault-link>
+            </media:image>
+          </shared:media>
+          <vault-link:vault-link>
+            <vault-link:link-type>external</vault-link:link-type>
+            <vault-link:link-category term-id="21902636" term-source="Atlas">DVI page</vault-link:link-category>
+            <vault-link:action>point</vault-link:action>
+            <vault-link:where>
+              <vault-link:path>//gift-doc:document-metadata/meta:document-ids/meta:id[@type="Gale asset"]/meta:value[.="page-8"]</vault-link:path>
+            </vault-link:where>
+            <vault-link:select>
+              <vault-link:document-nodes>
+                <vault-link:target>ancestor::gift-doc:document</vault-link:target>
+              </vault-link:document-nodes>
+            </vault-link:select>
+          </vault-link:vault-link>
+        </essay:div>
+        <essay:div document-segment-type="Page" term-id="21922233" term-source="Atlas">
+          <essay:complex-meta>
+            <meta:page-id-number>0009</meta:page-id-number>
+            <meta:folio>
+              <meta:start-number>8</meta:start-number>
+            </meta:folio>
+          </essay:complex-meta>
+          <essay:p>poverty, ignorance and the exploitation of man by its fellow iens Given all these elements which materialize our inter&#172; national presence* what possibilities of understanding, what links, what types of cooperation are possible with Great Britain and with Europe ? I can forsee this question, it must be in your minds in the actual circumstances, when the United Kingdom enters into the European Comunity and Chile empha&#172; sizes its committment to Latin America and to the &quot;Third World&quot;&#8226; Several generations of Chileans have looked towards Great Britain&#174; They do not forget the influence of the political philosophy of Great Britain already visible in the days of our early independence, when our first newspaper &quot;The Dawn of Chile&quot; reproduced Milton&apos;s great essay on freedom&#174; Nor can they forget that it was in this city of London where 0!Higgins grew spiritually, where Egana acquired his great admiration for British institutions, where Irisarri contracted the first loan for the newly born republic and where Bello mastered the philosophy of Bentham (who was the first thinker to make a plea for the abolition of secret diplomacy and for democracy in international relations)&#174; Today, when Chile starts on the difficult path of its internal transformation, we are also inspired by the historic example of England - after the Cromweliian Revolution - falling back on itself and finding in her internal effort the fountainhead of great energies&#174; Finally, towards Europe as a whole, and towards a Britain integrated to European unity, our looks are directed* As ideological pluralism is a necessary condition of our own way towards socialism, we find ourselves on a common ground - that of the essentially pluralistic European culture - ready to begin the great veering which will take us to the encounter of yet more dramatic questions and more definitive answers&#174;</essay:p>
+          <shared:media>
+            <media:image data-type="jpeg" width="3149" height="5135" image-type="page view" layout="single" color-mode="color" folio="8" sequence="0009">
+              <vault-link:vault-link>
+                <vault-link:link-type>external</vault-link:link-type>
+                <vault-link:action>point</vault-link:action>
+                <vault-link:where>
+                  <vault-link:path>cho_meet_1972_3498_000_0009</vault-link:path>
+                </vault-link:where>
+              </vault-link:vault-link>
+            </media:image>
+          </shared:media>
+          <vault-link:vault-link>
+            <vault-link:link-type>external</vault-link:link-type>
+            <vault-link:link-category term-id="21902636" term-source="Atlas">DVI page</vault-link:link-category>
+            <vault-link:action>point</vault-link:action>
+            <vault-link:where>
+              <vault-link:path>//gift-doc:document-metadata/meta:document-ids/meta:id[@type="Gale asset"]/meta:value[.="page-9"]</vault-link:path>
+            </vault-link:where>
+            <vault-link:select>
+              <vault-link:document-nodes>
+                <vault-link:target>ancestor::gift-doc:document</vault-link:target>
+              </vault-link:document-nodes>
+            </vault-link:select>
+          </vault-link:vault-link>
+        </essay:div>
+      </essay:div>
+    </gift-doc:body>
+  </gift-doc:document>
+</gold:document-instance>

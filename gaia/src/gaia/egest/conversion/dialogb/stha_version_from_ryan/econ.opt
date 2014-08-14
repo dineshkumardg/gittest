@@ -1,0 +1,23 @@
+! file: econ.opt
+
+! Used by Perl converter
+log_dir:		/gale/prod-i1/data/workflow/conversion_workflow/dvi_content_conversion/ocm_space/bl_ncukp/logs/ECON/
+completed_dir:		/gale/prod-i1/data/workflow/conversion_workflow/dvi_content_conversion/ocm_space/bl_ncukp/manifests/completed/ECON/
+output_dir:		/gale/prod-i1/data/workflow/conversion_workflow/dvi_content_conversion/ocm_space/bl_ncukp/output/ECON/ECON_output/
+input_dir:		/gale/prod-i1/data/workflow/conversion_workflow/dvi_content_conversion/ocm_space/bl_ncukp/ftp_data/ECON/ECON_input/
+headnote_dir_unix:	/auto/groups/history_team/projects/DVI_Newspapers/control_files/headnotes/
+headnote_dir_vms:	DMR:[DB.ECON.HEADNOTES]
+metadata_file_unix:     /auto/groups/history_team/projects/DVI_Newspapers/control_files/econ_lookup.txt
+metadata_file_vms:	DMR:[DB.ECON.META]econ_lookup.txt
+table_dir:		/gale/prod-i1/data/workflow/conversion_workflow/dvi_content_conversion/ocm_space/bl_ncukp/ftp_data/ECON/ECON_tables/
+dvi_ng_map_unix:        /auto/groups/history_team/projects/DVI_Newspapers/control_files/DVI_NG_map.txt
+dvi_il_map_unix:        /auto/groups/history_team/projects/DVI_Newspapers/control_files/DVI_IL_map.txt
+dvi_ng_map_vms:         QRFCPS3:[PE.ECON.CONTROL_FILES]DVI_NG_ECONmap.txt
+dvi_il_map_vms:         QRFCPS3:[PE.ECON.CONTROL_FILES]DVI_IL_map.txt
+PageIDList_unix:	/auto/groups/history_team/projects/DVI_Newspapers/control_files/ECONPageIDList.txt
+PageIDList_vms:		QRFCPS3:[PE.ECON.CONTROL_FILES]ECONPageIDList.txt
+TableIDList:		/auto/groups/history_team/projects/DVI_Newspapers/control_files/ECONTableIDList.txt
+dvi_name:               econ
+xxrn:			CT
+spotlight_file: 	/auto/groups/history_team/projects/DVI_Newspapers/control_files/ECON_Spotlight_lookup.xls
+email:			ryan.cartmill@cengage.com

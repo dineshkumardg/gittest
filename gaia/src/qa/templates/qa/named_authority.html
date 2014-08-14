@@ -1,0 +1,138 @@
+{% extends "qa/base.html" %}
+{% block title %}named authority{% endblock %}
+
+{% load util_tags %}
+
+{% block content %}
+
+<link rel="stylesheet" href="{{STATIC_URL}}css/jquery-ui-themes-1.10.3/themes/smoothness/jquery-ui.css"/>
+<script src="{{STATIC_URL}}js/jquery-1.9.1.js"></script>
+<script src="{{STATIC_URL}}js/jquery-ui-1.10.3.custom.min.js"></script>
+<script>
+    $(function () {
+        $("#datepicker_from").datepicker({ dateFormat: 'dd/mm/yy' });
+
+        $("#datepicker_to").datepicker({ dateFormat: 'dd/mm/yy' });
+    });
+</script>
+
+<style>
+    div.ui-datepicker {
+        font-size: 12px;
+    }
+
+    input.datepicker_to {
+        width: 140px;
+        float: left;
+    }
+</style>
+
+<h1>named authority</h1>
+
+<table>
+<tr>
+<td valign="top">
+<ul>
+    <li>please be patient, as some searches <b>could</b> take a few minutes</li>
+    <li>search result:</li>
+    <ul>
+            <li>ordered by psmid ASC; uses LIKE %&lt;search criteria&gt;%</li>
+            <li>one row per author</li>
+            <li>assetid's belong to the article except for <em>single retrievable items</em> (meet; chbp; chrx; rpax) that use a document assetid</li>
+            <li>an assetid search might return psmid(s) whose prior-ingest contained a matching assetid, but not the latest ingest - it was levelled away</li>
+            <li>date search time is everything between 00:00:00 to 23:59:59</li>
+            <!--  <li>rejected items are not searchable</li>  -->
+     </ul>
+</ul>
+</td>
+<td nowrap>
+<ul>
+     <li>product content types:</li>
+     <ul>
+        <li>conference series: bcrc; iprx; conf</li>
+        <li>books: book</li>
+        <li>journals: binx; iaxx; wtxx</li>
+        <li>meetings: meet</li>
+        <li>pamphlets and reports: chbp; chrx; rpax</li>
+        <li>refugee survey: rsxx</li>
+        <li>survey and documents: byil; diax; dsca; sbca; siax</li>
+        <li>weekly review of foreign press: rfpc; rfpx</li>
+     </ul>
+</ul>
+</tr>
+</table>
+
+<form action="{% url named_authority %}" method="post">
+    <p>article assetid, or, psmid:
+        <input type="text" name="asset_id" value="{{asset_id}}" style="width:300px;">
+        <input type="submit" class="button" value="search" name="seach_asset_id" id="seach_asset_id"/> (substring searches possible - i.e. cho_book)
+    </p>
+
+    <p>date ingested:
+        from: <input type="text" id="datepicker_from" name="datepicker_from" value="{{datepicker_from}}" style="width:100px;"/>
+        to: <input type="text" id="datepicker_to" name="datepicker_to" value="{{datepicker_to}}" style="width:100px;"/>
+        <input type="submit" class="button" value="search" name="produce_report" id="produce_report"/> (ignores items that been re-ingested later than your 'to')
+    </p>
+</form>
+
+<!--
+<hr/>
+<form action="{% url named_authority %}" method="post">
+{{ form.as_table }}
+<input type="submit" value="Submit" />
+</form>
+-->
+
+<br/>
+
+
+{% if results%}
+        {{ context }}
+{% block content_table %}
+<div id="result_table" style="margin-right: 0px;">
+    <p>export results as <a href="csv?asset_id={{asset_id}}&amp;datepicker_from={{datepicker_from}}&amp;datepicker_to={{datepicker_to}}">csv</a> - download csv with Firefox and not IE</p>
+    <table id="result_table" style="margin-right: 0px;">
+        <thead>
+        <tr>
+            <th>
+                <div class="text">psmid</div>
+            </th>
+            <th>
+                <div class="text">article_id</div>
+            </th>
+            <th>
+                <div class="text">gift_article_title</div>
+            </th>
+            <th>
+                <div class="text">gift_author</div>
+            </th>
+            <th>
+                <div class="text">asset_id</div>
+            </th>
+            <th>
+                <div class="text">ingest_date</div>
+            </th>
+        </tr>
+        </thead>
+        <tbody>
+
+        {% for result in results %}
+        {% for r in result %}
+        <tr class="{% cycle 'row1' 'row2' %}">
+            <td nowrap><a href="{% url item r.item_id %}">{{ r.psmid }}</a>&nbsp;</td>
+            <td nowrap>{{ r.article_id }}&nbsp;</td>
+            <td nowrap>{{ r.gift_article_title|slice_string:50 }}&nbsp;</td>
+            <td nowrap>{{ r.gift_author|slice_string:50 }}&nbsp;</td>
+            <td nowrap>{{ r.asset_id }}&nbsp;</td>
+            <td nowrap>{{ r.ingest_date }}&nbsp;</td>
+        </tr>
+        {% endfor %}
+        {% endfor %}
+    </table>
+</div>
+{% endblock %}
+{% endif %}
+
+</div>
+
+{% endblock %}

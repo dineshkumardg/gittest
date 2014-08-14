@@ -1,0 +1,86 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<chapter contentType="speech"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../gaia/config/dtds/chatham_house.xsd"> /chapter/page[1]/article[1]/text/textclip[1]/articlePage
+  <metadataInfo>
+    <PSMID>cho_meet_2010_7771_001_0001</PSMID>
+    <assetID>MMM123456789</assetID>
+    <mcode>1234</mcode>
+    <language ocr="English" primary="Yes">English</language>
+    <productContentType>Meetings</productContentType>
+    <contentDate>
+      <contentComposed>1968</contentComposed>
+      <contentDecade>2000-2010</contentDecade>
+      <contentIrregular>contentIrregular</contentIrregular>
+      <contentYear>1968</contentYear>
+      <contentMonth>April</contentMonth>
+      <contentDay>01</contentDay>
+      <contentDateStart>2002-08-24</contentDateStart>
+      <contentDateEnd>2002-09-25</contentDateEnd>
+    </contentDate>
+    <chathamHouseRule>Yes</chathamHouseRule>
+    <ocr>75.60</ocr>
+    <isbn length="10">1234567890</isbn>
+    <issn>12345678</issn>
+    <sourceLibrary>
+      <libraryName>Chatham House</libraryName>
+      <libraryLocation>London, UK</libraryLocation>
+      <copyrightStatement>Copyright Statement</copyrightStatement>
+    </sourceLibrary>
+    <relatedMedia id="cho_meet_2010_7771_001_0001.mp3" mediaType="Audio" dataType="mp3" duration="12.34" assetID=""/>
+  </metadataInfo>
+  <citation>
+    <meeting>
+      <pubDate>
+        <composed>January 1963</composed>
+        <irregular>irregular</irregular>
+        <century>century</century>
+        <year>1837</year>
+        <month>May</month>
+        <day>6</day>
+        <dayofweek>Monday</dayofweek>
+        <pubDateStart>1963-01-01</pubDateStart>
+        <pubDateEnd>1963-01-31</pubDateEnd>
+      </pubDate>
+      <author role="author">
+        <aucomposed>MR LEO LOVELL</aucomposed>
+        <prefix>MR</prefix>
+        <first>Leo</first>
+        <last>Lovell</last>
+      </author>
+      <titleGroup>
+        <fullTitle>fullTitle for 1</fullTitle>
+      </titleGroup>
+      <meetingGroup>
+        <meetingNumber>RIIA/8/3174</meetingNumber>
+        <meetingLocation>Chatham House, London, UK</meetingLocation>
+        <meetingType>Speech</meetingType>
+      </meetingGroup>
+      <totalPages>1</totalPages>
+    </meeting>
+  </citation>
+  <page id="1" firstPage="Yes" type="body_page">
+    <pageImage pageIndicator="single" width="2460" height="4385" type="jpeg" colorimage="color" pagePosition="stand_alone">cho_meet_2010_7771_001_0001</pageImage>
+    <sourcePage>1</sourcePage>
+    <assetID>NNN123456789</assetID>
+    <article id="1" type="article" level="1">
+      <clip pgref="1" clipref="1"/>
+      <articleInfo>
+        <assetID>OOO123456789</assetID>
+        <language ocr="english" primary="Yes">English</language>
+        <ocr>77.77</ocr>
+        <pageCount>1</pageCount>
+      </articleInfo>
+      <text>
+        <textclip>
+          <articlePage pgref="1" clipref="1">cho_meet_2010_7771_001_0001</articlePage>
+          <p>
+            <word pos="15, 60, 47, 50">James</word>
+            <word pos="25, 60, 47, 50">was</word>
+            <word pos="35, 60, 47, 50">here </word>
+            <word pos="45, 60, 47, 50">1</word>
+          </p>
+        </textclip>
+      </text>
+    </article>
+  </page>
+</chapter>

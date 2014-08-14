@@ -1,0 +1,360 @@
+<gold:document-instance>
+  <gift-doc:document>
+    <gift-doc:metadata>
+      <gift-doc:node-metadata>
+        <meta:descriptive-indexing>
+          <meta:indexing-term>
+            <meta:term>
+              <meta:term-type>PUB_SEG_TYPE</meta:term-type>
+              <meta:term-source>Atlas</meta:term-source>
+              <meta:term-id>14242630</meta:term-id>
+              <meta:term-value>Article</meta:term-value>
+            </meta:term>
+          </meta:indexing-term>
+        </meta:descriptive-indexing>
+        <gift-doc:pagination-group>
+          <gift-doc:pagination>
+            <meta:total-pages>7</meta:total-pages>
+          </gift-doc:pagination>
+        </gift-doc:pagination-group>
+      </gift-doc:node-metadata>
+      <gift-doc:document-metadata>
+        <meta:document-ids>
+          <meta:id type="Gale asset">
+            <meta:value>2</meta:value>
+          </meta:id>
+        </meta:document-ids>
+        <meta:bibliographic-ids>
+          <meta:id type="PSM">
+            <meta:value>cho_meet_1937_0484_000_0000</meta:value>
+          </meta:id>
+        </meta:bibliographic-ids>
+        <meta:mcode>5XFF</meta:mcode>
+        <meta:publication-date>
+          <meta:structured-date>
+            <meta:year>1937</meta:year>
+            <meta:month>03</meta:month>
+            <meta:day>03</meta:day>
+            <meta:day-of-week>Wednesday</meta:day-of-week>
+          </meta:structured-date>
+          <meta:standard-date type="Start date">19370303</meta:standard-date>
+          <meta:standard-date type="End date">19370303</meta:standard-date>
+        </meta:publication-date>
+        <meta:record-admin-info>
+          <meta:standard-date type="Original">20121202</meta:standard-date>
+        </meta:record-admin-info>
+        <gift-doc:document-titles>
+          <meta:title-display>Far Eastern Group: Far Eastern Division (Meetings, Notes and Correspondence)</meta:title-display>
+          <meta:title-sort>Far Eastern Group: Far Eastern Division (Meetings, Notes and Correspondence)</meta:title-sort>
+          <meta:title-open-url>Far Eastern Group: Far Eastern Division (Meetings, Notes and Correspondence)</meta:title-open-url>
+        </gift-doc:document-titles>
+        <meta:publication-title>Chatham House Meetings and Speeches</meta:publication-title>
+        <meta:languages>
+          <meta:language term-id="13858590" ocr="English" ocr-term-id="13858590" primary="Y">English</meta:language>
+        </meta:languages>
+        <meta:ocr-confidence>82.39</meta:ocr-confidence>
+        <meta:descriptive-indexing>
+          <meta:indexing-term>
+            <meta:term>
+              <meta:term-type>DOC_INFO_TYPE</meta:term-type>
+              <meta:term-source>Atlas</meta:term-source>
+              <meta:term-id>17525832</meta:term-id>
+              <meta:term-value>Meeting transcript</meta:term-value>
+            </meta:term>
+          </meta:indexing-term>
+          <meta:indexing-term>
+            <meta:term>
+              <meta:term-type>CONT_REC_TYPE</meta:term-type>
+              <meta:term-source>Atlas</meta:term-source>
+              <meta:term-id>17234672</meta:term-id>
+              <meta:term-value>Text</meta:term-value>
+            </meta:term>
+          </meta:indexing-term>
+          <meta:indexing-term>
+            <meta:term>
+              <meta:term-type>CONT_TYPE</meta:term-type>
+              <meta:term-source>Atlas</meta:term-source>
+              <meta:term-id>21901545</meta:term-id>
+              <meta:term-value>DVI-Monograph</meta:term-value>
+            </meta:term>
+          </meta:indexing-term>
+          <meta:indexing-term>
+            <meta:term>
+              <meta:term-type>FUNC_TYPE</meta:term-type>
+              <meta:term-source>Atlas</meta:term-source>
+              <meta:term-id>14214546</meta:term-id>
+              <meta:term-value>Megametadocument</meta:term-value>
+            </meta:term>
+          </meta:indexing-term>
+          <meta:indexing-term>
+            <meta:term>
+              <meta:term-type>ART_LANG</meta:term-type>
+              <meta:term-source>Atlas</meta:term-source>
+              <meta:term-id>13858590</meta:term-id>
+              <meta:term-value>English</meta:term-value>
+            </meta:term>
+          </meta:indexing-term>
+        </meta:descriptive-indexing>
+        <meta:source-institution>
+          <meta:institution-name>Chatham House</meta:institution-name>
+          <meta:institution-location>London</meta:institution-location>
+          <meta:copyright-statement>COPYRIGHT Royal Institute of International Affairs</meta:copyright-statement>
+        </meta:source-institution>
+        <meta:holding-institution>
+          <meta:institution-name>Chatham House</meta:institution-name>
+          <meta:institution-location>London</meta:institution-location>
+        </meta:holding-institution>
+        <meta:source-citation-group>
+          <meta:source-citation type="speech">
+            <meta:publication-date>
+              <meta:structured-date>
+                <meta:year>1937</meta:year>
+                <meta:month>03</meta:month>
+                <meta:day>03</meta:day>
+                <meta:day-of-week>Wednesday</meta:day-of-week>
+              </meta:structured-date>
+              <meta:standard-date type="Start date">19370303</meta:standard-date>
+              <meta:standard-date type="End date">19370303</meta:standard-date>
+            </meta:publication-date>
+            <meta:reference-number>
+              <meta:reference-number-display>RIIA/8/484</meta:reference-number-display>
+            </meta:reference-number>
+            <meta:geo-location>Chatham House, London</meta:geo-location>
+            <meta:organization>Chatham House</meta:organization>
+            <meta:content-date>
+              <meta:structured-date>
+                <meta:year>1937</meta:year>
+                <meta:month>03</meta:month>
+                <meta:day>03</meta:day>
+              </meta:structured-date>
+              <meta:standard-date type="Start date">19370303</meta:standard-date>
+              <meta:standard-date type="End date">19370303</meta:standard-date>
+            </meta:content-date>
+          </meta:source-citation>
+        </meta:source-citation-group>
+        <meta:product-content-type type="CHO">Meetings and Speeches</meta:product-content-type>
+        <meta:content-filter type="CHO rule">No</meta:content-filter>
+      </gift-doc:document-metadata>
+    </gift-doc:metadata>
+    <gift-doc:body>
+      <essay:div document-segment-type="Body text" term-id="14214508" term-source="Atlas">
+        <essay:div document-segment-type="Page" term-id="21922233" term-source="Atlas">
+          <essay:complex-meta>
+            <meta:page-id-number>0001</meta:page-id-number>
+          </essay:complex-meta>
+          <essay:p>g/&lt;^ DISCUSSION MEETING. far East Division; Sixth Meeting. Wed^&apos;aday, March 3rd., 1937. Chairman: General Sir Kenneth Wigram.</essay:p>
+          <shared:media>
+            <media:image data-type="jpeg" width="3400" height="5600" image-type="page view" layout="single" color-mode="color" sequence="0001">
+              <vault-link:vault-link>
+                <vault-link:link-type>external</vault-link:link-type>
+                <vault-link:action>point</vault-link:action>
+                <vault-link:where>
+                  <vault-link:path>cho_meet_1937_0484_000_0001</vault-link:path>
+                </vault-link:where>
+              </vault-link:vault-link>
+            </media:image>
+          </shared:media>
+          <vault-link:vault-link>
+            <vault-link:link-type>external</vault-link:link-type>
+            <vault-link:link-category term-id="21902636" term-source="Atlas">DVI page</vault-link:link-category>
+            <vault-link:action>point</vault-link:action>
+            <vault-link:where>
+              <vault-link:path>//gift-doc:document-metadata/meta:document-ids/meta:id[@type="Gale asset"]/meta:value[.="q"]</vault-link:path>
+            </vault-link:where>
+            <vault-link:select>
+              <vault-link:document-nodes>
+                <vault-link:target>ancestor::gift-doc:document</vault-link:target>
+              </vault-link:document-nodes>
+            </vault-link:select>
+          </vault-link:vault-link>
+        </essay:div>
+        <essay:div document-segment-type="Page" term-id="21922233" term-source="Atlas">
+          <essay:complex-meta>
+            <meta:page-id-number>0002</meta:page-id-number>
+          </essay:complex-meta>
+          <essay:p>Royal Institute of International Affairs Chatham house, 10, St. James&apos;s Square, S.W.I. tel.: Whitehall 2233. Par East 11. DISCUSSION MEETINGS SECTION: FAR EAST DIVISION. The 6th Par East Discussion Meeting will be held at 5.30 p.m. on Wednesday, March 3rd, 1937 at Chatham House. Mr. Harrold has con&#172; sented to cpen the discussion with a short resume of the position in Japan. February 15th, 1937. KENNETH WIGRAM Convenor</essay:p>
+          <shared:media>
+            <media:image data-type="jpeg" width="2205" height="1383" image-type="page view" layout="single" color-mode="color" sequence="0002">
+              <vault-link:vault-link>
+                <vault-link:link-type>external</vault-link:link-type>
+                <vault-link:action>point</vault-link:action>
+                <vault-link:where>
+                  <vault-link:path>cho_meet_1937_0484_000_0002</vault-link:path>
+                </vault-link:where>
+              </vault-link:vault-link>
+            </media:image>
+          </shared:media>
+          <vault-link:vault-link>
+            <vault-link:link-type>external</vault-link:link-type>
+            <vault-link:link-category term-id="21902636" term-source="Atlas">DVI page</vault-link:link-category>
+            <vault-link:action>point</vault-link:action>
+            <vault-link:where>
+              <vault-link:path>//gift-doc:document-metadata/meta:document-ids/meta:id[@type="Gale asset"]/meta:value[.="w"]</vault-link:path>
+            </vault-link:where>
+            <vault-link:select>
+              <vault-link:document-nodes>
+                <vault-link:target>ancestor::gift-doc:document</vault-link:target>
+              </vault-link:document-nodes>
+            </vault-link:select>
+          </vault-link:vault-link>
+        </essay:div>
+        <essay:div document-segment-type="Page" term-id="21922233" term-source="Atlas">
+          <essay:complex-meta>
+            <meta:page-id-number>0003</meta:page-id-number>
+          </essay:complex-meta>
+          <essay:p>POST CARD ADDRESS ONLY TO BE WRITTEN ON THIS SIDE .&#8226; -fc&#187;o O- &#8226; - \ -t v</essay:p>
+          <shared:media>
+            <media:image data-type="jpeg" width="2206" height="1389" image-type="page view" layout="single" color-mode="color" sequence="0003">
+              <vault-link:vault-link>
+                <vault-link:link-type>external</vault-link:link-type>
+                <vault-link:action>point</vault-link:action>
+                <vault-link:where>
+                  <vault-link:path>cho_meet_1937_0484_000_0003</vault-link:path>
+                </vault-link:where>
+              </vault-link:vault-link>
+            </media:image>
+          </shared:media>
+          <vault-link:vault-link>
+            <vault-link:link-type>external</vault-link:link-type>
+            <vault-link:link-category term-id="21902636" term-source="Atlas">DVI page</vault-link:link-category>
+            <vault-link:action>point</vault-link:action>
+            <vault-link:where>
+              <vault-link:path>//gift-doc:document-metadata/meta:document-ids/meta:id[@type="Gale asset"]/meta:value[.="e"]</vault-link:path>
+            </vault-link:where>
+            <vault-link:select>
+              <vault-link:document-nodes>
+                <vault-link:target>ancestor::gift-doc:document</vault-link:target>
+              </vault-link:document-nodes>
+            </vault-link:select>
+          </vault-link:vault-link>
+        </essay:div>
+        <essay:div document-segment-type="Page" term-id="21922233" term-source="Atlas">
+          <essay:complex-meta>
+            <meta:page-id-number>0004</meta:page-id-number>
+          </essay:complex-meta>
+          <essay:p>Far East 12. THE ROYAL INSTITUTE OF INTERNATIONAL AFFAIRS Chatham House, 10 St James&apos;s Square, London, S.W.I SUMMARY OP DISCUSSIONS HELD BY THE FAR EAST DIVISION JAPANt Mistrust of Russia combined with the desire to secure the Homeland against the menace of a^r attack by Russia was and still is the underlying motive- which governs Japan1s policy of expansion on the continent. The revival of Russia and the exclusion of Japan from world markets combined, with economic distress within Japan necessitated a modification of this policy which then took the form of penetration into North China. The pact with Germany, though ostensibly directed against Gorimunisri, is designed to improve the military efficiency of the army. CHINA: Politically China is in a fluid state though there are signs of a coherent national determination to resist further Japanese penetration if necessary by resort to war. Though hampered in their efforts to stabilise the country by internal dissensions and lack of capital, Nanking is averse to seeking foreign aid and prefers to pursue an isolationist policy. Although prima facie the interests of the two parties appear to be diametrically opposed and in practice irreconcilable there is one factor which is common to the problems confronting each party, namely the lack of the capital necessary to implement their policies. The state of Japanese finances is such as to cause concern and even wonder whether she will, be able to avert collapse. Although she has already sunk a large amount of capital in Manchukuo it is not giving her adequate return and more capital is required.. Considerable capital outlay will be necessary if she is to justify her venture in North China in the eyes -of her people. Is her expansion on the continent in any way related to her internal economic condition? In like manner China requires capital to develop her railways, her agriculture and her industries, and it is largely her inability to develop these in North China at the pace Japan desires which incites Japan to trespass in that region. Great Britain is seeking means of expanding her export trade and is anxious to maintain and if possible to increase her trade in the Par East. She would view with concern the complete collapse of Japan since that might Involve the transference of undue powder to Russia. She can afford to export capital, Prom a military point of view her position in the Par East is weak.</essay:p>
+          <shared:media>
+            <media:image data-type="jpeg" width="3400" height="5600" image-type="page view" layout="single" color-mode="color" sequence="0004">
+              <vault-link:vault-link>
+                <vault-link:link-type>external</vault-link:link-type>
+                <vault-link:action>point</vault-link:action>
+                <vault-link:where>
+                  <vault-link:path>cho_meet_1937_0484_000_0004</vault-link:path>
+                </vault-link:where>
+              </vault-link:vault-link>
+            </media:image>
+          </shared:media>
+          <vault-link:vault-link>
+            <vault-link:link-type>external</vault-link:link-type>
+            <vault-link:link-category term-id="21902636" term-source="Atlas">DVI page</vault-link:link-category>
+            <vault-link:action>point</vault-link:action>
+            <vault-link:where>
+              <vault-link:path>//gift-doc:document-metadata/meta:document-ids/meta:id[@type="Gale asset"]/meta:value[.="r"]</vault-link:path>
+            </vault-link:where>
+            <vault-link:select>
+              <vault-link:document-nodes>
+                <vault-link:target>ancestor::gift-doc:document</vault-link:target>
+              </vault-link:document-nodes>
+            </vault-link:select>
+          </vault-link:vault-link>
+        </essay:div>
+        <essay:div document-segment-type="Page" term-id="21922233" term-source="Atlas">
+          <essay:complex-meta>
+            <meta:page-id-number>0005</meta:page-id-number>
+          </essay:complex-meta>
+          <essay:p>Is there any future for British investments, (a) in cooperation with Japanese interests alone? {b) in cooperation with Chinese interests alone? (c) in cooperation with both Japan and China by means of tripartite collaboration? Cooperation with Japan alone would raise the following* issues: t-i) Japan of her own free will invaded and occupied Manchuria, withdrew from the League, and virtually renounced the Nine Power Treaty. In the face of this record is it reasonable to expect H.H.G. to take the initiative in extending the hand of friendship and offering to cooperate? (ii); Japan is inclined to excuse her action on the grounds of the exclusive policy practised against her by the world in general particularly in respect f racial discrimination and exclusion fron world markets. Is H.H.G. prepared or in a position to consider any modification of existing policies? (iii) The moral aspect of lending money on the security of Japanese bayonets. {iv) The reactions such cooperation would have on China, the U.S.A., the League and on other world Powers&#8226; (v) The repercussions such cooperation mtgkfc have on Russia. (vi) The willingness of Japan to accept cpoperation and the security and share of control she would be prepared to offer. Cooperation with China alone would raise the question of her willingness to accept such cooperation, the security she would be prepared to give, the share of control she would be prepared to concede, the readiness of H.M.G. to raise the present embargo on foreign loans, and the willing&#172; ness of the public to lend the money required. Cooperation with both would involve diplomatic negotiations between the three Powers, with*the U.S.A. and possibly with Russia. Taking these factors into consideration is cooperation desirable and/or practicable? If so what form should it take. Chatham House, 3rd March, 1937. St. Janes i s Square, S.W.I,</essay:p>
+          <shared:media>
+            <media:image data-type="jpeg" width="3400" height="5600" image-type="page view" layout="single" color-mode="color" sequence="0005">
+              <vault-link:vault-link>
+                <vault-link:link-type>external</vault-link:link-type>
+                <vault-link:action>point</vault-link:action>
+                <vault-link:where>
+                  <vault-link:path>cho_meet_1937_0484_000_0005</vault-link:path>
+                </vault-link:where>
+              </vault-link:vault-link>
+            </media:image>
+          </shared:media>
+          <vault-link:vault-link>
+            <vault-link:link-type>external</vault-link:link-type>
+            <vault-link:link-category term-id="21902636" term-source="Atlas">DVI page</vault-link:link-category>
+            <vault-link:action>point</vault-link:action>
+            <vault-link:where>
+              <vault-link:path>//gift-doc:document-metadata/meta:document-ids/meta:id[@type="Gale asset"]/meta:value[.="t"]</vault-link:path>
+            </vault-link:where>
+            <vault-link:select>
+              <vault-link:document-nodes>
+                <vault-link:target>ancestor::gift-doc:document</vault-link:target>
+              </vault-link:document-nodes>
+            </vault-link:select>
+          </vault-link:vault-link>
+        </essay:div>
+        <essay:div document-segment-type="Page" term-id="21922233" term-source="Atlas">
+          <essay:complex-meta>
+            <meta:page-id-number>0006</meta:page-id-number>
+            <meta:folio>
+              <meta:start-number>[1]</meta:start-number>
+            </meta:folio>
+          </essay:complex-meta>
+          <essay:p>Far East 15 THE ROYAL INSTITUTE OF INTERNATIONAL AFFAIRS Chatham House, 10 St James&apos;s Square, London, S.W.1 jjg&#163;0 CONFIDENTIAL. MEETINGS DEPARTMENT: Discussion Meetings Section FAR EAST DIVISION fth Meeting. MINUTES of the 6th Meeting of the Far East Division Discussion Meetings held on Wednesday, March 3rd, 1937 at 5#30 p.m. at Chatham House, St, James&apos;s Square, S&#187;W&#171;1, PRESENT: General Sir Kenneth Wigram (in the Chair) Major E. Ainger B. Ellinger W, G . Harrold Je T. Henderson G.E, Hubbard Captain Malcolm Kennedy Sir Andrew McFadyean Major MacGregor Knox Sir John Pratt A. Rose G&#187; Sale Colonel C.R.V. Steward (13) In a general review of conditions in tho Far East the view was expressed that whereas at the moment China and Russia appear content to adopt a static role JIapan was an active and dynamic force and in fact tho governing factor at any rate for the time being, though informed opinion in Great Britain as to the forcco which were driving Japan to take the action she is taking and as to her motives was conspicuous by its absence# May it not be that Japanfs present attitude merely re&#172; presents a further stage in her conflict between East and West and that what we are now witnessing is In fact a struggle for supremacy between two antithetical parties in Japan, namely a liberal party anxious to impose Western Ideas and to adopt Western methods and a reactionary psrty which, though ready to take advantage of modern material progress, is determined to preserve the traditional identity of Japan as an Eastern nation, The former rcpresentod by the politician and Westernised Japanese are inclined to follow Western methods and to advance with the times, to establish a democratic form of Government, to encourage capitalism and Industralism and to bring Japan into the commity of nations. The latter represented by the fighting services, though willing to take advantage of Western inventions in so f &#171;r as they benefit Japan&apos;s progress, are opposed to Western methods and openly despise any measure which might interfere with the sanctity of the family as the basis of the political system. They view with alarm Western Ideologies and are inclined to think that association with the Western powers has been and will be detrimental to Japan1s interest and are suspicious of the intentions of other countries towards Japan. Common to both parties, however, is a fear of Russia and the U.S.A. &#174;nd the desire if not the determination to remove</essay:p>
+          <shared:media>
+            <media:image data-type="jpeg" width="3400" height="5600" image-type="page view" layout="single" color-mode="color" folio="[1]" sequence="0006">
+              <vault-link:vault-link>
+                <vault-link:link-type>external</vault-link:link-type>
+                <vault-link:action>point</vault-link:action>
+                <vault-link:where>
+                  <vault-link:path>cho_meet_1937_0484_000_0006</vault-link:path>
+                </vault-link:where>
+              </vault-link:vault-link>
+            </media:image>
+          </shared:media>
+          <vault-link:vault-link>
+            <vault-link:link-type>external</vault-link:link-type>
+            <vault-link:link-category term-id="21902636" term-source="Atlas">DVI page</vault-link:link-category>
+            <vault-link:action>point</vault-link:action>
+            <vault-link:where>
+              <vault-link:path>//gift-doc:document-metadata/meta:document-ids/meta:id[@type="Gale asset"]/meta:value[.="y"]</vault-link:path>
+            </vault-link:where>
+            <vault-link:select>
+              <vault-link:document-nodes>
+                <vault-link:target>ancestor::gift-doc:document</vault-link:target>
+              </vault-link:document-nodes>
+            </vault-link:select>
+          </vault-link:vault-link>
+        </essay:div>
+        <essay:div document-segment-type="Page" term-id="21922233" term-source="Atlas">
+          <essay:complex-meta>
+            <meta:page-id-number>0007</meta:page-id-number>
+            <meta:folio>
+              <meta:start-number>2</meta:start-number>
+            </meta:folio>
+          </essay:complex-meta>
+          <essay:p>the stigma of racial discrimination and to induce the powers to recognise racial equality If not in substance at any rate in form. Between these two parties lie the bulk of the people who for the time being are not sufficiently enlightened and cer&#172; tainly not sufficiently vocal to take one side or the other and who are consequently Inclined to be swayed by whichever party happens to be in the ascendent. It was we who encouraged and advised Japan to adopt the capitalistic methods of the West but that was at a time when the world was on a Free Trade basis# The Japanese accepted that advice, N o sooner had their plans begun to mature and the inevitalbe results of this policy had begun to make them&#172; selves felt than we and the rest of the world began to con&#172; tract and to impose restrictions. In political relations also the Western democracies have moved on from the standards &#8226;f conduct which prevailed when Japan entered into the ring, especially in such matters as the attitude towards the acquisition of colonial territory, and Japan, having failed to catch up with this movement, finds that methods which she identified with Western practice now excite universal die- approbation. Herein possibly lies the cause #f the present conflict and of the clash between East and West, more especially as regards method and tempo. An examination of the causes which had prompted Japan to take the action she has taken on the continent brought out the following points. Japanfs fear of Russia is no new phenomena and the General Staff have for many years advocated the occupation &#8226;f the Eastern Provinces and the establishment of a frontier In the region of Baikal. It may be that the increased power and range of modern aircraft has brought matters to a head and induced Japan to seize Manchuria, On the economic side Japan hoped to relieve her internal economic pressure by Industralisation and the export of manu&#172; factured goods. She found world markets closed against her and her supply of raw materials threatened, Manchukuo could not produce sufficient to meet her steeds or a market for her goods. Hence her excursion into and exploitation of North China. Whether Japan&apos;s thrust towards the West was merely expan&#172; sion along the line of least resistance not conformable with her original plan, expansion into the Mongolias having been checked by Russian activities, or whether it was pr\rposely planned as a means of checking the spread of Communism by in- sorting a wedge between Russia and China is open to doubt. It will only be cleared up by Japan&apos;s future action in that region* The course events took in the Abyssinian affair, coupled with the imposition of sanctions, made a deep impression on the Japanese. This perhaps, more than anything else, was the deciding factor and fear of sanctions has played a very large part in Japan&apos;s determination to obtain and ensure access to raw materials&#8226; March 10th, 1937. Chatham House, St, James1s Square, S.W.I.</essay:p>
+          <shared:media>
+            <media:image data-type="jpeg" width="3400" height="5600" image-type="page view" layout="single" color-mode="color" folio="2" sequence="0007">
+              <vault-link:vault-link>
+                <vault-link:link-type>external</vault-link:link-type>
+                <vault-link:action>point</vault-link:action>
+                <vault-link:where>
+                  <vault-link:path>cho_meet_1937_0484_000_0007</vault-link:path>
+                </vault-link:where>
+              </vault-link:vault-link>
+            </media:image>
+          </shared:media>
+          <vault-link:vault-link>
+            <vault-link:link-type>external</vault-link:link-type>
+            <vault-link:link-category term-id="21902636" term-source="Atlas">DVI page</vault-link:link-category>
+            <vault-link:action>point</vault-link:action>
+            <vault-link:where>
+              <vault-link:path>//gift-doc:document-metadata/meta:document-ids/meta:id[@type="Gale asset"]/meta:value[.="u"]</vault-link:path>
+            </vault-link:where>
+            <vault-link:select>
+              <vault-link:document-nodes>
+                <vault-link:target>ancestor::gift-doc:document</vault-link:target>
+              </vault-link:document-nodes>
+            </vault-link:select>
+          </vault-link:vault-link>
+        </essay:div>
+      </essay:div>
+    </gift-doc:body>
+  </gift-doc:document>
+</gold:document-instance>

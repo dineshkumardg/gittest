@@ -1,0 +1,134 @@
+import json
+import httplib
+import urllib
+from pprint import pprint
+#import gaia.dom.index.models
+#from django.db import transaction
+#from gaia.error import GaiaErrors
+#from gaia.dom.document_error import DocumentError
+
+#doskey csolr=cd "\solr4\example"
+#doskey solr_start=java -jar start.jar
+
+# schema.xml 
+# <dynamicField name="*_i"  type="integer"  indexed="true"  stored="true"/>
+# <dynamicField name="*_txt" type="text_general"   indexed="true"  stored="true" multiValued="true"/>
+#
+# Add this to solr/conf/schema.xml: (?)
+# <dynamicField name="/*" type="text_general"   indexed="true"  stored="true" multiValued="true"/>
+
+
+# "http://localhost:8983/solr/update/json?commit=true' --data-binary @books.json -H 'Content-type:application/json'"
+
+# use this in the q field in the solr query box:
+# (solr will url-encode the params.)
+#   \/citation\/journal\/author\/last:Perrygrove
+#
+# but, in the fl (field list) no need for backslashes, eg just:
+#   id,/citation/journal/author/last
+
+# to get fields without a value (blank fields), use something like this:
+#   *:* -title:[* TO *]
+# or this?
+#   -title:[* TO *]
+
+class Search:
+
+    def index(self, dom_id, json_info):
+        solr_doc = json.loads(json_info)
+        solr_doc['id'] = str(dom_id)
+
+        cmd = {'add': {'doc': solr_doc, 'commitWithin': 5000, 'overwrite': False},
+               'commit': {},
+               #'optimize': {'waitFlush': False, 'waitSearcher': False}
+              }
+
+        #data = urllib.urlencode({'q': 'Status'})
+        data = json.dumps(cmd)
+        h = httplib.HTTPConnection('localhost:8983')
+        headers = {'Content-type': 'application/json',}
+        #h.request('POST', '/solr/update/json?commit=true', data, headers)
+        h.request('POST', '/solr/update?commit=true?wt=python', data, headers)
+        r = h.getresponse()
+        print r.read()
+                
+def test_query():
+    # 'http://localhost:8983/solr/collection1/select?q=%5C%2Fcitation%5C%2Fjournal%5C%2Fauthor%5C%2Flast%3APerrygrove%0A%0A%0A&wt=python'
+    xpath = '/citation/journal/author/last'
+    xpath = xpath.replace(r'/', r'\/')
+    value = 'Perrygrove'
+    query = xpath + ':' + value
+    query = urllib.quote_plus(query)
+
+    print "-------------------------------------------"
+    url = 'http://localhost:8983/solr/collection1/select?q=%s&wt=python' % query
+    print "query url=", url
+    response = urllib.urlopen(url).read()
+    pprint(eval(response))  # dangerous!!
+
+    print "-------------------------------------------"
+    # filter on a "field list" (just id in this case)
+    url = 'http://localhost:8983/solr/collection1/select?q=%s&fl=id,_version_&wt=python' % query
+    print "query url=", url
+    response = urllib.urlopen(url).read()
+    pprint(eval(response))  # dangerous!!
+
+    #http://localhost:8983/solr/collection1/select?q=%5C%2Fcitation%5C%2Fjournal%5C%2Fauthor%5C%2Flast%3A*%0A%0A%0A&fl=id%2C%2Fcitation%2Fjournal%2Fauthor%2Flast&wt=xml
+
+    print "-------------------------------------------"
+    # get fields WITHOUT a tag at all or an empty value?
+    xpath = '-title'    # note minus
+    value = '[* TO *]'
+    #xpath = xpath.replace(r'/', r'\/')
+    #value = 'Perrygrove'
+    query = xpath + ':' + value
+    query = urllib.quote_plus(query)
+
+    url = 'http://localhost:8983/solr/collection1/select?q=%s&fl=id,_version_&wt=python' % query
+    print "query url=", url
+    response = urllib.urlopen(url).read()
+    pprint(eval(response))  # dangerous!!
+
+    print "-------------------------------------------"
+    # NOOO: best solution is to use _BLANK_ and search for that token.
+    # get fields WITH a tag AND an empty value? # shoudl just be id=13
+    #query = '-title:[* TO *]'
+    query = '-title:["" TO *]'
+    query = urllib.quote_plus(query)
+
+    url = 'http://localhost:8983/solr/collection1/select?q=%s&fl=id,_version_&wt=python' % query
+    print "query url=", url
+    response = urllib.urlopen(url).read()
+    pprint(eval(response))  # dangerous!!
+
+
+def test_count():
+    # 'http://localhost:8983/solr/collection1/select?q=%5C%2Fcitation%5C%2Fjournal%5C%2Fauthor%5C%2Flast%3APerrygrove%0A%0A%0A&wt=python'
+    raw_xpath = '/citation/journal/author/last'
+    xpath = raw_xpath.replace(r'/', r'\/')
+    value = 'Perrygrove'
+    query = xpath + ':' + value
+    query += 'facet=true&facet.field=%s' % raw_xpath    # note: no need to baclslash?
+    query = urllib.quote_plus(query)
+
+    # count matches using a facet field search, eg counting /citation/joutnal/imprint/imprintPublisher
+    #http://localhost:8983/solr/collection1/select?q=*%3A*&wt=xml&facet=true&facet.field=%2Fcitation%2Fjournal%2Fimprint%2FimprintPublisher
+
+    url = 'http://localhost:8983/solr/collection1/select?q=%s&fl=id,_version_&wt=python' % query
+    print "query url=", url
+    response = urllib.urlopen(url).read()
+    pprint(eval(response))  # dangerous!!
+
+
+
+def test_add():
+    dom_id = 13
+    info = '{"/title": "", "/citation/journal/imprint/imprintPublisher": "Oxford University Press", "/metadataInfo/sourceLibrary/libraryLocation": "London, UK", "/citation/journal/pubDate/month": "January", "/citation/journal/imprint/imprintFull": "Oxford University Press", "/metadataInfo/sourceLibrary/copyrightStatement": "Copyright Statement", "/citation/journal/pubDate/pubDateStart": "1963-01-01", "/citation/journal/author/aucomposed": "N. P. McDonald", "/citation/journal/pubDate/year": "1963", "/citation/journal/volumeGroup/volumeTitle": "Vol.39 1963", "/citation/journal/pubDate/pubDateEnd": "1963-01-31", "/citation/journal/author/middle": "P.", "/metadataInfo/language": "English", "/citation/journal/pubDate/composed": "January 1963", "/metadataInfo/sourceLibrary/libraryName": "Chatham House", "/metadataInfo/isbn": "1234567890", "/citation/journal/author/first": "N.", "/metadataInfo/documentType": "Journals", "/citation/journal/publicationPlace/publicationPlaceComposed": "Oxford, United Kingdom", "/citation/journal/titleGroup/fullTitle": "International Affairs", "/metadataInfo/PSMID": "cho_iaxx_1963_0039_000_0000", "/citation/journal/volumeGroup/volumeNumber": "39", "/metadataInfo/contentYear": "1963", "/citation/journal/author/last": "Wagle", "/citation/totalPages": null, "/@contentType": "Journal"}'
+    
+    x = _SolrIndex()
+    x._add_solr(dom_id, info)
+
+if __name__ == '__main__':
+    #test_add()
+    #test_query()
+    test_count()

@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:cat="http://www.gale.com/cat/" targetNamespace="http://www.gale.com/cat/" elementFormDefault="qualified" version="3.0">
+<!--
+  ======================================================================
+                                                                         
+   PROJECT:       EI CAT Schema                                         
+   SCHEMA:        CAT-schema                                           
+   DESCRIPTION:   This schema was developed to provide an gale-based 
+                  portal/portlet model for Gale's EI team.
+                                                                                                         
+  ======================================================================
+                                 CHANGE HISTORY
+  ======================================================================
+	3.0		12/04/2013		js
+	1. Removed the schema owner part.
+  ====================================================================== 
+-->
+	<!-- 
+	============================================================================   
+                    ELEMENT DECLARATIONS
+	============================================================================   
+	-->	
+	<!--                    CAT-RECORD                              -->
+	<xs:element name="cat-record">
+		<xs:annotation>
+			<xs:documentation>Wrapper for CAT record.</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:group ref="cat:galeFeedElements"/>
+				<xs:element ref="cat:entries"/>
+			</xs:sequence>
+			<xs:attribute name="version" use="required"/>
+		</xs:complexType>
+	</xs:element>
+	<!--                    ENTRIES                              -->
+	<xs:element name="entries">
+		<xs:annotation>
+			<xs:documentation>Wrapper for multiple CAT entries.</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="cat:entry" minOccurs="0" maxOccurs="unbounded"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<!--                    ENTRY                              -->
+	<xs:element name="entry" type="cat:galeEntryElements">
+		<xs:annotation>
+			<xs:documentation>Identifies a piece of content or an aggregation of content</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--                    TITLE                              -->
+	<xs:element name="title" type="xs:string">
+		<xs:annotation>
+			<xs:documentation>Gale title</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--                    CREATED                              -->
+	<xs:element name="created" type="xs:string">
+		<xs:annotation>
+			<xs:documentation>Create date </xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--                    UPDATED                              -->
+	<xs:element name="updated" type="xs:string">
+		<xs:annotation>
+			<xs:documentation>Gale updated</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--                    MCODE                              -->
+	<xs:element name="mcode" type="xs:string">
+		<xs:annotation>
+			<xs:documentation>Gale Mcode</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--                    CREATED-BY                              -->
+	<xs:element name="created-by" type="xs:string">
+		<xs:annotation>
+			<xs:documentation>Created by person (or system)</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--                    UPDATED-BY                              -->
+	<xs:element name="updated-by" type="xs:string">
+		<xs:annotation>
+			<xs:documentation>Last modified by person</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--                    STATUS                              -->
+	<xs:element name="status" type="xs:string">
+		<xs:annotation>
+			<xs:documentation>Status indicator (in order to implement UPDATED! indicator in portal title display). Will only be used on a composition page.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--                    CAT                              -->
+	<xs:element name="cat">
+		<xs:annotation>
+			<xs:documentation>The values for this are maintained in Atlas/Mercury.</xs:documentation>
+		</xs:annotation>
+		<xs:complexType mixed="true">
+			<xs:attribute name="atlasid" use="required"/>
+		</xs:complexType>
+	</xs:element>
+	<!--                    CAT-CLASS                              -->
+	<xs:element name="cat-class">
+		<xs:annotation>
+			<xs:documentation>Identifies type of CAT with 3 possible values: Aggregation, Base and Composition.</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:restriction base="xs:anyType">
+					<xs:simpleType>
+						<xs:restriction base="xs:token">
+							<xs:enumeration value="Aggregation"/>
+							<xs:enumeration value="Base"/>
+							<xs:enumeration value="Composition"/>
+						</xs:restriction>
+					</xs:simpleType>
+					<xs:attribute name="atlasid" use="required"/>
+				</xs:restriction>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<!--                    DESCRIPTION                              -->
+	<xs:element name="description" type="xs:string">
+		<xs:annotation>
+			<xs:documentation>Description</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--                    CAT-CLASS-REF                              -->
+	<xs:element name="cat-class-ref">
+		<xs:annotation>
+			<xs:documentation>Identifies type of CAT referenced in the &lt;gale-entry&gt; with 3 possible values: Aggregation, Base and Composition.</xs:documentation>
+		</xs:annotation>
+		<xs:simpleType>
+			<xs:restriction base="xs:token">
+				<xs:enumeration value="Aggregation"/>
+				<xs:enumeration value="Base"/>
+				<xs:enumeration value="Composition"/>
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+	<!--                    PORTLET-TYPE                              -->
+	<xs:element name="portlet-type">
+		<xs:annotation>
+			<xs:documentation>Identifies type of portlet. Only valid on an aggregation CAT. Has an attribute of atlasid.</xs:documentation>
+		</xs:annotation>
+		<xs:complexType mixed="true">
+			<xs:attributeGroup ref="cat:galeAtlasIdAttribute"/>
+		</xs:complexType>
+	</xs:element>
+	<!--                    ART-LANG                              -->
+	<xs:element name="art-lang">
+		<xs:annotation>
+			<xs:documentation>Language. Is maintained list in Atlas, therefore has an atlasid attribute</xs:documentation>
+		</xs:annotation>
+		<xs:complexType mixed="true">
+			<xs:attributeGroup ref="cat:galeAtlasIdAttribute"/>
+		</xs:complexType>
+	</xs:element>
+	<!--                    PORTAL-ID                              -->
+	<xs:element name="portal-id" type="xs:string">
+		<xs:annotation>
+			<xs:documentation>Reference to portal ID used in Proteus to track portals</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--                    ASSET-ID                              -->
+	<xs:element name="asset-id" type="xs:string">
+		<xs:annotation>
+			<xs:documentation>Gale asset ID.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--                    DOC-ID                              -->
+	<xs:element name="doc-id" type="cat:doc-id-type">
+		<xs:annotation>
+			<xs:documentation>Gale document id. Will be the same as the &lt;atom:id&gt;;  Alternate id (TBD/SCI)</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:complexType name="doc-id-type">
+		<xs:annotation>
+			<xs:documentation>Content model for a doc-id element.</xs:documentation>
+		</xs:annotation>
+		<xs:simpleContent>
+			<xs:extension base="xs:string">
+				<xs:attribute name="page" type="xs:string" use="optional"/>
+			</xs:extension>
+		</xs:simpleContent>
+	</xs:complexType>
+	<!--                    QUERY-VALUE                              -->
+	<xs:element name="query-value" type="xs:string">
+		<xs:annotation>
+			<xs:documentation>Query syntax. May be wrapped in CDATA to preserve whitespace. If default query to be used, then value is "Default"</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--                    QUERY-TYPE                              -->
+	<xs:element name="query-type" type="xs:string">
+		<xs:annotation>
+			<xs:documentation>Specifies what query language to use (i.e. CCL)</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--                    PAGE-QUERY-TERMS                              -->
+	<xs:element name="page-query-terms" type="xs:string">
+		<xs:annotation>
+			<xs:documentation>Lists the "standard" terms that would be utilized for a search on that page. Will only be used on a composition page. 
+				Can include and index field typically available such as SU,KE, mcode, etc,.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--                    QUERY                              -->
+	<xs:element name="query">
+		<xs:annotation>
+			<xs:documentation>Wrapper for query elements. Has attribute of type="implicit" or "explicit"</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:choice>
+				<xs:element ref="cat:query-value"/>
+				<xs:element ref="cat:doc-id"/>
+			</xs:choice>
+			<xs:attribute name="type" use="required">
+				<xs:simpleType>
+					<xs:restriction base="xs:token">
+						<xs:enumeration value="implicit"/>
+						<xs:enumeration value="explicit"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+		</xs:complexType>
+	</xs:element>
+	<!--                    DESCRIPTIVE-INDEXING                              -->
+	<xs:element name="descriptive-indexing">
+		<xs:annotation>
+			<xs:documentation>Indexing metadata - parallels GIFT schema</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="cat:indexing-term" maxOccurs="unbounded"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<!--                    INDEXING-TERM                              -->
+	<xs:element name="indexing-term">
+		<xs:annotation>
+			<xs:documentation>Indexing terms - Indexing metadata - parallels GIFT schema</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="cat:term"/>
+				<xs:element ref="cat:linked-term" minOccurs="0" maxOccurs="unbounded"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<!--                    TERM                              -->
+	<xs:element name="term">
+		<xs:annotation>
+			<xs:documentation>Term - Indexing metadata - parallels GIFT schema</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:choice minOccurs="0" maxOccurs="unbounded">
+				<xs:element ref="cat:term-type"/>
+				<xs:element ref="cat:term-source"/>
+				<xs:element ref="cat:term-id"/>
+				<xs:element ref="cat:term-value"/>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+	<!--                    LINKED-TERM                              -->
+	<xs:element name="linked-term">
+		<xs:annotation>
+			<xs:documentation>Linked Term - Indexing metadata - parallels GIFT schema</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:choice minOccurs="0" maxOccurs="unbounded">
+				<xs:element ref="cat:term-type"/>
+				<xs:element ref="cat:term-source"/>
+				<xs:element ref="cat:term-id"/>
+				<xs:element ref="cat:term-value"/>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+	<!--                    TERM-TYPE                              -->
+	<xs:element name="term-type" type="xs:string">
+		<xs:annotation>
+			<xs:documentation>Term type - Indexing metadata - parallels GIFT schema</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--                    TERM-SOURCE                              -->
+	<xs:element name="term-source" type="xs:string">
+		<xs:annotation>
+			<xs:documentation>Term source - Indexing metadata - parallels GIFT schema</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--                    TERM-D                              -->
+	<xs:element name="term-id" type="xs:string">
+		<xs:annotation>
+			<xs:documentation>Term ID - Indexing metadata - parallels GIFT schema</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--                    TERM-VALUE                              -->
+	<xs:element name="term-value" type="xs:string">
+		<xs:annotation>
+			<xs:documentation>Term value - Indexing metadata - parallels GIFT schema</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--                    RELATED-DOC-IDS                              -->
+	<xs:element name="related-doc-ids">
+		<xs:annotation>
+			<xs:documentation>Wrapper for IDs of related documents.</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="cat:related-doc-id" maxOccurs="unbounded"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<!--                    RELATED-DOC-ID                              -->
+	<xs:element name="related-doc-id" type="xs:string">
+		<xs:annotation>
+			<xs:documentation>Gale document ID of the related document.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--                    SEQUENCE                              -->
+	<xs:element name="sequence" type="xs:int">
+		<xs:annotation>
+			<xs:documentation>Identifies a sequence of handpicked documents for an aggregation.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!-- 
+	============================================================================   
+                    ELEMENT GROUPS
+	============================================================================   
+	-->	
+	<xs:group name="galeFeedElements">
+		<xs:sequence>
+			<xs:element ref="cat:title"/>
+			<xs:element ref="cat:created"/>
+			<xs:element ref="cat:created-by"/>
+			<xs:element ref="cat:updated" minOccurs="0"/>
+			<xs:element ref="cat:updated-by" minOccurs="0"/>
+			<xs:element ref="cat:mcode"/>
+			<xs:element ref="cat:asset-id"/>
+			<xs:element ref="cat:cat-class"/>
+			<xs:element ref="cat:cat"/>
+			<xs:element ref="cat:portlet-type" minOccurs="0"/>
+			<xs:element ref="cat:description" minOccurs="0"/>
+			<xs:element ref="cat:art-lang" minOccurs="0"/>
+			<xs:element ref="cat:status" minOccurs="0"/>
+			<xs:element ref="cat:page-query-terms" minOccurs="0"/>
+			<xs:element ref="cat:query-type" minOccurs="0"/>
+			<xs:element ref="cat:descriptive-indexing" minOccurs="0"/>
+			<xs:element ref="cat:portal-id" minOccurs="0"/>
+		</xs:sequence>
+	</xs:group>
+	<!-- 
+	============================================================================   
+                    ATTRIBUTE GROUP
+	============================================================================   
+	-->
+	<xs:attributeGroup name="galeAtlasIdAttribute">
+		<xs:attribute name="atlasid" use="required"/>
+	</xs:attributeGroup>
+	<!-- 
+	============================================================================   
+                    COMPLEX TYPE DECLARATIONS
+	============================================================================   
+	-->
+	<xs:complexType name="galeEntryElements">
+		<xs:sequence>
+			<xs:element ref="cat:cat-class-ref"/>
+			<xs:element ref="cat:portlet-type" minOccurs="0"/>
+			<xs:element ref="cat:sequence" minOccurs="0"/>
+			<xs:element ref="cat:query"/>
+			<xs:element ref="cat:related-doc-ids" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>
+<!-- EOF -->

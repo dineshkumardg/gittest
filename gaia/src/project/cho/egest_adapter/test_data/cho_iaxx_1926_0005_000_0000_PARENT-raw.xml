@@ -1,0 +1,730 @@
+<gold:feed xmlns:essay="http://www.gale.com/goldschema/essay" xmlns:gold="http://www.gale.com/gold" xmlns:gift-doc="http://www.gale.com/goldschema/gift-doc" xmlns:dir="http://www.gale.com/goldschema/dir" xmlns:vault-link="http://www.gale.com/goldschema/vault-linking" xmlns:meta="http://www.gale.com/goldschema/metadata" xmlns:table="http://www.gale.com/goldschema/table" xmlns:xatts="http://www.gale.com/goldschema/xatts" xmlns:index="http://www.gale.com/goldschema/index" xmlns:mla="http://www.gale.com/goldschema/mla" xmlns:media="http://www.gale.com/goldschema/media" xmlns:tt="http://www.w3.org/ns/ttml" xmlns:list="http://www.gale.com/goldschema/list" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:etoc="http://www.gale.com/goldschema/etoc" xmlns:verse="http://www.gale.com/goldschema/verse" xmlns:pres="http://www.gale.com/goldschema/pres" xmlns:pub-meta="http://www.gale.com/goldschema/pub-meta" xmlns:shared="http://www.gale.com/goldschema/shared" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:math="http://www.w3.org/1998/Math/MathML" id="NOINDEX-CHOA_20131029_00629" xsi:schemaLocation="..\..\..\..\..\GIFT\feed_schemas\feed.xsd">
+<gold:document-instance>
+  <gift-doc:document>
+    <gift-doc:metadata>
+      <gift-doc:node-metadata>
+        <meta:volume-number>1</meta:volume-number>
+        <gift-doc:pagination-group>
+          <gift-doc:pagination>
+            <meta:total-pages>10</meta:total-pages>
+          </gift-doc:pagination>
+        </gift-doc:pagination-group>
+      </gift-doc:node-metadata>
+      <gift-doc:document-metadata>
+        <meta:document-ids>
+          <meta:id type="Gale asset">
+            <meta:value>JLIBBI985191810</meta:value>
+          </meta:id>
+        </meta:document-ids>
+        <meta:bibliographic-ids>
+          <meta:id type="PSM">
+            <meta:value>cho_iaxx_1926_0005_000_0000</meta:value>
+          </meta:id>
+          <meta:id type="isbn">
+            <meta:value>123-456-789-1011</meta:value>
+          </meta:id>
+          <meta:id type="issn">
+            <meta:value>1234-5678</meta:value>
+          </meta:id>
+        </meta:bibliographic-ids>
+        <meta:mcode>6GPP</meta:mcode>
+        <meta:publication-date>
+          <meta:structured-date>
+            <meta:year>1929</meta:year>
+            <meta:month>08</meta:month>
+            <meta:day>01</meta:day>
+            <meta:day-of-week>Thursday</meta:day-of-week>
+          </meta:structured-date>
+          <meta:standard-date type="Start date">19290801</meta:standard-date>
+          <meta:standard-date type="End date">19290801</meta:standard-date>
+        </meta:publication-date>
+        <meta:record-admin-info>
+          <meta:standard-date type="Original">20121102</meta:standard-date>
+        </meta:record-admin-info>
+        <meta:publication-title>World Today Chatham House Review</meta:publication-title>
+        <meta:languages>
+          <meta:language term-id="13858591" ocr="French" ocr-term-id="13858591" primary="Y">French</meta:language>
+          <meta:language term-id="13858590" ocr="English" ocr-term-id="13858590" primary="N">English</meta:language>
+        </meta:languages>
+        <meta:ocr-confidence>74.23</meta:ocr-confidence>
+        <meta:authors>
+          <meta:corporate-author>The Organisation</meta:corporate-author>
+          <meta:author>
+            <meta:sobriquet>
+              <meta:name>Mr Williams</meta:name>
+            </meta:sobriquet>
+            <meta:composed-name>Mr Williams</meta:composed-name>
+          </meta:author>
+          <meta:author>
+            <meta:structured-name>
+              <meta:prefix>Mr</meta:prefix>
+              <meta:first-name>Scott</meta:first-name>
+              <meta:middle-name>Lee</meta:middle-name>
+              <meta:last-name>Hogan</meta:last-name>
+              <meta:suffix>PM</meta:suffix>
+            </meta:structured-name>
+            <meta:composed-name>Mr Scott Lee Hogan PM</meta:composed-name>
+          </meta:author>
+          <meta:author>
+            <meta:sobriquet>
+              <meta:name>sobriquet</meta:name>
+            </meta:sobriquet>
+            <meta:composed-name>sobriquet</meta:composed-name>
+          </meta:author>
+        </meta:authors>
+        <meta:editors>
+          <meta:editor>
+            <meta:structured-name>
+              <meta:prefix>Mr</meta:prefix>
+              <meta:first-name>Stephen</meta:first-name>
+              <meta:middle-name>A.</meta:middle-name>
+              <meta:last-name>Heald</meta:last-name>
+              <meta:suffix>PHD</meta:suffix>
+            </meta:structured-name>
+            <meta:composed-name>Mr Stephen A. Heald</meta:composed-name>
+          </meta:editor>
+          <meta:editor>
+            <meta:sobriquet>
+              <meta:name>Mr Smith</meta:name>
+            </meta:sobriquet>
+            <meta:composed-name>Mr Smith</meta:composed-name>
+          </meta:editor>
+        </meta:editors>
+        <meta:descriptive-indexing>
+          <meta:indexing-term>
+            <meta:term>
+              <meta:term-type>CONT_TYPE</meta:term-type>
+              <meta:term-source>Atlas</meta:term-source>
+              <meta:term-id>21901547</meta:term-id>
+              <meta:term-value>DVI-Periodical</meta:term-value>
+            </meta:term>
+          </meta:indexing-term>
+          <meta:indexing-term>
+            <meta:term>
+              <meta:term-type>FUNC_TYPE</meta:term-type>
+              <meta:term-source>Atlas</meta:term-source>
+              <meta:term-id>21787859</meta:term-id>
+              <meta:term-value>Issue-volume record</meta:term-value>
+            </meta:term>
+          </meta:indexing-term>
+          <meta:indexing-term>
+            <meta:term>
+              <meta:term-type>ART_LANG</meta:term-type>
+              <meta:term-source>Atlas</meta:term-source>
+              <meta:term-id>13858591</meta:term-id>
+              <meta:term-value>French</meta:term-value>
+            </meta:term>
+          </meta:indexing-term>
+          <meta:indexing-term>
+            <meta:term>
+              <meta:term-type>ART_LANG</meta:term-type>
+              <meta:term-source>Atlas</meta:term-source>
+              <meta:term-id>13858590</meta:term-id>
+              <meta:term-value>English</meta:term-value>
+            </meta:term>
+          </meta:indexing-term>
+        </meta:descriptive-indexing>
+      </gift-doc:document-metadata>
+    </gift-doc:metadata>
+    <gift-doc:body>
+      <essay:div document-segment-type="Body text" term-id="14214508" term-source="Atlas">
+        <essay:div document-segment-type="Page" term-id="21922233" term-source="Atlas">
+          <essay:complex-meta>
+            <meta:page-id-number>0001</meta:page-id-number>
+          </essay:complex-meta>
+          <shared:media>
+            <media:image data-type="jpeg" width="2350" height="3570" image-type="page view" layout="single" color-mode="color" sequence="0001">
+              <vault-link:vault-link>
+                <vault-link:link-type>external</vault-link:link-type>
+                <vault-link:action>point</vault-link:action>
+                <vault-link:where>
+                  <vault-link:path>cho_iaxx_1926_0005_000_0001</vault-link:path>
+                </vault-link:where>
+              </vault-link:vault-link>
+            </media:image>
+          </shared:media>
+          <vault-link:vault-link>
+            <vault-link:link-type>external</vault-link:link-type>
+            <vault-link:link-category term-id="21902636" term-source="Atlas">DVI page</vault-link:link-category>
+            <vault-link:action>point</vault-link:action>
+            <vault-link:where>
+              <vault-link:path>//gift-doc:document-metadata/meta:document-ids/meta:id[@type="Gale asset"]/meta:value[.="TBTVJN204984786"]</vault-link:path>
+            </vault-link:where>
+            <vault-link:select>
+              <vault-link:document-nodes>
+                <vault-link:target>ancestor::gift-doc:document</vault-link:target>
+              </vault-link:document-nodes>
+            </vault-link:select>
+          </vault-link:vault-link>
+        </essay:div>
+        <essay:div document-segment-type="Page" term-id="21922233" term-source="Atlas">
+          <essay:complex-meta>
+            <meta:page-id-number>0002</meta:page-id-number>
+            <meta:folio>
+              <meta:start-number>i</meta:start-number>
+            </meta:folio>
+          </essay:complex-meta>
+          <shared:media>
+            <media:image data-type="jpeg" width="2020" height="3484" image-type="page view" layout="single" color-mode="color" folio="i" sequence="0002">
+              <vault-link:vault-link>
+                <vault-link:link-type>external</vault-link:link-type>
+                <vault-link:action>point</vault-link:action>
+                <vault-link:where>
+                  <vault-link:path>cho_iaxx_1926_0005_000_0002</vault-link:path>
+                </vault-link:where>
+              </vault-link:vault-link>
+            </media:image>
+          </shared:media>
+          <vault-link:vault-link>
+            <vault-link:link-type>external</vault-link:link-type>
+            <vault-link:link-category term-id="21902636" term-source="Atlas">DVI page</vault-link:link-category>
+            <vault-link:action>point</vault-link:action>
+            <vault-link:where>
+              <vault-link:path>//gift-doc:document-metadata/meta:document-ids/meta:id[@type="Gale asset"]/meta:value[.="WIQVBE806053011"]</vault-link:path>
+            </vault-link:where>
+            <vault-link:select>
+              <vault-link:document-nodes>
+                <vault-link:target>ancestor::gift-doc:document</vault-link:target>
+              </vault-link:document-nodes>
+            </vault-link:select>
+          </vault-link:vault-link>
+        </essay:div>
+        <essay:div document-segment-type="Page" term-id="21922233" term-source="Atlas">
+          <essay:complex-meta>
+            <meta:page-id-number>0003</meta:page-id-number>
+            <meta:folio>
+              <meta:start-number>ii</meta:start-number>
+            </meta:folio>
+          </essay:complex-meta>
+          <shared:media>
+            <media:image data-type="jpeg" width="2008" height="3432" image-type="page view" layout="single" color-mode="color" folio="ii" sequence="0003">
+              <vault-link:vault-link>
+                <vault-link:link-type>external</vault-link:link-type>
+                <vault-link:action>point</vault-link:action>
+                <vault-link:where>
+                  <vault-link:path>cho_iaxx_1926_0005_000_0003</vault-link:path>
+                </vault-link:where>
+              </vault-link:vault-link>
+            </media:image>
+          </shared:media>
+          <vault-link:vault-link>
+            <vault-link:link-type>external</vault-link:link-type>
+            <vault-link:link-category term-id="21902636" term-source="Atlas">DVI page</vault-link:link-category>
+            <vault-link:action>point</vault-link:action>
+            <vault-link:where>
+              <vault-link:path>//gift-doc:document-metadata/meta:document-ids/meta:id[@type="Gale asset"]/meta:value[.="BEFRYR175662459"]</vault-link:path>
+            </vault-link:where>
+            <vault-link:select>
+              <vault-link:document-nodes>
+                <vault-link:target>ancestor::gift-doc:document</vault-link:target>
+              </vault-link:document-nodes>
+            </vault-link:select>
+          </vault-link:vault-link>
+        </essay:div>
+        <essay:div document-segment-type="Page" term-id="21922233" term-source="Atlas">
+          <essay:complex-meta>
+            <meta:page-id-number>0004</meta:page-id-number>
+            <meta:folio>
+              <meta:start-number>iii</meta:start-number>
+            </meta:folio>
+          </essay:complex-meta>
+          <shared:media>
+            <media:image data-type="jpeg" width="1972" height="3431" image-type="page view" layout="single" color-mode="color" folio="iii" sequence="0004">
+              <vault-link:vault-link>
+                <vault-link:link-type>external</vault-link:link-type>
+                <vault-link:action>point</vault-link:action>
+                <vault-link:where>
+                  <vault-link:path>cho_iaxx_1926_0005_000_0004</vault-link:path>
+                </vault-link:where>
+              </vault-link:vault-link>
+            </media:image>
+          </shared:media>
+          <vault-link:vault-link>
+            <vault-link:link-type>external</vault-link:link-type>
+            <vault-link:link-category term-id="21902636" term-source="Atlas">DVI page</vault-link:link-category>
+            <vault-link:action>point</vault-link:action>
+            <vault-link:where>
+              <vault-link:path>//gift-doc:document-metadata/meta:document-ids/meta:id[@type="Gale asset"]/meta:value[.="GIZLQE404204408"]</vault-link:path>
+            </vault-link:where>
+            <vault-link:select>
+              <vault-link:document-nodes>
+                <vault-link:target>ancestor::gift-doc:document</vault-link:target>
+              </vault-link:document-nodes>
+            </vault-link:select>
+          </vault-link:vault-link>
+        </essay:div>
+        <essay:div document-segment-type="Page" term-id="21922233" term-source="Atlas">
+          <essay:complex-meta>
+            <meta:page-id-number>0005</meta:page-id-number>
+            <meta:folio>
+              <meta:start-number>iv</meta:start-number>
+            </meta:folio>
+          </essay:complex-meta>
+          <shared:media>
+            <media:image data-type="jpeg" width="2075" height="3481" image-type="page view" layout="single" color-mode="color" folio="iv" sequence="0005">
+              <vault-link:vault-link>
+                <vault-link:link-type>external</vault-link:link-type>
+                <vault-link:action>point</vault-link:action>
+                <vault-link:where>
+                  <vault-link:path>cho_iaxx_1926_0005_000_0005</vault-link:path>
+                </vault-link:where>
+              </vault-link:vault-link>
+            </media:image>
+          </shared:media>
+          <vault-link:vault-link>
+            <vault-link:link-type>external</vault-link:link-type>
+            <vault-link:link-category term-id="21902636" term-source="Atlas">DVI page</vault-link:link-category>
+            <vault-link:action>point</vault-link:action>
+            <vault-link:where>
+              <vault-link:path>//gift-doc:document-metadata/meta:document-ids/meta:id[@type="Gale asset"]/meta:value[.="XBAOXE899973868"]</vault-link:path>
+            </vault-link:where>
+            <vault-link:select>
+              <vault-link:document-nodes>
+                <vault-link:target>ancestor::gift-doc:document</vault-link:target>
+              </vault-link:document-nodes>
+            </vault-link:select>
+          </vault-link:vault-link>
+        </essay:div>
+        <essay:div document-segment-type="Page" term-id="21922233" term-source="Atlas">
+          <essay:complex-meta>
+            <meta:page-id-number>0006</meta:page-id-number>
+            <meta:folio>
+              <meta:start-number>v</meta:start-number>
+            </meta:folio>
+          </essay:complex-meta>
+          <shared:media>
+            <media:image data-type="jpeg" width="1980" height="3430" image-type="page view" layout="single" color-mode="color" folio="v" sequence="0006">
+              <vault-link:vault-link>
+                <vault-link:link-type>external</vault-link:link-type>
+                <vault-link:action>point</vault-link:action>
+                <vault-link:where>
+                  <vault-link:path>cho_iaxx_1926_0005_000_0006</vault-link:path>
+                </vault-link:where>
+              </vault-link:vault-link>
+            </media:image>
+          </shared:media>
+          <vault-link:vault-link>
+            <vault-link:link-type>external</vault-link:link-type>
+            <vault-link:link-category term-id="21902636" term-source="Atlas">DVI page</vault-link:link-category>
+            <vault-link:action>point</vault-link:action>
+            <vault-link:where>
+              <vault-link:path>//gift-doc:document-metadata/meta:document-ids/meta:id[@type="Gale asset"]/meta:value[.="TTXPJW422660300"]</vault-link:path>
+            </vault-link:where>
+            <vault-link:select>
+              <vault-link:document-nodes>
+                <vault-link:target>ancestor::gift-doc:document</vault-link:target>
+              </vault-link:document-nodes>
+            </vault-link:select>
+          </vault-link:vault-link>
+        </essay:div>
+        <essay:div document-segment-type="Page" term-id="21922233" term-source="Atlas">
+          <essay:complex-meta>
+            <meta:page-id-number>0007</meta:page-id-number>
+            <meta:folio>
+              <meta:start-number>vii</meta:start-number>
+            </meta:folio>
+          </essay:complex-meta>
+          <shared:media>
+            <media:image data-type="jpeg" width="1997" height="3459" image-type="page view" layout="single" color-mode="color" folio="vii" sequence="0007">
+              <vault-link:vault-link>
+                <vault-link:link-type>external</vault-link:link-type>
+                <vault-link:action>point</vault-link:action>
+                <vault-link:where>
+                  <vault-link:path>cho_iaxx_1926_0005_000_0007</vault-link:path>
+                </vault-link:where>
+              </vault-link:vault-link>
+            </media:image>
+          </shared:media>
+          <vault-link:vault-link>
+            <vault-link:link-type>external</vault-link:link-type>
+            <vault-link:link-category term-id="21902636" term-source="Atlas">DVI page</vault-link:link-category>
+            <vault-link:action>point</vault-link:action>
+            <vault-link:where>
+              <vault-link:path>//gift-doc:document-metadata/meta:document-ids/meta:id[@type="Gale asset"]/meta:value[.="TRDNYO100179101"]</vault-link:path>
+            </vault-link:where>
+            <vault-link:select>
+              <vault-link:document-nodes>
+                <vault-link:target>ancestor::gift-doc:document</vault-link:target>
+              </vault-link:document-nodes>
+            </vault-link:select>
+          </vault-link:vault-link>
+        </essay:div>
+        <essay:div document-segment-type="Page" term-id="21922233" term-source="Atlas">
+          <essay:complex-meta>
+            <meta:page-id-number>0008</meta:page-id-number>
+            <meta:folio>
+              <meta:start-number>9</meta:start-number>
+            </meta:folio>
+          </essay:complex-meta>
+          <shared:media>
+            <media:image data-type="jpeg" width="2055" height="3442" image-type="page view" layout="single" color-mode="color" folio="9" sequence="0008">
+              <vault-link:vault-link>
+                <vault-link:link-type>external</vault-link:link-type>
+                <vault-link:action>point</vault-link:action>
+                <vault-link:where>
+                  <vault-link:path>cho_iaxx_1926_0005_000_0008</vault-link:path>
+                </vault-link:where>
+              </vault-link:vault-link>
+            </media:image>
+          </shared:media>
+          <vault-link:vault-link>
+            <vault-link:link-type>external</vault-link:link-type>
+            <vault-link:link-category term-id="21902636" term-source="Atlas">DVI page</vault-link:link-category>
+            <vault-link:action>point</vault-link:action>
+            <vault-link:where>
+              <vault-link:path>//gift-doc:document-metadata/meta:document-ids/meta:id[@type="Gale asset"]/meta:value[.="WUPRCU202217690"]</vault-link:path>
+            </vault-link:where>
+            <vault-link:select>
+              <vault-link:document-nodes>
+                <vault-link:target>ancestor::gift-doc:document</vault-link:target>
+              </vault-link:document-nodes>
+            </vault-link:select>
+          </vault-link:vault-link>
+        </essay:div>
+        <essay:div document-segment-type="Page" term-id="21922233" term-source="Atlas">
+          <essay:complex-meta>
+            <meta:page-id-number>0009</meta:page-id-number>
+            <meta:folio>
+              <meta:start-number>I0</meta:start-number>
+            </meta:folio>
+          </essay:complex-meta>
+          <shared:media>
+            <media:image data-type="jpeg" width="2059" height="3473" image-type="page view" layout="single" color-mode="color" folio="I0" sequence="0009">
+              <vault-link:vault-link>
+                <vault-link:link-type>external</vault-link:link-type>
+                <vault-link:action>point</vault-link:action>
+                <vault-link:where>
+                  <vault-link:path>cho_iaxx_1926_0005_000_0009</vault-link:path>
+                </vault-link:where>
+              </vault-link:vault-link>
+            </media:image>
+          </shared:media>
+          <vault-link:vault-link>
+            <vault-link:link-type>external</vault-link:link-type>
+            <vault-link:link-category term-id="21902636" term-source="Atlas">DVI page</vault-link:link-category>
+            <vault-link:action>point</vault-link:action>
+            <vault-link:where>
+              <vault-link:path>//gift-doc:document-metadata/meta:document-ids/meta:id[@type="Gale asset"]/meta:value[.="RUITNC468706761"]</vault-link:path>
+            </vault-link:where>
+            <vault-link:select>
+              <vault-link:document-nodes>
+                <vault-link:target>ancestor::gift-doc:document</vault-link:target>
+              </vault-link:document-nodes>
+            </vault-link:select>
+          </vault-link:vault-link>
+        </essay:div>
+        <essay:div document-segment-type="Page" term-id="21922233" term-source="Atlas">
+          <essay:complex-meta>
+            <meta:page-id-number>0010</meta:page-id-number>
+            <meta:folio>
+              <meta:start-number>II</meta:start-number>
+            </meta:folio>
+          </essay:complex-meta>
+          <shared:media>
+            <media:image data-type="jpeg" width="2059" height="3473" image-type="page view" layout="single" color-mode="color" folio="II" sequence="0010">
+              <vault-link:vault-link>
+                <vault-link:link-type>external</vault-link:link-type>
+                <vault-link:action>point</vault-link:action>
+                <vault-link:where>
+                  <vault-link:path>cho_iaxx_1926_0005_000_0010</vault-link:path>
+                </vault-link:where>
+              </vault-link:vault-link>
+            </media:image>
+          </shared:media>
+          <vault-link:vault-link>
+            <vault-link:link-type>external</vault-link:link-type>
+            <vault-link:link-category term-id="21902636" term-source="Atlas">DVI page</vault-link:link-category>
+            <vault-link:action>point</vault-link:action>
+            <vault-link:where>
+              <vault-link:path>//gift-doc:document-metadata/meta:document-ids/meta:id[@type="Gale asset"]/meta:value[.="IAVQZC214854783"]</vault-link:path>
+            </vault-link:where>
+            <vault-link:select>
+              <vault-link:document-nodes>
+                <vault-link:target>ancestor::gift-doc:document</vault-link:target>
+              </vault-link:document-nodes>
+            </vault-link:select>
+          </vault-link:vault-link>
+        </essay:div>
+      </essay:div>
+      <etoc:document>
+        <etoc:links-chunk>
+          <etoc:etoc-link>
+            <meta:document-ids>
+              <meta:id type="Gale asset">
+                <meta:value>QBVYKN987107912</meta:value>
+              </meta:id>
+            </meta:document-ids>
+            <vault-link:vault-link>
+              <vault-link:link-type>external</vault-link:link-type>
+              <vault-link:data-type>image/jpeg</vault-link:data-type>
+              <vault-link:action>point</vault-link:action>
+              <vault-link:where>
+                <vault-link:path>cho_iaxx_1926_0005_000_0001</vault-link:path>
+              </vault-link:where>
+              <vault-link:select>
+                <vault-link:document-nodes>
+                  <vault-link:target>ancestor::gift-doc:document</vault-link:target>
+                </vault-link:document-nodes>
+              </vault-link:select>
+              <vault-link:display-point>media:image[@sequence="0001"]</vault-link:display-point>
+              <vault-link:display-link>Front Matter&#x00F6;</vault-link:display-link>
+            </vault-link:vault-link>
+            <meta:title-display>Front Matter&#x00F6;</meta:title-display>
+            <etoc:etoc-unique-id>000001</etoc:etoc-unique-id>
+            <etoc:links-chunk>
+              <etoc:etoc-link>
+                <meta:document-ids>
+                  <meta:id type="Gale asset">
+                    <meta:value>CNOJXW476707908</meta:value>
+                  </meta:id>
+                </meta:document-ids>
+                <vault-link:vault-link>
+                  <vault-link:link-type>external</vault-link:link-type>
+                  <vault-link:data-type>image/jpeg</vault-link:data-type>
+                  <vault-link:action>point</vault-link:action>
+                  <vault-link:where>
+                    <vault-link:path>cho_iaxx_1926_0005_000_0003</vault-link:path>
+                  </vault-link:where>
+                  <vault-link:select>
+                    <vault-link:document-nodes>
+                      <vault-link:target>ancestor::gift-doc:document</vault-link:target>
+                    </vault-link:document-nodes>
+                  </vault-link:select>
+                  <vault-link:display-point>media:image[@sequence="0003"]</vault-link:display-point>
+                  <vault-link:display-link>Front Matter.</vault-link:display-link>
+                </vault-link:vault-link>
+                <meta:title-display>Front Matter.</meta:title-display>
+                <etoc:etoc-unique-id>000002</etoc:etoc-unique-id>
+              </etoc:etoc-link>
+            </etoc:links-chunk>
+          </etoc:etoc-link>
+          <etoc:etoc-link>
+            <meta:document-ids>
+              <meta:id type="Gale asset">
+                <meta:value>LCIXYA655709257</meta:value>
+              </meta:id>
+            </meta:document-ids>
+            <vault-link:vault-link>
+              <vault-link:link-type>external</vault-link:link-type>
+              <vault-link:data-type>image/jpeg</vault-link:data-type>
+              <vault-link:action>point</vault-link:action>
+              <vault-link:where>
+                <vault-link:path>cho_iaxx_1926_0005_000_0004</vault-link:path>
+              </vault-link:where>
+              <vault-link:select>
+                <vault-link:document-nodes>
+                  <vault-link:target>ancestor::gift-doc:document</vault-link:target>
+                </vault-link:document-nodes>
+              </vault-link:select>
+              <vault-link:display-point>media:image[@sequence="0004"]</vault-link:display-point>
+              <vault-link:display-link>&quot;Introduction&quot;</vault-link:display-link>
+            </vault-link:vault-link>
+            <meta:title-display>&quot;Introduction&quot;</meta:title-display>
+            <etoc:etoc-unique-id>000003</etoc:etoc-unique-id>
+            <etoc:links-chunk>
+              <etoc:etoc-link>
+                <meta:document-ids>
+                  <meta:id type="Gale asset">
+                    <meta:value>WLZVVA358513772</meta:value>
+                  </meta:id>
+                </meta:document-ids>
+                <vault-link:vault-link>
+                  <vault-link:link-type>external</vault-link:link-type>
+                  <vault-link:data-type>image/jpeg</vault-link:data-type>
+                  <vault-link:action>point</vault-link:action>
+                  <vault-link:where>
+                    <vault-link:path>cho_iaxx_1926_0005_000_0006</vault-link:path>
+                  </vault-link:where>
+                  <vault-link:select>
+                    <vault-link:document-nodes>
+                      <vault-link:target>ancestor::gift-doc:document</vault-link:target>
+                    </vault-link:document-nodes>
+                  </vault-link:select>
+                  <vault-link:display-point>media:image[@sequence="0006"]</vault-link:display-point>
+                  <vault-link:display-link>Preface&#x2014;1</vault-link:display-link>
+                </vault-link:vault-link>
+                <meta:title-display>Preface&#x2014;1</meta:title-display>
+                <etoc:etoc-unique-id>000004</etoc:etoc-unique-id>
+                <etoc:links-chunk>
+                  <etoc:etoc-link>
+                    <meta:document-ids>
+                      <meta:id type="Gale asset">
+                        <meta:value>POEDMA743542896</meta:value>
+                      </meta:id>
+                    </meta:document-ids>
+                    <vault-link:vault-link>
+                      <vault-link:link-type>external</vault-link:link-type>
+                      <vault-link:data-type>image/jpeg</vault-link:data-type>
+                      <vault-link:action>point</vault-link:action>
+                      <vault-link:where>
+                        <vault-link:path>cho_iaxx_1926_0005_000_0007</vault-link:path>
+                      </vault-link:where>
+                      <vault-link:select>
+                        <vault-link:document-nodes>
+                          <vault-link:target>ancestor::gift-doc:document</vault-link:target>
+                        </vault-link:document-nodes>
+                      </vault-link:select>
+                      <vault-link:display-point>media:image[@sequence="0007"]</vault-link:display-point>
+                      <vault-link:display-link>Table of Contents,</vault-link:display-link>
+                    </vault-link:vault-link>
+                    <meta:title-display>Table of Contents,</meta:title-display>
+                    <etoc:etoc-unique-id>000005</etoc:etoc-unique-id>
+                  </etoc:etoc-link>
+                </etoc:links-chunk>
+              </etoc:etoc-link>
+            </etoc:links-chunk>
+          </etoc:etoc-link>
+          <etoc:etoc-link>
+            <meta:document-ids>
+              <meta:id type="Gale asset">
+                <meta:value>LWZWDI586357375</meta:value>
+              </meta:id>
+            </meta:document-ids>
+            <vault-link:vault-link>
+              <vault-link:link-type>external</vault-link:link-type>
+              <vault-link:data-type>image/jpeg</vault-link:data-type>
+              <vault-link:action>point</vault-link:action>
+              <vault-link:where>
+                <vault-link:path>cho_iaxx_1926_0005_000_0008</vault-link:path>
+              </vault-link:where>
+              <vault-link:select>
+                <vault-link:document-nodes>
+                  <vault-link:target>ancestor::gift-doc:document</vault-link:target>
+                </vault-link:document-nodes>
+              </vault-link:select>
+              <vault-link:display-point>media:image[@sequence="0008"]</vault-link:display-point>
+              <vault-link:display-link>The Societies and Organizations in Great Britain</vault-link:display-link>
+            </vault-link:vault-link>
+            <meta:title-display>The Societies and Organizations in Great Britain</meta:title-display>
+            <etoc:etoc-unique-id>000006</etoc:etoc-unique-id>
+          </etoc:etoc-link>
+          <etoc:etoc-link>
+            <meta:document-ids>
+              <meta:id type="Gale asset">
+                <meta:value>UWZKOX183266513</meta:value>
+              </meta:id>
+            </meta:document-ids>
+            <vault-link:vault-link>
+              <vault-link:link-type>external</vault-link:link-type>
+              <vault-link:data-type>image/jpeg</vault-link:data-type>
+              <vault-link:action>point</vault-link:action>
+              <vault-link:where>
+                <vault-link:path>cho_iaxx_1926_0005_000_0008</vault-link:path>
+              </vault-link:where>
+              <vault-link:select>
+                <vault-link:document-nodes>
+                  <vault-link:target>ancestor::gift-doc:document</vault-link:target>
+                </vault-link:document-nodes>
+              </vault-link:select>
+              <vault-link:display-point>media:image[@sequence="0008"]</vault-link:display-point>
+              <vault-link:display-link>An I. Official</vault-link:display-link>
+            </vault-link:vault-link>
+            <meta:title-display>An I. Official</meta:title-display>
+            <etoc:etoc-unique-id>000007</etoc:etoc-unique-id>
+            <etoc:links-chunk>
+              <etoc:etoc-link>
+                <meta:document-ids>
+                  <meta:id type="Gale asset">
+                    <meta:value>EDEXKF415672008</meta:value>
+                  </meta:id>
+                </meta:document-ids>
+                <vault-link:vault-link>
+                  <vault-link:link-type>external</vault-link:link-type>
+                  <vault-link:data-type>image/jpeg</vault-link:data-type>
+                  <vault-link:action>point</vault-link:action>
+                  <vault-link:where>
+                    <vault-link:path>cho_iaxx_1926_0005_000_0008</vault-link:path>
+                  </vault-link:where>
+                  <vault-link:select>
+                    <vault-link:document-nodes>
+                      <vault-link:target>ancestor::gift-doc:document</vault-link:target>
+                    </vault-link:document-nodes>
+                  </vault-link:select>
+                  <vault-link:display-point>media:image[@sequence="0008"]</vault-link:display-point>
+                  <vault-link:display-link>A League of Nations Office</vault-link:display-link>
+                </vault-link:vault-link>
+                <meta:title-display>A League of Nations Office</meta:title-display>
+                <etoc:etoc-unique-id>000008</etoc:etoc-unique-id>
+              </etoc:etoc-link>
+              <etoc:etoc-link>
+                <meta:document-ids>
+                  <meta:id type="Gale asset">
+                    <meta:value>VNRYWH488427834</meta:value>
+                  </meta:id>
+                </meta:document-ids>
+                <vault-link:vault-link>
+                  <vault-link:link-type>external</vault-link:link-type>
+                  <vault-link:data-type>image/jpeg</vault-link:data-type>
+                  <vault-link:action>point</vault-link:action>
+                  <vault-link:where>
+                    <vault-link:path>cho_iaxx_1926_0005_000_0009</vault-link:path>
+                  </vault-link:where>
+                  <vault-link:select>
+                    <vault-link:document-nodes>
+                      <vault-link:target>ancestor::gift-doc:document</vault-link:target>
+                    </vault-link:document-nodes>
+                  </vault-link:select>
+                  <vault-link:display-point>media:image[@sequence="0009"]</vault-link:display-point>
+                  <vault-link:display-link>&apos;International Labour Office&apos;</vault-link:display-link>
+                </vault-link:vault-link>
+                <meta:title-display>&apos;International Labour Office&apos;</meta:title-display>
+                <etoc:etoc-unique-id>000009</etoc:etoc-unique-id>
+              </etoc:etoc-link>
+            </etoc:links-chunk>
+          </etoc:etoc-link>
+          <etoc:etoc-link>
+            <meta:document-ids>
+              <meta:id type="Gale asset">
+                <meta:value>CAQBGL741956067</meta:value>
+              </meta:id>
+            </meta:document-ids>
+            <vault-link:vault-link>
+              <vault-link:link-type>external</vault-link:link-type>
+              <vault-link:data-type>image/jpeg</vault-link:data-type>
+              <vault-link:action>point</vault-link:action>
+              <vault-link:where>
+                <vault-link:path>cho_iaxx_1926_0005_000_0010</vault-link:path>
+              </vault-link:where>
+              <vault-link:select>
+                <vault-link:document-nodes>
+                  <vault-link:target>ancestor::gift-doc:document</vault-link:target>
+                </vault-link:document-nodes>
+              </vault-link:select>
+              <vault-link:display-point>media:image[@sequence="0010"]</vault-link:display-point>
+              <vault-link:display-link>2. The Study of International Affairs in General</vault-link:display-link>
+            </vault-link:vault-link>
+            <meta:title-display>2. The Study of International Affairs in General</meta:title-display>
+            <etoc:etoc-unique-id>000010</etoc:etoc-unique-id>
+            <etoc:links-chunk>
+              <etoc:etoc-link>
+                <meta:document-ids>
+                  <meta:id type="Gale asset">
+                    <meta:value>VTDLFA079341920</meta:value>
+                  </meta:id>
+                </meta:document-ids>
+                <vault-link:vault-link>
+                  <vault-link:link-type>external</vault-link:link-type>
+                  <vault-link:data-type>image/jpeg</vault-link:data-type>
+                  <vault-link:action>point</vault-link:action>
+                  <vault-link:where>
+                    <vault-link:path>cho_iaxx_1926_0005_000_0010</vault-link:path>
+                  </vault-link:where>
+                  <vault-link:select>
+                    <vault-link:document-nodes>
+                      <vault-link:target>ancestor::gift-doc:document</vault-link:target>
+                    </vault-link:document-nodes>
+                  </vault-link:select>
+                  <vault-link:display-point>media:image[@sequence="0010"]</vault-link:display-point>
+                  <vault-link:display-link>(a) I. British Co-Ordinating Committee for International Studies</vault-link:display-link>
+                </vault-link:vault-link>
+                <meta:title-display>(a) I. British Co-Ordinating Committee for International Studies</meta:title-display>
+                <etoc:etoc-unique-id>000011</etoc:etoc-unique-id>
+              </etoc:etoc-link>
+            </etoc:links-chunk>
+          </etoc:etoc-link>
+        </etoc:links-chunk>
+      </etoc:document>
+    </gift-doc:body>
+  </gift-doc:document>
+</gold:document-instance>
+<gold:metadata><gold:feed-type>NOINDEX</gold:feed-type><gold:document-schema>gift_document.xsd</gold:document-schema><gold:schema-version>2.5</gold:schema-version><gold:document-id-path>//gift-doc:document/gift-doc:metadata/gift-doc:document-metadata/meta:document-ids/meta:id[@type="Gale asset"]/meta:value</gold:document-id-path><gold:document-mcode-path>//gift-doc:document/gift-doc:metadata/gift-doc:document-metadata/meta:mcode</gold:document-mcode-path><gold:number-of-documents>1</gold:number-of-documents><gold:feed-status>New-Replace</gold:feed-status></gold:metadata></gold:feed>

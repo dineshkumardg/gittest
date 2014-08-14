@@ -1,0 +1,33 @@
+{% extends "qa/base.html" %}
+
+{% block title %}{{origin_button}}{% endblock %}
+
+{% block content %}
+
+{% if error %}
+
+{% else %}
+
+<h1>reject {{origin_button}} <a href="{{origin_page}}">{{item.dom_name}}</a></h1>
+
+{% if origin_button == 'save'  %}
+    <pre width="100%">{{ reason }}</pre>
+
+{% else %}
+
+{% if ftp_failure %}
+    <p>possible network problem - unable to send rejection report (.txt and .xml) to content provider:</p>
+    <p><strong>{{ftp_failure}}</strong></p>
+    <p>please try and send the reject report again later!</p>
+{% else %}
+    <p>The following .txt and .xml has been successfully FTP'd to the content provider:</p>
+    <h2>{{reject_report_txt_filename}}</h2>
+    <pre width="100%">{{ reject_report_contents }}</pre>
+    <a href="{% url ws_v1_0_item_fixed item.id %}">{{ reject_xml_filename }}</a> - WARNING: large XML impacts browser stability - use &apos;Save Link As...&apos;
+{% endif %}
+
+{% endif %}
+
+{% endif %}
+
+{% endblock %}

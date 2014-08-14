@@ -1,0 +1,51 @@
+{% extends "qa/filter_paginator.html" %}
+{% block title %}feed files{% endblock %}
+
+<!-- this prevents the search bar from appearing -->
+{% block search_bar %}
+{% endblock %}
+
+{% block content %}
+
+<h1 id="top">Feed File: {{ request.GET.feed_file }}</h1>
+{% if ids %}
+    <ul>
+	{% for key in ids %}
+    <li><a href="#{{key}}">{{ key}}</a></li>
+	{% endfor %}
+    </ul>
+<hr>
+<h2>Content Set Definition</h2>
+{{ content_set_definiton }}
+<hr>
+
+<ul><li>
+<a href={% if request.GET.show_asset_ids %}"?feed_file={{ request.GET.feed_file }}" {% else %} "?feed_file={{ request.GET.feed_file }}&show_asset_ids=true" {% endif %}>show asset ids</a></li></ul>
+
+{% for item_name, all_ids in ids.items %}
+{% if all_ids %}
+    <hr/>
+    <a name={{ item_name }}></a>
+    <h2>item {{item_name}}</h2>
+    <h3>document asset id</h3>
+        {% for doc in all_ids.document_id %}
+    {{ doc }}
+        {% endfor %}
+    <h3>page asset ids</h3>
+        {% for page in all_ids.page_id %}
+            {{ page }}
+        {% endfor %}
+    <h3>chunk asset ids</h3>
+        {% for chunk in all_ids.chunks_id %}
+            {{ chunk }}
+        {% endfor %}
+{% endif %}        
+{% endfor %}
+
+{% else %}
+<h1> no items in feed file</h1>
+{% endif %}
+{% endblock %}
+
+
+

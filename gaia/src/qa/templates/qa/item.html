@@ -1,0 +1,141 @@
+{% extends "qa/base.html" %}
+{% block title %}item {{item.dom_name}}{% endblock %}
+
+{% load item_view_tags %}
+
+{% block onload %}
+    {% for tag_id, thumb_url in page_img_map.items %}
+        document.getElementById("{{tag_id}}").src = "{{STATIC_URL}}" + "{{thumb_url}}";
+    {% endfor %}
+{% endblock %}
+
+{% block content %}
+<h1>item {{ item.dom_name }}</h1>
+
+<a href="{{STATIC_URL}}{{item.dom_name}}/{{item.id}}/{{item.dom_name}}.xml">original</a> | <a href="{% url ws_v1_0_item_fixed item.id %}">fixed</a> - WARNING: large XML impacts browser stability - use &apos;Save Link As...&apos;
+<p/>
+
+{% if etoc_info %}
+<div id="result_table" style="width:100%">
+<table>
+	<thead>
+	<tr class="table_head">
+		<th>Correct Article ID</th>
+        <th>Actual Article ID</th>
+        <th>Article Type </th>
+		<th>ETOC Level: Article Title </th>
+		<th>Asset ID</th>
+	</tr>
+	</thead>
+	{% for etoc in etoc_info %}
+	<tr class="{% cycle 'row1' 'row2' %}">
+		<td>{{ etoc.article_id }}</td>
+        <td>{{ etoc.article_id_real }}</td>
+        <td>{{etoc.article_type_text}}</td>
+		<td>
+		{{ etoc.etoc_id }}:&nbsp;
+		{% for indent in etoc.etoc_indentation %}&nbsp;&nbsp;{% endfor %}
+		<a href="#{{ etoc.article_id }}">{{ etoc.article_title }}</a>&nbsp;
+		</td>
+        <td>{{etoc.asset_id}}</td>
+	</tr>
+	{% endfor %}
+</table>
+</div>
+{% endif %}
+
+{% for chunk in text_chunks %}
+	<hr/>
+    <p>
+    <a name={{chunk.etoc_article_id}} href="#">{{ chunk.dom_name }}</a>&nbsp;-&nbsp;{{chunk.final_id}}
+    </p>
+    {% for page in chunk.pages.all %}
+        <a href="{% url page page.id %}">
+            <img id="{{chunk.id}}{{page.dom_id}}" src=""/>
+        {{page.dom_id}}
+        </a>
+    {% endfor %}
+
+    {% for bin_chunk_dom_name, bin_page_id in binary_chunk_map|get_bin_chunk:chunk.id %}
+        <br />
+        <small><a href="{% url page bin_page_id %}">{{bin_chunk_dom_name}}</a></small>
+	{% endfor %}
+
+{% endfor %}
+
+{% if document_links %}
+<hr/>
+<a id="document_links"></a>
+<h3>document links</h3>
+<table border="1">
+<tr>
+<!--<th>name</th><th colspan="2">from</th><th colspan="3">to</td>-->
+<th>name</th><th colspan="1">from</th><th colspan="2">to</td>
+</tr>
+<tr>
+<th> </th><th>page</th>
+<th>item</th><th>page</td>
+<!--
+<th> </th><th>page</th><th>article</td>
+<th>item</th><th>article</th><th>page</td>
+-->
+</tr>
+    {% for link in document_links %}
+<tr>
+<th>
+{{link.dom_name}}
+</th>
+<td>
+        {% if link.page %}
+        <a href="{% url page link.page.id %}" title="{{link.page}}">{{link.page.dom_name}}</a>
+        {% endif %}
+</td>
+
+<td>
+        {% if link.target_item %}
+        <a href="{% url item link.target_item.id %}" title="{{link.target_item}}">{{link.target_item.dom_name}}</a>
+        {% else %}
+            {% if link.unresolved_target_item %}
+                <div class="error">{{link.unresolved_target_item}}</div>
+            {% endif %}
+        {% endif %}
+</td>
+
+<td>
+        {% if link.target_page %}
+        <a href="{% url page link.target_page.id %}" title="{{link.target_page}}">{{link.target_page.dom_name}}</a>
+        {% else %}
+            {% if link.unresolved_target_page %}
+                <div class="error">{{link.unresolved_target_page}}</div>
+            {% endif %}
+        {% endif %}
+</td>
+</tr>
+    {% endfor %}
+</table>
+{% endif %}
+
+{% if asset_links %}
+<h3>asset links</h3>
+<ul>
+    {% for link in asset_links %}
+        <li>{{link.dom_name}}
+{% if link.info %}
+({{link.info}})
+{% endif %}
+    {% endfor %}
+</ul>
+{% endif %}
+
+{% if pages_without_articles %}
+<hr>
+<h3>pages without articles</h3>
+    {% for page in pages_without_articles %}
+        <a href="{% url page page.id %}">
+            <img id="noarticle{{page.dom_id}}" src=""/>
+        {{page.dom_id}}
+        </a>
+    {% endfor %}
+{% endif %}
+
+{% endblock %}

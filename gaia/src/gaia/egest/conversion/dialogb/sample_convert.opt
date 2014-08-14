@@ -1,0 +1,21 @@
+! file: sample_convert.opt
+
+! Used by Perl converter
+log_dir:		/home/stewart/conversion/
+completed_dir:		/home/stewart/conversion/
+output_dir:		/GAIA/TEST_DATA/TDA/9_dialogb_records/OFF0_XML_20110314_01/
+input_dir:		/GAIA/TEST_DATA/TDA/3_post_processed_data/20110314/output/OFF0_XML_20110314_01/
+headnote_dir_unix:	/ignore
+headnote_dir_vms:	/ignore
+metadata_file_unix:     /home/ukdev/GAIA_LITE/gaia/src/gaia/conversion/dialogb/ppnp_metadata_lookup.txt
+metadata_file_vms:	/ignore
+dvi_ng_map_unix:        /home/ukdev/GAIA_LITE/gaia/src/gaia/conversion/dialogb/DVI_NG_map.txt
+dvi_il_map_unix:        /home/ukdev/GAIA_LITE/gaia/src/gaia/conversion/dialogb/DVI_IL_map.txt
+dvi_ng_map_vms:         /ignore
+dvi_il_map_vms:         /ignore
+PageIDList_unix:	/GAIA/TEST_DATA/TDA/3_post_processed_data/20110314/output/OFF0_XML_20110314_01/PageIDListOFF0_20110314_01.txt
+PageIDList_vms:         /ignore
+dvi_name:               OFF0
+xxrn:			CT
+spotlight_file:	        /ignore/Spotlight_lookup.xls
+email:			stewart.perrygrove@cengage.com

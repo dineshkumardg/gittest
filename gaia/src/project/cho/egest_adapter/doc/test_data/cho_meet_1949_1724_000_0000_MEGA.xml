@@ -1,0 +1,680 @@
+<gold:document-instance>
+  <gift-doc:document>
+    <gift-doc:metadata>
+      <gift-doc:node-metadata>
+        <meta:descriptive-indexing>
+          <meta:indexing-term>
+            <meta:term>
+              <meta:term-type>PUB_SEG_TYPE</meta:term-type>
+              <meta:term-source>Atlas</meta:term-source>
+              <meta:term-id>14242630</meta:term-id>
+              <meta:term-value>Article</meta:term-value>
+            </meta:term>
+          </meta:indexing-term>
+        </meta:descriptive-indexing>
+        <gift-doc:pagination-group>
+          <gift-doc:pagination>
+            <meta:total-pages>16</meta:total-pages>
+          </gift-doc:pagination>
+        </gift-doc:pagination-group>
+      </gift-doc:node-metadata>
+      <gift-doc:document-metadata>
+        <meta:document-ids>
+          <meta:id type="Gale asset">
+            <meta:value>0</meta:value>
+          </meta:id>
+        </meta:document-ids>
+        <meta:bibliographic-ids>
+          <meta:id type="PSM">
+            <meta:value>cho_meet_1949_1724_000_0000</meta:value>
+          </meta:id>
+        </meta:bibliographic-ids>
+        <meta:mcode>5XFF</meta:mcode>
+        <meta:publication-date>
+          <meta:structured-date>
+            <meta:year>1949</meta:year>
+            <meta:month>11</meta:month>
+            <meta:day>15</meta:day>
+            <meta:day-of-week>Tuesday</meta:day-of-week>
+          </meta:structured-date>
+          <meta:standard-date type="Start date">19491115</meta:standard-date>
+          <meta:standard-date type="End date">19491115</meta:standard-date>
+        </meta:publication-date>
+        <meta:record-admin-info>
+          <meta:standard-date type="Original">20121202</meta:standard-date>
+        </meta:record-admin-info>
+        <gift-doc:document-titles>
+          <meta:title-display>L&apos;Union Francaise</meta:title-display>
+          <meta:title-sort>LUnion Francaise</meta:title-sort>
+          <meta:title-open-url>LUnion Francaise</meta:title-open-url>
+        </gift-doc:document-titles>
+        <meta:publication-title>Chatham House Meetings and Speeches</meta:publication-title>
+        <meta:languages>
+          <meta:language term-id="13858591" ocr="French" ocr-term-id="13858591" primary="Y">French</meta:language>
+        </meta:languages>
+        <meta:ocr-confidence>73</meta:ocr-confidence>
+        <meta:authors>
+          <meta:author>
+            <meta:structured-name>
+              <meta:prefix>Le Professeur</meta:prefix>
+              <meta:first-name>C.</meta:first-name>
+              <meta:middle-name>A.</meta:middle-name>
+              <meta:last-name>Julien</meta:last-name>
+            </meta:structured-name>
+            <meta:composed-name>Le Professeur C. A. Julien</meta:composed-name>
+          </meta:author>
+        </meta:authors>
+        <meta:descriptive-indexing>
+          <meta:indexing-term>
+            <meta:term>
+              <meta:term-type>DOC_INFO_TYPE</meta:term-type>
+              <meta:term-source>Atlas</meta:term-source>
+              <meta:term-id>17525832</meta:term-id>
+              <meta:term-value>Meeting transcript</meta:term-value>
+            </meta:term>
+          </meta:indexing-term>
+          <meta:indexing-term>
+            <meta:term>
+              <meta:term-type>CONT_REC_TYPE</meta:term-type>
+              <meta:term-source>Atlas</meta:term-source>
+              <meta:term-id>17234672</meta:term-id>
+              <meta:term-value>Text</meta:term-value>
+            </meta:term>
+          </meta:indexing-term>
+          <meta:indexing-term>
+            <meta:term>
+              <meta:term-type>CONT_TYPE</meta:term-type>
+              <meta:term-source>Atlas</meta:term-source>
+              <meta:term-id>21901545</meta:term-id>
+              <meta:term-value>DVI-Monograph</meta:term-value>
+            </meta:term>
+          </meta:indexing-term>
+          <meta:indexing-term>
+            <meta:term>
+              <meta:term-type>FUNC_TYPE</meta:term-type>
+              <meta:term-source>Atlas</meta:term-source>
+              <meta:term-id>14214546</meta:term-id>
+              <meta:term-value>Megametadocument</meta:term-value>
+            </meta:term>
+          </meta:indexing-term>
+          <meta:indexing-term>
+            <meta:term>
+              <meta:term-type>ART_LANG</meta:term-type>
+              <meta:term-source>Atlas</meta:term-source>
+              <meta:term-id>13858591</meta:term-id>
+              <meta:term-value>French</meta:term-value>
+            </meta:term>
+          </meta:indexing-term>
+        </meta:descriptive-indexing>
+        <meta:source-institution>
+          <meta:institution-name>Chatham House</meta:institution-name>
+          <meta:institution-location>London</meta:institution-location>
+          <meta:copyright-statement>COPYRIGHT Royal Institute of International Affairs</meta:copyright-statement>
+        </meta:source-institution>
+        <meta:holding-institution>
+          <meta:institution-name>Chatham House</meta:institution-name>
+          <meta:institution-location>London</meta:institution-location>
+        </meta:holding-institution>
+        <meta:source-citation-group>
+          <meta:source-citation type="speech">
+            <meta:publication-date>
+              <meta:structured-date>
+                <meta:year>1949</meta:year>
+                <meta:month>11</meta:month>
+                <meta:day>15</meta:day>
+                <meta:day-of-week>Tuesday</meta:day-of-week>
+              </meta:structured-date>
+              <meta:standard-date type="Start date">19491115</meta:standard-date>
+              <meta:standard-date type="End date">19491115</meta:standard-date>
+            </meta:publication-date>
+            <meta:reference-number>
+              <meta:reference-number-display>RIIA/8/1724</meta:reference-number-display>
+            </meta:reference-number>
+            <meta:geo-location>Chatham House, London</meta:geo-location>
+            <meta:organization>Chatham House</meta:organization>
+            <meta:content-date>
+              <meta:structured-date>
+                <meta:year>1949</meta:year>
+                <meta:month>11</meta:month>
+                <meta:day>15</meta:day>
+              </meta:structured-date>
+              <meta:standard-date type="Start date">19491115</meta:standard-date>
+              <meta:standard-date type="End date">19491115</meta:standard-date>
+            </meta:content-date>
+          </meta:source-citation>
+        </meta:source-citation-group>
+        <meta:product-content-type type="CHO">Meetings and Speeches</meta:product-content-type>
+        <meta:content-filter type="CHO rule">No</meta:content-filter>
+      </gift-doc:document-metadata>
+    </gift-doc:metadata>
+    <gift-doc:body>
+      <essay:div document-segment-type="Body text" term-id="14214508" term-source="Atlas">
+        <essay:div document-segment-type="Page" term-id="21922233" term-source="Atlas">
+          <essay:complex-meta>
+            <meta:page-id-number>0001</meta:page-id-number>
+          </essay:complex-meta>
+          <essay:p>; ; M &apos; &#9632; &lt;&#9632; I,&#8364;- ,/ /&apos; -v | P -- / &apos; / WM WUL OF mimhA-UOiikb A iff A IMS Chatham House, 10, St. James*s Sqmr@f S.W.I Tuesday, 15th November, 1949* mh &#174; Union franijai&#174;#1 Speakers L&#174; Professeur C.A, Julian,</essay:p>
+          <shared:media>
+            <media:image data-type="jpeg" width="3400" height="5600" image-type="page view" layout="single" color-mode="color" sequence="0001">
+              <vault-link:vault-link>
+                <vault-link:link-type>external</vault-link:link-type>
+                <vault-link:action>point</vault-link:action>
+                <vault-link:where>
+                  <vault-link:path>cho_meet_1949_1724_000_0001</vault-link:path>
+                </vault-link:where>
+              </vault-link:vault-link>
+            </media:image>
+          </shared:media>
+          <vault-link:vault-link>
+            <vault-link:link-type>external</vault-link:link-type>
+            <vault-link:link-category term-id="21902636" term-source="Atlas">DVI page</vault-link:link-category>
+            <vault-link:action>point</vault-link:action>
+            <vault-link:where>
+              <vault-link:path>//gift-doc:document-metadata/meta:document-ids/meta:id[@type="Gale asset"]/meta:value[.="page-1"]</vault-link:path>
+            </vault-link:where>
+            <vault-link:select>
+              <vault-link:document-nodes>
+                <vault-link:target>ancestor::gift-doc:document</vault-link:target>
+              </vault-link:document-nodes>
+            </vault-link:select>
+          </vault-link:vault-link>
+        </essay:div>
+        <essay:div document-segment-type="Page" term-id="21922233" term-source="Atlas">
+          <essay:complex-meta>
+            <meta:page-id-number>0002</meta:page-id-number>
+            <meta:folio>
+              <meta:start-number>3</meta:start-number>
+            </meta:folio>
+          </essay:complex-meta>
+          <essay:p>- 5 - X* Pvoftsga-or JULIEff t MmBtmm# J&#174; 1811,JL&#167; sensible aux ters&#187;s laas leaquels Lord All EX?? CHAM a bi&#171;fi renin m pr^eater,* Je dais arouer, din 3@ prijaoip&#8364;# que 1*expose- que je vaib ruus fair&#174; n&apos;sura ni la Fie, si la gait# d*u&#187; romaa de Jules Verne. &#163;#est ua suj@i as&amp;esi dur et o&amp;&#171;*&#163; etostr&amp;lt* s&amp;is je crois que la Mllleur* fa&#167;cm duux je puisne repoadre 4 la aoaiisoc&#174; qui afa fait&#174; m &amp;*appelant, 4 parler a Cfeatbas uouee, eat ncm pa&amp; d*essaj&amp;r de ws apporter use apulogie la ce que j*ai mlmpris m krmm9 m&amp;ia d*es&amp;&amp;ye* de f&amp;ire iev?wat fams trn mx^mm critique if@xfiri&#171;iees oiriiji&amp;aiitfc qui out }*int&#163;r&#167;t d&apos;etre en mmm de direloppuent* dwuv qq salt exaetemmt les r6&amp;nlt&amp;tS&apos; auxqnelt* &#169;lie# aboutira&amp;t, sals qui BOBS iQBSiat, &amp; &#187;uu&amp;# historieaii, gems de artier, cette impression de devoir faire Vai&amp;toire, &#169;e qui &#174;**t quel que &#169;iias&#174; i:t asses exoeptioimel.#. Vous &#169;are* oowent lea Ire&amp;gals oat lf habitude 4&#174; r^soudre lea probl&amp;foei&gt;t mam pa^ o^mm&#187; tqub Is fatten* m pmrtmt mr%out diss oas eaicrets,, nt&amp;is plu^ftt en essa^ant d&#187;6tabli* au priaJable i&#174; certain noabre d#idies giairmlisa* auxquelles lis tftohcat 1# coniorsser leura antioaa. Ce legs du droit roBttin, ae le$sd# Is pens^e latine, ey&amp;ttoatique, a toujour^ pe*&gt;* aur la politique frangaise, et je oroitf que, quel que effort qu&apos;elle fasii## ell# arrive difficileaeat 4 8&apos;ea &amp;t&gt;&#163;fcr&amp;ira* mi bien qua# trk&amp; murm%M netr* politique m&amp;mmbtm ^in^nli^reamt* en satidre eelo&amp;iale* a xm^ mrm de ouapromi^ entre priseipes que aams Tutilaati respeoter et 4#s halites qui &amp;oat oontralrea as* prises if&#169; a* le (k&gt;ure*nment *uit davuata^e lee priaoipw* led #x4autmtn# qui bout^no* guuveraeur* et admial^tratmmm eu-&#187; loniaux, auirent darmtage la rialit^; ue qui fait qu&#187;il</essay:p>
+          <shared:media>
+            <media:image data-type="jpeg" width="3400" height="5600" image-type="page view" layout="single" color-mode="color" folio="3" sequence="0002">
+              <vault-link:vault-link>
+                <vault-link:link-type>external</vault-link:link-type>
+                <vault-link:action>point</vault-link:action>
+                <vault-link:where>
+                  <vault-link:path>cho_meet_1949_1724_000_0002</vault-link:path>
+                </vault-link:where>
+              </vault-link:vault-link>
+            </media:image>
+          </shared:media>
+          <vault-link:vault-link>
+            <vault-link:link-type>external</vault-link:link-type>
+            <vault-link:link-category term-id="21902636" term-source="Atlas">DVI page</vault-link:link-category>
+            <vault-link:action>point</vault-link:action>
+            <vault-link:where>
+              <vault-link:path>//gift-doc:document-metadata/meta:document-ids/meta:id[@type="Gale asset"]/meta:value[.="page-2"]</vault-link:path>
+            </vault-link:where>
+            <vault-link:select>
+              <vault-link:document-nodes>
+                <vault-link:target>ancestor::gift-doc:document</vault-link:target>
+              </vault-link:document-nodes>
+            </vault-link:select>
+          </vault-link:vault-link>
+        </essay:div>
+        <essay:div document-segment-type="Page" term-id="21922233" term-source="Atlas">
+          <essay:complex-meta>
+            <meta:page-id-number>0003</meta:page-id-number>
+            <meta:folio>
+              <meta:start-number>4</meta:start-number>
+            </meta:folio>
+          </essay:complex-meta>
+          <essay:p>&#8226; 4 - n#y a pas toujomrm accord abaolu estre o&#163; qui semole Stre dieldi jiar 1# F&amp;rleaeat d#ws# part, at m qui ant fait an pr&amp;tiqua &amp;*autre part. Cela donne a la politique fraogaise us aspeot asses dlffieile, emrfeout pour las gems qui 2m Toiemt 4&#169; l#@xtiriemr, fin r&#163;alit4# alia r^pond It m certain noite&#169; d&#171; traditions %rks fortes* st quoad as 4li&#187;ia# las contingency lea ili&#187;&#171;ats saeondaires, on s&apos;apargoit que oes quelques ligaes peuvent &#167;tr# Jsaiiirtea# non pas seule&#187;aa&lt;, sous la xi&#163;publique# sain dapuia la royautt du XVIla siecla, at, qu*aujourd#hui encore, p^sent sur not, re politique,. &#163;*urtout cm inatiire oolo- ni&amp;le* das tradition** qui remontant m XVIIe BlkmlM&#167; au JCVIIla si&amp;ele, plus uno^r&#174; 4 1 *4paqu# napol^oniecn*. Cette tradition prineipale mat una centralisation a outran&#169;#* qui taad 4 fair&#169; r&#163; sou dre par raris Is pimp-art des probl eases dont beaucoup pourraient avoir una solution locale; la deuxiiis&#174; te&amp;da&amp;oe, qui ob&#163;it 4 1*esprit frim&#167;ai8# 4 Is formation pktflosejfeiqae Mri%4e&#167; i?u&amp;# part#ct# Deaoartes, 4fsiitr# pari,, des jfeilosoifeee du Xflilm ei*elm&#167; est la ten- isa&#169;e u oon&amp;ide.rer en soi eon* 6 tent twujuurs pareil h lui-alm&#171; at, par consequent, por&amp;&#163; a croi e qua tout&#169; *esure qui est bonne pour la &amp;6tropole# doit, ipse faoto, litre bonne pour las ps^s d&#187; Outre-Mar. &#8364;&#169;s directions oat abouti as fait que las i rangais, 4 traver* leur histoire, oat essay&#8364; de fair&#174; das indigenes da des sortes de neo-Franqais leurs colonial 4#s aortas qui prmaieat la maxima* possible da la civilisation frongaise, at l#on eynsid&#163;rait# an *raace, oomiae 1&#174; sucoeu 1# Milleur* d&apos;sowutir 4 avoir das 4voltt4s# dee hownato i*Qutre~ae&#169;r gui arrivR^gent I penser exac- taamt,. ou%paijx&amp;s exaeteaant* mmm daa Iraagaia. Catta procedure qui parait absurd#* et qui, an riaiiti# no tient pas oo&amp;pta da la solidite ins traditions, aurtout</essay:p>
+          <shared:media>
+            <media:image data-type="jpeg" width="3400" height="5600" image-type="page view" layout="single" color-mode="color" folio="4" sequence="0003">
+              <vault-link:vault-link>
+                <vault-link:link-type>external</vault-link:link-type>
+                <vault-link:action>point</vault-link:action>
+                <vault-link:where>
+                  <vault-link:path>cho_meet_1949_1724_000_0003</vault-link:path>
+                </vault-link:where>
+              </vault-link:vault-link>
+            </media:image>
+          </shared:media>
+          <vault-link:vault-link>
+            <vault-link:link-type>external</vault-link:link-type>
+            <vault-link:link-category term-id="21902636" term-source="Atlas">DVI page</vault-link:link-category>
+            <vault-link:action>point</vault-link:action>
+            <vault-link:where>
+              <vault-link:path>//gift-doc:document-metadata/meta:document-ids/meta:id[@type="Gale asset"]/meta:value[.="page-3"]</vault-link:path>
+            </vault-link:where>
+            <vault-link:select>
+              <vault-link:document-nodes>
+                <vault-link:target>ancestor::gift-doc:document</vault-link:target>
+              </vault-link:document-nodes>
+            </vault-link:select>
+          </vault-link:vault-link>
+        </essay:div>
+        <essay:div document-segment-type="Page" term-id="21922233" term-source="Atlas">
+          <essay:complex-meta>
+            <meta:page-id-number>0004</meta:page-id-number>
+            <meta:folio>
+              <meta:start-number>5</meta:start-number>
+            </meta:folio>
+          </essay:complex-meta>
+          <essay:p>- 5 - en pa.jb i;#Omtre*&#187;ifer, -a mix m *6sultat paradoxal de cr^er, daas toutes lea colonies frangaises, uae 61it6 ixitellectuelle qui a tenement tBpripiie de Is pemale frstagaise, d@s aades de ralsoaaewaat fraaQ&amp;la* qufelle n&apos;arrive pitas 4 peaser q?i*en trrnqmim* It pent-ltre les liens les plus solides qui existent matre lee territoirea d&#187;Outre-Mer et Is M&lt;Hropole sont-ils issue de cette sort# d#&apos;ssiiiBilatioa qui a&apos;est fait&#174; 4 tra&#165;#ra lea aieoles et qui a &#163;tabli uae telle intimity que la plupart de bos indigenes qmi pensent &amp; ime amtcm-oai&#169; locale, la pen* sent das les tjadres dftme union qui letir lais^erait des liens arec Is M6tropole* A part ime minorite d*iadig^aes,. sel droit on @a fsit^ au parti caaaimists^ l#ias@imm majority das istigiaes des ooloni.es fraagaisea, tesmt les plus aadaeieux, ae ripmdient jamais les liens aveo la Imei. c1 est uiie elasticity plus grand&#169; ; ce qu&apos; ils reclament, Ce qa*ils rielaneat*/ 0fest de diTelopper datrantage, 4ms leur pro pre ai&#165;iliS&amp;tiou# et d&apos;essayer 4# r&#171;&#167;aliaer me sort&#169; de syath&amp;se entre leur toraation locale et 1&apos; apport de la culture fraag&amp;ise* J# crois que e#est la tm des points les pirns originaox de la colonisation fraa&#167;aisef doat cm &#187;e peut pas lui fair&#174; im sprite, pare&#169; qu&apos;on peut dire qu&apos;elle a 6t6 fait&#174; malgre elle# paruae sorts de tendanoe aaturelle qui repoad k sos &#163;&amp;aie propre; et e#e&amp;t pare&#169; que cette centralisation, cette volenti dfassimilatiQB rests trds fart&#174; dans 1*esprit .frauag&amp;ia que, lorsqu&#9830; il a 4 alia fairs me aotrrelle organisation, son, plus de 1fempire puisqae lf&#169;afire est an iliwmnt different, de la anStropole, amis me Union frsngaise, c&apos;est- h- dire un easemble qui compters k la fois la ^tropole et son eiijiire, les gena qui ant eu a faire cette t&amp;ohe oat 6t6 tires entre deux teadaacesi las Yieilles teadances traditloaaellea ees&#171; tr&amp;lisatrl0@s# autorit&amp;ires et Iravftanoratiqms d9m&#169; part, et, d*autre part, les teadanoes fidiralistes qui essayaieat de r&#163;pcmdre aux aspirations iadigeaes.</essay:p>
+          <shared:media>
+            <media:image data-type="jpeg" width="3400" height="5600" image-type="page view" layout="single" color-mode="color" folio="5" sequence="0004">
+              <vault-link:vault-link>
+                <vault-link:link-type>external</vault-link:link-type>
+                <vault-link:action>point</vault-link:action>
+                <vault-link:where>
+                  <vault-link:path>cho_meet_1949_1724_000_0004</vault-link:path>
+                </vault-link:where>
+              </vault-link:vault-link>
+            </media:image>
+          </shared:media>
+          <vault-link:vault-link>
+            <vault-link:link-type>external</vault-link:link-type>
+            <vault-link:link-category term-id="21902636" term-source="Atlas">DVI page</vault-link:link-category>
+            <vault-link:action>point</vault-link:action>
+            <vault-link:where>
+              <vault-link:path>//gift-doc:document-metadata/meta:document-ids/meta:id[@type="Gale asset"]/meta:value[.="page-4"]</vault-link:path>
+            </vault-link:where>
+            <vault-link:select>
+              <vault-link:document-nodes>
+                <vault-link:target>ancestor::gift-doc:document</vault-link:target>
+              </vault-link:document-nodes>
+            </vault-link:select>
+          </vault-link:vault-link>
+        </essay:div>
+        <essay:div document-segment-type="Page" term-id="21922233" term-source="Atlas">
+          <essay:complex-meta>
+            <meta:page-id-number>0005</meta:page-id-number>
+            <meta:folio>
+              <meta:start-number>6</meta:start-number>
+            </meta:folio>
+          </essay:complex-meta>
+          <essay:p>~ 6 ~ &#163;a tflo&amp;e it# iifCivile cues nous, para# qu&apos;on an paut pas iuimer aoies&#174; aodala lf &#169;rga&amp;isatiom fra&amp;eaiaa &#169;a. mUlw ooloniala, Qatta organisation a&apos;est fait# euivant 1 &gt;ui*tv&gt;ira, si bien que noa tarri Wires &lt;&amp;*Otttra~Mar report is sent k %mta MMimkmB- diffirests* !&#9830; Algeria d*Sp&#171;id de noire Miniature de I&apos;Intilrieur, le Maroc at la ixmisie, da n^tr&#171; Mimlst^r^s d@s Affaires Strsa- g#r@s# tout le re^te jl^s territyires depend du Miniature das Colonies, ce que nous appal one aujaurdf!mi la Minist&amp;re da la &#163;raaoa d*(fet*e~lia?&#171; Inutile de vans -dir# que onaom das Mini- travsille quf.il est stores da san oCt&amp;/ jaloux 4&#169; sjob s&#187;t&#169;riti# et qufil est plus facile s^uvent de trouver dea liaisons &#169;aire l&apos;ladodhlaa at l#Afrigue Oeoldaatale, qui relevant du is&#167;Bii Mini&#172; sters, qufantra 1 &apos;Al^rie *ju la iuniaia at 1&#174; laroa# qui relh- wmt de deux itinistiras diiferents. / C&apos;eat airisi qu#au point de viae ae l*enaei|&#163;ieBenty 1&apos;enaei* gneaent super lour tsaisiea Upend de 3 &#8226;University de jr&amp;ris; l&apos;enaeigpeaent auprfrieur aarueain est @n liaison area lfUni- varsiti 4&#174; Bord&#169;aux# sta^e jamais ils n&apos;auraient ounaenti &amp; itablir dee liens avee l#Uaiv#rsi^ dfAlter* paroe qu&apos;il afagit i&apos;un rntm J&apos;ai eu# de l&gt;^o a 1939# 1&amp; lourde ttcae a la i-^sideaoe du Conaeil, d*@sss^er d&apos;organiser la coordination antra o&#169;s divers Minister#&#169;. Je puis voua dire que a*est un travail extrtoaaant dlfflaile* at ou l*m s# kaurt# ooaataaaant h la plue Xrano&amp;e aauvaiae volont&#163; dea diraoteura daa Sarrioea et des jSouvemtura.*, Si..bieniqu&apos;I rheura a.ctueile^s&#174; qmf i 1 fa&amp;t c fest que, retenir, /que11 ea que aolent l.#a re:f arises fattea&#163; alias eoat anoore ap*.liqu4ea adainiatrativeaent par trois aarvices diff^- reBt^ %nl n&apos;sjnx. aucont? entente est re &#169;uxj* si bian la i&apos;raane# 1 1 *aaure aotuella^i^ls paapuPapula 1939 arriver 4 aettra stir piad im &#169;eirriaa ^#aoaupa&#187;t speciale^a&amp;t das ^ifair@s Eusulaanee# para&#174; qua Affairaa Musulmsa#s rassortissaat h truis dipar-</essay:p>
+          <shared:media>
+            <media:image data-type="jpeg" width="3400" height="5600" image-type="page view" layout="single" color-mode="color" folio="6" sequence="0005">
+              <vault-link:vault-link>
+                <vault-link:link-type>external</vault-link:link-type>
+                <vault-link:action>point</vault-link:action>
+                <vault-link:where>
+                  <vault-link:path>cho_meet_1949_1724_000_0005</vault-link:path>
+                </vault-link:where>
+              </vault-link:vault-link>
+            </media:image>
+          </shared:media>
+          <vault-link:vault-link>
+            <vault-link:link-type>external</vault-link:link-type>
+            <vault-link:link-category term-id="21902636" term-source="Atlas">DVI page</vault-link:link-category>
+            <vault-link:action>point</vault-link:action>
+            <vault-link:where>
+              <vault-link:path>//gift-doc:document-metadata/meta:document-ids/meta:id[@type="Gale asset"]/meta:value[.="page-5"]</vault-link:path>
+            </vault-link:where>
+            <vault-link:select>
+              <vault-link:document-nodes>
+                <vault-link:target>ancestor::gift-doc:document</vault-link:target>
+              </vault-link:document-nodes>
+            </vault-link:select>
+          </vault-link:vault-link>
+        </essay:div>
+        <essay:div document-segment-type="Page" term-id="21922233" term-source="Atlas">
+          <essay:complex-meta>
+            <meta:page-id-number>0006</meta:page-id-number>
+            <meta:folio>
+              <meta:start-number>7</meta:start-number>
+            </meta:folio>
+          </essay:complex-meta>
+          <essay:p>- 7 - taaamts tiffiramts. Cela est axtrimaaaat important vwur tqIf comment ant les 6vSiiaaenta&#187; Ce qui a It# eiies nmm&#167; a ite la guerre, %mn saTa&#171; le drama que aoua arons v6cu at Qoweeat la fraaa&#174; a littiral&#169;&#187;a&#187;t araaifiig antra la tidilit# auo. %mm mma co&amp;8ld6rioxi&amp; eamai&#174; sonstis h 1 lAll&#171;magA&#171;# 81 1*attraction vers m goaveraeiisat fix&#163; a l*m% range r# aais ^ui raprci bant ait, pour aaas# la liberation, l&apos;iadependaaoa ris-a-irie da Paanaai. la Ifffiei, lee rgactiuzut out it# tr^s sijaplas* Silas &#169;at &#8364;t&#8364; 41&#8364; neat aires, p&amp;roa iua 1* alls man d 6tait sur jslaa&#169;# it le prwbl^iftsi, sasif paar uaa aioorit^* tie $*ast pas pos4&#187; la probltea #t&#169;4t que tout gouverneifienc gal aompas&amp;it ara&#174; lf&#8364;sa#si 6tait poor bubs u&amp;l aaaend. Ja 1# r^p&amp;ta, en i&apos;raae@# la $aastto&amp; a &#8364;ti aztrtaasaat claira* Qu%msm.TM it a* en a pa&#169; 6te aiasis d# ab*&gt;rd las tarrltairas d* Outre-Mar oat ite lee praaiare 4 riagir dans le seas d&apos;uaa difeasa ?is-a-via da lfA3 laoagaa, asis le parsoxsaal df0ut&#171;- aer etait ua parao&amp;aal* plixs g,ua aalui 4# .trima&#174;^ Imaitu# 4 la diacipliaa adsdaiatratiTa, aabxtu&lt;* a ob&#163;ir aox urdres da ioutoxr Central; et ^uaad il a ru ;ue le r^avair Ceatral itmit r6galifrr*aa&amp;t tanu ^ar m gea^ral ^ai a-rait ei^ trfca aaaor# par son pass#, tout &amp;atur* 11aneat par las iiaaitadss, d&apos;ord par la base la da register auz poassies iadigteas, far la nio^seiii d&apos;offrir me sana 4&#174; fruat aom aux dltfi- ealtis, la najaar# partla das eolaaiaa frsa^aisaa m aoai rail Mas as Oouvamamat 4# Vicky* oapaadant qua oallas tmi ae trguraiaat *lus 2oi&amp;&#187; dans 1 e *ac if iq.ua par example, at sawiaa saaa 1 &#8226; influence da la ia6tropolat ee ^o&amp;t rslltim tout aa cumraxre aa Oommtatat de de Gaulla, Si catt&#169; aoia^iaa a 6t4 grara, alia l*a it# parce $a#ella a mantra aax inai^naa ^u* il afy avait pas d&apos;unit^ daas la pa&amp;aia frangai&#187;a# at %aa# daa.s pay*</essay:p>
+          <shared:media>
+            <media:image data-type="jpeg" width="3400" height="5600" image-type="page view" layout="single" color-mode="color" folio="7" sequence="0006">
+              <vault-link:vault-link>
+                <vault-link:link-type>external</vault-link:link-type>
+                <vault-link:action>point</vault-link:action>
+                <vault-link:where>
+                  <vault-link:path>cho_meet_1949_1724_000_0006</vault-link:path>
+                </vault-link:where>
+              </vault-link:vault-link>
+            </media:image>
+          </shared:media>
+          <vault-link:vault-link>
+            <vault-link:link-type>external</vault-link:link-type>
+            <vault-link:link-category term-id="21902636" term-source="Atlas">DVI page</vault-link:link-category>
+            <vault-link:action>point</vault-link:action>
+            <vault-link:where>
+              <vault-link:path>//gift-doc:document-metadata/meta:document-ids/meta:id[@type="Gale asset"]/meta:value[.="page-6"]</vault-link:path>
+            </vault-link:where>
+            <vault-link:select>
+              <vault-link:document-nodes>
+                <vault-link:target>ancestor::gift-doc:document</vault-link:target>
+              </vault-link:document-nodes>
+            </vault-link:select>
+          </vault-link:vault-link>
+        </essay:div>
+        <essay:div document-segment-type="Page" term-id="21922233" term-source="Atlas">
+          <essay:complex-meta>
+            <meta:page-id-number>0007</meta:page-id-number>
+            <meta:folio>
+              <meta:start-number>8</meta:start-number>
+            </meta:folio>
+          </essay:complex-meta>
+          <essay:p>- 8 - gjomaiis &amp; Viotoy* lia ieux tastdaaaas se Bun.lfssts.imt pare# &#9632;qa* 11 n*&gt; aralt pas on front oaiqua* fins tard, guaad 41 y a qu l*oe&lt;mpatiaxi ia Madagascar par las Aaglais, puis oella da 1 &#8226;Afriqua du Hard, j&#174; a&#174; &#174;mis pas oartain ^ 3#s eoadi- tions d# occupation aient eontrlbutf 4 augjaantar prestige da I&apos;autorit# frazi^&amp;is#; at 11 a at taut moxuml qua la pou- voir ailitaira, oa q&#187;s &#169;artiiUiaa dtolarattoaa rmmt d&apos;Afriqua dm Snd# aiant au aw la fraaoa* I oa wmd.v&#187;14# das Jn&#163;&#169;&#171;ats qua aana avona pmit-Str&#174; era ua pen mmsmlmM# a&amp;is qui, m tuna c&amp;s, taniaianta fair&#174; craire qum 1 * mmrlti rrangaise itait me autoritl *&#187;ubordoim6e, at a laioaer panser | ba&#171;&#171; coup 4# iadiglmas qu*a$rta la sGuarre* il y aurait una liqui&#172; dation oolcmiala fraagaiaa mi profit da lfAng&#163;aterra at 4# l*Aa6riqaa, la fail aat appam aortout nm hfrlqtm dm lard ou mm aaie Mirta&amp;iaii, paut~&#167;tre n&amp; peu aaufs an matlira colonial &#174;# it pletHM d&apos;anttumaiaana pemr da&#174; quaationa iont, paut^ttra4 touta la ao*plexit&#163; na laur apparaiaoait pa&#187;# oat pris poai- tlan dm a las prgolasaai; xndi&amp;fctiasi area xmm strati* ma nattatl qua j&apos;aiidre, saia qua Js puit&#187; p&amp;rtagar, efc ait provoke aissi ua aartaixi nonar# da troafelas qui &#169;at pa&#163;aiplt&lt; las iadi#&#187;&#174;a vers &gt;ies t*8pair&amp; qua ay a aai a aa&amp;rioaina out &#163;t&#163;# ua an apr&amp;a, las preaiars a ruiaer* Ski tout c&amp;a, il a&amp;t r&#163;ault&#163; da tout oal a# irne aspaaa da trouble, stais en sllfi&amp;&#169; il y &amp; #s oertaias 6?&amp;Mmts rgcanfortaxtts: &lt;r&apos;est qua le prasiaj? territaira qui ts#etet pro&#172; lan c&#163; pour Is f*8aoe libra at pour la oollaboratiaaL aveo lfAaglat#&#187;&#171;.&lt; lfa fait k 1&apos;ai4&#171;] 4#im guw&#171;m&#174;i&#187; aalr. XI a*ast trow# qua 1# patriots, au &#187;s integral du sat d&amp;afc nous, en satiara calami -le, &lt;&#167;a a* a pau iti la Llaac# ga a &#8364;t&lt;&#167; la aoir, C^etait im Guyoaais, fu4 la culture frcm&#167;ais&#174;# qui aruit 4%i ap^34 4 &#171;atrar Oaaa las cruras ooli&#187;isuxt qui ^tait arrive a Stre ^uremeur du fxoikad: la GouTarneur 1B0II1*</essay:p>
+          <shared:media>
+            <media:image data-type="jpeg" width="3400" height="5600" image-type="page view" layout="single" color-mode="color" folio="8" sequence="0007">
+              <vault-link:vault-link>
+                <vault-link:link-type>external</vault-link:link-type>
+                <vault-link:action>point</vault-link:action>
+                <vault-link:where>
+                  <vault-link:path>cho_meet_1949_1724_000_0007</vault-link:path>
+                </vault-link:where>
+              </vault-link:vault-link>
+            </media:image>
+          </shared:media>
+          <vault-link:vault-link>
+            <vault-link:link-type>external</vault-link:link-type>
+            <vault-link:link-category term-id="21902636" term-source="Atlas">DVI page</vault-link:link-category>
+            <vault-link:action>point</vault-link:action>
+            <vault-link:where>
+              <vault-link:path>//gift-doc:document-metadata/meta:document-ids/meta:id[@type="Gale asset"]/meta:value[.="page-7"]</vault-link:path>
+            </vault-link:where>
+            <vault-link:select>
+              <vault-link:document-nodes>
+                <vault-link:target>ancestor::gift-doc:document</vault-link:target>
+              </vault-link:document-nodes>
+            </vault-link:select>
+          </vault-link:vault-link>
+        </essay:div>
+        <essay:div document-segment-type="Page" term-id="21922233" term-source="Atlas">
+          <essay:complex-meta>
+            <meta:page-id-number>0008</meta:page-id-number>
+            <meta:folio>
+              <meta:start-number>9</meta:start-number>
+            </meta:folio>
+          </essay:complex-meta>
+          <essay:p>Sh bien! Oat homme, son gendre me dissit - son gendre ? est un professeur de Istin et de grec qui est un Sch6rer du plus beau noir, un homme d* une culture tellement affinde 0 que, lor sque le Per lenient a vot&#163; notre Constitution, laquelle 4tait r6dig6e en tree mauvais frangais comme tous lea textes psrlementaires improvises, la Chambre unaniroe a decide de designer un homme pour remettre la Constitution en franQeis, ? et dlie s choisi ce SchSrer noir qui estirn grand pofete franqais et qui parle notre langue svec ma maltrise singuli&amp;re - sob gendre &#169;e dissit qu*il n&apos;y a pas. eu chez gbou# un cas de conscience; il y a eu un r4f.le.xe ep on ten 6, La France 6tait envahie* on appelait de Londres a Is insistence? et Ebou&amp; nfa pas h&#163;sit6 une second&#174;, Lui nfs pas pensi a Is discipline a laquelle oat pens&amp; nos gouverneure coloniaux; lui, le noir, a pens4 patriotiquement, spontene&#172; ment, et c&apos;est lui qui a entrain^ 1fAfrique Noire dans 1&#174; sillage des Allies. Gel a impliquait pour nous une sorte de dette vis-a-vis d*homme8 qui nous avaient donne cette preuve de fidSlite - car a*il y a un fait curieux, c&apos;est que pendant toute la guerre, pendant toute 1* epoque ou le France a ete veritable- sent bless^e, ou ell&#169; a 6te sans force, 11 n*,y a pas eu, pratiquement* de dissidence colonial&#174;. Heme les Annamites, mem&#169; les gens qui foment aujourd&apos; hui le Viet-Minh et r&#167;clament par le voix des ernes des libertSs nouvelles h le France, cea gens-la n* ont pas bronche pendent toute 1 &apos;occupation japonaiae; pas plus que nos Berb&amp;res ni nos Noire nfont failli en Afrique du Nord et en Afrique Noire* C&apos;est la un fait curieux mais qui ne .manque pas d&apos;interet. L*id$e du G6n6ral de Gaulle de vouloir essa^er d&apos;arreter des mesurea nouvelles itait heurauee&#8226; D&amp;s 1944 on a r&#163;uni une Conference k Brazzaville qui a jet&amp; les bases d&apos;une organisation nouvelle da 1*empire frentals- Mais cette</essay:p>
+          <shared:media>
+            <media:image data-type="jpeg" width="3400" height="5600" image-type="page view" layout="single" color-mode="color" folio="9" sequence="0008">
+              <vault-link:vault-link>
+                <vault-link:link-type>external</vault-link:link-type>
+                <vault-link:action>point</vault-link:action>
+                <vault-link:where>
+                  <vault-link:path>cho_meet_1949_1724_000_0008</vault-link:path>
+                </vault-link:where>
+              </vault-link:vault-link>
+            </media:image>
+          </shared:media>
+          <vault-link:vault-link>
+            <vault-link:link-type>external</vault-link:link-type>
+            <vault-link:link-category term-id="21902636" term-source="Atlas">DVI page</vault-link:link-category>
+            <vault-link:action>point</vault-link:action>
+            <vault-link:where>
+              <vault-link:path>//gift-doc:document-metadata/meta:document-ids/meta:id[@type="Gale asset"]/meta:value[.="page-8"]</vault-link:path>
+            </vault-link:where>
+            <vault-link:select>
+              <vault-link:document-nodes>
+                <vault-link:target>ancestor::gift-doc:document</vault-link:target>
+              </vault-link:document-nodes>
+            </vault-link:select>
+          </vault-link:vault-link>
+        </essay:div>
+        <essay:div document-segment-type="Page" term-id="21922233" term-source="Atlas">
+          <essay:complex-meta>
+            <meta:page-id-number>0009</meta:page-id-number>
+            <meta:folio>
+              <meta:start-number>10</meta:start-number>
+            </meta:folio>
+          </essay:complex-meta>
+          <essay:p>&#9632;Gonf-iranea itait aaiiatituia uaiquaaaFit per des Gouverxteurs ciss Colo&amp;las, at il est trfcs difficile de daman dar k xm &#9632;Gouirariiaur de passer autramant quf#a Gouverneur; si biem qu^SvidftSAttnt les decision&#169; out de caractfcr* pXutot autoritatra au point da vua gouvernai&amp;ftnt&amp;X, tout an s&#174; ao&amp;trant liMralaa au point da vua social &#8226; It. la conclusion. du rapportaur 6tait fer&amp;s tjypiqua* II disait: &quot;Hous n&apos;&amp;llo&amp;s pas vers le * self-government* b la manldre anglaise; nous al.lons vers le conception m I&apos;eapir* h 1&#169; iiajiiSra rosalne; c&apos;ast la viailia tradition franqaiae de a&amp;lntenir ua ampira autorltslx#,&quot; Me is nous bwgmb amani-s comma vons, par les n6c*ssitds intarnational as* par le pact&#174; de X* Htlantlqua* par la Chart* de I&apos;A&amp;sambXSa das Nations, a prendre das an$agamant@ k cer&amp;.ctfcr* la terns tional at qui, aux, mattalant aur tout i*-secant sur 1&apos;autonomic de&#169; territoirea d* .utraW4ar; si Mail qua bos deux Assemblies Constituantss qui out 6t6 appal6aa h arratar le taxta qui davait r6gir is franca at son imp ire, ant du tamir coiapt* da cea tendances federallatas at assaysr, tant bian qua m&amp;l* .da las fair* cadrar ovac laa traditions, autori- tsiras at buraauoratiqua&#174; franqalsea* fiotra Constitution* chez nous* a 6t6 fait&#174; par etas profasseurs d# droit* fin. pratique on s*sparfoit qu&apos;slls aat axtraiaaasnt mauvala* pare&#169; qua les profeaaeurs oat pans# dans 1*ebstrait una organisation, sans tanir compta, justaaiafit, daa viaillas habitudes frangaisas. Durant la darni^r&#174; crisa miaistfeiall&#174; on s?ast apargu qu#&#187; &apos;ai l&apos;on n1 arrivait pas a &apos;fair.&#174; ds gouvsrnsmnt an Franca * c&apos;aat que 1 * on sirait instituS das rfeglss nouvallas qui allaiaht absoluaant k l&apos;ancontra das viaillas traditions; at automstiquaaant on revlent per la pratiqu&#174; &amp; Is viaille organisation da la Zhm&#174; R$putollqua&gt; qui 6talt faite an 10 articles, an. laissant de plus au plus una Constitution qui an a plusieurs cantalnas*</essay:p>
+          <shared:media>
+            <media:image data-type="jpeg" width="3400" height="5600" image-type="page view" layout="single" color-mode="color" folio="10" sequence="0009">
+              <vault-link:vault-link>
+                <vault-link:link-type>external</vault-link:link-type>
+                <vault-link:action>point</vault-link:action>
+                <vault-link:where>
+                  <vault-link:path>cho_meet_1949_1724_000_0009</vault-link:path>
+                </vault-link:where>
+              </vault-link:vault-link>
+            </media:image>
+          </shared:media>
+          <vault-link:vault-link>
+            <vault-link:link-type>external</vault-link:link-type>
+            <vault-link:link-category term-id="21902636" term-source="Atlas">DVI page</vault-link:link-category>
+            <vault-link:action>point</vault-link:action>
+            <vault-link:where>
+              <vault-link:path>//gift-doc:document-metadata/meta:document-ids/meta:id[@type="Gale asset"]/meta:value[.="page-9"]</vault-link:path>
+            </vault-link:where>
+            <vault-link:select>
+              <vault-link:document-nodes>
+                <vault-link:target>ancestor::gift-doc:document</vault-link:target>
+              </vault-link:document-nodes>
+            </vault-link:select>
+          </vault-link:vault-link>
+        </essay:div>
+        <essay:div document-segment-type="Page" term-id="21922233" term-source="Atlas">
+          <essay:complex-meta>
+            <meta:page-id-number>0010</meta:page-id-number>
+            <meta:folio>
+              <meta:start-number>11</meta:start-number>
+            </meta:folio>
+          </essay:complex-meta>
+          <essay:p>- 11 - la is 1 * original it;# de cette Constitution* crest que, pour la premiere f ois, elle introduit un&#169; organisation ae la France at de son Empire&#187; non plus consider6s cowtt dauoc Elements dlff&apos;ireats ma is consid^rds comnse mi taut: cer f je le ripite# i 1 Union ce nf est pas 1* Empire; 1 * Union Frouqaise, cfest le fraa.ce plus 1*Empire&#8226; It cfest cette organisation .cosanme que Is on a essay&#169; de faire* On &#169; d&apos;&amp;bord posit comme toujour a en franee, une girle ae priseipes; prime ipes d?igelit#, priceipes c autre le travail forest priiicipes snr Is liberty reltgleuse, sur la liberty a?8ssoelstiQas tons principes qui pour nous, ?ranq&amp;is&#187; vont de mls&#169;f sisis qui oat# dans let milieux indigenes, use repercussion considerable - puree que les indigenes les oat prie au s6ri#ux! Quand on e pari 6 de liberty, ils ne se seat pes content6e de reg&amp;r-der cela eon&#169; un text#.; eels a 6t6 pour eux des idies de fore&#169;* Aujourd&apos;hui ils tr&amp;v&amp;lllent pour einsi dire sur un fond 16gsl et const!tutionnel&#187; et lfautorit4 qui essaie, sinon de paralyser, du solas de neutralleer certains frogrfcs- trop repldes&#187; trav&amp;ille contre la Constitution, puinque la Constitution a 6t6 extrSnesient l-ib&amp;rale* Ge qui est le pi as freppent* et ce qui est int&amp;ressent* cfest la fsqon dont ant 6t6 cr&#163;6s certains orgenisnes qui peuirent avoir des cons6quen.cea considerables * La. Constitution a proelaffii que tous lea indigenes des territuires franqaie d*0tttre~1lfer dsvsn&amp;ient citoyens. C&apos;est 1 h &apos;mm grand&#169; idie h6rit6e de Is tradition r6volutionnsire de 1?89 male qui port&#169; ec elle des consequences ind6finiess 11 n*j &amp; plus de &quot;aujets* aujourd&apos;hui dene les Colonies franqaises; tous les indigenes ont requ le titre de cifeojen quel que aoit leur ststut ciirii - c&apos;est-a-dire que, contrsirement k le tredition juridique frangaise qni r6serveit toujours des droits aux gens qui awient le ststut civil a6tropolitsin ou le ststut civil chr6ti&#171;n, 11 y s naintenant des citokens qui peuvent avoir</essay:p>
+          <shared:media>
+            <media:image data-type="jpeg" width="3400" height="5600" image-type="page view" layout="single" color-mode="color" folio="11" sequence="0010">
+              <vault-link:vault-link>
+                <vault-link:link-type>external</vault-link:link-type>
+                <vault-link:action>point</vault-link:action>
+                <vault-link:where>
+                  <vault-link:path>cho_meet_1949_1724_000_0010</vault-link:path>
+                </vault-link:where>
+              </vault-link:vault-link>
+            </media:image>
+          </shared:media>
+          <vault-link:vault-link>
+            <vault-link:link-type>external</vault-link:link-type>
+            <vault-link:link-category term-id="21902636" term-source="Atlas">DVI page</vault-link:link-category>
+            <vault-link:action>point</vault-link:action>
+            <vault-link:where>
+              <vault-link:path>//gift-doc:document-metadata/meta:document-ids/meta:id[@type="Gale asset"]/meta:value[.="page-10"]</vault-link:path>
+            </vault-link:where>
+            <vault-link:select>
+              <vault-link:document-nodes>
+                <vault-link:target>ancestor::gift-doc:document</vault-link:target>
+              </vault-link:document-nodes>
+            </vault-link:select>
+          </vault-link:vault-link>
+        </essay:div>
+        <essay:div document-segment-type="Page" term-id="21922233" term-source="Atlas">
+          <essay:complex-meta>
+            <meta:page-id-number>0011</meta:page-id-number>
+            <meta:folio>
+              <meta:start-number>12</meta:start-number>
+            </meta:folio>
+          </essay:complex-meta>
+          <essay:p>12 - un statut civil mttsulmaii, par #xempl&#171;t et Stare polygamy* &#169;t jouir nianmolas de Is citoyannetl frangaise su mSme titre que les citokens de la M#tropol@f et avec la totality dea droits, j eoapris le droit electoral &#9830; Yous allez mo dire iaiiidiateitsnt que c@ droit electoral a du entrainer des catastrophes? 6tant domi6 qu&apos;il y a un certain nombre de populations# notamraent des tribus africaines, pour qui 1# mBuimmnt du bulletin de vote n&apos;est pas quel que chose df &#8226;xtreaftaent familiar; mais voua save a que toujoura, a cote d1 un t&#171;xt*, il y a 1* appliestian* In fait, dans Is plupart d&#169;s terrltoire# framqals il y a deux colleges Hector nun* on coll&amp;g&#174; indigene et m college n4trop oil tain; et oomme l*6tat civil est niieor&#174; pr#cair#f ne sont iaserits sur les listea Elector ales que les gens dotis de cet 6 tat civil, c&apos;est- k-dire ayent d&amp;ja une eertaiii# Evolution. Or, chose tres original&#174; at qui n&apos;est que frsnqaise, non aeulement les imdigltMS figment dans cette Assemble&#169; de 1*Union ffranqaiae, doiit je warn&#174; ai pari#, sais @neor# ils oat des deputes k notre Ghastfer&#174; das H&amp;put&amp;s et k notre 86nat* lis sont cigme as sear forte men t representee, puisque, sur &#167;00 diput^s, il y a 75 deputes el us pax les Colonies- foilk une tentative nouvelle et qui pouvait paraltre dsngertua&#171;e la r4alit#P dens Is * pratiqu** elle m*a present# aucun inconvenient reel, et c&apos;eat Ik une chose intirasiisat&#174; * Mais les eiua dss Ooloniea sent obliges d&#171; se a@ surer sur ma autre discipline que leur discipline traditionnall0* &apos;Eloign#&#174; da leur pe^ys d*origins, ils ont apporte dans 1&#174; travail du Parl@st&#169;nt un &#169;oneours eactrraentnt tfficac&#174;* B&#171;sucoup se sont rallies sax ancl@ne partis politiquta, surtout aux partis de g&amp;ucha. B#autr#s ont forme un parti d* ind&#167;p&#171;n.dants qui s&apos;oceupe sur tout d@ problfroes coloniaux# la r4alite, les inconvdnirats que nous prevoyions toua ne se sont psm produita, et le resultat de cette representation est p&#174;ut-#tr&#174; d&#174; resserrer plus quit</essay:p>
+          <shared:media>
+            <media:image data-type="jpeg" width="3400" height="5600" image-type="page view" layout="single" color-mode="color" folio="12" sequence="0011">
+              <vault-link:vault-link>
+                <vault-link:link-type>external</vault-link:link-type>
+                <vault-link:action>point</vault-link:action>
+                <vault-link:where>
+                  <vault-link:path>cho_meet_1949_1724_000_0011</vault-link:path>
+                </vault-link:where>
+              </vault-link:vault-link>
+            </media:image>
+          </shared:media>
+          <vault-link:vault-link>
+            <vault-link:link-type>external</vault-link:link-type>
+            <vault-link:link-category term-id="21902636" term-source="Atlas">DVI page</vault-link:link-category>
+            <vault-link:action>point</vault-link:action>
+            <vault-link:where>
+              <vault-link:path>//gift-doc:document-metadata/meta:document-ids/meta:id[@type="Gale asset"]/meta:value[.="page-11"]</vault-link:path>
+            </vault-link:where>
+            <vault-link:select>
+              <vault-link:document-nodes>
+                <vault-link:target>ancestor::gift-doc:document</vault-link:target>
+              </vault-link:document-nodes>
+            </vault-link:select>
+          </vault-link:vault-link>
+        </essay:div>
+        <essay:div document-segment-type="Page" term-id="21922233" term-source="Atlas">
+          <essay:complex-meta>
+            <meta:page-id-number>0012</meta:page-id-number>
+            <meta:folio>
+              <meta:start-number>13</meta:start-number>
+            </meta:folio>
+          </essay:complex-meta>
+          <essay:p>IS - tout autre, les liens entre les territoires d&apos;Outre-tfer et le M6tropole&#187; car cea territoires r4clament fermement df&#169;tae&#169; representee dens le Par lenient franqaia. Ob&#169; das creations int6ressa&amp;tes est d*avoir, dans chaque territoire colonial* ere6 des assemblies locales oil les ifidigines out le majority. Lk &#169;.nasi nous avons beaucoup apprifeend# la pratique de ces essercblees. Biles out le droit de voter le budget local; &#169;lies aont appel#@s &amp; se prononcer sur lea affaires das travaux paolica, de mines, d*enaeigneraent. Ellas ont done urn# tres large initiative. Sri r4alit4* 1&amp; encore, la pratique ci@ cea assemblies a quelquefoia ginS les Gouverneurs, nais eile les a gen6s surtout dans tin sens que j f appelleral favorable: certaines d$peases sonptuair.es&#171; grands voyages, receptions&#187; travaux de routes qui n*avaient pas toujours un int6ret giafeal sals qui servsient perfois certains int6rets particuliers* tout eel a ne pent plus exister* Xiv assembles indigene v6rifie avec me minutie stricte 1# budget qu?on lui soumet; et, chose interssssnts, elle prepare gradual lenient les cadres cie gestion de domain dans un milieu qui lui est propre* Ainsi tout un personnel indigenef qui aera appel$ a prendre das reaponsabilit6s deasin, est #b train is s&#169; former sujourd&apos;hui. Cast la cr66tion de la base qui peut peraattrs ua f6d6rsllsms plus tard. L&apos;autre creation de sosnst est cette Asss&amp;bl&#163;s dont on vous o pari4 tout a l#h#ur&#169; at dont jfai 1fbonne ur de fair# per tie: c &apos;eats 1?Assembles de 1f Union Franqeiae que le Gouvernement a. install^ dsns le cadre sompttteiiie- du palsis de Versailles et qui reuuit un peraocnel reorut6 aoiti# parmi its ttdtropolitalnst aoitl# parmi las indigtoes des pajs d*Outre- Her. L&apos;svis de cette As&amp;eablee, qui a mi oeractfcre bob. pas deliberstif* qui n&apos;a pas pouvoir de decision, mais qui eat eppelee a se prononcer sur tons les textss&#187; sur tous les d&#163;crets que le Gouvernement doit signer, c&apos;est-k-dire sur tout&#169; la</essay:p>
+          <shared:media>
+            <media:image data-type="jpeg" width="3400" height="5600" image-type="page view" layout="single" color-mode="color" folio="13" sequence="0012">
+              <vault-link:vault-link>
+                <vault-link:link-type>external</vault-link:link-type>
+                <vault-link:action>point</vault-link:action>
+                <vault-link:where>
+                  <vault-link:path>cho_meet_1949_1724_000_0012</vault-link:path>
+                </vault-link:where>
+              </vault-link:vault-link>
+            </media:image>
+          </shared:media>
+          <vault-link:vault-link>
+            <vault-link:link-type>external</vault-link:link-type>
+            <vault-link:link-category term-id="21902636" term-source="Atlas">DVI page</vault-link:link-category>
+            <vault-link:action>point</vault-link:action>
+            <vault-link:where>
+              <vault-link:path>//gift-doc:document-metadata/meta:document-ids/meta:id[@type="Gale asset"]/meta:value[.="page-12"]</vault-link:path>
+            </vault-link:where>
+            <vault-link:select>
+              <vault-link:document-nodes>
+                <vault-link:target>ancestor::gift-doc:document</vault-link:target>
+              </vault-link:document-nodes>
+            </vault-link:select>
+          </vault-link:vault-link>
+        </essay:div>
+        <essay:div document-segment-type="Page" term-id="21922233" term-source="Atlas">
+          <essay:complex-meta>
+            <meta:page-id-number>0013</meta:page-id-number>
+            <meta:folio>
+              <meta:start-number>14</meta:start-number>
+            </meta:folio>
+          </essay:complex-meta>
+          <essay:p>- 14 legislation colonial#&#187; est indispeiisabi&#174;# Bt oet avis n&apos;ast plus 1&apos;avis da m^tropolitains plus ou mollis informes; il est Xa risultst d*un travail en caostun da m&#163;tropoXitains et da d&apos;6X6gu6a indigenes en parties egalas* L&#171;a poataa aa partagent 6$uitablesient; bobs avone das Presidents de Commissi on s.f des Vice-Presidents de X*A8sembX6e qui sont ass noire ou dee janiias* A la tribune, nans mourn aussi souvent aes noirs que das biases pour prendre la parole&#8226; Au boat de datix. ana da pratique, Je ;peux t&#163;maigu&#169;r gu*iXa ant apportd dans leur travail un aouci de bian faira, one vol on 16 da participer a Is tache commune, ce qui est trds int6ressant&#187; et surtout, J&#169; aroia qua poor Is premifere faia dans l*hiacoira on est arrive, dan a mi allien conmun, a dibarrasser lfindig@ii# da catta sort&#169; da eoaplaxe d*inferiority qa.fil a g4alrelement vis-a-via da blame. Kous vivons dams une a^mbiose completes nous m&amp;ngaons &#169;useable, nous dilibirons ensemble* nous travaiXXo&amp;a ensemble * II at nous arrive plus de dire nim pro jet indig&amp;ne&quot; ou r\m projet m^trap oil tain&quot;; ce sont das tarmes qui out diaparu noa aauleiae&amp;t de natra langage mais de notre penn^m* Lb plu^art das projets sont sigioJs &quot;Magana Julian&quot; &#9830; Ii y &amp; uu petit livre que ja me suis amus6 k apporter pour le no&amp;trer at; qui publie 110s photographies las una apr&amp;s las autres par ardre aXph&amp;b&#163;tique&#171; II nous montre une charaante Jeurie fastma fraa^aisat et a or la page i cote mi nagre du plus bel affat, pare&#174; que 1# h&amp;ssrd a vouXu que Is praitilre lattra de Xeurs noma 3# aiisagaat. De raeme que iiuug somaes nails dans ce petit livra qui est comma Is synthase vivanta de notre AsseabX6e&#187; de immm noua aommea Balis dans uotre travail quotidian* qui pen k pan af 6labora. tin&#169; Assaabll&#169; qui peut-etre danaiii sera &amp;ppel6e &#167; passer da consultatif an d6Xib6ratif at qui axmoxice pour 11aveair &apos;ana Isaaablie d# Union. franQ8is&#171;P c *est-&amp;-dire ma assembled rexapXa$a&amp;t notre Sinat* sera oppaxea &amp; tranchar tons las probX&amp;mee qui intfeasseat k le fois la Fraiiea at las pays</essay:p>
+          <shared:media>
+            <media:image data-type="jpeg" width="3400" height="5600" image-type="page view" layout="single" color-mode="color" folio="14" sequence="0013">
+              <vault-link:vault-link>
+                <vault-link:link-type>external</vault-link:link-type>
+                <vault-link:action>point</vault-link:action>
+                <vault-link:where>
+                  <vault-link:path>cho_meet_1949_1724_000_0013</vault-link:path>
+                </vault-link:where>
+              </vault-link:vault-link>
+            </media:image>
+          </shared:media>
+          <vault-link:vault-link>
+            <vault-link:link-type>external</vault-link:link-type>
+            <vault-link:link-category term-id="21902636" term-source="Atlas">DVI page</vault-link:link-category>
+            <vault-link:action>point</vault-link:action>
+            <vault-link:where>
+              <vault-link:path>//gift-doc:document-metadata/meta:document-ids/meta:id[@type="Gale asset"]/meta:value[.="page-13"]</vault-link:path>
+            </vault-link:where>
+            <vault-link:select>
+              <vault-link:document-nodes>
+                <vault-link:target>ancestor::gift-doc:document</vault-link:target>
+              </vault-link:document-nodes>
+            </vault-link:select>
+          </vault-link:vault-link>
+        </essay:div>
+        <essay:div document-segment-type="Page" term-id="21922233" term-source="Atlas">
+          <essay:complex-meta>
+            <meta:page-id-number>0014</meta:page-id-number>
+            <meta:folio>
+              <meta:start-number>15</meta:start-number>
+            </meta:folio>
+          </essay:complex-meta>
+          <essay:p>- 15 d*Outre-Mer &#8226; Gfe st done dans ce sens que nous all oils* ce que nous vouloas atteifidre&#171; Kotre President de la Sipublique est en meme temps le President de 1* Union Prenqeise t e t aujourd&apos;hui sons s&#165;oas about! a una division da xioq territoires dits &#9632;&quot;France d!Outre-ifer*. II s&apos;est produ.it ub ph&amp;Boafe&amp;e tree curieux* C&apos;est en 1848 mm lea enciermea colonies da la France out it4 brusquenent liberies par la Involution* Tous las xioirs das Antilles, de le Reunion, cie is Gu/sne, sont deveeus dm jour au lendemaizL ci toy ens frau^ais avec 1&#169; droit de vote* -lb bleu? Is r&#163;sultat de cette initiative avautureuae* cr est qu&apos;su lendeateiii ee la guerre cea quatre Colonies out r6da&amp;$ lnstanaaxit de n&apos;etre plus colonies aais de devanlr d%srtemeiits fraiifsis au wmim titre que lea d6partements de la Metropole* it aujourd&apos;hui, coiable de 11 assimilation, il j a dome quetre dipartements qui a*appellant Is Martinique* la Guadeloupe, la Guyana et la Rbunion&#187; qui sodt exscteaeat r6gi3 comae lee diparte&#174;&#174;ats de Provence on du lord de la France - et cela par le volenti dee indigenes, doat le dernier terse de i*assimila&#172; tion a consist#, depuia lea comtnunistee gusqusaux iliaents de droit&#174;, h r&#163;claser a le tribune du parlement df e tre des FreDQais lrit6graux&#187; ce qu&apos;ils appeleient *dea Fr.an^ais 100^*. Pour cele il n&apos;y a plus possession colonial&#169;, il y a una integration to tale de cea quetre aneieiuaes colonies h la Mltropole; c&apos;tsfe le chaf d* oeuvre de 1*assiailation.de noa anciana terri toires coloniaux. les anciennes colonies, devenues maintenant dee iexritoires &lt;tfOutre-Mer* out gt&#167;rd# pratlquemant la meme organisation qu&apos;ava&amp;t; maia, autre ph#uoa&#167;ae qui montre 1&#169; force de 1 *assimilation h la France&#187; nos territoires aaaoci&#163;a, c*aat-&amp;- dire lee territoires sous mandat, souxis fc la tutalle de IAssemble# des Nations Uniee, out daman d&#163; dfilire des deputes &#169;ux Assemblies m^tropolitaines, si biezx que le Togo et le Camaroun seat repr6sent6a par des depute a et des aanataura &amp;</essay:p>
+          <shared:media>
+            <media:image data-type="jpeg" width="3400" height="5600" image-type="page view" layout="single" color-mode="color" folio="15" sequence="0014">
+              <vault-link:vault-link>
+                <vault-link:link-type>external</vault-link:link-type>
+                <vault-link:action>point</vault-link:action>
+                <vault-link:where>
+                  <vault-link:path>cho_meet_1949_1724_000_0014</vault-link:path>
+                </vault-link:where>
+              </vault-link:vault-link>
+            </media:image>
+          </shared:media>
+          <vault-link:vault-link>
+            <vault-link:link-type>external</vault-link:link-type>
+            <vault-link:link-category term-id="21902636" term-source="Atlas">DVI page</vault-link:link-category>
+            <vault-link:action>point</vault-link:action>
+            <vault-link:where>
+              <vault-link:path>//gift-doc:document-metadata/meta:document-ids/meta:id[@type="Gale asset"]/meta:value[.="page-14"]</vault-link:path>
+            </vault-link:where>
+            <vault-link:select>
+              <vault-link:document-nodes>
+                <vault-link:target>ancestor::gift-doc:document</vault-link:target>
+              </vault-link:document-nodes>
+            </vault-link:select>
+          </vault-link:vault-link>
+        </essay:div>
+        <essay:div document-segment-type="Page" term-id="21922233" term-source="Atlas">
+          <essay:complex-meta>
+            <meta:page-id-number>0015</meta:page-id-number>
+            <meta:folio>
+              <meta:start-number>16</meta:start-number>
+            </meta:folio>
+          </essay:complex-meta>
+          <essay:p>notre Chambre dns Deputes et a notre Senat, bien qu&apos;ils ressortissent nation&apos;s Uni&#171;s et non pus a la trance. Le problkrae la plus aelicat pour aotts, celni qui e&amp;peche&apos; la realisation totale d&#174; 1 *Union fran^ais&#171;&#187; efest le problems mf; roc Bin et le pmblkme tunisien, que nous appelons Stats .&#9632;tasoetis* Ions avoias prevu un orgsnisiie, au Conseil de 1 * Union Fv&amp;nqalse* qui rimirait, d&apos;fune partf lea repre sextants d&#169; la. lltropol&#169; et des Colonies, &#169;t, d*autre parti log raprdse&amp;tants des Stats Associes: Xuolaie, Maroc&#187; Laos, Viet-Kam et e&amp;Mbodga* Mais nous nous trouvons, 011 ifriqus du lard, en presence d&#169; deux royautes de forme tMocratiqu&#169; et a caraot&amp;ra abaolu, ftvue un mouvement setioaaliste &amp; c&amp;r&amp;ct&amp;re pan-arabe esses aoeentiii* ufie ^aunesse iiAteliectuelle qui se plaint, a Juste ralsonf qu*on ne lui a pas fait una place auffiaanta dans lee rooagaa de la nation; car 11 est deplorable da voir, darrifera les bureaux ae poata da Paris et d&amp; Rabat, un aetro- polltain dlatrlbuar ma timbrea-poats alors qu&apos;uu indigene qui aarait trfes apte &amp; fair&#174; Is olios# est suns travail* 11 y a. ime poussee aes elites qui est tris detandabla&#187; tr&#171;8 just&#169;; 11 j a ua mouvamant national&apos;lata appuye aur mi jauna Sultan, aurtou$ ay ifaroo* Cfest mm granda arreur ae ia politique frsiw|als&#174;; alia a feita par un hosuoe qai a cru biaa fair# an faiaont designer un aeuna Sultan de 20 sua - la viaiila tradition fran^&amp;i-sa etait m designer Use aultaiis de 60 ou 70 ams qui a&apos;avaient tgu&apos;un dusir, calui de mourir paisiblaaent aur ieur trona* Bin disigasnt un hoaiaa jauna. on a cr.ee one situation nouvalla et aalicata - m*in sis tons plus. Le probltee difficile de d&#171;m&amp;in9 c&apos;aat d&apos;aaaiiar o&#171;ts deux pays a antrar asms FranqaiaOt car* ces dernier a etant deu pays 4trangare&#187; nous na pouvons par la loi frsnfaisa lea y obligar* If*&apos;Union framfsia&#169; n existara vraia&amp;nt que qoaad ca problSu&amp;et Tui est le plus ardu, sars\r#solu# Pour sa part - et Ik Je yous donne mon poict cie vue personnel - je .u# crois</essay:p>
+          <shared:media>
+            <media:image data-type="jpeg" width="3400" height="5600" image-type="page view" layout="single" color-mode="color" folio="16" sequence="0015">
+              <vault-link:vault-link>
+                <vault-link:link-type>external</vault-link:link-type>
+                <vault-link:action>point</vault-link:action>
+                <vault-link:where>
+                  <vault-link:path>cho_meet_1949_1724_000_0015</vault-link:path>
+                </vault-link:where>
+              </vault-link:vault-link>
+            </media:image>
+          </shared:media>
+          <vault-link:vault-link>
+            <vault-link:link-type>external</vault-link:link-type>
+            <vault-link:link-category term-id="21902636" term-source="Atlas">DVI page</vault-link:link-category>
+            <vault-link:action>point</vault-link:action>
+            <vault-link:where>
+              <vault-link:path>//gift-doc:document-metadata/meta:document-ids/meta:id[@type="Gale asset"]/meta:value[.="page-15"]</vault-link:path>
+            </vault-link:where>
+            <vault-link:select>
+              <vault-link:document-nodes>
+                <vault-link:target>ancestor::gift-doc:document</vault-link:target>
+              </vault-link:document-nodes>
+            </vault-link:select>
+          </vault-link:vault-link>
+        </essay:div>
+        <essay:div document-segment-type="Page" term-id="21922233" term-source="Atlas">
+          <essay:complex-meta>
+            <meta:page-id-number>0016</meta:page-id-number>
+            <meta:folio>
+              <meta:start-number>17</meta:start-number>
+            </meta:folio>
+          </essay:complex-meta>
+          <essay:p>pas qu&apos;avec las arromenta actuals , la politique nn pau an .join* la 3our que a&amp;ne notre Ministfera das Affaires gtrangferea* on arrive I la. solution aouhaltable &#8226; II nous faudrait? comae le diaalt un ministre darni&amp;rement, un Lord liountbatten qui. ira.lt h &apos;Rabat at qui ixeit &amp; ftttiis four traiter da le revision dee traitis mm noua avona signea 011 188X et 011 1912&#187; k una &amp;ponue ou les probleuss mm se p.a.saiant pes de le na&#187;na faqon. II y a dans can pays la a4cessit^ 4&#169; laisaar one trie large autonomie et de Be pas continues sous le debare- du Protaeto-rat* h pratiquar aette politique- da 1 * administration direote qui est dsns le sang das Franqaia, dont lis ue peuvent aa d6ba?raeeer at qui choque 6nora6mant les psjs qui ae sentent thSoriquament indipundants # Le Jour - et Is chose ns m&apos;apparait pas tapoeeibler oft ces deux psjg entreraieat dsns cat acsarable de rouagaa qui con&#187;titue 1*Union FranQaiaa-, ja sals parsuad&#163; que nous davriona fair&#169; tin systi&#174;# fMirmlista asses ilastiqu&#174;# raeis ou les liana sentimentaux et les liana col fcurala qui aont, sans -quelle l&apos;ait vouluf I&apos;apport; principal de la trance, ami van slant a -aaintanir esse/* d*units et aeaes dfint#rets coamuns pour que 11 Union Franq&amp;iae, qui n&apos;aat aotualleaaat qu&apos;une abase an formation, devienne on &#165;&#167;3?it4 me rialiti* Lord HjiHUOHAiis Ladies and Gentlemen, we have just ten minutes for observations and questions* Before .1 ask those who wish to do so to put questions&#187; J am sure you would wiab &#174;a to say to Professes Julian bow grateful wa are to Mm for his extremely interesting and frank address&#8226; 1 thought it absolutely brilliant and deeply informative. 1 believe it is &#9632;also ay duty &apos;to rasd nut the rules. (Kules reed}</essay:p>
+          <shared:media>
+            <media:image data-type="jpeg" width="3400" height="5600" image-type="page view" layout="single" color-mode="color" folio="17" sequence="0016">
+              <vault-link:vault-link>
+                <vault-link:link-type>external</vault-link:link-type>
+                <vault-link:action>point</vault-link:action>
+                <vault-link:where>
+                  <vault-link:path>cho_meet_1949_1724_000_0016</vault-link:path>
+                </vault-link:where>
+              </vault-link:vault-link>
+            </media:image>
+          </shared:media>
+          <vault-link:vault-link>
+            <vault-link:link-type>external</vault-link:link-type>
+            <vault-link:link-category term-id="21902636" term-source="Atlas">DVI page</vault-link:link-category>
+            <vault-link:action>point</vault-link:action>
+            <vault-link:where>
+              <vault-link:path>//gift-doc:document-metadata/meta:document-ids/meta:id[@type="Gale asset"]/meta:value[.="page-16"]</vault-link:path>
+            </vault-link:where>
+            <vault-link:select>
+              <vault-link:document-nodes>
+                <vault-link:target>ancestor::gift-doc:document</vault-link:target>
+              </vault-link:document-nodes>
+            </vault-link:select>
+          </vault-link:vault-link>
+        </essay:div>
+      </essay:div>
+    </gift-doc:body>
+  </gift-doc:document>
+</gold:document-instance>

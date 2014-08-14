@@ -1,0 +1,156 @@
+problem:
+looks like feed files loaded have been levelled, but the named aurthority work done by rose et al done on an earlier version of the feed file, which wasn't levelled.
+= hence assetid in cho_qa app is pointing to wrong article / author / subject?
+
+original problem spotted by QMBNOR275917429 - 37 / 38 - in cho_byil_1928_0009_000_0000 - i.e.
+
+20 Aug 2013, 3:39 p.m. 	PSM-CHOA_20130820_00308.xml.gz	line 1106708
+= cho_byil_1928_0009_000_0000|36|Die Fortbildung der internationalen Schiedsgerichtsbarkeit seit dem Weltkrieg, besonders durch den Locarno-Pakt|H. L.|QMBNOR275917429
+
+but in gaia:
+cho_byil_1928_0009_000_0000  	36  	The Law of Territorial Waters and Maritime...  	C.  	QMBNOR275917429  	2013-10-15 11:56:31 
+cho_byil_1928_0009_000_0000  	37  	Die Fortbildung der internationalen Schied...  	H. L.  	GSXJNU674637095  	2013-10-15 11:56:31 
+
+--
+
+smb://ukandfilestore/data/Digital%20Solutions/Digital%20Solutions%20-%20Shared/Project%20Management/Projects/Chatham%20House/Content%20Preparation%20and%20Loading/Load%20Plans%20and%20Tracking/CHOA%20QA%20Load%20Plans/
+= LST QA CHOA Load Plan_20131122.xlsx
+	= SH: shows list of latest feed files loaded by PD
+
+Y == from gaia
+* == from /mnt/DSP2/Production/Feedfiles/CHOA Feedfiles/GAIA EGEST Feedfiles
+	= took earliest
+
+NOINDEX-CHOA_20131009_00517.xml.gz = Y
+NOINDEX-CHOA_20131009_00518.xml.gz = Y
+PSM-CHOA_20131009_00519.xml.gz = Y
+NOINDEX-CHOA_20131009_00520.xml.gz = Y
+NOINDEX-CHOA_20131009_00521.xml.gz = Y
+PSM-CHOA_20131009_00522.xml.gz = Y
+
+NOINDEX-CHOA_20131007_00505.xml = Y
+NOINDEX-CHOA_20131007_00506.xml = Y
+PSM-CHOA_20131007_00507.xml = Y
+NOINDEX-CHOA_20131007_00508.xml = Y
+NOINDEX-CHOA_20131007_00509.xml = Y
+PSM-CHOA_20131007_00510.xml = Y
+NOINDEX-CHOA_20131007_00511.xml = Y
+NOINDEX-CHOA_20131007_00512.xml = Y
+PSM-CHOA_20131007_00513.xml = Y
+NOINDEX-CHOA_20131007_00514.xml = Y
+NOINDEX-CHOA_20131007_00515.xml = Y
+PSM-CHOA_20131007_00516.xml = Y
+
+NOINDEX-CHOA_20130924_00485.xml.gz = *
+NOINDEX-CHOA_20130924_00486.xml.gz = *
+PSM-CHOA_20130924_00487.xml.gz = *
+
+NOINDEX-CHOA_20130926_00496.xml.gz = *
+NOINDEX-CHOA_20130926_00497.xml.gz = *
+PSM-CHOA_20130926_00498.xml.gz = *
+NOINDEX-CHOA_20130926_00499.xml.gz = *
+NOINDEX-CHOA_20130926_00500.xml.gz = *
+PSM-CHOA_20130926_00501.xml.gz = *
+
+NOINDEX-CHOA_20131029_00623.xml.gz = Y
+NOINDEX-CHOA_20131029_00624.xml.gz = Y
+PSM-CHOA_20131029_00625.xml = Y
+NOINDEX-CHOA_20131029_00626.xml.gz = Y
+NOINDEX-CHOA_20131029_00627.xml.gz = Y
+PSM-CHOA_20131029_00628.xml = Y
+NOINDEX-CHOA_20131029_00629.xml.gz = Y
+NOINDEX-CHOA_20131029_00630.xml.gz = Y
+PSM-CHOA_20131029_00631.xml = Y
+
+--
+
+NOINDEX-CHOA_20130926_00496.xml.gz = *
+NOINDEX-CHOA_20130926_00497.xml.gz = *
+PSM-CHOA_20130926_00498.xml.gz = *
+NOINDEX-CHOA_20130926_00499.xml.gz = *
+NOINDEX-CHOA_20130926_00500.xml.gz = *
+PSM-CHOA_20130926_00501.xml.gz = *
+
+NOINDEX-CHOA_20131028_00602.xml.gz = Y
+NOINDEX-CHOA_20131028_00603.xml.gz = Y
+NOINDEX-CHOA_20131028_00605.xml.gz = Y
+NOINDEX-CHOA_20131028_00606.xml.gz = Y
+PSM-CHOA_20131028_00607.xml.gz = Y
+NOINDEX-CHOA_20131028_00608.xml.gz = Y
+NOINDEX-CHOA_20131028_00609.xml.gz = Y
+PSM-CHOA_20131028_00610.xml.gz = Y
+NOINDEX-CHOA_20131028_00611.xml.gz = Y
+NOINDEX-CHOA_20131028_00612.xml.gz = Y
+PSM-CHOA_20131028_00613.xml.gz = Y
+
+===========================
+
+the above feed files / loading reports are wrong: PD / ROL gave me the following:#
+
+Here is the list of latest feedfiles directories in:
+
+V:\Production\Feedfiles\CHOA Feedfiles\GAIA EGEST Feedfiles
+
+
+Whatever you do please can you copy these and create a new directory and version for any editing work. I just want to keep these intact for reference if we need to back track.
+
+Watch out for Conf. Series and S&D folders where there will be unzipped files that Sarah amended in the last couple of days. These are the correct files, but there will also be the original zipped files in the folder as well.
+
+
+Books_Feedfiles_20131121
+= /mnt/DSP2/Production/Feedfiles/CHOA Feedfiles/GAIA EGEST Feedfiles/CHOA Books/Books_Feedfiles_20131121
+
+Conference_Series_Feedfiles_20131121
+= /mnt/DSP2/Production/Feedfiles/CHOA Feedfiles/GAIA EGEST Feedfiles/CHOA Conference Feedfiles/Conference_Series_Feedfiles_20131121 = 2 .xml
+
+Journals_Feedfiles_20131112
+= /mnt/DSP2/Production/Feedfiles/CHOA Feedfiles/GAIA EGEST Feedfiles/CHOA Journals/Journals_Feedfiles_20131112
+
+Meetings_Feedfiles_20131112
+= /mnt/DSP2/Production/Feedfiles/CHOA Feedfiles/GAIA EGEST Feedfiles/CHOA Meetings Feedfiles/Meetings_Feedfiles_20131112
+
+Refugee_Survey_Feedfiles_20131121
+/mnt/DSP2/Production/Feedfiles/CHOA Feedfiles/GAIA EGEST Feedfiles/CHOA Refugee Survey/Refugee_Survey_Feedfiles_20131121 = 1 .xml
+
+Reports_Feedfiles_20131112
+= /mnt/DSP2/Production/Feedfiles/CHOA Feedfiles/GAIA EGEST Feedfiles/CHOA Reports and Pamphlets/Reports_Feedfiles_20131112
+
+Review_of_FP_Feedfiles_20131119
+= /mnt/DSP2/Production/Feedfiles/CHOA Feedfiles/GAIA EGEST Feedfiles/CHOA Review of FP/Review_of_FP_Feedfiles_20131119
+
+Survey_Documents_Feedfiles_20131122
+= /mnt/DSP2/Production/Feedfiles/CHOA Feedfiles/GAIA EGEST Feedfiles/CHOA Survey and Documents/Survey_Documents_Feedfiles_20131122 = 3 .xml
+
+===========================
+
+[jsears@ukandjsears-l2 author_search]$ psql -U postgres -p 5433 logs
+Password for user postgres: 
+psql (9.2.5)
+Type "help" for help.
+
+logs=# copy tbl_log from '/mnt/home/jsears/GIT_REPOS/gaia/src/scripts/reports/mai/author_search/log' DELIMITERS '|' CSV;
+COPY 53114
+logs=# copy tbl_log2 from '/mnt/home/jsears/GIT_REPOS/gaia/src/scripts/reports/mai/author_search/log2' DELIMITERS '|' CSV;
+COPY 44830
+
+==========================
+
+SELECT 
+  tbl_log.psmid, 
+  tbl_log.articleid as early_articlid,
+  tbl_log2.articleid as latest_articleid
+FROM 
+  public.tbl_log, 
+  public.tbl_log2
+WHERE 
+  tbl_log.psmid = tbl_log2.psmid AND
+  tbl_log.assetid = tbl_log2.assetid AND
+  tbl_log.articleid <> tbl_log2.articleid
+ORDER BY 
+  tbl_log.psmid ASC, tbl_log.articleid ASC;
+
+
+
+---------------------
+
+

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2005 rel. 3 U (http://www.altova.com) by Gale User (Gale Group) -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:gold="http://www.gale.com/gold" xmlns:gift-doc="http://www.gale.com/goldschema/gift-doc" targetNamespace="http://www.gale.com/gold" elementFormDefault="qualified" attributeFormDefault="unqualified" version="3.0">
+	<xs:import namespace="http://www.gale.com/goldschema/gift-doc" schemaLocation="periodical_document.xsd"/>
+	<xs:annotation id="periodical-feed-schema-purpose">
+		<xs:documentation>This schema defines a "feed wrapper" format that is applied generically across all content and metadata feeds delivered to GOLD. 
+			The "feed wrapper" format includes metadata specific to the content being delivered and to the feed instance.</xs:documentation>
+	</xs:annotation>
+	<!--
+	======================================================================
+                           CHANGE HISTORY
+	======================================================================
+	3.0		12/04/2013		js
+	1.	Removed the schema owner part.
+	2.	Updated the folder path of <xs:import>.
+	3.	Externalized the elements 'document-instance', 'document-id-path', 'document-mcode-path', 'document-schema', 
+		'feed-language', 'feed-status', 'feed-type', 'schema-version' and 'metadata'.
+	======================================================================
+-->
+	<xs:include schemaLocation="gale_datatypes.xsd"/>
+	<!-- 
+	============================================================================   
+                    ELEMENT DECLARATIONS
+	============================================================================   
+	-->
+	<!--                    FEED                                   -->
+	<xs:element name="feed">
+		<xs:annotation>
+			<xs:documentation>Root element of the feed.</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="gold:document-instance" maxOccurs="unbounded"/>
+				<xs:element ref="gold:metadata"/>
+			</xs:sequence>
+			<xs:attribute name="id" type="xs:normalizedString" use="required">
+				<xs:annotation>
+					<xs:documentation>Unique ID for the feed</xs:documentation>
+				</xs:annotation>
+			</xs:attribute>
+		</xs:complexType>
+	</xs:element>
+	<!--                    DOCUMENT-SCHEMA                                   -->
+	<xs:element name="document-schema" type="xs:string">
+		<xs:annotation>
+			<xs:documentation>Indicates the schema to which the documents in a feed instance conform: for content feeds, this is always the generic document schema (gift_document.xsd) </xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--                    DOCUMENT-ID-PATH                                   -->
+	<xs:element name="document-id-path" type="xs:normalizedString">
+		<xs:annotation>
+			<xs:documentation>For a given content feed type, provides an XPath expression identifying the node in each document that contains the unique ID for the document.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--                    DOCUMENT-INSTANCE                                   -->
+	<xs:element name="document-instance">
+		<xs:annotation>
+			<xs:documentation>Contains  a "document" that is either of a specific content type or a metadata feed.</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="gift-doc:document"/>
+			</xs:sequence>
+			<xs:attribute name="id" use="optional">
+				<xs:annotation>
+					<xs:documentation>Unique ID for a document instance</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:token">
+						<xs:pattern value=".+"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+			<xs:attribute name="editorial-doc-id" type="xs:normalizedString" use="optional">
+				<xs:annotation>
+					<xs:documentation>For editorial IDs assigned to content records upstream of GOLD: provides readiblity to support QA activities</xs:documentation>
+				</xs:annotation>
+			</xs:attribute>
+		</xs:complexType>
+	</xs:element>
+	<!--                    DOCUMENT-MCODE-PATH                                   -->
+	<xs:element name="document-mcode-path" type="xs:normalizedString">
+		<xs:annotation>
+			<xs:documentation>For a given content feed type, provides an XPath expression identifying the node or nodes that contain the MCode for content documents.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--                    FEED-LANGUAGE                                   -->
+	<xs:element name="feed-language" type="gold:feed-language-values">
+		<xs:annotation>
+			<xs:documentation>Indicates the language of the article/document</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--                    FEED-STATUS                                   -->
+	<xs:element name="feed-status" type="gold:feed-status-values">
+		<xs:annotation>
+			<xs:documentation>Indicates status of feed with values "Delete", "New", "Replace", or "New and Replace"</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--                    FEED-TYPE                                   -->
+	<xs:element name="feed-type" type="gold:feed-types">
+		<xs:annotation>
+			<xs:documentation>An identifier for the type of feed.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--                    METADATA                                   -->
+	<xs:element name="metadata">
+		<xs:annotation>
+			<xs:documentation>Contains various metadata specific to the feed instance.</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:all>
+				<xs:element ref="gold:feed-type"/>
+				<xs:element ref="gold:document-schema"/>
+				<xs:element ref="gold:schema-version"/>
+				<xs:element ref="gold:document-id-path"/>
+				<xs:element ref="gold:document-mcode-path"/>
+				<xs:element ref="gold:number-of-documents"/>
+				<xs:element ref="gold:feed-status" minOccurs="0"/>
+				<xs:element ref="gold:feed-language" minOccurs="0"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<!--                    NUMBER-OF-DOCUMENTS                                   -->
+	<xs:element name="number-of-documents" type="xs:int">
+		<xs:annotation>
+			<xs:documentation>Indicates the number of "documents" contained in a feed instance.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--                    SCHEMA-VERSION                                   -->
+	<xs:element name="schema-version" type="xs:string">
+		<xs:annotation>
+			<xs:documentation>Indicates the version number for the schema indicated in the "document-schema" element</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+</xs:schema>

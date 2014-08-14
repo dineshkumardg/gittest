@@ -1,0 +1,22 @@
+AllowTcpForwarding yes
+ssh -L 8888:127.0.0.1:5432 ukandgaia07
+
+======================
+
+sudo iptables -L -n -v
+sudo vi /etc/sysconfig/iptables
+-A INPUT -m state --state NEW -m tcp -p tcp --dport 5432 -j ACCEPT
+sudo service iptables restart
+
+vi /var/lib/pgsql/9.2/data/postgresql.conf
+listen_addresses = '*'
+sudo service postgresql-9.2 restart
+
+vi /var/lib/pgsql/9.2/data/pg_hba.conf
+host    cho             gaia            0.0.0.0/0             md5
+[jsears@ukandgaia07 init.d]$ su - postgres
+-bash-4.1$ /usr/pgsql-9.2/bin/pg_ctl reload
+
+======================
+
+psql -U postgres cho -f gaia_cho_backup_201308291620.sql

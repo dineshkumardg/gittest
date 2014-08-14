@@ -1,0 +1,20 @@
+#
+# /etc/fstab
+#
+# Accessible filesystems, by reference, are maintained under '/dev/disk'
+# See man pages fstab(5), findfs(8), mount(8) and/or blkid(8) for more info
+#
+/dev/mapper/vg_ukandgaia07-lv_root 	  /       ext4    defaults        1 1
+UUID=72840870-8b9f-4894-a0bc-3d8933949685 /boot   ext4    defaults        1 2
+/dev/mapper/vg_ukandgaia07-lv_home        /home   ext4    defaults        1 2
+UUID=61a7347a-0347-42b9-870e-a4d4781ab4da /GAIA   ext4    defaults        1 2
+
+/dev/mapper/vg_ukandgaia07-lv_swap swap           swap    defaults        0 0
+
+tmpfs                   /dev/shm                tmpfs   defaults        0 0
+devpts                  /dev/pts                devpts  gid=5,mode=620  0 0
+sysfs                   /sys                    sysfs   defaults        0 0
+proc                    /proc                   proc    defaults        0 0
+
+//ukandprodfs/UKDEV /mnt/UKDEV  cifs rw,credentials=/root/.smbcredentials_ukdev,iocharset=utf8,file_mode=0777,dir_mode=0777, 0 0
+10.179.176.180:/mnt/vol01/gaia	/GAIA_MIRROR	nfs	defaults	0 0

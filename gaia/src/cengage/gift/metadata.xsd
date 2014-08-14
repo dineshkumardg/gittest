@@ -1,0 +1,2157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2008 rel. 2 sp2 (http://www.altova.com) by Wendy Lewis (Gale Group) -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:shared="http://www.gale.com/goldschema/shared" xmlns:essay="http://www.gale.com/goldschema/essay" xmlns:media="http://www.gale.com/goldschema/media" xmlns:vault-link="http://www.gale.com/goldschema/vault-linking" xmlns:pres="http://www.gale.com/goldschema/pres" xmlns:meta="http://www.gale.com/goldschema/metadata" xmlns:xatts="http://www.gale.com/goldschema/xatts" xmlns:mla="http://www.gale.com/goldschema/mla" xmlns:xi="http://www.w3.org/2001/XInclude" targetNamespace="http://www.gale.com/goldschema/metadata" elementFormDefault="qualified" attributeFormDefault="unqualified" version="3.0">
+	<xs:annotation id="metadata-schema-purpose">
+		<xs:documentation>This module defines generic metadata elements that are used throughout GIFT. It combines elements from the former common_metadata.xsd 
+			and document_metadata.xsd modules into a single namespace.</xs:documentation>
+	</xs:annotation>
+	<!--
+	======================================================================
+                           CHANGE HISTORY
+	======================================================================
+	3.0		12/04/2013		js
+	1.	Removed the schema owner part.
+	2.	Updated the folder path of <xs:import>.
+	3.	We have removed the namespace xmlns:gift-doc="http://www.gale.com/goldschema/gift-doc" as it doesn't have appropriate <xs:import> and 
+		the namespace is not been used anywhere in that schema.
+	4.	Removed the complex type model "shared-mixed-type-model" and replaced with 'common-mixed-type-model'.
+	5.	Created new global type "document-titles-type" and copy content of the "document-titles" element in the "source-citation-content-group" 
+		as its content model.
+	6.	Reorganized the elements, element groups, attributes and attribute groups.
+	7.	Externalized the elements 'code-value', 'confidence', 'contributor', 'creator', 'editor', 'first-name', 'indexing-term', 
+		'last-name', 'middle-name', 'modifier', 'pagination', 'prefix', 'preserved-context-indexing-terms', 'reel', 'relevance',
+		'source-pagination', 'source-publication-date', 'structured-name', 'sobriquet', 'suffix', 'translator', 'translation-date',
+		'term-type-language', 'term-id', 'term-category', 'term-role', 'term-type', 'term-source' and 'term-value'.
+	8.	Removed the elements 'database-flags', 'source-publication-dates', 'source-publication-date', 'volume-information', 'system-comment', 
+		'document-sanitized', 'structural-number', 'publication-acronym' and 'value' as they are unused.
+	9.	Removed the data models 'reference-pagination-type' and 'spo-pagination-type'.
+	10.	Changed xs:all to xs:choice with 0-unbounded occurences in "serial-info" content model. 
+		This change was needed to make "serial-number" unbounded because xs:all allow only for single occurence. [GPMS-172].
+	11.	Added meta:publication-time and child elements meta:standard-time and meta:composed-time in meta:publication-date [GPMS-174].
+	======================================================================
+-->
+	<xs:include schemaLocation="gale_datatypes.xsd"/>
+	<xs:import namespace="http://www.gale.com/goldschema/pres" schemaLocation="presentation.xsd"/>
+	<xs:import namespace="http://www.gale.com/goldschema/essay" schemaLocation="essay.xsd"/>
+	<xs:import namespace="http://www.gale.com/goldschema/xatts" schemaLocation="xhtml-atts.xsd"/>
+	<xs:import namespace="http://www.gale.com/goldschema/vault-linking" schemaLocation="vault_linking.xsd"/>
+	<xs:import namespace="http://www.gale.com/goldschema/media" schemaLocation="media.xsd"/>
+	<xs:import namespace="http://www.gale.com/goldschema/shared" schemaLocation="shared.xsd"/>
+	<!-- 
+	============================================================================
+                    ELEMENT DECLARATIONS
+	============================================================================
+	-->
+	<!--
+	============================================================================
+                    DOCUMENT TITLE  COMPONENTS"
+	============================================================================
+	-->
+	<!--                DOCUMENT-TITLES                                -->
+	<xs:element name="document-titles" type="meta:document-titles-type">
+		<xs:annotation>
+			<xs:documentation>Wrapper for titles of the document e.g. main title and subtitle, sort version of the title etc.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:complexType name="document-titles-type">
+		<xs:sequence>
+			<xs:element ref="meta:title-display"/>
+			<xs:element ref="meta:title-sort"/>
+			<xs:element ref="meta:title-open-url"/>
+			<xs:element ref="meta:title-annotation" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element ref="meta:variant-title" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element ref="meta:subtitle" minOccurs="0"/>
+			<xs:element ref="meta:translated-title" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<!--                TITLE-DISPLAY                                -->
+	<xs:element name="title-display">
+		<xs:annotation>
+			<xs:documentation>Title of document formatted for display purposes.</xs:documentation>
+		</xs:annotation>
+		<xs:complexType mixed="true">
+			<xs:choice maxOccurs="unbounded">
+				<xs:group ref="pres:style-group" minOccurs="0" maxOccurs="unbounded"/>
+				<xs:element ref="essay:footnote-reference" minOccurs="0" maxOccurs="unbounded"/>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+	<!--                TITLE-SORT                                -->
+	<xs:element name="title-sort" type="meta:non-empty-type">
+		<xs:annotation>
+			<xs:documentation>Title of document formatted for sorting purposes.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--                TITLE-OPEN-URL                                -->
+	<xs:element name="title-open-url" type="meta:non-empty-type">
+		<xs:annotation>
+			<xs:documentation>Title of document for use in a URL.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--                TITLE ANNOTATION                                -->
+	<xs:element name="title-annotation">
+		<xs:annotation>
+			<xs:documentation>Contains a note or comment added to a title.</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="xs:normalizedString">
+					<xs:attribute name="type" type="xs:normalizedString" use="optional"/>
+				</xs:extension>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<!--                TRANSLATED-TITLE, SUBTITLE, VARIANT-TITLE                        -->
+	<xs:element name="translated-title" type="meta:common-mixed-type-model">
+		<xs:annotation>
+			<xs:documentation>Translated version of the document title.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="subtitle" type="meta:common-mixed-type-model">
+		<xs:annotation>
+			<xs:documentation>The subordinate title of a work such as a book or a chapter.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="variant-title" type="meta:common-mixed-type-model">
+		<xs:annotation>
+			<xs:documentation>A translated or otherwise modified version of the title. This title is used for print and it shows as part of the ordinary text.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!-- 
+	============================================================================
+                    BOB-INDEX COMPONENTS
+	============================================================================
+	-->	
+	<!--                    DOCUMENT-BACK-OF-BOOK-INDEX-TERMS                                      -->
+	<xs:element name="document-back-of-book-index-terms" type="meta:document-back-of-book-index-termsType">
+		<xs:annotation>
+			<xs:documentation>Wrapper element for Display BoB index terms.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:complexType name="document-back-of-book-index-termsType">
+		<xs:sequence>
+			<xs:element ref="meta:bob-index-term-chunk" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<!--                    BOB-INDEX-TERM-METADATA                                      -->
+	<xs:element name="bob-index-term-metadata" type="meta:bob-index-term-metadataType">
+		<xs:annotation>
+			<xs:documentation>Wrapper element to capture the four child metadata elements: document ID, display title, 
+				volume number (if needed) and the page range(s) the term is found on.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:complexType name="bob-index-term-metadataType">
+		<xs:sequence>
+			<xs:element ref="vault-link:vault-link"/>
+			<xs:element ref="meta:title-display"/>
+			<xs:element ref="meta:volume-number-display" minOccurs="0"/>
+			<xs:element ref="meta:page-range-display" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<!--                    BOB-INDEX-TERM                                      -->
+	<xs:element name="bob-index-term" type="meta:common-mixed-type-model">
+		<xs:annotation>
+			<xs:documentation>Single BoB index term</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--                    BOB-INDEX-TERM-CHUNK                                      -->
+	<xs:element name="bob-index-term-chunk" type="meta:bob-index-term-chunkType">
+		<xs:annotation>
+			<xs:documentation>Wrapper element to capture BoB index terms and their metadata.  This is a recursive structure.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:complexType name="bob-index-term-chunkType">
+		<xs:sequence>
+			<xs:element ref="meta:bob-index-term"/>
+			<xs:element ref="meta:bob-index-term-metadata" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element ref="meta:bob-index-term-chunk" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<!-- 
+	============================================================================   
+                    		CONTRIBUTORS
+	============================================================================   
+	-->
+	<!--                    AUTHOR                                      -->
+	<xs:element name="author">
+		<xs:annotation>
+			<xs:documentation>Person or organization primarily responsible for creating the intellectual content of the document.</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:complexContent>
+				<xs:extension base="meta:name-type">
+					<xs:attribute ref="meta:rank"/>
+					<xs:attribute name="type" type="meta:author-types" use="optional">
+						<xs:annotation>
+							<xs:documentation>Indicates "primary" for primary author</xs:documentation>
+						</xs:annotation>
+					</xs:attribute>
+					<xs:attributeGroup ref="meta:name-term-attributes"/>
+				</xs:extension>
+			</xs:complexContent>
+		</xs:complexType>
+	</xs:element>
+	<!--                    AUTHORS                                      -->
+	<xs:element name="authors">
+		<xs:annotation>
+			<xs:documentation>Wrapper for multiple authors of the document.</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element ref="meta:author"/>
+				<xs:element ref="meta:corporate-author"/>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+	<!--                    CONTRIBUTORS                                      -->
+	<xs:element name="contributors">
+		<xs:annotation>
+			<xs:documentation>Wrapper for 'contributor'.</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="meta:contributor" maxOccurs="unbounded"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<!--                    CONTRIBUTOR                                      -->
+	<xs:element name="contributor">
+		<xs:annotation>
+			<xs:documentation>Person or organization not specified in a Creator element who, while not the primary source of the content, 
+				has made significant intellectual contributions to the content, for example, editor, illustrator, or sponsor.</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:complexContent>
+				<xs:extension base="meta:name-type">
+					<xs:attribute ref="meta:rank"/>
+					<xs:attribute name="type" type="xs:normalizedString" use="optional"/>
+					<xs:attributeGroup ref="meta:name-term-attributes"/>
+				</xs:extension>
+			</xs:complexContent>
+		</xs:complexType>
+	</xs:element>
+	<!--                    CORPORATE-AUTHOR                                      -->
+	<xs:element name="corporate-author">
+		<xs:annotation>
+			<xs:documentation>Non-personal name that is an attributable author e.g. government agency, university etc.</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="xs:string">
+					<xs:attribute name="type" type="meta:author-types" use="optional"/>
+					<xs:attribute ref="meta:rank" use="optional"/>
+				</xs:extension>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<!--                    EDITORS                                      -->
+	<xs:element name="editors">
+		<xs:annotation>
+			<xs:documentation>Wrapper for multiple editors of the document.</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="meta:editor" maxOccurs="unbounded"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<!--                    EDITOR                                      -->
+	<xs:element name="editor">
+		<xs:annotation>
+			<xs:documentation>Person or organization reponsible for editing the content of the document.</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:complexContent>
+				<xs:extension base="meta:name-type">
+					<xs:attribute ref="meta:rank"/>
+					<xs:attributeGroup ref="meta:name-term-attributes"/>
+				</xs:extension>
+			</xs:complexContent>
+		</xs:complexType>
+	</xs:element>
+	<!--                    ILLUSTRATORS                                      -->
+	<xs:element name="illustrators">
+		<xs:annotation>
+			<xs:documentation>Wrapper for multiple illustrators of the document.</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="meta:illustrator" maxOccurs="unbounded"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<!--                    ILLUSTRATOR                                      -->
+	<xs:element name="illustrator">
+		<xs:annotation>
+			<xs:documentation>Person or organization reponsible for ilustrating the content of the document.</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:complexContent>
+				<xs:extension base="meta:name-type">
+					<xs:attribute ref="meta:rank"/>
+					<xs:attributeGroup ref="meta:name-term-attributes"/>
+				</xs:extension>
+			</xs:complexContent>
+		</xs:complexType>
+	</xs:element>
+	<!--                    TERM-VALUE                                      -->
+	<xs:element name="term-value" type="xs:normalizedString">
+		<xs:annotation>
+			<xs:documentation>Display value of vocabulary term</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--                    TRANSLATORS                                      -->
+	<xs:element name="translators">
+		<xs:annotation>
+			<xs:documentation>Wrapper for multiple translatros of the document.</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="meta:translator" maxOccurs="unbounded"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<!--                    TRANSLATOR                                      -->
+	<xs:element name="translator">
+		<xs:annotation>
+			<xs:documentation>Person or organization reponsible for translating the content of the document.</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:complexContent>
+				<xs:extension base="meta:name-type">
+					<xs:attribute ref="meta:rank"/>
+					<xs:attributeGroup ref="meta:name-term-attributes"/>
+				</xs:extension>
+			</xs:complexContent>
+		</xs:complexType>
+	</xs:element>
+	<!-- 
+	============================================================================   
+                    DATES AND DATE COMPONENTS
+	============================================================================   
+	-->
+	<!--                    BIRTH-DATE                                      -->
+	<xs:element name="birth-date" type="meta:structured-date-type">
+		<xs:annotation>
+			<xs:documentation>Person's birth date</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--                    BIRTH-INFORMATION                                      -->
+	<xs:element name="birth-information" type="meta:birth-information-type">
+		<xs:annotation>
+			<xs:documentation>Wrapper for of the person’s birth information, including the date and/or location.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:complexType name="birth-information-type">
+		<xs:choice>
+			<xs:sequence>
+				<xs:element ref="meta:birth-date" minOccurs="0"/>
+			</xs:sequence>
+		</xs:choice>
+	</xs:complexType>
+	<!--                    CENTURY                                      -->
+	<xs:element name="century" type="meta:year-type">
+		<xs:annotation>
+			<xs:documentation>Container for century info as used in calendar date element.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:complexType name="year-type">
+		<xs:simpleContent>
+			<xs:extension base="xs:normalizedString">
+				<xs:attribute name="type" type="meta:year-type-value" use="optional"/>
+				<xs:attribute ref="meta:ad-bc" use="optional"/>
+			</xs:extension>
+		</xs:simpleContent>
+	</xs:complexType>
+	<!--                              COMPOSED-TIME                        -->
+	<xs:element name="composed-time" type="xs:normalizedString">
+		<xs:annotation>
+			<xs:documentation>Built-in derived type. The normalizedString datatype represents white space normalized strings.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--                    CONTENT-DATE                                      -->
+	<xs:element name="content-date" type="meta:content-date-model">
+		<xs:annotation>
+			<xs:documentation>Contains information about a date that is related to the content (e.g. date of the event described in the text).</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:complexType name="content-date-model">
+		<xs:sequence>
+			<xs:element ref="meta:structured-date"/>
+			<xs:element ref="meta:standard-date" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<!--                    DAY                                      -->
+	<xs:element name="day" type="xs:integer">
+		<xs:annotation>
+			<xs:documentation>Calendar day as used in calendar date element.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--                    DAY-OF-WEEK                                      -->
+	<xs:element name="day-of-week" type="xs:string">
+		<xs:annotation>
+			<xs:documentation>Defines day of the week, e.g. "Sunday".</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--                    DEATH-DATE                                      -->
+	<xs:element name="death-date" type="meta:structured-date-type">
+		<xs:annotation>
+			<xs:documentation>Person's death date</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--                    DEATH-INFORMATION                                      -->
+	<xs:element name="death-information" type="meta:death-information-type">
+		<xs:annotation>
+			<xs:documentation>Wrapper for of the person’s death information, including the date and/or location.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:complexType name="death-information-type">
+		<xs:choice>
+			<xs:sequence>
+				<xs:element ref="meta:death-date" minOccurs="0"/>
+			</xs:sequence>
+		</xs:choice>
+	</xs:complexType>
+	<!--                    IRREGULAR                                      -->
+	<xs:element name="irregular" type="xs:normalizedString">
+		<xs:annotation>
+			<xs:documentation>Irregular form of the date not represented as structured e.g. in a YYYYMMDD format.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--                    MONTH                                      -->
+	<xs:element name="month" type="xs:normalizedString">
+		<xs:annotation>
+			<xs:documentation>Calendar month as used in calendar date element.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--                    PUBLICATION-DATE                                      -->
+	<xs:element name="publication-date">
+		<xs:annotation>
+			<xs:documentation>Publication date element for periodical content requires both the structured and searchable date formats.</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="meta:structured-date"/>
+				<xs:element ref="meta:standard-date" maxOccurs="2"/>
+				<xs:element ref="meta:publication-time" minOccurs="0" maxOccurs="2"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<!--                              PUBLICATION-TIME                        -->
+	<xs:element name="publication-time" type="meta:publication-time-model">
+		<xs:annotation>
+			<xs:documentation>Time element.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:complexType name="publication-time-model">
+		<xs:sequence>
+			<xs:element ref="meta:standard-time"/>
+			<xs:element ref="meta:composed-time" minOccurs="0"/>
+		</xs:sequence>
+		<xs:attribute name="type" type="xs:normalizedString"/>
+	</xs:complexType>
+	<!--                    STANDARD-DATE                                      -->
+	<xs:element name="standard-date" type="meta:standard-date-type">
+		<xs:annotation>
+			<xs:documentation>Captures date values in YYYYMMDD format; "validate" attribute supports date validation, and "type" attribute is used specify purpose, 
+				such as date values associated with record statuses</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:complexType name="standard-date-type">
+		<xs:simpleContent>
+			<xs:extension base="xs:integer">
+				<xs:attribute name="validate" use="optional">
+					<xs:simpleType>
+						<xs:union memberTypes="xs:date xs:gYear"/>
+					</xs:simpleType>
+				</xs:attribute>
+				<xs:attribute name="type" type="xs:normalizedString"/>
+				<xs:attribute ref="meta:ad-bc" use="optional"/>
+			</xs:extension>
+		</xs:simpleContent>
+	</xs:complexType>
+	<!--                              STANDARD-TIME                        -->
+	<xs:element name="standard-time" type="xs:time">
+		<xs:annotation>
+			<xs:documentation>Built-in primitive type. The time datatype represents an instant of time that recurs every day.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--                    STRUCTURED-DATE                                      -->
+	<xs:element name="structured-date" type="meta:structured-date-type">
+		<xs:annotation>
+			<xs:documentation>Wrapper tag for date information. Contains child tags such as month, day, year, century,etc.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:complexType name="structured-date-type">
+		<xs:all>
+			<xs:element ref="meta:month" minOccurs="0"/>
+			<xs:element ref="meta:day" minOccurs="0"/>
+			<xs:element ref="meta:irregular" minOccurs="0"/>
+			<xs:element ref="meta:year" minOccurs="0"/>
+			<xs:element ref="meta:day-of-week" minOccurs="0"/>
+			<xs:element ref="meta:century" minOccurs="0"/>
+		</xs:all>
+	</xs:complexType>
+	<!--                    TRANSLATION-DATES                                      -->
+	<xs:element name="translation-dates" type="meta:translation-date-type">
+		<xs:annotation>
+			<xs:documentation>Wrapper for translation dates.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:complexType name="translation-date-type">
+		<xs:sequence maxOccurs="unbounded">
+			<xs:element ref="meta:translation-date"/>
+		</xs:sequence>
+	</xs:complexType>
+	<!--                    TRANSLATION-DATE                                      -->
+	<xs:element name="translation-date">
+		<xs:annotation>
+			<xs:documentation>Date of the translation of the document.</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="meta:structured-date"/>
+				<xs:element ref="meta:standard-date"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<!--                    YEAR                                      -->
+	<xs:element name="year" type="meta:year-type">
+		<xs:annotation>
+			<xs:documentation>Calendar year as used for example in calendar date element.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!-- 
+	============================================================================   
+                    INDEXING COMPONENETS
+	============================================================================   
+	-->
+	<!--                    CODE-VALUE                                      -->
+	<xs:element name="code-value" type="xs:normalizedString">
+		<xs:annotation>
+			<xs:documentation>Code value of vocabulary term</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--                    CONFIDENCE                                      -->
+	<xs:element name="confidence" type="xs:normalizedString">
+		<xs:annotation>
+			<xs:documentation>Machine-aided indexing score</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--                    CREATOR                                      -->
+	<xs:element name="creator" type="xs:normalizedString">
+		<xs:annotation>
+			<xs:documentation>User or application that originally assigned the term to the content record</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--                    DESCRIPTIVE-INDEXING                                      -->
+	<xs:element name="descriptive-indexing">
+		<xs:annotation>
+			<xs:documentation>Generic element that captures  vocabulary indexing terms assigned to content. </xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element ref="meta:indexing-term" maxOccurs="unbounded"/>
+				<xs:element ref="meta:preserved-context-indexing-terms" maxOccurs="unbounded"/>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+	<!--                    INDEXING-TERM                                      -->
+	<xs:element name="indexing-term">
+		<xs:annotation>
+			<xs:documentation>Comprises a single vocabulary indexing term, its metadata, and coordinated subfields</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="meta:term"/>
+				<xs:element ref="meta:linked-term" minOccurs="0" maxOccurs="unbounded"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<!--                    LINKED-TERM                                      -->
+	<xs:element name="linked-term" type="meta:linked-term-type">
+		<xs:annotation>
+			<xs:documentation>Coordinated subfield for a primary term</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:complexType name="linked-term-type">
+		<xs:all>
+			<xs:element ref="meta:term-type"/>
+			<xs:element ref="meta:term-id" minOccurs="0"/>
+			<xs:element ref="meta:term-type-languages" minOccurs="0"/>
+			<xs:element ref="meta:term-source" minOccurs="0"/>
+			<xs:element ref="meta:term-value" minOccurs="0"/>
+		</xs:all>
+	</xs:complexType>
+	<!--                    MODIFIER                                      -->
+	<xs:element name="modifier">
+		<xs:annotation>
+			<xs:documentation>Contains additional modifiers of the term e.g. descriptor fragments from Atlas.</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="xs:normalizedString">
+					<xs:attribute name="type" type="xs:normalizedString"/>
+				</xs:extension>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<!--                    PRESERVED-CONTEXT-INDEXING-TERMS                                      -->
+	<xs:element name="preserved-context-indexing-terms">
+		<xs:annotation>
+			<xs:documentation>Supports style of indexing in MLAB content based on Preserved Context Index System (PRECIS); 
+				a series of terms in a "context-dependent" sequence</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="meta:term" maxOccurs="unbounded"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<!--                    RELEVANCE                                      -->
+	<xs:element name="relevance" type="xs:normalizedString">
+		<xs:annotation>
+			<xs:documentation>Machine-aided indexing score</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--                    TERM                                      -->
+	<xs:element name="term" type="meta:indexing-term-type">
+		<xs:annotation>
+			<xs:documentation>Child of subject element containing subject heading</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:complexType name="indexing-term-type">
+		<xs:all>
+			<xs:element ref="meta:term-type"/>
+			<xs:element ref="meta:term-category" minOccurs="0"/>
+			<xs:element ref="meta:term-role" minOccurs="0"/>
+			<xs:element ref="meta:term-modifiers" minOccurs="0"/>
+			<xs:element ref="meta:term-source" minOccurs="0"/>
+			<xs:element ref="meta:term-id" minOccurs="0"/>
+			<xs:element ref="meta:term-type-languages" minOccurs="0"/>
+			<xs:element ref="meta:code-value" minOccurs="0"/>
+			<xs:element ref="meta:creator" minOccurs="0"/>
+			<xs:element ref="meta:confidence" minOccurs="0"/>
+			<xs:element ref="meta:relevance" minOccurs="0"/>
+			<xs:element ref="meta:term-value" minOccurs="0"/>
+		</xs:all>
+	</xs:complexType>
+	<!--                    TERM-CATEGORY                                      -->
+	<xs:element name="term-category" type="xs:normalizedString">
+		<xs:annotation>
+			<xs:documentation>The category of an indexing term</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--                    TERM-ROLE                                      -->
+	<xs:element name="term-role" type="xs:normalizedString">
+		<xs:annotation>
+			<xs:documentation>For Preserved Context Indexing; indicates "role" of term in relation to preceding term</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--                    TERM-SOURCE                                      -->
+	<xs:element name="term-source" type="xs:normalizedString">
+		<xs:annotation>
+			<xs:documentation>Indicates vocabulary source (e.g., "Atlas")</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--                    TERM-ID                                      -->
+	<xs:element name="term-id" type="xs:unsignedLong">
+		<xs:annotation>
+			<xs:documentation>Unique ID for vocabulary term</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--                    TERM-TYPE                                      -->
+	<xs:element name="term-type" type="xs:normalizedString">
+		<xs:annotation>
+			<xs:documentation>Vocabulary term type that defines what indexing term is applying to, e.g. to the document as a whole ("DOC_INFO_TYPE") 
+				or to the content of the document ("CONT_TYPE")</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--                    TERM-MODIFIERS                                      -->
+	<xs:element name="term-modifiers">
+		<xs:annotation>
+			<xs:documentation>For Preserved Context Indexing ; captures modifiers such as birth and death dates</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="meta:modifier" maxOccurs="unbounded"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<!-- 
+	============================================================================   
+                    		INSTITUTION INFO 
+	============================================================================   
+	-->
+	<!--                    HOLDING-INSTITUTION                                      -->
+	<xs:element name="holding-institution" type="meta:holding-type">
+		<xs:annotation>
+			<xs:documentation>Captures the library that holds a copy or a microfilm of the primary document</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:complexType name="holding-type" mixed="true">
+		<xs:annotation>
+			<xs:documentation>For GDSC this element was added and contains the library name, location and shelf number.</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element ref="meta:institution-name" minOccurs="0"/>
+			<xs:element ref="meta:institution-location" minOccurs="0"/>
+			<xs:element ref="meta:shelf-number" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<!--                    INSTITUTION-LOGO                                      -->
+	<xs:element name="institution-logo" type="meta:institution-logo-type">
+		<xs:annotation>
+			<xs:documentation>To capture the logo required by the source institution</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:complexType name="institution-logo-type">
+		<xs:choice>
+			<xs:sequence>
+				<xs:element ref="media:image"/>
+			</xs:sequence>
+		</xs:choice>
+	</xs:complexType>
+	<!--             INSTITUTION-LOCATION          -->
+	<xs:element name="institution-location" type="xs:normalizedString">
+		<xs:annotation>
+			<xs:documentation>Contains the location of the organization e.g. holding institution.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--             INSITUTION-NAME, SHELF-NUMBER          -->
+	<xs:element name="institution-name" type="xs:normalizedString">
+		<xs:annotation>
+			<xs:documentation>Contains the name of the organization e,g, holding institution.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="shelf-number" type="xs:normalizedString"/>
+	<!--                    SOURCE-INSTITUTION                                      -->
+	<xs:element name="source-institution" type="meta:source-institution-type">
+		<xs:annotation>
+			<xs:documentation>Contains the library that maintains the source or orginal copy of the primary document</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:complexType name="source-institution-type" mixed="true">
+		<xs:annotation>
+			<xs:documentation>For GDSC this element was added and contains the library name, location and shelf number, copyright-statement.</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element ref="meta:institution-name" minOccurs="0"/>
+			<xs:element ref="meta:institution-location" minOccurs="0"/>
+			<xs:element ref="meta:shelf-number" minOccurs="0"/>
+			<xs:element ref="meta:copyright-statement" minOccurs="0"/>
+			<xs:element ref="meta:institution-logo" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<!-- 
+	============================================================================   
+                    		NAME COMPONENTS 
+	============================================================================   
+	-->
+	<!--                    FIRST-NAME                                      -->
+	<xs:element name="first-name" type="meta:non-empty-type">
+		<xs:annotation>
+			<xs:documentation>First name</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--                    LAST-NAME                                      -->
+	<xs:element name="last-name" type="meta:non-empty-type">
+		<xs:annotation>
+			<xs:documentation>Last name.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--                    MIDDLE-NAME                                      -->
+	<xs:element name="middle-name" type="xs:normalizedString">
+		<xs:annotation>
+			<xs:documentation>Captures multiple middle names.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--                    PREFIX                                      -->
+	<xs:element name="prefix">
+		<xs:annotation>
+			<xs:documentation>Used for name prefixes, eg. "Dr."Allowed values are maintained in an Atlas control file.</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="xs:normalizedString">
+					<xs:attributeGroup ref="meta:name-term-attributes"/>
+				</xs:extension>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<!--                    STRUCTURED-NAME                                      -->
+	<xs:element name="structured-name">
+		<xs:annotation>
+			<xs:documentation>Wrapper for person name information. Includes child elements such as first-name, middle-name, last-name, etc.</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="meta:prefix" minOccurs="0"/>
+				<xs:element ref="meta:first-name"/>
+				<xs:element ref="meta:middle-name" minOccurs="0"/>
+				<xs:element ref="meta:last-name"/>
+				<xs:element ref="meta:suffix" minOccurs="0"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<!--                    SOBRIQUET                                      -->
+	<xs:element name="sobriquet">
+		<xs:annotation>
+			<xs:documentation>An assumed name, nickname or a pseudonym e.g. "Sting".</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="meta:title" minOccurs="0"/>
+				<xs:element name="name" type="meta:non-empty-type">
+					<xs:annotation>
+						<xs:documentation>Contains sobriquet value, minus any title. Child of sobriquet.</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<!--                    SUFFIX                                      -->
+	<xs:element name="suffix">
+		<xs:annotation>
+			<xs:documentation>Used for suffixes, eg. "Jr.", "Sr.", "II". Allowed values are maintained in an Atlas control file.</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="xs:normalizedString">
+					<xs:attributeGroup ref="meta:name-term-attributes"/>
+				</xs:extension>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<!--                    TITLE                                      -->
+	<xs:element name="title" type="xs:normalizedString">
+		<xs:annotation>
+			<xs:documentation>The title of a document such as book or the principle title of a chapter, part or section. 
+				Depending on the hierarchical level of the these may display as titles or A-Heads, B-Heads etc.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!-- 
+	============================================================================   
+                    PAGINATION COMPONENTS
+	============================================================================   
+	-->
+	<!--                    BEGIN-PAGE-DISPLAY                       -->
+	<xs:element name="begin-page-display" type="meta:common-mixed-type-model">
+		<xs:annotation>
+			<xs:documentation>Starting page information already formatted and ready for rendering.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--                    END-PAGE-DISPLAY                       -->
+	<xs:element name="end-page-display" type="meta:common-mixed-type-model">
+		<xs:annotation>
+			<xs:documentation>Ending page information already formatted and ready for rendering.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--                    PAGE-RANGE-DISPLAY                       -->
+	<xs:element name="page-range-display" type="meta:common-mixed-type-model">
+		<xs:annotation>
+			<xs:documentation>Page range information already formatted and ready for rendering.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--                    PAGE-RANGE                                      -->
+	<xs:element name="page-range" type="meta:page-range-type">
+		<xs:annotation>
+			<xs:documentation>Generic page-range element used by index.xsd</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:complexType name="page-range-type">
+		<xs:sequence>
+			<xs:element ref="meta:begin-page"/>
+			<xs:element ref="meta:end-page" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<!--                    BEGIN-PAGE                                      -->
+	<xs:element name="begin-page" type="meta:non-empty-type">
+		<xs:annotation>
+			<xs:documentation>Starting page of the article.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--                    END-PAGE                                      -->
+	<xs:element name="end-page" type="xs:normalizedString">
+		<xs:annotation>
+			<xs:documentation>Ending page of the article.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--                    PAGINATION-GROUP                                      -->
+	<xs:element name="pagination-group">
+		<xs:annotation>
+			<xs:documentation>Wrapper for pagination information.</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="meta:pagination" maxOccurs="unbounded"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<!--                    PAGINATION                                      -->
+	<xs:element name="pagination">
+		<xs:annotation>
+			<xs:documentation>There are three generic types of pagination: consecutive, nonconsecutive for publications in which advertising 
+				and illustrations interrupt pagination continuity, or system-generated "fake" page numbers that may be used for document ordering.</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="meta:ranges" minOccurs="0"/>
+				<xs:element ref="meta:total-pages" minOccurs="0"/>
+				<xs:element ref="meta:composed" minOccurs="0"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<!--                PAGE-ID-NUMBER                       -->
+	<xs:element name="page-id-number" type="xs:integer">
+		<xs:annotation>
+			<xs:documentation>Contains ID of the document representing this particular page.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--                PDF-PAGE-RANGE                       -->
+	<xs:element name="pdf-page-range" type="meta:page-range-type">
+		<xs:annotation>
+			<xs:documentation>Contains a range of PDF files representing this document.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--                    RANGE                                      -->
+	<xs:element name="range" type="meta:page-range-type">
+		<xs:annotation>
+			<xs:documentation>Wrapper for information about starting and ending page of the article.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--                    RANGES                                      -->
+	<xs:element name="ranges" type="meta:page-ranges-type">
+		<xs:annotation>
+			<xs:documentation>Wrapper for multiple page ranges e.g. ("9-13", "15-18").</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:complexType name="page-ranges-type">
+		<xs:sequence>
+			<xs:element ref="meta:range" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<!--                    SOURCE-PAGINATION-GROUP                                      -->
+	<xs:element name="source-pagination-group">
+		<xs:annotation>
+			<xs:documentation>Groups together all instances of pagination in a source citation</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="meta:source-pagination" maxOccurs="unbounded"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<!--                    SOURCE-PAGINATION                                      -->
+	<xs:element name="source-pagination">
+		<xs:annotation>
+			<xs:documentation>Captures each instance of pagination in a source citation. The "type" attribute identifies the source with one of three enumerated values: 
+				book, book article, journal article.</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="meta:pagination-group"/>
+			</xs:sequence>
+			<xs:attribute name="type">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:enumeration value="book"/>
+						<xs:enumeration value="book article"/>
+						<xs:enumeration value="journal article"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+		</xs:complexType>
+	</xs:element>
+	<!--                TOTAL-PAGES                                -->
+	<xs:element name="total-pages" type="xs:integer">
+		<xs:annotation>
+			<xs:documentation>Total number of pages of the article.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!-- 
+	============================================================================   
+                    		PUBLICATION INFO 
+	============================================================================   
+	-->
+	<xs:element name="place-of-publication" type="xs:normalizedString">
+		<xs:annotation>
+			<xs:documentation>Publication place such as as city, state or city, country.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="publisher" type="meta:common-mixed-type-model">
+		<xs:annotation>
+			<xs:documentation>The entity responsible for making the document available in this form. Contains information such as the name of the 
+				publishing house, printing impression, etc.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="publication-title" type="xs:normalizedString">
+		<xs:annotation>
+			<xs:documentation>Contains title of publication.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="publication-subtitle" type="xs:normalizedString">
+		<xs:annotation>
+			<xs:documentation>Contains subtitle of publication.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="variant-publication-title">
+		<xs:annotation>
+			<xs:documentation>Contains variant title of the publication.</xs:documentation>
+		</xs:annotation>
+		<xs:complexType mixed="true">
+			<xs:attribute name="type" type="xs:normalizedString" use="optional"/>
+		</xs:complexType>
+	</xs:element>
+	<!-- 
+	============================================================================   
+                    		SOURCE CITATION INFO 
+	============================================================================   
+	-->
+	<!--                    SOURCE-CITATION                                      -->
+	<xs:element name="source-citation" type="meta:source-citation-info-type"/>
+		<xs:annotation>
+			<xs:documentation>Contains a bibliographic reference to a published source of a particular document, usually includes the name of the author, 
+				the name of the work, the name of the publisher, the number of the page upon which the text appears, and the year of publication etc. </xs:documentation>
+		</xs:annotation>
+	<xs:complexType name="source-citation-info-type">
+		<xs:sequence>
+			<xs:group ref="meta:source-citation-content-group" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element ref="meta:source-citation" minOccurs="0"/>
+		</xs:sequence>
+		<xs:attribute name="type" type="meta:source-citation-type-values" use="optional">
+			<xs:annotation>
+				<xs:documentation>Indicates type of source citation with a value from an enumerated list: book, journal, series </xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+	</xs:complexType>
+	<xs:simpleType name="source-citation-type-values">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="audio"/>
+			<xs:enumeration value="blog"/>
+			<xs:enumeration value="book"/>
+			<xs:enumeration value="broadcast audio"/>
+			<xs:enumeration value="broadcast video"/>
+			<xs:enumeration value="conference proceeding"/>
+			<xs:enumeration value="DVI journal"/>
+			<xs:enumeration value="DVI manuscript"/>
+			<xs:enumeration value="DVI monograph"/>
+			<xs:enumeration value="DVI newspaper"/>
+			<xs:enumeration value="government document"/>
+			<xs:enumeration value="image"/>
+			<xs:enumeration value="journal"/>
+			<xs:enumeration value="letter"/>
+			<xs:enumeration value="manuscript"/>
+			<xs:enumeration value="map"/>
+			<xs:enumeration value="newspaper"/>
+			<xs:enumeration value="pamphlet"/>
+			<xs:enumeration value="periodical"/>
+			<xs:enumeration value="podcast"/>
+			<xs:enumeration value="reprint book"/>
+			<xs:enumeration value="reprint journal"/>
+			<xs:enumeration value="reprint series"/>
+			<xs:enumeration value="scholarly journal"/>
+			<xs:enumeration value="series"/>
+			<xs:enumeration value="speech"/>
+			<xs:enumeration value="video"/>
+			<xs:enumeration value="website"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<!--                    SOURCE-CITATION-GROUP                                      -->
+	<xs:element name="source-citation-group">
+		<xs:annotation>
+			<xs:documentation>Supports citation metadata that is unique or not represented in publication metadata feeds</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:choice>
+				<xs:sequence>
+					<xs:element ref="meta:source-citation" maxOccurs="unbounded"/>
+					<xs:element ref="meta:composed-citation" minOccurs="0"/>
+				</xs:sequence>
+				<xs:element ref="meta:composed-citation"/>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+	<!-- 
+	============================================================================   
+                    		VOLUME INFO
+	============================================================================   
+	-->
+	<!-- 				VOLUME-SUBTITLE				-->
+	<xs:element name="volume-subtitle" type="xs:normalizedString">
+		<xs:annotation>
+			<xs:documentation>Contains the volume subtitle, if a publication is one volume of a multivolume work.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!-- 				TOTAL-VOLUMES				-->
+	<xs:element name="total-volumes" type="xs:integer">
+		<xs:annotation>
+			<xs:documentation>The total number of volumes for a publication.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!-- 				VOLUME-NUMBER				-->
+	<xs:element name="volume-number" type="xs:string">
+		<xs:annotation>
+			<xs:documentation>Number of this document within its series.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--     			VOLUME-NUMBER-SORT   			-->
+	<xs:element name="volume-number-sort" type="xs:normalizedString">
+		<xs:annotation>
+			<xs:documentation>Volume number formatted for sorting purposes.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--     			VOLUME-NUMBER-DISPLAY   			-->
+	<xs:element name="volume-number-display" type="meta:common-mixed-type-model">
+		<xs:annotation>
+			<xs:documentation>Volume number formatted for display purposes.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--                    ISSUE-NUMBER, NEWSPAPER-SECTION                          -->
+	<xs:element name="issue-number" type="meta:non-empty-type">
+		<xs:annotation>
+			<xs:documentation>Contains the issue number for journals or periodicals.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="newspaper-section" type="xs:string">
+		<xs:annotation>
+			<xs:documentation>This element captures a publisher's newspaper section, also known as the "ASEC" in periodical content.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--                ARTICLE-ZTAGS                                -->
+	<xs:element name="article-ztags">
+		<xs:annotation>
+			<xs:documentation>Captures article-level ztags</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="tag" type="xs:normalizedString" maxOccurs="unbounded">
+					<xs:annotation>
+						<xs:documentation>Contains ztag for a particular article.</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<!--                ARTICLE-SOURCE                                -->
+	<xs:element name="article-source" type="xs:normalizedString">
+		<xs:annotation>
+			<xs:documentation>For periodical content records, this element captures every instance of article source such as byline, credits, etc., to aid in Tasini compliance</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--                FULLTEXT-RESTRICTION                                -->
+	<xs:element name="fulltext-restriction">
+		<xs:annotation>
+			<xs:documentation>Indicates one or more types of fulltext restriction: block [periodical; no full text captured; no full text search available; display always blocked] 
+			blockview [reference; full text captured; full text participating in search; display always blocked] delete prenote [periodical; no full text captured; no full text 
+			search available; display always blocked] restricted [reference; full text captured; full text participating in search; display blocked only when this value is present 
+			in conjunction with other criteria]</xs:documentation>
+		</xs:annotation>
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:enumeration value="block"/>
+				<xs:enumeration value="blockview"/>
+				<xs:enumeration value="delete"/>
+				<xs:enumeration value="prenote"/>
+				<xs:enumeration value="restricted"/>
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+	<!--                LEXILE-STATUS                           -->
+	<xs:element name="lexile-score" type="xs:normalizedString">
+		<xs:annotation>
+			<xs:documentation>Contains Lexile numeric representation of a text’s readability.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--                RECORD-STATUS                                -->
+	<xs:element name="record-status">
+		<xs:annotation>
+			<xs:documentation>For periodical, indicates record status of "incomplete" or "publisher replacement" </xs:documentation>
+		</xs:annotation>
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:enumeration value="updated"/>
+				<xs:enumeration value="verified"/>
+				<xs:enumeration value="original"/>
+				<xs:enumeration value="incomplete"/>
+				<xs:enumeration value="publisher replacement"/>
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+	<!--                SOURCE-SYSTEM                                -->
+	<xs:element name="source-system">
+		<xs:annotation>
+			<xs:documentation>Captures name and type of upstream systems (i.e., editorial or delivery) and associated comment and date fields pertaining to the content record.</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="name" type="xs:normalizedString">
+					<xs:annotation>
+						<xs:documentation>Contains name of the upstream system.</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="comment" type="xs:string" minOccurs="0" maxOccurs="unbounded">
+					<xs:annotation>
+						<xs:documentation>Additional comments about upstream system.</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element ref="meta:standard-date" minOccurs="0" maxOccurs="unbounded"/>
+			</xs:sequence>
+			<xs:attribute name="type" use="optional">
+				<xs:annotation>
+					<xs:documentation>Enumerated list that currently allows for either "editorial" or "delivery"</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:normalizedString">
+						<xs:enumeration value="editorial"/>
+						<xs:enumeration value="delivery"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+		</xs:complexType>
+	</xs:element>
+	<!--                RECORD-ADMIN-INFO                                -->
+	<xs:element name="record-admin-info">
+		<xs:annotation>
+			<xs:documentation>A wrapper element for various internal system metadata elements like record creation date, index type and delivery, etc.</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element ref="meta:record-status"/>
+				<xs:element ref="meta:fulltext-restriction"/>
+				<xs:element ref="meta:article-source"/>
+				<xs:element ref="meta:source-system"/>
+				<xs:element ref="meta:standard-date"/>
+				<xs:element ref="meta:indexing-process"/>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+	<!--                DATABASE-ACRONYM                                -->
+	<xs:element name="database-acronym" type="xs:normalizedString"/>
+	<!--                PEER-REVIEWED                                -->
+	<xs:element name="peer-reviewed">
+		<xs:annotation>
+			<xs:documentation>Contatins a flag indicating was this document reviewed.</xs:documentation>
+		</xs:annotation>
+		<xs:simpleType>
+			<xs:restriction base="xs:normalizedString">
+				<xs:enumeration value="Y"/>
+				<xs:enumeration value="N"/>
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+	<!--                LEVEL                                -->
+	<xs:element name="level" type="xs:normalizedString">
+		<xs:annotation>
+			<xs:documentation>Contains a level number indicating where a document occurs in the structure of a book</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--                PHYSICAL                                -->
+	<xs:element name="physical">
+		<xs:annotation>
+			<xs:documentation>Contains the physical (actual) name and numbering of the document as part of a book</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:all>
+				<xs:element ref="meta:structure-name" minOccurs="0"/>
+				<xs:element ref="meta:structure-number" minOccurs="0"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<!--                LOGICAL                                -->
+	<xs:element name="logical">
+		<xs:annotation>
+			<xs:documentation>Contains the logical (standardized) level of the document as part of a book</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:all>
+				<xs:element ref="meta:level"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<!--                STRUCTURE-NAME                -->
+	<xs:element name="structure-name" type="xs:normalizedString">
+		<xs:annotation>
+			<xs:documentation>Actual name of this document as a part of the book e.g. "Chapter".</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--                STRUCTURE-NUMBER                -->
+	<xs:element name="structure-number" type="xs:normalizedString">
+		<xs:annotation>
+			<xs:documentation>Actual number of this document as a part of the book e.g. "3".</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--                INDEXING-PROCESS                                -->
+	<xs:element name="indexing-process">
+		<xs:annotation>
+			<xs:documentation>If present, indicates "manual" for periodical articles that were manually indexed</xs:documentation>
+		</xs:annotation>
+		<xs:simpleType>
+			<xs:restriction base="xs:normalizedString">
+				<xs:enumeration value="Manual"/>
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+	<!--                DISSERTATION-ABSTRACT-INFO                                -->
+	<xs:element name="dissertation-abstract-info">
+		<xs:annotation>
+			<xs:documentation>For MLA citations of dissertation abstracts; captures abstract ID and name of institution</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="abstract-number" type="xs:string" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>For MLA citations of dissertation abstracts; contains abstract ID.</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="degree-granting-institution" type="xs:string" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>For MLA citations of dissertation abstracts; contains name of the institution.</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="year-degree-granted" type="xs:gYear" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>For MLA citations of dissertation abstracts;contains a year of the degree.</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<!--                VALUE                                -->
+	<xs:element name="value">
+		<xs:annotation>
+			<xs:documentation>Shared element containing value of elements used as identifiers.</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="xs:normalizedString">
+					<xs:attribute name="type" type="xs:normalizedString"/>
+				</xs:extension>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<!--                STANDARD-IDS                                -->
+	<xs:element name="standard-ids">
+		<xs:annotation>
+			<xs:documentation>Wrapper tag for standard-ids for a publication, e.g. ISSN, ISBN, etc.</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="id" maxOccurs="unbounded">
+					<xs:annotation>
+						<xs:documentation>Indicates standard ID type (ISSN, ISBN)</xs:documentation>
+					</xs:annotation>
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element ref="meta:value"/>
+							<xs:element ref="meta:composed" minOccurs="0"/>
+						</xs:sequence>
+						<xs:attribute name="type" type="xs:normalizedString" use="optional"/>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<!--                SERIES-INFO                                -->
+	<xs:element name="series-info">
+		<xs:annotation>
+			<xs:documentation>A publication released on a regular basis with the same name. Common for books (i.e contemporary authors)</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:all>
+				<xs:element ref="meta:title" minOccurs="0"/>
+				<xs:element ref="meta:authors" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>Non Authortative authors not on the Authortative Title</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="series-type" type="xs:normalizedString" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>Contains a type of the serial publication.</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="number" type="xs:normalizedString" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>Contains a serial number of the publication.</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="abbreviation" type="xs:normalizedString" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>Contains an acronym of the serial publication.</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+			</xs:all>
+			<xs:attribute name="type" type="xs:normalizedString" use="optional"/>
+		</xs:complexType>
+	</xs:element>
+	<!--                SERIAL-INFO                                -->
+	<xs:element name="serial-info">
+		<xs:annotation>
+			<xs:documentation>A publication, common to periodicals, released on a regular basis. (i.e newspapers) added from GDSC requirement</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:choice minOccurs="0" maxOccurs="unbounded">
+				<xs:element name="publication-information" type="xs:normalizedString" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>General Information about the serial publication</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="frequency" type="xs:normalizedString" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>The Current Publication Frequency (taken from the 310 of the MARC record)</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="serial-numbering" type="xs:normalizedString">
+					<xs:annotation>
+						<xs:documentation>Contains a serial number of the publication.</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+			</xs:choice>
+			<xs:attribute name="type" type="xs:normalizedString" use="optional"/>
+		</xs:complexType>
+	</xs:element>
+	<!--         COMPOSED-CITATION         -->
+	<xs:element name="composed-citation" type="meta:common-mixed-type-model">
+		<xs:annotation>
+			<xs:documentation>Reference or a citation content that is already formatted and ready for rendering.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--         EDITION-STATEMENT, BOOK-COLLECTION-TITLE, UPDATE-CODE         -->
+	<xs:element name="edition-statement" type="xs:normalizedString">
+		<xs:annotation>
+			<xs:documentation>Contains a statement specific to this particular imprint, e.g. "3rd impression (with minor revisions)".</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="book-collection-title" type="xs:normalizedString">
+		<xs:annotation>
+			<xs:documentation>Contains title for the whole book collection this document belongs to.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="update-code" type="xs:normalizedString"/>
+	<!--                CITATION-URL                                -->
+	<xs:element name="citation-url">
+		<xs:annotation>
+			<xs:documentation>Captures URL for source citation web site and dates for when the site was first accessed and last updated</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="vault-link:vault-link"/>
+				<xs:element ref="meta:standard-date" minOccurs="0" maxOccurs="unbounded"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<!--                IMPRINT                                -->
+	<xs:element name="imprint" type="meta:imprint-type">
+		<xs:annotation>
+			<xs:documentation>Contain the imprint or publisher's information in regards to a publication. Also may contain manufacturer information</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:complexType name="imprint-type" mixed="true">
+		<xs:sequence>
+			<xs:element ref="meta:imprint-composed" minOccurs="0"/>
+			<xs:element ref="meta:manufacturer-info" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<!--                IMPRINT-COMPOSED                                -->
+	<xs:element name="imprint-composed" type="meta:common-mixed-type-model">
+		<xs:annotation>
+			<xs:documentation>Concatenated value of the imprint information will be populated</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--                MANUFACTURER-INFO                                -->
+	<xs:element name="manufacturer-info" type="meta:manufacturer-info"/>
+	<xs:complexType name="manufacturer-info">
+		<xs:annotation>
+			<xs:documentation>Captures the information related to the manufacturer the identified publisher (imprint) utilizes. </xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="manufacturer-name" type="xs:normalizedString" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Contains the name of the manufacturer.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="manufacture-location" type="xs:normalizedString" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Contains the location of the manufacturer.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<!--                EDITION             -->
+	<xs:element name="edition" type="xs:normalizedString">
+		<xs:annotation>
+			<xs:documentation>The edition number of the work.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--                COPYRIGHT-STATEMENT             -->
+	<xs:element name="copyright-statement" type="xs:normalizedString">
+		<xs:annotation>
+			<xs:documentation>A statement that must appear with the document containing copyright information bout it.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--                SPECIAL-COPYRIGHT-STATEMENT             -->
+	<xs:element name="special-copyright-statement" type="xs:normalizedString">
+		<xs:annotation>
+			<xs:documentation>Pubmeta "Special Copyright" field.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--                SOURCE-DOCUMENT-CAPTURE-TYPE                                -->
+	<xs:element name="source-document-capture-type" type="meta:source-document-capture-type-values"/>
+	<xs:simpleType name="source-document-capture-type-values">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="manuscript"/>
+			<xs:enumeration value="typescript"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<!--                COMPOSED                          -->
+	<xs:element name="composed" type="xs:string">
+		<xs:annotation>
+			<xs:documentation>Shared element containing pre-composed text e.g. list of pages precomposed for rendering.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--                CARTRIDGE-FRAME-NUMBERS                                -->
+	<xs:element name="cartridge-frame-numbers">
+		<xs:annotation>
+			<xs:documentation>Microfiche or microfilm frame numbers within the cartridge.</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="meta:value" maxOccurs="unbounded"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<!--                RELATED-DOCUMENT-INFO                                -->
+	<xs:element name="related-document-info">
+		<xs:annotation>
+			<xs:documentation>Wrapper for various metadata pertaining to a related document</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element ref="meta:descriptive-indexing" minOccurs="0"/>
+				<xs:element ref="meta:authors" minOccurs="0"/>
+				<xs:element ref="meta:publication-date" minOccurs="0"/>
+				<xs:element ref="meta:series-info" minOccurs="0" maxOccurs="unbounded"/>
+				<xs:element ref="meta:serial-info" minOccurs="0"/>
+				<xs:element ref="meta:source-institution" minOccurs="0"/>
+				<xs:element ref="meta:holding-institution" minOccurs="0" maxOccurs="unbounded"/>
+				<xs:element ref="shared:media" minOccurs="0"/>
+				<xs:element ref="meta:additional-comments" minOccurs="0" maxOccurs="unbounded"/>
+				<xs:element ref="meta:document-ids" minOccurs="0" maxOccurs="unbounded"/>
+			</xs:choice>
+			<xs:attribute name="type" type="xs:normalizedString" use="optional"/>
+		</xs:complexType>
+	</xs:element>
+	<!--                COLLATION                                -->
+	<xs:element name="collation" type="meta:common-mixed-type-model">
+		<xs:annotation>
+			<xs:documentation>Field that captures the collations of the collection</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--                OCR-CONFIDENCE                                -->
+	<xs:element name="ocr-confidence" type="xs:normalizedString">
+		<xs:annotation>
+			<xs:documentation>An average calculated from the wd/ocr-text values. This value tells us how accurate the machine is.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--                OCR-LANGUAGE                                -->
+	<xs:element name="ocr-language">
+		<xs:annotation>
+			<xs:documentation>Original language of the ocr-ed document.</xs:documentation>
+		</xs:annotation>
+		<xs:complexType mixed="true">
+			<xs:attribute name="term-id" type="xs:unsignedLong" use="required"/>
+		</xs:complexType>
+	</xs:element>
+	<!--                ADDITIONAL-COMMENTS                                -->
+	<xs:element name="additional-comments">
+		<xs:annotation>
+			<xs:documentation>Captures bibliographic text, notes and comments. GDSC</xs:documentation>
+		</xs:annotation>
+		<xs:complexType mixed="true">
+			<xs:sequence>
+				<xs:element ref="essay:p" minOccurs="0" maxOccurs="unbounded"/>
+			</xs:sequence>
+			<xs:attribute name="type" type="xs:normalizedString" use="optional"/>
+		</xs:complexType>
+	</xs:element>
+	<!--                PERSONAL-INFORMATION                                -->
+	<xs:element name="personal-information" type="meta:personal-information-type">
+		<xs:annotation>
+			<xs:documentation>Content model for personal-information element captures information that can be found in Atlas when the “author” has an Atlas id.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:complexType name="personal-information-type">
+		<xs:annotation>
+			<xs:documentation>The personal-information element captures information that can be found in Atlas when the “author” has an Atlas id. 
+				For GDSC this element was included to capture non-atlas content. An Atlas ID can be added when the requirements deem necessary </xs:documentation>
+		</xs:annotation>
+		<xs:choice>
+			<xs:sequence>
+				<xs:element ref="meta:birth-information" minOccurs="0"/>
+				<xs:element ref="meta:death-information" minOccurs="0"/>
+			</xs:sequence>
+		</xs:choice>
+	</xs:complexType>
+	<!--                MSITEM                                -->
+	<xs:element name="msitem">
+		<xs:annotation>
+			<xs:documentation>To capture source data information about manuscript items and their hierachy</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="xs:normalizedString">
+					<xs:attribute name="level" type="xs:normalizedString" use="optional"/>
+					<xs:attribute name="parent-id" type="xs:normalizedString" use="optional"/>
+					<xs:attribute name="page-indicator" type="xs:normalizedString" use="optional"/>
+				</xs:extension>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<!--                              LANGUAGES                        -->
+	<xs:element name="languages" type="meta:languages-type">
+		<xs:annotation>
+			<xs:documentation>To capture the language information of a document</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:complexType name="languages-type">
+		<xs:sequence>
+			<xs:element ref="meta:language" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<!--                LANGUAGE                                -->
+	<xs:element name="language">
+		<xs:annotation>
+			<xs:documentation>To capture the language of a document</xs:documentation>
+		</xs:annotation>
+		<xs:complexType mixed="true">
+			<xs:attributeGroup ref="meta:language-attributes"/>
+		</xs:complexType>
+	</xs:element>
+	<!--                              CITABLE-TYPE                        -->
+	<xs:element name="citable-type" type="meta:citable-type-model"/>
+		<xs:annotation>
+			<xs:documentation>Atlas-validated type of cited material (e.g. "DVI manuscript").</xs:documentation>
+		</xs:annotation>
+	<xs:complexType name="citable-type-model">
+		<xs:simpleContent>
+			<xs:extension base="meta:source-citation-type-values">
+				<xs:attribute name="term-id" type="xs:unsignedLong" use="required">
+					<xs:annotation>
+						<xs:documentation>Atlas UID</xs:documentation>
+					</xs:annotation>
+				</xs:attribute>
+			</xs:extension>
+		</xs:simpleContent>
+	</xs:complexType>
+	<!--                CATEGORY-DISPLAY                                -->
+	<xs:element name="category-display" type="xs:normalizedString">
+		<xs:annotation>
+			<xs:documentation>Used to associate a category/label to a title in the ETOC for National Geographic. (For example, ads, articles, departments, etc).</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--                              TERM-TYPE-LANGUAGES                        -->
+	<xs:element name="term-type-languages">
+		<xs:annotation>
+			<xs:documentation>Wrapper for Atlas term languages.</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="meta:term-type-language" maxOccurs="unbounded"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<!--                TERM-TYPE-LANGUAGE                                -->
+	<xs:element name="term-type-language">
+		<xs:annotation>
+			<xs:documentation>Indicates the language of vocabulary term in Atlas.</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="xs:NMTOKEN">
+					<xs:attribute name="type" type="xs:normalizedString" use="required"/>
+				</xs:extension>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<!--                DOC-CITATION                                -->
+	<xs:element name="doc-citation" type="meta:doc-citation-model">
+		<xs:annotation>
+			<xs:documentation>Bibliographic citation embedded in the document itself.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:complexType name="doc-citation-model">
+		<xs:choice minOccurs="0" maxOccurs="unbounded">
+			<xs:group ref="meta:source-citation-content-group" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:choice>
+		<xs:attribute name="id" type="xs:normalizedString" use="optional"/>
+		<xs:attribute name="type" type="xs:normalizedString" use="optional"/>
+	</xs:complexType>
+	<!--                              DOC-CITATION-GROUP                        -->
+	<xs:element name="doc-citation-group" type="meta:doc-citation-group-model">
+		<xs:annotation>
+			<xs:documentation>Wrapper for fielded or composed bibliographic citation embedded in the document itself.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:complexType name="doc-citation-group-model">
+		<xs:choice>
+			<xs:sequence>
+				<xs:element ref="meta:doc-citation" maxOccurs="unbounded"/>
+				<xs:element ref="meta:composed-citation" minOccurs="0"/>
+			</xs:sequence>
+			<xs:element ref="meta:composed-citation"/>
+		</xs:choice>
+		<xs:attribute name="id" type="xs:normalizedString" use="optional"/>
+	</xs:complexType>
+	<!--                              GEO-LOCATION                        -->
+	<xs:element name="geo-location" type="xs:normalizedString">
+		<xs:annotation>
+			<xs:documentation>Captures geo-location.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--                              ORGANIZATION                        -->
+	<xs:element name="organization" type="meta:organization-model">
+		<xs:annotation>
+			<xs:documentation>Captures organization of role defined by "type" attribute.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:complexType name="organization-model">
+		<xs:simpleContent>
+			<xs:extension base="xs:normalizedString">
+				<xs:attribute name="type" type="xs:normalizedString" use="optional"/>
+			</xs:extension>
+		</xs:simpleContent>
+	</xs:complexType>
+	<!--                              CONTENT-FILTER                        -->
+	<xs:element name="content-filter" type="meta:content-filter-model">
+		<xs:annotation>
+			<xs:documentation>Contains binary flag indicating should this content be filtered according to type specified in "type" attribute.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:complexType name="content-filter-model">
+		<xs:simpleContent>
+			<xs:extension base="meta:content-filter-type">
+				<xs:attribute name="type" type="xs:string" use="optional"/>
+			</xs:extension>
+		</xs:simpleContent>
+	</xs:complexType>
+	<xs:simpleType name="content-filter-type">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="Yes"/>
+			<xs:enumeration value="No"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<!--                              PRODUCT-CONTENT-TYPE                        -->
+	<xs:element name="product-content-type" type="meta:product-content-type-model">
+		<xs:annotation>
+			<xs:documentation>Contains information used distinguish content buckets in product that does not match the DOC_INFO_TYPES.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:complexType name="product-content-type-model" mixed="true">
+		<xs:attribute name="type" type="xs:string" use="optional"/>
+	</xs:complexType>
+	<!--                WORD-COUNT                                -->
+	<xs:element name="word-count" type="xs:integer">
+		<xs:annotation>
+			<xs:documentation>For DVI newspaper citations, we need to display the count of words in the article.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--                STARTING-COLUMN                                -->
+	<xs:element name="starting-column" type="xs:string">
+		<xs:annotation>
+			<xs:documentation>For DVI newspaper citations, we need to display the starting column location of the newspaper article.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--                NEWSPAPER-EDITION                                -->
+	<xs:element name="newspaper-edition" type="xs:normalizedString">
+		<xs:annotation>
+			<xs:documentation>This element captures newpaper edition data for periodical content</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--                ID                                -->
+	<xs:element name="id">
+		<xs:annotation>
+			<xs:documentation>Contains a unique document ID and indicates the ID type.</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="meta:value"/>
+				<xs:element name="prefix" type="xs:normalizedString" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>Captures alphabetical prefix indicating RMDir or other upstream repository such as Gauss for periodical content</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+			</xs:sequence>
+			<xs:attribute name="type" type="xs:normalizedString" use="optional">
+				<xs:annotation>
+					<xs:documentation>List of allowed ID types is maintained externally in a spreadsheet</xs:documentation>
+				</xs:annotation>
+			</xs:attribute>
+		</xs:complexType>
+	</xs:element>
+	<!--                DOCUMENT-IDS                                -->
+	<xs:element name="document-ids">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="meta:id" maxOccurs="unbounded"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<!--                COLLECTION-IDS                                -->
+	<xs:element name="collection-ids">
+		<xs:annotation>
+			<xs:documentation>Used to capture collection ids in source data like finding aid ids, collection ids and subcollection ids</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="meta:id" maxOccurs="unbounded"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<!--                BIBLIOGRAPHIC-IDS                                -->
+	<xs:element name="bibliographic-ids">
+		<xs:annotation>
+			<xs:documentation>Used to capture ids in source data like PSMids, MARCids or ESTC ids </xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="meta:id" maxOccurs="unbounded"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<!--                DIGITAL-OBJECT-IDENTIFIER                             -->
+	<xs:element name="digital-object-identifier" type="xs:normalizedString" nillable="true">
+		<xs:annotation>
+			<xs:documentation>ID that can be used to uniquely identify an electronic document.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--                FILENAME                             -->
+	<xs:element name="filename" type="xs:normalizedString">
+		<xs:annotation>
+			<xs:documentation>The name of the file e.g. containing image.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--                CALENDAR-ENTRY-INFO                                -->
+	<xs:element name="calendar-entry-info">
+		<xs:annotation>
+			<xs:documentation>Wrapper that holds the following metadata for SPO calendar entries: 
+				"entry-number" - Calendar Entry number.
+				"reference-number" - holds series, volume and folio details</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:all>
+				<xs:element ref="meta:reference-number" minOccurs="0"/>
+				<xs:element ref="meta:entry-number" minOccurs="0"/>
+				<xs:element ref="meta:segment-info" minOccurs="0"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<!--                SEGMENT-INFO                                -->
+	<xs:element name="segment-info" type="xs:normalizedString">
+		<xs:annotation>
+			<xs:documentation>Hold the volume numbers for calendar entries</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="entry-number" type="xs:normalizedString">
+		<xs:annotation>
+			<xs:documentation>SPO - calendar Entry number.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="start-number" type="xs:normalizedString">
+		<xs:annotation>
+			<xs:documentation>SPO - start of the folio number</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="end-number" type="xs:normalizedString">
+		<xs:annotation>
+			<xs:documentation>SPO - end of the folio number</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="alt-number" type="xs:normalizedString">
+		<xs:annotation>
+			<xs:documentation>SPO - manuscript folio number stored in precomposed format.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="reference-archive-number" type="xs:normalizedString"/>
+	<!--                REFERENCE-NUMBER-SORT                                -->
+	<xs:element name="reference-number-sort" type="xs:normalizedString">
+		<xs:annotation>
+			<xs:documentation>Holds the sort version of the manuscript number</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--                REFERENCE-NUMBER-COMPONENTS                                -->
+	<xs:element name="reference-number-components" type="xs:normalizedString">
+		<xs:annotation>
+			<xs:documentation>Used as a sort-key captures the sort order (i.e manuscript-id|folio-number|unidentified|item-number) </xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--                REFERENCE-NUMBER-DISPLAY                                -->
+	<xs:element name="reference-number-display" type="xs:normalizedString">
+		<xs:annotation>
+			<xs:documentation>Holds the display version of the manuscript number</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--                REFERENCE-NUMBER                                -->
+	<xs:element name="reference-number" type="meta:refNum-type">
+		<xs:annotation>
+			<xs:documentation>Wrapper for manuscript  reference numbers.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:complexType name="refNum-type" mixed="true">
+		<xs:sequence maxOccurs="unbounded">
+			<xs:element ref="meta:reference-number-sort" minOccurs="0"/>
+			<xs:element ref="meta:reference-number-components" minOccurs="0"/>
+			<xs:element ref="meta:reference-number-display" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="sequence-number" type="xs:normalizedString">
+		<xs:annotation>
+			<xs:documentation>Sequence number of the manuscript within the collection.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--                FOLIO                                -->
+	<xs:element name="folio">
+		<xs:annotation>
+			<xs:documentation>SPO - Manuscript folio number stored in calendar entry level, the start and end of the folio numbers are stored</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element ref="meta:start-number"/>
+				<xs:element ref="meta:end-number" minOccurs="0"/>
+				<xs:element ref="meta:alt-number" minOccurs="0"/>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+	<!--                MCODE                                -->
+	<xs:element name="mcode">
+		<xs:annotation>
+			<xs:documentation>Contains mcode of publication.</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="meta:all-mcode-values">
+					<xs:attribute name="type" type="xs:normalizedString" use="optional">
+						<xs:annotation>
+							<xs:documentation>Optional "mcode-type" element captures mcode type code value from PARIS</xs:documentation>
+						</xs:annotation>
+					</xs:attribute>
+				</xs:extension>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<!--                MICROFILM-INFO                                -->
+	<xs:element name="microfilm-info" type="meta:microfilm-type">
+		<xs:annotation>
+			<xs:documentation>Microfilm information created for DVI content.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:complexType name="microfilm-type">
+		<xs:sequence>
+			<xs:element name="unit-number" type="xs:normalizedString" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Numeric value describes a set of reels that are being released at a given time from a collection</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:sequence>
+				<xs:element ref="meta:reel" minOccurs="0"/>
+				<xs:element name="reel-sort" type="xs:normalizedString" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>5-digit physical reel number used for sorting and searching</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+			</xs:sequence>
+			<xs:element ref="meta:microfiche" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<!--                MICROFICHE                                -->
+	<xs:element name="microfiche" type="meta:microfiche-type">
+		<xs:annotation>
+			<xs:documentation>Wrapper for microfiche ranges information.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--                REEL                                -->
+	<xs:element name="reel" type="meta:reel-type">
+		<xs:annotation>
+			<xs:documentation>Wrapper for reel numbers information.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:complexType name="reel-type">
+		<xs:sequence>
+			<xs:element ref="meta:start-number"/>
+			<xs:element ref="meta:end-number" minOccurs="0"/>
+			<xs:element ref="meta:alt-number" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<!-- 
+	============================================================================   
+                    ELEMENT GROUPS
+	============================================================================   
+	-->
+	<!--                SOURCE-CITATION-CONTENT-GROUP                                -->
+	<xs:group name="source-citation-content-group">
+		<xs:sequence>
+			<xs:element ref="meta:standard-ids" minOccurs="0"/>
+			<xs:element ref="meta:publication-date" minOccurs="0"/>
+			<xs:element ref="meta:publisher" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element ref="meta:special-copyright-statement" minOccurs="0"/>
+			<xs:element ref="meta:publication-title" minOccurs="0"/>
+			<xs:element ref="meta:publication-subtitle" minOccurs="0"/>
+			<xs:element ref="meta:document-titles" minOccurs="0"/>
+			<xs:element ref="meta:variant-publication-title" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element ref="meta:edition" minOccurs="0"/>
+			<xs:element ref="meta:edition-statement" minOccurs="0"/>
+			<xs:element ref="meta:place-of-publication" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element ref="meta:volume-subtitle" minOccurs="0"/>
+			<xs:element ref="meta:volume-number" minOccurs="0"/>
+			<xs:element ref="meta:volume-number-sort" minOccurs="0"/>
+			<xs:element ref="meta:total-volumes" minOccurs="0"/>
+			<xs:element ref="meta:issue-number" minOccurs="0"/>
+			<xs:element ref="meta:book-collection-title" minOccurs="0"/>
+			<xs:element ref="meta:series-info" minOccurs="0"/>
+			<xs:element ref="meta:serial-info" minOccurs="0"/>
+			<xs:element ref="meta:folio" minOccurs="0"/>
+			<xs:element ref="meta:source-institution" minOccurs="0"/>
+			<xs:element ref="meta:holding-institution" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element ref="meta:reference-number" minOccurs="0"/>
+			<xs:element ref="meta:authors" minOccurs="0"/>
+			<xs:element ref="meta:editors" minOccurs="0"/>
+			<xs:element ref="meta:illustrators" minOccurs="0"/>
+			<xs:element ref="meta:contributors" minOccurs="0"/>
+			<xs:element ref="meta:translators" minOccurs="0"/>
+			<xs:element ref="meta:source-pagination-group" minOccurs="0"/>
+			<xs:element ref="meta:imprint" minOccurs="0"/>
+			<xs:element ref="meta:citation-url" minOccurs="0"/>
+			<xs:element ref="meta:dissertation-abstract-info" minOccurs="0"/>
+			<xs:element ref="meta:descriptive-indexing" minOccurs="0"/>
+			<xs:element ref="meta:content-date" minOccurs="0"/>
+			<xs:element ref="meta:geo-location" minOccurs="0"/>
+			<xs:element ref="meta:organization" minOccurs="0"/>
+		</xs:sequence>
+	</xs:group>
+	<!-- 
+	============================================================================   
+                    ATTRIBUTE GROUPS & ATTRIBUTES
+	============================================================================   
+	-->
+	<!--                NAME-TERM-ATTRIBUTES                                -->
+	<xs:attributeGroup name="name-term-attributes">
+		<xs:attribute name="term-id" type="xs:unsignedLong" use="optional">
+			<xs:annotation>
+				<xs:documentation>Atlas UID</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+		<xs:attribute name="term-source" type="xs:normalizedString" use="optional">
+			<xs:annotation>
+				<xs:documentation>Indicates "Atlas"</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+	</xs:attributeGroup>
+	<!--                LANGUAGE-ATTRIBUTES                                -->
+	<xs:attributeGroup name="language-attributes">
+		<xs:attribute name="term-id" type="xs:unsignedLong" use="required">
+			<xs:annotation>
+				<xs:documentation>Atlas UID</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+		<xs:attribute name="ocr" type="xs:normalizedString" use="optional"/>
+		<xs:attribute name="ocr-term-id" type="xs:unsignedLong" use="optional"/>
+		<xs:attribute name="primary" use="required">
+			<xs:simpleType>
+				<xs:restriction base="xs:normalizedString">
+					<xs:enumeration value="Y"/>
+					<xs:enumeration value="N"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+	</xs:attributeGroup>
+	<!--                AD-BC                                -->
+	<xs:attribute name="ad-bc">
+		<xs:simpleType>
+			<xs:restriction base="xs:normalizedString">
+				<xs:enumeration value="ad"/>
+				<xs:enumeration value="bc"/>
+				<xs:enumeration value="bce"/>
+				<xs:enumeration value="ce"/>
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:attribute>
+	<xs:attribute name="rank" type="xs:normalizedString"/>
+	<!-- 
+	============================================================================   
+                    COMPLEX TYPE DECLARATIONS
+	============================================================================   
+	-->
+	<!--                NAME-TYPE                                -->
+	<xs:complexType name="name-type">
+		<xs:sequence>
+			<xs:choice>
+				<xs:element ref="meta:structured-name"/>
+				<xs:element ref="meta:sobriquet"/>
+			</xs:choice>
+			<xs:element name="composed-name" type="meta:non-empty-type">
+				<xs:annotation>
+					<xs:documentation>Composed form of name, with parts of a name in natural order. </xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element ref="meta:personal-information" minOccurs="0"/>
+			<xs:element name="affiliation" type="xs:normalizedString" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Institition, organization, or other body with which an author is affiliated (e.g., "New York University")</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="role" type="xs:normalizedString" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Captures role of affiliated author (e.g., "President" of New York University)</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<!--                BASE-PAGINATION-TYPE                                -->
+	<xs:complexType name="base-pagination-type">
+		<xs:all>
+			<xs:element ref="meta:ranges" minOccurs="0"/>
+			<xs:element ref="meta:total-pages" minOccurs="0"/>
+			<xs:element ref="meta:composed" minOccurs="0"/>
+			<xs:element ref="meta:newspaper-edition" minOccurs="0"/>
+			<xs:element ref="meta:word-count" minOccurs="0"/>
+			<xs:element ref="meta:starting-column" minOccurs="0"/>
+		</xs:all>
+	</xs:complexType>
+	<!--                MICROFICHE-RANGE                                -->
+	<xs:element name="microfiche-range" type="xs:string">
+		<xs:annotation>
+			<xs:documentation>Text representing a range of microfiche cards or microfilm sheets numbers.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--                MICROFICHE-TYPE                                -->
+	<xs:complexType name="microfiche-type" mixed="true">
+		<xs:sequence>
+			<xs:element ref="meta:microfiche-range" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<!--                CAPTION-TYPE                                -->
+	<xs:complexType name="caption-type" mixed="true">
+		<xs:choice minOccurs="0" maxOccurs="unbounded">
+			<xs:group ref="essay:flow-group"/>
+		</xs:choice>
+		<xs:attributeGroup ref="xatts:basic-atts"/>
+	</xs:complexType>
+	<!--
+	============================================================================   
+                    SIMPLE TYPE DECLARATIONS
+	============================================================================   
+	-->
+	<!--                AUTHOR-TYPES                                -->
+	<xs:simpleType name="author-types">
+		<xs:restriction base="xs:normalizedString">
+			<xs:enumeration value="primary"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<!--                YEAR-TYPE-VALUE                                -->
+	<xs:simpleType name="year-type-value">
+		<xs:restriction base="xs:normalizedString">
+			<xs:enumeration value="circa"/>
+			<xs:enumeration value="flourished circa"/>
+			<xs:enumeration value="flourished"/>
+		</xs:restriction>
+	</xs:simpleType>
+</xs:schema>

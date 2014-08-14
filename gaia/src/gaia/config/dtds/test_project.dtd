@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!--
+            ============================================================================
+            Chatham House DTD: derived from NCCO (via monograph), Lit-crit and possibly others!
+            ============================================================================
+              
+02-Feb-2012   0.1	DRAFT from Sarah Neate
+		
+-->
+<!-- book -->
+<!ELEMENT book (bookInfo, citation, entries)>
+<!ATTLIST book
+	contentType CDATA #REQUIRED
+	ID CDATA #REQUIRED
+	FAID CDATA #IMPLIED
+	COLID CDATA #IMPLIED
+>
+<!-- Book metadata  -->
+<!ELEMENT bookInfo (ocr, PSMID, assetID, assetIDeTOC?, dviCollectionID?, dviSubCollectionID?, bibliographicID?, unit?, reel?, ficheRange?, mcode, pubDate, releaseDate?, sourceLibrary?, holdings*, language+, documentType, notes?, comments?, subject*, categoryCode?, locSubjectHead*, linka?, linkv?, linkr*)>
+<!-- bibliographic information -->
+<!ELEMENT citation (authorGroup*, titleGroup, authoritativeSeriesTitle*, nonAuthoritativeSeriesTitle*, edition?, editionStatement?, periodicalArticleMetadata*, volumeGroup?, issueNumber?, imprint, collation, publicationPlace?, totalPages)>
+<!-- full text -->
+<!ELEMENT entries (entry*)>
+<!--    
+                ============================================
+                     Book metadata elements         
+                ============================================
+-->
+<!-- In case of book level OCR confidence value at book level will be captured. In case of page level confidence value of the page will be captured -->
+<!ELEMENT ocr (#PCDATA)>
+<!ATTLIST ocr
+    relevant (yes | no) "yes">
+   
+<!-- Unique identifier for each title provided for capture -->
+<!ELEMENT PSMID (#PCDATA)>
+<!-- Unique identifier assigned to the document for online delivery -->
+<!ELEMENT assetID (#PCDATA)>
+<!-- Unique identifier assigned to the document for E-TOC -->
+<!ELEMENT assetIDeTOC (#PCDATA)>
+<!--It will contain overall collection identifier-->
+<!ELEMENT dviCollectionID (#PCDATA)>
+<!--It will contain over all subcollection identifier-->
+<!ELEMENT dviSubCollectionID (#PCDATA)>
+<!--Bibliographic ID assigned for the title -->
+<!ELEMENT bibliographicID (#PCDATA)>
+<!ATTLIST bibliographicID
+    type (ISBN | ISSN) #IMPLIED
+>    
+<!--  unit a title may be found in -->
+<!ELEMENT unit (#PCDATA)>
+<!-- reel number -->
+<!ELEMENT reel (#PCDATA)>
+<!-- fiche range -->
+<!ELEMENT ficheRange (#PCDATA)>
+<!-- publication code -->
+<!ELEMENT mcode (#PCDATA)>
+<!-- Container element for publication date information at granular level -->
+<!ELEMENT pubDate (irregular?, century?, year?, month?, day?, composed, pubDateStart, pubDateEnd?)>
+<!-- Irregular date format will be captured here -->
+<!ELEMENT irregular (#PCDATA)>
+<!-- Century information of document will be captured -->
+<!ELEMENT century (#PCDATA)>
+<!ATTLIST century
+	type CDATA #IMPLIED
+>
+<!-- Year of document will be captured -->
+<!ELEMENT year (#PCDATA)>
+<!ATTLIST year
+	type CDATA #IMPLIED
+>
+<!-- Month of document will be captured -->
+<!ELEMENT month (#PCDATA)>
+<!-- Day of document will be captured -->
+<!ELEMENT day (#PCDATA)>
+<!-- In case of author, author name as it appears in the source will be captured. In case of date, date information as it appears on source will be captured -->
+<!ELEMENT composed (#PCDATA)>
+<!-- Starting date of the document date will be captured in YYYYMMDD format-->
+<!ELEMENT pubDateStart (#PCDATA)>
+<!-- Ending date of the document date will be captured in YYYYMMDD format-->
+<!ELEMENT pubDateEnd (#PCDATA)>
+<!-- date book released online -->
+<!ELEMENT releaseDate (#PCDATA)>
+<!-- source library used for filming with granular values -->
+<!ELEMENT sourceLibrary (libraryName, libraryLocation, libraryShelfmark?, copyrightStatement?, referenceNumber?)>
+<!-- libraryName-->
+<!ELEMENT libraryName (#PCDATA)>
+<!-- libraryLocation-->
+<!ELEMENT libraryLocation (#PCDATA)>
+<!-- libraryShelfmark-->
+<!ELEMENT libraryShelfmark (#PCDATA)>
+<!-- Copy right information of the source library will be captured-->
+<!ELEMENT copyrightStatement (#PCDATA)>
+<!--Library Reference Number-->
+<!ELEMENT referenceNumber (#PCDATA)>  
+<!-- list of holdings -->
+<!ELEMENT holdings (libraryName, libraryLocation?, libraryShelfmark?)>
+<!-- Uniquie Library Reference Number -->
+<!ELEMENT libraryReference (#PCDATA)>
+<!-- language -->
+<!ELEMENT language (#PCDATA)>
+<!ATTLIST language
+	ocr CDATA #REQUIRED
+>
+<!-- primary document type -->
+<!ELEMENT documentType (#PCDATA)>
+<!-- notes -->
+<!ELEMENT notes (#PCDATA)>
+<!-- comments -->
+<!ELEMENT comments (#PCDATA)>
+<!-- Subject categories identified will be captured in this element -->
+<!ELEMENT subject (#PCDATA)>
+<!ATTLIST subject
+	source CDATA #IMPLIED
+>
+<!-- Category code will be populated in this element -->
+<!ELEMENT categoryCode (#PCDATA)>
+<!ATTLIST categoryCode
+	source CDATA #IMPLIED
+>
+<!-- MARC Records 600, 610, 651,651-->
+<!ELEMENT locSubjectHead (locSubject)+>
+<!ATTLIST locSubjectHead
+	type (personalName | conference | corporateName | topicalTerm | geographicalLocation | uniformTitle) #REQUIRED
+>
+<!ELEMENT locSubject (#PCDATA)>
+<!ATTLIST locSubject
+	subField CDATA #REQUIRED
+>
+<!-- Link to Audio -->
+<!ELEMENT linka (#PCDATA)>
+<!-- Link to Video -->
+<!ELEMENT linkv (#PCDATA)>
+<!--Link to related Documents-->
+<!ELEMENT linkr (#PCDATA)>
+<!--    
+                ============================================                                                                             
+                     Bibliographic citation elements         
+                ============================================                                                                                                                      
+-->
+<!-- author of the book -->
+<!ELEMENT authorGroup (author | byline)>
+<!ATTLIST authorGroup
+	type (added) #IMPLIED
+	role CDATA #IMPLIED
+>
+<!-- non-personal author -->
+<!ELEMENT byline (#PCDATA)>
+<!-- author - personal name -->
+<!ELEMENT author (composed, prefix?, first?, middle?, last?, suffix?, sobriquet?, birthDate?, deathDate?)>
+<!-- Prefix of author of the Document-->
+<!ELEMENT prefix (#PCDATA)>
+<!-- First name of author of the Document-->
+<!ELEMENT first (#PCDATA)>
+<!-- Middle name of author of the Document-->
+<!ELEMENT middle (#PCDATA)>
+<!-- Last name of author of the Document-->
+<!ELEMENT last (#PCDATA)>
+<!-- Suffix of author of the Document-->
+<!ELEMENT suffix (#PCDATA)>
+<!-- Sobriquet of author of the Document-->
+<!ELEMENT sobriquet (#PCDATA)>
+<!-- birthDate processed for searching -->
+<!ELEMENT birthDate (#PCDATA)>
+<!-- deathDate processed for searching -->
+<!ELEMENT deathDate (#PCDATA)>
+<!-- title of the book -->
+<!ELEMENT titleGroup (fullTitle?, displayTitle?, uniformTitle*, variantTitle*, collectiveTitle?, relatedTitle*)>
+<!-- full version of the title of the book - field 245 in Marc record-->
+<!ELEMENT fullTitle (#PCDATA)>
+<!-- truncated version of the title of the book -->
+<!ELEMENT displayTitle (#PCDATA)>
+<!-- uniform title - fields 130, 240, 730 in MARC record -->
+<!ELEMENT uniformTitle (#PCDATA)>
+<!-- variant title - field 246 in MARC record -->
+<!ELEMENT variantTitle (#PCDATA)>
+<!-- collective title - field 243 in MARC record -->
+<!ELEMENT collectiveTitle (#PCDATA)>
+<!-- uncontrolled related/analytical title - field 740 in MARC record -->
+<!ELEMENT relatedTitle (#PCDATA)>
+<!-- Authoritative Series Title Marc 440 or 830 field -->
+<!ELEMENT authoritativeSeriesTitle (#PCDATA)>
+<!-- Marc 490, 800 and 810 field-->
+<!ELEMENT nonAuthoritativeSeriesTitle (nonASeriesTitle, nonASeriesName?)>
+<!-- non-uniform series title -->
+<!ELEMENT nonASeriesTitle (#PCDATA)>
+<!-- non-uniform series author -->
+<!ELEMENT nonASeriesName (#PCDATA)>
+<!ATTLIST nonASeriesName
+	type (author | corporate) #REQUIRED
+>
+<!-- edition - field 250 in MARC record -->
+<!ELEMENT edition (#PCDATA)>
+<!-- edition statement of the document will be captured -->
+<!ELEMENT editionStatement (#PCDATA)>
+<!-- Periodical article metadata will be captured -->
+<!ELEMENT periodicalArticleMetadata (sourcePublication?, issue?, sourcePage?)>
+<!-- Source Publication name will be captured -->
+<!ELEMENT sourcePublication (#PCDATA)>
+<!-- Issue details will be captured -->
+<!ELEMENT issue (#PCDATA)>
+<!-- Source page number related to scanned pages or periodical article metadata will be captured -->
+<!ELEMENT sourcePage (#PCDATA)>
+<!-- volume information -->
+<!ELEMENT volumeGroup (currentVolume, Volume, totalVolumes, volumeSet?)>
+<!-- current number of volume -->
+<!ELEMENT currentVolume (#PCDATA)>
+<!-- Arabic equivalent of the volume number will be captured -->
+<!ELEMENT Volume (#PCDATA)>
+<!-- total number of volumes per book -->
+<!ELEMENT totalVolumes (#PCDATA)>
+<!-- list docid's of other volume in the set -->
+<!ELEMENT volumeSet (filmedVolume)+>
+<!-- other filmed volumes for the same book -->
+<!ELEMENT filmedVolume (#PCDATA)>
+<!ATTLIST filmedVolume
+	volumeID NMTOKEN #REQUIRED
+	assetID CDATA #REQUIRED
+>
+<!-- Issue Number -->
+<!ELEMENT issueNumber (#PCDATA)>
+<!-- imprint -->
+<!ELEMENT imprint (imprintFull, imprintPublisher?, imprintManufacturePlace?, imprintManufacturer?)>
+<!-- full original version of the imprint - field 260 in MARC record -->
+<!ELEMENT imprintFull (#PCDATA)>
+<!-- imprint publisher - subfield |b from field 260 in MARC record -->
+<!ELEMENT imprintPublisher (#PCDATA)>
+<!-- imprint manufacture place - subfield |e from field 260 in MARC record -->
+<!ELEMENT imprintManufacturePlace (#PCDATA)>
+<!-- imprint manufacturer - subfield |f from field 260 in MARC record -->
+<!ELEMENT imprintManufacturer (#PCDATA)>
+<!-- collation - Field 300 all subfields in MARC record -->
+<!ELEMENT collation (#PCDATA)>
+<!-- normalized publication place -->
+<!ELEMENT publicationPlace (publicationPlaceCity?, publicationPlaceState?, publicationPlaceCountry?, publicationPlaceComposed?)>
+<!-- City name of the publication will be captured -->
+<!ELEMENT publicationPlaceCity (#PCDATA)>
+<!-- State name of the publication will be captured -->
+<!ELEMENT publicationPlaceState (#PCDATA)>
+<!-- Country name of the publication will be captured -->
+<!ELEMENT publicationPlaceCountry (#PCDATA)>
+<!-- Publication place information will be captured as it appears in the source -->
+<!ELEMENT publicationPlaceComposed (#PCDATA)>
+<!-- total number of pages -->
+<!ELEMENT totalPages (#PCDATA)>
+<!ATTLIST totalPages
+	type (scanned | sequential) #REQUIRED
+>
+<!--    
+                ============================================                 
+                      Content page elements                                                        
+                ============================================ 
+-->
+<!-- entry -->
+<!ELEMENT entry (sc, pi+, ceFullTitle, ceDisplayTitle, page+)>
+<!ATTLIST entry
+	type CDATA #IMPLIED
+	critId CDATA #REQUIRED
+	rights (yes | no) "yes"
+>
+<!-- Source Column -->
+<!ELEMENT sc (#PCDATA)>
+<!-- Page Image -->
+<!ELEMENT pi (#PCDATA)>
+<!ATTLIST pi
+    pgref CDATA #REQUIRED>
+<!--Clipped Article Image -->
+<!ELEMENT ci (#PCDATA)>
+<!ATTLIST ci
+    pgref CDATA #REQUIRED
+    clip CDATA #REQUIRED
+> 
+<!-- Change in citation - Title-->
+<!ELEMENT ceFullTitle (#PCDATA)>
+<!-- Change in citation - display title-->
+<!ELEMENT ceDisplayTitle (#PCDATA)>
+<!-- Citical Entry Author -->
+<!ELEMENT ceAuthor (ceComposed?, cePrefix?, ceFirst?, ceMiddle?, ceLast?, ceSuffix?)>
+    <!ELEMENT ceComposed (#PCDATA)>
+	<!ELEMENT cePrefix (#PCDATA)>
+ 	<!ELEMENT ceFirst (#PCDATA)>
+ 	<!ELEMENT ceMiddle (#PCDATA)>
+ 	<!ELEMENT ceLast (#PCDATA)>
+ 	<!ELEMENT ceSuffix (#PCDATA)>
+<!-- Citical Entry ByLine -->
+<!ELEMENT ceByline (#PCDATA)>
+<!-- Citical Entry Publication Date --> 	
+<!ELEMENT cePubDate (ceIrregular?, ceCentury?, ceYear?, ceMonth?, ceDay?, cePubDateStart, cePubDateEnd)>
+	<!ELEMENT ceIrregular (#PCDATA)>
+    <!ELEMENT ceCentury (#PCDATA)>
+    <!ELEMENT ceYear (#PCDATA)>
+    <!ELEMENT ceMonth (#PCDATA)>
+ 	<!ELEMENT ceDay (#PCDATA)>
+ 	<!ELEMENT cePubDateStart (#PCDATA)>
+ 	<!ELEMENT cePubDateEnd (#PCDATA)>
+<!-- Change in Citation - Issue Number -->
+<!ELEMENT ceIssueNumber (#PCDATA)>
+<!-- Content of the page -->
+<!--Change in Subject -->
+<!ELEMENT ceSubject (#PCDATA)>
+<!-- Related Document within a change of citation-->
+<!ELEMENT ceLinkR (#PCDATA)>
+<!-- page of the text -->
+<!ELEMENT page (pageInfo, pageContent*)>
+<!ATTLIST page
+	type (frontmatter | titlePage | bodyPage | TOC | index | backmatter) #REQUIRED
+	firstPage (yes | no) "no"
+>
+<!-- page metadata -->
+<!ELEMENT pageInfo (pageID, assetID, sourcePage?, ocr, imageLink)>
+<!-- source page number - sequential -->
+<!ELEMENT pageID (#PCDATA)>
+<!-- Image file name -->
+<!ELEMENT imageLink (#PCDATA)>
+<!ATTLIST imageLink
+	pageIndicator (single | double) #REQUIRED
+	width CDATA #REQUIRED
+	height CDATA #REQUIRED
+	type (jpeg | tiff | gif | pdf) #REQUIRED
+	colorimage (bitonal | grayscale | color) #REQUIRED
+>
+<!ELEMENT pageContent (sectionHeader | graphicCaption | text | textOmitted | p | marginalia | footnote)*>
+<!-- Section header -->
+<!ELEMENT sectionHeader (#PCDATA)>
+<!ATTLIST sectionHeader
+	type (book | article | backmatter | chapter | frontmatter | index | other | part | section | title | titlePage | TOC | volume) #REQUIRED
+>
+<!-- Illustration -->
+<!ELEMENT graphicCaption (#PCDATA)>
+<!ATTLIST graphicCaption
+	type (Cartoon | Chart | CoatofArms | Diagram | Drawing | Engraving | Genealogicaltable | Graph | Map | Musicalwork | Painting | Photograph | Plan | Portrait | Seal | Table) #REQUIRED
+	colorimage (bitonal | grayscale | color) #REQUIRED
+    orientation (p | l) #REQUIRED
+    clipref CDATA #REQUIRED
+    clipimgpresent (yes | no) #REQUIRED
+    clipimgfile CDATA #IMPLIED
+    dbid CDATA #IMPLIED
+>
+<!-- Foreign text indicator -->
+<!ELEMENT textOmitted (#PCDATA)>
+
+<!-- Text of article -->
+<!ELEMENT text (text.title?, text.cr+)>
+<!--Article Title -->
+<!ELEMENT text.title (pg, p)>
+<!-- Generic Clip Rectangle -->
+<!ELEMENT text.cr (pg, p*)>
+<!--Position Guide: any article zone scanned as a seperate OCR unit -->
+<!ELEMENT pg EMPTY>
+<!ATTLIST pg
+    pgref CDATA #REQUIRED
+    clipref CDATA #REQUIRED
+    pos CDATA #REQUIRED
+>    
+<!-- Paragraph -->
+<!ELEMENT p (wd | sectionHeaderText | entryText)+>
+<!-- Word -->
+<!ELEMENT wd (#PCDATA)>
+<!ATTLIST wd
+	pos CDATA #REQUIRED
+>
+<!-- SectionHeaderText -->
+<!ELEMENT sectionHeaderText (#PCDATA)>
+<!ATTLIST sectionHeaderText id CDATA #REQUIRED 
+			    pos (start | end) #REQUIRED>
+<!-- entryText-->
+<!ELEMENT entryText (#PCDATA)>
+<!ATTLIST entryText entryID CDATA #REQUIRED
+                pos (start | end) #REQUIRED>
+<!-- marginalia -->
+<!ELEMENT marginalia (wd)+>
+<!-- footnote -->
+<!ELEMENT footnote (wd)+>

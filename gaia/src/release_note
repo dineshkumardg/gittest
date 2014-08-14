@@ -1,0 +1,444 @@
+<table width="100%">
+    <tr>
+        <td><a href="http://ukandgaia07:8004/qa/">GAIA PRODUCTION</a></td>
+        <td align="right"><a href="http://ukandgaia08:8004/qa/">GAIA WARM STANDBY</a> - requires: psql restore; git pull; etc...</td>
+    </tr>
+</table>
+
+<pre><code>
+=========================
+
+GAIA v3.7.9
+. stop cmyk from being ingested
+. pgref related problems for htc (gda script)
+
+EMEA Software Development, 201405071100 - commit 93591e4f57dbdb4078bf4131fbf98f3f9cc1a6c4
+
+=========================
+
+GAIA v3.7.8
+. update worker to be more resiliant
+
+EMEA Software Development, 201405011630 - commit a6d4b9dc8ed54e5f7c1d05a60a88f8c3468aaf9f
+
+=========================
+
+GAIA v3.7.7
+. 'quick win' to release m2 cho_meet
+	. added admin helper function to unrelease things
+
+EMEA Software Development, 201404281500 - commit c3fa7e0563400d59a17c75f363559f7b48372b54
+
+=========================
+
+GAIA v3.7.6
+. report for SH + PD - asset_id id + count
+. ability to dump out languages csv (but only from within ide)
+. fix for entity encoding on & - see CHOA-1286
+. export relatedMedia new element items (it needs .mp3) in the attribute value!
+
+EMEA Software Development, 201404240900 - commit a14bffa42498cc203a9f9faadbb3d69d5f201e83
+
+=========================
+
+GAIA v3.7.5
+. mcode fix: cho_rpax_1998_negrine_000_0000
+. factored out pgref reports into own unit test
+. added series_number removal script
+. added two more egest workers
+
+EMEA Software Development, 201404101100 - commit 400b83f0ebfcb7deed57d77b73c5c0a420c5c37a
+
+=========================
+
+GAIA v3.7.4
+. fedora support
+. update cmyk script to rm the original
+. tighten up egest code for better handling of isbn lengths
+
+EMEA Software Development, 201404091100 - commit afe7c1a278601ec7fb26f1d1a2598da6af5032fb
+
+=========================
+
+GAIA v3.7.3
+. enable expert query to dump out csv's - featuring some or all of solr contents
+
+EMEA Software Development, 201403271530 - commit e25326716b7d78a1be8b87bdf5ae266ea1357546
+
+=========================
+
+GAIA v3.7.2
+. SH spotted problem with fix form not displaying &quot; properly.
+
+EMEA Software Development, 201403201330 - commit 0d70743946c9f6dbd6a9bb03b06d6501315c00ef
+
+=========================
+
+GAIA v3.7.1
+. language fix for when item already present: warn user rather than crash
+
+EMEA Software Development, 201403141545 - commit c67de83fb1fb6e03ded13003d3ebf0f790a93161
+
+=========================
+
+GAIA v3.7
+. isbn validation rule
+
+EMEA Software Development, 201403051400 - commit 0d29d066cf364ba91892c73b27548fd3e1e3bf5a
+
+=========================
+
+GAIA v3.6
+. futher pgref / ingest validation rules on ingest
+. additional gda 'suppliment' script
+. used 'fixed' from test_validation rules
+. update various instructions
+
+EMEA Software Development, 201403030900 - commit 465a0ea40252b62402812e1baf3aad7f889a27ff
+
+=========================
+
+GAIA v3.5.1
+. improvements to gda script + ws
+
+EMEA Software Development, 201402241300 - commit db1cba41dbaa9cfc56ebf8e8c85c632e15c7a557
+
+=========================
+
+GAIA v3.5
+. incorporate gda script
+. enhance ftp close + extend: retry interval & attempts
+. ntpd running on ukandgaia07
+
+EMEA Software Development, 201402201230 - commit 95ba4e25d852786346a732b8502cbb2158dbde9c
+
+=========================
+
+GAIA v3.4
+. implement ingest rule - disallow duplicate pgref at article level
+. change 'apply changes' to 'save edits'
+
+EMEA Software Development, 201402141640 - commit 141e4c35f4029d88cff98b82de1547859939aa52
+
+=========================
+
+GAIA v3.3.2 (mid point release)
+. enable release items list to show everything - as paging not viable with multiple modules
+
+EMEA Software Development, 201402121300 - commit ac9d57a88ceab5a1dc82d9929d0eec6504ff844e
+
+=========================
+
+GAIA v3.3.1 (mid point release)
+. emergency fix to accurately show correct article id: etoc page
+
+EMEA Software Development, 201402061400 - commit f1aa5d9709a62f786db6557856da4628ba64b0de
+
+=========================
+
+GAIA v3.3
+. entity conversion, to replace downstream photon .pl script
+. rstrip mcode psmid for SH
+. fix for languages not showing correct title xpath for single retreivable's
+. tidy up of non used stuff in some conversion classes
+. (official) fix for reject report that contains unicode (ultimately affected FTP)
+. improved egest + ftp worker logging
+. 'limbo land' visibility via smb: \\gaia\inbox
+. remove help link
+
+EMEA Software Development, 201402030945 - commit 9b95e7f2602bd8b4c47e486fb0de05f66548265d
+
+=========================
+
+GAIA v.3.2
+. EG-489: isbn xpath change in gift
+. EG-438: re: CHOA-1013 + CHOA-1121 - gift image fix
+. reconfig.: 8 ingest + 6 egest workers
+
+EMEA Software Development, 201401301000 - commit cb6514aea82f23887e443d27f403f84479c49942
+
+=========================
+
+GAIA v3.1
+. up the retry counter, to 60
+. ensure re-ingest of fixed xml works - reingest_fixed_xml.sh
+. new xsd
+
+EMEA Software Development, 201401230900 - commit 65ae0c9b1f8300479ae5c23562211a7202141a4d
+
+=========================
+
+GAIA v3.0.3 (mid point release)
+. export fix: added ws (pip install djangorestframework; 2.3.12) + export link on item page
+. fix tab: removed _IS_ABSENT_; non xpaths (that refer to gdom internals); aucomposed + marganalia (invalid cho.py xpaths)
+. page tidy-up + speed-up: get rid of article and doc tabs + reposition reject and fix tabs
+. reject tab: ability to save comments multiple times; ftp reject comments + xml (orig. / fixed) to htc
+. improve instructions: for csv export (_possible_ IE fix included); fix results page (XSD warning)
+. reduce logging of qa_web_server.log
+. removed chunk page - article link takes you back to etoc
+. improved FTP code across all FTP commands (not just open!)
+. only show items in the named_authoriy report that are in qa and been approved (with a tick) and that are 'live'
+. language table modified (psmid's that only contain 'English' been purged)
+. reset worker count: 12:2 (max_requests_outstanding:egest_max_requests_outstanding)
+
+EMEA Software Development, 201401221045 - commit b44937c36603bb78a04ea24f33ce6d9ded681968
+
+=========================
+
+GAIA v3.0.2 (mid point release)
+. modify etoc so it shows @type
+
+EMEA Software Development, 201401101400 - commit 752e7498e7cb642a9d767f562dd1312af9658102
+
+=========================
+
+GAIA v3.0.1 (mid point release)
+. change filename of named_authority csv export
+. gave FTP 60 retry attempts, instead of 3: retry_counter
+. improve FTP error msg shown on 'ingest errors' page
+. incorporated more scripts from production server - those that IT Support modified!
+. a SOLR syntax example
+. more ingest workers added (from 10 to 16) and no egest workers running: max_requests_outstanding
+
+EMEA Software Development, 201401091000 - commit 52b9b0d3dc1f6ac142370bd113b4496c0061c698
+
+=========================
+
+GAIA v2.29
+. enable FTP connection to htc ftp site (mid point release)
+. languages moved from csv files to database table + new web ui
+. rsync email to IT via crontab entry
+. ensure single retreivable items 'cho_chbp', 'cho_rpax' are used correctly in author_search report
+. additional report for Rose - grouping of assetid's... re: too many authors
+. centalisation of (more) hard coded mcodes
+. improved ingest protocol - allows * at front of filename in manifest + Thumbs.db ignored
+. rebalanced workers: ingest = 10; egest = 6
+
+EMEA Software Development, 201401070900 - commit 40cc75aa81057cd0270741a9dbb6f7476379177f
+
+=========================
+
+GAIA v2.28
+. backup server: ukandgaia08 apache / selinux config working across nfs
+. ingest count column showing on qa items page
+. pagination simplified (so as to display few page links)
+. emptied solr (prior db is: /GAIA/cho/solr.201312121440)
+. updated named authority for meet; chbp; chrx; rpax = use document assetid not chunk assetid
+. added some US users
+. import of languages into languages table (UI not in this sprint)
+
+EMEA Software Development, 201312170900 - d3ca25cdd0914311aa38dcfd09e1eae88839db92
+
+=========================
+
+GAIA v2.27
+. more support for standby server (network adapter binding neutrality)
+. ability to see xml
+. created account for Julia
+. instructions on various pages
+. ~900% performance improvement on qa list (bypassing of ORM) 
+. 'approved' functionality on 'qa items' + 'release items'
+. csv export in 'qa items'
+. support for v3.0 of gift schema (without mathml3)
+
+EMEA Software Development, 201312061100 - b414bf47c3306256d05098a94f60f52765669e5c
+
+=========================
+
+GAIA v2.26
+. multiple authors appear in named authority page (for all content types)
+. incorporate latest gift schema (mathml mocked out)
+. export released items as csv
+. incorporate missing callisto image report (not in the 'product')
+
+EMEA Software Development, 201311280833 - 6c718aaa685a72bdb2071ba7bd844366d82ef6ae
+
+=========================
+
+GAIA v2.25
+. named_authority page:
+    . ensure rpax reports can be produced
+    . defect fix to show correct asset id (same fix gone in etoc)
+. sort on 'qa items' defect fix, due to pycharm formatter
+. update named authority search results instructions
+. csv export from named authority uses | as seperator for ALL fields
+. table widths improved on manage page
+
+EMEA Software Development, 201311261524 - 583826423e4d5be78633ac4a13108da9cfbdda3d
+
+=========================
+
+GAIA v2.24
+. 'named authority' functionality
+. asset id's (correct gift ones) appearing in etoc
+. investigation for http://jira.cengage.com/browse/CHOA-1121 (new unit test)
+. fix for old defect on feed file report columns (they are not sortable - and never have been)
+. support for enabling product to run on a standby server - 0.0.0.0 any adapter
+    . still needs some work as some config paths hardcoded to http://gaia
+. speeded up qa/manage/release (but still un-pleasently slow)
+. rm some old configs (grads)
+
+EMEA Software Development, 201311200800 - 42c2c0fbca8f460d26b4c3149277e1254c4e23f4
+
+=========================
+
+GAIA v2.23
+. author count reports for Rose from gift
+. release items search box - including refactor of release and un-release code
+    . http://jira.cengage.com/browse/EG-411
+. successfully test GIFT_23Oct2013 against master
+    . http://jira.cengage.com/browse/EG-418
+. create login for Steve Barker
+    . http://jira.cengage.com/browse/EG-405
+. more MAI reports for rose: conference series; journals; refugee survey; survey and documents
+. updated qa page so that columns sortable and more information visible
+. added a link on qa/page to item (for Rose)
+. incorporated, into git only, photon's .pl entity conversion script
+
+EMEA Software Development, 201311050800 - 88d04ae4cd64dae6127530b91b0019011aa51e14
+
+=========================
+
+GAIA v2.22
+. Julia report: gift; article_asset_id; subject_text; geo_scope_text; event_text; person_text
+. more changes to Survey_and_Document_Language.csv
+. unicode character filtering (from updated spec):
+    . http://jira.cengage.com/browse/CHOA-791
+    . http://jira.cengage.com/browse/CHOA-1058
+. ensure that related document asset id's are consistent with page article asset id's
+    . http://jira.cengage.com/browse/CHOA-1074
+. more MAI reports for rose: books
+. hr seperator on asset ids in feed file report
+
+EMEA Software Development, 201310251630 - f90074e6e0778f4d002dba02046ff64622ef379e
+
+=========================
+
+GAIA v2.21
+. new Survey_and_Document_Language.csv
+
+EMEA Software Development, 201310181335 - 758119e7f56f0a1059e8ec65e4fdec38f4ceff54
+
+=========================
+
+GAIA v2.20
+. reports for Rose (book + conference series)
+. fix to race condition whereby egest lock files picked up by os.walk on outside but not inside
+
+EMEA Software Development, 201310161230 - d87f11551fa40fe5c71095a493949a317afe7d7c
+
+=========================
+
+GAIA v2.19
+. fix to CHOA-1064 -  meeting; language meta:term-id bug
+. refactor of MAI related reports (Rose / Paul)
+
+EMEA Software Development, 201310151145 - 779f0902f7b7b52addb995f0c9dfc2745cec6a0f
+
+=========================
+
+GAIA v2.18
+. added itadmin user account + tidied up existing accounts
+. fix, as much as possible within timeframe, results shown in /qa/reports/feed_file_index - remove broken pagination on non default search results
+. incorporate display etoc
+. mai - asset searching scripts
+
+EMEA Software Development, 201309301200 - 73d500f311291b8ec1bb3d888cb11ecfcb593db0
+
+=========================
+
+GAIA v2.17
+. Improved some (internal) log messages
+. refactored feed_file_report
+. incorporated initial author report
+. put example syntax on solr page
+. avoid client running out of ram: significantly reduced kb size of thumbnails (without loosing quality) on ingest + those already on production
+. stripped tail whitespace off solr query
+. rename 'GAIA Green' to GAIA (in product but not wiki)
+. show etoc (included update to jquery) 
+
+EMEA Software Development, 201309230930 - cae2d041f5f9f6f80fd539fbc78c9244f5ca846e
+
+=========================
+
+GAIA v2.16
+. heavy unit test / coverage refactoring / parallelisation
+. latest languages for survey and documents
+. release note visible on html page
+
+EMEA Software Development, 201309161047 - 8bcacde9086c2b1fb38ceddf0e137d73a15d9f57
+
+=========================
+
+GAIA v2.15
+. latest xsd
+. mcodes moved from .xlsx into database table
+. various static analysis src fixes
+
+EMEA Software Development, 201308221240 - ab804ab4e9a849c9e313606332786480cea73ca4
+
+=========================
+
+GAIA v2.14
+This release includes:
+. more mcodes
+. more languages
+. batching of product content type in feed files
+. possible ftp ingest_mgr bug fix - spotted by Rachel
+. new conversion rule: CHOA-979
+. improved assetid service socket timout behaviour
+. significantly improved generate_feed_file RAM utilisation
+. more balanced # of egest / ingest workers (to cope with excessive RAM consumption)
+
+EMEA Software Development, 201308191000 - 330d6c63ff6ae384dd32c77391119ec7215cbc80
+
+=========================
+
+GAIA v2.13
+This release includes:
+. more mcodes
+. more languages
+. slightly improved resource (RAM) allocation of egest_workers
+. ability to see ALL items with mcodes
+. deployment of generate_feed_report on PD laptop (only works if feed files are small, due to RAM issue)
+. fix to correct egest feed file size release
+
+EMEA Software Development, 2013080141300 - 5d9647a4c11ad89523628241bca9ef7f90fc4894
+
+=========================
+
+GAIA v2.12
+This release includes:
+. language csv file support
+. Content Set Definition ordered
+. increased egest worker count (hard coded limit set to 40, not 10)
+. minor cosmetic improvements (table columns; button spacing)
+
+NOTE: an mid point release was done after v2.11 that included:
+. ability to release to lst and / or callisto
+. move back to qa button on item_errors report
+
+EMEA Software Development, 201308071500 - 311f990d33d69822a2b4c74cf4bfcedbb5b0a868
+
+=========================
+
+GAIA v2.11
+This release includes:
+. more mcodes
+. an extra type column in qa/reports/feed_file_index
+. ftp retry settings
+
+EMEA Software Development, 201308011730 - 7ec18b7bcb70771d94860f4ba9a860be79590da5
+
+=========================
+
+GAIA v2.10
+This release includes:
+. mcodes visible in feed file report
+. gift validation
+. manifest.md5 kept in gaia (in case of htc image problems)
+. more mcodes
+. item errors report 'move back into qa' functionality
+
+EMEA Software Development, 201308011500 - 6e14aa718d5742cccc8bb1a3e07d4f7701f572c7
+</code></pre>

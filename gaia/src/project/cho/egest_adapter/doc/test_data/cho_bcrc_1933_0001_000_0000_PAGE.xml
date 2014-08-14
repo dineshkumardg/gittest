@@ -1,0 +1,314 @@
+<gold:document-instance>
+  <gift-doc:document>
+    <gift-doc:metadata>
+      <gift-doc:node-metadata>
+        <gift-doc:pagination-group>
+          <gift-doc:pagination>
+            <meta:ranges>
+              <meta:range>
+                <meta:begin-page>0001</meta:begin-page>
+              </meta:range>
+            </meta:ranges>
+            <meta:total-pages>3</meta:total-pages>
+          </gift-doc:pagination>
+        </gift-doc:pagination-group>
+      </gift-doc:node-metadata>
+      <gift-doc:document-metadata>
+        <meta:document-ids>
+          <meta:id type="Gale asset">
+            <meta:value>KSBTXI002537702</meta:value>
+          </meta:id>
+        </meta:document-ids>
+        <meta:bibliographic-ids>
+          <meta:id type="PSM">
+            <meta:value>cho_bcrc_1933_0001_000_0000</meta:value>
+          </meta:id>
+        </meta:bibliographic-ids>
+        <meta:mcode>4XFN</meta:mcode>
+        <meta:record-admin-info>
+          <meta:standard-date type="Original">20121202</meta:standard-date>
+        </meta:record-admin-info>
+        <meta:publication-title>British Commonwealth Realtions Conference, Toronto</meta:publication-title>
+        <meta:descriptive-indexing>
+          <meta:indexing-term>
+            <meta:term>
+              <meta:term-type>CONT_TYPE</meta:term-type>
+              <meta:term-source>Atlas</meta:term-source>
+              <meta:term-id>21901547</meta:term-id>
+              <meta:term-value>DVI-Periodical</meta:term-value>
+            </meta:term>
+          </meta:indexing-term>
+          <meta:indexing-term>
+            <meta:term>
+              <meta:term-type>FUNC_TYPE</meta:term-type>
+              <meta:term-source>Atlas</meta:term-source>
+              <meta:term-id>21787857</meta:term-id>
+              <meta:term-value>Issue-volume page record</meta:term-value>
+            </meta:term>
+          </meta:indexing-term>
+        </meta:descriptive-indexing>
+        <meta:folio>
+          <meta:start-number>1</meta:start-number>
+        </meta:folio>
+      </gift-doc:document-metadata>
+    </gift-doc:metadata>
+    <gift-doc:body>
+      <essay:div document-segment-type="Body text" term-id="14214508" term-source="Atlas">
+        <essay:div document-segment-type="Page" term-id="21922233" term-source="Atlas">
+          <essay:complex-meta>
+            <meta:page-id-number>0001</meta:page-id-number>
+            <meta:folio>
+              <meta:start-number>1</meta:start-number>
+            </meta:folio>
+          </essay:complex-meta>
+          <essay:div document-segment-type="DVI article" term-id="21918442" term-source="Atlas">
+            <shared:media>
+              <media:image data-type="jpeg" width="52" height="52" image-type="page view" layout="single" color-mode="color" folio="1" sequence="0001">
+                <vault-link:vault-link>
+                  <vault-link:link-type>external</vault-link:link-type>
+                  <vault-link:action>point</vault-link:action>
+                  <vault-link:where>
+                    <vault-link:path>cho_bcrc_1933_0001_000_0000_0001.jpg</vault-link:path>
+                  </vault-link:where>
+                </vault-link:vault-link>
+              </media:image>
+            </shared:media>
+            <vault-link:vault-link>
+              <vault-link:link-type>external</vault-link:link-type>
+              <vault-link:link-category term-id="21902640" term-source="Atlas">DVI article</vault-link:link-category>
+              <vault-link:data-type>text/xml</vault-link:data-type>
+              <vault-link:action>point</vault-link:action>
+              <vault-link:where>
+                <vault-link:path>//gift-doc:document-metadata/meta:document-ids/meta:id[@type="Gale asset"]/meta:value[.="DXOPVQ400060084"]</vault-link:path>
+              </vault-link:where>
+              <vault-link:select>
+                <vault-link:document-nodes>
+                  <vault-link:target>ancestor::gift-doc:document</vault-link:target>
+                </vault-link:document-nodes>
+              </vault-link:select>
+              <vault-link:display-link>Front Matter</vault-link:display-link>
+            </vault-link:vault-link>
+            <essay:div document-segment-type="Body text" term-id="14214508" term-source="Atlas">
+              <essay:p>Front matter</essay:p>
+            </essay:div>
+            <essay:div document-segment-type="OCR text" term-id="21905043" term-source="Atlas">
+              <essay:p>
+                <essay:ocr-text position="45, 60, 47, 50">Front</essay:ocr-text>
+                <essay:ocr-text position="47, 60, 49, 50">matter</essay:ocr-text>
+              </essay:p>
+            </essay:div>
+          </essay:div>
+          <essay:div document-segment-type="DVI article" term-id="21918442" term-source="Atlas">
+            <shared:media>
+              <media:image data-type="jpeg" width="52" height="52" image-type="page view" layout="single" color-mode="color" folio="1" sequence="0001">
+                <vault-link:vault-link>
+                  <vault-link:link-type>external</vault-link:link-type>
+                  <vault-link:action>point</vault-link:action>
+                  <vault-link:where>
+                    <vault-link:path>cho_bcrc_1933_0001_000_0000_0001.jpg</vault-link:path>
+                  </vault-link:where>
+                </vault-link:vault-link>
+              </media:image>
+            </shared:media>
+            <vault-link:vault-link>
+              <vault-link:link-type>external</vault-link:link-type>
+              <vault-link:link-category term-id="21902640" term-source="Atlas">DVI article</vault-link:link-category>
+              <vault-link:data-type>text/xml</vault-link:data-type>
+              <vault-link:action>point</vault-link:action>
+              <vault-link:where>
+                <vault-link:path>//gift-doc:document-metadata/meta:document-ids/meta:id[@type="Gale asset"]/meta:value[.="GAANUL122904644"]</vault-link:path>
+              </vault-link:where>
+              <vault-link:select>
+                <vault-link:document-nodes>
+                  <vault-link:target>ancestor::gift-doc:document</vault-link:target>
+                </vault-link:document-nodes>
+              </vault-link:select>
+              <vault-link:display-link>Opening Session</vault-link:display-link>
+            </vault-link:vault-link>
+            <essay:div document-segment-type="Body text" term-id="14214508" term-source="Atlas">
+              <essay:p>Front matter</essay:p>
+            </essay:div>
+            <essay:div document-segment-type="OCR text" term-id="21905043" term-source="Atlas">
+              <essay:p>
+                <essay:ocr-text position="45, 60, 47, 50">Front</essay:ocr-text>
+                <essay:ocr-text position="47, 60, 49, 50">matter</essay:ocr-text>
+              </essay:p>
+            </essay:div>
+          </essay:div>
+        </essay:div>
+      </essay:div>
+    </gift-doc:body>
+  </gift-doc:document>
+</gold:document-instance>
+<gold:document-instance>
+  <gift-doc:document>
+    <gift-doc:metadata>
+      <gift-doc:node-metadata>
+        <gift-doc:pagination-group>
+          <gift-doc:pagination>
+            <meta:ranges>
+              <meta:range>
+                <meta:begin-page>0002</meta:begin-page>
+              </meta:range>
+            </meta:ranges>
+            <meta:total-pages>3</meta:total-pages>
+          </gift-doc:pagination>
+        </gift-doc:pagination-group>
+      </gift-doc:node-metadata>
+      <gift-doc:document-metadata>
+        <meta:document-ids>
+          <meta:id type="Gale asset">
+            <meta:value>JROVYD254408302</meta:value>
+          </meta:id>
+        </meta:document-ids>
+        <meta:bibliographic-ids>
+          <meta:id type="PSM">
+            <meta:value>cho_bcrc_1933_0001_000_0000</meta:value>
+          </meta:id>
+        </meta:bibliographic-ids>
+        <meta:mcode>4XFN</meta:mcode>
+        <meta:record-admin-info>
+          <meta:standard-date type="Original">20121202</meta:standard-date>
+        </meta:record-admin-info>
+        <meta:publication-title>British Commonwealth Realtions Conference, Toronto</meta:publication-title>
+        <meta:descriptive-indexing>
+          <meta:indexing-term>
+            <meta:term>
+              <meta:term-type>CONT_TYPE</meta:term-type>
+              <meta:term-source>Atlas</meta:term-source>
+              <meta:term-id>21901547</meta:term-id>
+              <meta:term-value>DVI-Periodical</meta:term-value>
+            </meta:term>
+          </meta:indexing-term>
+          <meta:indexing-term>
+            <meta:term>
+              <meta:term-type>FUNC_TYPE</meta:term-type>
+              <meta:term-source>Atlas</meta:term-source>
+              <meta:term-id>21787857</meta:term-id>
+              <meta:term-value>Issue-volume page record</meta:term-value>
+            </meta:term>
+          </meta:indexing-term>
+        </meta:descriptive-indexing>
+        <meta:folio>
+          <meta:start-number>2</meta:start-number>
+        </meta:folio>
+      </gift-doc:document-metadata>
+    </gift-doc:metadata>
+    <gift-doc:body>
+      <essay:div document-segment-type="Body text" term-id="14214508" term-source="Atlas">
+        <essay:div document-segment-type="Page" term-id="21922233" term-source="Atlas">
+          <essay:complex-meta>
+            <meta:page-id-number>0002</meta:page-id-number>
+            <meta:folio>
+              <meta:start-number>2</meta:start-number>
+            </meta:folio>
+          </essay:complex-meta>
+          <essay:div document-segment-type="DVI article" term-id="21918442" term-source="Atlas">
+            <shared:media>
+              <media:image data-type="jpeg" width="52" height="52" image-type="page view" layout="single" color-mode="color" folio="2" sequence="0002">
+                <vault-link:vault-link>
+                  <vault-link:link-type>external</vault-link:link-type>
+                  <vault-link:action>point</vault-link:action>
+                  <vault-link:where>
+                    <vault-link:path>cho_bcrc_1933_0001_000_0000_0002.jpg</vault-link:path>
+                  </vault-link:where>
+                </vault-link:vault-link>
+              </media:image>
+            </shared:media>
+            <vault-link:vault-link>
+              <vault-link:link-type>external</vault-link:link-type>
+              <vault-link:link-category term-id="21902640" term-source="Atlas">DVI article</vault-link:link-category>
+              <vault-link:data-type>text/xml</vault-link:data-type>
+              <vault-link:action>point</vault-link:action>
+              <vault-link:where>
+                <vault-link:path>//gift-doc:document-metadata/meta:document-ids/meta:id[@type="Gale asset"]/meta:value[.="DXOPVQ400060084"]</vault-link:path>
+              </vault-link:where>
+              <vault-link:select>
+                <vault-link:document-nodes>
+                  <vault-link:target>ancestor::gift-doc:document</vault-link:target>
+                </vault-link:document-nodes>
+              </vault-link:select>
+              <vault-link:display-link>Front Matter</vault-link:display-link>
+            </vault-link:vault-link>
+            <essay:div document-segment-type="Body text" term-id="14214508" term-source="Atlas">
+              <essay:p>WORD</essay:p>
+            </essay:div>
+            <essay:div document-segment-type="OCR text" term-id="21905043" term-source="Atlas">
+              <essay:p>
+                <essay:ocr-text position="45, 60, 47, 50">WORD</essay:ocr-text>
+              </essay:p>
+            </essay:div>
+          </essay:div>
+        </essay:div>
+      </essay:div>
+    </gift-doc:body>
+  </gift-doc:document>
+</gold:document-instance>
+<gold:document-instance>
+  <gift-doc:document>
+    <gift-doc:metadata>
+      <gift-doc:node-metadata>
+        <gift-doc:pagination-group>
+          <gift-doc:pagination>
+            <meta:ranges>
+              <meta:range>
+                <meta:begin-page>0003</meta:begin-page>
+              </meta:range>
+            </meta:ranges>
+            <meta:total-pages>3</meta:total-pages>
+          </gift-doc:pagination>
+        </gift-doc:pagination-group>
+      </gift-doc:node-metadata>
+      <gift-doc:document-metadata>
+        <meta:document-ids>
+          <meta:id type="Gale asset">
+            <meta:value>BBLVHZ877755586</meta:value>
+          </meta:id>
+        </meta:document-ids>
+        <meta:bibliographic-ids>
+          <meta:id type="PSM">
+            <meta:value>cho_bcrc_1933_0001_000_0000</meta:value>
+          </meta:id>
+        </meta:bibliographic-ids>
+        <meta:mcode>4XFN</meta:mcode>
+        <meta:record-admin-info>
+          <meta:standard-date type="Original">20121202</meta:standard-date>
+        </meta:record-admin-info>
+        <meta:publication-title>British Commonwealth Realtions Conference, Toronto</meta:publication-title>
+        <meta:descriptive-indexing>
+          <meta:indexing-term>
+            <meta:term>
+              <meta:term-type>CONT_TYPE</meta:term-type>
+              <meta:term-source>Atlas</meta:term-source>
+              <meta:term-id>21901547</meta:term-id>
+              <meta:term-value>DVI-Periodical</meta:term-value>
+            </meta:term>
+          </meta:indexing-term>
+          <meta:indexing-term>
+            <meta:term>
+              <meta:term-type>FUNC_TYPE</meta:term-type>
+              <meta:term-source>Atlas</meta:term-source>
+              <meta:term-id>21787857</meta:term-id>
+              <meta:term-value>Issue-volume page record</meta:term-value>
+            </meta:term>
+          </meta:indexing-term>
+        </meta:descriptive-indexing>
+        <meta:folio>
+          <meta:start-number>2B</meta:start-number>
+        </meta:folio>
+      </gift-doc:document-metadata>
+    </gift-doc:metadata>
+    <gift-doc:body>
+      <essay:div document-segment-type="Body text" term-id="14214508" term-source="Atlas">
+        <essay:div document-segment-type="Page" term-id="21922233" term-source="Atlas">
+          <essay:complex-meta>
+            <meta:page-id-number>0003</meta:page-id-number>
+            <meta:folio>
+              <meta:start-number>2B</meta:start-number>
+            </meta:folio>
+          </essay:complex-meta>
+        </essay:div>
+      </essay:div>
+    </gift-doc:body>
+  </gift-doc:document>
+</gold:document-instance>

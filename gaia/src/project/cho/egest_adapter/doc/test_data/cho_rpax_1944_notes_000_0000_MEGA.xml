@@ -1,0 +1,287 @@
+<gold:document-instance>
+  <gift-doc:document>
+    <gift-doc:metadata>
+      <gift-doc:node-metadata>
+        <meta:descriptive-indexing>
+          <meta:indexing-term>
+            <meta:term>
+              <meta:term-type>PUB_SEG_TYPE</meta:term-type>
+              <meta:term-source>Atlas</meta:term-source>
+              <meta:term-id>14242630</meta:term-id>
+              <meta:term-value>Article</meta:term-value>
+            </meta:term>
+          </meta:indexing-term>
+        </meta:descriptive-indexing>
+        <gift-doc:pagination-group>
+          <gift-doc:pagination>
+            <meta:total-pages>2</meta:total-pages>
+          </gift-doc:pagination>
+        </gift-doc:pagination-group>
+      </gift-doc:node-metadata>
+      <gift-doc:document-metadata>
+        <meta:document-ids>
+          <meta:id type="Gale asset">
+            <meta:value>AVAJLC532919854</meta:value>
+          </meta:id>
+        </meta:document-ids>
+        <meta:bibliographic-ids>
+          <meta:id type="PSM">
+            <meta:value>cho_rpax_1944_notes_000_0000</meta:value>
+          </meta:id>
+          <meta:id type="isbn">
+            <meta:value>978-567-891-0111</meta:value>
+          </meta:id>
+        </meta:bibliographic-ids>
+        <meta:mcode>5XFC</meta:mcode>
+        <meta:publication-date>
+          <meta:structured-date>
+            <meta:irregular>1943-44</meta:irregular>
+          </meta:structured-date>
+          <meta:standard-date type="Start date">19430101</meta:standard-date>
+          <meta:standard-date type="End date">19441231</meta:standard-date>
+        </meta:publication-date>
+        <meta:record-admin-info>
+          <meta:standard-date type="Original">20121202</meta:standard-date>
+        </meta:record-admin-info>
+        <gift-doc:document-titles>
+          <meta:title-display>An Middle East.</meta:title-display>
+          <meta:title-sort>Middle East</meta:title-sort>
+          <meta:title-open-url>Middle East</meta:title-open-url>
+        </gift-doc:document-titles>
+        <meta:publication-title>Chatham House Pamphlets and Reports</meta:publication-title>
+        <meta:languages>
+          <meta:language term-id="13858590" ocr="English" ocr-term-id="13858590" primary="Y">English</meta:language>
+        </meta:languages>
+        <meta:ocr-confidence>52.36</meta:ocr-confidence>
+        <meta:descriptive-indexing>
+          <meta:indexing-term>
+            <meta:term>
+              <meta:term-type>DOC_INFO_TYPE</meta:term-type>
+              <meta:term-source>Atlas</meta:term-source>
+              <meta:term-id>14174382</meta:term-id>
+              <meta:term-value>Report</meta:term-value>
+            </meta:term>
+          </meta:indexing-term>
+          <meta:indexing-term>
+            <meta:term>
+              <meta:term-type>CONT_REC_TYPE</meta:term-type>
+              <meta:term-source>Atlas</meta:term-source>
+              <meta:term-id>17234672</meta:term-id>
+              <meta:term-value>Text</meta:term-value>
+            </meta:term>
+          </meta:indexing-term>
+          <meta:indexing-term>
+            <meta:term>
+              <meta:term-type>CONT_TYPE</meta:term-type>
+              <meta:term-source>Atlas</meta:term-source>
+              <meta:term-id>21901545</meta:term-id>
+              <meta:term-value>DVI-Monograph</meta:term-value>
+            </meta:term>
+          </meta:indexing-term>
+          <meta:indexing-term>
+            <meta:term>
+              <meta:term-type>FUNC_TYPE</meta:term-type>
+              <meta:term-source>Atlas</meta:term-source>
+              <meta:term-id>14214546</meta:term-id>
+              <meta:term-value>Megametadocument</meta:term-value>
+            </meta:term>
+          </meta:indexing-term>
+          <meta:indexing-term>
+            <meta:term>
+              <meta:term-type>ART_LANG</meta:term-type>
+              <meta:term-source>Atlas</meta:term-source>
+              <meta:term-id>13858590</meta:term-id>
+              <meta:term-value>English</meta:term-value>
+            </meta:term>
+          </meta:indexing-term>
+        </meta:descriptive-indexing>
+        <meta:source-institution>
+          <meta:institution-name>Chatham House</meta:institution-name>
+          <meta:institution-location>London</meta:institution-location>
+          <meta:copyright-statement>COPYRIGHT under the aupicies of Royal Institute of International Affairs</meta:copyright-statement>
+        </meta:source-institution>
+        <meta:holding-institution>
+          <meta:institution-name>Chatham House</meta:institution-name>
+          <meta:institution-location>London</meta:institution-location>
+        </meta:holding-institution>
+        <meta:source-citation-group>
+          <meta:source-citation type="DVI monograph">
+            <meta:publication-date>
+              <meta:structured-date>
+                <meta:irregular>1943-44</meta:irregular>
+              </meta:structured-date>
+              <meta:standard-date type="Start date">19430101</meta:standard-date>
+              <meta:standard-date type="End date">19441231</meta:standard-date>
+            </meta:publication-date>
+            <meta:standard-ids>
+              <meta:id type="isbn">
+                <meta:value>978-567-891-0111</meta:value>
+              </meta:id>
+            </meta:standard-ids>
+            <meta:publisher>The Broadwater Press</meta:publisher>
+            <meta:place-of-publication>Welwyn, Hertfordshire</meta:place-of-publication>
+            <meta:imprint>
+              <meta:imprint-composed>The Broadwater Press, 1943-44</meta:imprint-composed>
+            </meta:imprint>
+            <meta:content-date>
+              <meta:structured-date>
+                <meta:irregular>1943-44</meta:irregular>
+              </meta:structured-date>
+              <meta:standard-date type="Start date">19430101</meta:standard-date>
+              <meta:standard-date type="End date">19441231</meta:standard-date>
+            </meta:content-date>
+          </meta:source-citation>
+        </meta:source-citation-group>
+        <meta:product-content-type type="CHO">Pamphlets and Reports</meta:product-content-type>
+      </gift-doc:document-metadata>
+    </gift-doc:metadata>
+    <gift-doc:body>
+      <essay:div document-segment-type="Body text" term-id="14214508" term-source="Atlas">
+        <essay:div document-segment-type="Page" term-id="21922233" term-source="Atlas">
+          <essay:complex-meta>
+            <meta:page-id-number>0001</meta:page-id-number>
+            <meta:folio>
+              <meta:start-number>1</meta:start-number>
+            </meta:folio>
+          </essay:complex-meta>
+          <essay:p>WORD</essay:p>
+          <shared:media>
+            <media:image data-type="jpeg" width="52" height="22" image-type="page view" layout="single" color-mode="color" folio="1" sequence="0001">
+              <vault-link:vault-link>
+                <vault-link:link-type>external</vault-link:link-type>
+                <vault-link:action>point</vault-link:action>
+                <vault-link:where>
+                  <vault-link:path>cho_rpax_1944_notes_000_0001</vault-link:path>
+                </vault-link:where>
+              </vault-link:vault-link>
+            </media:image>
+            <media:image data-type="jpeg" width="52" height="22" image-type="inline" layout="single" color-mode="color" folio="1" sequence="0001">
+              <vault-link:vault-link>
+                <vault-link:link-type>external</vault-link:link-type>
+                <vault-link:action>point</vault-link:action>
+                <vault-link:where>
+                  <vault-link:path>cho_rpax_1944_notes_000_0001</vault-link:path>
+                </vault-link:where>
+              </vault-link:vault-link>
+              <meta:descriptive-indexing>
+                <meta:indexing-term>
+                  <meta:term>
+                    <meta:term-type>DOC_INFO_TYPE</meta:term-type>
+                    <meta:term-source>Atlas</meta:term-source>
+                    <meta:term-id>14211704</meta:term-id>
+                    <meta:term-value>Line drawing</meta:term-value>
+                  </meta:term>
+                </meta:indexing-term>
+              </meta:descriptive-indexing>
+            </media:image>
+            <media:image data-type="jpeg" width="52" height="22" image-type="inline" layout="single" color-mode="color" folio="1" sequence="0001">
+              <vault-link:vault-link>
+                <vault-link:link-type>external</vault-link:link-type>
+                <vault-link:action>point</vault-link:action>
+                <vault-link:where>
+                  <vault-link:path>cho_rpax_1944_notes_000_0001</vault-link:path>
+                </vault-link:where>
+              </vault-link:vault-link>
+              <media:caption>Illustration 1</media:caption>
+              <meta:descriptive-indexing>
+                <meta:indexing-term>
+                  <meta:term>
+                    <meta:term-type>DOC_INFO_TYPE</meta:term-type>
+                    <meta:term-source>Atlas</meta:term-source>
+                    <meta:term-id>14170008</meta:term-id>
+                    <meta:term-value>Chart</meta:term-value>
+                  </meta:term>
+                </meta:indexing-term>
+              </meta:descriptive-indexing>
+            </media:image>
+          </shared:media>
+          <vault-link:vault-link>
+            <vault-link:link-type>external</vault-link:link-type>
+            <vault-link:link-category term-id="21902636" term-source="Atlas">DVI page</vault-link:link-category>
+            <vault-link:action>point</vault-link:action>
+            <vault-link:where>
+              <vault-link:path>//gift-doc:document-metadata/meta:document-ids/meta:id[@type="Gale asset"]/meta:value[.="FBTDLF198679096"]</vault-link:path>
+            </vault-link:where>
+            <vault-link:select>
+              <vault-link:document-nodes>
+                <vault-link:target>ancestor::gift-doc:document</vault-link:target>
+              </vault-link:document-nodes>
+            </vault-link:select>
+          </vault-link:vault-link>
+        </essay:div>
+        <essay:div document-segment-type="Page" term-id="21922233" term-source="Atlas">
+          <essay:complex-meta>
+            <meta:page-id-number>0002</meta:page-id-number>
+            <meta:folio>
+              <meta:start-number>2</meta:start-number>
+            </meta:folio>
+          </essay:complex-meta>
+          <essay:p>TWO</essay:p>
+          <shared:media>
+            <media:image data-type="jpeg" width="65" height="54" image-type="page view" layout="single" color-mode="color" folio="2" sequence="0002">
+              <vault-link:vault-link>
+                <vault-link:link-type>external</vault-link:link-type>
+                <vault-link:action>point</vault-link:action>
+                <vault-link:where>
+                  <vault-link:path>cho_rpax_1944_notes_000_0002</vault-link:path>
+                </vault-link:where>
+              </vault-link:vault-link>
+            </media:image>
+            <media:image data-type="jpeg" width="65" height="54" image-type="inline" layout="single" color-mode="color" folio="2" sequence="0002">
+              <vault-link:vault-link>
+                <vault-link:link-type>external</vault-link:link-type>
+                <vault-link:action>point</vault-link:action>
+                <vault-link:where>
+                  <vault-link:path>cho_rpax_1944_notes_000_0002</vault-link:path>
+                </vault-link:where>
+              </vault-link:vault-link>
+              <media:caption>Illustration 2</media:caption>
+              <meta:descriptive-indexing>
+                <meta:indexing-term>
+                  <meta:term>
+                    <meta:term-type>DOC_INFO_TYPE</meta:term-type>
+                    <meta:term-source>Atlas</meta:term-source>
+                    <meta:term-id>14170008</meta:term-id>
+                    <meta:term-value>Chart</meta:term-value>
+                  </meta:term>
+                </meta:indexing-term>
+              </meta:descriptive-indexing>
+            </media:image>
+            <media:image data-type="jpeg" width="65" height="54" image-type="inline" layout="single" color-mode="color" folio="2" sequence="0002">
+              <vault-link:vault-link>
+                <vault-link:link-type>external</vault-link:link-type>
+                <vault-link:action>point</vault-link:action>
+                <vault-link:where>
+                  <vault-link:path>cho_rpax_1944_notes_000_0002</vault-link:path>
+                </vault-link:where>
+              </vault-link:vault-link>
+              <meta:descriptive-indexing>
+                <meta:indexing-term>
+                  <meta:term>
+                    <meta:term-type>DOC_INFO_TYPE</meta:term-type>
+                    <meta:term-source>Atlas</meta:term-source>
+                    <meta:term-id>14170048</meta:term-id>
+                    <meta:term-value>Photograph</meta:term-value>
+                  </meta:term>
+                </meta:indexing-term>
+              </meta:descriptive-indexing>
+            </media:image>
+          </shared:media>
+          <vault-link:vault-link>
+            <vault-link:link-type>external</vault-link:link-type>
+            <vault-link:link-category term-id="21902636" term-source="Atlas">DVI page</vault-link:link-category>
+            <vault-link:action>point</vault-link:action>
+            <vault-link:where>
+              <vault-link:path>//gift-doc:document-metadata/meta:document-ids/meta:id[@type="Gale asset"]/meta:value[.="UKPYRI021977386"]</vault-link:path>
+            </vault-link:where>
+            <vault-link:select>
+              <vault-link:document-nodes>
+                <vault-link:target>ancestor::gift-doc:document</vault-link:target>
+              </vault-link:document-nodes>
+            </vault-link:select>
+          </vault-link:vault-link>
+        </essay:div>
+      </essay:div>
+    </gift-doc:body>
+  </gift-doc:document>
+</gold:document-instance>

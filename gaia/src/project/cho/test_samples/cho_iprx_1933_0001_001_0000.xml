@@ -1,0 +1,527 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Liquid XML Studio Designer Edition 9.1.11.3570 (http://www.liquid-technologies.com) -->
+<chapter xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../gaia/config/dtds/chatham_house.xsd" contentType="book">
+    <metadataInfo>
+        <PSMID>cho_iprx_1933_0001_001_0000</PSMID>
+        <assetID>?</assetID>
+        <language ocr="English" primary="Yes">English</language>
+        <language ocr="French" primary="No">French</language>
+        <productContentType>Conference Series</productContentType>
+        <contentDate>
+            <contentComposed>August 1933</contentComposed>
+            <contentDecade>1930-1939</contentDecade>
+            <contentYear>1933</contentYear>
+            <contentMonth>08</contentMonth>
+            <contentDay>01</contentDay>
+            <contentDateStart>1933-08-01</contentDateStart>
+            <contentDateEnd>1933-08-01</contentDateEnd>
+        </contentDate>
+        <chathamHouseRule>No</chathamHouseRule>
+        <ocr>64.68</ocr>
+        <isbn length="13">1234567891012</isbn>
+        <issn>12345678</issn>
+        <sourceLibrary>
+            <libraryName>Chatham House</libraryName>
+            <libraryLocation>London, UK</libraryLocation>
+            <copyrightStatement>Copyright Royal Institute of International Affairs</copyrightStatement>
+        </sourceLibrary>
+    </metadataInfo>
+    <citation>
+        <conference>
+            <conferenceGroup>
+                <conferenceName>Institute of Pacific Relations, 5th Conference</conferenceName>
+                <conferenceLocation>Canada</conferenceLocation>
+                <conferenceDate>
+                    <conferenceComposed>August 1933</conferenceComposed>
+                    <conferenceYear>1933</conferenceYear>
+                    <conferenceMonth>08</conferenceMonth>
+                </conferenceDate>
+            </conferenceGroup>
+            <pubDate>
+                <composed>Wednesday 1st August 1933</composed>
+                <year>1933</year>
+                <month>08</month>
+                <day>01</day>
+                <dayofweek>Wednesday</dayofweek>
+                <pubDateStart>1933-08-01</pubDateStart>
+                <pubDateEnd>1933-08-01</pubDateEnd>
+            </pubDate>
+            <author role="author">
+                <aucomposed>Mr Smith</aucomposed>
+                <prefix>Mr</prefix>
+                <suffix>Smith</suffix>
+                </author>
+            <author role="editor">
+                <aucomposed>Mr James J Sears SE</aucomposed>
+                <prefix>Mr</prefix>
+                <first>James</first>
+                <middle>J</middle>
+                <last>Sears</last>
+                <suffix>SE</suffix>
+            </author>
+            <titleGroup>
+                <fullTitle>Institute of Pacific Relations</fullTitle>
+                <fullSubtitle>Pacific Relations</fullSubtitle>
+            </titleGroup>
+            <volumeGroup>
+                <volumeTitle>Central Secretariat Papers</volumeTitle>
+                <volumeNumber>1</volumeNumber>
+            </volumeGroup>
+            <totalPages>8</totalPages>
+        </conference>
+    </citation>
+    <page id="1" type="front_matter" firstPage="Yes">
+        <pageImage pageIndicator="single" width="2953" height="4122" type="jpeg" colorimage="color" pagePosition="right">cho_iprx_1933_0001_001_0001</pageImage>
+        <sourcePage>[1]</sourcePage>
+        <article id="1" type="front_matter" level="1">
+            <clip pgref="1" />
+            <clip pgref="2" />
+            <illustration pgref="1" clipref="1" type="line_drawing" colorimage="color">
+                <caption>HELP!</caption>
+			</illustration>
+            <illustration pgref="1" clipref="1" type="line_drawing" colorimage="color">
+			</illustration>
+            <illustration pgref="2" clipref="2" type="line_drawing" colorimage="color">
+                <caption>Illustration 2</caption>
+			</illustration>
+            <articleInfo>
+                <author role="author">
+                    <aucomposed>Admiral Chatfield</aucomposed>
+                    <prefix>Admiral</prefix>
+                    <last>Chatfield</last>
+				</author>
+                <title>Front Matter</title>
+                <language ocr="English" primary="Yes">English</language>
+                <language ocr="French" primary="No">French</language>
+                <ocr>30.98</ocr> 
+                <startingColumn>A</startingColumn>
+                <pageCount>2</pageCount>
+            </articleInfo>
+            <text>
+                <textclip>
+                    <articlePage pgref="1">cho_iprx_1933_0001_001_0001</articlePage>
+                    <p>
+                        <word pos="1039,1114,1118,1166">5!^</word>
+                        <word pos="1152,1216,1172,1233">II</word>
+                        <word pos="1221,1217,1223,1233">I</word>
+                        <word pos="1239,1217,1241,1229">&apos;</word>
+                        <word pos="1286,1217,1306,1233">M</word>
+                        <word pos="1352,1217,1370,1233">II</word>
+                        <word pos="1416,1218,1435,1233">II</word>
+                        <word pos="1475,1219,1491,1233">ll</word>
+                        <word pos="1528,1220,1530,1233">i</word>
+                        <word pos="1544,1230,1545,1233">.</word>
+                        <word pos="1583,1211,2042,1233">.......i.....MIK.il</word>
+                        <word pos="1430,1356,1604,1384">UNDED</word>
+                        <word pos="1434,1572,1508,1712">D</word>
+                        <word pos="1564,1576,1636,1716">D</word>
+                        <word pos="1430,1756,1504,1904">0</word>
+                        <word pos="1560,1758,1632,1904">D</word>
+                        <word pos="1066,2628,1128,2726">i</word>
+                        <word pos="1330,2289,1692,2394">J^frary</word>
+                        <word pos="1277,2392,1538,2444">Cfiatfiam</word>
+                        <word pos="1550,2395,1768,2447">J~&#x00A3;busd</word>
+                        <word pos="1262,2471,1776,2543">StrjamessSciuari</word>
+                        <word pos="1386,2537,1629,2598">XoncCoTv</word>
+                        <word pos="1522,2638,1710,2720">ur@i</word>
+                    </p>
+                    <marginalia>Registry</marginalia>
+                </textclip>
+                <textclip>
+                    <articlePage pgref="2">cho_iprx_1933_0001_001_0002</articlePage>
+                    <p>
+                        <word pos="736,2256,791,2296">ID</word>
+                        <word pos="808,2257,874,2297">No</word>
+                        <word pos="744,2459,867,2501">Shelf</word>
+                        <word pos="711,2525,888,2568">location</word>
+                        <word pos="1449,2477,1457,2501">&apos;:</word>
+                        <word pos="685,2700,905,2742">Cicssified</word>
+                        <word pos="970,2698,975,2744">I</word>
+                        <word pos="1036,2705,1105,2748">Cai</word>
+                        <word pos="1438,2716,1632,2768">Labelled</word>
+                        <word pos="1675,2832,1721,2858">...,....!</word>
+                    </p>
+                    <marginalia>49952; SPECIAL COLLECTION R INS</marginalia>
+                </textclip>
+            </text>
+        </article>
+    </page>
+    <page id="2" type="front_matter" firstPage="No">
+        <pageImage pageIndicator="single" width="2810" height="3896" type="jpeg" colorimage="color" pagePosition="left">cho_iprx_1933_0001_001_0002</pageImage>
+        <sourcePage>[2]</sourcePage>
+    </page>
+    <page id="3" type="title_page" firstPage="No">
+        <pageImage pageIndicator="single" width="2841" height="3910" type="jpeg" colorimage="color" pagePosition="right">cho_iprx_1933_0001_001_0003</pageImage>
+        <sourcePage>2a</sourcePage>
+        <article id="2" type="front_matter" level="1">
+            <clip pgref="3" />
+            <clip pgref="4" />
+            <clip pgref="5" />
+            <articleInfo>
+                <author role="author">
+                    <aucomposed>Miss Sarah J Neate PHD</aucomposed>
+                    <prefix>Miss</prefix>
+                    <first>Sarah</first>
+                    <middle>J</middle>
+                    <last>Neate</last>
+                    <suffix>PHD</suffix>
+				</author>
+                <title>AV&#228;ant Pharmaceuticals</title>
+                <language ocr="English" primary="Yes">English</language>
+                <ocr>27.10</ocr>
+                <startingColumn>A</startingColumn>
+                <pageCount>3</pageCount>
+            </articleInfo>
+            <text>
+                <textclip>
+                    <articlePage pgref="3">cho_iprx_1933_0001_001_0003</articlePage>
+                    <p>
+                        <word pos="573,1089,611,1134">A</word>
+                        <word pos="656,1087,848,1132">Guide</word>
+                        <word pos="899,1088,971,1133">to</word>
+                        <word pos="1021,1089,1130,1136">the</word>
+                        <word pos="1181,1094,1378,1142">Banff</word>
+                        <word pos="1424,1102,1897,1161">Discussions.</word>
+                        <word pos="1997,1133,2138,1162">,--N</word>
+                        <word pos="2243,1104,2257,1162">i</word>
+                        <word pos="572,1219,682,1266">The</word>
+                        <word pos="733,1222,1007,1276">Purpose</word>
+                        <word pos="1058,1224,1174,1269">and</word>
+                        <word pos="1221,1225,1496,1280">Conduct</word>
+                        <word pos="1547,1239,1622,1284">of</word>
+                        <word pos="1666,1244,1865,1291">Round</word>
+                        <word pos="1911,1188,2209,1296">TablesL</word>
+                        <word pos="2269,1208,2461,1254">^^^</word>
+                        <word pos="2498,1223,2620,1264">^</word>
+                        <word pos="569,1355,605,1399">A</word>
+                        <word pos="649,1355,973,1402">Research</word>
+                        <word pos="1017,1357,1297,1414">Program</word>
+                        <word pos="1341,1361,1414,1409">in</word>
+                        <word pos="1463,1367,1574,1415">the</word>
+                        <word pos="1627,1375,1901,1425">Pacific</word>
+                        <word pos="1949,1378,2397,1436">Area.^/&lt;V-</word>
+                        <word pos="463,1491,888,1564">^Conflict</word>
+                        <word pos="936,1492,1050,1539">and</word>
+                        <word pos="1097,1491,1370,1538">Control</word>
+                        <word pos="1422,1496,1494,1543">in</word>
+                        <word pos="1543,1503,1655,1551">the</word>
+                        <word pos="1705,1509,1982,1561">Pacific</word>
+                        <word pos="2110,1517,2189,1576">by</word>
+                        <word pos="2269,1522,2420,1568">W.L.</word>
+                        <word pos="2475,1523,2784,1572">Holland.</word>
+                        <word pos="569,1630,724,1676">Land</word>
+                        <word pos="769,1628,1209,1674">Utilization</word>
+                        <word pos="1261,1629,1814,1695">Investigations</word>
+                        <word pos="1866,1652,1982,1695">and</word>
+                        <word pos="608,1696,807,1744">Their</word>
+                        <word pos="849,1696,1127,1753">Bearing</word>
+                        <word pos="1178,1708,1248,1741">on</word>
+                        <word pos="1300,1697,1814,1754">International</word>
+                        <word pos="1864,1716,2061,1763">Rela-</word>
+                        <word pos="2107,1787,2183,1845">by</word>
+                        <word pos="2230,1790,2385,1837">Carl</word>
+                        <word pos="2433,1792,2822,1853">L.Alsberg.</word>
+                        <word pos="566,1900,717,1945">Some</word>
+                        <word pos="768,1895,1000,1941">Social</word>
+                        <word pos="1049,1897,1323,1952">Aspects</word>
+                        <word pos="1375,1901,1447,1945">of</word>
+                        <word pos="1491,1906,1694,1954">World</word>
+                        <word pos="1737,1914,2057,1966">Economic</word>
+                        <word pos="730,1973,753,2010">B</word>
+                        <word pos="811,1962,829,2004">;</word>
+                        <word pos="937,1990,951,2011">&apos;</word>
+                        <word pos="2103,1989,2180,2047">by</word>
+                        <word pos="2228,1994,2239,2036">]</word>
+                        <word pos="2277,1995,2371,2039">.7/.</word>
+                        <word pos="2427,1994,2696,2055">Martin,</word>
+                        <word pos="2109,2058,2626,2110">International</word>
+                        <word pos="2105,2125,2342,2174">Labour</word>
+                        <word pos="2391,2129,2655,2178">Office.</word>
+                        <word pos="559,2226,1035,2281">Unemployment</word>
+                        <word pos="1085,2229,1198,2272">and</word>
+                        <word pos="1247,2233,1482,2283">Public</word>
+                        <word pos="1526,2241,1724,2288">Works</word>
+                        <word pos="1777,2249,2091,2300">Policies</word>
+                        <word pos="602,2292,673,2338">in</word>
+                        <word pos="720,2290,994,2337">Pacific</word>
+                        <word pos="1044,2293,1398,2346">Countries</word>
+                        <word pos="2105,2325,2253,2349">t^4-~</word>
+                        <word pos="2388,2327,2449,2347">j...</word>
+                        <word pos="1371,2333,1383,2346">k</word>
+                        <word pos="2104,2324,2618,2376">International</word>
+                        <word pos="2099,2391,2337,2438">Labour</word>
+                        <word pos="2386,2395,2653,2444">Office.</word>
+                    </p>
+                    <marginalia>Institute of Pacific Relations Conference 9th, Banff, Alberta, August 1933. Data papers; For lending copies check catalogue; lending copies entered under the Conference on separate cord</marginalia>
+                </textclip>
+                <textclip>
+                    <articlePage pgref="4">cho_iprx_1933_0001_001_0004</articlePage>
+                    <p>
+                        <word pos="0,0,0,0" />
+                    </p>
+                    <marginalia>9384</marginalia>
+                </textclip>
+                <textclip>
+                    <articlePage pgref="5">cho_iprx_1933_0001_001_0005</articlePage>
+                    <p>
+                        <word pos="604,1167,885,1222">Central</word>
+                        <word pos="930,1170,1367,1219">Secretariat</word>
+                        <word pos="1413,1175,1692,1243">Papers.</word>
+                        <word pos="287,1389,327,1423">a</word>
+                        <word pos="370,1374,563,1423">Guide</word>
+                        <word pos="612,1373,687,1422">to</word>
+                        <word pos="731,1371,848,1421">the</word>
+                        <word pos="899,1369,1092,1420">Banff</word>
+                        <word pos="1136,1368,1578,1422">Discussion&#x00AE;</word>
+                        <word pos="292,1513,408,1560">Tne</word>
+                        <word pos="455,1512,729,1575">Purpose</word>
+                        <word pos="776,1511,900,1560">and</word>
+                        <word pos="940,1504,1216,1557">Conduct</word>
+                        <word pos="1264,1505,1338,1553">of</word>
+                        <word pos="1384,1507,1589,1555">Round</word>
+                        <word pos="1629,1505,1868,1555">Tables</word>
+                        <word pos="420,1649,700,1699">&#x00A9;search</word>
+                        <word pos="742,1649,1027,1707">Program</word>
+                        <word pos="1067,1645,1145,1695">in</word>
+                        <word pos="1189,1643,1301,1689">tne</word>
+                        <word pos="1349,1636,1629,1690">Pacifio</word>
+                        <word pos="1673,1646,1836,1692">Area</word>
+                        <word pos="297,1783,617,1833">&#x00A9;onfliet</word>
+                        <word pos="663,1782,783,1830">and</word>
+                        <word pos="826,1779,1108,1832">Control</word>
+                        <word pos="1154,1780,1230,1829">in</word>
+                        <word pos="1272,1776,1385,1824">the</word>
+                        <word pos="1433,1767,1712,1823">Pacific</word>
+                        <word pos="1761,1796,1797,1814">-</word>
+                        <word pos="1838,1776,1921,1835">by</word>
+                        <word pos="1960,1761,2411,1823">W.UHolland</word>
+                        <word pos="304,1920,466,1968">Land</word>
+                        <word pos="506,1918,950,1969">Utilization</word>
+                        <word pos="995,1914,1554,1975">Investigations</word>
+                        <word pos="1602,1910,1723,1958">and</word>
+                        <word pos="1763,1910,1964,1958">Their</word>
+                        <word pos="2016,1904,2292,1961">Bearing</word>
+                        <word pos="506,1998,585,2035">on</word>
+                        <word pos="632,1983,1151,2033">International</word>
+                        <word pos="1194,1981,1553,2030">Relations</word>
+                        <word pos="1602,2000,1640,2018">*</word>
+                        <word pos="1682,1978,1763,2038">by</word>
+                        <word pos="1806,1976,1967,2025">Carl</word>
+                        <word pos="2012,1969,2375,2027">L*Alsberg</word>
+                        <word pos="308,2122,463,2166">Some</word>
+                        <word pos="512,2119,749,2167">floolal</word>
+                        <word pos="790,2119,1071,2176">Aspects</word>
+                        <word pos="1118,2120,1194,2165">of</word>
+                        <word pos="1237,2116,1440,2165">V.orld</word>
+                        <word pos="1482,2114,1805,2162">Economic</word>
+                        <word pos="1849,2109,2160,2165">Planning</word>
+                        <word pos="2219,2125,2253,2144">*</word>
+                        <word pos="511,2185,594,2243">by</word>
+                        <word pos="636,2184,1067,2244">P&#x00BB;W.Martln,</word>
+                        <word pos="1124,2171,1646,2233">International</word>
+                        <word pos="1694,2182,1927,2229">Labour</word>
+                        <word pos="1978,2175,2215,2225">Office</word>
+                        <word pos="319,2317,792,2379">Unemployment</word>
+                        <word pos="840,2316,961,2363">and</word>
+                        <word pos="1001,2317,1241,2366">iublic</word>
+                        <word pos="1299,2318,1481,2367">Vorks</word>
+                        <word pos="1531,2316,1850,2364">Policies</word>
+                        <word pos="1901,2313,1975,2360">in</word>
+                        <word pos="2020,2308,2295,2358">Pacific</word>
+                        <word pos="520,2384,877,2436">Countries</word>
+                        <word pos="927,2406,957,2417">-</word>
+                        <word pos="1005,2384,1528,2435">International</word>
+                        <word pos="1574,2381,1812,2430">Labour</word>
+                        <word pos="1858,2380,2137,2429">Office*</word>
+                    </p>
+                    <marginalia>Chatham House Ld</marginalia>
+                </textclip>
+            </text>
+        </article>
+    </page>
+    <page id="4" type="front_matter" firstPage="No">
+        <pageImage pageIndicator="single" width="2810" height="3896" type="jpeg" colorimage="color" pagePosition="left">cho_iprx_1933_0001_001_0004</pageImage>
+    </page>
+    <page id="5" type="front_matter" firstPage="No">
+        <pageImage pageIndicator="single" width="2808" height="3910" type="jpeg" colorimage="color" pagePosition="right">cho_iprx_1933_0001_001_0005</pageImage>
+        <sourcePage>4</sourcePage>
+    </page>
+    <page id="6" type="front_matter" firstPage="No">
+        <pageImage pageIndicator="single" width="2756" height="4103" type="jpeg" colorimage="color" pagePosition="left">cho_iprx_1933_0001_001_0006</pageImage>
+        <sourcePage>5</sourcePage>
+        <article id="3" type="article" level="2">
+            <clip pgref="6" />
+            <clip pgref="7" />
+            <articleInfo>
+                <pubDate>
+                    <composed>August 14-28, 1933</composed>
+                    <irregular>August 14-28, 1933</irregular>
+                    <pubDateStart>1933-08-14</pubDateStart>
+                    <pubDateEnd>1933-08-28</pubDateEnd>
+                </pubDate>
+                <byline>The Organisation</byline>
+                <title>A First Speech.</title>
+                <language ocr="English" primary="Yes">English</language>
+                <ocr>35.14</ocr>
+                <startingColumn>A</startingColumn>
+                <pageCount>2</pageCount>
+            </articleInfo>
+            <text>
+                <textclip>
+                    <articlePage pgref="6">cho_iprx_1933_0001_001_0006</articlePage>
+                    <p>
+                        <word pos="223,486,330,531">&apos;xft</word>
+                    </p>
+                </textclip>
+                <textclip>
+                    <articlePage pgref="7">cho_iprx_1933_0001_001_0007</articlePage>
+                    <p>
+                        <word pos="52,502,218,548">Fifth</word>
+                        <word pos="246,505,516,552">Biennial</word>
+                        <word pos="554,508,884,551">Conference</word>
+                        <word pos="929,507,991,549">of</word>
+                        <word pos="1026,506,1121,548">the</word>
+                        <word pos="1163,507,1460,551">Institute</word>
+                        <word pos="1504,508,1566,552">of</word>
+                        <word pos="1604,504,1834,551">Pacific</word>
+                        <word pos="1870,502,2169,548">Relations</word>
+                        <word pos="717,643,923,696">August</word>
+                        <word pos="962,641,1026,683">14</word>
+                        <word pos="1065,662,1093,674">-</word>
+                        <word pos="1132,641,1219,696">28,</word>
+                        <word pos="1266,643,1395,687">1933</word>
+                        <word pos="264,1106,392,1149">Part</word>
+                        <word pos="432,1106,458,1148">I</word>
+                        <word pos="603,1123,632,1136">-</word>
+                        <word pos="659,1104,696,1144">A</word>
+                        <word pos="734,1101,895,1144">Guide</word>
+                        <word pos="936,1104,997,1144">To</word>
+                        <word pos="1036,1102,1131,1146">The</word>
+                        <word pos="1169,1107,1338,1150">Banff</word>
+                        <word pos="1374,1112,1741,1160">Discussions</word>
+                        <word pos="266,1239,395,1282">Part</word>
+                        <word pos="435,1237,493,1281">II</word>
+                        <word pos="606,1257,634,1272">-</word>
+                        <word pos="669,1235,763,1280">The</word>
+                        <word pos="805,1239,1033,1296">Purpose</word>
+                        <word pos="1074,1242,1174,1282">and</word>
+                        <word pos="1211,1244,1440,1290">Conduct</word>
+                        <word pos="1481,1252,1544,1293">of</word>
+                        <word pos="1580,1253,1751,1296">Round</word>
+                        <word pos="1785,1253,1983,1297">Tables</word>
+                        <word pos="269,1374,397,1416">Part</word>
+                        <word pos="439,1374,529,1418">III</word>
+                        <word pos="608,1397,636,1411">-</word>
+                        <word pos="664,1379,700,1422">A</word>
+                        <word pos="737,1379,1008,1423">Research</word>
+                        <word pos="1043,1381,1280,1434">Program</word>
+                        <word pos="1314,1380,1380,1425">In</word>
+                        <word pos="1413,1385,1509,1427">The</word>
+                        <word pos="1550,1389,1783,1433">Pacific</word>
+                        <word pos="1849,1394,1988,1434">Area</word>
+                        <word pos="919,1506,1110,1572">(Proof</word>
+                        <word pos="1141,1509,1438,1572">Editions)</word>
+                        <word pos="636,3347,906,3402">Prepared</word>
+                        <word pos="937,3351,1008,3405">by</word>
+                        <word pos="1040,3351,1139,3393">the</word>
+                        <word pos="1179,3353,1546,3396">Secretariat</word>
+                        <word pos="1589,3354,1650,3398">of</word>
+                        <word pos="1686,3356,1784,3397">the</word>
+                        <word pos="738,3483,1037,3527">Institute</word>
+                        <word pos="1081,3488,1143,3528">of</word>
+                        <word pos="1181,3489,1413,3532">Pacific</word>
+                        <word pos="1449,3490,1752,3533">Relations</word>
+                        <word pos="1076,3621,1352,3664">Honolulu</word>
+                        <word pos="1151,3754,1281,3797">1933</word>
+                    </p>
+                </textclip>
+            </text>
+        </article>
+    </page>
+    <page id="7" type="front_matter" firstPage="No">
+        <pageImage pageIndicator="single" width="2788" height="4103" type="jpeg" colorimage="color" pagePosition="right">cho_iprx_1933_0001_001_0007</pageImage>
+    </page>
+    <page id="8" type="toc" firstPage="No">
+        <pageImage pageIndicator="single" width="2815" height="4076" type="jpeg" colorimage="color" pagePosition="left">cho_iprx_1933_0001_001_0008</pageImage>
+        <sourcePage>[1]</sourcePage>
+        <article id="4" type="article" level="3">
+            <clip pgref="8" />
+            <articleInfo>
+                <pubDate>
+                    <composed>August 14-28, 1933</composed>
+                    <irregular>August 14-28, 1933</irregular>
+                    <pubDateStart>1933-08-14</pubDateStart>
+                    <pubDateEnd>1933-08-28</pubDateEnd>
+                </pubDate>
+                <byline>Secretariat of the Institute of the Pacific Relations</byline>
+                <author role="author">
+                    <aucomposed>Researcher</aucomposed>
+                    <sobriquet>Researcher</sobriquet>
+				</author>
+                <title>Table of Contents</title>
+                <subtitle>Second Day</subtitle>
+                <language ocr="English" primary="Yes">English</language>
+                <ocr>37.53</ocr>
+                <startingColumn>A</startingColumn>
+                <pageCount>2</pageCount>
+            </articleInfo>
+            <text>
+                <textclip>
+                    <articlePage pgref="8">cho_iprx_1933_0001_001_0008</articlePage>
+                    <p>
+                        <word pos="821,131,987,177">TABLE</word>
+                        <word pos="1027,132,1094,175">OF</word>
+                        <word pos="1129,131,1394,177">CONTENTS</word>
+                        <word pos="961,337,1089,381">PART</word>
+                        <word pos="1131,336,1158,380">I</word>
+                        <word pos="2450,457,2576,508">Page</word>
+                        <word pos="220,535,491,585">Foreword</word>
+                        <word pos="66,655,90,698">1</word>
+                        <word pos="102,684,122,706">&#x2022;</word>
+                        <word pos="224,669,1361,725">Introduction.....................</word>
+                        <word pos="1380,687,2375,715">&#x2022;......&#x00AB;&#x2666;....&#x00AB;.&#x00AB;..............</word>
+                        <word pos="2553,657,2582,703">1</word>
+                        <word pos="35,789,123,844">IJ&#x00BB;</word>
+                        <word pos="218,809,386,856">Areas</word>
+                        <word pos="427,815,491,858">of</word>
+                        <word pos="528,814,2378,861">Concentration...............................&#x2022;&#x2022;&#x2022;&#x00AB;&#x2022;&#x2022;&#x2022;&#x2022;*&#x00AB;</word>
+                        <word pos="2555,795,2585,841">2</word>
+                        <word pos="326,962,390,999">a&#x00BB;</word>
+                        <word pos="456,957,626,999">Areas</word>
+                        <word pos="666,954,729,996">of</word>
+                        <word pos="767,949,2381,997">Conflict.........................&#x2022;&#x2022;.....&#x2022;.....&#x2022;</word>
+                    </p>
+                </textclip>
+            </text>
+               </article>
+                <article id="5" type="article" level="1">
+            <clip pgref="8" />
+            <articleInfo>
+                <byline>Secretariat of the Institute of the Pacific Relations</byline>
+                <author role="author">
+                    <aucomposed>Researcher</aucomposed>
+                    <sobriquet>Researcher</sobriquet>
+				</author>
+                <title>&quot;Refugees&quot;</title>
+                <subtitle>Is it a problem?</subtitle>
+                <language ocr="English" primary="Yes">English</language>
+                <ocr>37.53</ocr>
+                <startingColumn>A</startingColumn>
+                <pageCount>2</pageCount>
+            </articleInfo>
+            <text>
+                    <textclip>
+                    <articlePage pgref="8">cho_iprx_1933_0001_001_0008</articlePage>
+                    <p>
+                        <word pos="954,198,1082,241">PART</word>
+                        <word pos="1123,198,1218,240">III</word>
+                        <word pos="2344,326,2470,374">Page</word>
+                        <word pos="84,459,141,506">I&#x00AB;</word>
+                        <word pos="215,464,618,513">Introduction</word>
+                        <word pos="662,485,2304,516">&#x00AB;..........,...*&#x2022;&#x2022;...............................</word>
+                    </p>
+                </textclip>
+            </text>
+        </article>
+    </page>
+    </chapter>

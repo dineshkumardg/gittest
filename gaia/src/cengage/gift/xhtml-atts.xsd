@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xatts="http://www.gale.com/goldschema/xatts" targetNamespace="http://www.gale.com/goldschema/xatts" elementFormDefault="qualified" attributeFormDefault="unqualified" version="3.0">
+	<!--
+	======================================================================
+                           CHANGE HISTORY
+	======================================================================
+	3.0		12/04/2013		js
+	1. Removed the schema owner part. 
+	2. Added the namespace 'xatts' with the url "http://www.gale.com/goldschema/xatts" .
+	3. Removed the models I18NAtts, bidirectionalAtts, editAtts, embeddingAtts.
+	======================================================================
+-->
+	<!-- 
+	============================================================================   
+                    ATTRIBUTE GROUPS AND ATTRIBUTES
+	============================================================================   
+	-->	
+	<!--Core Collection -->
+	<xs:attributeGroup name="coreAtts">
+		<xs:annotation>
+			<xs:documentation>
+class=This attribute assigns one or more class names to an element; the element may be said to belong to these classes. A class name may be shared by several element instances.
+id=The id attribute assigns an identifier to an element. The id of an element must be unique within a document.
+The id attribute has several roles in XHTML:
+As a style sheet selector.
+As a target anchor for hypertext links.
+As the name of a declared object element.
+For general purpose processing by user agents (e.g. for identifying fields when extracting data from XHTML pages into a database, translating XHTML documents into other formats, etc.).
+layout=This attribute allows authors to indicate whether the whitespace within an element is relevant to the meaning of the content or not; for instance, visual user agents could display the whitespace. The default is that it is irrelevant
+title= 	This attribute defines meta-information about the element on which it is set.</xs:documentation>
+		</xs:annotation>
+		<xs:attribute name="class" type="xs:token"/>
+		<xs:attribute name="id" type="xs:string"/>
+		<xs:attribute name="layout" default="irrelevant">
+			<xs:simpleType>
+				<xs:restriction base="xs:string">
+					<xs:enumeration value="irrelevant"/>
+					<xs:enumeration value="relevant"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="title" type="xs:string"/>
+	</xs:attributeGroup>
+	<!--hypertext Collection -->
+	<xs:annotation>
+		<xs:documentation>The Hypertext Attributes Module defines the Hypertext attribute collection. This collection allows an element to be the start point of a hypertext link to a remote resource.</xs:documentation>
+	</xs:annotation>
+	<xs:attributeGroup name="hypertextAtts">
+		<xs:annotation>
+			<xs:documentation>
+cite = The value of this attribute is a URI that designates a source document or message. This attribute is intended to give further information about the element's contents (e.g., the source from which a quotation was borrowed, or the reason text was inserted or deleted
+href =This attribute specifies a URI that is actuated when the element is activated.
+hreflang =This attribute specifies the primary language of the resource
+hrefmedia=This attribute indicates the type(s) of media to which to make available the content referenced by the associated href URI.
+hreftype=This attribute specifies the allowable content types of the relevant href URI.
+nextfocus=This attribute specifies an IDREF of an element in the current document that will receive focus when the user requests that the user agent navigate to the next element that can receive focus.
+prevfocus=This attribute specifies an IDREF of an element in the current document that will receive focus when the user requests that user agent navigate to the previous element that can receive focus.
+target=This attribute identifies an environment that will act as the destination for a resource identified by a hyperlink when it is activated.
+xml-base=This attribute specifies the base URI from which to resolve relative URIs</xs:documentation>
+		</xs:annotation>
+		<xs:attribute name="cite" type="xs:anyURI"/>
+		<xs:attribute name="href" type="xs:anyURI"/>
+		<xs:attribute name="hreflang" type="xs:language" default="EN"/>
+		<xs:attribute name="hrefmedia" type="xatts:MediaDesc" default="all"/>
+		<xs:attribute name="hreftype" type="xs:string" default="text"/>
+		<xs:attribute name="nextfocus" type="xs:IDREF"/>
+		<xs:attribute name="prevfocus" type="xs:IDREF"/>
+		<xs:attribute name="target" type="xs:token"/>
+		<xs:attribute name="xml-base" type="xs:anyURI"/>
+	</xs:attributeGroup>
+	<xs:simpleType name="MediaDesc">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="all"/>
+			<xs:enumeration value="aural"/>
+			<xs:enumeration value="braille"/>
+			<xs:enumeration value="emboss"/>
+			<xs:enumeration value="handheld"/>
+			<xs:enumeration value="print"/>
+			<xs:enumeration value="projection"/>
+			<xs:enumeration value="screen"/>
+			<xs:enumeration value="tty"/>
+			<xs:enumeration value="tv"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<!--TABLE ATTRIBUTES -->
+	<xs:attributeGroup name="basic-atts">
+		<xs:attribute name="class" type="xs:NMTOKENS"/>
+		<xs:attribute name="id" type="xs:string"/>
+		<xs:attribute name="style" type="xs:string"/>
+		<xs:attribute name="title" type="xs:string"/>
+		<xs:attribute name="lang" type="xs:NMTOKENS"/>
+		<xs:attribute name="dir">
+			<xs:simpleType>
+				<xs:restriction base="xs:NMTOKEN">
+					<xs:enumeration value="ltr"/>
+					<xs:enumeration value="rtl"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="align">
+			<xs:simpleType>
+				<xs:restriction base="xs:NMTOKEN">
+					<xs:enumeration value="center"/>
+					<xs:enumeration value="justify"/>
+					<xs:enumeration value="left"/>
+					<xs:enumeration value="char"/>
+					<xs:enumeration value="right"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="char" type="xs:string"/>
+		<xs:attribute name="charoff" type="xs:string"/>
+		<xs:attribute name="valign">
+			<xs:simpleType>
+				<xs:restriction base="xs:NMTOKEN">
+					<xs:enumeration value="top"/>
+					<xs:enumeration value="middle"/>
+					<xs:enumeration value="bottom"/>
+					<xs:enumeration value="baseline"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+	</xs:attributeGroup>
+</xs:schema>

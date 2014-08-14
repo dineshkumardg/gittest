@@ -1,0 +1,723 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Created with Liquid XML Studio Designer Edition 9.1.11.3570 (http://www.liquid-technologies.com) Added ISBN at article level -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" version="2">
+    <xs:element name="chapter">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="metadataInfo">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="PSMID" type="idexpression">
+                                <xs:annotation>
+                                    <xs:documentation>The ID of the item. This matches the file name</xs:documentation>
+                                </xs:annotation>
+                            </xs:element>
+                            <xs:element name="assetID" type="xs:string" minOccurs="0" />
+                            <xs:element name="mcode" minOccurs="0">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:length value="4" />
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="language" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:simpleContent>
+                                        <xs:extension base="xs:string">
+                                            <xs:attributeGroup ref="languageGroup" />
+                                        </xs:extension>
+                                    </xs:simpleContent>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="productContentType">
+                                <xs:annotation>
+                                    <xs:documentation>Content Group as it is wanted to appear in the product</xs:documentation>
+                                </xs:annotation>
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:enumeration value="Meetings" />
+                                        <xs:enumeration value="Journals" />
+                                        <xs:enumeration value="Special Publications" />
+                                        <xs:enumeration value="Conference Series" />
+                                        <xs:enumeration value="Pamphlets and Reports" />
+                                        <xs:enumeration value="Survey and Documents Series" />
+                                        <xs:enumeration value="Books" />
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="contentDate">
+                                <xs:annotation>
+                                    <xs:documentation>Date of the content when different from publication day. Used for Date Search for Chatham House</xs:documentation>
+                                </xs:annotation>
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="contentComposed" type="xs:string" />
+                                        <xs:element name="contentDecade" minOccurs="0">
+                                            <xs:simpleType>
+                                                <xs:restriction base="xs:string">
+                                                    <xs:enumeration value="1920-1929" />
+                                                    <xs:enumeration value="1930-1939" />
+                                                    <xs:enumeration value="1940-1949" />
+                                                    <xs:enumeration value="1950-1959" />
+                                                    <xs:enumeration value="1960-1969" />
+                                                    <xs:enumeration value="1970-1979" />
+                                                    <xs:enumeration value="1980-1989" />
+                                                    <xs:enumeration value="1990-1999" />
+                                                    <xs:enumeration value="2000-2010" />
+                                                </xs:restriction>
+                                            </xs:simpleType>
+                                        </xs:element>
+                                        <xs:element name="contentIrregular" type="xs:string" minOccurs="0" />
+                                        <xs:element name="contentYear" type="xs:gYear" minOccurs="0" />
+                                        <xs:element name="contentMonth" minOccurs="0">
+                                            <xs:simpleType>
+                                                <xs:restriction base="xs:integer">
+                                                    <xs:enumeration value="01" />
+                                                    <xs:enumeration value="02" />
+                                                    <xs:enumeration value="03" />
+                                                    <xs:enumeration value="04" />
+                                                    <xs:enumeration value="05" />
+                                                    <xs:enumeration value="06" />
+                                                    <xs:enumeration value="07" />
+                                                    <xs:enumeration value="08" />
+                                                    <xs:enumeration value="09" />
+                                                    <xs:enumeration value="10" />
+                                                    <xs:enumeration value="11" />
+                                                    <xs:enumeration value="12" />
+                                                </xs:restriction>
+                                            </xs:simpleType>
+                                        </xs:element>
+                                        <xs:element name="contentDay" minOccurs="0">
+                                            <xs:simpleType>
+                                                <xs:restriction base="xs:string">
+                                                    <xs:pattern value="0[1-9]|[1-2][0-9]|3[0-1]" />
+                                                </xs:restriction>
+                                            </xs:simpleType>
+                                        </xs:element>
+                                        <xs:element name="contentDateStart" type="xs:date" />
+                                        <xs:element name="contentDateEnd" type="xs:date" />
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="chathamHouseRule" type="yesno">
+                                <xs:annotation>
+                                    <xs:documentation>Content that needs to be identified and needs to be supressed in the product until embargo ends</xs:documentation>
+                                </xs:annotation>
+                            </xs:element>
+                            <xs:element name="ocr" type="xs:string" />
+                            <xs:element name="isbn" minOccurs="0" maxOccurs="4">
+                                <xs:complexType>
+                                    <xs:simpleContent>
+                                        <xs:extension base="xs:string">
+                                            <xs:attribute name="length" use="required">
+                                                <xs:simpleType>
+                                                    <xs:restriction base="xs:string">
+                                                        <xs:enumeration value="10" />
+                                                        <xs:enumeration value="13" />
+                                                    </xs:restriction>
+                                                </xs:simpleType>
+                                            </xs:attribute>
+                                        </xs:extension>
+                                    </xs:simpleContent>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="issn" minOccurs="0" maxOccurs="4">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:length value="8" />
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="sourceLibrary">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="libraryName" type="xs:string" default="Chatham House" />
+                                        <xs:element name="libraryLocation" type="xs:string" default="London, UK" />
+                                        <xs:element name="libraryShelfmark" type="xs:string" minOccurs="0" />
+                                        <xs:element name="copyrightStatement" type="xs:string" />
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="relatedMedia" minOccurs="0">
+                                <xs:annotation>
+                                    <xs:documentation>Items with relation Audio or Video Content</xs:documentation>
+                                </xs:annotation>
+                                <xs:complexType>
+                                    <xs:simpleContent>
+                                        <xs:extension base="xs:string">
+                                            <xs:attribute name="id" type="xs:string" use="required" />
+                                            <xs:attribute name="mediaType" use="required">
+                                                <xs:simpleType>
+                                                    <xs:restriction base="xs:string">
+                                                        <xs:enumeration value="Audio" />
+                                                        <xs:enumeration value="Video" />
+                                                    </xs:restriction>
+                                                </xs:simpleType>
+                                            </xs:attribute>
+                                            <xs:attribute name="dataType" type="xs:string" use="required" />
+                                            <xs:attribute name="duration" type="xs:string" use="optional" />
+                                            <xs:attribute name="assetID" type="xs:string" use="optional" />
+                                        </xs:extension>
+                                    </xs:simpleContent>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="citation">
+                    <xs:complexType>
+                        <xs:choice>
+                            <xs:element name="journal">
+                                <xs:annotation>
+                                    <xs:documentation>Items that will have the citation for Journals</xs:documentation>
+                                </xs:annotation>
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:group ref="journal" />
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="meeting">
+                                <xs:annotation>
+                                    <xs:documentation>Items that will have the citation for Meetings/Speeches</xs:documentation>
+                                </xs:annotation>
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:group ref="meeting" />
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="book">
+                                <xs:annotation>
+                                    <xs:documentation>Items that will have the citation for Books/Monographs</xs:documentation>
+                                </xs:annotation>
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:group ref="book" />
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="conference">
+                                <xs:annotation>
+                                    <xs:documentation>Items that will have the citation for Conferences</xs:documentation>
+                                </xs:annotation>
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:group ref="conference" />
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:choice>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="page" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="pageImage">
+                                <xs:complexType>
+                                    <xs:simpleContent>
+                                        <xs:extension base="idexpression">
+                                            <xs:attribute name="pageIndicator" use="required">
+                                                <xs:simpleType>
+                                                    <xs:restriction base="xs:string">
+                                                        <xs:enumeration value="single" />
+                                                        <xs:enumeration value="double" />
+                                                    </xs:restriction>
+                                                </xs:simpleType>
+                                            </xs:attribute>
+                                            <xs:attribute name="width" type="xs:integer" use="required" />
+                                            <xs:attribute name="height" type="xs:integer" use="required" />
+                                            <xs:attribute name="type" type="xs:string" use="required" fixed="jpeg" />
+                                            <xs:attribute name="colorimage" use="required">
+                                                <xs:simpleType>
+                                                    <xs:restriction base="xs:string">
+                                                        <xs:enumeration value="bitonal" />
+                                                        <xs:enumeration value="grayscale" />
+                                                        <xs:enumeration value="color" />
+                                                    </xs:restriction>
+                                                </xs:simpleType>
+                                            </xs:attribute>
+                                            <xs:attribute name="pagePosition" use="required">
+                                                <xs:simpleType>
+                                                    <xs:restriction base="xs:string">
+                                                        <xs:enumeration value="left" />
+                                                        <xs:enumeration value="right" />
+                                                        <xs:enumeration value="ft_cover" />
+                                                        <xs:enumeration value="bk_cover" />
+                                                        <xs:enumeration value="stand_alone" />
+                                                    </xs:restriction>
+                                                </xs:simpleType>
+                                            </xs:attribute>
+                                        </xs:extension>
+                                    </xs:simpleContent>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="sourcePage" type="xs:string" minOccurs="0" />
+                            <xs:element name="assetID" type="xs:string" minOccurs="0" />
+                            <xs:element name="sectionHeader" type="xs:string" minOccurs="0" />
+                            <xs:element name="article" minOccurs="0" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="clip" maxOccurs="unbounded">
+                                            <xs:complexType>
+                                                <xs:attribute name="pgref" type="xs:integer" />
+                                                <xs:attribute name="clipref" type="xs:string" use="optional" />
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="illustration" minOccurs="0" maxOccurs="unbounded">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="caption" type="xs:string" minOccurs="0" />
+                                                </xs:sequence>
+                                                <xs:attribute name="pgref" type="xs:integer" use="required" />
+                                                <xs:attribute name="clipref" type="xs:string" use="optional" />
+                                                <xs:attribute name="type" use="required">
+                                                    <xs:simpleType>
+                                                        <xs:restriction base="xs:string">
+                                                            <xs:enumeration value="diagram" />
+                                                            <xs:enumeration value="map" />
+                                                            <xs:enumeration value="chart" />
+                                                            <xs:enumeration value="plan" />
+                                                            <xs:enumeration value="line_drawing" />
+                                                            <xs:enumeration value="photograph" />
+                                                        </xs:restriction>
+                                                    </xs:simpleType>
+                                                </xs:attribute>
+                                                <xs:attribute name="colorimage" use="required">
+                                                    <xs:simpleType>
+                                                        <xs:restriction base="xs:string">
+                                                            <xs:enumeration value="bitonal" />
+                                                            <xs:enumeration value="grayscale" />
+                                                            <xs:enumeration value="color" />
+                                                        </xs:restriction>
+                                                    </xs:simpleType>
+                                                </xs:attribute>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="articleInfo">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="assetID" type="xs:string" minOccurs="0" />
+                                                    <xs:element name="issueNumber" type="xs:string" minOccurs="0" />
+                                                    <xs:element name="issueTitle" type="xs:string" minOccurs="0" />
+                                                    <xs:element name="isbn" minOccurs="0" maxOccurs="4">
+                                                        <xs:complexType>
+                                                            <xs:simpleContent>
+                                                                <xs:extension base="xs:string">
+                                                                    <xs:attribute name="length" use="required">
+                                                                        <xs:simpleType>
+                                                                            <xs:restriction base="xs:string">
+                                                                                <xs:enumeration value="10" />
+                                                                                <xs:enumeration value="13" />
+                                                                            </xs:restriction>
+                                                                        </xs:simpleType>
+                                                                    </xs:attribute>
+                                                                </xs:extension>
+                                                            </xs:simpleContent>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                    <xs:element ref="pubDate" minOccurs="0" />
+                                                    <xs:element ref="byline" minOccurs="0" />
+                                                    <xs:element ref="author" minOccurs="0" maxOccurs="40" />
+                                                    <xs:element name="sectionTitle" minOccurs="0" maxOccurs="3">
+                                                        <xs:annotation>
+                                                            <xs:documentation>Used for Section Headers of Articles</xs:documentation>
+                                                        </xs:annotation>
+                                                    </xs:element>
+                                                    <xs:element name="title" type="xs:string" minOccurs="0" />
+                                                    <xs:element name="subtitle" type="xs:string" minOccurs="0" />
+                                                    <xs:element ref="imprint" minOccurs="0">
+                                                        <xs:annotation>
+                                                            <xs:documentation>Publiser Information</xs:documentation>
+                                                        </xs:annotation>
+                                                    </xs:element>
+                                                    <xs:element ref="publicationPlace" minOccurs="0" />
+                                                    <xs:element name="language" minOccurs="0" maxOccurs="unbounded">
+                                                        <xs:complexType>
+                                                            <xs:simpleContent>
+                                                                <xs:extension base="xs:string">
+                                                                    <xs:attributeGroup ref="languageGroup" />
+                                                                </xs:extension>
+                                                            </xs:simpleContent>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                    <xs:element name="ocr" type="xs:string" />
+                                                    <xs:element name="startingColumn" type="xs:string" minOccurs="0" />
+                                                    <xs:element name="pageCount" type="xs:integer" />
+                                                    <xs:element name="pageRange" type="xs:string" minOccurs="0" />
+                                                    <xs:element name="subject" type="xs:string" minOccurs="0" />
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="text">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="textclip" maxOccurs="unbounded">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element name="articlePage">
+                                                                    <xs:complexType>
+                                                                        <xs:simpleContent>
+                                                                            <xs:extension base="xs:string">
+                                                                                <xs:attribute name="pgref" type="xs:integer" use="required" />
+                                                                                <xs:attribute name="clipref" type="xs:string" use="optional" />
+                                                                            </xs:extension>
+                                                                        </xs:simpleContent>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                                <xs:element name="relatedDocument" minOccurs="0" maxOccurs="unbounded">
+                                                                    <xs:annotation>
+                                                                        <xs:documentation>Pages that link to another page in a footnote or article</xs:documentation>
+                                                                    </xs:annotation>
+                                                                    <xs:complexType>
+                                                                        <xs:simpleContent>
+                                                                            <xs:extension base="xs:string">
+                                                                                <xs:attribute name="type">
+                                                                                    <xs:simpleType>
+                                                                                        <xs:restriction base="xs:string">
+                                                                                            <xs:enumeration value="footnote" />
+                                                                                            <xs:enumeration value="article" />
+                                                                                        </xs:restriction>
+                                                                                    </xs:simpleType>
+                                                                                </xs:attribute>
+                                                                                <xs:attribute name="docref" type="xs:string" use="required" />
+                                                                                <xs:attribute name="pgref" type="xs:integer" use="required" />
+                                                                                <xs:attribute name="articleref" type="xs:integer" use="required" />
+                                                                                <xs:attribute name="assetID" type="xs:string" use="optional" />
+                                                                            </xs:extension>
+                                                                        </xs:simpleContent>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                                <xs:element name="p">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence>
+                                                                            <xs:group ref="word" />
+                                                                        </xs:sequence>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                                <xs:element name="marginalia" type="xs:string" minOccurs="0" maxOccurs="10">
+                                                                    <xs:annotation>
+                                                                        <xs:documentation>Handwritten Data</xs:documentation>
+                                                                    </xs:annotation>
+                                                                </xs:element>
+                                                                <xs:element name="footnote" minOccurs="0" maxOccurs="10">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence>
+                                                                            <xs:group ref="word" />
+                                                                        </xs:sequence>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                            </xs:sequence>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                    <xs:attribute name="id" type="xs:integer" use="required" />
+                                    <xs:attribute name="type" use="required">
+                                        <xs:simpleType>
+                                            <xs:restriction base="xs:string">
+                                                <xs:enumeration value="front_matter" />
+                                                <xs:enumeration value="article" />
+                                                <xs:enumeration value="back_matter" />
+                                                <xs:enumeration value="part" />
+                                                <xs:enumeration value="chapter" />
+                                                <xs:enumeration value="section" />
+                                            </xs:restriction>
+                                        </xs:simpleType>
+                                    </xs:attribute>
+                                    <xs:attribute name="level" use="required">
+                                        <xs:annotation>
+                                            <xs:documentation>Level of article in eTOC</xs:documentation>
+                                        </xs:annotation>
+                                        <xs:simpleType>
+                                            <xs:restriction base="xs:string">
+                                                <xs:enumeration value="1" />
+                                                <xs:enumeration value="2" />
+                                                <xs:enumeration value="3" />
+                                                <xs:enumeration value="4" />
+                                                <xs:enumeration value="5" />
+                                            </xs:restriction>
+                                        </xs:simpleType>
+                                    </xs:attribute>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                        <xs:attribute name="id" type="xs:integer" use="required" />
+                        <xs:attribute name="type" use="required">
+                            <xs:simpleType>
+                                <xs:restriction base="xs:string">
+                                    <xs:enumeration value="front_matter" />
+                                    <xs:enumeration value="title_page" />
+                                    <xs:enumeration value="body_page" />
+                                    <xs:enumeration value="toc" />
+                                    <xs:enumeration value="index" />
+                                    <xs:enumeration value="back_matter" />
+                                </xs:restriction>
+                            </xs:simpleType>
+                        </xs:attribute>
+                        <xs:attribute name="firstPage" type="yesno" use="required" />
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+            <xs:attribute name="contentType" use="required">
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:enumeration value="book" />
+                        <xs:enumeration value="speech" />
+                        <xs:enumeration value="journal" />
+                        <xs:enumeration value="default_journal" />
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:attribute>
+        </xs:complexType>
+    </xs:element>
+    <xs:group name="journal">
+        <xs:sequence>
+            <xs:element ref="pubDate" />
+            <xs:element ref="byline" minOccurs="0" />
+            <xs:element ref="author" minOccurs="0" maxOccurs="10" />
+            <xs:element ref="titleGroup" />
+            <xs:element ref="volumeGroup" minOccurs="0" />
+            <xs:element ref="totalPages" />
+        </xs:sequence>
+    </xs:group>
+    <xs:group name="meeting">
+        <xs:sequence>
+            <xs:element ref="pubDate" />
+            <xs:element ref="byline" minOccurs="0" />
+            <xs:element ref="author" minOccurs="0" maxOccurs="10" />
+            <xs:element ref="titleGroup" />
+            <xs:element ref="meetingGroup" />
+            <xs:element ref="totalPages" />
+        </xs:sequence>
+    </xs:group>
+    <xs:group name="book">
+        <xs:sequence>
+            <xs:element ref="pubDate" />
+            <xs:element ref="byline" minOccurs="0" />
+            <xs:element ref="author" minOccurs="0" maxOccurs="10" />
+            <xs:element ref="seriesGroup" minOccurs="0" />
+            <xs:element ref="titleGroup" />
+            <xs:element ref="editionNumber" minOccurs="0" />
+            <xs:element ref="editionStatement" minOccurs="0" />
+            <xs:element ref="volumeGroup" minOccurs="0" />
+            <xs:element ref="imprint" />
+            <xs:element ref="publicationPlace" />
+            <xs:element ref="totalPages" />
+        </xs:sequence>
+    </xs:group>
+    <xs:group name="conference">
+        <xs:sequence>
+            <xs:element ref="conferenceGroup" />
+            <xs:element ref="pubDate" minOccurs="0" />
+            <xs:element ref="byline" minOccurs="0" />
+            <xs:element ref="author" minOccurs="0" maxOccurs="10" />
+            <xs:element ref="titleGroup" />
+            <xs:element ref="editionNumber" minOccurs="0" />
+            <xs:element ref="editionStatement" minOccurs="0" />
+            <xs:element ref="volumeGroup" minOccurs="0" />
+            <xs:element ref="imprint" minOccurs="0" />
+            <xs:element ref="publicationPlace" minOccurs="0" />
+            <xs:element ref="totalPages" />
+        </xs:sequence>
+    </xs:group>
+    <xs:element name="imprint">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="imprintFull" type="xs:string" />
+                <xs:element name="imprintPublisher" type="xs:string" />
+                <xs:element name="imprintManufacturer" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="pubDate">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="composed" type="xs:string" />
+                <xs:element name="irregular" type="xs:string" minOccurs="0" />
+                <xs:element name="century" minOccurs="0">
+                    <xs:complexType>
+                        <xs:simpleContent>
+                            <xs:extension base="xs:string">
+                                <xs:attribute name="type" type="xs:string" use="optional" />
+                            </xs:extension>
+                        </xs:simpleContent>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="year" minOccurs="0">
+                    <xs:complexType>
+                        <xs:simpleContent>
+                            <xs:extension base="xs:gYear">
+                                <xs:attribute name="type" type="xs:string" use="optional" />
+                            </xs:extension>
+                        </xs:simpleContent>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="month" minOccurs="0">
+                    <xs:simpleType>
+                        <xs:restriction base="xs:integer">
+                            <xs:enumeration value="01" />
+                            <xs:enumeration value="02" />
+                            <xs:enumeration value="03" />
+                            <xs:enumeration value="04" />
+                            <xs:enumeration value="05" />
+                            <xs:enumeration value="06" />
+                            <xs:enumeration value="07" />
+                            <xs:enumeration value="08" />
+                            <xs:enumeration value="09" />
+                            <xs:enumeration value="10" />
+                            <xs:enumeration value="11" />
+                            <xs:enumeration value="12" />
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:element>
+                <xs:element name="day" minOccurs="0">
+                    <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                            <xs:pattern value="0[1-9]|[1-2][0-9]|3[0-1]" />
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:element>
+                <xs:element name="dayofweek" minOccurs="0">
+                    <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="Monday" />
+                            <xs:enumeration value="Tuesday" />
+                            <xs:enumeration value="Wednesday" />
+                            <xs:enumeration value="Thursday" />
+                            <xs:enumeration value="Friday" />
+                            <xs:enumeration value="Saturday" />
+                            <xs:enumeration value="Sunday" />
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:element>
+                <xs:element name="pubDateStart" type="xs:date" />
+                <xs:element name="pubDateEnd" type="xs:date" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="author">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="aucomposed" type="xs:string" />
+                <xs:element name="prefix" type="xs:string" minOccurs="0" />
+                <xs:element name="first" type="xs:string" minOccurs="0" />
+                <xs:element name="middle" type="xs:string" minOccurs="0" />
+                <xs:element name="last" type="xs:string" minOccurs="0" />
+                <xs:element name="suffix" type="xs:string" minOccurs="0" />
+                <xs:element name="sobriquet" type="xs:string" minOccurs="0" />
+                <xs:element name="birthDate" type="xs:string" minOccurs="0" />
+                <xs:element name="deathDate" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+            <xs:attributeGroup ref="authorRole" />
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="titleGroup">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="fullTitle" type="xs:string" />
+                <xs:element name="fullSubtitle" type="xs:string" minOccurs="0" />
+                <xs:element name="uniformTitle" type="xs:string" minOccurs="0" />
+                <xs:element name="variantTitle" type="xs:string" minOccurs="0" />
+                <xs:element name="collectiveTitle" type="xs:string" minOccurs="0" />
+                <xs:element name="relatedTitle" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="publicationPlace">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="publicationPlaceCity" type="xs:string" minOccurs="0" />
+                <xs:element name="publicationPlaceState" type="xs:string" minOccurs="0" />
+                <xs:element name="publicationPlaceCountry" type="xs:string" minOccurs="0" />
+                <xs:element name="publicationPlaceComposed" type="xs:string" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="volumeGroup">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="volumeTitle" type="xs:string" minOccurs="0" />
+                <xs:element name="volumeNumber" type="xs:integer" />
+                <xs:element name="totalVolumes" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="meetingGroup">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="meetingNumber" type="xs:string" />
+                <xs:element name="sponsoringOrganisation" type="xs:string" minOccurs="0" />
+                <xs:element name="meetingLocation" type="xs:string" />
+                <xs:element name="meetingType" type="xs:string" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="totalPages" type="xs:integer" />
+    <xs:element name="byline" type="xs:string" />
+    <xs:element name="editionNumber" type="xs:integer" />
+    <xs:element name="editionStatement" />
+    <xs:element name="issueNumber" type="xs:integer" />
+    <xs:element name="conferenceGroup">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="conferenceName" type="xs:string" />
+                <xs:element name="conferenceLocation" type="xs:string" />
+                <xs:element name="conferenceDate">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="conferenceComposed" type="xs:string" />
+                            <xs:element name="conferenceIrregular" type="xs:string" minOccurs="0" />
+                            <xs:element name="conferenceYear" type="xs:gYear" minOccurs="0" />
+                            <xs:element name="conferenceMonth" type="xs:string" minOccurs="0" />
+                            <xs:element name="conferenceDay" type="xs:string" minOccurs="0" />
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="seriesGroup">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="seriesComposed" type="xs:string" />
+                <xs:element name="seriesTitle" type="xs:string" />
+                <xs:element name="seriesNumber" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:attributeGroup name="languageGroup">
+        <xs:attribute name="ocr" type="xs:string" use="required" />
+        <xs:attribute name="primary" type="yesno" use="required" />
+    </xs:attributeGroup>
+    <xs:attributeGroup name="authorRole">
+        <xs:attribute name="role" type="xs:string" use="required" />
+        <xs:attribute name="type" type="yesno" use="optional" />
+    </xs:attributeGroup>
+    <xs:simpleType name="yesno">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Yes" />
+            <xs:enumeration value="No" />
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="idexpression">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="cho_[a-z]{4}_([0-9-]+|[0-9-]+[a-zA-Z])_(\d{4}|\d{4}[a-z]|[a-zA-Z]+)_\d{3}_\d{4}" />
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:group name="word">
+        <xs:sequence>
+            <xs:element name="word" maxOccurs="unbounded">
+                <xs:complexType>
+                    <xs:simpleContent>
+                        <xs:extension base="xs:string">
+                            <xs:attribute name="pos" type="xs:string" use="required" />
+                        </xs:extension>
+                    </xs:simpleContent>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:group>
+</xs:schema>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link href="{{STATIC_URL}}css/gaia.css" rel="stylesheet" type="text/css" media="all"/>
+<link rel="shortcut icon" href="{{STATIC_URL}}images/gaia_green_icon.png" />
+
+<title>{% block title %}gaia{% endblock %}|GAIA</title>
+
+{% block head %}{% endblock %}
+
+<script type="text/javascript">
+{% block javascript %}{% endblock %}
+
+function onload() {
+{% block onload %}{% endblock %}
+}
+var Lst;
+function change_class(obj)
+{
+if (typeof(obj)=='string') obj=document.getElementById(obj);
+ if (Lst) Lst.className='';
+ var test=document.getElementByIdi("sort_by_type");
+ test.className='selected';
+ Lst=obj;
+}
+
+</script>
+</head>
+<body onload="onload();">
+<div class="nav">
+<a href="{% url item_index %}">qa</a> |
+<a href="{% url manage %}">manage</a> |
+<a href="{% url mcodes %}">mcodes</a> |
+<a href="{% url languages %}">languages</a> |
+<a href="{% url named_authority %}">named authority</a> |
+<a href="{% url analyse_expert %}">analyse</a> |
+<a href="{% url reports_index %}">reports</a>
+
+<span>
+{% block paging %}{% endblock %}
+</span>
+
+<span style="float:right;">
+{% block search_bar %}{% endblock %}
+{% if "login" not in request.get_full_path %}
+    {% if user.is_authenticated %}
+        {{user.username}} (<a href="{% url logout %}">logout</a>)
+    {% else %}
+       Please <a href="{% url login %}">login</a>
+    {% endif %}
+{% endif %}
+</span>
+
+</div>
+
+{% if msg %}
+<div class="msg">{{msg|safe}}</div>
+{% endif %}
+{% if warning %}
+<div class="warning">{{warning|safe}}</div>
+{% endif %}
+{% if error %}
+<div class="error">error! {{error|safe}}</div>
+{% endif %}
+<div id="content">
+{% block content %}
+
+{% endblock %}
+</div>
+</body>
+</html>

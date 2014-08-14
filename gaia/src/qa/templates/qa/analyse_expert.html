@@ -1,0 +1,82 @@
+{% extends "qa/base.html" %}
+
+{% block title %}{{query|escape}}{% endblock %}
+
+{% block content %}
+
+<h1>expert analysis</h1>
+<!-- 
+<h1>Expert Analysis <small><i>(<a href="{XX% url analyse_easy XX%}">switch to easy mode</a>)</i></small></h1>
+-->
+
+<a href="http://wiki.cengage.com/display/EDT/Gaia+Green+User+Guide#GaiaGreenUserGuide-QueryExamples" target="_blank">Example SOLR syntax</a>:
+<ul>
+    <li>doc_PSMID:cho_meet_198* &fl=doc_fullTitle &fl=doc_aucomposed &fl=doc_chathamHouseRule &rows=9999</li>
+    <li>doc_PSMID:"cho_book_1921_0004_000_0000" &fl=@type</li>
+    <li>doc_productContentType:"Conference Series" AND @type:article &fl=doc_productContentType &rows=2</li>
+    <li>doc_productContentType:"Special Publications" AND @type:* NOT @type:front_matter NOT @type:article NOT @type:back_matter NOT @type:part NOT @type:chart NOT @type:map &fl=@type &rows=15</li>
+    <li>caption:[* TO *] NOT @type: _IS_ABSENT_ AND caption: _IS_ABSENT_ &fl=@type &fl=caption &rows=9999</li>
+</ul>
+
+<form action="{% url analyse_expert %}" method="get">
+{% for field in expert_query_form %}
+<p>
+{{ field.label_tag }}
+<br>
+{{ field }}
+<br>
+{{ field.errors }}
+</p>
+{% endfor %}
+
+<input type="submit" class="button" value="find articles" />
+</form>
+
+{% if num_found > 0 or expert_query == ''  %}
+
+<hr/>
+
+<b>found</b>: {{ num_found }}
+{% endif %}
+
+{% if num_found != 0 %}
+
+ <p>download results as TAB seperator <a href="csv?csv_expert_query={{expert_query|urlencode}}">csv</a> table - use Firefox and not IE</p>
+
+{% for match in matches %}
+    <p>
+    {{forloop.counter}}. <b><a href="{{match.GAIA_URL}}">{{ match.id }}</a></b><br />
+    {% for key, val in match.items %}
+        {% if key != "GAIA_URL" and key != "id" %}
+            {{key}}: {{ val }}<br />
+        {% endif %}
+    {% endfor %}
+    </p>
+{% endfor %}
+
+<hr/>
+<h1>bulk reject</h1>
+<form action="{% url global_changes_summary %}" method="post">
+
+{% for field in global_changes_form %}
+<p>
+{{ field.label_tag }}
+<br>
+{{ field }}
+<br>
+{{ field.errors }}
+</p>
+{% endfor %}
+
+<p>
+reject <b>all</b> of the items matching the above search
+</p>
+<p>
+<input type="hidden" name="expert_analysis_query" value="{{ expert_query }}"/>
+<input type="submit" class="button" value="Bulk Reject" />
+</p>
+
+<i>(Note that all of the items matching your search, ie the number displayed as "found" at the top of this page, all of which may <b>not</b> be visible above, will be rejected! To see the full list, please repeat the search with"&amp;fl=&amp;rows=9999")</i>
+</form>
+{% endif %}
+{% endblock %}

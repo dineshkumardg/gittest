@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Created with Liquid XML Studio Designer Edition 9.1.11.3570 (http://www.liquid-technologies.com) -->
+<chapter contentType="book" xsi:noNamespaceSchemaLocation="../../../../gaia/src/gaia/config/dtds/chatham_house.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <metadataInfo>
+        <PSMID>cho_rpax_1944_notes_000_0000</PSMID>
+        <language ocr="English" primary="Yes">English</language>
+        <productContentType>Pamphlets and Reports</productContentType>
+        <contentDate>
+            <contentComposed>1943</contentComposed>
+            <contentDecade>1940-1949</contentDecade>
+            <contentIrregular>1943-44</contentIrregular>
+            <contentDateStart>1943-01-01</contentDateStart>
+            <contentDateEnd>1944-12-31</contentDateEnd>
+        </contentDate>
+        <chathamHouseRule>No</chathamHouseRule>
+        <ocr>52.36</ocr>
+        <isbn length="13">978-567-891-0111</isbn>
+        <sourceLibrary>
+            <libraryName>Chatham House</libraryName>
+            <libraryLocation>London, UK</libraryLocation>
+            <copyrightStatement>COPYRIGHT under the aupicies of Royal Institute of International Affairs</copyrightStatement>
+        </sourceLibrary>
+    </metadataInfo>
+    <citation>
+        <book>
+            <pubDate>
+                <composed>November 1943</composed>
+                <irregular>1943-44</irregular>
+                <pubDateStart>1943-01-01</pubDateStart>
+                <pubDateEnd>1944-12-31</pubDateEnd>
+            </pubDate>
+            <titleGroup>
+                <fullTitle>An Middle East.</fullTitle>
+            </titleGroup>
+            <imprint>
+                <imprintFull>The Broadwater Press</imprintFull>
+                <imprintPublisher>The Broadwater Press</imprintPublisher>
+            </imprint>
+            <publicationPlace>
+                <publicationPlaceComposed>Welwyn, Hertfordshire</publicationPlaceComposed>
+            </publicationPlace>
+            <totalPages>2</totalPages>
+        </book>
+    </citation>
+    <page id="1" type="body_page" firstPage="Yes">
+        <pageImage pageIndicator="single" width="52" height="22" type="jpeg" colorimage="color" pagePosition="ft_cover">cho_rpax_1944_notes_000_0001</pageImage>
+        <sourcePage>1</sourcePage>
+        <article id="1" type="article" level="1">
+            <clip pgref="1" />
+            <clip pgref="2" />
+            <illustration pgref="1" clipref="1" type="line_drawing" colorimage="color"></illustration>
+            <illustration pgref="1" clipref="1" type="chart" colorimage="color"><caption>Illustration 1</caption></illustration>
+            <illustration pgref="2" clipref="1" type="chart" colorimage="color"><caption>Illustration 2</caption></illustration>
+            <illustration pgref="2" clipref="1" type="photograph" colorimage="color"></illustration>
+            <articleInfo>
+                <ocr>45.76</ocr>
+                <pageCount>2</pageCount>
+                <pageRange>1-2</pageRange>
+            </articleInfo>
+            <text>
+                <textclip>
+                    <articlePage pgref="1"></articlePage>
+                    <p>
+                        <word pos="56,79,34,12">WORD</word>
+                    </p>
+                </textclip>
+                <textclip>
+                    <articlePage pgref="2"></articlePage>
+                    <p>
+                        <word pos="56,79,34,12">TWO</word>
+                    </p>
+                </textclip>
+            </text>
+        </article>
+    </page>
+    <page id="2" type="body_page" firstPage="No">
+        <pageImage pageIndicator="single" width="65" height="54" type="jpeg" colorimage="color" pagePosition="bk_cover">cho_rpax_1944_notes_000_0002</pageImage>
+        <sourcePage>2</sourcePage>
+    </page>
+</chapter>

@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:vault-link="http://www.gale.com/goldschema/vault-linking" xmlns:media="http://www.gale.com/goldschema/media" xmlns:shared="http://www.gale.com/goldschema/shared" xmlns:essay="http://www.gale.com/goldschema/essay" xmlns:pres="http://www.gale.com/goldschema/pres" xmlns:xatts="http://www.gale.com/goldschema/xatts" targetNamespace="http://www.gale.com/goldschema/pres" elementFormDefault="qualified" attributeFormDefault="unqualified" version="3.0">
+	<xs:annotation id="presentation-purpose">
+		<xs:documentation>This module defines the presentation elements that need  to support various main schemas</xs:documentation>
+	</xs:annotation>
+	<!--
+	======================================================================
+                           CHANGE HISTORY
+	======================================================================
+	3.0		12/04/2013		js
+	1.	Removed the schema owner part.
+	2.	Updated the folder path of <xs:import>. 
+	3.	Added the namespace 'pres' with the namespace url xmlns="http://www.gale.com/goldschema/pres".
+	4.	Added the namespace “pres” with the following elements & attributes: Big, a, bold, italics, bold-italic, small, small-caps, strike-over, 
+		sup, sub, under-score, break-group, line-break, page-break, horizontal-rule, style-group, mixed-style.
+	5.	Reorganized the elements and element groups.
+	6.	Externalized the element publisher-mark.
+	======================================================================
+-->
+	<xs:import namespace="http://www.gale.com/goldschema/xatts" schemaLocation="xhtml-atts.xsd"/>
+	<xs:import namespace="http://www.gale.com/goldschema/vault-linking" schemaLocation="vault_linking.xsd"/>
+	<xs:import namespace="http://www.gale.com/goldschema/media" schemaLocation="media.xsd"/>
+	<xs:import namespace="http://www.gale.com/goldschema/essay" schemaLocation="essay.xsd"/>
+	<xs:import namespace="http://www.gale.com/goldschema/shared" schemaLocation="shared.xsd"/>
+	<!-- 
+	============================================================================   
+                    ELEMENT DECLARATIONS
+	============================================================================   
+	-->	
+	<xs:element name="a">
+		<xs:annotation>
+			<xs:documentation>Defines a hyperlink.</xs:documentation>
+		</xs:annotation>
+		<xs:complexType mixed="true">
+			<xs:group ref="pres:style-group" minOccurs="0"/>
+			<xs:attributeGroup ref="xatts:hypertextAtts"/>
+			<xs:attributeGroup ref="xatts:coreAtts"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="big" type="pres:mixed-style">
+		<xs:annotation>
+			<xs:documentation>Defines bigger text with font size larger than surroundings.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="bold" type="pres:mixed-style">
+		<xs:annotation>
+			<xs:documentation>Defines bold text.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="italics" type="pres:mixed-style">
+		<xs:annotation>
+			<xs:documentation>Defines italics text.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="bold-italic" type="pres:mixed-style">
+		<xs:annotation>
+			<xs:documentation>Defines bold-italic text.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="small" type="pres:mixed-style">
+		<xs:annotation>
+			<xs:documentation>Defines smaller text.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="small-caps" type="pres:mixed-style">
+		<xs:annotation>
+			<xs:documentation>Defines small-caps text.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="strike-over" type="pres:mixed-style">
+		<xs:annotation>
+			<xs:documentation>Defines strikethrough text.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="sup" type="pres:mixed-style">
+		<xs:annotation>
+			<xs:documentation>A number or expression that is set higher than the baseline and slightly smaller.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="sub" type="pres:mixed-style">
+		<xs:annotation>
+			<xs:documentation>A number or expression that is set lower than the baseline and slightly smaller.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="under-score" type="pres:mixed-style">
+		<xs:annotation>
+			<xs:documentation>Defines underscored text.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="line-break" type="xs:string">
+		<xs:annotation>
+			<xs:documentation>Formatting element tended to force a new line in display or print. Since formatting is normally a stylesheet function, 
+				use of this element should be by exception only.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="page-break" type="xs:string">
+		<xs:annotation>
+			<xs:documentation>Defines a placement of the page break within the document.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="horizontal-rule" type="xs:string">
+		<xs:annotation>
+			<xs:documentation>Formatting element for a horizontal rule. Since formatting is normally a stylesheet function, 
+				use of this element should be by exception only.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="publisher-mark">
+		<xs:annotation>
+			<xs:documentation>Logo or other licensed mark of the publisher</xs:documentation>
+		</xs:annotation>
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:enumeration value="bold"/>
+				<xs:enumeration value="italics"/>
+				<xs:enumeration value="bold-italic"/>
+				<xs:enumeration value="small-caps"/>
+				<xs:enumeration value="strike-over"/>
+				<xs:enumeration value="under-score"/>
+				<xs:enumeration value="line-break"/>
+				<xs:enumeration value="page-break"/>
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+	<!-- 
+	============================================================================   
+                    ELEMENT GROUPS
+	============================================================================   
+	-->	
+	<xs:group name="style-group">
+		<xs:sequence>
+			<xs:choice minOccurs="0" maxOccurs="unbounded">
+				<xs:element ref="pres:a"/>
+				<xs:element ref="pres:big"/>
+				<xs:element ref="pres:bold"/>
+				<xs:element ref="pres:italics"/>
+				<xs:element ref="pres:bold-italic"/>
+				<xs:element ref="pres:small"/>
+				<xs:element ref="pres:small-caps"/>
+				<xs:element ref="pres:strike-over"/>
+				<xs:element ref="pres:sup"/>
+				<xs:element ref="pres:sub"/>
+				<xs:element ref="pres:under-score"/>
+				<xs:element ref="vault-link:vault-link"/>
+				<xs:group ref="pres:break-group"/>
+				<xs:element ref="pres:publisher-mark"/>
+			</xs:choice>
+		</xs:sequence>
+	</xs:group>	
+	<xs:group name="break-group">
+		<xs:sequence>
+			<xs:choice>
+				<xs:element ref="pres:line-break"/>
+				<xs:element ref="pres:page-break"/>
+				<xs:element ref="pres:horizontal-rule"/>
+			</xs:choice>
+		</xs:sequence>
+	</xs:group>
+	<!-- 
+	============================================================================   
+                    COMPLEX TYPE DECLARATIONS
+	============================================================================   
+	-->	
+	<xs:complexType name="mixed-style" mixed="true">
+		<xs:sequence>
+			<xs:choice minOccurs="0" maxOccurs="unbounded">
+				<xs:group ref="pres:style-group"/>
+				<xs:element ref="shared:media"/>
+				<xs:element ref="essay:footnote-reference"/>
+			</xs:choice>
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>

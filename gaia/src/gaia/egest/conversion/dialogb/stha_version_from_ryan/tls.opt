@@ -1,0 +1,20 @@
+! file: iln.opt
+
+! Used by Perl converter
+log_dir:		/gale/prod-i1/data/workflow/conversion_workflow/dvi_content_conversion/ocm_space/bl_ncukp/logs/TLS/
+completed_dir:		/gale/prod-i1/data/workflow/conversion_workflow/dvi_content_conversion/ocm_space/bl_ncukp/manifests/completed/TLS/
+output_dir:		/gale/prod-i1/data/workflow/conversion_workflow/dvi_content_conversion/ocm_space/bl_ncukp/output/TLS/TLS_output/
+input_dir:		/gale/prod-i1/data/workflow/conversion_workflow/dvi_content_conversion/ocm_space/bl_ncukp/ftp_data/TLS/TLS_input/
+headnote_dir_unix:	/auto/groups/history_team/projects/DVI_Newspapers/control_files/headnotes/
+headnote_dir_vms:	DMR:[DB.TLS.HEADNOTES]
+metadata_file_unix:     /auto/groups/history_team/projects/DVI_Newspapers/control_files/tls_lookup.txt
+metadata_file_vms:	DMR:[DB.TLS.META]tls_lookup.txt
+dvi_ng_map_unix:        /auto/groups/history_team/projects/DVI_Newspapers/control_files/DVI_NG_TLSmap.txt
+dvi_il_map_unix:        /auto/groups/history_team/projects/DVI_Newspapers/control_files/DVI_IL_map.txt
+dvi_ng_map_vms:         QRFCPS3:[PE.NCUP.CONTROL_FILES]DVI_NG_FTmap.txt
+dvi_il_map_vms:         QRFCPS3:[PE.NCUP.CONTROL_FILES]DVI_IL_map.txt
+PageIDList_unix:	/auto/groups/history_team/projects/DVI_Newspapers/control_files/TLSPageIDList.txt
+PageIDList_vms:		QRFCPS3:[PE.NCUP.CONTROL_FILES]TLSPageIDList.txt
+dvi_name:               tls
+xxrn:			CT
+email:			ryan.cartmill@cengage.com

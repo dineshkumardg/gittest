@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2008 rel. 2 sp1 (http://www.altova.com) by Gale Group (Gale Group) -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:shared="http://www.gale.com/goldschema/shared" xmlns:meta="http://www.gale.com/goldschema/metadata" xmlns:vault-link="http://www.gale.com/goldschema/vault-linking" xmlns:index="http://www.gale.com/goldschema/index" xmlns:essay="http://www.gale.com/goldschema/essay" xmlns:pres="http://www.gale.com/goldschema/pres" targetNamespace="http://www.gale.com/goldschema/index" elementFormDefault="qualified" attributeFormDefault="unqualified" version="3.0">
+	<!--
+	======================================================================
+                           CHANGE HISTORY
+	======================================================================
+	3.0		12/04/2013		js
+	1. Removed the schema owner part.
+	2. Updated the folder path of <xs:import>.
+	3. Replaced 'page-range-display-type' with 'common-mixed-type-model'.
+	4. We have removed the namespace xmlns:common-meta="http://www.gale.com/goldschema/common-meta" as it doesn't have appropriate <xs:import> 
+	   and the namespace is not been used anywhere in that schema.
+	5. Reorganized the elements.
+	6. Removed the elements index-metadata, indexed-article-title and indexed-filename as they are unused.
+	7. Removed the complex type model 'indexType' as it is unused.
+	======================================================================
+-->
+	<xs:include schemaLocation="gale_datatypes.xsd"/>
+	<xs:import namespace="http://www.gale.com/goldschema/essay" schemaLocation="essay.xsd"/>
+	<xs:import namespace="http://www.gale.com/goldschema/pres" schemaLocation="presentation.xsd"/>
+	<xs:import namespace="http://www.gale.com/goldschema/metadata" schemaLocation="metadata.xsd"/>
+	<xs:import namespace="http://www.gale.com/goldschema/vault-linking" schemaLocation="vault_linking.xsd"/>
+	<xs:import namespace="http://www.gale.com/goldschema/shared" schemaLocation="shared.xsd"/>
+	<!-- 
+	============================================================================   
+                   ELEMENT  DECLARATIONS
+	============================================================================   
+	-->
+	<!--                    DOCUMENT                    -->	
+	<xs:complexType name="document-type">
+		<xs:choice maxOccurs="unbounded">
+			<xs:element ref="index:index-section-break" minOccurs="0"/>
+			<xs:choice minOccurs="0" maxOccurs="unbounded">
+				<xs:element ref="essay:h1" minOccurs="0"/>
+				<xs:element ref="essay:p" minOccurs="0" maxOccurs="unbounded"/>
+			</xs:choice>
+			<xs:element ref="index:index-entry" maxOccurs="unbounded"/>
+		</xs:choice>
+	</xs:complexType>
+	<xs:element name="document" type="index:document-type">
+		<xs:annotation>
+			<xs:documentation>Wrapper element containing child elements for the index content record and for index metadata.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--                    CROSS-REFERENCE-TYPE                    -->	
+	<xs:element name="cross-reference-type" type="index:cross-reference-typeType">
+		<xs:annotation>
+			<xs:documentation>Simple type whose valid values are "see", "see also" and "see under".</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--                    CROSS-REFERENCE-TERM                    -->
+	<xs:element name="cross-reference-term" type="xs:normalizedString">
+		<xs:annotation>
+			<xs:documentation>The actual term being refered to by the cross-reference.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--                    INDEX-SECTION-BREAK, CROSS-REFERENCE-PDF-PAGE                    -->	
+	<xs:element name="index-section-break" type="xs:normalizedString">
+		<xs:annotation>
+			<xs:documentation>Text indicating specific section within the index e.g. a letter break.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="cross-reference-pdf-page" type="xs:normalizedString">
+		<xs:annotation>
+			<xs:documentation>Link to PDF page containing cross-references to the indexing term.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--                    CROSS-REFERENCE                    -->	
+	<xs:complexType name="cross-referenceType" mixed="true">
+		<xs:sequence>
+			<xs:element ref="index:cross-reference-type"/>
+			<xs:choice>
+				<xs:element ref="index:cross-reference-term"/>
+				<xs:element ref="vault-link:vault-link"/>
+			</xs:choice>
+			<xs:element ref="index:cross-reference-pdf-page" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="cross-reference" type="index:cross-referenceType">
+		<xs:annotation>
+			<xs:documentation>Wrapper element containing child elements to capture index cross-references.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--                    INDEX-ENTRY                    -->	
+	<xs:complexType name="index-entryType">
+		<xs:sequence>
+			<xs:element ref="index:index-term"/>
+			<xs:choice minOccurs="0" maxOccurs="unbounded">
+				<xs:element ref="index:index-page-indicator" minOccurs="0" maxOccurs="unbounded"/>
+				<xs:element ref="index:cross-reference" minOccurs="0" maxOccurs="unbounded"/>
+			</xs:choice>
+			<xs:element ref="index:index-entry" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="index-entry" type="index:index-entryType">
+		<xs:annotation>
+			<xs:documentation>Wrapper element for each individual indexed term on the page.  Recursive, so as to capture sub-entries w/out 
+				the use of level-atts or other such non-sense.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--                    INDEX-PAGE-INDICATOR                    -->	
+	<xs:complexType name="index-page-indicatorType">
+		<xs:sequence>
+			<xs:element ref="meta:volume-number-display" minOccurs="0"/>
+			<xs:element ref="meta:page-range-display" minOccurs="0"/>
+			<xs:element ref="meta:title-open-url" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element ref="vault-link:vault-link" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="index-page-indicator" type="index:index-page-indicatorType">
+		<xs:annotation>
+			<xs:documentation>Wrapper for information about linking to the specific portion of text indexed by the particular term.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--                    INDEX-PAGE-LETTER-BREAKS                    -->		
+	<xs:complexType name="index-page-letter-breaksType"/>
+	<xs:element name="index-page-letter-breaks" type="index:index-page-letter-breaksType">
+		<xs:annotation>
+			<xs:documentation>Wrapper element to house repeating index-page-letter-break element.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--                    PAGE-RANGE-DISPLAY                    -->
+	<xs:element name="page-range-display" type="index:common-mixed-type-model">
+		<xs:annotation>
+			<xs:documentation>Page rnge information already formatted and ready for rendering.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--                    INDEX-TERM                    -->
+	<xs:complexType name="index-termType" mixed="true">
+		<xs:sequence>
+			<xs:choice maxOccurs="unbounded">
+				<xs:group ref="pres:style-group"/>
+				<xs:element ref="shared:media" minOccurs="0" maxOccurs="unbounded"/>
+			</xs:choice>
+		</xs:sequence>
+		<xs:attribute name="id" type="xs:NMTOKEN" use="optional">
+			<xs:annotation>
+				<xs:documentation>Unique ID of the index term</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+		<xs:attribute name="parent-id" type="xs:NMTOKEN" use="optional">
+			<xs:annotation>
+				<xs:documentation>Unique ID of the parent term of the index term</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+		<xs:attribute name="seq" type="xs:decimal" use="optional">
+			<xs:annotation>
+				<xs:documentation>Programmatically generated sequence number for an indexing term</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+	</xs:complexType>
+	<xs:element name="index-term" type="index:index-termType">
+		<xs:annotation>
+			<xs:documentation>The actual term being indexed.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--			SIMPLE TYPE DECLARATIONS				-->
+	<xs:simpleType name="cross-reference-typeType">
+		<xs:restriction base="xs:normalizedString">
+			<xs:enumeration value="see"/>
+			<xs:enumeration value="see also"/>
+			<xs:enumeration value="see under"/>
+		</xs:restriction>
+	</xs:simpleType>
+</xs:schema>

@@ -1,0 +1,88 @@
+{% extends "qa/filter_paginator.html" %}
+{% block title %}languages{% endblock %}
+
+{% load util_tags %}
+
+{% block content %}
+    <h1>languages</h1>
+
+    {% if context or request.GET.search_by%}
+<ul>
+<li>columns are sortable (except for &apos;title&apos; &amp; &apos;delete&apos;)</a></li>
+<li>&apos;psmid&apos; or &apos;language&apos; fields are searchable (inside the languages table only)</a></li>
+<li>any psmid not on this page is defined as: English</li>
+<li>add successful if: psmid + article_id are present; psmid passes regex; article_id is numeric; row is unique</a></li>
+</ul>
+
+        {% block content_table %}
+
+                {% if context %}
+                    <form action="" method="post">
+                                <div id="result_table" style="margin-right: 0px;">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th/>
+                                    {% for header in sort_fields_list %}
+                                        <th id="{{ header.1 }}" onclick="sort_header('{{ header.1 }}', '{{ request.GET.filter_by}}' ,'{{ request.GET.search_by }}', '{{ page_obj.number }}')">
+                                            <div class="text">{{ header.0 }}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+                                        </th>
+                                    {% endfor %}
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {% for language in context %}
+                                    <tr class="{% cycle 'row1' 'row2' %}">
+                                        <td><input type="hidden" size="0%" name="row_id" value="{{language.id}}"></td>
+                                        <td><input type="text" size="35" maxlength="50" name="psmid" value="{{language.psmid}}"/></td>
+                                        <td><input type="text" size="6" maxlength="10" name="article_id" value="{{language.article_id}}"></td>
+                                        <td><input type="text" size="20" maxlength="50" name="lang" value="{{language.lang}}"></td>
+                                        <td>{{language.article_title|slice_string:40}}</td>
+                                        <td><input type="checkbox" value="{{language.id}}" name="delete_selected"/></td>
+                                    </tr>
+                                {% endfor %}
+                                <tr class="{% cycle 'row1' 'row2' %}">
+                                    <td/>
+                                    <td><input size="35" maxlength="50" name="add_psmid" value=""></td>
+                                    <td><input size="6" maxlength="10" name="add_article_id" value=""></td>
+                                    <td><input size="20" maxlength="50" name="add_language" value=""></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+            </div>
+                        <table class="border-color: transparent;" width="100%">
+                            <tr>
+                            <td>{% block content_paginate %}{{ block.super }}{% endblock %}</td>
+                            <td align="right">
+                            <input type="submit" class="button" value="add" name="add_item"/>
+                            <input type="submit" class="button" value="save edits" name="apply_changes"/>
+                            <input type="submit" class="button" value="delete selected" name="delete_item"/>
+                            </td>
+                            </tr>
+                        </table>
+                    </form>
+                {% else %}
+                    {% if request.GET.filter_by and request.GET.search_by %}
+                        <p>no languages under this condition: <br/><b>filter by: "{{ request.GET.filter_by }}" search by: "{{ request.GET.search_by }}"</b><br/><br/></p>
+                    {% elif request.GET.filter_by %}
+                        <p><br/>no languages under this condition: <b>filter by: "{{ request.GET.filter_by }}"</b></p>
+                    {% elif request.GET.search_by %}
+                        <p><br/>no languages under this condition: <b>search by: "{{ request.GET.search_by }}"</b></p>
+                    {% else %}
+                        <p>no languages</p>
+                    {% endif %}
+                {% endif %}
+        {% endblock %}
+
+    {% else %}
+        <p>no languages</p>
+
+    {% endif %}
+
+    {% block sort_script %}
+        {{ block.super }}
+    {% endblock %}
+
+{% endblock %}

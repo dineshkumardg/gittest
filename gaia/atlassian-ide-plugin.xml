@@ -1,0 +1,13 @@
+<atlassian-ide-plugin>
+  <project-configuration id="1">
+    <servers id="2">
+      <jira id="3">
+        <server-id id="4">db606c8c-8ec1-4ace-95e9-cfc11d4eeaca</server-id>
+        <name>jira.cengage.com</name>
+        <url>http://jira.cengage.com</url>
+        <shared>false</shared>
+      </jira>
+    </servers>
+    <default-jira-server reference="4" />
+  </project-configuration>
+</atlassian-ide-plugin>

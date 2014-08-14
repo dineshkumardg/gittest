@@ -1,0 +1,29 @@
+{% extends "qa/base.html" %}
+
+{% block content %}
+<h1>fix <a href='{% url page page_id %}'>{{item.dom_name}}</a></h1>
+
+{% if changes.items %}
+
+NOTE: JIRA's outstanding for:
+<ul>
+<li>validating any fix against the XSD - it is upto you to ensure your fix is good!</li>
+<li>reflecting fix in etoc</li>
+</ul>
+
+
+<table border="1">
+{% for dom_id, info in changes.items %}
+    {% for xpath, value in info.items %}
+    <tr>
+        <td>{{ xpath }}</td>
+        <td>{{ value }}</td>
+    </tr>
+    {% endfor %}
+{% endfor %}
+</table>
+{% else %}
+Nothing was fix'd - you made no changes.
+{% endif %}
+
+{% endblock %}

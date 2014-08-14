@@ -1,0 +1,56 @@
+Hi All,
+ 
+GIFT Schema v. 3.0 has been updated.
+ 
+The Schema can be found here:  
+
+    all M:\projects\dtd*\GIFT_Schemas\version_3.0 folders
+    http://inside/sites/gpms/bpt/platforms/data_infostructure/Data%20Standards/GIFT/GIFT-3_0.tar.gz
+    Schema server  tlwuthed1 (10.160.2.46)                /inet/www/docs/the/gpmsxml
+
+  
+HTML documentation is posted here:
+
+    http://inside/sites/gpms/bpt/platforms/data_infostructure/Data%20Standards/GIFT/GIFT_3.0_HTML_Documentation.zip
+    \projects\dtdprod\GIFT_Schemas\Related_Documents\GIFT_3.0_HTML_Documentation.zip 
+
+ 
+ 
+3.0 Release Notes are posted here:  
+
+    \projects\dtdprod\GIFT_Schemas\Related_Documents\GIFT_3.0_ReleaseNotes.docx
+    http://inside/sites/gpms/bpt/platforms/data_infostructure/Data%20Standards/GIFT/GIFT_3.0_ReleaseNotes.docx 
+
+ 
+ 
+Summary of changes:
+ 
+GPMS-166: GIFT-Refactor GIFT Schema
+Solution: See “GIFT_3.0_ReleaseNotes.docx”
+ 
+GPMS-174: GIFT - addition of time elements to metadata.xsd
+Solution: 
+metadata.xsd
+
+    Created new elements meta:publication-time, meta:standard-time and meta:composed-time.
+    Added meta:publication-time and child elements meta:standard-time and meta:composed-time in meta:publication-date
+
+ 
+Example: 
+<meta:publication-date>
+        <meta:structured-date>
+                <meta:irregular>December 5, 2013</meta:irregular>
+        </meta:structured-date>
+        <meta:standard-date>20131205</meta:standard-date>
+        <meta:publication-time>
+                <meta:standard-time>08:00:00-05:00</meta:standard-time>
+                <meta:composed-time>0800EST</meta:composed-time>
+        </meta:publication-time>
+</meta:publication-date>
+ 
+ 
+Mira Bossowska
+Content Architect, CT&QA
+Cengage Learning
+27500 Drake Rd., Farmington Hills, MI 48331-3535
+(o) 248 699-8348 | (c) 248 797-6756 | (e) mira.bossowska@cengage.com | www.cengage.com

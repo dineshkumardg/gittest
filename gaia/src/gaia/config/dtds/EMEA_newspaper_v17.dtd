@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+============================================================================
+            CLEMEA Newspaper XML DTD _ Newspapers/Periodicals
+============================================================================
+              
+18/07/09  1.0	HTC	Original version  - DTD for CLEMEA Newspaper digital conversion
+28/07/09  1.1	HTC	Original version  - Root element CLEMEA changed to GALENP
+
+	    -  tlemea_entities.xml reference file name changed to gale_entities.xml
+	    - %galenet.entites changed to gale.entities
+
+	    - Modified the structure of x-y coordinate pairs with comma separators
+
+	    - Element CLEMEANP modified as GALENP
+	    - Comment included for the Copyright element
+	    - format of da and tdate elements (dd/mm/yy) changed to dd/mm/yyyy
+	    - Removed JournalTitle, navi, navp, imagecount and table elements									
+
+28/07/09  1.2	HTC	Original version  - tdate element format changed from dd/mm/yyyy to yyyymmdd
+
+31/07/09  1.3	HTC  Comment modified for the Copyright element based on confirmation
+   
+14/09/09  1.4	HTC	Original version  - da element format changed from dd/mm/yyyy to month dd, yyyy
+23/09/10  1.5   Michelle Fappiano	Added pageType and isPartOf attribute to the pageID element to support the Browse Issue and Browse Special Issue for ILN and future products.  
+		Moved <suppTitle> and <suppsubtitle> elements to the page level.  This supports display of supplement titles for each page included in the supplement.
+		Removed the supplement image page number segment from the image file naming convention.  Gale platforms do not support the extra numerical string. 
+		Was pubcode-1902-0625-0191-0000 is now pubcode-1902-0625-0191
+04/11/10  1.6   Michelle Fappiano	Changed description of element ip from number of physical pages in the issue to number of images in the issue.
+31/01/11  1.7	Michelle Fappiano	Added element <au_composed> to support legacy data and products without fielded author names.
+26/05/11  1.7b	Tushar - changed name from GALENP.dtd to EMEA_newspaper_v17.dtd
+
+-->
+<!ENTITY % gale.entities SYSTEM "gale_entities.xml">
+%gale.entities;
+<!-- Inclusion of the CALS table content model  
+<!ENTITY % CALS.TE SYSTEM "CALS.TE.ent" >
+%CALS.TE;
+-->
+<!--
+============================================================================
+	File Naming Conventions referenced in this DTD
+                     
+XML File Name: pubcode-yyyy-mmdd
+
+i.e.           pubcode-1902-0625
+
+Image File Name: pubcode-yyyy-mmdd-imagepagenumber-supplemenimagepagenumber
+
+i.e.           pubcode-1902-0625-0191-0000
+                     
+============================================================================
+-->
+<!--
+============================================================================
+
+	Notes on X-Y positional coordinates referenced in this DTD
+                     
+X-Y coordinate pairs are structured in the format  x_top-left ,y_top-left, x_bottom-right, y_bottom-right
+with comma separators
+
+  i.e. 50,150,750,350
+============================================================================
+
+-->
+<!-- Header elements classifying the content as newspaper or periodical.
+This will be useful to maintain a single DTD for variation in content.
+-->
+<!ELEMENT GALENP (Newspaper | Periodical)>
+<!ELEMENT Newspaper (issue)>
+<!ELEMENT Periodical (issue)>
+<!--  Issue -->
+<!ELEMENT issue (metadatainfo, id, ed*, is?, volNum?, da, tdate?, pf, dw?, ip, copyright?, imdim, page+)>
+<!ELEMENT metadatainfo (newspaperID, sourceLibrary?)>
+<!--    
+============================================================================
+                 	Metadata Info elements         
+============================================================================
+                                                                                                          
+-->
+<!-- Publication code -->
+<!ELEMENT newspaperID (#PCDATA)>
+<!-- Library where the microfilm is sourced -->
+<!ELEMENT sourceLibrary (#PCDATA)>
+<!--
+
+============================================================================
+		        Newspaper Issue elements         
+============================================================================
+                                                                                                              
+-->
+<!-- Identifier -->
+<!-- Note; XML file name. Unique value format  (pubcode-yyyy-mmdd) -->
+<!ELEMENT id (#PCDATA)>
+<!-- Edition -->
+<!ELEMENT ed (#PCDATA)>
+<!-- Source Issue Number -->
+<!ELEMENT is (#PCDATA)>
+<!-- Volume Number -->
+<!ELEMENT volNum (#PCDATA)>
+<!-- Publication Date -->
+<!-- e.g. month dd, yyyy - February 02, 1889 -->
+<!ELEMENT da (#PCDATA)>
+<!-- To Date. For Issues that span more than one day-->
+<!-- e.g. yyyymmdd -->
+<!ELEMENT tdate (#PCDATA)>
+<!-- Fixed Publication Date -->
+<!-- Note; logically generated from date e.g. yyyymmdd -->
+<!ELEMENT pf (#PCDATA)>
+<!-- Day of the week -->
+<!ELEMENT dw (#PCDATA)>
+<!-- Page Count -->
+<!-- Note;  Number of images present in the issue  -->
+<!ELEMENT ip (#PCDATA)>
+<!-- Copyright Holder and Year
+       This element holds the name of the publication
+       e.g. for FTDA - The Financial Times Limited. All rights reserved
+-->
+<!ELEMENT copyright (#PCDATA)>
+<!-- Page Dimension -->
+<!-- Note; Programatically generated -->
+<!ELEMENT imdim (#PCDATA)>
+<!--    
+============================================================================
+                     	     Page elements         
+============================================================================
+                                                                                                          
+-->
+<!--  page -->
+<!ELEMENT page (pageid, pa?, supptitle*, suppsubtitle*, article*)>
+<!--  pageid -->
+<!ELEMENT pageid (#PCDATA)>
+<!ATTLIST pageid
+	colorimage (Yes | No) #REQUIRED
+	pageType ( Body | Cover ) #REQUIRED
+	isPartOf ( Special | Supplement | Standard ) #REQUIRED	
+>
+<!--Source page number of the Page -->
+<!ELEMENT pa (#PCDATA)>
+<!-- Supplement Title -->
+<!ELEMENT supptitle (#PCDATA)>
+<!-- Supplement Sub-title -->
+<!ELEMENT suppsubtitle (#PCDATA)>
+<!--    
+============================================================================
+  		             Article elements         
+============================================================================
+                                                                                                                
+-->
+<!ELEMENT article (id, ocr?, sc, pi+, ci+, pc, ti, ta*, subheader*, detailed_au*, au_composed*, altSource*, ct+, sectiontype?, il*, text)>
+<!ATTLIST article
+	type (article | backmatter | chapter | cover | frontmatter | index | titlePage | TOC) #REQUIRED
+>
+<!-- OCR Confidence Level -->
+<!ELEMENT ocr (#PCDATA)>
+<!ATTLIST ocr
+	relevant (yes | no) "yes"
+>
+<!-- Starting column: a string to label the column where article starts -->
+<!ELEMENT sc (#PCDATA)>
+<!-- Page Image -->
+<!ELEMENT pi (#PCDATA)>
+<!ATTLIST pi
+	pgref CDATA #REQUIRED
+>
+<!-- Clipped Article Image -->
+<!ELEMENT ci (#PCDATA)>
+<!ATTLIST ci
+	pgref CDATA #REQUIRED
+	clip CDATA #REQUIRED
+>
+<!-- Page Count: total number of pages containing sections of the article -->
+<!ELEMENT pc (#PCDATA)>
+<!-- Article Title -->
+<!ELEMENT ti (#PCDATA)>
+<!-- Article Subtitle -->
+<!ELEMENT ta (#PCDATA)>
+<!-- Article Subheader. Product dependent field -->
+<!ELEMENT subheader (#PCDATA)>
+<!-- Detailed Author -->
+<!ELEMENT detailed_au (prefix?, first?, middle?, last, suffix?)>
+<!-- prefix of the author-->
+<!ELEMENT prefix (#PCDATA)>
+<!-- first name of the author-->
+<!ELEMENT first (#PCDATA)>
+<!-- Middle name of the author-->
+<!ELEMENT middle (#PCDATA)>
+<!-- Last name of the author-->
+<!ELEMENT last (#PCDATA)>
+<!-- Suffix of the author-->
+<!ELEMENT suffix (#PCDATA)>
+<!-- Composed Author Name -->
+<!ELEMENT au_composed (#PCDATA)>
+<!-- Source Paper -->
+<!ELEMENT altSource (#PCDATA)>
+<!-- Category: uses predefined list of article categories as per specification-->
+<!ELEMENT ct (#PCDATA)>
+<!-- Product dependent field -->
+<!ELEMENT sectiontype (#PCDATA)>
+<!-- Illustration Values should be any of the following category "Cartoon | Map | Drawing-Painting | Photograph | Graph | Table | Chart | Engraving | Fine-Art-Reproduction | Illustration"  -->
+<!ELEMENT il (#PCDATA)>
+<!ATTLIST il
+	type (Cartoons | Map | Drawing-Painting | Photograph | Graph | Table | Chart | Engraving | Fine-Art-Reproduction | Illustration) #REQUIRED
+	colorimage (Yes | No) #REQUIRED
+	pos CDATA #REQUIRED
+	orientation (p | l) #REQUIRED
+	clipref CDATA #REQUIRED
+	clipimgpresent (Yes | No) #REQUIRED
+	clipimgfile CDATA #IMPLIED
+	dbid CDATA #IMPLIED
+>
+<!-- Article Text -->
+<!ELEMENT text (text.preamble?, text.title?, text.cr+)>
+<!-- Article Preamble (any text preceding title) -->
+<!ELEMENT text.preamble (pg, p)>
+<!-- Article Title -->
+<!ELEMENT text.title (pg, p)>
+<!-- Generic Clip Rectangle -->
+<!ELEMENT text.cr (pg, p*)>
+<!-- Position Guide: any article zone scanned as a separate OCR unit -->
+<!ELEMENT pg EMPTY>
+<!ATTLIST pg
+	pgref CDATA #REQUIRED
+	clipref CDATA #REQUIRED
+	pos CDATA #REQUIRED
+>
+<!-- Paragraph -->
+<!ELEMENT p (wd)*>
+<!ATTLIST p
+	type (none | tocitem) "none"
+	pgref CDATA #IMPLIED
+>
+<!-- Word -->
+<!ELEMENT wd (#PCDATA)>
+<!ATTLIST wd
+	pos CDATA #REQUIRED
+>
+<!-- 
+============================================================================
+     		             End of the DTD      
+============================================================================
+ -->

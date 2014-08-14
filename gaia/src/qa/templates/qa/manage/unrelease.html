@@ -1,0 +1,99 @@
+{% extends "qa/filter_paginator.html" %}
+{% block title %}un-release items{% endblock %}
+
+{% block javascript %}
+function _tickBoxes(on) {
+    var input_tags=document.getElementsByTagName("input");
+
+    for (i=0; i < input_tags.length-1; i++) {
+        tag = input_tags[i];
+        if (tag.type == "checkbox") {
+            if (tag.id != "unrelease_only_meet_m2") {
+                tag.checked = on;
+            }
+        };
+    }
+}
+
+function select_all() {
+    _tickBoxes(true);
+}
+
+function unselect_all() {
+    _tickBoxes(false);
+}
+
+function toggle(checkbox) {
+    if (checkbox.checked) {
+        select_all();
+    } else {
+        unselect_all();
+    }
+}
+{% endblock %}
+
+
+{% block content %}
+    <h1>un-release items</h1>
+
+    {% if context or request.GET.search_by%}
+
+        {% block content_table %}
+        <ul>
+            <li>&apos;ingested&apos; and &apos;psmid&apos; columns are sortable</li>
+        </ul>
+            <div id="result_table" style="width: 0px;">
+                {% if context %}
+
+                    <form action="" method="post">
+                        <table>
+                            <thead>
+                                <tr>
+                                    {% for header in sort_fields_list %}
+                                        <th id={{ header.1 }} onclick="sort_header('{{ header.1 }}', '{{ request.GET.filter_by}}' ,'{{ request.GET.search_by }}', '{{ page_obj.number }}')">
+                                            <div class="text">{{ header.0 }}</div>
+                                        </th>
+                                    {% endfor %}
+                                    <th><div class="text">un-release</div></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {% for item in context %}
+                                    <tr class="{% cycle 'row1' 'row2' %}">
+                                        <td style="white-space: nowrap;">{{item.date}}&nbsp;&nbsp;&nbsp;</td>
+                                        <td> <a href="{% url item item.id %}">{{item.dom_name}}</a>&nbsp;&nbsp;&nbsp;</td>
+                                        <td><input type="checkbox" value="{{item.id}}" id="{{item.dom_name}}" name="selected"/></td>
+                                    </tr>
+                                {% endfor %}
+                            </tbody>
+                        </table>
+                        <p style="white-space: nowrap;">
+                            <input type="checkbox"  onclick="toggle(this);" name="select_all" id="select_all"/>&nbsp;<b>un-release everything</b>
+                            <input type="checkbox" name="unrelease_only_meet_m2" id="unrelease_only_meet_m2"/>&nbsp;<b>M2 cho_meet</b>
+                            <input type="submit" class="button" value="un-release" name="unrelease_items" id="unrelease_items"/>
+                            </p>
+                       </p>
+                    </form>
+                {% else %}
+                    {%if request.GET.search_by %}
+                        <br/><p style="white-space: nowrap;">no items under this condition: <b>search by: "{{ request.GET.search_by }}"</b></p>
+                    {% else %}
+                        <p style="white-space: nowrap;">no items to un-release</p>
+                    {% endif %}
+                {% endif %}
+            </div>
+        {% endblock %}
+
+        {% block content_paginate %}
+            {{ block.super }}
+        {% endblock %}
+
+    {% else %}
+        <p>no items to un-release</p>
+    {% endif %}
+
+    {% block sort_script %}
+        {{ block.super }}
+    {% endblock %}
+
+{% endblock %}

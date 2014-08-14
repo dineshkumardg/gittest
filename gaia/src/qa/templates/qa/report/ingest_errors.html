@@ -1,0 +1,74 @@
+{% extends "qa/filter_paginator.html" %}
+{% block title %}ingest errors{% endblock %}
+
+{% load util_tags %}
+
+{% block content %}
+<h1> ingest errors </h1>
+
+{% if context or request.GET.filter_by or request.GET.search_by%}
+{% block content_side_bar %}
+    {{ block.super }}
+{% endblock %}
+
+{% block content_table %}
+<div id="result_table">
+ {% if context %}   
+NOTE:
+<ul>
+<li>you might need to get the content provider to recreate the item(s) on their FTP site!</a></li>
+<li>its possible that multiple workers might have tried to ingest the same item, hence some &apos;FtpError: Could not cd to directory&apos; errors might still mean the item was ingested!</li>
+</ul>
+
+
+<table>
+<thead>
+    <tr>
+    {% for value, key in sort_fields_list.items  %}
+    <th  nowrap="nowrap"id={{ key }} onclick="sort_header('{{ key }}', '{{ request.GET.filter_by }}' ,'{{ request.GET.search_by }}','{{ page_obj.number }}')">
+    <div class="text">{{ value }}</div>
+    </th>
+    {% endfor %}
+    </tr>
+</thead>
+<tbody>
+{% for error in context %}
+    <tr class="{% cycle 'row1' 'row2' %}">
+    <td nowrap="nowrap">{{error.provider_name}}</td>
+    <td nowrap="nowrap">{{error.when}}</div></td>
+    <td>{{error.report|slice_string:1000}}</td></tr>
+    {% endfor %}
+</tbody>
+</table>
+{% else %}
+    {% if request.GET.filter_by and request.GET.search_by %}
+        <p>no items under this condition: <br/><b>filter by: "{{ request.GET.filter_by }}" search by: "{{ request.GET.search_by }}"</b> <br/><br/></p>
+    {% elif request.GET.filter_by %}
+        <p><br/>no items under this condition: <b>filter by: "{{ request.GET.filter_by }}"</b></p>
+    {% elif request.GET.search_by %}
+        <p><br/>no items under this condition: <b>search by: "{{ request.GET.search_by }}"</b></p>
+    {% else %}
+        <p>no items</p>
+    {% endif %}
+{% endif %}
+</div>
+{% endblock %}
+
+{% block content_paginate %}
+    {{ block.super }}
+{% endblock %}
+
+{% else %}
+        <p>no items with errors </p>
+{% endif %}
+
+{% block sort_script %}
+    {{ block.super }}
+{% endblock %}
+
+{% endblock %}
+
+{% block search_bar %}
+ {{ block.super }}
+{% endblock %} 
+

@@ -1,0 +1,1621 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gold:feed xmlns:essay="http://www.gale.com/goldschema/essay" xmlns:gold="http://www.gale.com/gold" xmlns:gift-doc="http://www.gale.com/goldschema/gift-doc" xmlns:dir="http://www.gale.com/goldschema/dir" xmlns:vault-link="http://www.gale.com/goldschema/vault-linking" xmlns:meta="http://www.gale.com/goldschema/metadata" xmlns:table="http://www.gale.com/goldschema/table" xmlns:xatts="http://www.gale.com/goldschema/xatts" xmlns:index="http://www.gale.com/goldschema/index" xmlns:mla="http://www.gale.com/goldschema/mla" xmlns:media="http://www.gale.com/goldschema/media" xmlns:tt="http://www.w3.org/ns/ttml" xmlns:list="http://www.gale.com/goldschema/list" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:etoc="http://www.gale.com/goldschema/etoc" xmlns:verse="http://www.gale.com/goldschema/verse" xmlns:pres="http://www.gale.com/goldschema/pres" xmlns:pub-meta="http://www.gale.com/goldschema/pub-meta" xmlns:shared="http://www.gale.com/goldschema/shared" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:math="http://www.w3.org/1998/Math/MathML" id="NOINDEX-CHOA_20131029_00629" xsi:schemaLocation="..\..\..\..\..\GIFT\feed_schemas\feed.xsd">
+<gold:document-instance>
+  <gift-doc:document>
+    <gift-doc:metadata>
+      <gift-doc:node-metadata>
+        <gift-doc:pagination-group>
+          <gift-doc:pagination>
+            <meta:ranges>
+              <meta:range>
+                <meta:begin-page>0001</meta:begin-page>
+              </meta:range>
+            </meta:ranges>
+            <meta:total-pages>10</meta:total-pages>
+          </gift-doc:pagination>
+        </gift-doc:pagination-group>
+      </gift-doc:node-metadata>
+      <gift-doc:document-metadata>
+        <meta:document-ids>
+          <meta:id type="Gale asset">
+            <meta:value>TBTVJN204984786</meta:value>
+          </meta:id>
+        </meta:document-ids>
+        <meta:bibliographic-ids>
+          <meta:id type="PSM">
+            <meta:value>cho_iaxx_1926_0005_000_0000</meta:value>
+          </meta:id>
+        </meta:bibliographic-ids>
+        <meta:mcode>6GPP</meta:mcode>
+        <meta:record-admin-info>
+          <meta:standard-date type="Original">201212002</meta:standard-date>
+        </meta:record-admin-info>
+        <meta:publication-title>World Today Chatham House Review</meta:publication-title>
+        <meta:publication-subtitle>Subtitle</meta:publication-subtitle>
+        <meta:descriptive-indexing>
+          <meta:indexing-term>
+            <meta:term>
+              <meta:term-type>CONT_TYPE</meta:term-type>
+              <meta:term-source>Atlas</meta:term-source>
+              <meta:term-id>21901547</meta:term-id>
+              <meta:term-value>DVI-Periodical</meta:term-value>
+            </meta:term>
+          </meta:indexing-term>
+          <meta:indexing-term>
+            <meta:term>
+              <meta:term-type>FUNC_TYPE</meta:term-type>
+              <meta:term-source>Atlas</meta:term-source>
+              <meta:term-id>21787857</meta:term-id>
+              <meta:term-value>Issue-volume page record</meta:term-value>
+            </meta:term>
+          </meta:indexing-term>
+        </meta:descriptive-indexing>
+      </gift-doc:document-metadata>
+    </gift-doc:metadata>
+    <gift-doc:body>
+      <essay:div document-segment-type="Body text" term-id="14214508" term-source="Atlas">
+        <essay:div document-segment-type="Page" term-id="21922233" term-source="Atlas">
+          <essay:complex-meta>
+            <meta:page-id-number>0001</meta:page-id-number>
+          </essay:complex-meta>
+          <essay:div document-segment-type="DVI article" term-id="21918442" term-source="Atlas">
+            <shared:media>
+              <media:image data-type="jpeg" width="2350" height="3570" image-type="page view" layout="single" color-mode="color" sequence="0001">
+                <vault-link:vault-link>
+                  <vault-link:link-type>external</vault-link:link-type>
+                  <vault-link:action>point</vault-link:action>
+                  <vault-link:where>
+                    <vault-link:path>cho_iaxx_1926_0005_000_0001</vault-link:path>
+                  </vault-link:where>
+                </vault-link:vault-link>
+              </media:image>
+            </shared:media>
+            <vault-link:vault-link>
+              <vault-link:link-type>external</vault-link:link-type>
+              <vault-link:link-category term-id="21902640" term-source="Atlas">DVI article</vault-link:link-category>
+              <vault-link:data-type>text/xml</vault-link:data-type>
+              <vault-link:action>point</vault-link:action>
+              <vault-link:where>
+                <vault-link:path>//gift-doc:document-metadata/meta:document-ids/meta:id[@type="Gale asset"]/meta:value[.="QBVYKN987107912"]</vault-link:path>
+              </vault-link:where>
+              <vault-link:select>
+                <vault-link:document-nodes>
+                  <vault-link:target>ancestor::gift-doc:document</vault-link:target>
+                </vault-link:document-nodes>
+              </vault-link:select>
+              <vault-link:display-link>Front Matter&#x00F6;</vault-link:display-link>
+            </vault-link:vault-link>
+            <essay:div document-segment-type="Body text" term-id="14214508" term-source="Atlas">
+              <essay:p>)::)&#9632;/.),!&gt; / ;r( &#187;i.v o] ) \/.i&apos;j vATi( W\l All /</essay:p>
+            </essay:div>
+            <essay:div document-segment-type="OCR text" term-id="21905043" term-source="Atlas">
+              <essay:p>
+                <essay:ocr-text position="994,964,1296,1030">)::)&#9632;/.),!&gt;</essay:ocr-text>
+                <essay:ocr-text position="1063,1293,1082,1332">/</essay:ocr-text>
+                <essay:ocr-text position="1120,1284,1191,1336">;r(</essay:ocr-text>
+                <essay:ocr-text position="1226,1282,1331,1336">&#187;i.v</essay:ocr-text>
+                <essay:ocr-text position="1390,1284,1462,1336">o]</essay:ocr-text>
+                <essay:ocr-text position="986,1747,993,1784">)</essay:ocr-text>
+                <essay:ocr-text position="1049,1735,1174,1796">\/.i&apos;j</essay:ocr-text>
+                <essay:ocr-text position="978,1879,1143,1948">vATi(</essay:ocr-text>
+                <essay:ocr-text position="1177,1883,1338,1947">W\l</essay:ocr-text>
+                <essay:ocr-text position="1392,1886,1498,1951">All</essay:ocr-text>
+                <essay:ocr-text position="1533,1888,1560,1948">/</essay:ocr-text>
+              </essay:p>
+            </essay:div>
+          </essay:div>
+        </essay:div>
+      </essay:div>
+    </gift-doc:body>
+  </gift-doc:document>
+</gold:document-instance>
+<gold:document-instance>
+  <gift-doc:document>
+    <gift-doc:metadata>
+      <gift-doc:node-metadata>
+        <gift-doc:pagination-group>
+          <gift-doc:pagination>
+            <meta:ranges>
+              <meta:range>
+                <meta:begin-page>0002</meta:begin-page>
+              </meta:range>
+            </meta:ranges>
+            <meta:total-pages>10</meta:total-pages>
+          </gift-doc:pagination>
+        </gift-doc:pagination-group>
+      </gift-doc:node-metadata>
+      <gift-doc:document-metadata>
+        <meta:document-ids>
+          <meta:id type="Gale asset">
+            <meta:value>WIQVBE806053011</meta:value>
+          </meta:id>
+        </meta:document-ids>
+        <meta:bibliographic-ids>
+          <meta:id type="PSM">
+            <meta:value>cho_iaxx_1926_0005_000_0000</meta:value>
+          </meta:id>
+        </meta:bibliographic-ids>
+        <meta:mcode>6GPP</meta:mcode>
+        <meta:record-admin-info>
+          <meta:standard-date type="Original">201212002</meta:standard-date>
+        </meta:record-admin-info>
+        <meta:publication-title>World Today Chatham House Review</meta:publication-title>
+        <meta:publication-subtitle>Subtitle</meta:publication-subtitle>
+        <meta:descriptive-indexing>
+          <meta:indexing-term>
+            <meta:term>
+              <meta:term-type>CONT_TYPE</meta:term-type>
+              <meta:term-source>Atlas</meta:term-source>
+              <meta:term-id>21901547</meta:term-id>
+              <meta:term-value>DVI-Periodical</meta:term-value>
+            </meta:term>
+          </meta:indexing-term>
+          <meta:indexing-term>
+            <meta:term>
+              <meta:term-type>FUNC_TYPE</meta:term-type>
+              <meta:term-source>Atlas</meta:term-source>
+              <meta:term-id>21787857</meta:term-id>
+              <meta:term-value>Issue-volume page record</meta:term-value>
+            </meta:term>
+          </meta:indexing-term>
+        </meta:descriptive-indexing>
+        <meta:folio>
+          <meta:start-number>i</meta:start-number>
+        </meta:folio>
+      </gift-doc:document-metadata>
+    </gift-doc:metadata>
+    <gift-doc:body>
+      <essay:div document-segment-type="Body text" term-id="14214508" term-source="Atlas">
+        <essay:div document-segment-type="Page" term-id="21922233" term-source="Atlas">
+          <essay:complex-meta>
+            <meta:page-id-number>0002</meta:page-id-number>
+            <meta:folio>
+              <meta:start-number>i</meta:start-number>
+            </meta:folio>
+          </essay:complex-meta>
+          <essay:div document-segment-type="DVI article" term-id="21918442" term-source="Atlas">
+            <shared:media>
+              <media:image data-type="jpeg" width="2020" height="3484" image-type="page view" layout="single" color-mode="color" folio="i" sequence="0002">
+                <vault-link:vault-link>
+                  <vault-link:link-type>external</vault-link:link-type>
+                  <vault-link:action>point</vault-link:action>
+                  <vault-link:where>
+                    <vault-link:path>cho_iaxx_1926_0005_000_0002</vault-link:path>
+                  </vault-link:where>
+                </vault-link:vault-link>
+              </media:image>
+            </shared:media>
+            <vault-link:vault-link>
+              <vault-link:link-type>external</vault-link:link-type>
+              <vault-link:link-category term-id="21902640" term-source="Atlas">DVI article</vault-link:link-category>
+              <vault-link:data-type>text/xml</vault-link:data-type>
+              <vault-link:action>point</vault-link:action>
+              <vault-link:where>
+                <vault-link:path>//gift-doc:document-metadata/meta:document-ids/meta:id[@type="Gale asset"]/meta:value[.="QBVYKN987107912"]</vault-link:path>
+              </vault-link:where>
+              <vault-link:select>
+                <vault-link:document-nodes>
+                  <vault-link:target>ancestor::gift-doc:document</vault-link:target>
+                </vault-link:document-nodes>
+              </vault-link:select>
+              <vault-link:display-link>Front Matter</vault-link:display-link>
+            </vault-link:vault-link>
+            <essay:div document-segment-type="Body text" term-id="14214508" term-source="Atlas">
+              <essay:p>r.t LW&amp;Z6 ~ZC?&#163;&gt;\ Printed in Great Britain bv Richard Clay &amp; Sons, Limited, bungay, suffolk.</essay:p>
+            </essay:div>
+            <essay:div document-segment-type="OCR text" term-id="21905043" term-source="Atlas">
+              <essay:p>
+                <essay:ocr-text position="1182,758,1209,778">r.t</essay:ocr-text>
+                <essay:ocr-text position="788,1086,1099,1166">LW&amp;Z6</essay:ocr-text>
+                <essay:ocr-text position="1137,1082,1394,1176">~ZC?&#163;&gt;\</essay:ocr-text>
+                <essay:ocr-text position="930,1332,1071,1359">Printed</essay:ocr-text>
+                <essay:ocr-text position="1102,1342,1133,1359">in</essay:ocr-text>
+                <essay:ocr-text position="1165,1333,1278,1360">Great</essay:ocr-text>
+                <essay:ocr-text position="1309,1334,1444,1360">Britain</essay:ocr-text>
+                <essay:ocr-text position="1478,1342,1514,1360">bv</essay:ocr-text>
+                <essay:ocr-text position="929,1376,1075,1402">Richard</essay:ocr-text>
+                <essay:ocr-text position="1094,1377,1180,1403">Clay</essay:ocr-text>
+                <essay:ocr-text position="1198,1376,1223,1403">&amp;</essay:ocr-text>
+                <essay:ocr-text position="1244,1376,1333,1407">Sons,</essay:ocr-text>
+                <essay:ocr-text position="1356,1376,1503,1408">Limited,</essay:ocr-text>
+                <essay:ocr-text position="1082,1426,1215,1450">bungay,</essay:ocr-text>
+                <essay:ocr-text position="1237,1425,1387,1445">suffolk.</essay:ocr-text>
+              </essay:p>
+            </essay:div>
+          </essay:div>
+        </essay:div>
+      </essay:div>
+    </gift-doc:body>
+  </gift-doc:document>
+</gold:document-instance>
+<gold:document-instance>
+  <gift-doc:document>
+    <gift-doc:metadata>
+      <gift-doc:node-metadata>
+        <gift-doc:pagination-group>
+          <gift-doc:pagination>
+            <meta:ranges>
+              <meta:range>
+                <meta:begin-page>0003</meta:begin-page>
+              </meta:range>
+            </meta:ranges>
+            <meta:total-pages>10</meta:total-pages>
+          </gift-doc:pagination>
+        </gift-doc:pagination-group>
+      </gift-doc:node-metadata>
+      <gift-doc:document-metadata>
+        <meta:document-ids>
+          <meta:id type="Gale asset">
+            <meta:value>BEFRYR175662459</meta:value>
+          </meta:id>
+        </meta:document-ids>
+        <meta:bibliographic-ids>
+          <meta:id type="PSM">
+            <meta:value>cho_iaxx_1926_0005_000_0000</meta:value>
+          </meta:id>
+        </meta:bibliographic-ids>
+        <meta:mcode>6GPP</meta:mcode>
+        <meta:record-admin-info>
+          <meta:standard-date type="Original">201212002</meta:standard-date>
+        </meta:record-admin-info>
+        <meta:publication-title>World Today Chatham House Review</meta:publication-title>
+        <meta:publication-subtitle>Subtitle</meta:publication-subtitle>
+        <meta:descriptive-indexing>
+          <meta:indexing-term>
+            <meta:term>
+              <meta:term-type>CONT_TYPE</meta:term-type>
+              <meta:term-source>Atlas</meta:term-source>
+              <meta:term-id>21901547</meta:term-id>
+              <meta:term-value>DVI-Periodical</meta:term-value>
+            </meta:term>
+          </meta:indexing-term>
+          <meta:indexing-term>
+            <meta:term>
+              <meta:term-type>FUNC_TYPE</meta:term-type>
+              <meta:term-source>Atlas</meta:term-source>
+              <meta:term-id>21787857</meta:term-id>
+              <meta:term-value>Issue-volume page record</meta:term-value>
+            </meta:term>
+          </meta:indexing-term>
+        </meta:descriptive-indexing>
+        <meta:folio>
+          <meta:start-number>ii</meta:start-number>
+        </meta:folio>
+      </gift-doc:document-metadata>
+    </gift-doc:metadata>
+    <gift-doc:body>
+      <essay:div document-segment-type="Body text" term-id="14214508" term-source="Atlas">
+        <essay:div document-segment-type="Page" term-id="21922233" term-source="Atlas">
+          <essay:complex-meta>
+            <meta:page-id-number>0003</meta:page-id-number>
+            <meta:folio>
+              <meta:start-number>ii</meta:start-number>
+            </meta:folio>
+          </essay:complex-meta>
+          <essay:div document-segment-type="DVI article" term-id="21918442" term-source="Atlas">
+            <shared:media>
+              <media:image data-type="jpeg" width="2008" height="3432" image-type="page view" layout="single" color-mode="color" folio="ii" sequence="0003">
+                <vault-link:vault-link>
+                  <vault-link:link-type>external</vault-link:link-type>
+                  <vault-link:action>point</vault-link:action>
+                  <vault-link:where>
+                    <vault-link:path>cho_iaxx_1926_0005_000_0003</vault-link:path>
+                  </vault-link:where>
+                </vault-link:vault-link>
+              </media:image>
+            </shared:media>
+            <vault-link:vault-link>
+              <vault-link:link-type>external</vault-link:link-type>
+              <vault-link:link-category term-id="21902640" term-source="Atlas">DVI article</vault-link:link-category>
+              <vault-link:data-type>text/xml</vault-link:data-type>
+              <vault-link:action>point</vault-link:action>
+              <vault-link:where>
+                <vault-link:path>//gift-doc:document-metadata/meta:document-ids/meta:id[@type="Gale asset"]/meta:value[.="CNOJXW476707908"]</vault-link:path>
+              </vault-link:where>
+              <vault-link:select>
+                <vault-link:document-nodes>
+                  <vault-link:target>ancestor::gift-doc:document</vault-link:target>
+                </vault-link:document-nodes>
+              </vault-link:select>
+              <vault-link:display-link>Front Matter.</vault-link:display-link>
+            </vault-link:vault-link>
+            <essay:div document-segment-type="Body text" term-id="14214508" term-source="Atlas">
+              <essay:p>A DIRECTORY OF SOCIETIES AND ORGANIZATIONS IN GREAT BRITAIN CONCERNED WITH THE STUDY OF INTERNATIONAL AFFAIRS compiled by STEPHEN A. HEALD t. IffiAl WITH AN INTRODUCTION by SIR WILLIAM H. BEVERIDGE K.C.B., LL.D., B.C.L. DIRECTOR, LONDON SCHOOL OF ECONOMICS; CHAIRMAN, BRITISH CO-ORDINATING COMMITTEE FOR INTERNATIONAL STUDIES Published under the joint auspices of THE ROYAL INSTITUTE OF INTERNATIONAL AFFAIRS and the INFORMATION SERVICE ON INTERNATIONAL AFFAIRS CHATHAM HOUSE, 10 ST. JAMES&apos;S SQUARE, LONDON, S.W. i 1929 Price Is. 6d.</essay:p>
+            </essay:div>
+            <essay:div document-segment-type="OCR text" term-id="21905043" term-source="Atlas">
+              <essay:p>
+                <essay:ocr-text position="439,272,500,330">A</essay:ocr-text>
+                <essay:ocr-text position="555,267,1096,329">DIRECTORY</essay:ocr-text>
+                <essay:ocr-text position="1150,266,1265,326">OF</essay:ocr-text>
+                <essay:ocr-text position="111,395,556,459">SOCIETIES</essay:ocr-text>
+                <essay:ocr-text position="605,393,799,454">AND</essay:ocr-text>
+                <essay:ocr-text position="848,388,1595,452">ORGANIZATIONS</essay:ocr-text>
+                <essay:ocr-text position="403,521,498,579">IN</essay:ocr-text>
+                <essay:ocr-text position="558,518,868,578">GREAT</essay:ocr-text>
+                <essay:ocr-text position="924,514,1311,576">BRITAIN</essay:ocr-text>
+                <essay:ocr-text position="129,643,699,707">CONCERNED</essay:ocr-text>
+                <essay:ocr-text position="754,641,999,702">WITH</essay:ocr-text>
+                <essay:ocr-text position="1054,639,1241,700">THE</essay:ocr-text>
+                <essay:ocr-text position="1297,637,1593,698">STUDY</essay:ocr-text>
+                <essay:ocr-text position="129,771,248,831">OF</essay:ocr-text>
+                <essay:ocr-text position="313,765,1125,829">INTERNATIONAL</essay:ocr-text>
+                <essay:ocr-text position="1190,761,1593,822">AFFAIRS</essay:ocr-text>
+                <essay:ocr-text position="689,991,937,1022">compiled</essay:ocr-text>
+                <essay:ocr-text position="981,990,1042,1020">by</essay:ocr-text>
+                <essay:ocr-text position="533,1065,828,1116">STEPHEN</essay:ocr-text>
+                <essay:ocr-text position="875,1065,934,1112">A.</essay:ocr-text>
+                <essay:ocr-text position="981,1063,1210,1114">HEALD</essay:ocr-text>
+                <essay:ocr-text position="911,1097,935,1113">t.</essay:ocr-text>
+                <essay:ocr-text position="981,1063,1131,1114">IffiAl</essay:ocr-text>
+                <essay:ocr-text position="739,1296,884,1334">WITH</essay:ocr-text>
+                <essay:ocr-text position="916,1294,989,1332">AN</essay:ocr-text>
+                <essay:ocr-text position="657,1373,1074,1413">INTRODUCTION</essay:ocr-text>
+                <essay:ocr-text position="842,1470,903,1500">by</essay:ocr-text>
+                <essay:ocr-text position="375,1547,478,1595">SIR</essay:ocr-text>
+                <essay:ocr-text position="523,1545,835,1594">WILLIAM</essay:ocr-text>
+                <essay:ocr-text position="882,1545,947,1591">H.</essay:ocr-text>
+                <essay:ocr-text position="997,1540,1375,1590">BEVERIDGE</essay:ocr-text>
+                <essay:ocr-text position="614,1629,772,1671">K.C.B.,</essay:ocr-text>
+                <essay:ocr-text position="813,1628,955,1668">LL.D.,</essay:ocr-text>
+                <essay:ocr-text position="997,1626,1135,1656">B.C.L.</essay:ocr-text>
+                <essay:ocr-text position="525,1692,684,1716">DIRECTOR,</essay:ocr-text>
+                <essay:ocr-text position="703,1691,824,1710">LONDON</essay:ocr-text>
+                <essay:ocr-text position="843,1690,955,1710">SCHOOL</essay:ocr-text>
+                <essay:ocr-text position="973,1690,1009,1708">OF</essay:ocr-text>
+                <essay:ocr-text position="1027,1688,1211,1712">ECONOMICS;</essay:ocr-text>
+                <essay:ocr-text position="256,1728,419,1752">CHAIRMAN,</essay:ocr-text>
+                <essay:ocr-text position="439,1727,556,1746">BRITISH</essay:ocr-text>
+                <essay:ocr-text position="575,1726,810,1746">CO-ORDINATING</essay:ocr-text>
+                <essay:ocr-text position="828,1725,998,1745">COMMITTEE</essay:ocr-text>
+                <essay:ocr-text position="1017,1724,1072,1743">FOR</essay:ocr-text>
+                <essay:ocr-text position="1091,1723,1332,1742">INTERNATIONAL</essay:ocr-text>
+                <essay:ocr-text position="1351,1722,1475,1741">STUDIES</essay:ocr-text>
+                <essay:ocr-text position="466,2410,677,2452">Published</essay:ocr-text>
+                <essay:ocr-text position="696,2409,818,2450">under</essay:ocr-text>
+                <essay:ocr-text position="840,2409,903,2450">the</essay:ocr-text>
+                <essay:ocr-text position="913,2409,1024,2465">joint</essay:ocr-text>
+                <essay:ocr-text position="1045,2408,1219,2463">auspices</essay:ocr-text>
+                <essay:ocr-text position="1240,2407,1284,2462">of</essay:ocr-text>
+                <essay:ocr-text position="77,2511,194,2552">THE</essay:ocr-text>
+                <essay:ocr-text position="224,2510,414,2552">ROYAL</essay:ocr-text>
+                <essay:ocr-text position="444,2510,768,2552">INSTITUTE</essay:ocr-text>
+                <essay:ocr-text position="797,2509,871,2550">OF</essay:ocr-text>
+                <essay:ocr-text position="901,2506,1392,2550">INTERNATIONAL</essay:ocr-text>
+                <essay:ocr-text position="1421,2506,1658,2548">AFFAIRS</essay:ocr-text>
+                <essay:ocr-text position="791,2591,870,2632">and</essay:ocr-text>
+                <essay:ocr-text position="891,2592,953,2632">the</essay:ocr-text>
+                <essay:ocr-text position="81,2675,502,2716">INFORMATION</essay:ocr-text>
+                <essay:ocr-text position="532,2674,767,2717">SERVICE</essay:ocr-text>
+                <essay:ocr-text position="794,2674,876,2715">ON</essay:ocr-text>
+                <essay:ocr-text position="904,2672,1397,2715">INTERNATIONAL</essay:ocr-text>
+                <essay:ocr-text position="1422,2671,1658,2713">AFFAIRS</essay:ocr-text>
+                <essay:ocr-text position="81,2757,349,2793">CHATHAM</essay:ocr-text>
+                <essay:ocr-text position="376,2756,569,2800">HOUSE,</essay:ocr-text>
+                <essay:ocr-text position="602,2767,643,2791">10</essay:ocr-text>
+                <essay:ocr-text position="671,2756,741,2792">ST.</essay:ocr-text>
+                <essay:ocr-text position="763,2755,971,2802">JAMES&apos;S</essay:ocr-text>
+                <essay:ocr-text position="999,2755,1225,2801">SQUARE,</essay:ocr-text>
+                <essay:ocr-text position="1255,2753,1493,2797">LONDON,</essay:ocr-text>
+                <essay:ocr-text position="1522,2752,1617,2789">S.W.</essay:ocr-text>
+                <essay:ocr-text position="1644,2763,1656,2787">i</essay:ocr-text>
+                <essay:ocr-text position="818,2840,925,2883">1929</essay:ocr-text>
+                <essay:ocr-text position="705,2952,835,2992">Price</essay:ocr-text>
+                <essay:ocr-text position="868,2952,933,2992">Is.</essay:ocr-text>
+                <essay:ocr-text position="964,2952,1038,2991">6d.</essay:ocr-text>
+              </essay:p>
+            </essay:div>
+          </essay:div>
+        </essay:div>
+      </essay:div>
+    </gift-doc:body>
+  </gift-doc:document>
+</gold:document-instance>
+<gold:document-instance>
+  <gift-doc:document>
+    <gift-doc:metadata>
+      <gift-doc:node-metadata>
+        <gift-doc:pagination-group>
+          <gift-doc:pagination>
+            <meta:ranges>
+              <meta:range>
+                <meta:begin-page>0004</meta:begin-page>
+              </meta:range>
+            </meta:ranges>
+            <meta:total-pages>10</meta:total-pages>
+          </gift-doc:pagination>
+        </gift-doc:pagination-group>
+      </gift-doc:node-metadata>
+      <gift-doc:document-metadata>
+        <meta:document-ids>
+          <meta:id type="Gale asset">
+            <meta:value>GIZLQE404204408</meta:value>
+          </meta:id>
+        </meta:document-ids>
+        <meta:bibliographic-ids>
+          <meta:id type="PSM">
+            <meta:value>cho_iaxx_1926_0005_000_0000</meta:value>
+          </meta:id>
+        </meta:bibliographic-ids>
+        <meta:mcode>6GPP</meta:mcode>
+        <meta:record-admin-info>
+          <meta:standard-date type="Original">201212002</meta:standard-date>
+        </meta:record-admin-info>
+        <meta:publication-title>World Today Chatham House Review</meta:publication-title>
+        <meta:publication-subtitle>Subtitle</meta:publication-subtitle>
+        <meta:descriptive-indexing>
+          <meta:indexing-term>
+            <meta:term>
+              <meta:term-type>CONT_TYPE</meta:term-type>
+              <meta:term-source>Atlas</meta:term-source>
+              <meta:term-id>21901547</meta:term-id>
+              <meta:term-value>DVI-Periodical</meta:term-value>
+            </meta:term>
+          </meta:indexing-term>
+          <meta:indexing-term>
+            <meta:term>
+              <meta:term-type>FUNC_TYPE</meta:term-type>
+              <meta:term-source>Atlas</meta:term-source>
+              <meta:term-id>21787857</meta:term-id>
+              <meta:term-value>Issue-volume page record</meta:term-value>
+            </meta:term>
+          </meta:indexing-term>
+        </meta:descriptive-indexing>
+        <meta:folio>
+          <meta:start-number>iii</meta:start-number>
+        </meta:folio>
+      </gift-doc:document-metadata>
+    </gift-doc:metadata>
+    <gift-doc:body>
+      <essay:div document-segment-type="Body text" term-id="14214508" term-source="Atlas">
+        <essay:div document-segment-type="Page" term-id="21922233" term-source="Atlas">
+          <essay:complex-meta>
+            <meta:page-id-number>0004</meta:page-id-number>
+            <meta:folio>
+              <meta:start-number>iii</meta:start-number>
+            </meta:folio>
+          </essay:complex-meta>
+          <essay:div document-segment-type="DVI article" term-id="21918442" term-source="Atlas">
+            <shared:media>
+              <media:image data-type="jpeg" width="1972" height="3431" image-type="page view" layout="single" color-mode="color" folio="iii" sequence="0004">
+                <vault-link:vault-link>
+                  <vault-link:link-type>external</vault-link:link-type>
+                  <vault-link:action>point</vault-link:action>
+                  <vault-link:where>
+                    <vault-link:path>cho_iaxx_1926_0005_000_0004</vault-link:path>
+                  </vault-link:where>
+                </vault-link:vault-link>
+              </media:image>
+            </shared:media>
+            <vault-link:vault-link>
+              <vault-link:link-type>external</vault-link:link-type>
+              <vault-link:link-category term-id="21902640" term-source="Atlas">DVI article</vault-link:link-category>
+              <vault-link:data-type>text/xml</vault-link:data-type>
+              <vault-link:action>point</vault-link:action>
+              <vault-link:where>
+                <vault-link:path>//gift-doc:document-metadata/meta:document-ids/meta:id[@type="Gale asset"]/meta:value[.="LCIXYA655709257"]</vault-link:path>
+              </vault-link:where>
+              <vault-link:select>
+                <vault-link:document-nodes>
+                  <vault-link:target>ancestor::gift-doc:document</vault-link:target>
+                </vault-link:document-nodes>
+              </vault-link:select>
+              <vault-link:display-link>&quot;Introduction&quot;</vault-link:display-link>
+            </vault-link:vault-link>
+            <essay:div document-segment-type="Body text" term-id="14214508" term-source="Atlas">
+              <essay:p>nations. The study of international relations is a subject above all others in which constant contact between the various institutions concerned with it is essential. At the London Conference such contact was begun by the presence round a table of their repre&#172; sentatives : agreements were arrived at for carrying it on, and finally it was decided that, in order to ensure its continuity, each country should form a National Committee to act as liaison between its own institutions and those</essay:p>
+            </essay:div>
+            <essay:div document-segment-type="OCR text" term-id="21905043" term-source="Atlas">
+              <essay:p>
+                <essay:ocr-text position="1413,1507,1589,1547">nations.</essay:ocr-text>
+                <essay:ocr-text position="82,1561,170,1601">The</essay:ocr-text>
+                <essay:ocr-text position="192,1563,322,1614">study</essay:ocr-text>
+                <essay:ocr-text position="342,1563,386,1601">of</essay:ocr-text>
+                <essay:ocr-text position="405,1562,703,1602">international</essay:ocr-text>
+                <essay:ocr-text position="723,1562,920,1601">relations</essay:ocr-text>
+                <essay:ocr-text position="940,1562,975,1601">is</essay:ocr-text>
+                <essay:ocr-text position="997,1575,1021,1601">a</essay:ocr-text>
+                <essay:ocr-text position="1043,1562,1204,1614">subject</essay:ocr-text>
+                <essay:ocr-text position="1226,1562,1358,1601">above</essay:ocr-text>
+                <essay:ocr-text position="1380,1561,1435,1600">all</essay:ocr-text>
+                <essay:ocr-text position="1455,1562,1592,1601">others</essay:ocr-text>
+                <essay:ocr-text position="82,1614,125,1654">in</essay:ocr-text>
+                <essay:ocr-text position="164,1615,299,1655">which</essay:ocr-text>
+                <essay:ocr-text position="341,1620,535,1655">constant</essay:ocr-text>
+                <essay:ocr-text position="578,1620,747,1655">contact</essay:ocr-text>
+                <essay:ocr-text position="790,1616,975,1656">between</essay:ocr-text>
+                <essay:ocr-text position="1016,1616,1088,1655">the</essay:ocr-text>
+                <essay:ocr-text position="1129,1616,1295,1655">various</essay:ocr-text>
+                <essay:ocr-text position="1335,1615,1593,1655">institutions</essay:ocr-text>
+                <essay:ocr-text position="82,1669,310,1709">concerned</essay:ocr-text>
+                <essay:ocr-text position="332,1669,435,1709">with</essay:ocr-text>
+                <essay:ocr-text position="460,1670,492,1709">it</essay:ocr-text>
+                <essay:ocr-text position="518,1669,552,1708">is</essay:ocr-text>
+                <essay:ocr-text position="578,1669,784,1709">essential.</essay:ocr-text>
+                <essay:ocr-text position="841,1669,897,1709">At</essay:ocr-text>
+                <essay:ocr-text position="924,1670,996,1709">the</essay:ocr-text>
+                <essay:ocr-text position="1021,1669,1195,1708">London</essay:ocr-text>
+                <essay:ocr-text position="1221,1669,1467,1709">Conference</essay:ocr-text>
+                <essay:ocr-text position="1491,1669,1592,1708">such</essay:ocr-text>
+                <essay:ocr-text position="82,1728,250,1763">contact</essay:ocr-text>
+                <essay:ocr-text position="271,1736,357,1763">was</essay:ocr-text>
+                <essay:ocr-text position="378,1725,515,1775">begun</essay:ocr-text>
+                <essay:ocr-text position="537,1724,595,1775">by</essay:ocr-text>
+                <essay:ocr-text position="617,1723,689,1763">the</essay:ocr-text>
+                <essay:ocr-text position="711,1736,904,1774">presence</essay:ocr-text>
+                <essay:ocr-text position="926,1723,1061,1763">round</essay:ocr-text>
+                <essay:ocr-text position="1084,1736,1108,1762">a</essay:ocr-text>
+                <essay:ocr-text position="1130,1723,1244,1763">table</essay:ocr-text>
+                <essay:ocr-text position="1266,1723,1309,1762">of</essay:ocr-text>
+                <essay:ocr-text position="1331,1723,1438,1762">their</essay:ocr-text>
+                <essay:ocr-text position="1460,1736,1592,1774">repre&#172;</essay:ocr-text>
+                <essay:ocr-text position="84,1777,311,1817">sentatives</essay:ocr-text>
+                <essay:ocr-text position="329,1790,336,1817">:</essay:ocr-text>
+                <essay:ocr-text position="379,1782,636,1829">agreements</essay:ocr-text>
+                <essay:ocr-text position="660,1790,766,1817">were</essay:ocr-text>
+                <essay:ocr-text position="793,1777,957,1817">arrived</essay:ocr-text>
+                <essay:ocr-text position="982,1781,1025,1817">at</essay:ocr-text>
+                <essay:ocr-text position="1052,1777,1116,1816">for</essay:ocr-text>
+                <essay:ocr-text position="1141,1776,1331,1828">carrying</essay:ocr-text>
+                <essay:ocr-text position="1356,1777,1389,1816">it</essay:ocr-text>
+                <essay:ocr-text position="1416,1789,1481,1824">on,</essay:ocr-text>
+                <essay:ocr-text position="1510,1777,1593,1816">and</essay:ocr-text>
+                <essay:ocr-text position="82,1831,225,1883">finally</essay:ocr-text>
+                <essay:ocr-text position="245,1831,276,1870">it</essay:ocr-text>
+                <essay:ocr-text position="297,1844,382,1870">was</essay:ocr-text>
+                <essay:ocr-text position="403,1831,574,1870">decided</essay:ocr-text>
+                <essay:ocr-text position="595,1831,701,1877">that,</essay:ocr-text>
+                <essay:ocr-text position="720,1831,763,1869">in</essay:ocr-text>
+                <essay:ocr-text position="784,1831,903,1870">order</essay:ocr-text>
+                <essay:ocr-text position="923,1836,968,1870">to</essay:ocr-text>
+                <essay:ocr-text position="988,1844,1134,1870">ensure</essay:ocr-text>
+                <essay:ocr-text position="1154,1831,1208,1870">its</essay:ocr-text>
+                <essay:ocr-text position="1228,1830,1477,1882">continuity,</essay:ocr-text>
+                <essay:ocr-text position="1492,1831,1592,1870">each</essay:ocr-text>
+                <essay:ocr-text position="82,1890,260,1937">country</essay:ocr-text>
+                <essay:ocr-text position="295,1884,443,1924">should</essay:ocr-text>
+                <essay:ocr-text position="470,1885,577,1924">form</essay:ocr-text>
+                <essay:ocr-text position="613,1898,639,1924">a</essay:ocr-text>
+                <essay:ocr-text position="672,1885,872,1924">National</essay:ocr-text>
+                <essay:ocr-text position="900,1885,1148,1924">Committee</essay:ocr-text>
+                <essay:ocr-text position="1183,1890,1227,1924">to</essay:ocr-text>
+                <essay:ocr-text position="1264,1889,1332,1924">act</essay:ocr-text>
+                <essay:ocr-text position="1368,1897,1414,1924">as</essay:ocr-text>
+                <essay:ocr-text position="1448,1884,1593,1924">liaison</essay:ocr-text>
+                <essay:ocr-text position="84,1939,270,1978">between</essay:ocr-text>
+                <essay:ocr-text position="289,1939,344,1978">its</essay:ocr-text>
+                <essay:ocr-text position="363,1952,456,1978">own</essay:ocr-text>
+                <essay:ocr-text position="475,1938,737,1978">institutions</essay:ocr-text>
+                <essay:ocr-text position="757,1939,841,1978">and</essay:ocr-text>
+                <essay:ocr-text position="860,1939,979,1978">those</essay:ocr-text>
+              </essay:p>
+            </essay:div>
+          </essay:div>
+        </essay:div>
+      </essay:div>
+    </gift-doc:body>
+  </gift-doc:document>
+</gold:document-instance>
+<gold:document-instance>
+  <gift-doc:document>
+    <gift-doc:metadata>
+      <gift-doc:node-metadata>
+        <gift-doc:pagination-group>
+          <gift-doc:pagination>
+            <meta:ranges>
+              <meta:range>
+                <meta:begin-page>0005</meta:begin-page>
+              </meta:range>
+            </meta:ranges>
+            <meta:total-pages>10</meta:total-pages>
+          </gift-doc:pagination>
+        </gift-doc:pagination-group>
+      </gift-doc:node-metadata>
+      <gift-doc:document-metadata>
+        <meta:document-ids>
+          <meta:id type="Gale asset">
+            <meta:value>XBAOXE899973868</meta:value>
+          </meta:id>
+        </meta:document-ids>
+        <meta:bibliographic-ids>
+          <meta:id type="PSM">
+            <meta:value>cho_iaxx_1926_0005_000_0000</meta:value>
+          </meta:id>
+        </meta:bibliographic-ids>
+        <meta:mcode>6GPP</meta:mcode>
+        <meta:record-admin-info>
+          <meta:standard-date type="Original">201212002</meta:standard-date>
+        </meta:record-admin-info>
+        <meta:publication-title>World Today Chatham House Review</meta:publication-title>
+        <meta:publication-subtitle>Subtitle</meta:publication-subtitle>
+        <meta:descriptive-indexing>
+          <meta:indexing-term>
+            <meta:term>
+              <meta:term-type>CONT_TYPE</meta:term-type>
+              <meta:term-source>Atlas</meta:term-source>
+              <meta:term-id>21901547</meta:term-id>
+              <meta:term-value>DVI-Periodical</meta:term-value>
+            </meta:term>
+          </meta:indexing-term>
+          <meta:indexing-term>
+            <meta:term>
+              <meta:term-type>FUNC_TYPE</meta:term-type>
+              <meta:term-source>Atlas</meta:term-source>
+              <meta:term-id>21787857</meta:term-id>
+              <meta:term-value>Issue-volume page record</meta:term-value>
+            </meta:term>
+          </meta:indexing-term>
+        </meta:descriptive-indexing>
+        <meta:folio>
+          <meta:start-number>iv</meta:start-number>
+        </meta:folio>
+      </gift-doc:document-metadata>
+    </gift-doc:metadata>
+    <gift-doc:body>
+      <essay:div document-segment-type="Body text" term-id="14214508" term-source="Atlas">
+        <essay:div document-segment-type="Page" term-id="21922233" term-source="Atlas">
+          <essay:complex-meta>
+            <meta:page-id-number>0005</meta:page-id-number>
+            <meta:folio>
+              <meta:start-number>iv</meta:start-number>
+            </meta:folio>
+          </essay:complex-meta>
+          <essay:div document-segment-type="DVI article" term-id="21918442" term-source="Atlas">
+            <shared:media>
+              <media:image data-type="jpeg" width="2075" height="3481" image-type="page view" layout="single" color-mode="color" folio="iv" sequence="0005">
+                <vault-link:vault-link>
+                  <vault-link:link-type>external</vault-link:link-type>
+                  <vault-link:action>point</vault-link:action>
+                  <vault-link:where>
+                    <vault-link:path>cho_iaxx_1926_0005_000_0005</vault-link:path>
+                  </vault-link:where>
+                </vault-link:vault-link>
+              </media:image>
+            </shared:media>
+            <vault-link:vault-link>
+              <vault-link:link-type>external</vault-link:link-type>
+              <vault-link:link-category term-id="21902640" term-source="Atlas">DVI article</vault-link:link-category>
+              <vault-link:data-type>text/xml</vault-link:data-type>
+              <vault-link:action>point</vault-link:action>
+              <vault-link:where>
+                <vault-link:path>//gift-doc:document-metadata/meta:document-ids/meta:id[@type="Gale asset"]/meta:value[.="LCIXYA655709257"]</vault-link:path>
+              </vault-link:where>
+              <vault-link:select>
+                <vault-link:document-nodes>
+                  <vault-link:target>ancestor::gift-doc:document</vault-link:target>
+                </vault-link:document-nodes>
+              </vault-link:select>
+              <vault-link:display-link>&quot;Introduction&quot;</vault-link:display-link>
+            </vault-link:vault-link>
+            <essay:div document-segment-type="Body text" term-id="14214508" term-source="Atlas">
+              <essay:p>may not know where to turn for their materials. The work of the Royal Institute and the Information Service in compiling this very complete record deserves the gratitude of all who are interested in the furtherance of International Studies. W. H. Beveridge, Chairman, British Co-ordinating Committee for International Studies. October 1929.</essay:p>
+            </essay:div>
+            <essay:div document-segment-type="OCR text" term-id="21905043" term-source="Atlas">
+              <essay:p>
+                <essay:ocr-text position="408,405,511,445">may</essay:ocr-text>
+                <essay:ocr-text position="536,397,613,433">not</essay:ocr-text>
+                <essay:ocr-text position="640,392,766,433">know</essay:ocr-text>
+                <essay:ocr-text position="790,392,930,433">where</essay:ocr-text>
+                <essay:ocr-text position="956,397,1003,433">to</essay:ocr-text>
+                <essay:ocr-text position="1030,397,1131,433">turn</essay:ocr-text>
+                <essay:ocr-text position="1158,392,1224,433">for</essay:ocr-text>
+                <essay:ocr-text position="1249,391,1362,433">their</essay:ocr-text>
+                <essay:ocr-text position="1386,391,1618,433">materials.</essay:ocr-text>
+                <essay:ocr-text position="1676,392,1766,433">The</essay:ocr-text>
+                <essay:ocr-text position="1790,393,1910,433">work</essay:ocr-text>
+                <essay:ocr-text position="1938,393,1984,433">of</essay:ocr-text>
+                <essay:ocr-text position="410,447,484,487">the</essay:ocr-text>
+                <essay:ocr-text position="517,448,658,498">Royal</essay:ocr-text>
+                <essay:ocr-text position="691,448,897,488">Institute</essay:ocr-text>
+                <essay:ocr-text position="929,448,1017,488">and</essay:ocr-text>
+                <essay:ocr-text position="1048,448,1122,488">the</essay:ocr-text>
+                <essay:ocr-text position="1154,447,1442,487">Information</essay:ocr-text>
+                <essay:ocr-text position="1475,447,1643,487">Service</essay:ocr-text>
+                <essay:ocr-text position="1675,447,1718,487">in</essay:ocr-text>
+                <essay:ocr-text position="1750,447,1983,500">compiling</essay:ocr-text>
+                <essay:ocr-text position="412,501,499,542">this</essay:ocr-text>
+                <essay:ocr-text position="527,515,633,555">very</essay:ocr-text>
+                <essay:ocr-text position="662,502,874,554">complete</essay:ocr-text>
+                <essay:ocr-text position="903,503,1052,542">record</essay:ocr-text>
+                <essay:ocr-text position="1076,503,1274,543">deserves</essay:ocr-text>
+                <essay:ocr-text position="1298,502,1374,542">the</essay:ocr-text>
+                <essay:ocr-text position="1397,501,1615,554">gratitude</essay:ocr-text>
+                <essay:ocr-text position="1639,502,1684,542">of</essay:ocr-text>
+                <essay:ocr-text position="1707,501,1764,542">all</essay:ocr-text>
+                <essay:ocr-text position="1786,502,1882,542">who</essay:ocr-text>
+                <essay:ocr-text position="1908,515,1981,542">are</essay:ocr-text>
+                <essay:ocr-text position="410,556,642,597">interested</essay:ocr-text>
+                <essay:ocr-text position="665,556,709,597">in</essay:ocr-text>
+                <essay:ocr-text position="731,557,805,597">the</essay:ocr-text>
+                <essay:ocr-text position="827,557,1099,597">furtherance</essay:ocr-text>
+                <essay:ocr-text position="1122,557,1167,598">of</essay:ocr-text>
+                <essay:ocr-text position="1190,556,1508,597">International</essay:ocr-text>
+                <essay:ocr-text position="1529,556,1713,598">Studies.</essay:ocr-text>
+                <essay:ocr-text position="1310,662,1378,702">W.</essay:ocr-text>
+                <essay:ocr-text position="1411,661,1468,700">H.</essay:ocr-text>
+                <essay:ocr-text position="1502,661,1783,710">Beveridge,</essay:ocr-text>
+                <essay:ocr-text position="1427,715,1669,763">Chairman,</essay:ocr-text>
+                <essay:ocr-text position="1099,771,1264,811">British</essay:ocr-text>
+                <essay:ocr-text position="1286,770,1614,823">Co-ordinating</essay:ocr-text>
+                <essay:ocr-text position="1632,770,1889,812">Committee</essay:ocr-text>
+                <essay:ocr-text position="1911,771,1979,811">for</essay:ocr-text>
+                <essay:ocr-text position="1279,825,1595,865">International</essay:ocr-text>
+                <essay:ocr-text position="1616,825,1797,866">Studies.</essay:ocr-text>
+                <essay:ocr-text position="458,881,622,922">October</essay:ocr-text>
+                <essay:ocr-text position="654,892,769,935">1929.</essay:ocr-text>
+              </essay:p>
+            </essay:div>
+          </essay:div>
+        </essay:div>
+      </essay:div>
+    </gift-doc:body>
+  </gift-doc:document>
+</gold:document-instance>
+<gold:document-instance>
+  <gift-doc:document>
+    <gift-doc:metadata>
+      <gift-doc:node-metadata>
+        <gift-doc:pagination-group>
+          <gift-doc:pagination>
+            <meta:ranges>
+              <meta:range>
+                <meta:begin-page>0006</meta:begin-page>
+              </meta:range>
+            </meta:ranges>
+            <meta:total-pages>10</meta:total-pages>
+          </gift-doc:pagination>
+        </gift-doc:pagination-group>
+      </gift-doc:node-metadata>
+      <gift-doc:document-metadata>
+        <meta:document-ids>
+          <meta:id type="Gale asset">
+            <meta:value>TTXPJW422660300</meta:value>
+          </meta:id>
+        </meta:document-ids>
+        <meta:bibliographic-ids>
+          <meta:id type="PSM">
+            <meta:value>cho_iaxx_1926_0005_000_0000</meta:value>
+          </meta:id>
+        </meta:bibliographic-ids>
+        <meta:mcode>6GPP</meta:mcode>
+        <meta:record-admin-info>
+          <meta:standard-date type="Original">201212002</meta:standard-date>
+        </meta:record-admin-info>
+        <meta:publication-title>World Today Chatham House Review</meta:publication-title>
+        <meta:publication-subtitle>Subtitle</meta:publication-subtitle>
+        <meta:descriptive-indexing>
+          <meta:indexing-term>
+            <meta:term>
+              <meta:term-type>CONT_TYPE</meta:term-type>
+              <meta:term-source>Atlas</meta:term-source>
+              <meta:term-id>21901547</meta:term-id>
+              <meta:term-value>DVI-Periodical</meta:term-value>
+            </meta:term>
+          </meta:indexing-term>
+          <meta:indexing-term>
+            <meta:term>
+              <meta:term-type>FUNC_TYPE</meta:term-type>
+              <meta:term-source>Atlas</meta:term-source>
+              <meta:term-id>21787857</meta:term-id>
+              <meta:term-value>Issue-volume page record</meta:term-value>
+            </meta:term>
+          </meta:indexing-term>
+        </meta:descriptive-indexing>
+        <meta:folio>
+          <meta:start-number>v</meta:start-number>
+        </meta:folio>
+      </gift-doc:document-metadata>
+    </gift-doc:metadata>
+    <gift-doc:body>
+      <essay:div document-segment-type="Body text" term-id="14214508" term-source="Atlas">
+        <essay:div document-segment-type="Page" term-id="21922233" term-source="Atlas">
+          <essay:complex-meta>
+            <meta:page-id-number>0006</meta:page-id-number>
+            <meta:folio>
+              <meta:start-number>v</meta:start-number>
+            </meta:folio>
+          </essay:complex-meta>
+          <essay:div document-segment-type="DVI article" term-id="21918442" term-source="Atlas">
+            <shared:media>
+              <media:image data-type="jpeg" width="1980" height="3430" image-type="page view" layout="single" color-mode="color" folio="v" sequence="0006">
+                <vault-link:vault-link>
+                  <vault-link:link-type>external</vault-link:link-type>
+                  <vault-link:action>point</vault-link:action>
+                  <vault-link:where>
+                    <vault-link:path>cho_iaxx_1926_0005_000_0006</vault-link:path>
+                  </vault-link:where>
+                </vault-link:vault-link>
+              </media:image>
+            </shared:media>
+            <vault-link:vault-link>
+              <vault-link:link-type>external</vault-link:link-type>
+              <vault-link:link-category term-id="21902640" term-source="Atlas">DVI article</vault-link:link-category>
+              <vault-link:data-type>text/xml</vault-link:data-type>
+              <vault-link:action>point</vault-link:action>
+              <vault-link:where>
+                <vault-link:path>//gift-doc:document-metadata/meta:document-ids/meta:id[@type="Gale asset"]/meta:value[.="WLZVVA358513772"]</vault-link:path>
+              </vault-link:where>
+              <vault-link:select>
+                <vault-link:document-nodes>
+                  <vault-link:target>ancestor::gift-doc:document</vault-link:target>
+                </vault-link:document-nodes>
+              </vault-link:select>
+              <vault-link:display-link>Preface&#x2014;1</vault-link:display-link>
+            </vault-link:vault-link>
+            <essay:div document-segment-type="Body text" term-id="14214508" term-source="Atlas">
+              <essay:p>PREFACE The present directory aims at presenting, in what it is hoped will prove a convenient form for reference, a directory of the societies and organizations in Great Britain which are concerned with international affairs, either as a primary or subsidiary object of study, or with the relations between Great Britain and other countries. ..... For the purposes of this directory, which is intended for general reference, it has been considered unnecessary to dis&#172; tinguish between societies which study international affairs from a detached scientific point of view and those which do not. A distinction, however, has been made under the heading &quot;The Study of International Affairs in General&quot; between academic and non-academic bodies. In order to avoid too many sub-sections</essay:p>
+            </essay:div>
+            <essay:div document-segment-type="OCR text" term-id="21905043" term-source="Atlas">
+              <essay:p>
+                <essay:ocr-text position="663,733,1001,789">PREFACE</essay:ocr-text>
+                <essay:ocr-text position="122,871,217,910">The</essay:ocr-text>
+                <essay:ocr-text position="243,871,414,921">present</essay:ocr-text>
+                <essay:ocr-text position="440,864,655,914">directory</essay:ocr-text>
+                <essay:ocr-text position="675,860,778,901">aims</essay:ocr-text>
+                <essay:ocr-text position="799,863,842,898">at</essay:ocr-text>
+                <essay:ocr-text position="867,854,1120,909">presenting,</essay:ocr-text>
+                <essay:ocr-text position="1143,852,1186,892">in</essay:ocr-text>
+                <essay:ocr-text position="1205,851,1321,891">what</essay:ocr-text>
+                <essay:ocr-text position="1342,854,1375,889">it</essay:ocr-text>
+                <essay:ocr-text position="1397,862,1431,889">is</essay:ocr-text>
+                <essay:ocr-text position="1450,847,1590,899">hoped</essay:ocr-text>
+                <essay:ocr-text position="69,925,153,966">will</essay:ocr-text>
+                <essay:ocr-text position="180,936,310,974">prove</essay:ocr-text>
+                <essay:ocr-text position="340,935,365,961">a</essay:ocr-text>
+                <essay:ocr-text position="394,918,645,960">convenient</essay:ocr-text>
+                <essay:ocr-text position="674,916,780,955">form</essay:ocr-text>
+                <essay:ocr-text position="809,913,873,952">for</essay:ocr-text>
+                <essay:ocr-text position="901,911,1121,955">reference,</essay:ocr-text>
+                <essay:ocr-text position="1153,920,1179,946">a</essay:ocr-text>
+                <essay:ocr-text position="1207,906,1418,955">directory</essay:ocr-text>
+                <essay:ocr-text position="1446,903,1489,942">of</essay:ocr-text>
+                <essay:ocr-text position="1518,902,1590,942">the</essay:ocr-text>
+                <essay:ocr-text position="71,979,261,1019">societies</essay:ocr-text>
+                <essay:ocr-text position="281,975,368,1017">and</essay:ocr-text>
+                <essay:ocr-text position="387,971,695,1026">organizations</essay:ocr-text>
+                <essay:ocr-text position="715,969,758,1008">in</essay:ocr-text>
+                <essay:ocr-text position="778,968,905,1007">Great</essay:ocr-text>
+                <essay:ocr-text position="927,963,1092,1005">Britain</essay:ocr-text>
+                <essay:ocr-text position="1111,960,1250,1002">which</essay:ocr-text>
+                <essay:ocr-text position="1270,971,1341,999">are</essay:ocr-text>
+                <essay:ocr-text position="1361,956,1592,997">concerned</essay:ocr-text>
+                <essay:ocr-text position="69,1033,174,1073">with</essay:ocr-text>
+                <essay:ocr-text position="208,1027,512,1071">international</essay:ocr-text>
+                <essay:ocr-text position="548,1025,699,1070">affairs,</essay:ocr-text>
+                <essay:ocr-text position="738,1021,870,1062">either</essay:ocr-text>
+                <essay:ocr-text position="906,1032,952,1059">as</essay:ocr-text>
+                <essay:ocr-text position="989,1030,1014,1057">a</essay:ocr-text>
+                <essay:ocr-text position="1049,1016,1237,1068">primary</essay:ocr-text>
+                <essay:ocr-text position="1273,1026,1320,1052">or</essay:ocr-text>
+                <essay:ocr-text position="1356,1012,1592,1062">subsidiary</essay:ocr-text>
+                <essay:ocr-text position="73,1087,214,1139">object</essay:ocr-text>
+                <essay:ocr-text position="247,1085,291,1125">of</essay:ocr-text>
+                <essay:ocr-text position="323,1083,465,1134">study,</essay:ocr-text>
+                <essay:ocr-text position="500,1093,546,1120">or</essay:ocr-text>
+                <essay:ocr-text position="576,1078,679,1120">with</essay:ocr-text>
+                <essay:ocr-text position="709,1076,782,1116">the</essay:ocr-text>
+                <essay:ocr-text position="812,1073,1013,1115">relations</essay:ocr-text>
+                <essay:ocr-text position="1042,1072,1233,1111">between</essay:ocr-text>
+                <essay:ocr-text position="1265,1068,1394,1108">Great</essay:ocr-text>
+                <essay:ocr-text position="1426,1066,1591,1106">Britain</essay:ocr-text>
+                <essay:ocr-text position="74,1141,159,1181">and</essay:ocr-text>
+                <essay:ocr-text position="177,1140,300,1180">other</essay:ocr-text>
+                <essay:ocr-text position="318,1135,539,1178">countries.</essay:ocr-text>
+                <essay:ocr-text position="1089,1174,1304,1190">.....</essay:ocr-text>
+                <essay:ocr-text position="128,1195,210,1234">For</essay:ocr-text>
+                <essay:ocr-text position="244,1193,317,1233">the</essay:ocr-text>
+                <essay:ocr-text position="349,1200,550,1243">purposes</essay:ocr-text>
+                <essay:ocr-text position="584,1186,628,1226">of</essay:ocr-text>
+                <essay:ocr-text position="672,1184,758,1225">this</essay:ocr-text>
+                <essay:ocr-text position="791,1182,1016,1230">directory,</essay:ocr-text>
+                <essay:ocr-text position="1050,1177,1189,1219">which</essay:ocr-text>
+                <essay:ocr-text position="1225,1189,1261,1215">is</essay:ocr-text>
+                <essay:ocr-text position="1294,1176,1496,1214">intended</essay:ocr-text>
+                <essay:ocr-text position="1529,1176,1594,1211">for</essay:ocr-text>
+                <essay:ocr-text position="74,1247,240,1299">general</essay:ocr-text>
+                <essay:ocr-text position="274,1245,492,1290">reference,</essay:ocr-text>
+                <essay:ocr-text position="523,1242,557,1281">it</essay:ocr-text>
+                <essay:ocr-text position="593,1240,672,1280">has</essay:ocr-text>
+                <essay:ocr-text position="707,1239,814,1278">been</essay:ocr-text>
+                <essay:ocr-text position="851,1232,1095,1275">considered</essay:ocr-text>
+                <essay:ocr-text position="1125,1241,1407,1280">unnecessary</essay:ocr-text>
+                <essay:ocr-text position="1436,1232,1481,1267">to</essay:ocr-text>
+                <essay:ocr-text position="1511,1226,1594,1265">dis&#172;</essay:ocr-text>
+                <essay:ocr-text position="77,1300,263,1352">tinguish</essay:ocr-text>
+                <essay:ocr-text position="308,1299,498,1339">between</essay:ocr-text>
+                <essay:ocr-text position="533,1293,723,1336">societies</essay:ocr-text>
+                <essay:ocr-text position="757,1290,895,1331">which</essay:ocr-text>
+                <essay:ocr-text position="939,1287,1069,1339">study</essay:ocr-text>
+                <essay:ocr-text position="1108,1282,1411,1326">international</essay:ocr-text>
+                <essay:ocr-text position="1452,1282,1594,1320">affairs</essay:ocr-text>
+                <essay:ocr-text position="74,1357,182,1396">from</essay:ocr-text>
+                <essay:ocr-text position="211,1368,237,1394">a</essay:ocr-text>
+                <essay:ocr-text position="264,1351,470,1394">detached</essay:ocr-text>
+                <essay:ocr-text position="502,1347,704,1389">scientific</essay:ocr-text>
+                <essay:ocr-text position="735,1345,856,1397">point</essay:ocr-text>
+                <essay:ocr-text position="890,1343,933,1383">of</essay:ocr-text>
+                <essay:ocr-text position="964,1342,1071,1381">view</essay:ocr-text>
+                <essay:ocr-text position="1100,1339,1185,1380">and</essay:ocr-text>
+                <essay:ocr-text position="1218,1338,1339,1377">those</essay:ocr-text>
+                <essay:ocr-text position="1369,1335,1505,1376">which</essay:ocr-text>
+                <essay:ocr-text position="1538,1334,1591,1374">do</essay:ocr-text>
+                <essay:ocr-text position="75,1415,163,1450">not.</essay:ocr-text>
+                <essay:ocr-text position="220,1410,258,1448">A</essay:ocr-text>
+                <essay:ocr-text position="280,1405,538,1450">distinction,</essay:ocr-text>
+                <essay:ocr-text position="556,1403,764,1447">however,</essay:ocr-text>
+                <essay:ocr-text position="782,1399,862,1438">has</essay:ocr-text>
+                <essay:ocr-text position="886,1398,994,1437">been</essay:ocr-text>
+                <essay:ocr-text position="1014,1394,1140,1434">made</essay:ocr-text>
+                <essay:ocr-text position="1160,1392,1294,1432">under</essay:ocr-text>
+                <essay:ocr-text position="1316,1390,1390,1430">the</essay:ocr-text>
+                <essay:ocr-text position="1413,1388,1592,1440">heading</essay:ocr-text>
+                <essay:ocr-text position="78,1464,210,1503">&quot;The</essay:ocr-text>
+                <essay:ocr-text position="247,1461,385,1512">Study</essay:ocr-text>
+                <essay:ocr-text position="422,1459,465,1499">of</essay:ocr-text>
+                <essay:ocr-text position="509,1453,821,1497">International</essay:ocr-text>
+                <essay:ocr-text position="859,1451,1014,1491">Affairs</essay:ocr-text>
+                <essay:ocr-text position="1058,1449,1101,1488">in</essay:ocr-text>
+                <essay:ocr-text position="1145,1444,1362,1487">General&quot;</essay:ocr-text>
+                <essay:ocr-text position="1406,1444,1593,1483">between</essay:ocr-text>
+                <essay:ocr-text position="79,1516,293,1558">academic</essay:ocr-text>
+                <essay:ocr-text position="310,1514,394,1554">and</essay:ocr-text>
+                <essay:ocr-text position="408,1508,727,1553">non-academic</essay:ocr-text>
+                <essay:ocr-text position="742,1506,900,1547">bodies.</essay:ocr-text>
+                <essay:ocr-text position="957,1505,1008,1544">In</essay:ocr-text>
+                <essay:ocr-text position="1026,1502,1148,1543">order</essay:ocr-text>
+                <essay:ocr-text position="1165,1505,1211,1541">to</essay:ocr-text>
+                <essay:ocr-text position="1232,1498,1356,1540">avoid</essay:ocr-text>
+                <essay:ocr-text position="1375,1502,1445,1537">too</essay:ocr-text>
+                <essay:ocr-text position="1463,1509,1592,1548">many</essay:ocr-text>
+                <essay:ocr-text position="78,1570,359,1612">sub-sections</essay:ocr-text>
+              </essay:p>
+            </essay:div>
+          </essay:div>
+        </essay:div>
+      </essay:div>
+    </gift-doc:body>
+  </gift-doc:document>
+</gold:document-instance>
+<gold:document-instance>
+  <gift-doc:document>
+    <gift-doc:metadata>
+      <gift-doc:node-metadata>
+        <gift-doc:pagination-group>
+          <gift-doc:pagination>
+            <meta:ranges>
+              <meta:range>
+                <meta:begin-page>0007</meta:begin-page>
+              </meta:range>
+            </meta:ranges>
+            <meta:total-pages>10</meta:total-pages>
+          </gift-doc:pagination>
+        </gift-doc:pagination-group>
+      </gift-doc:node-metadata>
+      <gift-doc:document-metadata>
+        <meta:document-ids>
+          <meta:id type="Gale asset">
+            <meta:value>TRDNYO100179101</meta:value>
+          </meta:id>
+        </meta:document-ids>
+        <meta:bibliographic-ids>
+          <meta:id type="PSM">
+            <meta:value>cho_iaxx_1926_0005_000_0000</meta:value>
+          </meta:id>
+        </meta:bibliographic-ids>
+        <meta:mcode>6GPP</meta:mcode>
+        <meta:record-admin-info>
+          <meta:standard-date type="Original">201212002</meta:standard-date>
+        </meta:record-admin-info>
+        <meta:publication-title>World Today Chatham House Review</meta:publication-title>
+        <meta:publication-subtitle>Subtitle</meta:publication-subtitle>
+        <meta:descriptive-indexing>
+          <meta:indexing-term>
+            <meta:term>
+              <meta:term-type>CONT_TYPE</meta:term-type>
+              <meta:term-source>Atlas</meta:term-source>
+              <meta:term-id>21901547</meta:term-id>
+              <meta:term-value>DVI-Periodical</meta:term-value>
+            </meta:term>
+          </meta:indexing-term>
+          <meta:indexing-term>
+            <meta:term>
+              <meta:term-type>FUNC_TYPE</meta:term-type>
+              <meta:term-source>Atlas</meta:term-source>
+              <meta:term-id>21787857</meta:term-id>
+              <meta:term-value>Issue-volume page record</meta:term-value>
+            </meta:term>
+          </meta:indexing-term>
+        </meta:descriptive-indexing>
+        <meta:folio>
+          <meta:start-number>vii</meta:start-number>
+        </meta:folio>
+      </gift-doc:document-metadata>
+    </gift-doc:metadata>
+    <gift-doc:body>
+      <essay:div document-segment-type="Body text" term-id="14214508" term-source="Atlas">
+        <essay:div document-segment-type="Page" term-id="21922233" term-source="Atlas">
+          <essay:complex-meta>
+            <meta:page-id-number>0007</meta:page-id-number>
+            <meta:folio>
+              <meta:start-number>vii</meta:start-number>
+            </meta:folio>
+          </essay:complex-meta>
+          <essay:div document-segment-type="DVI article" term-id="21918442" term-source="Atlas">
+            <shared:media>
+              <media:image data-type="jpeg" width="1997" height="3459" image-type="page view" layout="single" color-mode="color" folio="vii" sequence="0007">
+                <vault-link:vault-link>
+                  <vault-link:link-type>external</vault-link:link-type>
+                  <vault-link:action>point</vault-link:action>
+                  <vault-link:where>
+                    <vault-link:path>cho_iaxx_1926_0005_000_0007</vault-link:path>
+                  </vault-link:where>
+                </vault-link:vault-link>
+              </media:image>
+            </shared:media>
+            <vault-link:vault-link>
+              <vault-link:link-type>external</vault-link:link-type>
+              <vault-link:link-category term-id="21902640" term-source="Atlas">DVI article</vault-link:link-category>
+              <vault-link:data-type>text/xml</vault-link:data-type>
+              <vault-link:action>point</vault-link:action>
+              <vault-link:where>
+                <vault-link:path>//gift-doc:document-metadata/meta:document-ids/meta:id[@type="Gale asset"]/meta:value[.="POEDMA743542896"]</vault-link:path>
+              </vault-link:where>
+              <vault-link:select>
+                <vault-link:document-nodes>
+                  <vault-link:target>ancestor::gift-doc:document</vault-link:target>
+                </vault-link:document-nodes>
+              </vault-link:select>
+              <vault-link:display-link>Table of Contents,</vault-link:display-link>
+            </vault-link:vault-link>
+            <essay:div document-segment-type="Body text" term-id="14214508" term-source="Atlas">
+              <essay:p>TABLE OF CONTENTS PAGE Introduction........hi Preface ......... v Societies and Organizations in Great Britain . . 9 1. Official . ........ 9 League of Nations Office; International Labour Office.</essay:p>
+            </essay:div>
+            <essay:div document-segment-type="OCR text" term-id="21905043" term-source="Atlas">
+              <essay:p>
+                <essay:ocr-text position="431,497,679,549">TABLE</essay:ocr-text>
+                <essay:ocr-text position="736,497,831,549">OF</essay:ocr-text>
+                <essay:ocr-text position="886,496,1301,548">CONTENTS</essay:ocr-text>
+                <essay:ocr-text position="1546,595,1623,613">PAGE</essay:ocr-text>
+                <essay:ocr-text position="112,621,1624,663">Introduction........hi</essay:ocr-text>
+                <essay:ocr-text position="111,710,312,749">Preface</essay:ocr-text>
+                <essay:ocr-text position="406,738,1480,749">.........</essay:ocr-text>
+                <essay:ocr-text position="1596,720,1625,747">v</essay:ocr-text>
+                <essay:ocr-text position="109,797,338,837">Societies</essay:ocr-text>
+                <essay:ocr-text position="362,807,457,837">and</essay:ocr-text>
+                <essay:ocr-text position="483,796,841,836">Organizations</essay:ocr-text>
+                <essay:ocr-text position="866,806,912,835">in</essay:ocr-text>
+                <essay:ocr-text position="938,796,1092,836">Great</essay:ocr-text>
+                <essay:ocr-text position="1116,796,1306,835">Britain</essay:ocr-text>
+                <essay:ocr-text position="1341,827,1349,835">.</essay:ocr-text>
+                <essay:ocr-text position="1474,826,1483,835">.</essay:ocr-text>
+                <essay:ocr-text position="1599,806,1623,847">9</essay:ocr-text>
+                <essay:ocr-text position="112,886,146,916">1.</essay:ocr-text>
+                <essay:ocr-text position="177,875,333,926">Official</essay:ocr-text>
+                <essay:ocr-text position="408,906,416,915">.</essay:ocr-text>
+                <essay:ocr-text position="544,903,1483,915">........</essay:ocr-text>
+                <essay:ocr-text position="1599,885,1623,925">9</essay:ocr-text>
+                <essay:ocr-text position="248,946,393,987">League</essay:ocr-text>
+                <essay:ocr-text position="413,945,452,978">of</essay:ocr-text>
+                <essay:ocr-text position="471,944,628,977">Nations</essay:ocr-text>
+                <essay:ocr-text position="647,945,773,982">Office;</essay:ocr-text>
+                <essay:ocr-text position="805,943,1073,976">International</essay:ocr-text>
+                <essay:ocr-text position="1093,944,1240,976">Labour</essay:ocr-text>
+                <essay:ocr-text position="1260,944,1382,976">Office.</essay:ocr-text>
+              </essay:p>
+            </essay:div>
+          </essay:div>
+        </essay:div>
+      </essay:div>
+    </gift-doc:body>
+  </gift-doc:document>
+</gold:document-instance>
+<gold:document-instance>
+  <gift-doc:document>
+    <gift-doc:metadata>
+      <gift-doc:node-metadata>
+        <gift-doc:pagination-group>
+          <gift-doc:pagination>
+            <meta:ranges>
+              <meta:range>
+                <meta:begin-page>0008</meta:begin-page>
+              </meta:range>
+            </meta:ranges>
+            <meta:total-pages>10</meta:total-pages>
+          </gift-doc:pagination>
+        </gift-doc:pagination-group>
+      </gift-doc:node-metadata>
+      <gift-doc:document-metadata>
+        <meta:document-ids>
+          <meta:id type="Gale asset">
+            <meta:value>WUPRCU202217690</meta:value>
+          </meta:id>
+        </meta:document-ids>
+        <meta:bibliographic-ids>
+          <meta:id type="PSM">
+            <meta:value>cho_iaxx_1926_0005_000_0000</meta:value>
+          </meta:id>
+        </meta:bibliographic-ids>
+        <meta:mcode>6GPP</meta:mcode>
+        <meta:record-admin-info>
+          <meta:standard-date type="Original">201212002</meta:standard-date>
+        </meta:record-admin-info>
+        <meta:publication-title>World Today Chatham House Review</meta:publication-title>
+        <meta:publication-subtitle>Subtitle</meta:publication-subtitle>
+        <meta:descriptive-indexing>
+          <meta:indexing-term>
+            <meta:term>
+              <meta:term-type>CONT_TYPE</meta:term-type>
+              <meta:term-source>Atlas</meta:term-source>
+              <meta:term-id>21901547</meta:term-id>
+              <meta:term-value>DVI-Periodical</meta:term-value>
+            </meta:term>
+          </meta:indexing-term>
+          <meta:indexing-term>
+            <meta:term>
+              <meta:term-type>FUNC_TYPE</meta:term-type>
+              <meta:term-source>Atlas</meta:term-source>
+              <meta:term-id>21787857</meta:term-id>
+              <meta:term-value>Issue-volume page record</meta:term-value>
+            </meta:term>
+          </meta:indexing-term>
+        </meta:descriptive-indexing>
+        <meta:folio>
+          <meta:start-number>9</meta:start-number>
+        </meta:folio>
+      </gift-doc:document-metadata>
+    </gift-doc:metadata>
+    <gift-doc:body>
+      <essay:div document-segment-type="Body text" term-id="14214508" term-source="Atlas">
+        <essay:div document-segment-type="Page" term-id="21922233" term-source="Atlas">
+          <essay:complex-meta>
+            <meta:page-id-number>0008</meta:page-id-number>
+            <meta:folio>
+              <meta:start-number>9</meta:start-number>
+            </meta:folio>
+          </essay:complex-meta>
+          <essay:div document-segment-type="DVI article" term-id="21918442" term-source="Atlas">
+            <shared:media>
+              <media:image data-type="jpeg" width="2055" height="3442" image-type="page view" layout="single" color-mode="color" folio="9" sequence="0008">
+                <vault-link:vault-link>
+                  <vault-link:link-type>external</vault-link:link-type>
+                  <vault-link:action>point</vault-link:action>
+                  <vault-link:where>
+                    <vault-link:path>cho_iaxx_1926_0005_000_0008</vault-link:path>
+                  </vault-link:where>
+                </vault-link:vault-link>
+              </media:image>
+            </shared:media>
+            <vault-link:vault-link>
+              <vault-link:link-type>external</vault-link:link-type>
+              <vault-link:link-category term-id="21902640" term-source="Atlas">DVI article</vault-link:link-category>
+              <vault-link:data-type>text/xml</vault-link:data-type>
+              <vault-link:action>point</vault-link:action>
+              <vault-link:where>
+                <vault-link:path>//gift-doc:document-metadata/meta:document-ids/meta:id[@type="Gale asset"]/meta:value[.="LWZWDI586357375"]</vault-link:path>
+              </vault-link:where>
+              <vault-link:select>
+                <vault-link:document-nodes>
+                  <vault-link:target>ancestor::gift-doc:document</vault-link:target>
+                </vault-link:document-nodes>
+              </vault-link:select>
+              <vault-link:display-link>The Societies and Organizations in Great Britain</vault-link:display-link>
+            </vault-link:vault-link>
+            <essay:div document-segment-type="Body text" term-id="14214508" term-source="Atlas">
+              <essay:p>SOCIETIES AND ORGANIZATIONS IN GREAT BRITAIN</essay:p>
+            </essay:div>
+            <essay:div document-segment-type="OCR text" term-id="21905043" term-source="Atlas">
+              <essay:p>
+                <essay:ocr-text position="237,822,627,875">SOCIETIES</essay:ocr-text>
+                <essay:ocr-text position="687,823,846,873">AND</essay:ocr-text>
+                <essay:ocr-text position="904,819,1547,873">ORGANIZATIONS</essay:ocr-text>
+                <essay:ocr-text position="504,917,590,968">IN</essay:ocr-text>
+                <essay:ocr-text position="646,916,904,968">GREAT</essay:ocr-text>
+                <essay:ocr-text position="963,915,1285,967">BRITAIN</essay:ocr-text>
+              </essay:p>
+            </essay:div>
+          </essay:div>
+          <essay:div document-segment-type="DVI article" term-id="21918442" term-source="Atlas">
+            <shared:media>
+              <media:image data-type="jpeg" width="2055" height="3442" image-type="page view" layout="single" color-mode="color" folio="9" sequence="0008">
+                <vault-link:vault-link>
+                  <vault-link:link-type>external</vault-link:link-type>
+                  <vault-link:action>point</vault-link:action>
+                  <vault-link:where>
+                    <vault-link:path>cho_iaxx_1926_0005_000_0008</vault-link:path>
+                  </vault-link:where>
+                </vault-link:vault-link>
+              </media:image>
+            </shared:media>
+            <vault-link:vault-link>
+              <vault-link:link-type>external</vault-link:link-type>
+              <vault-link:link-category term-id="21902640" term-source="Atlas">DVI article</vault-link:link-category>
+              <vault-link:data-type>text/xml</vault-link:data-type>
+              <vault-link:action>point</vault-link:action>
+              <vault-link:where>
+                <vault-link:path>//gift-doc:document-metadata/meta:document-ids/meta:id[@type="Gale asset"]/meta:value[.="UWZKOX183266513"]</vault-link:path>
+              </vault-link:where>
+              <vault-link:select>
+                <vault-link:document-nodes>
+                  <vault-link:target>ancestor::gift-doc:document</vault-link:target>
+                </vault-link:document-nodes>
+              </vault-link:select>
+              <vault-link:display-link>An I. Official</vault-link:display-link>
+            </vault-link:vault-link>
+            <essay:div document-segment-type="Body text" term-id="14214508" term-source="Atlas">
+              <essay:p>i. OFFICIAL</essay:p>
+            </essay:div>
+            <essay:div document-segment-type="OCR text" term-id="21905043" term-source="Atlas">
+              <essay:p>
+                <essay:ocr-text position="720,1101,756,1133">i.</essay:ocr-text>
+                <essay:ocr-text position="791,1088,1075,1131">OFFICIAL</essay:ocr-text>
+              </essay:p>
+            </essay:div>
+          </essay:div>
+          <essay:div document-segment-type="DVI article" term-id="21918442" term-source="Atlas">
+            <shared:media>
+              <media:image data-type="jpeg" width="2055" height="3442" image-type="page view" layout="single" color-mode="color" folio="9" sequence="0008">
+                <vault-link:vault-link>
+                  <vault-link:link-type>external</vault-link:link-type>
+                  <vault-link:action>point</vault-link:action>
+                  <vault-link:where>
+                    <vault-link:path>cho_iaxx_1926_0005_000_0008</vault-link:path>
+                  </vault-link:where>
+                </vault-link:vault-link>
+              </media:image>
+            </shared:media>
+            <vault-link:vault-link>
+              <vault-link:link-type>external</vault-link:link-type>
+              <vault-link:link-category term-id="21902640" term-source="Atlas">DVI article</vault-link:link-category>
+              <vault-link:data-type>text/xml</vault-link:data-type>
+              <vault-link:action>point</vault-link:action>
+              <vault-link:where>
+                <vault-link:path>//gift-doc:document-metadata/meta:document-ids/meta:id[@type="Gale asset"]/meta:value[.="EDEXKF415672008"]</vault-link:path>
+              </vault-link:where>
+              <vault-link:select>
+                <vault-link:document-nodes>
+                  <vault-link:target>ancestor::gift-doc:document</vault-link:target>
+                </vault-link:document-nodes>
+              </vault-link:select>
+              <vault-link:display-link>A League of Nations Office</vault-link:display-link>
+            </vault-link:vault-link>
+            <essay:div document-segment-type="Body text" term-id="14214508" term-source="Atlas">
+              <essay:p>LEAGUE of nations office Address : 16 Northumberland Avenue, London, W.C.2. Tel. No. Regent 3617. Cables: Natileague, London. Director of London</essay:p>
+            </essay:div>
+            <essay:div document-segment-type="OCR text" term-id="21905043" term-source="Atlas">
+              <essay:p>
+                <essay:ocr-text position="517,1197,716,1229">LEAGUE</essay:ocr-text>
+                <essay:ocr-text position="751,1197,813,1229">of</essay:ocr-text>
+                <essay:ocr-text position="845,1196,1063,1228">nations</essay:ocr-text>
+                <essay:ocr-text position="1097,1196,1275,1228">office</essay:ocr-text>
+                <essay:ocr-text position="132,1292,341,1332">Address</essay:ocr-text>
+                <essay:ocr-text position="361,1304,368,1331">:</essay:ocr-text>
+                <essay:ocr-text position="420,1291,468,1331">16</essay:ocr-text>
+                <essay:ocr-text position="501,1291,892,1331">Northumberland</essay:ocr-text>
+                <essay:ocr-text position="923,1291,1110,1337">Avenue,</essay:ocr-text>
+                <essay:ocr-text position="1145,1290,1336,1337">London,</essay:ocr-text>
+                <essay:ocr-text position="1360,1289,1514,1330">W.C.2.</essay:ocr-text>
+                <essay:ocr-text position="1573,1289,1658,1328">Tel.</essay:ocr-text>
+                <essay:ocr-text position="294,1347,372,1386">No.</essay:ocr-text>
+                <essay:ocr-text position="397,1346,559,1397">Regent</essay:ocr-text>
+                <essay:ocr-text position="582,1346,699,1398">3617.</essay:ocr-text>
+                <essay:ocr-text position="758,1345,925,1384">Cables:</essay:ocr-text>
+                <essay:ocr-text position="950,1344,1217,1396">Natileague,</essay:ocr-text>
+                <essay:ocr-text position="1239,1343,1432,1383">London.</essay:ocr-text>
+                <essay:ocr-text position="133,1400,365,1439">Director</essay:ocr-text>
+                <essay:ocr-text position="385,1411,440,1439">of</essay:ocr-text>
+                <essay:ocr-text position="461,1401,651,1440">London</essay:ocr-text>
+              </essay:p>
+            </essay:div>
+          </essay:div>
+        </essay:div>
+      </essay:div>
+    </gift-doc:body>
+  </gift-doc:document>
+</gold:document-instance>
+<gold:document-instance>
+  <gift-doc:document>
+    <gift-doc:metadata>
+      <gift-doc:node-metadata>
+        <gift-doc:pagination-group>
+          <gift-doc:pagination>
+            <meta:ranges>
+              <meta:range>
+                <meta:begin-page>0009</meta:begin-page>
+              </meta:range>
+            </meta:ranges>
+            <meta:total-pages>10</meta:total-pages>
+          </gift-doc:pagination>
+        </gift-doc:pagination-group>
+      </gift-doc:node-metadata>
+      <gift-doc:document-metadata>
+        <meta:document-ids>
+          <meta:id type="Gale asset">
+            <meta:value>RUITNC468706761</meta:value>
+          </meta:id>
+        </meta:document-ids>
+        <meta:bibliographic-ids>
+          <meta:id type="PSM">
+            <meta:value>cho_iaxx_1926_0005_000_0000</meta:value>
+          </meta:id>
+        </meta:bibliographic-ids>
+        <meta:mcode>6GPP</meta:mcode>
+        <meta:record-admin-info>
+          <meta:standard-date type="Original">201212002</meta:standard-date>
+        </meta:record-admin-info>
+        <meta:publication-title>World Today Chatham House Review</meta:publication-title>
+        <meta:publication-subtitle>Subtitle</meta:publication-subtitle>
+        <meta:descriptive-indexing>
+          <meta:indexing-term>
+            <meta:term>
+              <meta:term-type>CONT_TYPE</meta:term-type>
+              <meta:term-source>Atlas</meta:term-source>
+              <meta:term-id>21901547</meta:term-id>
+              <meta:term-value>DVI-Periodical</meta:term-value>
+            </meta:term>
+          </meta:indexing-term>
+          <meta:indexing-term>
+            <meta:term>
+              <meta:term-type>FUNC_TYPE</meta:term-type>
+              <meta:term-source>Atlas</meta:term-source>
+              <meta:term-id>21787857</meta:term-id>
+              <meta:term-value>Issue-volume page record</meta:term-value>
+            </meta:term>
+          </meta:indexing-term>
+        </meta:descriptive-indexing>
+        <meta:folio>
+          <meta:start-number>I0</meta:start-number>
+        </meta:folio>
+      </gift-doc:document-metadata>
+    </gift-doc:metadata>
+    <gift-doc:body>
+      <essay:div document-segment-type="Body text" term-id="14214508" term-source="Atlas">
+        <essay:div document-segment-type="Page" term-id="21922233" term-source="Atlas">
+          <essay:complex-meta>
+            <meta:page-id-number>0009</meta:page-id-number>
+            <meta:folio>
+              <meta:start-number>I0</meta:start-number>
+            </meta:folio>
+          </essay:complex-meta>
+          <essay:div document-segment-type="DVI article" term-id="21918442" term-source="Atlas">
+            <shared:media>
+              <media:image data-type="jpeg" width="2059" height="3473" image-type="page view" layout="single" color-mode="color" folio="I0" sequence="0009">
+                <vault-link:vault-link>
+                  <vault-link:link-type>external</vault-link:link-type>
+                  <vault-link:action>point</vault-link:action>
+                  <vault-link:where>
+                    <vault-link:path>cho_iaxx_1926_0005_000_0009</vault-link:path>
+                  </vault-link:where>
+                </vault-link:vault-link>
+              </media:image>
+            </shared:media>
+            <vault-link:vault-link>
+              <vault-link:link-type>external</vault-link:link-type>
+              <vault-link:link-category term-id="21902640" term-source="Atlas">DVI article</vault-link:link-category>
+              <vault-link:data-type>text/xml</vault-link:data-type>
+              <vault-link:action>point</vault-link:action>
+              <vault-link:where>
+                <vault-link:path>//gift-doc:document-metadata/meta:document-ids/meta:id[@type="Gale asset"]/meta:value[.="VNRYWH488427834"]</vault-link:path>
+              </vault-link:where>
+              <vault-link:select>
+                <vault-link:document-nodes>
+                  <vault-link:target>ancestor::gift-doc:document</vault-link:target>
+                </vault-link:document-nodes>
+              </vault-link:select>
+              <vault-link:display-link>&apos;International Labour Office&apos;</vault-link:display-link>
+            </vault-link:vault-link>
+            <essay:div document-segment-type="Body text" term-id="14214508" term-source="Atlas">
+              <essay:p>international labour office Address : 12 Victoria Street, London, S.W.i. Tel. No. Victoria 2859. Director of London Office : M. R. K. Burge. This is the London office of the International Labour Office</essay:p>
+            </essay:div>
+            <essay:div document-segment-type="OCR text" term-id="21905043" term-source="Atlas">
+              <essay:p>
+                <essay:ocr-text position="471,2302,887,2335">international</essay:ocr-text>
+                <essay:ocr-text position="920,2302,1123,2336">labour</essay:ocr-text>
+                <essay:ocr-text position="1157,2302,1332,2335">office</essay:ocr-text>
+                <essay:ocr-text position="139,2395,346,2435">Address</essay:ocr-text>
+                <essay:ocr-text position="366,2408,373,2435">:</essay:ocr-text>
+                <essay:ocr-text position="410,2407,457,2436">12</essay:ocr-text>
+                <essay:ocr-text position="477,2396,665,2436">Victoria</essay:ocr-text>
+                <essay:ocr-text position="683,2396,833,2444">Street,</essay:ocr-text>
+                <essay:ocr-text position="854,2397,1043,2444">London,</essay:ocr-text>
+                <essay:ocr-text position="1064,2397,1214,2437">S.W.i.</essay:ocr-text>
+                <essay:ocr-text position="1274,2397,1356,2436">Tel.</essay:ocr-text>
+                <essay:ocr-text position="1375,2397,1455,2436">No.</essay:ocr-text>
+                <essay:ocr-text position="1475,2396,1661,2436">Victoria</essay:ocr-text>
+                <essay:ocr-text position="299,2451,415,2502">2859.</essay:ocr-text>
+                <essay:ocr-text position="139,2504,369,2543">Director</essay:ocr-text>
+                <essay:ocr-text position="388,2515,443,2543">of</essay:ocr-text>
+                <essay:ocr-text position="462,2504,651,2544">London</essay:ocr-text>
+                <essay:ocr-text position="674,2505,837,2544">Office</essay:ocr-text>
+                <essay:ocr-text position="858,2517,866,2544">:</essay:ocr-text>
+                <essay:ocr-text position="902,2505,958,2544">M.</essay:ocr-text>
+                <essay:ocr-text position="981,2506,1032,2545">R.</essay:ocr-text>
+                <essay:ocr-text position="1056,2505,1109,2545">K.</essay:ocr-text>
+                <essay:ocr-text position="1131,2505,1282,2557">Burge.</essay:ocr-text>
+                <essay:ocr-text position="193,2590,294,2630">This</essay:ocr-text>
+                <essay:ocr-text position="319,2591,354,2630">is</essay:ocr-text>
+                <essay:ocr-text position="379,2591,453,2631">the</essay:ocr-text>
+                <essay:ocr-text position="479,2591,655,2631">London</essay:ocr-text>
+                <essay:ocr-text position="682,2592,800,2631">office</essay:ocr-text>
+                <essay:ocr-text position="827,2592,871,2631">of</essay:ocr-text>
+                <essay:ocr-text position="897,2592,971,2631">the</essay:ocr-text>
+                <essay:ocr-text position="999,2591,1311,2631">International</essay:ocr-text>
+                <essay:ocr-text position="1337,2593,1505,2631">Labour</essay:ocr-text>
+                <essay:ocr-text position="1533,2592,1660,2631">Office</essay:ocr-text>
+              </essay:p>
+            </essay:div>
+          </essay:div>
+        </essay:div>
+      </essay:div>
+    </gift-doc:body>
+  </gift-doc:document>
+</gold:document-instance>
+<gold:document-instance>
+  <gift-doc:document>
+    <gift-doc:metadata>
+      <gift-doc:node-metadata>
+        <gift-doc:pagination-group>
+          <gift-doc:pagination>
+            <meta:ranges>
+              <meta:range>
+                <meta:begin-page>0010</meta:begin-page>
+              </meta:range>
+            </meta:ranges>
+            <meta:total-pages>10</meta:total-pages>
+          </gift-doc:pagination>
+        </gift-doc:pagination-group>
+      </gift-doc:node-metadata>
+      <gift-doc:document-metadata>
+        <meta:document-ids>
+          <meta:id type="Gale asset">
+            <meta:value>IAVQZC214854783</meta:value>
+          </meta:id>
+        </meta:document-ids>
+        <meta:bibliographic-ids>
+          <meta:id type="PSM">
+            <meta:value>cho_iaxx_1926_0005_000_0000</meta:value>
+          </meta:id>
+        </meta:bibliographic-ids>
+        <meta:mcode>6GPP</meta:mcode>
+        <meta:record-admin-info>
+          <meta:standard-date type="Original">201212002</meta:standard-date>
+        </meta:record-admin-info>
+        <meta:publication-title>World Today Chatham House Review</meta:publication-title>
+        <meta:publication-subtitle>Subtitle</meta:publication-subtitle>
+        <meta:descriptive-indexing>
+          <meta:indexing-term>
+            <meta:term>
+              <meta:term-type>CONT_TYPE</meta:term-type>
+              <meta:term-source>Atlas</meta:term-source>
+              <meta:term-id>21901547</meta:term-id>
+              <meta:term-value>DVI-Periodical</meta:term-value>
+            </meta:term>
+          </meta:indexing-term>
+          <meta:indexing-term>
+            <meta:term>
+              <meta:term-type>FUNC_TYPE</meta:term-type>
+              <meta:term-source>Atlas</meta:term-source>
+              <meta:term-id>21787857</meta:term-id>
+              <meta:term-value>Issue-volume page record</meta:term-value>
+            </meta:term>
+          </meta:indexing-term>
+        </meta:descriptive-indexing>
+        <meta:folio>
+          <meta:start-number>II</meta:start-number>
+        </meta:folio>
+      </gift-doc:document-metadata>
+    </gift-doc:metadata>
+    <gift-doc:body>
+      <essay:div document-segment-type="Body text" term-id="14214508" term-source="Atlas">
+        <essay:div document-segment-type="Page" term-id="21922233" term-source="Atlas">
+          <essay:complex-meta>
+            <meta:page-id-number>0010</meta:page-id-number>
+            <meta:folio>
+              <meta:start-number>II</meta:start-number>
+            </meta:folio>
+          </essay:complex-meta>
+          <essay:div document-segment-type="DVI article" term-id="21918442" term-source="Atlas">
+            <shared:media>
+              <media:image data-type="jpeg" width="2059" height="3473" image-type="page view" layout="single" color-mode="color" folio="II" sequence="0010">
+                <vault-link:vault-link>
+                  <vault-link:link-type>external</vault-link:link-type>
+                  <vault-link:action>point</vault-link:action>
+                  <vault-link:where>
+                    <vault-link:path>cho_iaxx_1926_0005_000_0010</vault-link:path>
+                  </vault-link:where>
+                </vault-link:vault-link>
+              </media:image>
+            </shared:media>
+            <vault-link:vault-link>
+              <vault-link:link-type>external</vault-link:link-type>
+              <vault-link:link-category term-id="21902640" term-source="Atlas">DVI article</vault-link:link-category>
+              <vault-link:data-type>text/xml</vault-link:data-type>
+              <vault-link:action>point</vault-link:action>
+              <vault-link:where>
+                <vault-link:path>//gift-doc:document-metadata/meta:document-ids/meta:id[@type="Gale asset"]/meta:value[.="CAQBGL741956067"]</vault-link:path>
+              </vault-link:where>
+              <vault-link:select>
+                <vault-link:document-nodes>
+                  <vault-link:target>ancestor::gift-doc:document</vault-link:target>
+                </vault-link:document-nodes>
+              </vault-link:select>
+              <vault-link:display-link>2. The Study of International Affairs in General</vault-link:display-link>
+            </vault-link:vault-link>
+            <essay:div document-segment-type="Body text" term-id="14214508" term-source="Atlas">
+              <essay:p>2. THE STUDY OF INTERNATIONAL AFFAIRS IN GENERAL</essay:p>
+            </essay:div>
+            <essay:div document-segment-type="OCR text" term-id="21905043" term-source="Atlas">
+              <essay:p>
+                <essay:ocr-text position="471,392,510,423">2.</essay:ocr-text>
+                <essay:ocr-text position="546,379,675,424">THE</essay:ocr-text>
+                <essay:ocr-text position="718,382,926,426">STUDY</essay:ocr-text>
+                <essay:ocr-text position="969,384,1049,427">OF</essay:ocr-text>
+                <essay:ocr-text position="1092,385,1620,431">INTERNATIONAL</essay:ocr-text>
+                <essay:ocr-text position="1659,389,1928,434">AFFAIRS</essay:ocr-text>
+                <essay:ocr-text position="990,444,1058,486">IN</essay:ocr-text>
+                <essay:ocr-text position="1103,445,1406,489">GENERAL</essay:ocr-text>
+              </essay:p>
+            </essay:div>
+          </essay:div>
+          <essay:div document-segment-type="DVI article" term-id="21918442" term-source="Atlas">
+            <shared:media>
+              <media:image data-type="jpeg" width="2059" height="3473" image-type="page view" layout="single" color-mode="color" folio="II" sequence="0010">
+                <vault-link:vault-link>
+                  <vault-link:link-type>external</vault-link:link-type>
+                  <vault-link:action>point</vault-link:action>
+                  <vault-link:where>
+                    <vault-link:path>cho_iaxx_1926_0005_000_0010</vault-link:path>
+                  </vault-link:where>
+                </vault-link:vault-link>
+              </media:image>
+            </shared:media>
+            <vault-link:vault-link>
+              <vault-link:link-type>external</vault-link:link-type>
+              <vault-link:link-category term-id="21902640" term-source="Atlas">DVI article</vault-link:link-category>
+              <vault-link:data-type>text/xml</vault-link:data-type>
+              <vault-link:action>point</vault-link:action>
+              <vault-link:where>
+                <vault-link:path>//gift-doc:document-metadata/meta:document-ids/meta:id[@type="Gale asset"]/meta:value[.="VTDLFA079341920"]</vault-link:path>
+              </vault-link:where>
+              <vault-link:select>
+                <vault-link:document-nodes>
+                  <vault-link:target>ancestor::gift-doc:document</vault-link:target>
+                </vault-link:document-nodes>
+              </vault-link:select>
+              <vault-link:display-link>(a) I. British Co-Ordinating Committee for International Studies</vault-link:display-link>
+            </vault-link:vault-link>
+            <essay:div document-segment-type="Body text" term-id="14214508" term-source="Atlas">
+              <essay:p>(a) i. BRITISH CO-ORDINATING COMMITTEE FOR INTERNATIONAL STUDIES Address : Chatham House, 10 St. James&apos;s Square, London, S.W. i. Chairman : Sir William</essay:p>
+            </essay:div>
+            <essay:div document-segment-type="OCR text" term-id="21905043" term-source="Atlas">
+              <essay:p>
+                <essay:ocr-text position="572,532,617,574">(a)</essay:ocr-text>
+                <essay:ocr-text position="650,543,679,566">i.</essay:ocr-text>
+                <essay:ocr-text position="707,535,917,568">BRITISH</essay:ocr-text>
+                <essay:ocr-text position="950,537,1358,571">CO-ORDINATING</essay:ocr-text>
+                <essay:ocr-text position="1389,539,1686,574">COMMITTEE</essay:ocr-text>
+                <essay:ocr-text position="1719,542,1820,575">FOR</essay:ocr-text>
+                <essay:ocr-text position="854,580,1280,615">INTERNATIONAL</essay:ocr-text>
+                <essay:ocr-text position="1313,584,1528,617">STUDIES</essay:ocr-text>
+                <essay:ocr-text position="414,653,627,695">Address</essay:ocr-text>
+                <essay:ocr-text position="647,667,654,695">:</essay:ocr-text>
+                <essay:ocr-text position="708,656,920,697">Chatham</essay:ocr-text>
+                <essay:ocr-text position="957,658,1116,707">House,</essay:ocr-text>
+                <essay:ocr-text position="1157,671,1206,700">10</essay:ocr-text>
+                <essay:ocr-text position="1243,660,1305,701">St.</essay:ocr-text>
+                <essay:ocr-text position="1342,661,1527,711">James&apos;s</essay:ocr-text>
+                <essay:ocr-text position="1562,663,1734,711">Square,</essay:ocr-text>
+                <essay:ocr-text position="1774,665,1977,711">London,</essay:ocr-text>
+                <essay:ocr-text position="580,709,690,750">S.W.</essay:ocr-text>
+                <essay:ocr-text position="712,722,747,751">i.</essay:ocr-text>
+                <essay:ocr-text position="414,762,656,804">Chairman</essay:ocr-text>
+                <essay:ocr-text position="678,777,685,804">:</essay:ocr-text>
+                <essay:ocr-text position="726,765,792,805">Sir</essay:ocr-text>
+                <essay:ocr-text position="814,766,1001,807">William</essay:ocr-text>
+              </essay:p>
+            </essay:div>
+          </essay:div>
+        </essay:div>
+      </essay:div>
+    </gift-doc:body>
+  </gift-doc:document>
+</gold:document-instance>
+<gold:metadata><gold:feed-type>NOINDEX</gold:feed-type><gold:document-schema>gift_document.xsd</gold:document-schema><gold:schema-version>2.5</gold:schema-version><gold:document-id-path>//gift-doc:document/gift-doc:metadata/gift-doc:document-metadata/meta:document-ids/meta:id[@type="Gale asset"]/meta:value</gold:document-id-path><gold:document-mcode-path>//gift-doc:document/gift-doc:metadata/gift-doc:document-metadata/meta:mcode</gold:document-mcode-path><gold:number-of-documents>1</gold:number-of-documents><gold:feed-status>New-Replace</gold:feed-status></gold:metadata></gold:feed>

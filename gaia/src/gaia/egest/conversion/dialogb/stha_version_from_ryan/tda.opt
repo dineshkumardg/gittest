@@ -1,0 +1,21 @@
+! file: tda.opt
+
+! Used by Perl converter
+log_dir:		/gale/prod-i1/data/workflow/conversion_workflow/dvi_content_conversion/ocm_space/bl_ncukp/logs/TDA/
+completed_dir:		/gale/prod-i1/data/workflow/conversion_workflow/dvi_content_conversion/ocm_space/bl_ncukp/manifests/completed/TDA/
+output_dir:		/gale/prod-i1/data/workflow/conversion_workflow/dvi_content_conversion/ocm_space/bl_ncukp/output/TDA/TDA_output/
+input_dir:		/gale/prod-i1/data/workflow/conversion_workflow/dvi_content_conversion/ocm_space/bl_ncukp/ftp_data/TDA/TDA_input/
+headnote_dir_unix:	/auto/groups/history_team/projects/DVI_Newspapers/control_files/headnotes/
+headnote_dir_vms:	DMR:[DB.TDA.HEADNOTES]
+metadata_file_unix:     /auto/groups/history_team/projects/DVI_Newspapers/control_files/tda_lookup.txt
+metadata_file_vms:	DMR:[DB.TDA.META]tda_lookup.txt
+dvi_ng_map_unix:        /auto/groups/history_team/projects/DVI_Newspapers/control_files/DVI_NG_TDAmap.txt
+dvi_il_map_unix:        /auto/groups/history_team/projects/DVI_Newspapers/control_files/DVI_IL_TDAmap.txt
+dvi_ng_map_vms:         QRFCPS3:[PE.TDA.CONTROL_FILES]DVI_NG_TDAmap.txt
+dvi_il_map_vms:         QRFCPS3:[PE.TDA.CONTROL_FILES]DVI_IL_TDAmap.txt
+PageIDList_unix:	/auto/groups/history_team/projects/DVI_Newspapers/control_files/TDAPageIDList.txt
+PageIDList_vms:		QRFCPS3:[PE.TDA.CONTROL_FILES]TDAPageIDList.txt
+dvi_name:               tda
+xxrn:			CT
+spotlight_file: 	/auto/groups/history_team/projects/DVI_Newspapers/control_files/TDA_Spotlight_lookup.xls
+email:			paul.davis@cengage.com, jeff.sumner@cengage.com, simon.measures@cengage.com, andrea.talman@cengage.com, ryan.cartmill@cengage.com

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.eclipse.ui.externaltools.ProgramLaunchConfigurationType">
+<listAttribute key="org.eclipse.debug.ui.favoriteGroups">
+<listEntry value="org.eclipse.ui.externaltools.launchGroup"/>
+</listAttribute>
+<stringAttribute key="org.eclipse.ui.externaltools.ATTR_LOCATION" value="/home/jsears/bin/jdk1.7.0_25/jre/bin/java"/>
+<stringAttribute key="org.eclipse.ui.externaltools.ATTR_TOOL_ARGUMENTS" value="-Dsolr.solr.home=/home/jsears/SYSTEM_TEST/WORK/system_test/apache-solr-4.0.0/example/solr &#10;-Djava.util.logging.config.file=/home/jsears/SYSTEM_TEST/WORK/system_test/apache-solr-4.0.0/example/etc/logging.properties &#10;-jar /home/jsears/SYSTEM_TEST/WORK/system_test/apache-solr-4.0.0/example/start.jar"/>
+<stringAttribute key="org.eclipse.ui.externaltools.ATTR_WORKING_DIRECTORY" value="/home/jsears/SYSTEM_TEST/WORK/system_test/apache-solr-4.0.0/example"/>
+</launchConfiguration>

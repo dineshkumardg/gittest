@@ -1,0 +1,576 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2008 rel. 2 sp1 (http://www.altova.com) by Beverly Cuzick (Gale Cengage Learning) -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:spud="http://www.gale.com/goldschema/spud" xmlns:essay="http://www.gale.com/goldschema/essay" xmlns:pres="http://www.gale.com/goldschema/pres" xmlns:meta="http://www.gale.com/goldschema/metadata" xmlns:media="http://www.gale.com/goldschema/media" xmlns:vault-link="http://www.gale.com/goldschema/vault-linking" targetNamespace="http://www.gale.com/goldschema/spud" elementFormDefault="qualified" attributeFormDefault="unqualified" version="3.0">
+	<xs:annotation id="spud-schema-purpose">
+		<xs:documentation>This schema defines an interchange format for an XML feed to GOLD of publication metadata from SPUD (Supplemental Publication Database).</xs:documentation>
+	</xs:annotation>
+	<!--
+	======================================================================
+                           CHANGE HISTORY
+	======================================================================
+	3.0		12/04/2013		js
+	1.	Removed the schema owner part.
+	2.	Updated the folder path of <xs:import>.
+	3.	As the namespace xmlns:shared="http://www.gale.com/goldschema/shared" doesn't have appropriate import and the namespace 
+		is not been used anywhere in that schema, we have removed it.
+	4.	Reorganized the compleType elements.
+	5.	Externalized the elements 'attribute', 'callisto-content-sets', 'child-mcode', 'citation-instruction', 'copyright-year', 
+		'course', 'default-index-filename', discipline', 'extended-attributes', 'imprint', 'imprint-website', 'LC-subjects', 'mainbody-arrangement', 'main-subtitle', 'master-index-type', 'main-title', 'name', 'GVRL-subjects', 'contributors', 'courses', 'disciplines', 'parent-mcode', 'standard-ids', 'publication-description', 'publication-logo', 'publisher-logo', 'relations', 'series-number', 'series-title', 'subfield', 'term', 'total-pages', 'total-volumes', 'volume-number', 'volume-subtitle' and 'volume-type'.
+	6.	Removed the elements 'date' and 'year' as they are unused.
+	7.	Removed the data model 'subject-type' as it is unused.
+	======================================================================
+-->
+	<xs:import namespace="http://www.gale.com/goldschema/metadata" schemaLocation="metadata.xsd"/>
+	<xs:import namespace="http://www.gale.com/goldschema/media" schemaLocation="media.xsd"/>
+	<xs:import namespace="http://www.gale.com/goldschema/essay" schemaLocation="essay.xsd"/>
+	<xs:import namespace="http://www.gale.com/goldschema/vault-linking" schemaLocation="vault_linking.xsd"/>
+	<xs:include schemaLocation="gale_datatypes.xsd"/>
+	<!-- 
+	============================================================================
+                    ELEMENT DECLARATIONS
+	============================================================================
+	-->
+	<!--                    ATTRIBUTE                    -->
+	<xs:element name="attribute" type="spud:ext-atts-type">
+		<xs:annotation>
+			<xs:documentation>Contains values from generic tables in SPUD used for capturing publication attributes that may be added to the database in the future</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--                    ATTRIBUTE-TYPE                    -->
+	<xs:element name="attribute-type" type="xs:normalizedString">
+		<xs:annotation>
+			<xs:documentation>Contains description of the attribute value.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--                    CALLISTO-CONTENT-SETS                    -->
+	<xs:element name="callisto-content-sets" type="spud:callisto-content-sets-type">
+		<xs:annotation>
+			<xs:documentation>Contains names of content sets in the Callisto server where images are stored.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--                    CHILD-MCODE                    -->
+	<xs:element name="child-mcode" type="spud:mcode-type">
+		<xs:annotation>
+			<xs:documentation>"Captures the child MCode value and a publication entity type (e.g., “EDITION”, “SERIES”, "VOLUME", etc.)."</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--                    CITATION-INSTRUCTION                    -->
+	<xs:element name="citation-instruction" type="xs:normalizedString">
+		<xs:annotation>
+			<xs:documentation>This element has been created to capture an instruction.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--                    CONTRIBUTORS                    -->
+	<xs:element name="contributors">
+		<xs:annotation>
+			<xs:documentation>Wrapper for 'contributor'.</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:choice minOccurs="0" maxOccurs="unbounded">
+				<xs:element ref="spud:contributor"/>
+				<xs:element ref="meta:corporate-author"/>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="contributor" type="spud:contributor-type">
+		<xs:annotation>
+			<xs:documentation>A person or organization that contributes to the publication.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--                    COPYRIGHT-YEAR                    -->
+	<xs:element name="copyright-year" type="xs:normalizedString">
+		<xs:annotation>
+			<xs:documentation>Contains the copyright year for a publication.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--                    COURSES                    -->
+	<xs:element name="courses">
+		<xs:annotation>
+			<xs:documentation>Wrapper for course information.</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="spud:course" minOccurs="0" maxOccurs="unbounded"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<!--                    COURSE                    -->
+	<xs:element name="course">
+		<xs:annotation>
+			<xs:documentation>Child of courses element. Contains the primary course.</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="xs:normalizedString">
+					<xs:attribute name="type" type="xs:token" fixed="primary"/>
+				</xs:extension>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<!--                    COVER-IMAGE                    -->
+	<xs:element name="cover-image" type="spud:media-type">
+		<xs:annotation>
+			<xs:documentation>Contains a reference to a cover image (e.g., a book cover).</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--                    DEFAULT-INDEX-FILENAME                    -->
+	<xs:element name="default-index-filename" type="xs:normalizedString">
+		<xs:annotation>
+			<xs:documentation>Contains the name of the source XML file containing the default index.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--                    DISCIPLINES                    -->
+	<xs:element name="disciplines">
+		<xs:annotation>
+			<xs:documentation>Wrapper element for 'discipline'.</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="spud:discipline" minOccurs="0" maxOccurs="unbounded"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<!--                    DISCIPLINE                    -->
+	<xs:element name="discipline">
+		<xs:annotation>
+			<xs:documentation>Multi-level, nested Discipline of the chapter/section, e.g. "psychology", "music", "languages, ancient, latin" etc.</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="xs:normalizedString">
+					<xs:attribute name="type" type="xs:token" fixed="primary"/>
+				</xs:extension>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<!--                    DESCRIPTION                    -->
+	<xs:element name="description">
+		<xs:annotation>
+			<xs:documentation>A textual description of the content of the chapter, section, graphic, or document.  This can be like an abstract 
+				in the case of a document or a textual summary of content and intent in the case of a chapter.</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="essay:p" minOccurs="0" maxOccurs="unbounded"/>
+			</xs:sequence>
+			<xs:attribute name="type" type="xs:string" use="required"/>
+		</xs:complexType>
+	</xs:element>
+	<!--                    EXTENDED-ATTRIBUTES                    -->
+	<xs:element name="extended-attributes">
+		<xs:annotation>
+			<xs:documentation>Wrapper for generic SPUD publication attributes.</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="spud:attribute" minOccurs="0"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<!--                    GVRL-SUBJECTS                    -->
+	<xs:element name="GVRL-subjects">
+		<xs:annotation>
+			<xs:documentation>Wrapper for GVRL subject headings.</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="subject" minOccurs="0" maxOccurs="unbounded">
+					<xs:annotation>
+						<xs:documentation>Primary GVRL subject heading for a publication.</xs:documentation>
+					</xs:annotation>
+					<xs:complexType>
+						<xs:simpleContent>
+							<xs:extension base="xs:normalizedString">
+								<xs:attribute name="type" type="xs:token" fixed="primary"/>
+							</xs:extension>
+						</xs:simpleContent>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<!--                    HOLDING-INSTITUTION                    -->
+	<xs:element name="holding-institution" type="spud:holding-institution-type">
+		<xs:annotation>
+			<xs:documentation>Contains the name of a holding institution, such as an archival institution.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:complexType name="holding-institution-type" mixed="true">
+		<xs:choice minOccurs="0" maxOccurs="3">
+			<xs:element ref="spud:name"/>
+			<xs:element ref="spud:logo"/>
+			<xs:element ref="spud:website"/>
+		</xs:choice>
+	</xs:complexType>
+	<!--                    ID                    -->
+	<xs:element name="id" type="spud:standard-id-type">
+		<xs:annotation>
+			<xs:documentation>Parent wrapper for value and id-type elements. Child of standard-ids element.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--                    ID-TYPE                    -->
+	<xs:element name="id-type" type="xs:normalizedString">
+		<xs:annotation>
+			<xs:documentation>A descriptive name for the type of ID, e.g., “ISBN-10-UNFORM” for a ten-digit unformatted ISBN.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--                    IMPRINT                    -->
+	<xs:element name="imprint" type="xs:normalizedString">
+		<xs:annotation>
+			<xs:documentation>Contains imprint information.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--                    IMPRINT-LOGO                    -->
+	<xs:element name="imprint-logo" type="spud:media-type">
+		<xs:annotation>
+			<xs:documentation>Contains a reference to an image for an imprint logo. The 'media:image' element is used to represent the reference to the image filename.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--                    IMPRINT-WEBSITE                    -->
+	<xs:element name="imprint-website" type="spud:vault-link-type">
+		<xs:annotation>
+			<xs:documentation>Contains a URL for an imprint’s website. The 'vault-link:vault-link' element is used to represent the URL.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--                    LC-SUBJECTS                    -->
+	<xs:element name="LC-subjects">
+		<xs:annotation>
+			<xs:documentation>Contains Library of Congress subject headings.</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="subject" minOccurs="0" maxOccurs="unbounded">
+					<xs:annotation>
+						<xs:documentation>Child of LC-subjects element that has repeating subfield and term child elements.</xs:documentation>
+					</xs:annotation>
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element ref="spud:term"/>
+							<xs:element ref="spud:subfield" minOccurs="0" maxOccurs="unbounded"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<!--                    LOGO                    -->
+	<xs:element name="logo">
+		<xs:annotation>
+			<xs:documentation>Image representing a logo of the holding institution.</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="media:image"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<!--                    MAINBODY-ARRANGEMENT                    -->
+	<xs:element name="mainbody-arrangement" type="xs:normalizedString">
+		<xs:annotation>
+			<xs:documentation>Contains a value (i.e., “Alpha”, “DNL”, “Other”) indicating how the eTOC (eTable of Contents) will display in product for a VRL publication.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--                    MASTER-INDEX-TYPE                    -->
+	<xs:element name="master-index-type" type="xs:normalizedString">
+		<xs:annotation>
+			<xs:documentation>Contains a name indicating the arrangement of the master default index (e.g., “Alpha”).</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--                    MAIN-TITLE                    -->
+	<xs:element name="main-title" type="xs:normalizedString">
+		<xs:annotation>
+			<xs:documentation>Contains the main title of a publication in SPUD that is displayed in product.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--                    MAIN-SUBTITLE                    -->
+	<xs:element name="main-subtitle" type="xs:normalizedString">
+		<xs:annotation>
+			<xs:documentation>Contains the subtitle of a publication’s main title in SPUD.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--                    NAME                    -->
+	<xs:element name="name" type="xs:normalizedString">
+		<xs:annotation>
+			<xs:documentation>Child of holding-institution element. Contains the name of the holding institution.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--                    PARENT-MCODE                    -->
+	<xs:element name="parent-mcode" type="spud:mcode-type">
+		<xs:annotation>
+			<xs:documentation>"Captures the parent MCode value and a publication entity type (e.g., “EDITION”, “SERIES”, "VOLUME", etc.)."</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--                    PUBLICATION                    -->
+	<xs:element name="publication" type="spud:publication-type">
+		<xs:annotation>
+			<xs:documentation>A single publication in SPUD and the attributes associated with that publication.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--                    PUBLICATION-LOGO                    -->
+	<xs:element name="publication-logo" type="spud:media-type">
+		<xs:annotation>
+			<xs:documentation>Contains a reference to the image file for a publication logo and text associated with the publication logo.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--                    PUBLICATION-DESCRIPTION                    -->
+	<xs:element name="publication-description">
+		<xs:annotation>
+			<xs:documentation>Contains descriptive information for a publication.</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="spud:description" minOccurs="0" maxOccurs="unbounded"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<!--                    PUBLICATIONS-FEED                    -->
+	<xs:element name="publications-feed">
+		<xs:annotation>
+			<xs:documentation>The root element defined in the schema.</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="spud:publication" maxOccurs="unbounded"/>
+			</xs:sequence>
+			<xs:attribute name="feed-time-stamp" type="xs:dateTime" use="required"/>
+		</xs:complexType>
+	</xs:element>
+	<!--                    PUBLISHER-ID                    -->
+	<xs:element name="publisher-id" type="xs:normalizedString">
+		<xs:annotation>
+			<xs:documentation>Contains the unique ID of a publisher from the PARIS database.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--                    PUBLISHER-LOGO                    -->
+	<xs:element name="publisher-logo" type="spud:media-type">
+		<xs:annotation>
+			<xs:documentation>Contains a reference to the image file for a publisher logo and text associated with the publisher logo.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--                    RELATIONS                    -->
+	<xs:element name="relations" type="spud:relationships-type">
+		<xs:annotation>
+			<xs:documentation>Contains the MCodes for “child” and “parent” publications for a publication that has such relationships with other publications.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--                    RELEASE-DATES                    -->
+	<xs:element name="release-dates" type="spud:release-dates-type">
+		<xs:annotation>
+			<xs:documentation>Contains the online and print release dates for a publication.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--                    SERIES-NUMBER                    -->
+	<xs:element name="series-number" type="xs:normalizedString">
+		<xs:annotation>
+			<xs:documentation>Contains a series number for a publication.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--                    SERIES-TITLE                    -->
+	<xs:element name="series-title" type="xs:normalizedString">
+		<xs:annotation>
+			<xs:documentation>Contains a series title for a publication.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--                    STANDARD-IDS                    -->
+	<xs:element name="standard-ids">
+		<xs:annotation>
+			<xs:documentation>Contains standard IDs for a publication.</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="spud:id" minOccurs="0" maxOccurs="unbounded"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<!--                    SUBFIELD                    -->
+	<xs:element name="subfield" type="xs:normalizedString">
+		<xs:annotation>
+			<xs:documentation>Contains Library of Congress  sub-term.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--                    TERM                    -->
+	<xs:element name="term" type="xs:normalizedString">
+		<xs:annotation>
+			<xs:documentation>Contains Library of Congress main subject term.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--                    TOTAL-PAGES                    -->
+	<xs:element name="total-pages" type="xs:normalizedString">
+		<xs:annotation>
+			<xs:documentation>Indicates the total number of pages for a publication.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--                    TOTAL-VOLUMES                    -->
+	<xs:element name="total-volumes" type="xs:normalizedString">
+		<xs:annotation>
+			<xs:documentation>The total number of volumes for a publication.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--                    VALUE                    -->
+	<xs:element name="value" type="xs:token">
+		<xs:annotation>
+			<xs:documentation>A value that is an ID from the external system, e.g. mcode</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--                    VOLUME-NUMBER                    -->
+	<xs:element name="volume-number" type="xs:normalizedString">
+		<xs:annotation>
+			<xs:documentation>Number of this document within its series.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--                    VOLUME-SUBTITLE                    -->
+	<xs:element name="volume-subtitle" type="xs:normalizedString">
+		<xs:annotation>
+			<xs:documentation>Contains the volume subtitle, if a publication is one volume of a multivolume work.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--                    VOLUME-TYPE                    -->
+	<xs:element name="volume-type" type="xs:normalizedString">
+		<xs:annotation>
+			<xs:documentation>Contains a value indicating whether a volume in a multivolume set is unique or is part of an alphabetical range, 
+				e.g. “Alpha”, “Subject”, “SO Alpha”, “SO Other”.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--                    WEBSITE                    -->
+	<xs:element name="website">
+		<xs:annotation>
+			<xs:documentation>Wrapper for a website link. The 'vault-link:vault-link' element is used to represent the URL.</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="vault-link:vault-link"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<!-- 
+	============================================================================   
+                    COMPLEX TYPE DECLARATIONS
+	============================================================================   
+	-->	
+	<xs:complexType name="standard-id-type">
+		<xs:sequence>
+			<xs:element ref="spud:value"/>
+			<xs:element ref="spud:id-type"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="contributor-type">
+		<xs:complexContent>
+			<xs:extension base="meta:name-type">
+				<xs:attribute name="atlas-id" type="xs:unsignedLong"/>
+				<xs:attribute name="rank" type="xs:normalizedString"/>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="mcode-type">
+		<xs:sequence>
+			<xs:element name="value" type="spud:Gale-mcode-value">
+				<xs:annotation>
+					<xs:documentation>Actual id's value, for example "9780840029768" as the 13 digit ISBN value.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="publication-entity-type" type="xs:normalizedString">
+				<xs:annotation>
+					<xs:documentation>Publication type associated with a given MCODE.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="relationships-type">
+		<xs:choice minOccurs="0" maxOccurs="unbounded">
+			<xs:element ref="spud:child-mcode"/>
+			<xs:element ref="spud:parent-mcode"/>
+		</xs:choice>
+	</xs:complexType>
+	<xs:complexType name="ext-atts-type">
+		<xs:sequence>
+			<xs:element ref="spud:name"/>
+			<xs:element ref="spud:attribute-type"/>
+		</xs:sequence>
+		<xs:attribute name="type" type="xs:token" use="optional" fixed="primary"/>
+	</xs:complexType>
+	<xs:complexType name="media-type">
+		<xs:sequence>
+			<xs:element ref="media:image" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="vault-link-type">
+		<xs:sequence>
+			<xs:element ref="vault-link:vault-link" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="callisto-content-sets-type">
+		<xs:sequence>
+			<xs:element ref="spud:value" minOccurs="0" maxOccurs="unbounded">
+				<xs:annotation>
+					<xs:documentation>Callisto content set name.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="release-dates-type">
+		<xs:sequence>
+			<xs:element ref="meta:standard-date" minOccurs="0" maxOccurs="2"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="entity-type">
+		<xs:sequence minOccurs="0">
+			<xs:element name="type" type="xs:normalizedString">
+				<xs:annotation>
+					<xs:documentation>Child of publication-entity-type. Contains a description for the entity type.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="description" type="xs:normalizedString">
+				<xs:annotation>
+					<xs:documentation>Contains a description for the entity type.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<!--                    PUBLICATION-TYPE                    -->
+	<xs:complexType name="publication-type">
+		<xs:sequence>
+			<xs:element ref="meta:mcode"/>
+			<xs:element ref="spud:publisher-id"/>
+			<xs:element ref="spud:standard-ids"/>
+			<xs:element ref="meta:digital-object-identifier"/>
+			<xs:element name="publication-entity-type" type="spud:entity-type">
+				<xs:annotation>
+					<xs:documentation>Wrapper for "type" capturing entity type of a publication in SPUD (e.g. "BASPUB") and a "description" of this type 
+						(e.g. "Base Publication").</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element ref="spud:citation-instruction" minOccurs="0"/>
+			<xs:element ref="spud:series-title"/>
+			<xs:element ref="spud:series-number"/>
+			<xs:element ref="spud:main-title"/>
+			<xs:element ref="spud:main-subtitle"/>
+			<xs:element ref="spud:volume-number"/>
+			<xs:element ref="spud:total-volumes"/>
+			<xs:element ref="spud:volume-subtitle"/>
+			<xs:element ref="spud:volume-type"/>
+			<xs:element ref="spud:total-pages"/>
+			<xs:element ref="spud:imprint"/>
+			<xs:element ref="spud:imprint-website"/>
+			<xs:element ref="spud:imprint-logo"/>
+			<xs:element ref="meta:place-of-publication"/>
+			<xs:element ref="spud:copyright-year"/>
+			<xs:element ref="spud:release-dates"/>
+			<xs:element ref="spud:mainbody-arrangement"/>
+			<xs:element ref="spud:cover-image"/>
+			<xs:element ref="spud:default-index-filename"/>
+			<xs:element ref="spud:master-index-type"/>
+			<xs:element ref="spud:LC-subjects"/>
+			<xs:element ref="spud:GVRL-subjects"/>
+			<xs:element ref="spud:contributors"/>
+			<xs:element ref="spud:relations"/>
+			<xs:element ref="spud:courses"/>
+			<xs:element ref="spud:disciplines"/>
+			<xs:element ref="spud:callisto-content-sets"/>
+			<xs:element ref="spud:publication-logo"/>
+			<xs:element ref="spud:publisher-logo"/>
+			<xs:element ref="spud:extended-attributes"/>
+			<xs:element ref="spud:holding-institution" maxOccurs="unbounded"/>
+			<xs:element ref="spud:publication-description"/>
+		</xs:sequence>
+	</xs:complexType>	
+</xs:schema>

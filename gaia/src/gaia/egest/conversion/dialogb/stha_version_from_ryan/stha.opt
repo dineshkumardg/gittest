@@ -1,0 +1,25 @@
+! file: stha.opt
+
+! Used by Perl converter
+log_dir:		/gale/prod-i1/data/workflow/conversion_workflow/dvi_content_conversion/ocm_space/bl_ncukp/logs/STHA/
+completed_dir:	/gale/prod-i1/data/workflow/conversion_workflow/dvi_content_conversion/ocm_space/bl_ncukp/manifests/completed/STHA/
+output_dir:		/gale/prod-i1/data/workflow/conversion_workflow/dvi_content_conversion/ocm_space/bl_ncukp/output/STHA/STHA_output/
+input_dir:		/gale/prod-i1/data/workflow/conversion_workflow/dvi_content_conversion/ocm_space/bl_ncukp/ftp_data/STHA/STHA_input/
+headnote_dir_unix:	/auto/groups/history_team/projects/DVI_Newspapers/control_files/headnotes/
+headnote_dir_vms:	DMR:[DB.TDA.HEADNOTES]
+metadata_file_unix: /auto/groups/history_team/projects/DVI_Newspapers/control_files/stha_lookup.txt
+metadata_file_vms:	DMR:[DB.TDA.META]stha_lookup.txt
+dvi_ng_map_unix:    /auto/groups/history_team/projects/DVI_Newspapers/control_files/DVI_NG_STHAmap.txt
+dvi_il_map_unix:    /auto/groups/history_team/projects/DVI_Newspapers/control_files/DVI_IL_STHAmap.txt
+dvi_ng_map_vms:     QRFCPS3:[PE.TDA.CONTROL_FILES]DVI_NG_STHAmap.txt
+dvi_il_map_vms:     QRFCPS3:[PE.TDA.CONTROL_FILES]DVI_IL_STHAmap.txt
+PageIDList_unix:	/auto/groups/history_team/projects/DVI_Newspapers/control_files/STHAPageIDList.txt
+PageIDList_vms:		QRFCPS3:[PE.TDA.CONTROL_FILES]STHAPageIDList.txt
+dvi_issue_lastnum_unix:   /auto/groups/history_team/projects/DVI_Newspapers/control_files/DVI_issue_lastnum_STHA.txt
+dvi_issue_lastnum_vms:    QRFCPS3:[PE.TDA.CONTROL_FILES]DVI_issue_lastnum_STHA.txt
+dvi_issue_id_rn_map_unix: /auto/groups/history_team/projects/DVI_Newspapers/control_files/DVI_issue_id_rn_STHAmap.txt
+dvi_issue_id_rn_map_vms:  QRFCPS3:[PE.TDA.CONTROL_FILES]DVI_issue_id_rn_STHAmap.txt
+dvi_name:           stha
+xxrn:				CT
+spotlight_file: 	/auto/groups/history_team/projects/DVI_Newspapers/control_files/STHA_Spotlight_lookup.xls
+email:				paul.davis@cengage.com, simon.measures@cengage.com, Louise.King@cengage.com, mark.hefner@cengage.com, ryan.cartmill@cengage.com

@@ -1,0 +1,116 @@
+{% extends "qa/filter_paginator.html" %}
+{% block title %}release items{% endblock %}
+
+{% block javascript %}
+function _tickBoxes(on) {
+    var input_tags=document.getElementsByTagName("input");
+
+    for (i=0; i < input_tags.length-4; i++) {
+        tag = input_tags[i];
+        if (tag.type == "checkbox" &&  tag.name == "selected") {
+            tag.checked = on;
+        };
+    }
+}
+
+function select_all() {
+    _tickBoxes(true);
+}
+
+function unselect_all() {
+    _tickBoxes(false);
+}
+
+function toggle(checkbox) {
+    if (checkbox.checked) {
+        select_all();
+    } else {
+        unselect_all();
+    }
+}
+{% endblock %}
+
+
+{% block content %}
+    <h1>release items</h1>
+
+    {% if context or request.GET.search_by%}
+
+        {% block content_table %}
+<ul>
+    <li>all columns can be sorted except: &apos;release&apos;</li>
+    <li>ticking callisto, and not xml, means selected item(s) will stay in qa</li>
+    <li>you can send any item(s) you missed just so long as all egest workers are busy</li>
+    <li>WARNING: you can release anything, even if its not &apos;approved&apos; - HINT: the approved column is sortable!</li>
+</ul>
+            <div id="result_table" style="margin-right: 0px;">
+                {% if context %}
+                    <form action="" method="post">
+                        <table>
+                            <thead>
+                                <tr>
+                                    {% for header in sort_fields_list %}
+                                        {% if header.1 != 'release' %}
+                                        <th id={{ header.1 }} onclick="sort_header('{{ header.1 }}', '{{ request.GET.filter_by}}' ,'{{ request.GET.search_by }}', '{{ page_obj.number }}')">
+                                            <div class="text">{{ header.0 }}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+                                        </th>
+                                        {% else %}
+                                        <th><div class="text">{{ header.0 }}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div></th>
+                                        {% endif %}
+                                    {% endfor %}
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {% for item in context %}
+                                    <tr class="{% cycle 'row1' 'row2' %}">
+                                        <td nowrap>{{item.date}}&nbsp;</td>
+                                        <td><a href="{% url item item.id %}">{{item.dom_name}}</a>&nbsp;</td>
+                                        <td><input type="checkbox" value="{{item.id}}" id="{{item.dom_name}}" name="selected"/></td>
+                                        {% if item.with_approval %}
+                                        <td><input type="checkbox" name="approved" disabled="disabled" value="{{item.id}}" checked="on"></td>
+                                        {% else %}
+                                        <td><input type="checkbox" name="approved" disabled="disabled" value="{{item.id}}"></td>
+                                        {% endif %}
+                                        <td><input type="text" name="notes-{{item.id}}" value="{{item.notes}}" size="40" readonly/></td>
+                                        <td>{{item.who}}&nbsp;</td>
+                                       {% if item.show_when %}
+                                           <td nowrap>{{item.when}}</td>
+                                       {% else %}
+                                           <td nowrap></td>
+                                       {% endif %}
+                                    </tr>
+                                {% endfor %}
+                            </tbody>
+                        </table>
+            </div>
+                        <table class="border-color: transparent;" width="100%">
+                            <tr>
+                            <td>{% block content_paginate %}{{ block.super }}{% endblock %}</td>
+                            <td align="right">
+                            <input type="checkbox"  onclick="toggle(this);" name="select_all" id="select_all"/>&nbsp;<b>release</b> all (toggle)
+                            <input type="checkbox" name="release_only_meet_m2" id="release_only_meet_m2"/>&nbsp;<b>M2 cho_meet</b>
+                            <input type="checkbox" name="release_only_callisto" id="release_only_callisto"/>&nbsp;<b>callisto</b>
+                            <input type="checkbox" name="release_only_xml" id="release_only_xml"/>&nbsp;<b>xml</b> 
+                            <input type="submit" class="button" value="release" name="release_items" id="release_items"/>
+                            </td>
+                            </tr>
+                        </table>
+                    </form>
+                {% else %}
+                    {%if request.GET.search_by %}
+                        <br/><p style="white-space: nowrap;">no items under this condition: <b>search by: "{{ request.GET.search_by }}"</b></p>
+                    {% else %}
+                        <p style="white-space: nowrap;">no items</p>
+                    {% endif %}
+                {% endif %}
+        {% endblock %}
+
+    {% else %}
+        <p>no items available to be released</p>
+    {% endif %}
+
+    {% block sort_script %}
+        {{ block.super }}
+    {% endblock %}
+
+{% endblock %}

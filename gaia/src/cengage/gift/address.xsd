@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2005 rel. 3 U (http://www.altova.com) by Gale User (Gale Group) -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:addr="http://www.gale.com/goldschema/address" xmlns:pres="http://www.gale.com/goldschema/pres" xmlns:vault-link="http://www.gale.com/goldschema/vault-linking" xmlns:meta="http://www.gale.com/goldschema/metadata" targetNamespace="http://www.gale.com/goldschema/address" elementFormDefault="qualified" attributeFormDefault="unqualified" version="3.0">
+	<xs:annotation id="address-schema-purpose">
+		<xs:documentation>This module defines a set of elements that represent  mailing and street addresses, based on the Phoenix address model.</xs:documentation>
+	</xs:annotation>
+	<!--
+	======================================================================
+                           CHANGE HISTORY
+	======================================================================
+	3.0		12/04/2013		js
+	1.	Removed the schema owner part.
+	2.	Updated the folder path of <xs:import>.
+	3.	Reorganized the element groups.
+	4.	Removed the elements "sponsoring-organization", "composed" and "website" as they are unused.
+	5.	Externalized the elements 'Atlas-UID', 'line', 'name' and 'postal-code'. 
+	======================================================================
+-->
+	<xs:include schemaLocation="gale_datatypes.xsd"/>
+	<xs:import namespace="http://www.gale.com/goldschema/vault-linking" schemaLocation="vault_linking.xsd"/>
+	<xs:import namespace="http://www.gale.com/goldschema/pres" schemaLocation="presentation.xsd"/>
+	<xs:import namespace="http://www.gale.com/goldschema/metadata" schemaLocation="metadata.xsd"/>
+	<!-- 
+	============================================================================   
+                    ELEMENT DECLARATIONS
+	============================================================================   
+	-->
+	<!--                    ADDRESS                              -->	
+	<xs:complexType name="address-type">
+		<xs:sequence>
+			<xs:element ref="addr:address-type" minOccurs="0"/>
+			<xs:element ref="addr:street" minOccurs="0"/>
+			<xs:element ref="addr:city" minOccurs="0"/>
+			<xs:element ref="addr:county" minOccurs="0"/>
+			<xs:element ref="addr:state" minOccurs="0"/>
+			<xs:element ref="addr:country"/>
+			<xs:element ref="addr:postal1" minOccurs="0"/>
+			<xs:element ref="addr:postal2" minOccurs="0"/>
+			<xs:element ref="addr:subdivision" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="address" type="addr:address-type"/>
+	<!--                    ADDRESS-TYPE                              -->	
+	<xs:element name="address-type">
+		<xs:annotation>
+			<xs:documentation>The "address-type" element indicates either a street or mailing address</xs:documentation>
+		</xs:annotation>
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:enumeration value="mailing"/>
+				<xs:enumeration value="street"/>
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+	<!--                    ATLAS-UID                              -->
+	<xs:element name="Atlas-UID" type="xs:unsignedLong">
+		<xs:annotation>
+			<xs:documentation>Atlas UID for a state or country that is a term in Atlas</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--                    CITY                              -->	
+	<xs:element name="city" type="xs:string">
+		<xs:annotation>
+			<xs:documentation>City name used in address.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="county" type="xs:string">
+		<xs:annotation>
+			<xs:documentation>A geographical region of a country used for administrative or other purposes.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--                    COUNTRY                              -->
+	<xs:element name="country">
+		<xs:annotation>
+			<xs:documentation>Country name used in address.</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:group ref="addr:address-metadata-group" minOccurs="0"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<!--                    LINE                              -->
+	<xs:element name="line" type="xs:string">
+		<xs:annotation>
+			<xs:documentation>Line element for each line of a street or mailing address</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--                    NAME                              -->
+	<xs:element name="name" type="xs:string">
+		<xs:annotation>
+			<xs:documentation>Name of state or country</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--                    POSTAL1                              -->	
+	<xs:element name="postal1" type="xs:string">
+		<xs:annotation>
+			<xs:documentation>Postal1 and postal2 are for zip/postal codes</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--                    POSTAL2                              -->
+	<xs:element name="postal2" type="xs:string">
+		<xs:annotation>
+			<xs:documentation>Postal1 and postal2 are for zip/postal codes</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--                    POSTAL-CODE                              -->
+	<xs:element name="postal-code" type="xs:string">
+		<xs:annotation>
+			<xs:documentation>Postal abbreviation for state or country</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--                    STREET                              -->	
+	<xs:element name="street">
+		<xs:annotation>
+			<xs:documentation>Street name used in address.</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="addr:line" maxOccurs="unbounded"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<!--                    STATE                              -->	
+	<xs:element name="state">
+		<xs:annotation>
+			<xs:documentation>State name used in address.</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:group ref="addr:address-metadata-group" minOccurs="0"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<!--                    SUBDIVISION                              -->
+	<xs:element name="subdivision" type="xs:string">
+		<xs:annotation>
+			<xs:documentation>Subdivision name used in address.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!-- 
+	============================================================================   
+                    ELEMENT GROUPS
+	============================================================================   
+	-->	
+	<!--                    ADDRESS-METADATA-GROUP                              -->
+	<xs:group name="address-metadata-group">
+		<xs:sequence>
+			<xs:element ref="addr:Atlas-UID" minOccurs="0"/>
+			<xs:element ref="addr:postal-code" minOccurs="0"/>
+			<xs:element ref="addr:name" minOccurs="0"/>
+		</xs:sequence>
+	</xs:group>
+</xs:schema>

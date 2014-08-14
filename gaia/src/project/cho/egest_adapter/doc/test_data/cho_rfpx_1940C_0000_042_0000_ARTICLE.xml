@@ -1,0 +1,1904 @@
+<gold:document-instance>
+  <gift-doc:document>
+    <gift-doc:metadata>
+      <gift-doc:node-metadata>
+        <meta:descriptive-indexing>
+          <meta:indexing-term>
+            <meta:term>
+              <meta:term-type>PUB_SEG_TYPE</meta:term-type>
+              <meta:term-source>Atlas</meta:term-source>
+              <meta:term-id>14242630</meta:term-id>
+              <meta:term-value>Article</meta:term-value>
+            </meta:term>
+          </meta:indexing-term>
+        </meta:descriptive-indexing>
+        <meta:issue-number>42</meta:issue-number>
+        <gift-doc:pagination-group>
+          <gift-doc:pagination>
+            <meta:total-pages>1</meta:total-pages>
+          </gift-doc:pagination>
+        </gift-doc:pagination-group>
+      </gift-doc:node-metadata>
+      <gift-doc:document-metadata>
+        <meta:document-ids>
+          <meta:id type="Gale asset">
+            <meta:value>TJHUKH264285390</meta:value>
+          </meta:id>
+        </meta:document-ids>
+        <meta:bibliographic-ids>
+          <meta:id type="PSM">
+            <meta:value>cho_rfpx_1940C_0000_042_0000</meta:value>
+          </meta:id>
+        </meta:bibliographic-ids>
+        <meta:mcode>4XCZ</meta:mcode>
+        <meta:publication-date>
+          <meta:structured-date>
+            <meta:year>1940</meta:year>
+            <meta:month>07</meta:month>
+            <meta:day>18</meta:day>
+          </meta:structured-date>
+          <meta:standard-date type="Start date">19400718</meta:standard-date>
+          <meta:standard-date type="End date">19400718</meta:standard-date>
+        </meta:publication-date>
+        <meta:record-admin-info>
+          <meta:standard-date type="Original">20130416</meta:standard-date>
+        </meta:record-admin-info>
+        <gift-doc:document-titles>
+          <meta:title-display>Issue 42: 18 July</meta:title-display>
+          <meta:title-sort>Issue 42: 18 July</meta:title-sort>
+          <meta:title-open-url>Issue 42: 18 July</meta:title-open-url>
+        </gift-doc:document-titles>
+        <meta:publication-title>Weekly Review of Foreign Press</meta:publication-title>
+        <meta:languages>
+          <meta:language term-id="13858590" ocr="English" ocr-term-id="13858590" primary="Y">English</meta:language>
+        </meta:languages>
+        <meta:ocr-confidence>85.11</meta:ocr-confidence>
+        <meta:descriptive-indexing>
+          <meta:indexing-term>
+            <meta:term>
+              <meta:term-type>DOC_INFO_TYPE</meta:term-type>
+              <meta:term-source>Atlas</meta:term-source>
+              <meta:term-id>21819391</meta:term-id>
+              <meta:term-value>Journal</meta:term-value>
+            </meta:term>
+          </meta:indexing-term>
+          <meta:indexing-term>
+            <meta:term>
+              <meta:term-type>DOC_INFO_TYPE</meta:term-type>
+              <meta:term-source>Atlas</meta:term-source>
+              <meta:term-id>17528382</meta:term-id>
+              <meta:term-value>Part</meta:term-value>
+            </meta:term>
+          </meta:indexing-term>
+          <meta:indexing-term>
+            <meta:term>
+              <meta:term-type>CONT_REC_TYPE</meta:term-type>
+              <meta:term-source>Atlas</meta:term-source>
+              <meta:term-id>17234672</meta:term-id>
+              <meta:term-value>Text</meta:term-value>
+            </meta:term>
+          </meta:indexing-term>
+          <meta:indexing-term>
+            <meta:term>
+              <meta:term-type>CONT_TYPE</meta:term-type>
+              <meta:term-source>Atlas</meta:term-source>
+              <meta:term-id>21901547</meta:term-id>
+              <meta:term-value>DVI-Periodical</meta:term-value>
+            </meta:term>
+          </meta:indexing-term>
+          <meta:indexing-term>
+            <meta:term>
+              <meta:term-type>FUNC_TYPE</meta:term-type>
+              <meta:term-source>Atlas</meta:term-source>
+              <meta:term-id>21787856</meta:term-id>
+              <meta:term-value>Issue-volume article record</meta:term-value>
+            </meta:term>
+          </meta:indexing-term>
+          <meta:indexing-term>
+            <meta:term>
+              <meta:term-type>ART_LANG</meta:term-type>
+              <meta:term-source>Atlas</meta:term-source>
+              <meta:term-id>13858590</meta:term-id>
+              <meta:term-value>English</meta:term-value>
+            </meta:term>
+          </meta:indexing-term>
+        </meta:descriptive-indexing>
+        <meta:source-institution>
+          <meta:institution-name>Chatham House</meta:institution-name>
+          <meta:institution-location>London</meta:institution-location>
+          <meta:copyright-statement>Copyright Royal Institute of International Affairs</meta:copyright-statement>
+        </meta:source-institution>
+        <meta:holding-institution>
+          <meta:institution-name>Chatham House</meta:institution-name>
+          <meta:institution-location>London</meta:institution-location>
+        </meta:holding-institution>
+        <meta:source-citation-group>
+          <meta:source-citation>
+            <meta:content-date>
+              <meta:structured-date>
+                <meta:year>1940</meta:year>
+                <meta:month>07</meta:month>
+                <meta:day>18</meta:day>
+              </meta:structured-date>
+              <meta:standard-date type="Start date">19400718</meta:standard-date>
+              <meta:standard-date type="End date">19400718</meta:standard-date>
+            </meta:content-date>
+          </meta:source-citation>
+        </meta:source-citation-group>
+        <meta:product-content-type type="CHO">Special Publications</meta:product-content-type>
+      </gift-doc:document-metadata>
+    </gift-doc:metadata>
+    <gift-doc:body>
+      <essay:div document-segment-type="Body text" term-id="14214508" term-source="Atlas">
+        <essay:div document-segment-type="DVI newspaper article clip" term-id="21918445" term-source="Atlas">
+          <essay:complex-meta>
+            <meta:page-id-number>0001</meta:page-id-number>
+          </essay:complex-meta>
+          <shared:media>
+            <media:image data-type="jpeg" width="3326" height="5172" image-type="page view" layout="single" color-mode="color" sequence="0001">
+              <vault-link:vault-link>
+                <vault-link:link-type>external</vault-link:link-type>
+                <vault-link:action>point</vault-link:action>
+                <vault-link:where>
+                  <vault-link:path>cho_rfpx_1940C_0000_042_0001</vault-link:path>
+                </vault-link:where>
+              </vault-link:vault-link>
+            </media:image>
+          </shared:media>
+          <vault-link:vault-link>
+            <vault-link:link-type>external</vault-link:link-type>
+            <vault-link:link-category term-id="21902636" term-source="Atlas">DVI page</vault-link:link-category>
+            <vault-link:action>point</vault-link:action>
+            <vault-link:where>
+              <vault-link:path>//gift-doc:document-metadata/meta:document-ids/meta:id[@type="Gale asset"]/meta:value[.="RWPCIL664004597"]</vault-link:path>
+            </vault-link:where>
+            <vault-link:select>
+              <vault-link:document-nodes>
+                <vault-link:target>ancestor::gift-doc:document</vault-link:target>
+              </vault-link:document-nodes>
+            </vault-link:select>
+          </vault-link:vault-link>
+          <vault-link:vault-link>
+            <vault-link:link-type>external</vault-link:link-type>
+            <vault-link:link-category term-id="22176901" term-source="Atlas">DVI volume</vault-link:link-category>
+            <vault-link:action>point</vault-link:action>
+            <vault-link:where>
+              <vault-link:path>//gift-doc:document-metadata/meta:document-ids/meta:id[@type="Gale asset"]/meta:value[.="KXSOMS927806317"]</vault-link:path>
+            </vault-link:where>
+            <vault-link:select>
+              <vault-link:document-nodes>
+                <vault-link:target>ancestor::gift-doc:document</vault-link:target>
+              </vault-link:document-nodes>
+            </vault-link:select>
+          </vault-link:vault-link>
+          <essay:div document-segment-type="Body text" term-id="14214508" term-source="Atlas">
+            <essay:p>CONFIDENTIAL SERIES C, No. 42 REVIEW OF THE FOREIGN PRESS SERIES C: THE U.S.S.R., THE BALTIC STATES, AND THE FAR EAST No. 42 July 18, 1940</essay:p>
+          </essay:div>
+        </essay:div>
+      </essay:div>
+    </gift-doc:body>
+  </gift-doc:document>
+</gold:document-instance>
+<gold:document-instance>
+  <gift-doc:document>
+    <gift-doc:metadata>
+      <gift-doc:node-metadata>
+        <meta:descriptive-indexing>
+          <meta:indexing-term>
+            <meta:term>
+              <meta:term-type>PUB_SEG_TYPE</meta:term-type>
+              <meta:term-source>Atlas</meta:term-source>
+              <meta:term-id>14242630</meta:term-id>
+              <meta:term-value>Article</meta:term-value>
+            </meta:term>
+          </meta:indexing-term>
+        </meta:descriptive-indexing>
+        <meta:issue-number>42</meta:issue-number>
+        <gift-doc:pagination-group>
+          <gift-doc:pagination>
+            <meta:total-pages>1</meta:total-pages>
+          </gift-doc:pagination>
+        </gift-doc:pagination-group>
+      </gift-doc:node-metadata>
+      <gift-doc:document-metadata>
+        <meta:document-ids>
+          <meta:id type="Gale asset">
+            <meta:value>CPFCMK528132222</meta:value>
+          </meta:id>
+        </meta:document-ids>
+        <meta:bibliographic-ids>
+          <meta:id type="PSM">
+            <meta:value>cho_rfpx_1940C_0000_042_0000</meta:value>
+          </meta:id>
+        </meta:bibliographic-ids>
+        <meta:mcode>4XCZ</meta:mcode>
+        <meta:publication-date>
+          <meta:structured-date>
+            <meta:year>1940</meta:year>
+            <meta:month>07</meta:month>
+            <meta:day>18</meta:day>
+          </meta:structured-date>
+          <meta:standard-date type="Start date">19400718</meta:standard-date>
+          <meta:standard-date type="End date">19400718</meta:standard-date>
+        </meta:publication-date>
+        <meta:record-admin-info>
+          <meta:standard-date type="Original">20130416</meta:standard-date>
+        </meta:record-admin-info>
+        <gift-doc:document-titles>
+          <meta:title-display>Table of Contents</meta:title-display>
+          <meta:title-sort>Table of Contents</meta:title-sort>
+          <meta:title-open-url>Table of Contents</meta:title-open-url>
+        </gift-doc:document-titles>
+        <meta:publication-title>Weekly Review of Foreign Press</meta:publication-title>
+        <meta:languages>
+          <meta:language term-id="13858590" ocr="English" ocr-term-id="13858590" primary="Y">English</meta:language>
+        </meta:languages>
+        <meta:ocr-confidence>85.11</meta:ocr-confidence>
+        <meta:descriptive-indexing>
+          <meta:indexing-term>
+            <meta:term>
+              <meta:term-type>DOC_INFO_TYPE</meta:term-type>
+              <meta:term-source>Atlas</meta:term-source>
+              <meta:term-id>21819391</meta:term-id>
+              <meta:term-value>Journal</meta:term-value>
+            </meta:term>
+          </meta:indexing-term>
+          <meta:indexing-term>
+            <meta:term>
+              <meta:term-type>DOC_INFO_TYPE</meta:term-type>
+              <meta:term-source>Atlas</meta:term-source>
+              <meta:term-id>21817803</meta:term-id>
+              <meta:term-value>Front matter</meta:term-value>
+            </meta:term>
+          </meta:indexing-term>
+          <meta:indexing-term>
+            <meta:term>
+              <meta:term-type>CONT_REC_TYPE</meta:term-type>
+              <meta:term-source>Atlas</meta:term-source>
+              <meta:term-id>17234672</meta:term-id>
+              <meta:term-value>Text</meta:term-value>
+            </meta:term>
+          </meta:indexing-term>
+          <meta:indexing-term>
+            <meta:term>
+              <meta:term-type>CONT_TYPE</meta:term-type>
+              <meta:term-source>Atlas</meta:term-source>
+              <meta:term-id>21901547</meta:term-id>
+              <meta:term-value>DVI-Periodical</meta:term-value>
+            </meta:term>
+          </meta:indexing-term>
+          <meta:indexing-term>
+            <meta:term>
+              <meta:term-type>FUNC_TYPE</meta:term-type>
+              <meta:term-source>Atlas</meta:term-source>
+              <meta:term-id>21787856</meta:term-id>
+              <meta:term-value>Issue-volume article record</meta:term-value>
+            </meta:term>
+          </meta:indexing-term>
+          <meta:indexing-term>
+            <meta:term>
+              <meta:term-type>ART_LANG</meta:term-type>
+              <meta:term-source>Atlas</meta:term-source>
+              <meta:term-id>13858590</meta:term-id>
+              <meta:term-value>English</meta:term-value>
+            </meta:term>
+          </meta:indexing-term>
+        </meta:descriptive-indexing>
+        <meta:source-institution>
+          <meta:institution-name>Chatham House</meta:institution-name>
+          <meta:institution-location>London</meta:institution-location>
+          <meta:copyright-statement>Copyright Royal Institute of International Affairs</meta:copyright-statement>
+        </meta:source-institution>
+        <meta:holding-institution>
+          <meta:institution-name>Chatham House</meta:institution-name>
+          <meta:institution-location>London</meta:institution-location>
+        </meta:holding-institution>
+        <meta:source-citation-group>
+          <meta:source-citation>
+            <meta:content-date>
+              <meta:structured-date>
+                <meta:year>1940</meta:year>
+                <meta:month>07</meta:month>
+                <meta:day>18</meta:day>
+              </meta:structured-date>
+              <meta:standard-date type="Start date">19400718</meta:standard-date>
+              <meta:standard-date type="End date">19400718</meta:standard-date>
+            </meta:content-date>
+          </meta:source-citation>
+        </meta:source-citation-group>
+        <meta:product-content-type type="CHO">Special Publications</meta:product-content-type>
+      </gift-doc:document-metadata>
+    </gift-doc:metadata>
+    <gift-doc:body>
+      <essay:div document-segment-type="Body text" term-id="14214508" term-source="Atlas">
+        <essay:div document-segment-type="DVI newspaper article clip" term-id="21918445" term-source="Atlas">
+          <essay:complex-meta>
+            <meta:page-id-number>0001</meta:page-id-number>
+          </essay:complex-meta>
+          <shared:media>
+            <media:image data-type="jpeg" width="3326" height="5172" image-type="page view" layout="single" color-mode="color" sequence="0001">
+              <vault-link:vault-link>
+                <vault-link:link-type>external</vault-link:link-type>
+                <vault-link:action>point</vault-link:action>
+                <vault-link:where>
+                  <vault-link:path>cho_rfpx_1940C_0000_042_0001</vault-link:path>
+                </vault-link:where>
+              </vault-link:vault-link>
+            </media:image>
+          </shared:media>
+          <vault-link:vault-link>
+            <vault-link:link-type>external</vault-link:link-type>
+            <vault-link:link-category term-id="21902636" term-source="Atlas">DVI page</vault-link:link-category>
+            <vault-link:action>point</vault-link:action>
+            <vault-link:where>
+              <vault-link:path>//gift-doc:document-metadata/meta:document-ids/meta:id[@type="Gale asset"]/meta:value[.="RWPCIL664004597"]</vault-link:path>
+            </vault-link:where>
+            <vault-link:select>
+              <vault-link:document-nodes>
+                <vault-link:target>ancestor::gift-doc:document</vault-link:target>
+              </vault-link:document-nodes>
+            </vault-link:select>
+          </vault-link:vault-link>
+          <vault-link:vault-link>
+            <vault-link:link-type>external</vault-link:link-type>
+            <vault-link:link-category term-id="22176901" term-source="Atlas">DVI volume</vault-link:link-category>
+            <vault-link:action>point</vault-link:action>
+            <vault-link:where>
+              <vault-link:path>//gift-doc:document-metadata/meta:document-ids/meta:id[@type="Gale asset"]/meta:value[.="KXSOMS927806317"]</vault-link:path>
+            </vault-link:where>
+            <vault-link:select>
+              <vault-link:document-nodes>
+                <vault-link:target>ancestor::gift-doc:document</vault-link:target>
+              </vault-link:document-nodes>
+            </vault-link:select>
+          </vault-link:vault-link>
+          <essay:div document-segment-type="Body text" term-id="14214508" term-source="Atlas">
+            <essay:p>Table of Contents THE U.S.S.R. page The Ukraine and Western Ukraine The Party Congress and Supreme Council 2 The Needs of Defence 2 Western Ukraine 2 Land and Collective Farms in Western Ukraine 2 &apos;Bourgeois - nationalism&apos; in Western Ukraine 3 An American Impression of Western Ukraine 3 II. Social and Economic Conditions Islam in Tadzhikstan The Komsomol Trade Unions page 3 3 4 THE BALTIC STATES [No material has been available]. THE FAR EAST Japan Japan and the Future of Indo-China Japan and Thailand German Propaganda in Japan The Single Party Project Warning to Japanese in China Evasion of Control in Japan page 4 5 II. China China and the European war Possible Peace Moves Kuomintang-Communist Relations Conditions in the Chinese Army III. Thailand Views on the War in Europe The Shipping Problem IV. Economic Notes The American Stake in the Dutch East Indies page 6 6 6 6 Note:&#8212;The following can be supplied on request: The Far East: Japanese Press Comment on Anti-Japanese Riots in Peru. Miscellaneous notes on conditions in unoccupied China. Requests for further information relating to items appearing in the Review and suggestions regarding its scope and arrangement should be addressed to the Enquiries Section of the Foreign Research and Press Service. FOREIGN RESEARCH AND PRESS SERVICE (The Royal Institute of International Affairs) Balliol College, Oxford. Tel. 47471</essay:p>
+          </essay:div>
+        </essay:div>
+      </essay:div>
+    </gift-doc:body>
+  </gift-doc:document>
+</gold:document-instance>
+<gold:document-instance>
+  <gift-doc:document>
+    <gift-doc:metadata>
+      <gift-doc:node-metadata>
+        <meta:descriptive-indexing>
+          <meta:indexing-term>
+            <meta:term>
+              <meta:term-type>PUB_SEG_TYPE</meta:term-type>
+              <meta:term-source>Atlas</meta:term-source>
+              <meta:term-id>14242630</meta:term-id>
+              <meta:term-value>Article</meta:term-value>
+            </meta:term>
+          </meta:indexing-term>
+        </meta:descriptive-indexing>
+        <meta:issue-number>42</meta:issue-number>
+        <gift-doc:pagination-group>
+          <gift-doc:pagination>
+            <meta:total-pages>2</meta:total-pages>
+            <meta:ranges>
+              <meta:range>
+                <meta:begin-page>2</meta:begin-page>
+                <meta:end-page>3</meta:end-page>
+              </meta:range>
+            </meta:ranges>
+          </gift-doc:pagination>
+        </gift-doc:pagination-group>
+      </gift-doc:node-metadata>
+      <gift-doc:document-metadata>
+        <meta:document-ids>
+          <meta:id type="Gale asset">
+            <meta:value>SAYXKG520143998</meta:value>
+          </meta:id>
+        </meta:document-ids>
+        <meta:bibliographic-ids>
+          <meta:id type="PSM">
+            <meta:value>cho_rfpx_1940C_0000_042_0000</meta:value>
+          </meta:id>
+        </meta:bibliographic-ids>
+        <meta:mcode>4XCZ</meta:mcode>
+        <meta:publication-date>
+          <meta:structured-date>
+            <meta:year>1940</meta:year>
+            <meta:month>07</meta:month>
+            <meta:day>18</meta:day>
+          </meta:structured-date>
+          <meta:standard-date type="Start date">19400718</meta:standard-date>
+          <meta:standard-date type="End date">19400718</meta:standard-date>
+        </meta:publication-date>
+        <meta:record-admin-info>
+          <meta:standard-date type="Original">20130416</meta:standard-date>
+        </meta:record-admin-info>
+        <gift-doc:document-titles>
+          <meta:title-display>I. The Ukraine and Western Ukraine</meta:title-display>
+          <meta:title-sort>I. The Ukraine and Western Ukraine</meta:title-sort>
+          <meta:title-open-url>I. The Ukraine and Western Ukraine</meta:title-open-url>
+        </gift-doc:document-titles>
+        <meta:publication-title>Weekly Review of Foreign Press</meta:publication-title>
+        <meta:languages>
+          <meta:language term-id="13858590" ocr="English" ocr-term-id="13858590" primary="Y">English</meta:language>
+        </meta:languages>
+        <meta:ocr-confidence>85.11</meta:ocr-confidence>
+        <meta:descriptive-indexing>
+          <meta:indexing-term>
+            <meta:term>
+              <meta:term-type>DOC_INFO_TYPE</meta:term-type>
+              <meta:term-source>Atlas</meta:term-source>
+              <meta:term-id>21819391</meta:term-id>
+              <meta:term-value>Journal</meta:term-value>
+            </meta:term>
+          </meta:indexing-term>
+          <meta:indexing-term>
+            <meta:term>
+              <meta:term-type>DOC_INFO_TYPE</meta:term-type>
+              <meta:term-source>Atlas</meta:term-source>
+              <meta:term-id>14242630</meta:term-id>
+              <meta:term-value>Article</meta:term-value>
+            </meta:term>
+          </meta:indexing-term>
+          <meta:indexing-term>
+            <meta:term>
+              <meta:term-type>CONT_REC_TYPE</meta:term-type>
+              <meta:term-source>Atlas</meta:term-source>
+              <meta:term-id>17234672</meta:term-id>
+              <meta:term-value>Text</meta:term-value>
+            </meta:term>
+          </meta:indexing-term>
+          <meta:indexing-term>
+            <meta:term>
+              <meta:term-type>CONT_TYPE</meta:term-type>
+              <meta:term-source>Atlas</meta:term-source>
+              <meta:term-id>21901547</meta:term-id>
+              <meta:term-value>DVI-Periodical</meta:term-value>
+            </meta:term>
+          </meta:indexing-term>
+          <meta:indexing-term>
+            <meta:term>
+              <meta:term-type>FUNC_TYPE</meta:term-type>
+              <meta:term-source>Atlas</meta:term-source>
+              <meta:term-id>21787856</meta:term-id>
+              <meta:term-value>Issue-volume article record</meta:term-value>
+            </meta:term>
+          </meta:indexing-term>
+          <meta:indexing-term>
+            <meta:term>
+              <meta:term-type>ART_LANG</meta:term-type>
+              <meta:term-source>Atlas</meta:term-source>
+              <meta:term-id>13858590</meta:term-id>
+              <meta:term-value>English</meta:term-value>
+            </meta:term>
+          </meta:indexing-term>
+        </meta:descriptive-indexing>
+        <meta:source-institution>
+          <meta:institution-name>Chatham House</meta:institution-name>
+          <meta:institution-location>London</meta:institution-location>
+          <meta:copyright-statement>Copyright Royal Institute of International Affairs</meta:copyright-statement>
+        </meta:source-institution>
+        <meta:holding-institution>
+          <meta:institution-name>Chatham House</meta:institution-name>
+          <meta:institution-location>London</meta:institution-location>
+        </meta:holding-institution>
+        <meta:source-citation-group>
+          <meta:source-citation>
+            <meta:content-date>
+              <meta:structured-date>
+                <meta:year>1940</meta:year>
+                <meta:month>07</meta:month>
+                <meta:day>18</meta:day>
+              </meta:structured-date>
+              <meta:standard-date type="Start date">19400718</meta:standard-date>
+              <meta:standard-date type="End date">19400718</meta:standard-date>
+            </meta:content-date>
+          </meta:source-citation>
+        </meta:source-citation-group>
+        <meta:product-content-type type="CHO">Special Publications</meta:product-content-type>
+      </gift-doc:document-metadata>
+    </gift-doc:metadata>
+    <gift-doc:body>
+      <essay:div document-segment-type="Body text" term-id="14214508" term-source="Atlas">
+        <essay:div document-segment-type="DVI newspaper article clip" term-id="21918445" term-source="Atlas">
+          <essay:complex-meta>
+            <meta:page-id-number>0002</meta:page-id-number>
+            <meta:folio>
+              <meta:start-number>2</meta:start-number>
+            </meta:folio>
+          </essay:complex-meta>
+          <shared:media>
+            <media:image data-type="jpeg" width="3326" height="5172" image-type="page view" layout="single" color-mode="color" folio="2" sequence="0002">
+              <vault-link:vault-link>
+                <vault-link:link-type>external</vault-link:link-type>
+                <vault-link:action>point</vault-link:action>
+                <vault-link:where>
+                  <vault-link:path>cho_rfpx_1940C_0000_042_0002</vault-link:path>
+                </vault-link:where>
+              </vault-link:vault-link>
+            </media:image>
+          </shared:media>
+          <vault-link:vault-link>
+            <vault-link:link-type>external</vault-link:link-type>
+            <vault-link:link-category term-id="21902636" term-source="Atlas">DVI page</vault-link:link-category>
+            <vault-link:action>point</vault-link:action>
+            <vault-link:where>
+              <vault-link:path>//gift-doc:document-metadata/meta:document-ids/meta:id[@type="Gale asset"]/meta:value[.="ABKGON437614386"]</vault-link:path>
+            </vault-link:where>
+            <vault-link:select>
+              <vault-link:document-nodes>
+                <vault-link:target>ancestor::gift-doc:document</vault-link:target>
+              </vault-link:document-nodes>
+            </vault-link:select>
+          </vault-link:vault-link>
+          <vault-link:vault-link>
+            <vault-link:link-type>external</vault-link:link-type>
+            <vault-link:link-category term-id="22176901" term-source="Atlas">DVI volume</vault-link:link-category>
+            <vault-link:action>point</vault-link:action>
+            <vault-link:where>
+              <vault-link:path>//gift-doc:document-metadata/meta:document-ids/meta:id[@type="Gale asset"]/meta:value[.="KXSOMS927806317"]</vault-link:path>
+            </vault-link:where>
+            <vault-link:select>
+              <vault-link:document-nodes>
+                <vault-link:target>ancestor::gift-doc:document</vault-link:target>
+              </vault-link:document-nodes>
+            </vault-link:select>
+          </vault-link:vault-link>
+          <essay:div document-segment-type="Body text" term-id="14214508" term-source="Atlas">
+            <essay:p>THE U.S.S.R. I. THE UKRAINE AND WESTERN UKRAINE The Party Congress and Supreme Council Very much fuller reports of the Fifteenth Congress of the Ukrainian Party Congress than those in the Moscow press used in this Review, C. No. 37, p. 2, have now become available in Sovyetskaya Ukraina (14-24 May; 15 and 17 May missing). The Congress was followed by the Fourth Session of the Ukrainian Supreme Council (Sovyetskaya Ukraina, 26 May-2 June), which was devoted to the Budget and conse&#172; quently to a series of reviews of the economic and cultural conditions in the various provinces of the Ukraine. The Western Ukraine is dealt with at greater length below, but the Budget and a few supple&#172; mentary points in regard to the rest of the Ukraine may be added to the information given in No. 37. The Budget was finally fixed at 8,096,411,000 roubles revenue, and 8,090,828,000 roubles expendi&#172; ture. Realized totals for 1938 were:&#8212;6,062,922,000 revenue, and 5,864,844,000 expenditure: for 1939, 6,833,107,000 revenue, and 6,644,766,000 expenditure. The increase in expenditure as compared with 1939 was nearly equivalent to the amount allocated to the Western Ukraine, 1| milliards. Flow much of the increased revenue was to come from the Western Ukraine was not stated. The subdivision of revenue and expenditure estimates followed much the same proportions as those in the R.S.F.S.R. Budget (see this Review, C, No. 39, p. 3); similarly the revenue figures showed an increasing reliance on the Republic&apos;s own funds, as opposed to allocations from the Union Budget. Rather more emphasis was placed on social and cultural expenditure than on financing the national economy, as compared with the R.S.F.S.R. There were numerous complaints of waste by health and education authorities, and lax financial discipline in the industrial Commissariats was deplored. [Details of the Budget can be supplied if required]. The Needs of Defence General references to the needs of defence and the necessity for &apos;mobilized preparedness&apos; were frequent, and the increase in output of the defence industries was declared to be satisfactory, particularly in Kharkov. Mention was made of a Union law, not previously noticed in the press, making para-military training compulsory in all secondary schools. In the Ukraine this required the training, in camps which were being organized this summer, of 3,000 new military instructors. Neither of the two generals whose speeches were re&#172; ported (not in the Moscow press) was particularly, in&#172; formative. Lieutenant-General Boldin, the commander of the Odessa Military District, made customary remarks about Anglo-French intrigues in Roumania, efforts to drag the U.S.S.R. into war, and (mentioned in the British press) the necessity of &apos;not allowing any&#172; body to violate the frontier of our homeland . . . and of beating the enemy on his own territory . . .&apos; (16 May). He also emphasized the importance of complying with the requirements of horse requisitions for the Army, which hitherto were very far from having been ful&#172; filled,&#8212;a regular ground of complaint. [Note: The number of horses in the Union in 1938 had not recovered further than 17.5 millions from the low water mark of 15.7 millions in 1934, as compared with a high water mark of 34.6 millions in 1929]. Lieutenant- General Golikov, in command in Lvov, had some hard words to say of the bad state of the roads in Western Ukraine during the spring and of the unsatisfactory working of the railways, and some good words to say of the propaganda for the elections conducted by the fighting troops as well as by the Political Administra&#172; tion of the Army: otherwise his speech was devoted to eulogizing Krushchev for securing the capitulation of Lvov without any fighting in September 1939 (22 May). Western Ukraine The speeches at the Party Congress, as reported, threw little light on the condition of the Party in the Western Ukraine. Official complaint was made of the lack of organization in the collection of members&apos; fees, and the Party in Rovno province was slanged for &apos;great confusion&apos;, thereby giving an opportunity to &apos;Poles, Ukrainian nationalists, Zionists, and other enemies of the people ... to turn to sharper methods of resistance&apos;. Each of the first secretaries of the provincial com&#172; mittees of the Party in the Western Ukraine was elected to the Central Committee of the Ukrainian Communist Party (71 members in all), and Lvov was given an extra member, but none was put on the really important small committees. The deputies to the Supreme Council from Western Ukraine numbered 80, of whom 20 were Communists. 40 were classed as peasants, 22 as workers and 18 as intelligentsia: 17 were women. In age, two-thirds of them were between 26 and 40 and the great majority of the remainder over 40. They were merely described as &apos;Ukrainians, Poles, Russians, and Jews&apos;, without further particulars. The &apos;non-party, advanced in&#172; telligentsia&apos; seem to have been relegated to the back&#172; ground, if one may judge from the fact that no speeches from them were reported and that the press has since the end of March dropped the advertising of Franko-Studinski, Vanda Vasilevskaya, and others, which previously was a distinct feature. Accounts of Soviet successes in considerable detail were given for each of the six provinces, shown up against the background of Polish oppression, with the usual themes recurring:&#8212;unemployment liquidated; industry set on its feet again and expanding; land, stock, etc., given to the peasantry; collective farms, state farms, and machine-tractor stations started; trade improving; schools and other educational estab&#172; lishment multiplied, especially Ukrainian ones; hos&#172; pitals and medical treatment enormously developed. Much emphasis was laid on the introduction of the Soviet system of taxation, in contrast with the crushing weight of Polish taxation, and on the alloca&#172; tions in the Ukrainian Republic&apos;s Budget to the educational and health needs of the Western Ukraine. Out of the total expenditure of about 8 milliard roubles, nearly \\ milliard were allocated to the Western Ukraine, of which sum 546 millions were given to education and 145 to health. Some stress was laid on the need for the Commissariat of Finance to recruit &apos;qualified cadres&apos; for working in the Western Ukraine. Nothing was said as to religion; and spring sowing and crop prospects were very rarely mentioned. One of the Lvov deputies referred to &apos;the considerable shortage&apos; in fuel in Lvov and neighbouring towns during the past winter, and certain of the Kiev Commissariats were repeatedly blamed for taking no practical interest in the new provinces. There were several references to what was being done to assist the Hutsuls, who have also been given a certain amount of advertisement earlier in the Soviet press. The Hutsuls are an Ukrainian-speaking pastoral folk, living in proud isolation high up among the Carpathians in the province of Stanislav, and also in Sub-Carpathian Ruthenia and western Bukovina. The attention given to their highly distinctive peasant handicrafts and art may possibly be a cultural cloak for a political interest in them as being useful go-betweens with the Ukrainians across the border in Sub-Carpathian Ruthenia (regained by Hungary in March, 1939), as to which a most discreet silence has been maintained in the Soviet press since last September. Land and Collective Farms in Western Ukraine The figures given for the distribution of land to the peasantry corresponded in part to the latest figures given in this Review, D, No. 36, p. 9., but the confusion there pointed out appears to persist and it seems</essay:p>
+          </essay:div>
+        </essay:div>
+        <essay:div document-segment-type="DVI newspaper article clip" term-id="21918445" term-source="Atlas">
+          <essay:complex-meta>
+            <meta:page-id-number>0003</meta:page-id-number>
+            <meta:folio>
+              <meta:start-number>3</meta:start-number>
+            </meta:folio>
+          </essay:complex-meta>
+          <shared:media>
+            <media:image data-type="jpeg" width="3326" height="5172" image-type="page view" layout="single" color-mode="color" folio="3" sequence="0003">
+              <vault-link:vault-link>
+                <vault-link:link-type>external</vault-link:link-type>
+                <vault-link:action>point</vault-link:action>
+                <vault-link:where>
+                  <vault-link:path>cho_rfpx_1940C_0000_042_0003</vault-link:path>
+                </vault-link:where>
+              </vault-link:vault-link>
+            </media:image>
+          </shared:media>
+          <vault-link:vault-link>
+            <vault-link:link-type>external</vault-link:link-type>
+            <vault-link:link-category term-id="21902636" term-source="Atlas">DVI page</vault-link:link-category>
+            <vault-link:action>point</vault-link:action>
+            <vault-link:where>
+              <vault-link:path>//gift-doc:document-metadata/meta:document-ids/meta:id[@type="Gale asset"]/meta:value[.="RODYWO912211530"]</vault-link:path>
+            </vault-link:where>
+            <vault-link:select>
+              <vault-link:document-nodes>
+                <vault-link:target>ancestor::gift-doc:document</vault-link:target>
+              </vault-link:document-nodes>
+            </vault-link:select>
+          </vault-link:vault-link>
+          <vault-link:vault-link>
+            <vault-link:link-type>external</vault-link:link-type>
+            <vault-link:link-category term-id="22176901" term-source="Atlas">DVI volume</vault-link:link-category>
+            <vault-link:action>point</vault-link:action>
+            <vault-link:where>
+              <vault-link:path>//gift-doc:document-metadata/meta:document-ids/meta:id[@type="Gale asset"]/meta:value[.="KXSOMS927806317"]</vault-link:path>
+            </vault-link:where>
+            <vault-link:select>
+              <vault-link:document-nodes>
+                <vault-link:target>ancestor::gift-doc:document</vault-link:target>
+              </vault-link:document-nodes>
+            </vault-link:select>
+          </vault-link:vault-link>
+          <essay:div document-segment-type="Body text" term-id="14214508" term-source="Atlas">
+            <essay:p>either that the authorities do not yet know accurately the results of the division of the big estates, or that only a portion of the confiscated land has been handed over to the poorer peasantry: possibly both explana&#172; tions are true. Similar confusion exists as to the collective farms: whereas the resolutions of the Party Congress mentioned the figure of 155, the figures given by the speakers from each of the six provinces amounted to 224. In addition about 50 state farms and 100 machine-tractor stations had been started by the end of May. Complaints were repeated as to the bad condition of the tractors, etc., supplied. Rather more than 15,000 households had joined collective farms in four of the provinces, but figures were not mentioned for Tarnopol and Rovno. In the latter province avowals by the Party secretary made it clear that the Party was &apos;still working badly as regards collective farms&apos;. The official Party policy, as was made clear in the resolutions of the Party Congress, is to do everything possible to encourage &apos;the poor and middle peasantry&apos; to organize collective farms. &apos;Bourgeois-nationalism&apos; in Western Ukraine The very much fuller reports available in Sovyets- kaya Ukraina than in the Moscow papers showed that &apos;bourgeois-nationalism&apos; in Western Ukraine was by no means passed over in silence. &apos;Revolutionary vigilance and irreconcilability&apos; must be shown against &apos;the worst enemies of the labouring people, the agents and faithful slaves of capitalism . . . The Ukrainian National Democratic Union, the Organization of Ukrainian Nationalists, the Polish National-Demo- crats, the Polish Socialist Party, the Zionists, the Bund, and other anti-Soviet filth&apos;. Grishchuk, the secretary of the Party committee of Lvov province, in explaining that the economic reconstruction of the Western Ukraine was hindered by taking place &apos;in conditions of bitter class war with the enemies of the labouring people&apos;, paid the first tribute that has appeared in the Soviet press available to the work of the G.P.U. in these provinces. &apos;The foul, cowardly dregs of Polish officers and colonists&#8212;these accursed enemies of the Ukrainian people&#8212;and other agents of the bourgeois attempted to carry out acts of sabotage and terrorism. Our glorious organs of the Commis&#172; sariat of Internal Affairs (i.e., the G.P.U.) unmasked and destroyed a number of terroristic groups, which had been preparing foul plots against the toilers and the Soviet authority&apos;. Serov, the Ukrainian Com&#172; missar of Internal Affairs, replied by allowing that &apos;the struggle against counter-revolution&apos; was being &apos;not badly&apos; carried on, but he summoned &apos;the leaders of Party and Soviet organizations and the Chekists&apos; (i.e. the G.P.U. men) to &apos;decisive struggle with the remnants of hostile elements&apos;, who still remained dangerous. [Note: The Ukrainian National Democratic Union (U.N.D.O.) was the largest of the Ukrainian parties in Poland, with an opportunist policy which included participation in the Warsaw Parliament. The Organization of Ukrainian Nationalists (O.U.N.) was the Fascist political wing of the extremist emigre Ukrainian Military organization (O.W.O.), a body reputed to have the closest connections with Berlin and headed first by Colonel Konovalets, until his murder in May l&#163;)38 (probably by a Soviet agent), and then by Colonel Andrei Melnyk from Vienna, who had recently also been in the service of the very influential Uniate Metropolitan of Lvov, Archbishop Szeptycki]. An American Impression of Western Ukraine A despatch from Cernauti by Mr. Christopher Buckley to the Christian Science Monitor (8 June) described a double movement of migration of refugees, from Bukovina back to the Western Ukraine and vice versa. Of the former some hundreds were known to have returned, homesick for their families and &apos;induced by a well-contrived propaganda&apos;. On the other hand, there was a reverse movement of refugees in small groups, averaging recently about 300 a</essay:p>
+          </essay:div>
+        </essay:div>
+        <essay:div document-segment-type="DVI newspaper article clip" term-id="21918445" term-source="Atlas">
+          <essay:complex-meta>
+            <meta:page-id-number>0003</meta:page-id-number>
+            <meta:folio>
+              <meta:start-number>3</meta:start-number>
+            </meta:folio>
+          </essay:complex-meta>
+          <shared:media>
+            <media:image data-type="jpeg" width="3326" height="5172" image-type="page view" layout="single" color-mode="color" folio="3" sequence="0003">
+              <vault-link:vault-link>
+                <vault-link:link-type>external</vault-link:link-type>
+                <vault-link:action>point</vault-link:action>
+                <vault-link:where>
+                  <vault-link:path>cho_rfpx_1940C_0000_042_0003</vault-link:path>
+                </vault-link:where>
+              </vault-link:vault-link>
+            </media:image>
+          </shared:media>
+          <vault-link:vault-link>
+            <vault-link:link-type>external</vault-link:link-type>
+            <vault-link:link-category term-id="21902636" term-source="Atlas">DVI page</vault-link:link-category>
+            <vault-link:action>point</vault-link:action>
+            <vault-link:where>
+              <vault-link:path>//gift-doc:document-metadata/meta:document-ids/meta:id[@type="Gale asset"]/meta:value[.="RODYWO912211530"]</vault-link:path>
+            </vault-link:where>
+            <vault-link:select>
+              <vault-link:document-nodes>
+                <vault-link:target>ancestor::gift-doc:document</vault-link:target>
+              </vault-link:document-nodes>
+            </vault-link:select>
+          </vault-link:vault-link>
+          <vault-link:vault-link>
+            <vault-link:link-type>external</vault-link:link-type>
+            <vault-link:link-category term-id="22176901" term-source="Atlas">DVI volume</vault-link:link-category>
+            <vault-link:action>point</vault-link:action>
+            <vault-link:where>
+              <vault-link:path>//gift-doc:document-metadata/meta:document-ids/meta:id[@type="Gale asset"]/meta:value[.="KXSOMS927806317"]</vault-link:path>
+            </vault-link:where>
+            <vault-link:select>
+              <vault-link:document-nodes>
+                <vault-link:target>ancestor::gift-doc:document</vault-link:target>
+              </vault-link:document-nodes>
+            </vault-link:select>
+          </vault-link:vault-link>
+          <essay:div document-segment-type="Body text" term-id="14214508" term-source="Atlas">
+            <essay:p>month, of all classes, from the Western Ukraine to Cernauti. Such migrations were particularly frequent on feast daj/s of the Orthodox Church, when the watch kept by the frontier guards on both sides was considerably, if unofficially, relaxed. The general talk of these refugees was of the food shortage of all kinds during the winter, the vast scale of military requisitions, and the harshness of the martial law in force. Some spoke bitterly of the privileges enjoyed by members of the Party or of Soviet committees. Vigorous efforts were being made in the sphere of education; coeducation was now compulsory and &apos;a very wide degree of individual liberty, recalling the early days of Russian Communism&apos;, was granted to the children; the young people were encouraged to attend cinemas, cafes and &apos;dancings&apos;, where they would meet the Red Army.</essay:p>
+          </essay:div>
+        </essay:div>
+      </essay:div>
+    </gift-doc:body>
+  </gift-doc:document>
+</gold:document-instance>
+<gold:document-instance>
+  <gift-doc:document>
+    <gift-doc:metadata>
+      <gift-doc:node-metadata>
+        <meta:descriptive-indexing>
+          <meta:indexing-term>
+            <meta:term>
+              <meta:term-type>PUB_SEG_TYPE</meta:term-type>
+              <meta:term-source>Atlas</meta:term-source>
+              <meta:term-id>14242630</meta:term-id>
+              <meta:term-value>Article</meta:term-value>
+            </meta:term>
+          </meta:indexing-term>
+        </meta:descriptive-indexing>
+        <meta:issue-number>42</meta:issue-number>
+        <gift-doc:pagination-group>
+          <gift-doc:pagination>
+            <meta:total-pages>2</meta:total-pages>
+            <meta:ranges>
+              <meta:range>
+                <meta:begin-page>3</meta:begin-page>
+                <meta:end-page>4</meta:end-page>
+              </meta:range>
+            </meta:ranges>
+          </gift-doc:pagination>
+        </gift-doc:pagination-group>
+      </gift-doc:node-metadata>
+      <gift-doc:document-metadata>
+        <meta:document-ids>
+          <meta:id type="Gale asset">
+            <meta:value>XOAUGT017857055</meta:value>
+          </meta:id>
+        </meta:document-ids>
+        <meta:bibliographic-ids>
+          <meta:id type="PSM">
+            <meta:value>cho_rfpx_1940C_0000_042_0000</meta:value>
+          </meta:id>
+        </meta:bibliographic-ids>
+        <meta:mcode>4XCZ</meta:mcode>
+        <meta:publication-date>
+          <meta:structured-date>
+            <meta:year>1940</meta:year>
+            <meta:month>07</meta:month>
+            <meta:day>18</meta:day>
+          </meta:structured-date>
+          <meta:standard-date type="Start date">19400718</meta:standard-date>
+          <meta:standard-date type="End date">19400718</meta:standard-date>
+        </meta:publication-date>
+        <meta:record-admin-info>
+          <meta:standard-date type="Original">20130416</meta:standard-date>
+        </meta:record-admin-info>
+        <gift-doc:document-titles>
+          <meta:title-display>II. Social and Economic Conditions</meta:title-display>
+          <meta:title-sort>II. Social and Economic Conditions</meta:title-sort>
+          <meta:title-open-url>II. Social and Economic Conditions</meta:title-open-url>
+        </gift-doc:document-titles>
+        <meta:publication-title>Weekly Review of Foreign Press</meta:publication-title>
+        <meta:languages>
+          <meta:language term-id="13858590" ocr="English" ocr-term-id="13858590" primary="Y">English</meta:language>
+        </meta:languages>
+        <meta:ocr-confidence>85.11</meta:ocr-confidence>
+        <meta:descriptive-indexing>
+          <meta:indexing-term>
+            <meta:term>
+              <meta:term-type>DOC_INFO_TYPE</meta:term-type>
+              <meta:term-source>Atlas</meta:term-source>
+              <meta:term-id>21819391</meta:term-id>
+              <meta:term-value>Journal</meta:term-value>
+            </meta:term>
+          </meta:indexing-term>
+          <meta:indexing-term>
+            <meta:term>
+              <meta:term-type>DOC_INFO_TYPE</meta:term-type>
+              <meta:term-source>Atlas</meta:term-source>
+              <meta:term-id>14242630</meta:term-id>
+              <meta:term-value>Article</meta:term-value>
+            </meta:term>
+          </meta:indexing-term>
+          <meta:indexing-term>
+            <meta:term>
+              <meta:term-type>CONT_REC_TYPE</meta:term-type>
+              <meta:term-source>Atlas</meta:term-source>
+              <meta:term-id>17234672</meta:term-id>
+              <meta:term-value>Text</meta:term-value>
+            </meta:term>
+          </meta:indexing-term>
+          <meta:indexing-term>
+            <meta:term>
+              <meta:term-type>CONT_TYPE</meta:term-type>
+              <meta:term-source>Atlas</meta:term-source>
+              <meta:term-id>21901547</meta:term-id>
+              <meta:term-value>DVI-Periodical</meta:term-value>
+            </meta:term>
+          </meta:indexing-term>
+          <meta:indexing-term>
+            <meta:term>
+              <meta:term-type>FUNC_TYPE</meta:term-type>
+              <meta:term-source>Atlas</meta:term-source>
+              <meta:term-id>21787856</meta:term-id>
+              <meta:term-value>Issue-volume article record</meta:term-value>
+            </meta:term>
+          </meta:indexing-term>
+          <meta:indexing-term>
+            <meta:term>
+              <meta:term-type>ART_LANG</meta:term-type>
+              <meta:term-source>Atlas</meta:term-source>
+              <meta:term-id>13858590</meta:term-id>
+              <meta:term-value>English</meta:term-value>
+            </meta:term>
+          </meta:indexing-term>
+        </meta:descriptive-indexing>
+        <meta:source-institution>
+          <meta:institution-name>Chatham House</meta:institution-name>
+          <meta:institution-location>London</meta:institution-location>
+          <meta:copyright-statement>Copyright Royal Institute of International Affairs</meta:copyright-statement>
+        </meta:source-institution>
+        <meta:holding-institution>
+          <meta:institution-name>Chatham House</meta:institution-name>
+          <meta:institution-location>London</meta:institution-location>
+        </meta:holding-institution>
+        <meta:source-citation-group>
+          <meta:source-citation>
+            <meta:content-date>
+              <meta:structured-date>
+                <meta:year>1940</meta:year>
+                <meta:month>07</meta:month>
+                <meta:day>18</meta:day>
+              </meta:structured-date>
+              <meta:standard-date type="Start date">19400718</meta:standard-date>
+              <meta:standard-date type="End date">19400718</meta:standard-date>
+            </meta:content-date>
+          </meta:source-citation>
+        </meta:source-citation-group>
+        <meta:product-content-type type="CHO">Special Publications</meta:product-content-type>
+      </gift-doc:document-metadata>
+    </gift-doc:metadata>
+    <gift-doc:body>
+      <essay:div document-segment-type="Body text" term-id="14214508" term-source="Atlas">
+        <essay:div document-segment-type="DVI newspaper article clip" term-id="21918445" term-source="Atlas">
+          <essay:complex-meta>
+            <meta:page-id-number>0003</meta:page-id-number>
+            <meta:folio>
+              <meta:start-number>3</meta:start-number>
+            </meta:folio>
+          </essay:complex-meta>
+          <shared:media>
+            <media:image data-type="jpeg" width="3326" height="5172" image-type="page view" layout="single" color-mode="color" folio="3" sequence="0003">
+              <vault-link:vault-link>
+                <vault-link:link-type>external</vault-link:link-type>
+                <vault-link:action>point</vault-link:action>
+                <vault-link:where>
+                  <vault-link:path>cho_rfpx_1940C_0000_042_0003</vault-link:path>
+                </vault-link:where>
+              </vault-link:vault-link>
+            </media:image>
+          </shared:media>
+          <vault-link:vault-link>
+            <vault-link:link-type>external</vault-link:link-type>
+            <vault-link:link-category term-id="21902636" term-source="Atlas">DVI page</vault-link:link-category>
+            <vault-link:action>point</vault-link:action>
+            <vault-link:where>
+              <vault-link:path>//gift-doc:document-metadata/meta:document-ids/meta:id[@type="Gale asset"]/meta:value[.="RODYWO912211530"]</vault-link:path>
+            </vault-link:where>
+            <vault-link:select>
+              <vault-link:document-nodes>
+                <vault-link:target>ancestor::gift-doc:document</vault-link:target>
+              </vault-link:document-nodes>
+            </vault-link:select>
+          </vault-link:vault-link>
+          <vault-link:vault-link>
+            <vault-link:link-type>external</vault-link:link-type>
+            <vault-link:link-category term-id="22176901" term-source="Atlas">DVI volume</vault-link:link-category>
+            <vault-link:action>point</vault-link:action>
+            <vault-link:where>
+              <vault-link:path>//gift-doc:document-metadata/meta:document-ids/meta:id[@type="Gale asset"]/meta:value[.="KXSOMS927806317"]</vault-link:path>
+            </vault-link:where>
+            <vault-link:select>
+              <vault-link:document-nodes>
+                <vault-link:target>ancestor::gift-doc:document</vault-link:target>
+              </vault-link:document-nodes>
+            </vault-link:select>
+          </vault-link:vault-link>
+          <essay:div document-segment-type="Body text" term-id="14214508" term-source="Atlas">
+            <essay:p>II. SOCIAL AND ECONOMIC CONDITIONS Islam in Tadzhikstan Some indications of the position of Islam in Central Asia, supplementary to those mentioned in the last number of this Review, C, p. 3, were given in an article in Pravda of the 31st May on anti-religious propaganda in Tadzhikstan. Special indignation was expressed at the loss of time in agricultural work due to religious observances, examples being cited of collective farmers in one district, who used to abandon urgent work in the cotton fields in order to pray at the graves of &apos;holy miracle-workers&apos; discovered by the mullahs, or to perform religious ceremonies as a means of combating insect pests. The Party organizations in this district had, however, organized anti-religious propaganda since last autumn with considerable success, and there was a sharp drop in the number of those who observed Moslem fast or feast days or went on pilgrimages to cemeteries. The activities of the Party and of the League of Militant Godless, which now numbered 27,000 members in Tadzhikstan, had much increased. The local intelligentsia &#8212; doctors, agricultural specialists, and teachers&#8212;had been of great assistance, and the local papers were paying more attention to anti-religious propaganda. Nevertheless religious influences persisted, even among members of the Party and the Komsomol: anti-religious propaganda in the schools was being neglected, many women still wore the &apos;parandzha&apos; and even Communists still observed religious rites. An example was given of the chairmen of a collective farm whose children caught measles. He sent for a mullah to read the Koran over them and refused to accept the services of a doctor. Although this man&apos;s brother was secretary of the Komsomol primary on the farm, he not only did not protest against this outrage, but actually connived at it. Bitter comment was made upon the antics of the Ismaili sect, &apos;whose leaders called themselves &quot;the holy prophets of the living God the Aga Khan&quot; &apos;. Their latest exploit was to make a &apos;holy man&apos; of an old man in the Pamir who was ill and refused all food except milk, on the ground that the colour white was worshipped in the sect. On a mullah&apos;s invitation, dozens of believers visited the invalid, embracing him and tearing off his clothes, in spite of the terrified old man&apos;s protests that he was no &apos;holy man&apos; and merely wanted to drink some milk and be left in peace. Another district committee had postponed for two years the summoning of a conference on anti-religion, although the influence of the mullahs was very active. The latter had declared that a hot sulphur spring in the district owed its healing properties to a &apos;holy man&apos;, who was the protector of the spring and to whom sacrificial gifts had to be made. Last year alone several hundred head of cattle had been brought as sacrifices to the spring. The Komsomol The reorganization of the Komsomol, which has enormously expanded during the past two years, is</essay:p>
+          </essay:div>
+        </essay:div>
+        <essay:div document-segment-type="DVI newspaper article clip" term-id="21918445" term-source="Atlas">
+          <essay:complex-meta>
+            <meta:page-id-number>0004</meta:page-id-number>
+            <meta:folio>
+              <meta:start-number>4</meta:start-number>
+            </meta:folio>
+          </essay:complex-meta>
+          <shared:media>
+            <media:image data-type="jpeg" width="3326" height="5172" image-type="page view" layout="single" color-mode="color" folio="4" sequence="0004">
+              <vault-link:vault-link>
+                <vault-link:link-type>external</vault-link:link-type>
+                <vault-link:action>point</vault-link:action>
+                <vault-link:where>
+                  <vault-link:path>cho_rfpx_1940C_0000_042_0004</vault-link:path>
+                </vault-link:where>
+              </vault-link:vault-link>
+            </media:image>
+          </shared:media>
+          <vault-link:vault-link>
+            <vault-link:link-type>external</vault-link:link-type>
+            <vault-link:link-category term-id="21902636" term-source="Atlas">DVI page</vault-link:link-category>
+            <vault-link:action>point</vault-link:action>
+            <vault-link:where>
+              <vault-link:path>//gift-doc:document-metadata/meta:document-ids/meta:id[@type="Gale asset"]/meta:value[.="JHDFYR171510075"]</vault-link:path>
+            </vault-link:where>
+            <vault-link:select>
+              <vault-link:document-nodes>
+                <vault-link:target>ancestor::gift-doc:document</vault-link:target>
+              </vault-link:document-nodes>
+            </vault-link:select>
+          </vault-link:vault-link>
+          <vault-link:vault-link>
+            <vault-link:link-type>external</vault-link:link-type>
+            <vault-link:link-category term-id="22176901" term-source="Atlas">DVI volume</vault-link:link-category>
+            <vault-link:action>point</vault-link:action>
+            <vault-link:where>
+              <vault-link:path>//gift-doc:document-metadata/meta:document-ids/meta:id[@type="Gale asset"]/meta:value[.="KXSOMS927806317"]</vault-link:path>
+            </vault-link:where>
+            <vault-link:select>
+              <vault-link:document-nodes>
+                <vault-link:target>ancestor::gift-doc:document</vault-link:target>
+              </vault-link:document-nodes>
+            </vault-link:select>
+          </vault-link:vault-link>
+          <essay:div document-segment-type="Body text" term-id="14214508" term-source="Atlas">
+            <essay:p>being undertaken and particular attention paid to improve physical and para-military training (Moscow wireless in Russian, 12 July; B.B.C. Digest). A month earlier, at the meeting of the 11th Plenum of the Komsomol (Pravda, and Komsomolskaya Pravda, 8 June), N. A. Mikhailov, Secretary of the Central Committee, drew attention to the recent phenomenal growth of the League. Its membership had doubled in the last two years, and now numbered 10,223,000. Hundreds of thousands of new primary organizations had been formed. From various indications it was, however, quite clear that this vast intake of new members was raising serious problems. The number of paid workers was said to be too high, with the result that members tended to rely supinely on the work of the paid officials. It was proposed, in consequence, to decrease the number of paid workers from 45,580 to 29,691: this must be accompanied by the widespread attraction of Komsomol members into the work of the organization, and by the abandonment of bureau&#172; cratic methods of management. The general need to enforce strict discipline among members was much stressed, especially as regards the regular payment of membership dues (Komsomolskaya Pravda, 1 and 6 June). The education of new members of the Komsomol was the subject of lively comment. One paid official working in a rural area declared that, although his committee accepted between 100 and 120 new members every month, very little effort was made to sift the qualifications of applicants, and little or nothing was done to interest them in the work of the Komsomol after they had joined. Another important point was that the recent influx of new members had lowered the average age in the organization, although leadership continued to be in the hands of relatively mature officials of from 26 to 28. It was apparently thought that such &apos;veterans&apos; were incapable of understanding the needs of young people between 15 and 20, and that they should be replaced by promoting young workers from the ranks (see this Review, C., No. 33, pp. 4-5) [Pravda, 7 June). Trade Unions Somewhat similar complaints were made of trade union administration, in Trud of the 5th June. The supreme governing body of the trade unions recently conducted an inspection to ascertain what progress had been made in carrying out a decree promulgated by them on the 19th February, requiring a substantial diminution in the number of paid officials in the trade union and their replacement by volunteers from among the mass of the workers. The two-fold aim of the decree had been to increase active interest in trade union work among members, and to secure economies in wage payments so that increased funds would be available for the cultural and other activities carried on by the trade unions. The inspection showed that the decree was being very unevenly carried out. In some cases, such as the knitted goods industry, progress had been excellent, but other industries had been less successful, the motor industry being singled out for special censure. Not only had it failed to reduce the number of paid workers in its factory committees, but it had continued to allow a proportion of these workers to be paid out of factory, as opposed to trade union, funds; this was most undesirable, since it tended to make trade union committees less critical in regard to defects in factory administration. Little effort had been made to attract voluntary workers into trade union activities, officials contending that the necessary work could not be done on a voluntary basis. Obviously, however, it was not being successfully performed by the paid officials, since 11.8 per cent of the workers in the motor industry were not members of the trade union, and the col&#172; lection of membership subscriptions was much in arrears. The bureaucratic methods of the trade union committee of the giant Gorky motor works were flayed in a special article in Pravda (8 June), which threw interesting light on social conditions in one of the foremost Soviet factories. 700 paid workers were employed, 563 of whom were paid out of trade union funds and 137 out of factory funds. Very little use was made of voluntary workers. For example, 28 paid teachers were employed in liquidating illiteracy and semi-illiteracy among the employees, although this work could very well have been done on a volun&#172; tary basis. The sports club, with 2,600 members, supported over 200 paid workers, although it was supposed to be a voluntary society. There were 12,000 members of the &apos;aktiv&apos;, but their services were not properly utilized, and out of a total trade union budget of 8,023,000 roubles, 2,511,000 were spent on administration. This did not include the upkeep of the football team, on which 450,000 roubles a year was spent, and the motor cycle club which accounted for 206,000 roubles. A new decree was issued requiring all trade union committees to liquidate deficiencies in the shortest possible space of time.</essay:p>
+          </essay:div>
+        </essay:div>
+      </essay:div>
+    </gift-doc:body>
+  </gift-doc:document>
+</gold:document-instance>
+<gold:document-instance>
+  <gift-doc:document>
+    <gift-doc:metadata>
+      <gift-doc:node-metadata>
+        <meta:descriptive-indexing>
+          <meta:indexing-term>
+            <meta:term>
+              <meta:term-type>PUB_SEG_TYPE</meta:term-type>
+              <meta:term-source>Atlas</meta:term-source>
+              <meta:term-id>14242630</meta:term-id>
+              <meta:term-value>Article</meta:term-value>
+            </meta:term>
+          </meta:indexing-term>
+        </meta:descriptive-indexing>
+        <meta:issue-number>42</meta:issue-number>
+        <gift-doc:pagination-group>
+          <gift-doc:pagination>
+            <meta:total-pages>3</meta:total-pages>
+            <meta:ranges>
+              <meta:range>
+                <meta:begin-page>4</meta:begin-page>
+                <meta:end-page>6</meta:end-page>
+              </meta:range>
+            </meta:ranges>
+          </gift-doc:pagination>
+        </gift-doc:pagination-group>
+      </gift-doc:node-metadata>
+      <gift-doc:document-metadata>
+        <meta:document-ids>
+          <meta:id type="Gale asset">
+            <meta:value>MMFBLO373291576</meta:value>
+          </meta:id>
+        </meta:document-ids>
+        <meta:bibliographic-ids>
+          <meta:id type="PSM">
+            <meta:value>cho_rfpx_1940C_0000_042_0000</meta:value>
+          </meta:id>
+        </meta:bibliographic-ids>
+        <meta:mcode>4XCZ</meta:mcode>
+        <meta:publication-date>
+          <meta:structured-date>
+            <meta:year>1940</meta:year>
+            <meta:month>07</meta:month>
+            <meta:day>18</meta:day>
+          </meta:structured-date>
+          <meta:standard-date type="Start date">19400718</meta:standard-date>
+          <meta:standard-date type="End date">19400718</meta:standard-date>
+        </meta:publication-date>
+        <meta:record-admin-info>
+          <meta:standard-date type="Original">20130416</meta:standard-date>
+        </meta:record-admin-info>
+        <gift-doc:document-titles>
+          <meta:title-display>I. Japan</meta:title-display>
+          <meta:title-sort>I. Japan</meta:title-sort>
+          <meta:title-open-url>I. Japan</meta:title-open-url>
+        </gift-doc:document-titles>
+        <meta:publication-title>Weekly Review of Foreign Press</meta:publication-title>
+        <meta:languages>
+          <meta:language term-id="13858590" ocr="English" ocr-term-id="13858590" primary="Y">English</meta:language>
+        </meta:languages>
+        <meta:ocr-confidence>85.11</meta:ocr-confidence>
+        <meta:descriptive-indexing>
+          <meta:indexing-term>
+            <meta:term>
+              <meta:term-type>DOC_INFO_TYPE</meta:term-type>
+              <meta:term-source>Atlas</meta:term-source>
+              <meta:term-id>21819391</meta:term-id>
+              <meta:term-value>Journal</meta:term-value>
+            </meta:term>
+          </meta:indexing-term>
+          <meta:indexing-term>
+            <meta:term>
+              <meta:term-type>DOC_INFO_TYPE</meta:term-type>
+              <meta:term-source>Atlas</meta:term-source>
+              <meta:term-id>14242630</meta:term-id>
+              <meta:term-value>Article</meta:term-value>
+            </meta:term>
+          </meta:indexing-term>
+          <meta:indexing-term>
+            <meta:term>
+              <meta:term-type>CONT_REC_TYPE</meta:term-type>
+              <meta:term-source>Atlas</meta:term-source>
+              <meta:term-id>17234672</meta:term-id>
+              <meta:term-value>Text</meta:term-value>
+            </meta:term>
+          </meta:indexing-term>
+          <meta:indexing-term>
+            <meta:term>
+              <meta:term-type>CONT_TYPE</meta:term-type>
+              <meta:term-source>Atlas</meta:term-source>
+              <meta:term-id>21901547</meta:term-id>
+              <meta:term-value>DVI-Periodical</meta:term-value>
+            </meta:term>
+          </meta:indexing-term>
+          <meta:indexing-term>
+            <meta:term>
+              <meta:term-type>FUNC_TYPE</meta:term-type>
+              <meta:term-source>Atlas</meta:term-source>
+              <meta:term-id>21787856</meta:term-id>
+              <meta:term-value>Issue-volume article record</meta:term-value>
+            </meta:term>
+          </meta:indexing-term>
+          <meta:indexing-term>
+            <meta:term>
+              <meta:term-type>ART_LANG</meta:term-type>
+              <meta:term-source>Atlas</meta:term-source>
+              <meta:term-id>13858590</meta:term-id>
+              <meta:term-value>English</meta:term-value>
+            </meta:term>
+          </meta:indexing-term>
+        </meta:descriptive-indexing>
+        <meta:source-institution>
+          <meta:institution-name>Chatham House</meta:institution-name>
+          <meta:institution-location>London</meta:institution-location>
+          <meta:copyright-statement>Copyright Royal Institute of International Affairs</meta:copyright-statement>
+        </meta:source-institution>
+        <meta:holding-institution>
+          <meta:institution-name>Chatham House</meta:institution-name>
+          <meta:institution-location>London</meta:institution-location>
+        </meta:holding-institution>
+        <meta:source-citation-group>
+          <meta:source-citation>
+            <meta:content-date>
+              <meta:structured-date>
+                <meta:year>1940</meta:year>
+                <meta:month>07</meta:month>
+                <meta:day>18</meta:day>
+              </meta:structured-date>
+              <meta:standard-date type="Start date">19400718</meta:standard-date>
+              <meta:standard-date type="End date">19400718</meta:standard-date>
+            </meta:content-date>
+          </meta:source-citation>
+        </meta:source-citation-group>
+        <meta:product-content-type type="CHO">Special Publications</meta:product-content-type>
+      </gift-doc:document-metadata>
+    </gift-doc:metadata>
+    <gift-doc:body>
+      <essay:div document-segment-type="Body text" term-id="14214508" term-source="Atlas">
+        <essay:div document-segment-type="DVI newspaper article clip" term-id="21918445" term-source="Atlas">
+          <essay:complex-meta>
+            <meta:page-id-number>0004</meta:page-id-number>
+            <meta:folio>
+              <meta:start-number>4</meta:start-number>
+            </meta:folio>
+          </essay:complex-meta>
+          <shared:media>
+            <media:image data-type="jpeg" width="3326" height="5172" image-type="page view" layout="single" color-mode="color" folio="4" sequence="0004">
+              <vault-link:vault-link>
+                <vault-link:link-type>external</vault-link:link-type>
+                <vault-link:action>point</vault-link:action>
+                <vault-link:where>
+                  <vault-link:path>cho_rfpx_1940C_0000_042_0004</vault-link:path>
+                </vault-link:where>
+              </vault-link:vault-link>
+            </media:image>
+          </shared:media>
+          <vault-link:vault-link>
+            <vault-link:link-type>external</vault-link:link-type>
+            <vault-link:link-category term-id="21902636" term-source="Atlas">DVI page</vault-link:link-category>
+            <vault-link:action>point</vault-link:action>
+            <vault-link:where>
+              <vault-link:path>//gift-doc:document-metadata/meta:document-ids/meta:id[@type="Gale asset"]/meta:value[.="JHDFYR171510075"]</vault-link:path>
+            </vault-link:where>
+            <vault-link:select>
+              <vault-link:document-nodes>
+                <vault-link:target>ancestor::gift-doc:document</vault-link:target>
+              </vault-link:document-nodes>
+            </vault-link:select>
+          </vault-link:vault-link>
+          <vault-link:vault-link>
+            <vault-link:link-type>external</vault-link:link-type>
+            <vault-link:link-category term-id="22176901" term-source="Atlas">DVI volume</vault-link:link-category>
+            <vault-link:action>point</vault-link:action>
+            <vault-link:where>
+              <vault-link:path>//gift-doc:document-metadata/meta:document-ids/meta:id[@type="Gale asset"]/meta:value[.="KXSOMS927806317"]</vault-link:path>
+            </vault-link:where>
+            <vault-link:select>
+              <vault-link:document-nodes>
+                <vault-link:target>ancestor::gift-doc:document</vault-link:target>
+              </vault-link:document-nodes>
+            </vault-link:select>
+          </vault-link:vault-link>
+          <essay:div document-segment-type="Body text" term-id="14214508" term-source="Atlas">
+            <essay:p>THE FAR EAST I. JAPAN Japan and the Future of Indo-China An Associated Press message from Tokyo in the New York Times of the 26th June quoted &apos;informed neutral observers&apos; as asserting that Japan was con&#172; templating a protectorate over both French Indo- China and the Netherlands East Indies, after negotia&#172; tions with Germany and Italy. According to a report from Byas in the New York Times of the 20th June, there was some difference of opinion as to the most convenient method of bringing French Indo-China under Japanese domination. It was thought in some quarters that Hitler might offer it to Japan, but this &apos;would expose Japan to the charge of being no better than the European intruders whom Japan has accused of battening on China and it would stiffen the Chinese resistance to any Japanese peace moves&apos;. A better way would be for Japan to arrange for the territory to be restored to China (i.e. to Wang Ching-wei&apos;s Govern&#172; ment); this would improve Japan&apos;s position in making peace with China. Probably the Japanese Army would simply announce in the near future that it had assumed the &apos;temporary protection&apos; of Indo-China, leaving the final settlement until later. This method would have both legal and practical advantages for Japan, not the least of which would be Japan&apos;s power, through actual possession, to enforce her own policy when the time came. A later report from Byas stated that the Governor- General of Indo-China, General Catroux, was con&#172; sidered to be sympathetic to General de Gaulle&apos;s movement for continued resistance to Germany, but the Japanese held that, if Catroux took orders from de Gaulle, that would be changing the status quo of Indo-China in defiance of Japan&apos;s proclaimed policy, and action would almost certainly follow (New York Times, 26 June). From this it might have been. expected that Japan would welcome the Petain Government&apos;s appointment of Admiral Decoux to replace Catroux as Governor-General. However, according to a message from Hallett Abend from Shanghai dated the 28th June, the Japanese believed that Admiral Decoux was Hitler&apos;s nominee and feared that his rule might be used for bringing Indo-China under a German protectorate. The same report stated that Japanese military circles were still inclined to hold back from an expedition for the conquest of Indo-China because of fear of a Soviet attack on the Japanese position in Chahar and Suiyuan, which</essay:p>
+          </essay:div>
+        </essay:div>
+        <essay:div document-segment-type="DVI newspaper article clip" term-id="21918445" term-source="Atlas">
+          <essay:complex-meta>
+            <meta:page-id-number>0005</meta:page-id-number>
+            <meta:folio>
+              <meta:start-number>5</meta:start-number>
+            </meta:folio>
+          </essay:complex-meta>
+          <shared:media>
+            <media:image data-type="jpeg" width="3326" height="5172" image-type="page view" layout="single" color-mode="color" folio="5" sequence="0005">
+              <vault-link:vault-link>
+                <vault-link:link-type>external</vault-link:link-type>
+                <vault-link:action>point</vault-link:action>
+                <vault-link:where>
+                  <vault-link:path>cho_rfpx_1940C_0000_042_0005</vault-link:path>
+                </vault-link:where>
+              </vault-link:vault-link>
+            </media:image>
+          </shared:media>
+          <vault-link:vault-link>
+            <vault-link:link-type>external</vault-link:link-type>
+            <vault-link:link-category term-id="21902636" term-source="Atlas">DVI page</vault-link:link-category>
+            <vault-link:action>point</vault-link:action>
+            <vault-link:where>
+              <vault-link:path>//gift-doc:document-metadata/meta:document-ids/meta:id[@type="Gale asset"]/meta:value[.="MNIMJL497756857"]</vault-link:path>
+            </vault-link:where>
+            <vault-link:select>
+              <vault-link:document-nodes>
+                <vault-link:target>ancestor::gift-doc:document</vault-link:target>
+              </vault-link:document-nodes>
+            </vault-link:select>
+          </vault-link:vault-link>
+          <vault-link:vault-link>
+            <vault-link:link-type>external</vault-link:link-type>
+            <vault-link:link-category term-id="22176901" term-source="Atlas">DVI volume</vault-link:link-category>
+            <vault-link:action>point</vault-link:action>
+            <vault-link:where>
+              <vault-link:path>//gift-doc:document-metadata/meta:document-ids/meta:id[@type="Gale asset"]/meta:value[.="KXSOMS927806317"]</vault-link:path>
+            </vault-link:where>
+            <vault-link:select>
+              <vault-link:document-nodes>
+                <vault-link:target>ancestor::gift-doc:document</vault-link:target>
+              </vault-link:document-nodes>
+            </vault-link:select>
+          </vault-link:vault-link>
+          <essay:div document-segment-type="Body text" term-id="14214508" term-source="Atlas">
+            <essay:p>could not yet be ruled out of their calculations (New York Times, 28 June). [Note: It has now been reported that General Catroux will remain in office, but will recognize the authority of the Petain Government. This compromise is apparently what Japan wanted]. Japan and Thailand The Asahi of the 14th June attacked the non- aggression pacts recently concluded by Britain and France with Thailand, alleging that these pacts had been forced upon the Thais and complaining that &apos;in case of an Anglo-Japanese war Britain will prevent Thailand from offering Japan military bases in Thai territory&apos; (New York Times, 15 June). That Japan expects Thailand to cooperate in the southward exten&#172; sion of the New Order in East Asia is indicated by the type of propaganda with which the Thais have recently been plied. A specimen is a &apos;Tokyo Letter&apos; appearing in the Bangkok Chronicle of the 30th April. Readers were informed that &apos;Thailand is an East Asiatic country and is therefore bound to be mixed up with this New Order, whether the Thai people like it or not&apos;. The New Order is a religious creed &apos;pro&#172; pounded by an empire with mighty strength, an empire which holds the guiding hand in the Far East&apos;. So the Thais should be careful not to be on the wrong side of this irresistible power, but let them not suppose that their interests will in any way suffer by its expansion; the writer, having started on a note of menace, goes on to assure his public that only blessings can flow from submission. &apos;This New Order&apos;, we are told, &apos;is based on the bed rock of Idealism, hence must be devoid of any political design or economic monopoly Who can deny the justice and wisdom of the cause? Provided, of course, it is carried out faithfully, without dupery on the side of the strongest. This suspicion tends to fade away when we carefully analyse the Japanese sentiment and interests in connection with the substance and spirit of the New Order&apos;. [Note: For Thai views on the war in Europe see below, p. 7]. German Propaganda in Japan Germans in Japan have been making the fullest use of recent German victories to impress on the Japanese the invicibility of the German armed forces. Among other statements given to the Japanese public was one made by Lieutenant-Colonel Wilhelm Hehmiz, attached to the German Embassy, at a press con&#172; ference in Osaka. He declared that operations on the Western Front had demonstrated the superiority of the German High Command. The Allies had been completely misled as to German plans. When the Germans invaded Holland and Belgium, the Allies thought the main attack would come to the north, as in 1914, but the German General Staff had an entirely different plan; it launched the attack unex&#172; pectedly at the centre of the line and easily broke through. Now &apos;within one month or two Nazi Germany will accomplish its task successfully&apos;. Asked what was the new weapon which would be used in attacking England, he declined to specify, but stated that it was neither gas nor tanks (Japan Times, 29 May). [Note: The Japanese General Staff was originally trained by Meckel, the pupil of Moltke, and admira&#172; tion for Germany as the source of a unique military science is traditional in the Japanese Army. This attitude received a severe shock in 1918 and German propaganda is now naturally taking the opportunity to restore it]. The Single Party Project In his first public statement on the Single Party movement, which he was expected to lead, Prince Konoye told journalists on the 4th June that he considered it &apos;an iusult to the nation to advocate^ a group composed only of former political parties dis&#172; solved into a new organization. His ideal was some&#172; thing on a larger scale, &apos;a party organized on a nation&#172; wide basis with the existing political parties participat&#172; ing in it, but only as one of the elements of the whole&apos;. It should be based on military and civilian unity; the Army should bear full responsibility for military affairs, while political questions should be handled by statesmen. The new all-inclusive party should not be formed immediately on the dissolution of the existing parties; the entire nation must be represented in the new front, and hasty organization would be a mistake [Shanghai Times, 6 June). A dispatch from Tokyo dated the 6th June stated that it was considered that the Single Party Movement would soon have complete national support, as even the Minseito was ready to back it if Prince Konoye would assume its leadership. The movement aimed at &apos;constituting a new force in Japanese home policy which could check bureaucratic and military in&#172; fluences, while simultaneously satisfying the Army&apos;s claims for less liberalism and more authority in national affairs&apos; (Shanghai Times, 8 June). Warning to Japanese in China A Domei message of the 22nd May from Peking said that the Japanese military spokesman warned the Japanese civilian population in North China that those who proved undesirable would be expelled. Many Japanese residents were working for the recon&#172; struction of North China, but there were others who profiteered, attempted to upset the financial system, took advantage of official positions to engage in black&#172; mail and bribery, and disturbed peace and order. These were the undesirables who would be ordered to leave (Shanghai Times, 23 May). According to the Shanghai Mainichi of the 16th May a special &apos;economic gendarmerie&apos;, charged with the duty of enforcing regulations governing the economic activities of Japanese in Shanghai, had beenjestablished, They would arrest violators of the economic regula&#172; tions affecting Japanese residents and would pay special attention to &apos;black bourse&apos; dealings in com&#172; modities by Japanese (North China Daily News, 17 May). A Havas message of the 26th May from Tokyo said that Japanese men from 12 to 29 years of age and women from 12 to 19, would be allowed to go to con&#172; tinental Asia only if they were able to obtain certificates from the military authorities and consular officials. This applied even though the intending emigrants were assured of jobs when they arrived in China [Shanghai Times, 28 May). [Note: These restrictions indicate that the Japanese authorities have now finally realized that the activities of some of their own nationals in China have not only aggravated anti-Japanese sentiments among the Chinese but are also a major obstacle to Japanese official schemes of orderly economic exploitation. It will not now, however, be an easy matter to eradicate these racketeering elements who have usually estab&#172; lished close relations with local military commanders]. Evasion of Control in Japan Shinnosuke Abe, editor-in-chief of the Nichi-Nichi, in an article of the 22nd May, said that, although three years had elapsed since the outbreak of the China Incident, nothing worthy to be called a real wartime structure had as yet been set up in Japan, the Government had been patching up the situation with makeshift measures, like patching the leaky roofs of tenement houses, and the leaks now threatened to get out of control. The national spiritual mobilization movement had so far been operating in a crippled condition; people who faithfully observed its recom&#172; mendations had suffered severely, eating porridge mixed with sweet potatoes, the lowest kind of food. When their children died of pneumonia, they could not buy even a bale of charcoal. In contrast there was a large number of people who had reaped huge profits by underhand deals. The deadlock between the low price policy and materials distribution was the most serious question facing the Yonai Cabinet, which some people thought would not last long. The Government</essay:p>
+          </essay:div>
+        </essay:div>
+        <essay:div document-segment-type="DVI newspaper article clip" term-id="21918445" term-source="Atlas">
+          <essay:complex-meta>
+            <meta:page-id-number>0006</meta:page-id-number>
+            <meta:folio>
+              <meta:start-number>6</meta:start-number>
+            </meta:folio>
+          </essay:complex-meta>
+          <shared:media>
+            <media:image data-type="jpeg" width="3326" height="5172" image-type="page view" layout="single" color-mode="color" folio="6" sequence="0006">
+              <vault-link:vault-link>
+                <vault-link:link-type>external</vault-link:link-type>
+                <vault-link:action>point</vault-link:action>
+                <vault-link:where>
+                  <vault-link:path>cho_rfpx_1940C_0000_042_0006</vault-link:path>
+                </vault-link:where>
+              </vault-link:vault-link>
+            </media:image>
+          </shared:media>
+          <vault-link:vault-link>
+            <vault-link:link-type>external</vault-link:link-type>
+            <vault-link:link-category term-id="21902636" term-source="Atlas">DVI page</vault-link:link-category>
+            <vault-link:action>point</vault-link:action>
+            <vault-link:where>
+              <vault-link:path>//gift-doc:document-metadata/meta:document-ids/meta:id[@type="Gale asset"]/meta:value[.="VVPWBW022727898"]</vault-link:path>
+            </vault-link:where>
+            <vault-link:select>
+              <vault-link:document-nodes>
+                <vault-link:target>ancestor::gift-doc:document</vault-link:target>
+              </vault-link:document-nodes>
+            </vault-link:select>
+          </vault-link:vault-link>
+          <vault-link:vault-link>
+            <vault-link:link-type>external</vault-link:link-type>
+            <vault-link:link-category term-id="22176901" term-source="Atlas">DVI volume</vault-link:link-category>
+            <vault-link:action>point</vault-link:action>
+            <vault-link:where>
+              <vault-link:path>//gift-doc:document-metadata/meta:document-ids/meta:id[@type="Gale asset"]/meta:value[.="KXSOMS927806317"]</vault-link:path>
+            </vault-link:where>
+            <vault-link:select>
+              <vault-link:document-nodes>
+                <vault-link:target>ancestor::gift-doc:document</vault-link:target>
+              </vault-link:document-nodes>
+            </vault-link:select>
+          </vault-link:vault-link>
+          <essay:div document-segment-type="Body text" term-id="14214508" term-source="Atlas">
+            <essay:p>policy of making the people use 70 per cent polished rice had resulted in a shortage of fodder and chicken feed, which meant a decline in egg production and a slaughter of pigs through lack of food for them. The proposal to improve the conditions of primary school teachers, hard hit by the rise in prices, had been turned down by the Government. Everything was based on a hand-to-mouth policy and there was no systematic plan for anything important {Shanghai Times, 23 May).</essay:p>
+          </essay:div>
+        </essay:div>
+      </essay:div>
+    </gift-doc:body>
+  </gift-doc:document>
+</gold:document-instance>
+<gold:document-instance>
+  <gift-doc:document>
+    <gift-doc:metadata>
+      <gift-doc:node-metadata>
+        <meta:descriptive-indexing>
+          <meta:indexing-term>
+            <meta:term>
+              <meta:term-type>PUB_SEG_TYPE</meta:term-type>
+              <meta:term-source>Atlas</meta:term-source>
+              <meta:term-id>14242630</meta:term-id>
+              <meta:term-value>Article</meta:term-value>
+            </meta:term>
+          </meta:indexing-term>
+        </meta:descriptive-indexing>
+        <meta:issue-number>42</meta:issue-number>
+        <gift-doc:pagination-group>
+          <gift-doc:pagination>
+            <meta:total-pages>2</meta:total-pages>
+            <meta:ranges>
+              <meta:range>
+                <meta:begin-page>6</meta:begin-page>
+                <meta:end-page>7</meta:end-page>
+              </meta:range>
+            </meta:ranges>
+          </gift-doc:pagination>
+        </gift-doc:pagination-group>
+      </gift-doc:node-metadata>
+      <gift-doc:document-metadata>
+        <meta:document-ids>
+          <meta:id type="Gale asset">
+            <meta:value>XRLENA178963166</meta:value>
+          </meta:id>
+        </meta:document-ids>
+        <meta:bibliographic-ids>
+          <meta:id type="PSM">
+            <meta:value>cho_rfpx_1940C_0000_042_0000</meta:value>
+          </meta:id>
+        </meta:bibliographic-ids>
+        <meta:mcode>4XCZ</meta:mcode>
+        <meta:publication-date>
+          <meta:structured-date>
+            <meta:year>1940</meta:year>
+            <meta:month>07</meta:month>
+            <meta:day>18</meta:day>
+          </meta:structured-date>
+          <meta:standard-date type="Start date">19400718</meta:standard-date>
+          <meta:standard-date type="End date">19400718</meta:standard-date>
+        </meta:publication-date>
+        <meta:record-admin-info>
+          <meta:standard-date type="Original">20130416</meta:standard-date>
+        </meta:record-admin-info>
+        <gift-doc:document-titles>
+          <meta:title-display>II. China</meta:title-display>
+          <meta:title-sort>II. China</meta:title-sort>
+          <meta:title-open-url>II. China</meta:title-open-url>
+        </gift-doc:document-titles>
+        <meta:publication-title>Weekly Review of Foreign Press</meta:publication-title>
+        <meta:languages>
+          <meta:language term-id="13858590" ocr="English" ocr-term-id="13858590" primary="Y">English</meta:language>
+        </meta:languages>
+        <meta:ocr-confidence>85.11</meta:ocr-confidence>
+        <meta:descriptive-indexing>
+          <meta:indexing-term>
+            <meta:term>
+              <meta:term-type>DOC_INFO_TYPE</meta:term-type>
+              <meta:term-source>Atlas</meta:term-source>
+              <meta:term-id>21819391</meta:term-id>
+              <meta:term-value>Journal</meta:term-value>
+            </meta:term>
+          </meta:indexing-term>
+          <meta:indexing-term>
+            <meta:term>
+              <meta:term-type>DOC_INFO_TYPE</meta:term-type>
+              <meta:term-source>Atlas</meta:term-source>
+              <meta:term-id>14242630</meta:term-id>
+              <meta:term-value>Article</meta:term-value>
+            </meta:term>
+          </meta:indexing-term>
+          <meta:indexing-term>
+            <meta:term>
+              <meta:term-type>CONT_REC_TYPE</meta:term-type>
+              <meta:term-source>Atlas</meta:term-source>
+              <meta:term-id>17234672</meta:term-id>
+              <meta:term-value>Text</meta:term-value>
+            </meta:term>
+          </meta:indexing-term>
+          <meta:indexing-term>
+            <meta:term>
+              <meta:term-type>CONT_TYPE</meta:term-type>
+              <meta:term-source>Atlas</meta:term-source>
+              <meta:term-id>21901547</meta:term-id>
+              <meta:term-value>DVI-Periodical</meta:term-value>
+            </meta:term>
+          </meta:indexing-term>
+          <meta:indexing-term>
+            <meta:term>
+              <meta:term-type>FUNC_TYPE</meta:term-type>
+              <meta:term-source>Atlas</meta:term-source>
+              <meta:term-id>21787856</meta:term-id>
+              <meta:term-value>Issue-volume article record</meta:term-value>
+            </meta:term>
+          </meta:indexing-term>
+          <meta:indexing-term>
+            <meta:term>
+              <meta:term-type>ART_LANG</meta:term-type>
+              <meta:term-source>Atlas</meta:term-source>
+              <meta:term-id>13858590</meta:term-id>
+              <meta:term-value>English</meta:term-value>
+            </meta:term>
+          </meta:indexing-term>
+        </meta:descriptive-indexing>
+        <meta:source-institution>
+          <meta:institution-name>Chatham House</meta:institution-name>
+          <meta:institution-location>London</meta:institution-location>
+          <meta:copyright-statement>Copyright Royal Institute of International Affairs</meta:copyright-statement>
+        </meta:source-institution>
+        <meta:holding-institution>
+          <meta:institution-name>Chatham House</meta:institution-name>
+          <meta:institution-location>London</meta:institution-location>
+        </meta:holding-institution>
+        <meta:source-citation-group>
+          <meta:source-citation>
+            <meta:content-date>
+              <meta:structured-date>
+                <meta:year>1940</meta:year>
+                <meta:month>07</meta:month>
+                <meta:day>18</meta:day>
+              </meta:structured-date>
+              <meta:standard-date type="Start date">19400718</meta:standard-date>
+              <meta:standard-date type="End date">19400718</meta:standard-date>
+            </meta:content-date>
+          </meta:source-citation>
+        </meta:source-citation-group>
+        <meta:product-content-type type="CHO">Special Publications</meta:product-content-type>
+      </gift-doc:document-metadata>
+    </gift-doc:metadata>
+    <gift-doc:body>
+      <essay:div document-segment-type="Body text" term-id="14214508" term-source="Atlas">
+        <essay:div document-segment-type="DVI newspaper article clip" term-id="21918445" term-source="Atlas">
+          <essay:complex-meta>
+            <meta:page-id-number>0006</meta:page-id-number>
+            <meta:folio>
+              <meta:start-number>6</meta:start-number>
+            </meta:folio>
+          </essay:complex-meta>
+          <shared:media>
+            <media:image data-type="jpeg" width="3326" height="5172" image-type="page view" layout="single" color-mode="color" folio="6" sequence="0006">
+              <vault-link:vault-link>
+                <vault-link:link-type>external</vault-link:link-type>
+                <vault-link:action>point</vault-link:action>
+                <vault-link:where>
+                  <vault-link:path>cho_rfpx_1940C_0000_042_0006</vault-link:path>
+                </vault-link:where>
+              </vault-link:vault-link>
+            </media:image>
+          </shared:media>
+          <vault-link:vault-link>
+            <vault-link:link-type>external</vault-link:link-type>
+            <vault-link:link-category term-id="21902636" term-source="Atlas">DVI page</vault-link:link-category>
+            <vault-link:action>point</vault-link:action>
+            <vault-link:where>
+              <vault-link:path>//gift-doc:document-metadata/meta:document-ids/meta:id[@type="Gale asset"]/meta:value[.="VVPWBW022727898"]</vault-link:path>
+            </vault-link:where>
+            <vault-link:select>
+              <vault-link:document-nodes>
+                <vault-link:target>ancestor::gift-doc:document</vault-link:target>
+              </vault-link:document-nodes>
+            </vault-link:select>
+          </vault-link:vault-link>
+          <vault-link:vault-link>
+            <vault-link:link-type>external</vault-link:link-type>
+            <vault-link:link-category term-id="22176901" term-source="Atlas">DVI volume</vault-link:link-category>
+            <vault-link:action>point</vault-link:action>
+            <vault-link:where>
+              <vault-link:path>//gift-doc:document-metadata/meta:document-ids/meta:id[@type="Gale asset"]/meta:value[.="KXSOMS927806317"]</vault-link:path>
+            </vault-link:where>
+            <vault-link:select>
+              <vault-link:document-nodes>
+                <vault-link:target>ancestor::gift-doc:document</vault-link:target>
+              </vault-link:document-nodes>
+            </vault-link:select>
+          </vault-link:vault-link>
+          <essay:div document-segment-type="Body text" term-id="14214508" term-source="Atlas">
+            <essay:p>II. CHINA China and the European War The National Herald of the 23rd May said that a large number of people were afraid that Japan would take advantage of the European situation to initiate a new move, but the paper considered such fears to be unfounded, on the ground that Chinese resistance was keeping Japan in a position from which she was unable to extricate herself, and that consequently she could not take an active part in the European War, since she had not the troops for a new adventure. The U.S.S.R. regarded the European War as one fought by imperialists and was remaining outside it, but her sympathy for China was growing, while the United States had also remained neutral and showed greater interest in the Far East than in Europe. Both Powers were closely watching Japan, which under such cir- cumstances would never be able to seize the Nether- lands East Indies or carry out similar schemes else- where (Reuter&apos;s Translation Service). A Reuter message of the 25th May from Chungking said that the Central Daily News of that date had a leading article on the European War which expressed the view that Germany could not successfully invade England and that the war was likely to be protracted. The message added that Chinese circles were deeply concerned over the war developments, especially in view of their effects on the Far Eastern situation, but generally hesitated to declare openly their preference for any belligerent (Shanghai Times, 26 May). A Domei message of the 24th day from Hong Kong said that reliable information had been received from Chungking that Sun Fo was urging closer collabora- tion between China and the Axis Powers, as well as between China and the U.S.S.R. He had received some support from the Communists and from others dissatisfied with the meagre assistance received from the democracies, and he was suggested in some quarters as the next president of the Executive Yuan. Chiang Kai-shek, Wang Chung-hui and other leaders had refused to be pushed into the Axis camp and had merely promised further study of Sun&apos;s suggestions [Shanghai Times, 25 May). A Reuter message of the 4th June from Chungking quoted the Ta Kung Pao as warning Germany against seeking aid from Japan. It said that it believed that, should the war be restricted to Europe, Germany would not be defeated; if she were to propose an honourable and just peace, she would immediately become a great Power in Europe. If, however, she sought support from Japan it would mean her ultimate defeat, as the United States would not remain in- different once Japan joined Germany, who would thus have a new powerful enemy, while she would get little assistance from Japan. Japan would seize British, French, and Dutch colonies in the Far East but would never send her Army and Navy to Europe to help Germany (Shanghai Times, 5 June). A Domei message of the 5th June from Hong Kong said that diplomatic leaders in Chungking were leaning towards a rap&#172; prochement with Germany. Although there were some who urged a pro-democratic front with the Allies and the United States, the desire had been growing in Chungking for a pro-Nazi policy as a result of German successes. Chen Chieh, Ambassador to Berlin, was reported to have been instructed to promote greater Sino-German friendship and was believed to have enlisted the aid of the former German advisers to the Chinese Army (Shanghai Times, 6 June). [Note: The German military advisers, under</essay:p>
+          </essay:div>
+        </essay:div>
+        <essay:div document-segment-type="DVI newspaper article clip" term-id="21918445" term-source="Atlas">
+          <essay:complex-meta>
+            <meta:page-id-number>0006</meta:page-id-number>
+            <meta:folio>
+              <meta:start-number>6</meta:start-number>
+            </meta:folio>
+          </essay:complex-meta>
+          <shared:media>
+            <media:image data-type="jpeg" width="3326" height="5172" image-type="page view" layout="single" color-mode="color" folio="6" sequence="0006">
+              <vault-link:vault-link>
+                <vault-link:link-type>external</vault-link:link-type>
+                <vault-link:action>point</vault-link:action>
+                <vault-link:where>
+                  <vault-link:path>cho_rfpx_1940C_0000_042_0006</vault-link:path>
+                </vault-link:where>
+              </vault-link:vault-link>
+            </media:image>
+          </shared:media>
+          <vault-link:vault-link>
+            <vault-link:link-type>external</vault-link:link-type>
+            <vault-link:link-category term-id="21902636" term-source="Atlas">DVI page</vault-link:link-category>
+            <vault-link:action>point</vault-link:action>
+            <vault-link:where>
+              <vault-link:path>//gift-doc:document-metadata/meta:document-ids/meta:id[@type="Gale asset"]/meta:value[.="VVPWBW022727898"]</vault-link:path>
+            </vault-link:where>
+            <vault-link:select>
+              <vault-link:document-nodes>
+                <vault-link:target>ancestor::gift-doc:document</vault-link:target>
+              </vault-link:document-nodes>
+            </vault-link:select>
+          </vault-link:vault-link>
+          <vault-link:vault-link>
+            <vault-link:link-type>external</vault-link:link-type>
+            <vault-link:link-category term-id="22176901" term-source="Atlas">DVI volume</vault-link:link-category>
+            <vault-link:action>point</vault-link:action>
+            <vault-link:where>
+              <vault-link:path>//gift-doc:document-metadata/meta:document-ids/meta:id[@type="Gale asset"]/meta:value[.="KXSOMS927806317"]</vault-link:path>
+            </vault-link:where>
+            <vault-link:select>
+              <vault-link:document-nodes>
+                <vault-link:target>ancestor::gift-doc:document</vault-link:target>
+              </vault-link:document-nodes>
+            </vault-link:select>
+          </vault-link:vault-link>
+          <essay:div document-segment-type="Body text" term-id="14214508" term-source="Atlas">
+            <essay:p>the leadership of General von Falkenhausen, did good work in building up the Chinese central army. They were compelled to terminate their services in the sum&#172; mer of 1938 as a result of pressure from Berlin. It is noticeable that the (German) Transocean Agency in its Far Eastern Service, though at pains to emphasize and instigate trouble between Japan and the demo&#172; cracies, has by no means adopted a pro-Japanese attitude in its treatment of Sino-Japanese relations]. Possible Peace Moves In view of the latest telegraphic reports from the Far East in the Home Press regarding possible peace moves, the following article from Shanghai by Randall Gould acquires a special interest. He said that Wang Chung-hui and T. V. Soong were among the out- standing Chinese who had expressed the view that much of the fate of the Far East hung upon the out- come of the European War. The Japanese were more reticent, but they too realized the situation. Their hopes of a quick victory over China had been dashed; the Chinese had held out for three years and time was on their side, despite serious financial difficulties and the absence, owing to European complications, of the amount of help from Europe and the United States which they had expected. At present a deadlock prevailed in the Far East and the eventual outcome of the European War would probably be the beginning of the end for one party or the other in the Sino- Japanese conflict. Despite the mystical elements in Japanese policy, the commercial community in Japan realized that the China war was preventing Japan from &apos;cashing in&apos; on many opportunities, owing to her shortages of man power, shipping, and raw materials, and were correspondingly exasperated. They also realized that, if the democracies won in Europe, they would put pressure on Japan to make good her promises of respect for Chinese sovereignty and territorial integrity, and that, even if Germany won, it was not certain that she would favour complete Japanese domination of China. Consequently there were many in the Far East who believed that it would require only a little outside pressure to bring about a peace which patriotic Chinese could accept, and that the restoration of a political status quo would not be difficult (Christian Science Monitor, 17 June). Kuomintang-Communist Relations Allegations (reported by Domei) regarding the mishandling by the Communists of relief work in Hopei were mentioned in this Review C, No. 40, p. 7. The following Reuter report from Chungking affords additional evidence of the ill feeling that exists between the Kuomintang and the Communists. According to this message, dated the 21st May, the official organ of the Chinese Army, the Sao Tang Pao, of that day, contained a leader entitled &apos;Hopei Relief&apos;. It said the famine in Hopei was due to three causes&#8212;the Japanese invasion; floods, drought, and locusts; and the confiscation of foodstuffs by the 18th Group Army&#8212;the Communist 8th Route Army. It declared that the Communists began confiscating foodstuffs in Hopei in November, 1937, when they ordered each hsien to turn over 7,000-12,000 piculs of grain. In 1937 they collected 600,000 piculs, in 1938 1| million piculs, and still more in 1939, thus making the food situation acute. The Sao Tang Pao further declared that, of twenty-one representatives sent to Hopei by the National Relief Commission, only one escaped, the others being murdered by the Communists (Shanghai Times, 22 May). Conditions in the Chinese Army Colonel Li Chun-hsiung, commanding a Kwangsi regiment, was captured by the Japanese on the 8th May and, according to the Japanese military spokes- man in Shanghai, gave an account of conditions in the Chinese Army. He said that a great difference existed between the treatment of Central Army troops and that of provincial ones, the latter being discriminated against in the matter of pay, food, and equipment. Officers of both forces diverted to their own pockets 6</essay:p>
+          </essay:div>
+        </essay:div>
+        <essay:div document-segment-type="DVI newspaper article clip" term-id="21918445" term-source="Atlas">
+          <essay:complex-meta>
+            <meta:page-id-number>0007</meta:page-id-number>
+            <meta:folio>
+              <meta:start-number>7</meta:start-number>
+            </meta:folio>
+          </essay:complex-meta>
+          <shared:media>
+            <media:image data-type="jpeg" width="3326" height="5172" image-type="page view" layout="single" color-mode="color" folio="7" sequence="0007">
+              <vault-link:vault-link>
+                <vault-link:link-type>external</vault-link:link-type>
+                <vault-link:action>point</vault-link:action>
+                <vault-link:where>
+                  <vault-link:path>cho_rfpx_1940C_0000_042_0007</vault-link:path>
+                </vault-link:where>
+              </vault-link:vault-link>
+            </media:image>
+          </shared:media>
+          <vault-link:vault-link>
+            <vault-link:link-type>external</vault-link:link-type>
+            <vault-link:link-category term-id="21902636" term-source="Atlas">DVI page</vault-link:link-category>
+            <vault-link:action>point</vault-link:action>
+            <vault-link:where>
+              <vault-link:path>//gift-doc:document-metadata/meta:document-ids/meta:id[@type="Gale asset"]/meta:value[.="AIWVZN804552178"]</vault-link:path>
+            </vault-link:where>
+            <vault-link:select>
+              <vault-link:document-nodes>
+                <vault-link:target>ancestor::gift-doc:document</vault-link:target>
+              </vault-link:document-nodes>
+            </vault-link:select>
+          </vault-link:vault-link>
+          <vault-link:vault-link>
+            <vault-link:link-type>external</vault-link:link-type>
+            <vault-link:link-category term-id="22176901" term-source="Atlas">DVI volume</vault-link:link-category>
+            <vault-link:action>point</vault-link:action>
+            <vault-link:where>
+              <vault-link:path>//gift-doc:document-metadata/meta:document-ids/meta:id[@type="Gale asset"]/meta:value[.="KXSOMS927806317"]</vault-link:path>
+            </vault-link:where>
+            <vault-link:select>
+              <vault-link:document-nodes>
+                <vault-link:target>ancestor::gift-doc:document</vault-link:target>
+              </vault-link:document-nodes>
+            </vault-link:select>
+          </vault-link:vault-link>
+          <essay:div document-segment-type="Body text" term-id="14214508" term-source="Atlas">
+            <essay:p>a good deal of the money meant as pay for the soldiers. Food was requisitioned from the civil population and he claimed that the Kwangsi troops made full pay&#172; ment, whereas those from other provinces were detested by the people for looting. He knew nothing of the Communist troops, as there had been none in his area. Educational workers told the soldiers that they would be killed if they were captured by the Japanese, while any soldier found with leaflets dropped by Japanese aircraft was shot (Shanghai Times, 25 May). [Note: Coming from a Japanese source, these statements may be taken with some reserve, although there is nothing very improbable about them. A Kwangsi man would naturally praise the conduct of his own forces, but Kwangsi troops have been generally con&#172; sidered among the best of the provincial forces].</essay:p>
+          </essay:div>
+        </essay:div>
+      </essay:div>
+    </gift-doc:body>
+  </gift-doc:document>
+</gold:document-instance>
+<gold:document-instance>
+  <gift-doc:document>
+    <gift-doc:metadata>
+      <gift-doc:node-metadata>
+        <meta:descriptive-indexing>
+          <meta:indexing-term>
+            <meta:term>
+              <meta:term-type>PUB_SEG_TYPE</meta:term-type>
+              <meta:term-source>Atlas</meta:term-source>
+              <meta:term-id>14242630</meta:term-id>
+              <meta:term-value>Article</meta:term-value>
+            </meta:term>
+          </meta:indexing-term>
+        </meta:descriptive-indexing>
+        <meta:issue-number>42</meta:issue-number>
+        <gift-doc:pagination-group>
+          <gift-doc:pagination>
+            <meta:total-pages>1</meta:total-pages>
+            <meta:ranges>
+              <meta:range>
+                <meta:begin-page>7</meta:begin-page>
+              </meta:range>
+            </meta:ranges>
+          </gift-doc:pagination>
+        </gift-doc:pagination-group>
+      </gift-doc:node-metadata>
+      <gift-doc:document-metadata>
+        <meta:document-ids>
+          <meta:id type="Gale asset">
+            <meta:value>ZJLJTI205260466</meta:value>
+          </meta:id>
+        </meta:document-ids>
+        <meta:bibliographic-ids>
+          <meta:id type="PSM">
+            <meta:value>cho_rfpx_1940C_0000_042_0000</meta:value>
+          </meta:id>
+        </meta:bibliographic-ids>
+        <meta:mcode>4XCZ</meta:mcode>
+        <meta:publication-date>
+          <meta:structured-date>
+            <meta:year>1940</meta:year>
+            <meta:month>07</meta:month>
+            <meta:day>18</meta:day>
+          </meta:structured-date>
+          <meta:standard-date type="Start date">19400718</meta:standard-date>
+          <meta:standard-date type="End date">19400718</meta:standard-date>
+        </meta:publication-date>
+        <meta:record-admin-info>
+          <meta:standard-date type="Original">20130416</meta:standard-date>
+        </meta:record-admin-info>
+        <gift-doc:document-titles>
+          <meta:title-display>III. Thailand</meta:title-display>
+          <meta:title-sort>III. Thailand</meta:title-sort>
+          <meta:title-open-url>III. Thailand</meta:title-open-url>
+        </gift-doc:document-titles>
+        <meta:publication-title>Weekly Review of Foreign Press</meta:publication-title>
+        <meta:languages>
+          <meta:language term-id="13858590" ocr="English" ocr-term-id="13858590" primary="Y">English</meta:language>
+        </meta:languages>
+        <meta:ocr-confidence>85.11</meta:ocr-confidence>
+        <meta:descriptive-indexing>
+          <meta:indexing-term>
+            <meta:term>
+              <meta:term-type>DOC_INFO_TYPE</meta:term-type>
+              <meta:term-source>Atlas</meta:term-source>
+              <meta:term-id>21819391</meta:term-id>
+              <meta:term-value>Journal</meta:term-value>
+            </meta:term>
+          </meta:indexing-term>
+          <meta:indexing-term>
+            <meta:term>
+              <meta:term-type>DOC_INFO_TYPE</meta:term-type>
+              <meta:term-source>Atlas</meta:term-source>
+              <meta:term-id>14242630</meta:term-id>
+              <meta:term-value>Article</meta:term-value>
+            </meta:term>
+          </meta:indexing-term>
+          <meta:indexing-term>
+            <meta:term>
+              <meta:term-type>CONT_REC_TYPE</meta:term-type>
+              <meta:term-source>Atlas</meta:term-source>
+              <meta:term-id>17234672</meta:term-id>
+              <meta:term-value>Text</meta:term-value>
+            </meta:term>
+          </meta:indexing-term>
+          <meta:indexing-term>
+            <meta:term>
+              <meta:term-type>CONT_TYPE</meta:term-type>
+              <meta:term-source>Atlas</meta:term-source>
+              <meta:term-id>21901547</meta:term-id>
+              <meta:term-value>DVI-Periodical</meta:term-value>
+            </meta:term>
+          </meta:indexing-term>
+          <meta:indexing-term>
+            <meta:term>
+              <meta:term-type>FUNC_TYPE</meta:term-type>
+              <meta:term-source>Atlas</meta:term-source>
+              <meta:term-id>21787856</meta:term-id>
+              <meta:term-value>Issue-volume article record</meta:term-value>
+            </meta:term>
+          </meta:indexing-term>
+          <meta:indexing-term>
+            <meta:term>
+              <meta:term-type>ART_LANG</meta:term-type>
+              <meta:term-source>Atlas</meta:term-source>
+              <meta:term-id>13858590</meta:term-id>
+              <meta:term-value>English</meta:term-value>
+            </meta:term>
+          </meta:indexing-term>
+        </meta:descriptive-indexing>
+        <meta:source-institution>
+          <meta:institution-name>Chatham House</meta:institution-name>
+          <meta:institution-location>London</meta:institution-location>
+          <meta:copyright-statement>Copyright Royal Institute of International Affairs</meta:copyright-statement>
+        </meta:source-institution>
+        <meta:holding-institution>
+          <meta:institution-name>Chatham House</meta:institution-name>
+          <meta:institution-location>London</meta:institution-location>
+        </meta:holding-institution>
+        <meta:source-citation-group>
+          <meta:source-citation>
+            <meta:content-date>
+              <meta:structured-date>
+                <meta:year>1940</meta:year>
+                <meta:month>07</meta:month>
+                <meta:day>18</meta:day>
+              </meta:structured-date>
+              <meta:standard-date type="Start date">19400718</meta:standard-date>
+              <meta:standard-date type="End date">19400718</meta:standard-date>
+            </meta:content-date>
+          </meta:source-citation>
+        </meta:source-citation-group>
+        <meta:product-content-type type="CHO">Special Publications</meta:product-content-type>
+      </gift-doc:document-metadata>
+    </gift-doc:metadata>
+    <gift-doc:body>
+      <essay:div document-segment-type="Body text" term-id="14214508" term-source="Atlas">
+        <essay:div document-segment-type="DVI newspaper article clip" term-id="21918445" term-source="Atlas">
+          <essay:complex-meta>
+            <meta:page-id-number>0007</meta:page-id-number>
+            <meta:folio>
+              <meta:start-number>7</meta:start-number>
+            </meta:folio>
+          </essay:complex-meta>
+          <shared:media>
+            <media:image data-type="jpeg" width="3326" height="5172" image-type="page view" layout="single" color-mode="color" folio="7" sequence="0007">
+              <vault-link:vault-link>
+                <vault-link:link-type>external</vault-link:link-type>
+                <vault-link:action>point</vault-link:action>
+                <vault-link:where>
+                  <vault-link:path>cho_rfpx_1940C_0000_042_0007</vault-link:path>
+                </vault-link:where>
+              </vault-link:vault-link>
+            </media:image>
+          </shared:media>
+          <vault-link:vault-link>
+            <vault-link:link-type>external</vault-link:link-type>
+            <vault-link:link-category term-id="21902636" term-source="Atlas">DVI page</vault-link:link-category>
+            <vault-link:action>point</vault-link:action>
+            <vault-link:where>
+              <vault-link:path>//gift-doc:document-metadata/meta:document-ids/meta:id[@type="Gale asset"]/meta:value[.="AIWVZN804552178"]</vault-link:path>
+            </vault-link:where>
+            <vault-link:select>
+              <vault-link:document-nodes>
+                <vault-link:target>ancestor::gift-doc:document</vault-link:target>
+              </vault-link:document-nodes>
+            </vault-link:select>
+          </vault-link:vault-link>
+          <vault-link:vault-link>
+            <vault-link:link-type>external</vault-link:link-type>
+            <vault-link:link-category term-id="22176901" term-source="Atlas">DVI volume</vault-link:link-category>
+            <vault-link:action>point</vault-link:action>
+            <vault-link:where>
+              <vault-link:path>//gift-doc:document-metadata/meta:document-ids/meta:id[@type="Gale asset"]/meta:value[.="KXSOMS927806317"]</vault-link:path>
+            </vault-link:where>
+            <vault-link:select>
+              <vault-link:document-nodes>
+                <vault-link:target>ancestor::gift-doc:document</vault-link:target>
+              </vault-link:document-nodes>
+            </vault-link:select>
+          </vault-link:vault-link>
+          <essay:div document-segment-type="Body text" term-id="14214508" term-source="Atlas">
+            <essay:p>III. THAILAND Views on the War in Europe The Premier on the 4th May told correspondents that Thailand was determined to defend her policy of neutrality in the event of the European War spread&#172; ing to the Far East. It was his personal opinion, judging from the trend and pace of events so far, that it might be some four years before the conflict spread to that part of the world. The Government was firmly determined to keep out of any trouble, so that the national progress might be maintained. He had given explicit instructions to the three branches of the fighting forces to resist any intentional violation of Thailand&apos;s neutrality. The Premier expressed his confidence that the Navy and Air Force, although small, could keep off any enemy, at least for some time (jBangkok Chronicle, 4 May). The Bangkok Chronicle, in a leader of the 11th May, said that, with&#172; out infringing its policy of strict and impartial neutral&#172; ity, it believed it reflected the feelings of the entire nation in saying that the news of the invasion of Belgium and Holland had been a tremendous shock. It expressed deep sympathy with the rulers and peoples of those countries and said that the German explanations of the invasion could be left to the judg&#172; ment of future historians. Meanwhile the controversy regarding the Netherlands East Indies now took on practical significance. In a further leader of the 12th May the Bangkok Chronicle said that Thailand was more closely concerned with the European War than some other neutral countries situated far away from it, since she was situated between parts of the British and French empires, and because her most intimate friends in Europe were being struck down one after another. She valued the trade and friendship of Denmark; Norwegian ships carried Thai rice to many foreign ports; the Dutch were among her oldest Euro&#172; pean friends; and the Belgians had been known in trading circles in Bangkok for generations. The Shipping Problem The Bangkok Chronicle of the 4th May congratulated the Government on having acquired the shipping fleet and trading interests of the Thai Navigation Company Ltd. [Note: A Thai concern], which assured the normal continuance of the coastal trade and of the important trade with Singapore. Nai Vilas Osathanonda, Minister of State and Director of the Publicity Department, upon his return from a visit to Hong Kong and Shanghai, said that he had concluded preliminary negotiations forthepurchaseof someocean- going ships to form the nucleus of the Thai mercantile fleet. Five or six vessels would probably be bought by the Thai Government. He had also purchased various commodities, chiefly building materials, from Chinese firms in Hong Kong and Shanghai for the Thai Niyom Panich Company, a Government-supported concern, of which he was the managing director. Fie hoped to promote commercial relations and good feeling between Thailand and China [Bangkok Chronicle, 14 May).</essay:p>
+          </essay:div>
+        </essay:div>
+      </essay:div>
+    </gift-doc:body>
+  </gift-doc:document>
+</gold:document-instance>
+<gold:document-instance>
+  <gift-doc:document>
+    <gift-doc:metadata>
+      <gift-doc:node-metadata>
+        <meta:descriptive-indexing>
+          <meta:indexing-term>
+            <meta:term>
+              <meta:term-type>PUB_SEG_TYPE</meta:term-type>
+              <meta:term-source>Atlas</meta:term-source>
+              <meta:term-id>14242630</meta:term-id>
+              <meta:term-value>Article</meta:term-value>
+            </meta:term>
+          </meta:indexing-term>
+        </meta:descriptive-indexing>
+        <meta:issue-number>42</meta:issue-number>
+        <gift-doc:pagination-group>
+          <gift-doc:pagination>
+            <meta:total-pages>2</meta:total-pages>
+            <meta:ranges>
+              <meta:range>
+                <meta:begin-page>7</meta:begin-page>
+                <meta:end-page>8</meta:end-page>
+              </meta:range>
+            </meta:ranges>
+          </gift-doc:pagination>
+        </gift-doc:pagination-group>
+      </gift-doc:node-metadata>
+      <gift-doc:document-metadata>
+        <meta:document-ids>
+          <meta:id type="Gale asset">
+            <meta:value>EWAPMX141782600</meta:value>
+          </meta:id>
+        </meta:document-ids>
+        <meta:bibliographic-ids>
+          <meta:id type="PSM">
+            <meta:value>cho_rfpx_1940C_0000_042_0000</meta:value>
+          </meta:id>
+        </meta:bibliographic-ids>
+        <meta:mcode>4XCZ</meta:mcode>
+        <meta:publication-date>
+          <meta:structured-date>
+            <meta:year>1940</meta:year>
+            <meta:month>07</meta:month>
+            <meta:day>18</meta:day>
+          </meta:structured-date>
+          <meta:standard-date type="Start date">19400718</meta:standard-date>
+          <meta:standard-date type="End date">19400718</meta:standard-date>
+        </meta:publication-date>
+        <meta:record-admin-info>
+          <meta:standard-date type="Original">20130416</meta:standard-date>
+        </meta:record-admin-info>
+        <gift-doc:document-titles>
+          <meta:title-display>IV. Economic Notes</meta:title-display>
+          <meta:title-sort>IV. Economic Notes</meta:title-sort>
+          <meta:title-open-url>IV. Economic Notes</meta:title-open-url>
+        </gift-doc:document-titles>
+        <meta:publication-title>Weekly Review of Foreign Press</meta:publication-title>
+        <meta:languages>
+          <meta:language term-id="13858590" ocr="English" ocr-term-id="13858590" primary="Y">English</meta:language>
+        </meta:languages>
+        <meta:ocr-confidence>85.11</meta:ocr-confidence>
+        <meta:descriptive-indexing>
+          <meta:indexing-term>
+            <meta:term>
+              <meta:term-type>DOC_INFO_TYPE</meta:term-type>
+              <meta:term-source>Atlas</meta:term-source>
+              <meta:term-id>21819391</meta:term-id>
+              <meta:term-value>Journal</meta:term-value>
+            </meta:term>
+          </meta:indexing-term>
+          <meta:indexing-term>
+            <meta:term>
+              <meta:term-type>DOC_INFO_TYPE</meta:term-type>
+              <meta:term-source>Atlas</meta:term-source>
+              <meta:term-id>14242630</meta:term-id>
+              <meta:term-value>Article</meta:term-value>
+            </meta:term>
+          </meta:indexing-term>
+          <meta:indexing-term>
+            <meta:term>
+              <meta:term-type>CONT_REC_TYPE</meta:term-type>
+              <meta:term-source>Atlas</meta:term-source>
+              <meta:term-id>17234672</meta:term-id>
+              <meta:term-value>Text</meta:term-value>
+            </meta:term>
+          </meta:indexing-term>
+          <meta:indexing-term>
+            <meta:term>
+              <meta:term-type>CONT_TYPE</meta:term-type>
+              <meta:term-source>Atlas</meta:term-source>
+              <meta:term-id>21901547</meta:term-id>
+              <meta:term-value>DVI-Periodical</meta:term-value>
+            </meta:term>
+          </meta:indexing-term>
+          <meta:indexing-term>
+            <meta:term>
+              <meta:term-type>FUNC_TYPE</meta:term-type>
+              <meta:term-source>Atlas</meta:term-source>
+              <meta:term-id>21787856</meta:term-id>
+              <meta:term-value>Issue-volume article record</meta:term-value>
+            </meta:term>
+          </meta:indexing-term>
+          <meta:indexing-term>
+            <meta:term>
+              <meta:term-type>ART_LANG</meta:term-type>
+              <meta:term-source>Atlas</meta:term-source>
+              <meta:term-id>13858590</meta:term-id>
+              <meta:term-value>English</meta:term-value>
+            </meta:term>
+          </meta:indexing-term>
+        </meta:descriptive-indexing>
+        <meta:source-institution>
+          <meta:institution-name>Chatham House</meta:institution-name>
+          <meta:institution-location>London</meta:institution-location>
+          <meta:copyright-statement>Copyright Royal Institute of International Affairs</meta:copyright-statement>
+        </meta:source-institution>
+        <meta:holding-institution>
+          <meta:institution-name>Chatham House</meta:institution-name>
+          <meta:institution-location>London</meta:institution-location>
+        </meta:holding-institution>
+        <meta:source-citation-group>
+          <meta:source-citation>
+            <meta:content-date>
+              <meta:structured-date>
+                <meta:year>1940</meta:year>
+                <meta:month>07</meta:month>
+                <meta:day>18</meta:day>
+              </meta:structured-date>
+              <meta:standard-date type="Start date">19400718</meta:standard-date>
+              <meta:standard-date type="End date">19400718</meta:standard-date>
+            </meta:content-date>
+          </meta:source-citation>
+        </meta:source-citation-group>
+        <meta:product-content-type type="CHO">Special Publications</meta:product-content-type>
+      </gift-doc:document-metadata>
+    </gift-doc:metadata>
+    <gift-doc:body>
+      <essay:div document-segment-type="Body text" term-id="14214508" term-source="Atlas">
+        <essay:div document-segment-type="DVI newspaper article clip" term-id="21918445" term-source="Atlas">
+          <essay:complex-meta>
+            <meta:page-id-number>0007</meta:page-id-number>
+            <meta:folio>
+              <meta:start-number>7</meta:start-number>
+            </meta:folio>
+          </essay:complex-meta>
+          <shared:media>
+            <media:image data-type="jpeg" width="3326" height="5172" image-type="page view" layout="single" color-mode="color" folio="7" sequence="0007">
+              <vault-link:vault-link>
+                <vault-link:link-type>external</vault-link:link-type>
+                <vault-link:action>point</vault-link:action>
+                <vault-link:where>
+                  <vault-link:path>cho_rfpx_1940C_0000_042_0007</vault-link:path>
+                </vault-link:where>
+              </vault-link:vault-link>
+            </media:image>
+            <media:image data-type="jpeg" width="3326" height="5172" image-type="inline" layout="single" color-mode="color" folio="7" sequence="0007">
+              <vault-link:vault-link>
+                <vault-link:link-type>external</vault-link:link-type>
+                <vault-link:action>point</vault-link:action>
+                <vault-link:where>
+                  <vault-link:path>cho_rfpx_1940C_0000_042_0007</vault-link:path>
+                </vault-link:where>
+              </vault-link:vault-link>
+              <meta:descriptive-indexing>
+                <meta:indexing-term>
+                  <meta:term>
+                    <meta:term-type>DOC_INFO_TYPE</meta:term-type>
+                    <meta:term-source>Atlas</meta:term-source>
+                    <meta:term-id>14170008</meta:term-id>
+                    <meta:term-value>Chart</meta:term-value>
+                  </meta:term>
+                </meta:indexing-term>
+              </meta:descriptive-indexing>
+            </media:image>
+          </shared:media>
+          <vault-link:vault-link>
+            <vault-link:link-type>external</vault-link:link-type>
+            <vault-link:link-category term-id="21902636" term-source="Atlas">DVI page</vault-link:link-category>
+            <vault-link:action>point</vault-link:action>
+            <vault-link:where>
+              <vault-link:path>//gift-doc:document-metadata/meta:document-ids/meta:id[@type="Gale asset"]/meta:value[.="AIWVZN804552178"]</vault-link:path>
+            </vault-link:where>
+            <vault-link:select>
+              <vault-link:document-nodes>
+                <vault-link:target>ancestor::gift-doc:document</vault-link:target>
+              </vault-link:document-nodes>
+            </vault-link:select>
+          </vault-link:vault-link>
+          <vault-link:vault-link>
+            <vault-link:link-type>external</vault-link:link-type>
+            <vault-link:link-category term-id="22176901" term-source="Atlas">DVI volume</vault-link:link-category>
+            <vault-link:action>point</vault-link:action>
+            <vault-link:where>
+              <vault-link:path>//gift-doc:document-metadata/meta:document-ids/meta:id[@type="Gale asset"]/meta:value[.="KXSOMS927806317"]</vault-link:path>
+            </vault-link:where>
+            <vault-link:select>
+              <vault-link:document-nodes>
+                <vault-link:target>ancestor::gift-doc:document</vault-link:target>
+              </vault-link:document-nodes>
+            </vault-link:select>
+          </vault-link:vault-link>
+          <essay:div document-segment-type="Body text" term-id="14214508" term-source="Atlas">
+            <essay:p>IV. ECONOMIC NOTES The American Stake in the Dutch East Indies According to an article by Ellen von Zyll de Jong in thzFarEastern Survey, 19th June, capital invested by United States nationals in the Dutch East Indies is comparatively small, probably not exceeding 0.4 per cent of America&apos;s total foreign investments. It in&#172; cludes 70 million dollars invested by the Standard Vacuum Oil Company and rubber investments prob&#172; ably amounting to 40 million dollars. An American Company has planned to lease in 1940 10,000 square miles of land for the cultivation of palm trees and the erection of a plant for extracting palm oil, and the Standard Oil subsidiary, the Nederlandsche Koloniale Petroleum Maatschappij, has recently completed a 4 million dollar high-octane aviation gasolene plant. Several other American firms have important financial interests. The total American investment, however, only forms a small part of the total sum of foreign money invested in these Dutch possessions. In 1929 the investments of Holland accounted for 74.4 per cent, British investments were 13.5 per cent, Franco- Belgian 5.4 per cent, American 2.6 per cent, Japanese 0.9 per cent and others 3.2 per cent of the total. Trade, however, between the United States and the Dutch East Indies is growing in importance. At the outbreak of the Great War imports into the United States were only 0.2 per cent of her total imports; by 1939 the figure had increased to 4 per cent and amounted to 94 million dollars. Exports in the same period have grown from 0.1 per cent, or $3.7 million, to 1.1 per cent in 1939 with a value of $35.5 million, making almost a tenfold increase. In 1939 the United States was the third most important supplier to the Dutch East Indies, furnish&#172; ing 13 per cent of her total requirements, but the value of the commercial intercourse between the two countries cannot be judged entirely by the size of the shares in each other&apos;s total foreign trade. Rather, an examination of the relative importance of various commodities is necessary. More than half of the value of the United States imports from the Dutch East Indies in 1939 consisted of rubber and latex. 28 per cent of her total imports of the former and 49 per cent of the latter came from the Dutch Indies and represented 43 per cent and 86 per cent respectively of the total exports from the Indies of those commodities. The United States imports a far larger share of her rubber from Malaya, but the Dutch possessions are growing in importance as a source of supply. The latter are also important in the matter of price, for it is the producers in the Indies who are &apos;primarily responsible for keeping world prices at their normally low level&apos;. Dr. Newcomb in the Far Eastern Survey, 12 April, said that the native growers in the Dutch East Indies could probably produce good quality rubber consistently at 6 cents a pound. It must be borne in mind, however, that rubber may have a declining importance owing to the pro&#172; gress being made in the synthetic rubber industry. For instance, the Standard Oil Company of New Jersey has announced that, if it beomes necessary to find a substitute for imported natural rubber, they can produce &apos;butyl&apos; rubber from petroleum in any required quantities as soon as the plant can be erected. After rubber the next largest items of imports in 1939 were: Tin Tea Tapioca and Sago Palm Oil Tobacco leaf for cigar wrappers Pepper Sisal Kapok Cinchona (quinine) % of total imports 6.9 6.0 5.5 5.5 3.3 3.3 3.1 2.2 0.9 % of U.S.A total con&#172; sumption 9.1 27.1 f 88.7 \ 83.4 83.2 81.6 96.0 33.5 88.0 99.4 % of D.E.I exports of commodity 50 19 f 62 \ 33 45 25 37 43 45 24 7</essay:p>
+          </essay:div>
+        </essay:div>
+        <essay:div document-segment-type="DVI newspaper article clip" term-id="21918445" term-source="Atlas">
+          <essay:complex-meta>
+            <meta:page-id-number>0008</meta:page-id-number>
+            <meta:folio>
+              <meta:start-number>8</meta:start-number>
+            </meta:folio>
+          </essay:complex-meta>
+          <shared:media>
+            <media:image data-type="jpeg" width="3326" height="5172" image-type="page view" layout="single" color-mode="color" folio="8" sequence="0008">
+              <vault-link:vault-link>
+                <vault-link:link-type>external</vault-link:link-type>
+                <vault-link:action>point</vault-link:action>
+                <vault-link:where>
+                  <vault-link:path>cho_rfpx_1940C_0000_042_0008</vault-link:path>
+                </vault-link:where>
+              </vault-link:vault-link>
+            </media:image>
+          </shared:media>
+          <vault-link:vault-link>
+            <vault-link:link-type>external</vault-link:link-type>
+            <vault-link:link-category term-id="21902636" term-source="Atlas">DVI page</vault-link:link-category>
+            <vault-link:action>point</vault-link:action>
+            <vault-link:where>
+              <vault-link:path>//gift-doc:document-metadata/meta:document-ids/meta:id[@type="Gale asset"]/meta:value[.="ZBXQZA517933987"]</vault-link:path>
+            </vault-link:where>
+            <vault-link:select>
+              <vault-link:document-nodes>
+                <vault-link:target>ancestor::gift-doc:document</vault-link:target>
+              </vault-link:document-nodes>
+            </vault-link:select>
+          </vault-link:vault-link>
+          <vault-link:vault-link>
+            <vault-link:link-type>external</vault-link:link-type>
+            <vault-link:link-category term-id="22176901" term-source="Atlas">DVI volume</vault-link:link-category>
+            <vault-link:action>point</vault-link:action>
+            <vault-link:where>
+              <vault-link:path>//gift-doc:document-metadata/meta:document-ids/meta:id[@type="Gale asset"]/meta:value[.="KXSOMS927806317"]</vault-link:path>
+            </vault-link:where>
+            <vault-link:select>
+              <vault-link:document-nodes>
+                <vault-link:target>ancestor::gift-doc:document</vault-link:target>
+              </vault-link:document-nodes>
+            </vault-link:select>
+          </vault-link:vault-link>
+          <essay:div document-segment-type="Body text" term-id="14214508" term-source="Atlas">
+            <essay:p>These 9 items, with rubber and latex, form 92 per cent of the United States imports from the Dutch East Indies. But some other items making up the remainder constitute a high percentage of United States consumption such as gums, damar 54.6 per cent and copal 64.9 per cent, gambier 72.1 per cent, nutmegs 50.9 per cent, citronella 54.7 per cent, rattan 87.8 per cent, mace 85.8 per cent, and tandan hats 52.7 per cent. For some of these commodities, e.g., tin, palm oil, tea, and sisal, alternative sources of supply could be found, but the cutting off of supplies of quinine would be a matter of considerable conse&#172; quence, on account of the great prevalence of malaria in the Southern States. Attempts are being made to encourage production of the bark in some South American countries and real progress has been made with a synthetic production called atebrin. Dutch East Indies tobacco is of importance, for more than 80 per cent of tobacco leaf for cigar wrappers comes from these islands and is much liked on account of its flavour. Synthetic resins are decreasing the importance of copal and damar but 90 per cent of the world&apos;s supplies of gum copal is produced in the Dutch East Indies. It is used mainly in the manufacture of paints, varnishes, and insulating materials. Kapok is not only used for mattresses and pillows but on account of its light weight, is an essential item in the manu&#172; facture of life belts and is also employed as insulating and noise-proof material in refrigerators, motor cars, and planes. The largest export from the United States to the Dutch East Indies is machinery, which amounts to 21.8 per cent of the whole and consists mainly of mining, well, and pumping machinery. It is followed in importance by aircraft and parts (17.7 per cent). Other items are petroleum products (6.6 per cent) automobiles and parts (6.3 per cent), iron and steel manufactures and semi manufactures (13.8 per cent), chemicals (4.8 per cent). These six items form 71 per cent of the whole export to the Dutch East Indies. None of these is of outstanding importance to the United States manufacturers of these goods, although the Dutch East Indies take 5.5 per cent of all exported iron and steel manufactures, 4.4 per cent of all exported machinery, and 7.2 per cent of all aeroplanes sold abroad. On the other hand the Dutch East Indies buys from the United States all her requirements for naval stores, gums and resins, 48 per cent of her total imported purchases of automobiles and parts, and 76 per cent of imported aircraft and parts. The conclusion arrived at by the writer of the article in the Far Eastern Survey is that American concern over the ultimate fate of the Dutch East Indies is due more to political than to economic reasons. [Note: This conclusion appears to be well warranted from the facts set out. The trade between the United States and the Indies, important though it doubtless is to various manufacturing businesses in the States, is in no sense vital to America. Even if the Japanese took possession of the Dutch East Indies the trade of the latter with America would presumably continue. Japan wants the oil which the U.S.A. does not want, and there is enough rubber to satisfy both, as long as the States draw their main supplies from Malaya. Of the other commodities exported to the United States, Japan wants little or nothing with the excep&#172; tion of tin, which the States could secure elsewhere].</essay:p>
+          </essay:div>
+        </essay:div>
+      </essay:div>
+    </gift-doc:body>
+  </gift-doc:document>
+</gold:document-instance>

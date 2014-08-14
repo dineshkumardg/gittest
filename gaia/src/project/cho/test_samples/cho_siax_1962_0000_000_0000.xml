@@ -1,0 +1,799 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Liquid XML Studio Designer Edition 9.1.11.3570 (http://www.liquid-technologies.com) -->
+<chapter xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="V:\Production\Chatham_House\Schema\chapter.xsd" contentType="book">
+    <metadataInfo>
+        <PSMID>cho_siax_1962_0000_000_0000</PSMID>
+        <language ocr="French" primary="Yes">French</language>
+        <language ocr="English" primary="No">English</language>
+        <productContentType>Survey and Documents Series</productContentType>
+        <contentDate>
+            <contentComposed>1962-63</contentComposed>
+            <contentDecade>1960-1969</contentDecade>
+            <contentIrregular>1962-63</contentIrregular>
+            <contentDateStart>1962-01-01</contentDateStart>
+            <contentDateEnd>1963-12-31</contentDateEnd>
+        </contentDate>
+        <chathamHouseRule>No</chathamHouseRule>
+        <ocr>74.23</ocr>
+        <sourceLibrary>
+            <libraryName>Chatham House</libraryName>
+            <libraryLocation>London, England</libraryLocation>
+            <copyrightStatement>Copyright Royal Institute of International Affairs</copyrightStatement>
+        </sourceLibrary>
+    </metadataInfo>
+    <citation>
+        <book>
+            <pubDate>
+                <composed>1962-63</composed>
+                <irregular>1962-63</irregular>
+                <pubDateStart>1962-01-01</pubDateStart>
+                <pubDateEnd>1963-12-31</pubDateEnd>
+            </pubDate>
+            <titleGroup>
+                <fullTitle>A Directory of Societies and Organizations in Great Britain Concerned with the Study of International Affairs</fullTitle>
+                <fullSubtitle>Subtitle</fullSubtitle>
+            </titleGroup>
+            <volumeGroup>
+                <volumeTitle>Volume 1</volumeTitle>
+                <volumeNumber>1</volumeNumber>
+            </volumeGroup>
+            <imprint>
+                <imprintFull>The Royal Institute of International Affairs and the Information Service on International Affairs</imprintFull>
+                <imprintPublisher>The Royal Institute of International Affairs and the Information Service on International Affairs</imprintPublisher>
+            </imprint>
+            <publicationPlace>
+                <publicationPlaceCity>London</publicationPlaceCity>
+                <publicationPlaceCountry>UK</publicationPlaceCountry>
+                <publicationPlaceComposed>London, UK</publicationPlaceComposed>
+            </publicationPlace>
+            <totalPages>10</totalPages>
+        </book>
+    </citation>
+    <page id="1" type="front_matter" firstPage="Yes">
+        <pageImage pageIndicator="single" width="2350" height="3570" type="jpeg" colorimage="color" pagePosition="ft_cover">cho_siax_1962_0000_000_0001</pageImage>
+        <article id="1" type="front_matter" level="1">
+            <clip pgref="1" />
+            <clip pgref="2" />
+            <illustration pgref="1" clipref="1" type="chart" colorimage="color">
+                <caption>Front Page</caption>
+            </illustration>
+            <illustration pgref="1" clipref="1" type="photograph" colorimage="color"></illustration>
+            <illustration pgref="2" clipref="2" type="map" colorimage="color">
+                <caption>Heald</caption>
+            </illustration>
+            <articleInfo>
+                <title>Front Matter</title>
+                <language ocr="English" primary="Yes">English</language>
+                <language ocr="French" primary="No">French</language>
+                <ocr>31.51</ocr>
+                <startingColumn>A</startingColumn>
+                <pageCount>2</pageCount>
+            </articleInfo>
+            <text>
+                <textclip>
+                    <articlePage pgref="1">cho_siax_1962_0000_000_0001</articlePage>
+                    <p>
+                        <word pos="994,964,1296,1030">)::)&#x25A0;/.),!&gt;</word>
+                        <word pos="1063,1293,1082,1332">/</word>
+                        <word pos="1120,1284,1191,1336">;r(</word>
+                        <word pos="1226,1282,1331,1336">&#x00BB;i.v</word>
+                        <word pos="1390,1284,1462,1336">o]</word>
+                        <word pos="986,1747,993,1784">)</word>
+                        <word pos="1049,1735,1174,1796">\/.i&apos;j</word>
+                        <word pos="978,1879,1143,1948">vATi(</word>
+                        <word pos="1177,1883,1338,1947">W\l</word>
+                        <word pos="1392,1886,1498,1951">All</word>
+                        <word pos="1533,1888,1560,1948">/</word>
+                    </p>
+                </textclip>
+                <textclip>
+                    <articlePage pgref="2">cho_siax_1962_0000_000_0002</articlePage>
+                    <relatedDocument type="footnote" docref="cho_diax_1962_0000_000_0000" pgref="3" articleref="2">Documents, 1962 p.iii</relatedDocument>
+                    <p>
+                        <word pos="1182,758,1209,778">r.t</word>
+                        <word pos="788,1086,1099,1166">LW&amp;Z6</word>
+                        <word pos="1137,1082,1394,1176">~ZC?&#x00A3;&gt;\</word>
+                        <word pos="930,1332,1071,1359">Printed</word>
+                        <word pos="1102,1342,1133,1359">in</word>
+                        <word pos="1165,1333,1278,1360">Great</word>
+                        <word pos="1309,1334,1444,1360">Britain</word>
+                        <word pos="1478,1342,1514,1360">bv</word>
+                        <word pos="929,1376,1075,1402">Richard</word>
+                        <word pos="1094,1377,1180,1403">Clay</word>
+                        <word pos="1198,1376,1223,1403">&amp;</word>
+                        <word pos="1244,1376,1333,1407">Sons,</word>
+                        <word pos="1356,1376,1503,1408">Limited,</word>
+                        <word pos="1082,1426,1215,1450">bungay,</word>
+                        <word pos="1237,1425,1387,1445">suffolk.</word>
+                    </p>
+                    <marginalia>28923 48686-2001</marginalia>
+                </textclip>
+            </text>
+        </article>
+    </page>
+    <page id="2" type="front_matter" firstPage="No">
+        <pageImage pageIndicator="single" width="2020" height="3484" type="jpeg" colorimage="color" pagePosition="left">cho_siax_1962_0000_000_0002</pageImage>
+        <sourcePage>i</sourcePage>
+    </page>
+    <page id="3" type="title_page" firstPage="No">
+        <pageImage pageIndicator="single" width="2008" height="3432" type="jpeg" colorimage="color" pagePosition="right">cho_siax_1962_0000_000_0003</pageImage>
+        <sourcePage>ii</sourcePage>
+        <article id="2" type="front_matter" level="2">
+            <clip pgref="3" />
+            <articleInfo>
+                <author role="author">
+                    <aucomposed>The Organisation</aucomposed>
+                    <sobriquet>The Organisation</sobriquet>
+                </author>
+                <title>Front Matter.</title>
+                <language ocr="English" primary="Yes">English</language>
+                <ocr>69.62</ocr>
+                <startingColumn>A</startingColumn>
+                <pageCount>1</pageCount>
+            </articleInfo>
+            <text>
+                <textclip>
+                    <articlePage pgref="3">cho_siax_1962_0000_000_0003</articlePage>
+                    <p>
+                        <word pos="439,272,500,330">A</word>
+                        <word pos="555,267,1096,329">DIRECTORY</word>
+                        <word pos="1150,266,1265,326">OF</word>
+                        <word pos="111,395,556,459">SOCIETIES</word>
+                        <word pos="605,393,799,454">AND</word>
+                        <word pos="848,388,1595,452">ORGANIZATIONS</word>
+                        <word pos="403,521,498,579">IN</word>
+                        <word pos="558,518,868,578">GREAT</word>
+                        <word pos="924,514,1311,576">BRITAIN</word>
+                        <word pos="129,643,699,707">CONCERNED</word>
+                        <word pos="754,641,999,702">WITH</word>
+                        <word pos="1054,639,1241,700">THE</word>
+                        <word pos="1297,637,1593,698">STUDY</word>
+                        <word pos="129,771,248,831">OF</word>
+                        <word pos="313,765,1125,829">INTERNATIONAL</word>
+                        <word pos="1190,761,1593,822">AFFAIRS</word>
+                        <word pos="689,991,937,1022">compiled</word>
+                        <word pos="981,990,1042,1020">by</word>
+                        <word pos="533,1065,828,1116">STEPHEN</word>
+                        <word pos="875,1065,934,1112">A.</word>
+                        <word pos="981,1063,1210,1114">HEALD</word>
+                        <word pos="911,1097,935,1113">t.</word>
+                        <word pos="981,1063,1131,1114">IffiAl</word>
+                        <word pos="739,1296,884,1334">WITH</word>
+                        <word pos="916,1294,989,1332">AN</word>
+                        <word pos="657,1373,1074,1413">INTRODUCTION</word>
+                        <word pos="842,1470,903,1500">by</word>
+                        <word pos="375,1547,478,1595">SIR</word>
+                        <word pos="523,1545,835,1594">WILLIAM</word>
+                        <word pos="882,1545,947,1591">H.</word>
+                        <word pos="997,1540,1375,1590">BEVERIDGE</word>
+                        <word pos="614,1629,772,1671">K.C.B.,</word>
+                        <word pos="813,1628,955,1668">LL.D.,</word>
+                        <word pos="997,1626,1135,1656">B.C.L.</word>
+                        <word pos="525,1692,684,1716">DIRECTOR,</word>
+                        <word pos="703,1691,824,1710">LONDON</word>
+                        <word pos="843,1690,955,1710">SCHOOL</word>
+                        <word pos="973,1690,1009,1708">OF</word>
+                        <word pos="1027,1688,1211,1712">ECONOMICS;</word>
+                        <word pos="256,1728,419,1752">CHAIRMAN,</word>
+                        <word pos="439,1727,556,1746">BRITISH</word>
+                        <word pos="575,1726,810,1746">CO-ORDINATING</word>
+                        <word pos="828,1725,998,1745">COMMITTEE</word>
+                        <word pos="1017,1724,1072,1743">FOR</word>
+                        <word pos="1091,1723,1332,1742">INTERNATIONAL</word>
+                        <word pos="1351,1722,1475,1741">STUDIES</word>
+                        <word pos="466,2410,677,2452">Published</word>
+                        <word pos="696,2409,818,2450">under</word>
+                        <word pos="840,2409,903,2450">the</word>
+                        <word pos="913,2409,1024,2465">joint</word>
+                        <word pos="1045,2408,1219,2463">auspices</word>
+                        <word pos="1240,2407,1284,2462">of</word>
+                        <word pos="77,2511,194,2552">THE</word>
+                        <word pos="224,2510,414,2552">ROYAL</word>
+                        <word pos="444,2510,768,2552">INSTITUTE</word>
+                        <word pos="797,2509,871,2550">OF</word>
+                        <word pos="901,2506,1392,2550">INTERNATIONAL</word>
+                        <word pos="1421,2506,1658,2548">AFFAIRS</word>
+                        <word pos="791,2591,870,2632">and</word>
+                        <word pos="891,2592,953,2632">the</word>
+                        <word pos="81,2675,502,2716">INFORMATION</word>
+                        <word pos="532,2674,767,2717">SERVICE</word>
+                        <word pos="794,2674,876,2715">ON</word>
+                        <word pos="904,2672,1397,2715">INTERNATIONAL</word>
+                        <word pos="1422,2671,1658,2713">AFFAIRS</word>
+                        <word pos="81,2757,349,2793">CHATHAM</word>
+                        <word pos="376,2756,569,2800">HOUSE,</word>
+                        <word pos="602,2767,643,2791">10</word>
+                        <word pos="671,2756,741,2792">ST.</word>
+                        <word pos="763,2755,971,2802">JAMES&apos;S</word>
+                        <word pos="999,2755,1225,2801">SQUARE,</word>
+                        <word pos="1255,2753,1493,2797">LONDON,</word>
+                        <word pos="1522,2752,1617,2789">S.W.</word>
+                        <word pos="1644,2763,1656,2787">i</word>
+                        <word pos="818,2840,925,2883">1929</word>
+                        <word pos="705,2952,835,2992">Price</word>
+                        <word pos="868,2952,933,2992">Is.</word>
+                        <word pos="964,2952,1038,2991">6d.</word>
+                    </p>
+                </textclip>
+            </text>
+        </article>
+    </page>
+    <page id="4" type="front_matter" firstPage="No">
+        <pageImage pageIndicator="single" width="1972" height="3431" type="jpeg" colorimage="color" pagePosition="left">cho_siax_1962_0000_000_0004</pageImage>
+        <sourcePage>iii</sourcePage>
+        <article id="3" type="front_matter" level="1">
+            <clip pgref="4" />
+            <clip pgref="5" />
+            <articleInfo>
+                <author role="author">
+                    <aucomposed>C. H. Kisch, C. B.</aucomposed>
+                    <first>C.</first>
+                    <middle>H.</middle>
+                    <last>Kisch</last>
+                    <suffix>C. B.</suffix>
+                </author>
+                <title>&quot;Introduction&quot;</title>
+                <language ocr="English" primary="Yes">English</language>
+                <ocr>77.58</ocr>
+                <startingColumn>A</startingColumn>
+                <pageCount>2</pageCount>
+            </articleInfo>
+            <text>
+                <textclip>
+                    <articlePage pgref="4">cho_siax_1962_0000_000_0004</articlePage>
+                    <p>
+                        <word pos="1413,1507,1589,1547">nations.</word>
+                        <word pos="82,1561,170,1601">The</word>
+                        <word pos="192,1563,322,1614">study</word>
+                        <word pos="342,1563,386,1601">of</word>
+                        <word pos="405,1562,703,1602">international</word>
+                        <word pos="723,1562,920,1601">relations</word>
+                        <word pos="940,1562,975,1601">is</word>
+                        <word pos="997,1575,1021,1601">a</word>
+                        <word pos="1043,1562,1204,1614">subject</word>
+                        <word pos="1226,1562,1358,1601">above</word>
+                        <word pos="1380,1561,1435,1600">all</word>
+                        <word pos="1455,1562,1592,1601">others</word>
+                        <word pos="82,1614,125,1654">in</word>
+                        <word pos="164,1615,299,1655">which</word>
+                        <word pos="341,1620,535,1655">constant</word>
+                        <word pos="578,1620,747,1655">contact</word>
+                        <word pos="790,1616,975,1656">between</word>
+                        <word pos="1016,1616,1088,1655">the</word>
+                        <word pos="1129,1616,1295,1655">various</word>
+                        <word pos="1335,1615,1593,1655">institutions</word>
+                        <word pos="82,1669,310,1709">concerned</word>
+                        <word pos="332,1669,435,1709">with</word>
+                        <word pos="460,1670,492,1709">it</word>
+                        <word pos="518,1669,552,1708">is</word>
+                        <word pos="578,1669,784,1709">essential.</word>
+                        <word pos="841,1669,897,1709">At</word>
+                        <word pos="924,1670,996,1709">the</word>
+                        <word pos="1021,1669,1195,1708">London</word>
+                        <word pos="1221,1669,1467,1709">Conference</word>
+                        <word pos="1491,1669,1592,1708">such</word>
+                        <word pos="82,1728,250,1763">contact</word>
+                        <word pos="271,1736,357,1763">was</word>
+                        <word pos="378,1725,515,1775">begun</word>
+                        <word pos="537,1724,595,1775">by</word>
+                        <word pos="617,1723,689,1763">the</word>
+                        <word pos="711,1736,904,1774">presence</word>
+                        <word pos="926,1723,1061,1763">round</word>
+                        <word pos="1084,1736,1108,1762">a</word>
+                        <word pos="1130,1723,1244,1763">table</word>
+                        <word pos="1266,1723,1309,1762">of</word>
+                        <word pos="1331,1723,1438,1762">their</word>
+                        <word pos="1460,1736,1592,1774">repre&#x00AC;</word>
+                        <word pos="84,1777,311,1817">sentatives</word>
+                        <word pos="329,1790,336,1817">:</word>
+                        <word pos="379,1782,636,1829">agreements</word>
+                        <word pos="660,1790,766,1817">were</word>
+                        <word pos="793,1777,957,1817">arrived</word>
+                        <word pos="982,1781,1025,1817">at</word>
+                        <word pos="1052,1777,1116,1816">for</word>
+                        <word pos="1141,1776,1331,1828">carrying</word>
+                        <word pos="1356,1777,1389,1816">it</word>
+                        <word pos="1416,1789,1481,1824">on,</word>
+                        <word pos="1510,1777,1593,1816">and</word>
+                        <word pos="82,1831,225,1883">finally</word>
+                        <word pos="245,1831,276,1870">it</word>
+                        <word pos="297,1844,382,1870">was</word>
+                        <word pos="403,1831,574,1870">decided</word>
+                        <word pos="595,1831,701,1877">that,</word>
+                        <word pos="720,1831,763,1869">in</word>
+                        <word pos="784,1831,903,1870">order</word>
+                        <word pos="923,1836,968,1870">to</word>
+                        <word pos="988,1844,1134,1870">ensure</word>
+                        <word pos="1154,1831,1208,1870">its</word>
+                        <word pos="1228,1830,1477,1882">continuity,</word>
+                        <word pos="1492,1831,1592,1870">each</word>
+                        <word pos="82,1890,260,1937">country</word>
+                        <word pos="295,1884,443,1924">should</word>
+                        <word pos="470,1885,577,1924">form</word>
+                        <word pos="613,1898,639,1924">a</word>
+                        <word pos="672,1885,872,1924">National</word>
+                        <word pos="900,1885,1148,1924">Committee</word>
+                        <word pos="1183,1890,1227,1924">to</word>
+                        <word pos="1264,1889,1332,1924">act</word>
+                        <word pos="1368,1897,1414,1924">as</word>
+                        <word pos="1448,1884,1593,1924">liaison</word>
+                        <word pos="84,1939,270,1978">between</word>
+                        <word pos="289,1939,344,1978">its</word>
+                        <word pos="363,1952,456,1978">own</word>
+                        <word pos="475,1938,737,1978">institutions</word>
+                        <word pos="757,1939,841,1978">and</word>
+                        <word pos="860,1939,979,1978">those</word>
+                    </p>
+                </textclip>
+                <textclip>
+                    <articlePage pgref="5">cho_siax_1962_0000_000_0005</articlePage>
+                    <relatedDocument type="footnote" docref="cho_diax_1962_0000_000_0000" pgref="6" articleref="4">Documents, 1962 p.IV</relatedDocument>
+                    <relatedDocument type="footnote" docref="cho_diax_1962_0000_000_0000" pgref="7" articleref="5">Documents, 1962 p.5</relatedDocument>
+                    <p>
+                        <word pos="408,405,511,445">may</word>
+                        <word pos="536,397,613,433">not</word>
+                        <word pos="640,392,766,433">know</word>
+                        <word pos="790,392,930,433">where</word>
+                        <word pos="956,397,1003,433">to</word>
+                        <word pos="1030,397,1131,433">turn</word>
+                        <word pos="1158,392,1224,433">for</word>
+                        <word pos="1249,391,1362,433">their</word>
+                        <word pos="1386,391,1618,433">materials.</word>
+                        <word pos="1676,392,1766,433">The</word>
+                        <word pos="1790,393,1910,433">work</word>
+                        <word pos="1938,393,1984,433">of</word>
+                        <word pos="410,447,484,487">the</word>
+                        <word pos="517,448,658,498">Royal</word>
+                        <word pos="691,448,897,488">Institute</word>
+                        <word pos="929,448,1017,488">and</word>
+                        <word pos="1048,448,1122,488">the</word>
+                        <word pos="1154,447,1442,487">Information</word>
+                        <word pos="1475,447,1643,487">Service</word>
+                        <word pos="1675,447,1718,487">in</word>
+                        <word pos="1750,447,1983,500">compiling</word>
+                        <word pos="412,501,499,542">this</word>
+                        <word pos="527,515,633,555">very</word>
+                        <word pos="662,502,874,554">complete</word>
+                        <word pos="903,503,1052,542">record</word>
+                        <word pos="1076,503,1274,543">deserves</word>
+                        <word pos="1298,502,1374,542">the</word>
+                        <word pos="1397,501,1615,554">gratitude</word>
+                        <word pos="1639,502,1684,542">of</word>
+                        <word pos="1707,501,1764,542">all</word>
+                        <word pos="1786,502,1882,542">who</word>
+                        <word pos="1908,515,1981,542">are</word>
+                        <word pos="410,556,642,597">interested</word>
+                        <word pos="665,556,709,597">in</word>
+                        <word pos="731,557,805,597">the</word>
+                        <word pos="827,557,1099,597">furtherance</word>
+                        <word pos="1122,557,1167,598">of</word>
+                        <word pos="1190,556,1508,597">International</word>
+                        <word pos="1529,556,1713,598">Studies.</word>
+                        <word pos="1310,662,1378,702">W.</word>
+                        <word pos="1411,661,1468,700">H.</word>
+                        <word pos="1502,661,1783,710">Beveridge,</word>
+                        <word pos="1427,715,1669,763">Chairman,</word>
+                        <word pos="1099,771,1264,811">British</word>
+                        <word pos="1286,770,1614,823">Co-ordinating</word>
+                        <word pos="1632,770,1889,812">Committee</word>
+                        <word pos="1911,771,1979,811">for</word>
+                        <word pos="1279,825,1595,865">International</word>
+                        <word pos="1616,825,1797,866">Studies.</word>
+                        <word pos="458,881,622,922">October</word>
+                        <word pos="654,892,769,935">1929.</word>
+                    </p>
+                </textclip>
+            </text>
+        </article>
+    </page>
+    <page id="5" type="front_matter" firstPage="No">
+        <pageImage pageIndicator="single" width="2075" height="3481" type="jpeg" colorimage="color" pagePosition="right">cho_siax_1962_0000_000_0005</pageImage>
+        <sourcePage>iv</sourcePage>
+    </page>
+    <page id="6" type="front_matter" firstPage="No">
+        <pageImage pageIndicator="single" width="1980" height="3430" type="jpeg" colorimage="color" pagePosition="left">cho_siax_1962_0000_000_0006</pageImage>
+        <sourcePage>v</sourcePage>
+        <article id="4" type="front_matter" level="2">
+            <clip pgref="6" />
+            <articleInfo>
+                <title>Preface</title>
+                <language ocr="English" primary="Yes">English</language>
+                <ocr>69.74</ocr>
+                <startingColumn>A</startingColumn>
+                <pageCount>1</pageCount>
+            </articleInfo>
+            <text>
+                <textclip>
+                    <articlePage pgref="6">cho_siax_1962_0000_000_0006</articlePage>
+                    <p>
+                        <word pos="663,733,1001,789">PREFACE</word>
+                        <word pos="122,871,217,910">The</word>
+                        <word pos="243,871,414,921">present</word>
+                        <word pos="440,864,655,914">directory</word>
+                        <word pos="675,860,778,901">aims</word>
+                        <word pos="799,863,842,898">at</word>
+                        <word pos="867,854,1120,909">presenting,</word>
+                        <word pos="1143,852,1186,892">in</word>
+                        <word pos="1205,851,1321,891">what</word>
+                        <word pos="1342,854,1375,889">it</word>
+                        <word pos="1397,862,1431,889">is</word>
+                        <word pos="1450,847,1590,899">hoped</word>
+                        <word pos="69,925,153,966">will</word>
+                        <word pos="180,936,310,974">prove</word>
+                        <word pos="340,935,365,961">a</word>
+                        <word pos="394,918,645,960">convenient</word>
+                        <word pos="674,916,780,955">form</word>
+                        <word pos="809,913,873,952">for</word>
+                        <word pos="901,911,1121,955">reference,</word>
+                        <word pos="1153,920,1179,946">a</word>
+                        <word pos="1207,906,1418,955">directory</word>
+                        <word pos="1446,903,1489,942">of</word>
+                        <word pos="1518,902,1590,942">the</word>
+                        <word pos="71,979,261,1019">societies</word>
+                        <word pos="281,975,368,1017">and</word>
+                        <word pos="387,971,695,1026">organizations</word>
+                        <word pos="715,969,758,1008">in</word>
+                        <word pos="778,968,905,1007">Great</word>
+                        <word pos="927,963,1092,1005">Britain</word>
+                        <word pos="1111,960,1250,1002">which</word>
+                        <word pos="1270,971,1341,999">are</word>
+                        <word pos="1361,956,1592,997">concerned</word>
+                        <word pos="69,1033,174,1073">with</word>
+                        <word pos="208,1027,512,1071">international</word>
+                        <word pos="548,1025,699,1070">affairs,</word>
+                        <word pos="738,1021,870,1062">either</word>
+                        <word pos="906,1032,952,1059">as</word>
+                        <word pos="989,1030,1014,1057">a</word>
+                        <word pos="1049,1016,1237,1068">primary</word>
+                        <word pos="1273,1026,1320,1052">or</word>
+                        <word pos="1356,1012,1592,1062">subsidiary</word>
+                        <word pos="73,1087,214,1139">object</word>
+                        <word pos="247,1085,291,1125">of</word>
+                        <word pos="323,1083,465,1134">study,</word>
+                        <word pos="500,1093,546,1120">or</word>
+                        <word pos="576,1078,679,1120">with</word>
+                        <word pos="709,1076,782,1116">the</word>
+                        <word pos="812,1073,1013,1115">relations</word>
+                        <word pos="1042,1072,1233,1111">between</word>
+                        <word pos="1265,1068,1394,1108">Great</word>
+                        <word pos="1426,1066,1591,1106">Britain</word>
+                        <word pos="74,1141,159,1181">and</word>
+                        <word pos="177,1140,300,1180">other</word>
+                        <word pos="318,1135,539,1178">countries.</word>
+                        <word pos="1089,1174,1304,1190">.....</word>
+                        <word pos="128,1195,210,1234">For</word>
+                        <word pos="244,1193,317,1233">the</word>
+                        <word pos="349,1200,550,1243">purposes</word>
+                        <word pos="584,1186,628,1226">of</word>
+                        <word pos="672,1184,758,1225">this</word>
+                        <word pos="791,1182,1016,1230">directory,</word>
+                        <word pos="1050,1177,1189,1219">which</word>
+                        <word pos="1225,1189,1261,1215">is</word>
+                        <word pos="1294,1176,1496,1214">intended</word>
+                        <word pos="1529,1176,1594,1211">for</word>
+                        <word pos="74,1247,240,1299">general</word>
+                        <word pos="274,1245,492,1290">reference,</word>
+                        <word pos="523,1242,557,1281">it</word>
+                        <word pos="593,1240,672,1280">has</word>
+                        <word pos="707,1239,814,1278">been</word>
+                        <word pos="851,1232,1095,1275">considered</word>
+                        <word pos="1125,1241,1407,1280">unnecessary</word>
+                        <word pos="1436,1232,1481,1267">to</word>
+                        <word pos="1511,1226,1594,1265">dis&#x00AC;</word>
+                        <word pos="77,1300,263,1352">tinguish</word>
+                        <word pos="308,1299,498,1339">between</word>
+                        <word pos="533,1293,723,1336">societies</word>
+                        <word pos="757,1290,895,1331">which</word>
+                        <word pos="939,1287,1069,1339">study</word>
+                        <word pos="1108,1282,1411,1326">international</word>
+                        <word pos="1452,1282,1594,1320">affairs</word>
+                        <word pos="74,1357,182,1396">from</word>
+                        <word pos="211,1368,237,1394">a</word>
+                        <word pos="264,1351,470,1394">detached</word>
+                        <word pos="502,1347,704,1389">scientific</word>
+                        <word pos="735,1345,856,1397">point</word>
+                        <word pos="890,1343,933,1383">of</word>
+                        <word pos="964,1342,1071,1381">view</word>
+                        <word pos="1100,1339,1185,1380">and</word>
+                        <word pos="1218,1338,1339,1377">those</word>
+                        <word pos="1369,1335,1505,1376">which</word>
+                        <word pos="1538,1334,1591,1374">do</word>
+                        <word pos="75,1415,163,1450">not.</word>
+                        <word pos="220,1410,258,1448">A</word>
+                        <word pos="280,1405,538,1450">distinction,</word>
+                        <word pos="556,1403,764,1447">however,</word>
+                        <word pos="782,1399,862,1438">has</word>
+                        <word pos="886,1398,994,1437">been</word>
+                        <word pos="1014,1394,1140,1434">made</word>
+                        <word pos="1160,1392,1294,1432">under</word>
+                        <word pos="1316,1390,1390,1430">the</word>
+                        <word pos="1413,1388,1592,1440">heading</word>
+                        <word pos="78,1464,210,1503">&quot;The</word>
+                        <word pos="247,1461,385,1512">Study</word>
+                        <word pos="422,1459,465,1499">of</word>
+                        <word pos="509,1453,821,1497">International</word>
+                        <word pos="859,1451,1014,1491">Affairs</word>
+                        <word pos="1058,1449,1101,1488">in</word>
+                        <word pos="1145,1444,1362,1487">General&quot;</word>
+                        <word pos="1406,1444,1593,1483">between</word>
+                        <word pos="79,1516,293,1558">academic</word>
+                        <word pos="310,1514,394,1554">and</word>
+                        <word pos="408,1508,727,1553">non-academic</word>
+                        <word pos="742,1506,900,1547">bodies.</word>
+                        <word pos="957,1505,1008,1544">In</word>
+                        <word pos="1026,1502,1148,1543">order</word>
+                        <word pos="1165,1505,1211,1541">to</word>
+                        <word pos="1232,1498,1356,1540">avoid</word>
+                        <word pos="1375,1502,1445,1537">too</word>
+                        <word pos="1463,1509,1592,1548">many</word>
+                        <word pos="78,1570,359,1612">sub-sections</word> 
+                    </p>
+                </textclip>
+            </text>
+        </article>
+    </page>
+    <page id="7" type="toc" firstPage="No">
+        <pageImage pageIndicator="single" width="1997" height="3459" type="jpeg" colorimage="color" pagePosition="right">cho_siax_1962_0000_000_0007</pageImage>
+        <sourcePage>vii</sourcePage>
+        <article id="5" type="front_matter" level="3">
+            <clip pgref="7" />
+            <articleInfo>
+                <title>Table of Contents,</title>
+                <language ocr="English" primary="Yes">English</language>
+                <ocr>67.93</ocr>
+                <startingColumn>A</startingColumn>
+                <pageCount>1</pageCount>
+            </articleInfo>
+            <text>
+                <textclip>
+                    <articlePage pgref="7">cho_siax_1962_0000_000_0007</articlePage>
+                    <p>
+                        <word pos="431,497,679,549">TABLE</word>
+                        <word pos="736,497,831,549">OF</word>
+                        <word pos="886,496,1301,548">CONTENTS</word>
+                        <word pos="1546,595,1623,613">PAGE</word>
+                        <word pos="112,621,1624,663">Introduction........hi</word>
+                        <word pos="111,710,312,749">Preface</word>
+                        <word pos="406,738,1480,749">.........</word>
+                        <word pos="1596,720,1625,747">v</word>
+                        <word pos="109,797,338,837">Societies</word>
+                        <word pos="362,807,457,837">and</word>
+                        <word pos="483,796,841,836">Organizations</word>
+                        <word pos="866,806,912,835">in</word>
+                        <word pos="938,796,1092,836">Great</word>
+                        <word pos="1116,796,1306,835">Britain</word>
+                        <word pos="1341,827,1349,835">.</word>
+                        <word pos="1474,826,1483,835">.</word>
+                        <word pos="1599,806,1623,847">9</word>
+                        <word pos="112,886,146,916">1.</word>
+                        <word pos="177,875,333,926">Official</word>
+                        <word pos="408,906,416,915">.</word>
+                        <word pos="544,903,1483,915">........</word>
+                        <word pos="1599,885,1623,925">9</word>
+                        <word pos="248,946,393,987">League</word>
+                        <word pos="413,945,452,978">of</word>
+                        <word pos="471,944,628,977">Nations</word>
+                        <word pos="647,945,773,982">Office;</word>
+                        <word pos="805,943,1073,976">International</word>
+                        <word pos="1093,944,1240,976">Labour</word>
+                        <word pos="1260,944,1382,976">Office.</word>
+                   </p>
+                </textclip>
+            </text>
+        </article>
+    </page>
+    <page id="8" type="body_page" firstPage="No">
+        <pageImage pageIndicator="single" width="2055" height="3442" type="jpeg" colorimage="color" pagePosition="left">cho_siax_1962_0000_000_0008</pageImage>
+        <sourcePage>9</sourcePage>
+        <article id="6" type="part" level="1">
+            <clip pgref="8" />
+            <articleInfo>
+                <author role="author">
+                    <aucomposed>Sir Josiah Stamp, G. B. E.</aucomposed>
+                    <prefix>Sir</prefix>
+                    <first>Josiah</first>
+                    <last>Stamp</last>
+                    <suffix>G. B. E.</suffix>
+                </author>
+                <title>The Societies and Organizations in Great Britain</title>
+                <language ocr="English" primary="Yes">English</language>
+                <ocr>73.12</ocr>
+                <startingColumn>A</startingColumn>
+                <pageCount>1</pageCount>
+            </articleInfo>
+            <text>
+                <textclip>
+                    <articlePage pgref="8">cho_siax_1962_0000_000_0008</articlePage>
+                    <p>
+                        <word pos="237,822,627,875">SOCIETIES</word>
+                        <word pos="687,823,846,873">AND</word>
+                        <word pos="904,819,1547,873">ORGANIZATIONS</word>
+                        <word pos="504,917,590,968">IN</word>
+                        <word pos="646,916,904,968">GREAT</word>
+                        <word pos="963,915,1285,967">BRITAIN</word>
+                    </p>
+                </textclip>
+            </text>
+        </article>
+        <article id="7" type="part" level="1">
+            <clip pgref="8" />
+            <articleInfo>
+                <title>An I. Official</title>
+                <language ocr="English" primary="Yes">English</language>
+                <ocr>69.42</ocr>
+                <startingColumn>B</startingColumn>
+                <pageCount>1</pageCount>
+            </articleInfo>
+            <text>
+                <textclip>
+                    <articlePage pgref="8">cho_siax_1962_0000_000_0008</articlePage>
+                    <p>
+                        <word pos="720,1101,756,1133">i.</word>
+                        <word pos="791,1088,1075,1131">OFFICIAL</word>
+                    </p>
+                </textclip>
+            </text>
+        </article>
+        <article id="8" type="article" level="2">
+            <clip pgref="8" />
+            <articleInfo>
+                <title>A League of Nations Office</title>
+                <language ocr="English" primary="Yes">English</language>
+                <ocr>74.24</ocr>
+                <startingColumn>A</startingColumn>
+                <pageCount>1</pageCount>
+            </articleInfo>
+            <text>
+                <textclip>
+                    <articlePage pgref="8">cho_siax_1962_0000_000_0008</articlePage>
+                    <p>
+                        <word pos="517,1197,716,1229">LEAGUE</word>
+                        <word pos="751,1197,813,1229">of</word>
+                        <word pos="845,1196,1063,1228">nations</word>
+                        <word pos="1097,1196,1275,1228">office</word>
+                        <word pos="132,1292,341,1332">Address</word>
+                        <word pos="361,1304,368,1331">:</word>
+                        <word pos="420,1291,468,1331">16</word>
+                        <word pos="501,1291,892,1331">Northumberland</word>
+                        <word pos="923,1291,1110,1337">Avenue,</word>
+                        <word pos="1145,1290,1336,1337">London,</word>
+                        <word pos="1360,1289,1514,1330">W.C.2.</word>
+                        <word pos="1573,1289,1658,1328">Tel.</word>
+                        <word pos="294,1347,372,1386">No.</word>
+                        <word pos="397,1346,559,1397">Regent</word>
+                        <word pos="582,1346,699,1398">3617.</word>
+                        <word pos="758,1345,925,1384">Cables:</word>
+                        <word pos="950,1344,1217,1396">Natileague,</word>
+                        <word pos="1239,1343,1432,1383">London.</word>
+                        <word pos="133,1400,365,1439">Director</word>
+                        <word pos="385,1411,440,1439">of</word>
+                        <word pos="461,1401,651,1440">London</word>
+                    </p>
+                </textclip>
+            </text>
+        </article>
+    </page>
+    <page id="9" type="body_page" firstPage="No">
+        <pageImage pageIndicator="single" width="2059" height="3473" type="jpeg" colorimage="color" pagePosition="left">cho_siax_1962_0000_000_0009</pageImage>
+        <sourcePage>I0</sourcePage>
+        <article id="9" type="article" level="2">
+            <clip pgref="9" />
+            <articleInfo>
+                <title>&apos;International Labour Office&apos;</title>
+                <language ocr="English" primary="Yes">English</language>
+                <ocr>75.23</ocr>
+                <startingColumn>A</startingColumn>
+                <pageCount>1</pageCount>
+            </articleInfo>
+            <text>
+                <textclip>
+                    <articlePage pgref="9">cho_siax_1962_0000_000_0009</articlePage>
+                    <p>
+                        <word pos="471,2302,887,2335">international</word>
+                        <word pos="920,2302,1123,2336">labour</word>
+                        <word pos="1157,2302,1332,2335">office</word>
+                        <word pos="139,2395,346,2435">Address</word>
+                        <word pos="366,2408,373,2435">:</word>
+                        <word pos="410,2407,457,2436">12</word>
+                        <word pos="477,2396,665,2436">Victoria</word>
+                        <word pos="683,2396,833,2444">Street,</word>
+                        <word pos="854,2397,1043,2444">London,</word>
+                        <word pos="1064,2397,1214,2437">S.W.i.</word>
+                        <word pos="1274,2397,1356,2436">Tel.</word>
+                        <word pos="1375,2397,1455,2436">No.</word>
+                        <word pos="1475,2396,1661,2436">Victoria</word>
+                        <word pos="299,2451,415,2502">2859.</word>
+                        <word pos="139,2504,369,2543">Director</word>
+                        <word pos="388,2515,443,2543">of</word>
+                        <word pos="462,2504,651,2544">London</word>
+                        <word pos="674,2505,837,2544">Office</word>
+                        <word pos="858,2517,866,2544">:</word>
+                        <word pos="902,2505,958,2544">M.</word>
+                        <word pos="981,2506,1032,2545">R.</word>
+                        <word pos="1056,2505,1109,2545">K.</word>
+                        <word pos="1131,2505,1282,2557">Burge.</word>
+                        <word pos="193,2590,294,2630">This</word>
+                        <word pos="319,2591,354,2630">is</word>
+                        <word pos="379,2591,453,2631">the</word>
+                        <word pos="479,2591,655,2631">London</word>
+                        <word pos="682,2592,800,2631">office</word>
+                        <word pos="827,2592,871,2631">of</word>
+                        <word pos="897,2592,971,2631">the</word>
+                        <word pos="999,2591,1311,2631">International</word>
+                        <word pos="1337,2593,1505,2631">Labour</word>
+                        <word pos="1533,2592,1660,2631">Office</word>
+                    </p>
+                </textclip>
+            </text>
+        </article>
+    </page>
+    <page id="10" type="body_page" firstPage="No">
+        <pageImage pageIndicator="single" width="2059" height="3473" type="jpeg" colorimage="color" pagePosition="right">cho_siax_1962_0000_000_0010</pageImage>
+        <sourcePage>II</sourcePage>
+        <article id="10" type="part" level="1">
+            <clip pgref="10" />
+            <articleInfo>
+                <title>2. The Study of International Affairs in General</title>
+                <language ocr="English" primary="Yes">English</language>
+                <ocr>73.67</ocr>
+                <startingColumn>A</startingColumn>
+                <pageCount>1</pageCount>
+            </articleInfo>
+            <text>
+                <textclip>
+                    <articlePage pgref="10">cho_siax_1962_0000_000_0010</articlePage>
+                    <p>
+                        <word pos="471,392,510,423">2.</word>
+                        <word pos="546,379,675,424">THE</word>
+                        <word pos="718,382,926,426">STUDY</word>
+                        <word pos="969,384,1049,427">OF</word>
+                        <word pos="1092,385,1620,431">INTERNATIONAL</word>
+                        <word pos="1659,389,1928,434">AFFAIRS</word>
+                        <word pos="990,444,1058,486">IN</word>
+                        <word pos="1103,445,1406,489">GENERAL</word>
+                    </p>
+                </textclip>
+            </text>
+        </article>
+        <article id="11" type="article" level="2">
+            <clip pgref="10" />
+            <articleInfo>
+                <title>(a) I. British Co-Ordinating Committee for International Studies</title>
+                <language ocr="English" primary="Yes">English</language>
+                <ocr>77.37</ocr>
+                <startingColumn>A</startingColumn>
+                <pageCount>1</pageCount>
+            </articleInfo>
+            <text>
+                <textclip>
+                    <articlePage pgref="10">cho_siax_1962_0000_000_0010</articlePage>
+                    <p>
+                        <word pos="572,532,617,574">(a)</word>
+                        <word pos="650,543,679,566">i.</word>
+                        <word pos="707,535,917,568">BRITISH</word>
+                        <word pos="950,537,1358,571">CO-ORDINATING</word>
+                        <word pos="1389,539,1686,574">COMMITTEE</word>
+                        <word pos="1719,542,1820,575">FOR</word>
+                        <word pos="854,580,1280,615">INTERNATIONAL</word>
+                        <word pos="1313,584,1528,617">STUDIES</word>
+                        <word pos="414,653,627,695">Address</word>
+                        <word pos="647,667,654,695">:</word>
+                        <word pos="708,656,920,697">Chatham</word>
+                        <word pos="957,658,1116,707">House,</word>
+                        <word pos="1157,671,1206,700">10</word>
+                        <word pos="1243,660,1305,701">St.</word>
+                        <word pos="1342,661,1527,711">James&apos;s</word>
+                        <word pos="1562,663,1734,711">Square,</word>
+                        <word pos="1774,665,1977,711">London,</word>
+                        <word pos="580,709,690,750">S.W.</word>
+                        <word pos="712,722,747,751">i.</word>
+                        <word pos="414,762,656,804">Chairman</word>
+                        <word pos="678,777,685,804">:</word>
+                        <word pos="726,765,792,805">Sir</word>
+                        <word pos="814,766,1001,807">William</word>
+                    </p>
+                </textclip>
+            </text>
+        </article>
+    </page>
+</chapter>

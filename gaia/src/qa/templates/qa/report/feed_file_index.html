@@ -1,0 +1,91 @@
+{% extends "qa/filter_paginator.html" %}
+{% block title %}feed files{% endblock %}
+
+{% block content %}
+<h1>feed files</h1>
+
+{% block content_side_bar %}
+<div id="side_bar">
+{% block date_filter %}
+{{ block.super }}
+{% endblock%}
+
+<form name="input" action="" method="get" style="display:inline;" >
+<input type="text" style="background-color:#FAFAFA"class="search_box" id="search_by_box" name="search_feed"/ value={{request.GET.search_feed}}>
+<a href="javascript:document.input.submit()" ><img src="{{STATIC_URL}}/admin/img/icon_searchbox.png" alt="Search" /></a>
+<ul style="list-style: none;">
+    <li><label for="search_for"><input type="radio" name="search_for"{% if request.GET.search_for == 'feed' or request.GET.search_for == '' %} checked="checked" {% endif %} value="feed" id="search_for_item"checked> {{this.value}} feed file</label></li>
+    <li><label for="search_for"><input type="radio" name="search_for" {% ifequal 'item' request.GET.search_for %} checked="checked" {% endifequal%} value="item" id="search_for_item"> item</label></li>
+    <li><label for="search_for"><input type="radio" name="search_for"{% ifequal 'asset_id' request.GET.search_for %} checked="checked" {% endifequal%} value="asset_id" id="search_for_assert_id"> asset Id</label></li></ul>
+<input type="submit" class="button table_top_button" style="margin-left:50px" value="Search">
+
+</div>
+{% block search_bar %}
+{% endblock %}
+{% endblock %}
+
+{% block content_table %}
+<div id="result_table" >
+{% if context %}
+<table>
+<thead>
+    <tr>
+    {% for value, key in sort_fields_list.items  %}
+        <th>
+            <div id={{ key }}>{{ value }}</div>
+            <div class="clear"></div>
+        </th>
+    {% endfor %}
+    <th>
+        <div>type</div>
+        <div class="clear"></div>
+    </th>
+    </tr>
+</thead>
+<tbody>
+	
+    {% for feed_file in context %}
+	<tr class ="{% cycle 'row1' 'row2' %}">
+		<td>{{feed_file.when}}</td>
+		<td> <a href="feed_file_items?feed_file={{feed_file.fname}}">{{feed_file.fname}}</a></td>
+		<td>{{ feed_file.group }}</td>
+		<td>{{feed_file.num_docs}}</td>
+		<td>
+		{% for type in feed_file.type %}
+			{{ type }}
+		{% endfor %}
+		</td>
+		
+	</tr>
+	{% endfor %}
+
+</tbody>
+</table>
+
+{% else %}
+   
+   {% if request.GET.filter_by %}
+        <p>no results for filter type: {{ request.GET.filter_by }} </p>
+    {% else %}
+   
+        {% if request.GET.search_feed %}
+            <p>no search results for: <b> {{ request.GET.search_feed }}</b><p>
+        {% else %}
+            <p>No feed files</p>
+        {% endif %}
+    
+    {% endif %}
+{% endif%}
+</div>
+{% endblock %}
+
+{% block content_paginate %}
+    {{ block.super }}
+{% endblock %}
+
+{% block sort_script %}
+    {{ block.super }}
+{% endblock %}
+
+{% endblock %}
+

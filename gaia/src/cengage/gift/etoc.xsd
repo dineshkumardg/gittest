@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2005 rel. 3 U (http://www.altova.com) by Gale User (Gale Group) -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:gift-doc="http://www.gale.com/goldschema/gift-doc" xmlns:vault-link="http://www.gale.com/goldschema/vault-linking" xmlns:meta="http://www.gale.com/goldschema/metadata" xmlns:etoc="http://www.gale.com/goldschema/etoc" targetNamespace="http://www.gale.com/goldschema/etoc" elementFormDefault="qualified" attributeFormDefault="unqualified" version="3.0">
+	<xs:import namespace="http://www.gale.com/goldschema/gift-doc" schemaLocation="gift_document.xsd"/>
+	<xs:import namespace="http://www.gale.com/goldschema/metadata" schemaLocation="metadata.xsd"/>
+	<xs:import namespace="http://www.gale.com/goldschema/vault-linking" schemaLocation="vault_linking.xsd"/>
+	<xs:annotation id="etoc_schema">
+		<xs:documentation>etoc.xsd</xs:documentation>
+	</xs:annotation>
+	<xs:annotation id="etoc-schema-purpose">
+		<xs:documentation>This schema is to hold the eToC content records for VRL cotent.</xs:documentation>
+	</xs:annotation>
+	<!--
+	======================================================================
+                           CHANGE HISTORY
+	======================================================================
+	3.0		12/04/2013		js
+	1. Removed the schema owner part.
+	2. Updated the folder path of <xs:import>.
+	3. Reorganized the elements.
+	4. Removed the elements functional-record-type, source-ebook-title and etoc-metadata as they are unused.
+	======================================================================
+-->
+	<!-- 
+	============================================================================   
+                    ELEMENT DECLARATIONS
+	============================================================================   
+	-->
+	<!--                    DOCUMENT                                  -->	
+	<xs:element name="document" type="etoc:document-type">
+		<xs:annotation>
+			<xs:documentation>Wrapper element for eToC content record.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--                    ETOC-LINK                                  -->	
+	<xs:element name="etoc-link" type="etoc:etoc-linkType">
+		<xs:annotation>
+			<xs:documentation>eToC content records. From the Dialog B TC tag.  #94.  In this structure, the xxNumber represents that of the "home article".</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--                    ETOC-TYPE                                  -->	
+	<xs:element name="etoc-type" type="etoc:etoc-Type">
+		<xs:annotation>
+			<xs:documentation>From Dialog B YE tag.  Valid contents are either "Alpha" , "DNL" or "Other".</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--                    ETOC-UNIQUE-ID                                  -->	
+	<xs:element name="etoc-unique-id" type="xs:integer">
+		<xs:annotation>
+			<xs:documentation>This is a five-digit sequential id number.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--                    LINKS-CHUNK                                  -->	
+	<xs:element name="links-chunk" type="etoc:links-chunk-type">
+		<xs:annotation>
+			<xs:documentation>Recursive wrapper structure used to capture the heirarchy of the articles.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!-- 
+	============================================================================   
+                   COMPLEX  TYPES
+	============================================================================   
+	-->
+	<!--                    DOCUMENT TYPE                                  -->	
+	<xs:complexType name="document-type">
+		<xs:sequence>
+			<xs:element ref="etoc:links-chunk"/>
+		</xs:sequence>
+	</xs:complexType>
+	<!--                    ETOC LINKTYPE                                  -->	
+	<xs:complexType name="etoc-linkType">
+		<xs:sequence>
+			<xs:element ref="meta:document-ids" minOccurs="0"/>
+			<xs:element ref="vault-link:vault-link" minOccurs="0"/>
+			<xs:element ref="meta:title-display"/>
+			<xs:element ref="meta:category-display" minOccurs="0"/>
+			<xs:element ref="etoc:etoc-unique-id"/>
+			<xs:element ref="gift-doc:pagination-group" minOccurs="0"/>
+			<xs:element ref="etoc:links-chunk" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<!--                    LINKS CHUNK TYPE                                  -->	
+	<xs:complexType name="links-chunk-type">
+		<xs:sequence>
+			<xs:element ref="etoc:etoc-link" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<!-- 
+	============================================================================   
+                   SIMPLE  TYPES
+	============================================================================   
+	-->
+	<xs:simpleType name="etoc-Type">
+		<xs:restriction base="xs:normalizedString">
+			<xs:enumeration value="Alpha"/>
+			<xs:enumeration value="Other"/>
+			<xs:enumeration value="DNL"/>
+		</xs:restriction>
+	</xs:simpleType>
+</xs:schema>

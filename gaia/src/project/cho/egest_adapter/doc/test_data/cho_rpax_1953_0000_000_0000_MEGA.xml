@@ -1,0 +1,475 @@
+<gold:document-instance>
+  <gift-doc:document>
+    <gift-doc:metadata>
+      <gift-doc:node-metadata>
+        <meta:descriptive-indexing>
+          <meta:indexing-term>
+            <meta:term>
+              <meta:term-type>PUB_SEG_TYPE</meta:term-type>
+              <meta:term-source>Atlas</meta:term-source>
+              <meta:term-id>14242630</meta:term-id>
+              <meta:term-value>Article</meta:term-value>
+            </meta:term>
+          </meta:indexing-term>
+        </meta:descriptive-indexing>
+        <gift-doc:pagination-group>
+          <gift-doc:pagination>
+            <meta:total-pages>10</meta:total-pages>
+          </gift-doc:pagination>
+        </gift-doc:pagination-group>
+      </gift-doc:node-metadata>
+      <gift-doc:document-metadata>
+        <meta:document-ids>
+          <meta:id type="Gale asset">
+            <meta:value>aaaaa</meta:value>
+          </meta:id>
+        </meta:document-ids>
+        <meta:bibliographic-ids>
+          <meta:id type="PSM">
+            <meta:value>cho_rpax_1953_0000_000_0000</meta:value>
+          </meta:id>
+        </meta:bibliographic-ids>
+        <meta:mcode>5XFC</meta:mcode>
+        <meta:publication-date>
+          <meta:structured-date>
+            <meta:year>1953</meta:year>
+            <meta:month>08</meta:month>
+            <meta:day>31</meta:day>
+          </meta:structured-date>
+          <meta:standard-date type="Start date">19530831</meta:standard-date>
+          <meta:standard-date type="End date">19530831</meta:standard-date>
+        </meta:publication-date>
+        <meta:record-admin-info>
+          <meta:standard-date type="Original">20121202</meta:standard-date>
+        </meta:record-admin-info>
+        <gift-doc:document-titles>
+          <meta:title-display>Notes on Forces in the United Kingdom That Shape Foreign Policy</meta:title-display>
+          <meta:title-sort>Notes on Forces in the United Kingdom That Shape Foreign Policy</meta:title-sort>
+          <meta:title-open-url>Notes on Forces in the United Kingdom That Shape Foreign Policy</meta:title-open-url>
+        </gift-doc:document-titles>
+        <meta:publication-title>Chatham House Pamphlets and Reports</meta:publication-title>
+        <meta:languages>
+          <meta:language term-id="13858590" ocr="English" ocr-term-id="13858590" primary="Y">English</meta:language>
+        </meta:languages>
+        <meta:ocr-confidence>84.34</meta:ocr-confidence>
+        <meta:authors>
+          <meta:corporate-author>The Royal Institute of International Affairs</meta:corporate-author>
+        </meta:authors>
+        <meta:descriptive-indexing>
+          <meta:indexing-term>
+            <meta:term>
+              <meta:term-type>DOC_INFO_TYPE</meta:term-type>
+              <meta:term-source>Atlas</meta:term-source>
+              <meta:term-id>14174382</meta:term-id>
+              <meta:term-value>Report</meta:term-value>
+            </meta:term>
+          </meta:indexing-term>
+          <meta:indexing-term>
+            <meta:term>
+              <meta:term-type>CONT_REC_TYPE</meta:term-type>
+              <meta:term-source>Atlas</meta:term-source>
+              <meta:term-id>17234672</meta:term-id>
+              <meta:term-value>Text</meta:term-value>
+            </meta:term>
+          </meta:indexing-term>
+          <meta:indexing-term>
+            <meta:term>
+              <meta:term-type>CONT_TYPE</meta:term-type>
+              <meta:term-source>Atlas</meta:term-source>
+              <meta:term-id>21901545</meta:term-id>
+              <meta:term-value>DVI-Monograph</meta:term-value>
+            </meta:term>
+          </meta:indexing-term>
+          <meta:indexing-term>
+            <meta:term>
+              <meta:term-type>FUNC_TYPE</meta:term-type>
+              <meta:term-source>Atlas</meta:term-source>
+              <meta:term-id>14214546</meta:term-id>
+              <meta:term-value>Megametadocument</meta:term-value>
+            </meta:term>
+          </meta:indexing-term>
+          <meta:indexing-term>
+            <meta:term>
+              <meta:term-type>ART_LANG</meta:term-type>
+              <meta:term-source>Atlas</meta:term-source>
+              <meta:term-id>13858590</meta:term-id>
+              <meta:term-value>English</meta:term-value>
+            </meta:term>
+          </meta:indexing-term>
+        </meta:descriptive-indexing>
+        <meta:source-institution>
+          <meta:institution-name>Chatham House</meta:institution-name>
+          <meta:institution-location>London</meta:institution-location>
+          <meta:copyright-statement>Copyright Royal Institute of International Affairs</meta:copyright-statement>
+        </meta:source-institution>
+        <meta:holding-institution>
+          <meta:institution-name>Chatham House</meta:institution-name>
+          <meta:institution-location>London</meta:institution-location>
+        </meta:holding-institution>
+        <meta:source-citation-group>
+          <meta:source-citation type="DVI monograph">
+            <meta:publication-date>
+              <meta:structured-date>
+                <meta:year>1953</meta:year>
+                <meta:month>08</meta:month>
+                <meta:day>31</meta:day>
+              </meta:structured-date>
+              <meta:standard-date type="Start date">19530831</meta:standard-date>
+              <meta:standard-date type="End date">19530831</meta:standard-date>
+            </meta:publication-date>
+            <meta:publisher>Conference of Leaders of Institutes of World Affairs</meta:publisher>
+            <meta:place-of-publication>New York, USA</meta:place-of-publication>
+            <meta:imprint>
+              <meta:imprint-composed>New York: Conference of Leaders of Institutes of World Affairs, 1953</meta:imprint-composed>
+            </meta:imprint>
+            <meta:series-info>
+              <meta:title>Working Paper</meta:title>
+              <meta:number>8</meta:number>
+            </meta:series-info>
+            <meta:content-date>
+              <meta:structured-date>
+                <meta:year>1953</meta:year>
+                <meta:month>08</meta:month>
+                <meta:day>31</meta:day>
+              </meta:structured-date>
+              <meta:standard-date type="Start date">19530831</meta:standard-date>
+              <meta:standard-date type="End date">19530831</meta:standard-date>
+            </meta:content-date>
+          </meta:source-citation>
+        </meta:source-citation-group>
+        <meta:product-content-type type="CHO">Pamphlets and Reports</meta:product-content-type>
+      </gift-doc:document-metadata>
+    </gift-doc:metadata>
+    <gift-doc:body>
+      <essay:div document-segment-type="Body text" term-id="14214508" term-source="Atlas">
+        <essay:div document-segment-type="Page" term-id="21922233" term-source="Atlas">
+          <essay:complex-meta>
+            <meta:page-id-number>0001</meta:page-id-number>
+          </essay:complex-meta>
+          <essay:p>PROGRAM PART III WORKING PAPER NO. 8 C0NP3R3NCE OF LEADERS OP INSTITUTES OP WORLD AFFAIRS Nev; York, Hew Ygik October 20-31, 1953 ]NT&#163;RK&gt;&#171;t,OM&#171;L CONFEJR&#163;J&gt;CC. OF INlTnol t5 OP \MORul&gt; NFfMfts! . .October BSi. &apos;^or k &#187;&#171;vj ^fK|&gt;erS , PROGRAM PART II &quot; Tho.Pocces That Shape Foreign Policy in Democracios NOTES OH FORCES III THE UNITED KINGDOM THAT SHAPE FOREIGN POLICY *&gt;y The Royal Institute of International Affairs to52&gt; Ref ($*&gt;) %n/{ ^4 pcxmph (lis 3)</essay:p>
+          <shared:media>
+            <media:image data-type="jpeg" width="3640" height="4651" image-type="page view" layout="single" color-mode="color" sequence="0001">
+              <vault-link:vault-link>
+                <vault-link:link-type>external</vault-link:link-type>
+                <vault-link:action>point</vault-link:action>
+                <vault-link:where>
+                  <vault-link:path>cho_rpax_1953_0000_000_0001</vault-link:path>
+                </vault-link:where>
+              </vault-link:vault-link>
+            </media:image>
+          </shared:media>
+          <vault-link:vault-link>
+            <vault-link:link-type>external</vault-link:link-type>
+            <vault-link:link-category term-id="21902636" term-source="Atlas">DVI page</vault-link:link-category>
+            <vault-link:action>point</vault-link:action>
+            <vault-link:where>
+              <vault-link:path>//gift-doc:document-metadata/meta:document-ids/meta:id[@type="Gale asset"]/meta:value[.="bbbbb1"]</vault-link:path>
+            </vault-link:where>
+            <vault-link:select>
+              <vault-link:document-nodes>
+                <vault-link:target>ancestor::gift-doc:document</vault-link:target>
+              </vault-link:document-nodes>
+            </vault-link:select>
+          </vault-link:vault-link>
+        </essay:div>
+        <essay:div document-segment-type="Page" term-id="21922233" term-source="Atlas">
+          <essay:complex-meta>
+            <meta:page-id-number>0002</meta:page-id-number>
+            <meta:folio>
+              <meta:start-number>[1]</meta:start-number>
+            </meta:folio>
+          </essay:complex-meta>
+          <essay:p>NOTES ON FORCES IN THE UNITED KINGDOM THAT SHAPE FOREIGN POLICY The greatest single force in the shaping of foreign policy in the United Kingdom is the Foreign Service, a body with long standing experience and acknowledged skill. This influence, however, lies behind the scenes and continues tx&apos;aditional diplomatic practice. These notes are concerned with the newer influences with which the democratic State of today is concerned. GOVERNMENT AND POLITICAL PARTIES The habit of describing the foreign policy of a country by the name of the Foreign Minister who happens to execute it has come down to us from former generations. We talk of the foreign policy of Mr. Schuman, Mr. Acheson or Mr. Bevin as we might have talked of the policy of Talleyrand or Palmerston. The personal views of a Foreign Minister can, of course, be important, but nowadays, in Britain at least, they are less decisive than they used to be In the first place, every major decision in foreign policy is a cabinet decision, whereas as recently as forty years ago a Foreign Minister would not have felt obliged to consult anyone but the Prime Minister. The new system in&#172; volves far more than mere reference of a question to a Cabinet Meeting, for every major decision is preceded by much official consultation between the Ministries concerned. In an interdependent world the life of the nation is affected by in&#172; ternational action at far more points than was the case a generation ago. At the very least, the Foreign Office, Treasury, and Defence Departments are likely to be involved, and there are often others as well. These offices have to be kept continuously informed of events as they develop, and cannot merely be asked to give their assent in the final stages. All this is a symptom of the steady invasion by the processes of democracy into the sphere of diplomacy, which, in Britain, remained an aristocratic preserve long after other aspects of government business had become subjected to popular control. The three recognized arms of the modern democratic state are the execu&#172; tive, the legislature and the judiciary, whose functions are kept distinct to varying degrees in different countries. In Britain the judiciary cannot be said to play any effective part in foreign policy. There being no written constitution, no court is called upon to pronounce upon the constitutional validity of treaties or other international acts. It is of course true that when a government undertakes new international obligations, it may be obliged to pass legislation so as to bring the domestic law into conformity with the new situation. Should any dispute arise, however, the courts would have regard only to domestic law and would not accept any claim based upon an international instrument alone. The main responsibility for foreign policy lies inevitably with the executive, that is to say, the Cabinet. As already stated, numerous departments of government are concerned in foreign policy. This is the same in all demo&#172; cratic countries, and requires no elaboration. There are, however, two depart&#172; ments in Britain which merit special mention. The first is the Colonial Office,</essay:p>
+          <shared:media>
+            <media:image data-type="jpeg" width="3298" height="4577" image-type="page view" layout="single" color-mode="color" folio="[1]" sequence="0002">
+              <vault-link:vault-link>
+                <vault-link:link-type>external</vault-link:link-type>
+                <vault-link:action>point</vault-link:action>
+                <vault-link:where>
+                  <vault-link:path>cho_rpax_1953_0000_000_0002</vault-link:path>
+                </vault-link:where>
+              </vault-link:vault-link>
+            </media:image>
+          </shared:media>
+          <vault-link:vault-link>
+            <vault-link:link-type>external</vault-link:link-type>
+            <vault-link:link-category term-id="21902636" term-source="Atlas">DVI page</vault-link:link-category>
+            <vault-link:action>point</vault-link:action>
+            <vault-link:where>
+              <vault-link:path>//gift-doc:document-metadata/meta:document-ids/meta:id[@type="Gale asset"]/meta:value[.="bbbbb2"]</vault-link:path>
+            </vault-link:where>
+            <vault-link:select>
+              <vault-link:document-nodes>
+                <vault-link:target>ancestor::gift-doc:document</vault-link:target>
+              </vault-link:document-nodes>
+            </vault-link:select>
+          </vault-link:vault-link>
+        </essay:div>
+        <essay:div document-segment-type="Page" term-id="21922233" term-source="Atlas">
+          <essay:complex-meta>
+            <meta:page-id-number>0003</meta:page-id-number>
+            <meta:folio>
+              <meta:start-number>2</meta:start-number>
+            </meta:folio>
+          </essay:complex-meta>
+          <essay:p>-2- which is responsible for safeguarding the interests of all colonial territories yet has only a limited control of what is done in the colonies themselves. This accounts for the phenomenon, frequently to be seen in the United Nations, where ijntain can often sign an international convention only if it contains a colonial application clause&apos; under which the application of the convention to British colonies is not automatic, but is subject to the agreement of the colonial government in the territory. 4-v, i +he sec&#176;nJ ^Partaent is the Commonwealth Relations Office which handles e rela ;ions Ox the United Kingdom with the self-governing members of the Commonwealth. This office must obviously work in close harmony with the Foreign ltS turn&apos; should be sensitive to the views of the Commonwealth n m ! , T^e Secretary of State for Commonwealth Relations sits in the Cabinet and all dealings with the Commonwealth countries are channelled through him. The Commonwealth is a community without any institutions. There is no scatutory duty on any member country to consult any other. It is there&#172; fore, upon the vigilance of the C.R.O. in insisting upon full consideration of Commonwealth views that Commonwealth cooperation largely depends. It lemains^to consider the relationship of the executive to the legisla&#172; ture and public opinion. In the past there was little public interest in foreign affairs except wnen things went wrong. Then there was apt to be a display of lgh emotion and dubious judgment. Today, however, interest in world affairs is ar more widespread and foreign news is more liberally reported in the press and on the radio. When public interest is aroused, simple moral issues loom very large, while it is far harder to obtain recognition of the realities of power wi ^which the diplomats have to deal. Over a long period the instinct of the public o.ten proves wise, but on specific issues there is always a danger of a snap judgment, made in a moment of emotion and on inadequate knowledge of facts. It is above all in the House of Commons that these features find ex&#172; pression. Under the British Parliamentary system, members of the government are themselves Members of Parliament. There are normally four ministers in the Foreign Office - the Secretary of State; the Minister of State; and two Under- Secretaries -and these all sit either in the House of Commons or in the House Ox Lords. Twice every week, and sometimes oftener, they have to submit to questioning on the floor of the House on detailed aspects of the work; and when there is a formal debate on Foreign Affairs the Ministers are pre sent&apos;infers on J 5&#176; 7 reply t0 criticism- The fact that they are themselves members of the House, and are thus constantly accessible from day to day to mem- = +P &lt;d&#176;eS a S&#176;0? deal t0 minim:Lse the conflict between executive ana legislature, which is so evident under other systems. The British system ensures that government policy is responsibly and openly stated and ensures ventilation of differences. Nevertheless it is a &apos; strong system from the executive&apos;s point of view, in the sense that the govern&#172; ment can nearly always get its way. There is no foreign relations committee +h&#176;ft!0rr approval is required, nor is there any constitutional requirement ..at treaties snould De ratified by parliament. As a matter of practice, how&#172; ever, io is now well established that the government lays treaties before the House m sufficient time to enable the matter to be debated before ratification, If there is an effective demand for this to he done. If on such a debate, the g vernment were to be defeated, the treaty would certainly not be ratified, t..ougn constitutionally there is nothing to prevent it.</essay:p>
+          <shared:media>
+            <media:image data-type="jpeg" width="3186" height="4524" image-type="page view" layout="single" color-mode="color" folio="2" sequence="0003">
+              <vault-link:vault-link>
+                <vault-link:link-type>external</vault-link:link-type>
+                <vault-link:action>point</vault-link:action>
+                <vault-link:where>
+                  <vault-link:path>cho_rpax_1953_0000_000_0003</vault-link:path>
+                </vault-link:where>
+              </vault-link:vault-link>
+            </media:image>
+          </shared:media>
+          <vault-link:vault-link>
+            <vault-link:link-type>external</vault-link:link-type>
+            <vault-link:link-category term-id="21902636" term-source="Atlas">DVI page</vault-link:link-category>
+            <vault-link:action>point</vault-link:action>
+            <vault-link:where>
+              <vault-link:path>//gift-doc:document-metadata/meta:document-ids/meta:id[@type="Gale asset"]/meta:value[.="bbbbb3"]</vault-link:path>
+            </vault-link:where>
+            <vault-link:select>
+              <vault-link:document-nodes>
+                <vault-link:target>ancestor::gift-doc:document</vault-link:target>
+              </vault-link:document-nodes>
+            </vault-link:select>
+          </vault-link:vault-link>
+        </essay:div>
+        <essay:div document-segment-type="Page" term-id="21922233" term-source="Atlas">
+          <essay:complex-meta>
+            <meta:page-id-number>0004</meta:page-id-number>
+            <meta:folio>
+              <meta:start-number>3</meta:start-number>
+            </meta:folio>
+          </essay:complex-meta>
+          <essay:p>In practice a vote on a debate of this kind would almost certainly be treated as a vote of confidence, and in the event of defeat the government would resign. Since party loyalty and discipline is strong under the British system, it is only in an extreme case that the government would have to fear the defec&#172; tion of enough of its supporters to endanger the majority. Despite occasional demands for closer parliamentary control of foreign policy, both major parties are on the whole content to leave the government in possession of its present effective powers. It is hard to recall any recent occasion on which a government has had to bow to popular opinion on a particu&#172; lar issue except when objections to the Hoare-Laval pact forced the resignation of the Foreign Secretary, Sir Samuel Hoare. Perhaps as a consequence of this situation, Foreign Office officials have tended to be somewhat ignorant of and indifferent to parliamentary opinion. Not only does this sometimes land their ministers in minor embarrassment, but it often results in a failure to make the best use of parliamentary procedure as a means of securing public support for their policy or of impressing their foreign allies or adversaries with the weight of public opinion which supports a particular course, It is really the duty of the political ministers in the Foreign Office rather than of the career diplomats to see that the possibilities and rights of parliament are not overlooked. Apart from parliament there are numerous other channels through which the Foreign Office maintains contact with the public. The News Department of the Foreign Office is responsible for handling all publicity and maintains particu&#172; larly close relations with the diplomatic correspondents of British press and radio and with the foreign press in London. Press sections in the various em&#172; bassies fulfil the same function overseas. In contrast to American practice, ministerial press conferences are rare, largely because the technique of par&#172; liamentary questions provides an alternative method of achieving the same end. MASS MEDIA OF COMMUNICATION The Press The part played by the Press in shaping foreign policy must, by the nature of things, correspond very closely to the part it plays in the con&#172; duct of home affairs. Its influence is exerted in the same way - editorially and in the news columns, through the choice of the material published or not published and in the manner of presentation. And, in the main, the people who exert the influence and those whom it is desired to influence, are the same as in the case of home affairs - with, however, one important difference: readers of newspapers and periodicals are, broadly speaking, much less interested in what goes on in other countries, and in their own country&apos;s dealings with other countries, than they are in what goes on at home. This means that, again speaking broadly, it is more difficult for the Press to arouse public opinion either for or against a particular line of foreign policy than for or against a particular line of home policy, unless of course there is an obvious connection between home and foreign policy as, for example, in time of war or the threat of war, or the threat of an alien political philosophy. It will be seen that, in these circumstances, the influence of the Press in foreign affairs tends to differ for every country - a fact which is often overlooked both by statesmen and others responsible for policy-making and by the</essay:p>
+          <shared:media>
+            <media:image data-type="jpeg" width="3252" height="4554" image-type="page view" layout="single" color-mode="color" folio="3" sequence="0004">
+              <vault-link:vault-link>
+                <vault-link:link-type>external</vault-link:link-type>
+                <vault-link:action>point</vault-link:action>
+                <vault-link:where>
+                  <vault-link:path>cho_rpax_1953_0000_000_0004</vault-link:path>
+                </vault-link:where>
+              </vault-link:vault-link>
+            </media:image>
+          </shared:media>
+          <vault-link:vault-link>
+            <vault-link:link-type>external</vault-link:link-type>
+            <vault-link:link-category term-id="21902636" term-source="Atlas">DVI page</vault-link:link-category>
+            <vault-link:action>point</vault-link:action>
+            <vault-link:where>
+              <vault-link:path>//gift-doc:document-metadata/meta:document-ids/meta:id[@type="Gale asset"]/meta:value[.="bbbbb4"]</vault-link:path>
+            </vault-link:where>
+            <vault-link:select>
+              <vault-link:document-nodes>
+                <vault-link:target>ancestor::gift-doc:document</vault-link:target>
+              </vault-link:document-nodes>
+            </vault-link:select>
+          </vault-link:vault-link>
+        </essay:div>
+        <essay:div document-segment-type="Page" term-id="21922233" term-source="Atlas">
+          <essay:complex-meta>
+            <meta:page-id-number>0005</meta:page-id-number>
+            <meta:folio>
+              <meta:start-number>4</meta:start-number>
+            </meta:folio>
+          </essay:complex-meta>
+          <essay:p>newspapers themselves. The extent of the difference ranges from the one&#172; sided influence exerted in totalitarian countries, in which the local Press has n?4.in5?&quot;uence at a11 on P&#176;licynaking and is simply recording the master&apos;s voice wion the object of influencing the masses, to the two-sided influence exerted in einocracies where policy comes under the microscope and is moulded according to what the ultimate policy-makers think likely to win, or at least keep, votes after the policy has been ventilated in Parliament, public meetings and the Press. No doubt the enquiry now in progress by the International Press Insti- u e in Zurich will, in due course, throw light on the extent to which the Press helps to secure ample discussion before decisions are taken. So far as Great Britain is concerned, cases in which the Press has been primarily and directly responsible for bringing about a change in policy, either home or foreign, have at any rate in the recent past been very few. Practically the only case the writer can call to mind occurred this summer (1953) when a campaign started by the Evening Standard secured a reconsideration of the Govern&#172; ment s policy in regard to televising the Coronation of Queen Elizabeth the Second. Before the second World War, the British Press also played a consider&#172; able part in bringing about the rejection of the Hoare-Laval Pact. But whether this rejection was due primarily to the Press, or the League of Nations Union or to members of the House of Commons, would be hard to say. It is only certain that the first objections to the Pact came from the Press which provided a forum in which the merits and de-merits of the Pact could be weighed by the general public outside the legislature. In another famous case - when The Times came out in favour of letting the so-called Sudetenlands of Czechoslovakia secede to Germany if they wished - the initiative for the policy appears to have come from the British Government and tne newspaper was simply the instrument used to make the plan public and see how it was received. -p 4.1, ^ also Played a considerable part in securing non-ratification of the Declaration of London for the conduct of war at sea before the first world war. In this case too, its influence consisted mainly in affording an opportunity to express views. J a a newspaper proprietors and editors - in Great Britain as elsewhere - do undoubtedly try to make and unmake policies, both home and foreign, opportuni&#172; ties to secure a major change of policy through the Press come to them very sel&#172; dom. In general, they have to be content with following and supporting or op- posmg policies decided upon in the relevant Ministries and political caucuses. But at the same time, there is not the slightest doubt that the policy-makers, whether statesmen, politicians, or civil servants, pay close attention to, and are influenced by, the news published, as well as the views expressed, in some newspapers and periodicals. It would be invidious, as well as rash, to mention names. But it is safe to say that in regard to foreign affairs the more respon&#172; sible &#176;^gans exercise far greater influence in this respect than the sensational ones. The reason is that foreign affairs generally do not lend themselves to e sor o reatment which demands a fresh sensation every day and which appeals to readers who are apt to forget what they have read almost as soon as they have How important this indirect influence is may be judged from the fact that every Government Department which has a say in the shaping of foreign policy now</essay:p>
+          <shared:media>
+            <media:image data-type="jpeg" width="3162" height="4518" image-type="page view" layout="single" color-mode="color" folio="4" sequence="0005">
+              <vault-link:vault-link>
+                <vault-link:link-type>external</vault-link:link-type>
+                <vault-link:action>point</vault-link:action>
+                <vault-link:where>
+                  <vault-link:path>cho_rpax_1953_0000_000_0005</vault-link:path>
+                </vault-link:where>
+              </vault-link:vault-link>
+            </media:image>
+          </shared:media>
+          <vault-link:vault-link>
+            <vault-link:link-type>external</vault-link:link-type>
+            <vault-link:link-category term-id="21902636" term-source="Atlas">DVI page</vault-link:link-category>
+            <vault-link:action>point</vault-link:action>
+            <vault-link:where>
+              <vault-link:path>//gift-doc:document-metadata/meta:document-ids/meta:id[@type="Gale asset"]/meta:value[.="bbbbb5"]</vault-link:path>
+            </vault-link:where>
+            <vault-link:select>
+              <vault-link:document-nodes>
+                <vault-link:target>ancestor::gift-doc:document</vault-link:target>
+              </vault-link:document-nodes>
+            </vault-link:select>
+          </vault-link:vault-link>
+        </essay:div>
+        <essay:div document-segment-type="Page" term-id="21922233" term-source="Atlas">
+          <essay:complex-meta>
+            <meta:page-id-number>0006</meta:page-id-number>
+            <meta:folio>
+              <meta:start-number>5</meta:start-number>
+            </meta:folio>
+          </essay:complex-meta>
+          <essay:p>&#9632;a -5- has its own press section not merely to keep the British and foreign Press in&#172; formed and to answer questions about day-to-day events but also to explain the official point of view - what it is, why it is held and what its objects are. It should perhaps be added at this point that under British constitu&#172; tional practice, Parliament has the right to be informed about British policy before the Press. This rule, which on the whole is strictly observed both in internal and foreign issues, makes it essential for Ministers of the Crown to exercise more reserve in their intercourse with representatives of the Press than is the case in some other countries, notably the United States. It also means that the first reactions to a major statement of policy by the Government normally come from the legislature, not from the Press. This short survey would not be complete without a reference to recent correspondence in The Times in the course of which Lord Vansittart declared that Press &apos;exploitation of the Public&apos;s thirst for good news makes the business of diplomacy impossible&apos; while Sir William Seeds, a former British Ambassador in Moscow, blamed the failure of the Anglo-French negotiations with the Soviet Union in the summer of 1939 on &apos;the yelps of a section of the British Press that &quot;we must now grasp the outstretched hand of Moscow&quot;1. Whether such views are accurate is of less importance than the fact that they are held by distinguished members of the service which is responsible for carrying out and to a large extent framing British foreign policy. They make it clear that the positive influence of the Press on the conduct of British foreign policy is to some extent counterbalanced by a belief among British civil servants that diplomacy and modern publicity are incompatible. There is reason to think that this belief is less widely held than it used to be. But there is no doubt that it still exists and the fact that some British diplomats regard the Press as a dangerous enemy is not without considerable influence in the shaping or at any rate the handling of foreign policy. Actually in these days when the British Press is handicapped by a short&#172; age of newsprint, most British newspapers do not often devote much space to foreign political news, whether good or bad - two words the meaning of which de&#172; pends entirely on the point of view. Furthermore, British newspapers generally, though by no means always, reflect views rather than originate them. And in so far as news is concerned, many of them rely for their reports of political hap&#172; penings abroad largely, though not of course exclusively, on what comes from the news agencies, particularly, Reuters (British), Associated Press (American) and United Press (American). Here again, use of the adjectives &apos;good&apos; and &apos;bad&apos; in connection with this development depends on the point of view. But the fact that so much of the news about foreign affairs is common to most of the Western countries (Great Britain and the United States in particular) and yet is interpreted differently, both editorially and in the respective departments of State, is something which* cannot be ignored when considering the influence of the Press in framing foreign policy. The tendency to canalize not only the collection of news but also its dissemination into a limited number of channels and newspaper &apos;chains&apos; is one which obviously requires close attention lest it should result in the establish&#172; ment of monopolistic conditions. So far as Great Britain is concerned, however,</essay:p>
+          <shared:media>
+            <media:image data-type="jpeg" width="3253" height="4579" image-type="page view" layout="single" color-mode="color" folio="5" sequence="0006">
+              <vault-link:vault-link>
+                <vault-link:link-type>external</vault-link:link-type>
+                <vault-link:action>point</vault-link:action>
+                <vault-link:where>
+                  <vault-link:path>cho_rpax_1953_0000_000_0006</vault-link:path>
+                </vault-link:where>
+              </vault-link:vault-link>
+            </media:image>
+          </shared:media>
+          <vault-link:vault-link>
+            <vault-link:link-type>external</vault-link:link-type>
+            <vault-link:link-category term-id="21902636" term-source="Atlas">DVI page</vault-link:link-category>
+            <vault-link:action>point</vault-link:action>
+            <vault-link:where>
+              <vault-link:path>//gift-doc:document-metadata/meta:document-ids/meta:id[@type="Gale asset"]/meta:value[.="bbbbb6"]</vault-link:path>
+            </vault-link:where>
+            <vault-link:select>
+              <vault-link:document-nodes>
+                <vault-link:target>ancestor::gift-doc:document</vault-link:target>
+              </vault-link:document-nodes>
+            </vault-link:select>
+          </vault-link:vault-link>
+        </essay:div>
+        <essay:div document-segment-type="Page" term-id="21922233" term-source="Atlas">
+          <essay:complex-meta>
+            <meta:page-id-number>0007</meta:page-id-number>
+            <meta:folio>
+              <meta:start-number>6</meta:start-number>
+            </meta:folio>
+          </essay:complex-meta>
+          <essay:p>6- * the process does not yet seem to have gone sufficiently far to prevent a very wide variety of views from being expressed in print ana from exercising a formative influence on foreign, as well as internal, policy through argument and the free exchange of ideas. Wio and Television In recent years there has been a great in&#172; crease in the discussion of foreign affairs on radio and television pro&#172; grammes in the United Kingdom. Some of these take the form of press conferences given by leading personalities, or of questions on inter&#172; national topics inserted in the popular political discussion programmes in which representatives of the different political parties take part each week. In addition there is a steady stream of more sophisticated talks directed to the &apos;opinion forming1 sections of the community, such as teachers and lecturers. The External Services of the B#B#C., on the other hanu, are c ix&#8212; cerned with helping to implement the foreign policy of the United King&#172; dom Government rather than to shape it*. This section of the B.3.0. may, to a small extent, influence sections of the Foreign Office whea dis&#172; cussing problems in addressing talks to other countries. In the course of daily contact with the various Foreign Office departments, the members of the section not only receive infomation and advice but also state their difficulties and are able to give evidence on the psychological attitude of the country concerned* SPECIAL GROUPS The Churches cannot be excluded from any survey oi thi&#174; character in view 01 the spiritual and humanitarian principles for which it stands# Its main influence lies, however, in the development of a moral outlook in the community at large. The Trade Unions Trade union influence on foreign policy can be exerted through industrial or political action. Influence through industrial action is comparatively rare; but it has happened that tract e unions have withheld labour in order to obstruct a particular policy to which they are opposed. The best known example is the refusal &quot;by the trade unions concerned to load goods for dispatch to Russia at the time of the civil war. Sympathetic action on the part of British trade unions in solidarity with their fellow trade unionists in other countries engaged in a dispute can also be a factor influencing lordgri policy. The main channel for the exercise of trade union influence on forlegn policy is political. Trade unions can and do adopt positions on foreign policy issues no matter what party is in power. The weight of their opinion depends on the importance of the union and the authority of its views on the particular is^ue: for exaiqple, the viei/s of the steel workers and miners on the subject of the European Coal and Steel Community could hardly be ignored. Still more influential are declarations by the Trade Union Congress as a whole. It is nonnal for the TUC to consider each year a number of resolutions on foreign policy submitted by its member unions, and a resolution adopted by the TUC carries weight. The majority of trade unions are affiliated to the Labour Party apri can exert their influence by helping to shape the policy of the Labour Party. Trade unions hold a large preponderance of votes at annual Labour Party conference. They are also represented on the national Executive Committee of the Labour Party,</essay:p>
+          <shared:media>
+            <media:image data-type="jpeg" width="3054" height="4554" image-type="page view" layout="single" color-mode="color" folio="6" sequence="0007">
+              <vault-link:vault-link>
+                <vault-link:link-type>external</vault-link:link-type>
+                <vault-link:action>point</vault-link:action>
+                <vault-link:where>
+                  <vault-link:path>cho_rpax_1953_0000_000_0007</vault-link:path>
+                </vault-link:where>
+              </vault-link:vault-link>
+            </media:image>
+          </shared:media>
+          <vault-link:vault-link>
+            <vault-link:link-type>external</vault-link:link-type>
+            <vault-link:link-category term-id="21902636" term-source="Atlas">DVI page</vault-link:link-category>
+            <vault-link:action>point</vault-link:action>
+            <vault-link:where>
+              <vault-link:path>//gift-doc:document-metadata/meta:document-ids/meta:id[@type="Gale asset"]/meta:value[.="bbbbb7"]</vault-link:path>
+            </vault-link:where>
+            <vault-link:select>
+              <vault-link:document-nodes>
+                <vault-link:target>ancestor::gift-doc:document</vault-link:target>
+              </vault-link:document-nodes>
+            </vault-link:select>
+          </vault-link:vault-link>
+        </essay:div>
+        <essay:div document-segment-type="Page" term-id="21922233" term-source="Atlas">
+          <essay:complex-meta>
+            <meta:page-id-number>0008</meta:page-id-number>
+            <meta:folio>
+              <meta:start-number>7</meta:start-number>
+            </meta:folio>
+          </essay:complex-meta>
+          <essay:p>4 -7- and the TUC is one of the constituent elements of the National Council of Labour. By all these formal connections, and by others less formal, the trade unions and the Labour^Party are closely knit together. Trade union influence, therefore, hao a consideiable share of the iniluence that the Labour Party can bring to bear on foreign policy. Business Groups In the fairly recent past those who were opposed to the British Government&apos;s foreign policy at any given time have often alleged that the Government was subservient to some private interest or other, very often the bankers. Whatever the truth of this it would of course be absurd to suggest that powerful interests would not seek to bring pressure upon the Government on issues of international policy which directly affected themselves. This might apply to the broadest issues of policy but more particularly to such things as revision of tariffs. In a relatively small and closely integrated country such as Britain, however, great divergencies of view between different localities&quot;are far less ap&#172; parent than in a large country such as the United States. In recent yeaj.s at least the interests of the more important industries, of the financiers, and of organized labour have seldom diverged much from the national interest as conceived by the Government and its advisers. An example of this would be the attitude of the great British business firms concerned with trade in China, who were always substantially in agreement with the attitude adopted by the British Government towards events in China from 19^9. To take another example, the British oil interests which were vitally affected by the dis&#172; pute with Iran in 1951 were partly owned by the British Government and could only partially distinguish between the interests of the shareholders and the national interest as a whole. Societies with particular interests A number of organizations exist to maintain and stimulate interest and understanding of particular countries or subjects of international concern. Their work lies mainly, however, in the cul&#172; tural field. The United Nations Association is in a special category and, in its sup&#172; port of the present international system of organization, the United Nations and its specialized agencies, continues the work of the former League of Nations Union. The membership of UNA throughout the country is much more limited than that of its predecessor, but it plays a useful part in keeping its members in&#172; formed on United Nations problems and in formulating and advancing policies for their solution. Many of its active members have contacts in Government circles and may exert a direct personal influence. The British Legion of ex-servicemen is a non-political organization and is concerned with problems of pensions and other matters of individual welfare rather than with foreign affairs. ACADEMIC INSTITUTIONS The serious teaching of international affairs in universities and in sixth forms in schools is evidence of the new status which these studies have in the national life. By its very nature such teaching can have only long-term in&#172; fluence upon policy but the hope remains that the study of International Relations</essay:p>
+          <shared:media>
+            <media:image data-type="jpeg" width="3126" height="4530" image-type="page view" layout="single" color-mode="color" folio="7" sequence="0008">
+              <vault-link:vault-link>
+                <vault-link:link-type>external</vault-link:link-type>
+                <vault-link:action>point</vault-link:action>
+                <vault-link:where>
+                  <vault-link:path>cho_rpax_1953_0000_000_0008</vault-link:path>
+                </vault-link:where>
+              </vault-link:vault-link>
+            </media:image>
+          </shared:media>
+          <vault-link:vault-link>
+            <vault-link:link-type>external</vault-link:link-type>
+            <vault-link:link-category term-id="21902636" term-source="Atlas">DVI page</vault-link:link-category>
+            <vault-link:action>point</vault-link:action>
+            <vault-link:where>
+              <vault-link:path>//gift-doc:document-metadata/meta:document-ids/meta:id[@type="Gale asset"]/meta:value[.="bbbbb8"]</vault-link:path>
+            </vault-link:where>
+            <vault-link:select>
+              <vault-link:document-nodes>
+                <vault-link:target>ancestor::gift-doc:document</vault-link:target>
+              </vault-link:document-nodes>
+            </vault-link:select>
+          </vault-link:vault-link>
+        </essay:div>
+        <essay:div document-segment-type="Page" term-id="21922233" term-source="Atlas">
+          <essay:complex-meta>
+            <meta:page-id-number>0009</meta:page-id-number>
+            <meta:folio>
+              <meta:start-number>8</meta:start-number>
+            </meta:folio>
+          </essay:complex-meta>
+          <essay:p>may contribute towards a reduction of the state of tension familiar to contem&#172; porary society. Mr. Geoffrey Goodwin aptly expresses the objectives of teachers of the subject in the United Kingdom as follows: &apos;... the immediate concern of most teachers of International Relations in the United Kingdom today is to lay bare the real nature of that society without necessarily seeking to change it. In this way they seek to guide their students towards that maturity of outlook and of judgment which stems from the training and disciplining of the student&apos;s mind and from the development of his capacity for appreciating the reality and inwardness of any situation. So equipped, the student can face with more confidence the stresses of extra-University life, whether it involves a concern with international prob&#172; lems or not.&apos; 1 International Relations is taught as a separate discipline in five uni&#172; versities in the United Kingdom, but international aspects are given attention in the syllabuses of many other universities, e.g. in courses on History, Govern&#172; ment Economics, Geography, Law. International Relations also figures prominently in University Extension Courses and Tutorial Classes for external students, though Mr. Goodwin points out in his report that a number of Extra-Mural Departments have reported a slight trend of interest away from International Affairs in favour of such subjects as History, Literature and Music. THE RESEARCH INSTITUTION The Royal Institute of International Affairs, and the two other-organi&#172; zations in the field in the United Kingdom, the London Institute of World Affairs and the British Society for International Understanding, as non-political organi&#172; zations play no part in the shaping of foreign policy. All aim at the creation of a better-informed public opinion on the issues that determine foreign policy. The London Institute, through its programme of teaching in the University of London ana its publication of research, and the British Society, through the provision of factual surveys for schools and for educational work in the fighting services direct their work mainly, though not exclusively, to particular groups in the&apos; community. The Royal Institute of International Affairs has from the first been de&#172; signed to assist the framers of policy or those who help to form public opinion y Placing at their disposal facts and relevant points of view on current topics. Goodwin, Geoffrey L. (Ed.): The University Teaching of International Relations (1951, Oxford, Blackwell for The International Studies Conference) pp.110-11.</essay:p>
+          <shared:media>
+            <media:image data-type="jpeg" width="3144" height="4524" image-type="page view" layout="single" color-mode="color" folio="8" sequence="0009">
+              <vault-link:vault-link>
+                <vault-link:link-type>external</vault-link:link-type>
+                <vault-link:action>point</vault-link:action>
+                <vault-link:where>
+                  <vault-link:path>cho_rpax_1953_0000_000_0009</vault-link:path>
+                </vault-link:where>
+              </vault-link:vault-link>
+            </media:image>
+          </shared:media>
+          <vault-link:vault-link>
+            <vault-link:link-type>external</vault-link:link-type>
+            <vault-link:link-category term-id="21902636" term-source="Atlas">DVI page</vault-link:link-category>
+            <vault-link:action>point</vault-link:action>
+            <vault-link:where>
+              <vault-link:path>//gift-doc:document-metadata/meta:document-ids/meta:id[@type="Gale asset"]/meta:value[.="bbbbb9"]</vault-link:path>
+            </vault-link:where>
+            <vault-link:select>
+              <vault-link:document-nodes>
+                <vault-link:target>ancestor::gift-doc:document</vault-link:target>
+              </vault-link:document-nodes>
+            </vault-link:select>
+          </vault-link:vault-link>
+        </essay:div>
+        <essay:div document-segment-type="Page" term-id="21922233" term-source="Atlas">
+          <essay:complex-meta>
+            <meta:page-id-number>0010</meta:page-id-number>
+            <meta:folio>
+              <meta:start-number>9</meta:start-number>
+            </meta:folio>
+          </essay:complex-meta>
+          <essay:p>This work has a short term as well as a long terra significance. Information is supplied, by request, to intending speakers on both sides of a parliamentary de&#172; bate, to leader writers of the daily or weekly press, for broadcast talks, lec&#172; tures, government or service departments, business houses and trade union bodies. Meetings, discussions and study groups explore differing opinions on international problems all over the world. The research programme provides for the short fac&#172; tual study of a current topic as well as for the fundamental investigation over a period of years. 31 August 1953 Chatham House, 10 St. James&apos;s Square, London, S.W.I.</essay:p>
+          <shared:media>
+            <media:image data-type="jpeg" width="3156" height="4518" image-type="page view" layout="single" color-mode="color" folio="9" sequence="0010">
+              <vault-link:vault-link>
+                <vault-link:link-type>external</vault-link:link-type>
+                <vault-link:action>point</vault-link:action>
+                <vault-link:where>
+                  <vault-link:path>cho_rpax_1953_0000_000_0010</vault-link:path>
+                </vault-link:where>
+              </vault-link:vault-link>
+            </media:image>
+          </shared:media>
+          <vault-link:vault-link>
+            <vault-link:link-type>external</vault-link:link-type>
+            <vault-link:link-category term-id="21902636" term-source="Atlas">DVI page</vault-link:link-category>
+            <vault-link:action>point</vault-link:action>
+            <vault-link:where>
+              <vault-link:path>//gift-doc:document-metadata/meta:document-ids/meta:id[@type="Gale asset"]/meta:value[.="bbbbb9"]</vault-link:path>
+            </vault-link:where>
+            <vault-link:select>
+              <vault-link:document-nodes>
+                <vault-link:target>ancestor::gift-doc:document</vault-link:target>
+              </vault-link:document-nodes>
+            </vault-link:select>
+          </vault-link:vault-link>
+        </essay:div>
+      </essay:div>
+    </gift-doc:body>
+  </gift-doc:document>
+</gold:document-instance>

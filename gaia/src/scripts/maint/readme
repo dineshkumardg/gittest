@@ -1,0 +1,13 @@
+drop db 
+
+recreate db
+
+restore: psql -U gaia -d cho -f /GAIA/cho/postgres_dump/cho_backup_2.sql
+
+git pull
+
+update any static
+
+http://wiki.cengage.com/display/EDT/Deployment+Plan#DeploymentPlan-ApplicationServer%28cherrypy%29-checkdbgood#
+
+

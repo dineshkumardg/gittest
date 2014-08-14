@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Created with Liquid XML Studio Designer Edition 9.1.11.3570 (http://www.liquid-technologies.com) -->
+<chapter contentType="book" xsi:noNamespaceSchemaLocation="../../../gaia/config/dtds/chatham_house.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <metadataInfo>
+        <PSMID>cho_bcrc_1933_0001_000_0000</PSMID>
+        <mcode>XXXX</mcode>
+        <language ocr="English" primary="Yes">English</language>
+        <productContentType>Conference Series</productContentType>
+        <contentDate>
+            <contentComposed>1933</contentComposed>
+            <contentDecade>1930-1939</contentDecade>
+            <contentYear>1933</contentYear>
+            <contentDateStart>1933-01-01</contentDateStart>
+            <contentDateEnd>1933-12-31</contentDateEnd>
+		</contentDate>
+        <chathamHouseRule>No</chathamHouseRule>
+        <ocr>75.30</ocr>
+        <sourceLibrary>
+            <libraryName>Chatham House</libraryName>
+            <libraryLocation>London, UK</libraryLocation>
+            <copyrightStatement>Copyright Statement</copyrightStatement>
+        </sourceLibrary>
+    </metadataInfo>
+    <citation>
+        <conference>
+            <conferenceGroup>
+                <conferenceName>British Commonwealth Relations. 1st Conference, Toronto, 1933. Vol. 1. Verbatim reports</conferenceName>
+                <conferenceLocation>Toronto, Canada</conferenceLocation>
+                <conferenceDate>
+                    <conferenceComposed>September 1933</conferenceComposed>
+                    <conferenceYear>1933</conferenceYear>
+                    <conferenceMonth>September</conferenceMonth>
+                    <conferenceDay>11</conferenceDay>
+                </conferenceDate>
+            </conferenceGroup>
+            <pubDate>
+                <composed>1933</composed>
+                <year>1933</year>
+                <pubDateStart>1933-01-01</pubDateStart>
+                <pubDateEnd>1933-12-31</pubDateEnd>
+            </pubDate>
+            <titleGroup>
+                <fullTitle>British Commonwealth Realtions Conference, Toronto</fullTitle>
+            </titleGroup>
+            <volumeGroup>
+                <volumeNumber>1</volumeNumber>
+            </volumeGroup>
+            <totalPages>3</totalPages>
+        </conference>
+    </citation>
+    <page id="1" type="front_matter" firstPage="Yes">
+        <pageImage pageIndicator="single" width="52" height="52" type="jpeg" colorimage="color" pagePosition="left">cho_bcrc_1933_0001_000_0000_0001.jpg</pageImage>
+        <sourcePage>1</sourcePage>
+        <article id="1" type="front_matter" level="1">
+            <clip pgref="1" />
+            <clip pgref="2" />
+            <articleInfo>
+                <title>Front Matter</title>
+                <language ocr="english" primary="Yes">English</language>
+                <ocr>99.99</ocr>
+                <pageCount>2</pageCount>
+                <pageRange>1-2</pageRange>
+            </articleInfo>
+            <text>
+                <textclip>
+                    <articlePage pgref="1" />
+                    <p>
+                        <word pos="45, 60, 47, 50">Front</word>
+                        <word pos="47, 60, 49, 50">matter</word>
+                    </p>
+                </textclip>
+                <textclip>
+                    <articlePage pgref="2" />
+                    <p>
+                        <word pos="45, 60, 47, 50">WORD</word>
+                    </p>
+                </textclip>
+            </text>
+        </article>
+    </page>
+    <page id="2" type="front_matter" firstPage="No">
+        <pageImage pageIndicator="single" width="52" height="52" type="jpeg" colorimage="color" pagePosition="left">cho_bcrc_1933_0001_000_0000_0002.jpg</pageImage>
+        <sourcePage>2</sourcePage>
+    </page>
+    <page id="3" type="body_page" firstPage="No">
+        <pageImage pageIndicator="single" width="52" height="52" type="jpeg" colorimage="color" pagePosition="right">cho_bcrc_1933_0001_000_0000_0003.jpg</pageImage>
+        <sourcePage>2B</sourcePage>
+        <article id="2" type="article" level="1">
+            <clip pgref="3"/>
+            <articleInfo>
+                <author role="author">
+                    <aucomposed>Sir Robert Borden, G.C.M.G.,K.C</aucomposed>
+                    <prefix>Sir</prefix>
+                    <first>Robert</first>
+                    <last>Borden</last>
+                    <suffix>G.C.M.G., K.C</suffix>
+                </author>
+                <title>Opening Session</title>
+                <language ocr="english" primary="Yes">English</language>
+                <ocr>9.99</ocr>
+                <pageCount>2</pageCount>
+                <pageRange>2B</pageRange>
+			</articleInfo>
+            <text>
+                <textclip>
+                    <articlePage pgref="1"/>
+                    <p>
+                        <word pos="45, 60, 47, 50">Front</word>
+                        <word pos="47, 60, 49, 50">matter</word>
+                    </p>
+                    <marginalia>Handwritten Note1</marginalia>
+                    <marginalia>Handwritten Note2</marginalia>
+                    <marginalia>Handwritten Note3</marginalia>
+                    <marginalia>Handwritten Note4</marginalia>
+				</textclip>
+			</text>
+		</article>
+	</page>
+</chapter>

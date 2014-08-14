@@ -1,0 +1,91 @@
+<!-- Entity list allowed on Thomson Learning platforms.
+     The following character entities have been approved for use in TLEMEA data. 
+     Entities not on the list must be replaced with a link to an image or an alternate display character. 
+     For example, replace "&amp;ndash;" with "-".
+-->
+
+<!-- Created by TLEMEA IMAGING LAB for GENERIC XML applications -->
+<!-- 20/04/2005 -->
+
+
+<!ENTITY nbsp	"&#160;"> <!-- non-breaking space -->
+<!ENTITY iexcl	"&#161;"> <!-- inverted exclamation mark -->
+<!ENTITY cent	"&#162;"> <!-- cent sign -->
+<!ENTITY pound	"&#163;"> <!-- pound sign -->
+<!ENTITY yen	"&#165;"> <!-- yen sign -->
+<!ENTITY sect	"&#167;"> <!-- section sign -->
+<!ENTITY uml	"&#168;"> <!-- spacong diaeresis -->
+<!ENTITY copy	"&#169;"> <!-- copyright sign -->
+<!ENTITY ordf	"&#170;"> <!-- feminine ordinal indicator -->
+<!ENTITY laquo	"&#171;"> <!-- left-pointing double angle quotation mark -->
+<!ENTITY not	"&#172;"> <!-- not sign -->
+<!ENTITY reg	"&#174;"> <!-- registered trade mark sign -->
+<!ENTITY macr	"&#175;"> <!-- spacing macron -->
+<!ENTITY deg	"&#176;"> <!-- degree sign -->
+<!ENTITY plusmn	"&#177;"> <!-- plus-minus sign -->
+<!ENTITY acute	"&#180;"> <!-- spacing acute -->
+<!ENTITY micro	"&#181;"> <!-- micro sign -->
+<!ENTITY para	"&#182;"> <!-- paragraph sign -->
+<!ENTITY middot	"&#183;"> <!-- middle dot -->
+<!ENTITY cedil	"&#184;"> <!-- spacing cedilla -->
+<!ENTITY ordm	"&#186;"> <!-- masculine ordinal indicator -->
+<!ENTITY raquo	"&#187;"> <!-- right-pointing double angle quotation mark -->
+<!ENTITY iquest	"&#191;"> <!-- inverted question mark -->
+<!ENTITY Agrave	"&#192;"> <!-- Latin capital letter A with grave -->
+<!ENTITY Aacute	"&#193;"> <!-- Latin capital letter A with acute -->
+<!ENTITY Acirc	"&#194;"> <!-- Latin capital letter A with circumflex -->
+<!ENTITY Atilde	"&#195;"> <!-- Latin capital letter A with tilde -->
+<!ENTITY Auml	"&#196;"> <!-- Latin capital letter A with diaeresis -->
+<!ENTITY Aring	"&#197;"> <!-- Latin capital letter A ring -->
+<!ENTITY AElig	"&#198;"> <!-- Latin capital ligature AE -->
+<!ENTITY Ccedil	"&#199;"> <!-- Latin capital letter C with cedilla -->
+<!ENTITY Egrave	"&#200;"> <!-- Latin capital letter E with grave -->
+<!ENTITY Eacute	"&#201;"> <!-- Latin capital letter E with acute -->
+<!ENTITY Ecirc	"&#202;"> <!-- Latin capital letter E with circumflex -->
+<!ENTITY Euml	"&#203;"> <!-- Latin capital letter E with diaeresis -->
+<!ENTITY Igrave	"&#204;"> <!-- Latin capital letter I with grave -->
+<!ENTITY Iacute	"&#205;"> <!-- Latin capital letter I with acute -->
+<!ENTITY Icirc	"&#206;"> <!-- Latin capital letter I with circumflex -->
+<!ENTITY Iuml	"&#207;"> <!-- Latin capital letter I with diaeresis -->
+<!ENTITY Ntilde	"&#209;"> <!-- Latin capital letter N with tilde -->
+<!ENTITY Ograve	"&#210;"> <!-- Latin capital letter O with grave -->
+<!ENTITY Oacute	"&#211;"> <!-- Latin capital letter O with acute -->
+<!ENTITY Ocirc	"&#212;"> <!-- Latin capital letter O with circumflex -->
+<!ENTITY Otilde	"&#213;"> <!-- Latin capital letter O with tilde -->
+<!ENTITY Ouml	"&#214;"> <!-- Latin capital letter O with diaeresis -->
+<!ENTITY Oslash	"&#216;"> <!-- Latin capital letter O with stroke -->
+<!ENTITY Ugrave	"&#217;"> <!-- Latin capital letter U with grave -->
+<!ENTITY Uacute	"&#218;"> <!-- Latin capital letter U with acute -->
+<!ENTITY Ucirc	"&#219;"> <!-- Latin capital letter U with circumflex -->
+<!ENTITY Uuml	"&#220;"> <!-- Latin capital letter U with diaeresis -->
+<!ENTITY szlig	"&#223;"> <!-- Latin small letter sharp s (ess-zed) -->
+<!ENTITY agrave	"&#224;"> <!-- Latin small letter a grave -->
+<!ENTITY aacute	"&#225;"> <!-- Latin small letter a with acute -->
+<!ENTITY acirc	"&#226;"> <!-- Latin small letter a with circumflex -->
+<!ENTITY atilde	"&#227;"> <!-- Latin small letter a with tilde -->
+<!ENTITY auml	"&#228;"> <!-- Latin small letter a with diaeresis -->
+<!ENTITY aring	"&#229;"> <!-- Latin small letter a ring -->
+<!ENTITY aelig	"&#230;"> <!-- Latin small ligature ae -->
+<!ENTITY ccedil	"&#231;"> <!-- Latin small letter c with cedilla -->
+<!ENTITY egrave	"&#232;"> <!-- Latin small letter e with grave -->
+<!ENTITY eacute	"&#233;"> <!-- Latin small letter e with acute -->
+<!ENTITY ecirc	"&#234;"> <!-- Latin small letter e with circumflex -->
+<!ENTITY euml	"&#235;"> <!-- Latin small letter e with diaeresis -->
+<!ENTITY igrave	"&#236;"> <!-- Latin small letter i with grave -->
+<!ENTITY iacute	"&#237;"> <!-- Latin small letter i with acute -->
+<!ENTITY icirc	"&#238;"> <!-- Latin small letter i with circumflex -->
+<!ENTITY iuml	"&#239;"> <!-- Latin small letter i with diaeresis -->
+<!ENTITY ntilde	"&#241;"> <!-- Latin small letter n with tilde -->
+<!ENTITY ograve	"&#242;"> <!-- Latin small letter o with grave -->
+<!ENTITY oacute	"&#243;"> <!-- Latin small letter o with acute -->
+<!ENTITY ocirc	"&#244;"> <!-- Latin small letter o with circumflex -->
+<!ENTITY otilde	"&#245;"> <!-- Latin small letter o with tilde -->
+<!ENTITY ouml	"&#246;"> <!-- Latin small letter o with diaeresis -->
+<!ENTITY divide	"&#247;"> <!-- division sign -->
+<!ENTITY oslash	"&#248;"> <!-- Latin small letter o with stroke -->
+<!ENTITY ugrave	"&#249;"> <!-- Latin small letter u with grave -->
+<!ENTITY uacute	"&#250;"> <!-- Latin small letter u with acute -->
+<!ENTITY ucirc	"&#251;"> <!-- Latin small letter u with circumflex -->
+<!ENTITY uuml	"&#252;"> <!-- Latin small letter u with diaeresis -->
+<!ENTITY yuml	"&#255;"> <!-- Latin small letter y with diaeresis -->
+<!ENTITY quot	"&#34;">  <!-- quotation mark = APL quote -->

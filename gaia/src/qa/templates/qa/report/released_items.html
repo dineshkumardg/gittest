@@ -1,0 +1,55 @@
+{% extends "qa/filter_paginator.html" %}
+
+{% block title %}released items{% endblock %}
+
+{% block content %}
+<h1>released items</h1>
+{% if context or request.GET.search_by %}
+{% block content_table %}
+<div id="result_table" style="width:30em">
+{% if items %}
+<p>export results as <a href="csv_released_items">csv</a> (use: Firefox and not IE; 'Save Link As...')</p>
+
+<table><thead>
+    <tr>
+     {% for value, key in sort_fields_list.items  %}
+    <th id={{ key }} onclick="sort_header('{{ key }}', '{{ request.GET.filter_by }}' ,'{{ request.GET.search_by }}','{{ page_obj.number }}')">
+       <div>{{ value }}</div>
+       <div class="clear"></div></th>
+    {% endfor %}
+    </tr></thead>
+    <tbody>
+    {% for item in context %}
+        <tr class="{% cycle 'row1' 'row2' %}">
+        <td>{{item.id}}</td>
+        <td><a href="{% url item item.id %}">{{item.dom_name}}</a></td></tr>
+    {% endfor %}
+    </tbody>
+</table>
+{% else %}
+    {% if request.GET.search_by %}
+        <p><br/>no items under this condition:  <b>search by: "{{ request.GET.search_by }}"</b></p>
+    {% else %}
+        <p>no items </p>
+    {% endif %}
+{% endif %}
+</div>
+{% endblock %}
+
+{% block content_paginate %}
+    {{ block.super }}
+{% endblock %}
+
+{% else %}
+    <p>no items have yet been released</p>
+{% endif %}
+
+{% block sort_script %}
+    {{ block.super }}
+{% endblock %}
+{% endblock %}
+
+{% block search_bar %}
+    {{ block.super }}
+{% endblock %}
+

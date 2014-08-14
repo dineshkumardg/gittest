@@ -1,0 +1,11 @@
+Cartoon|Cartoon
+Cartoons|Cartoon
+Chart|Chart
+Drawing-Painting|Drawing, painting
+Illustration|Illustration
+Map|Map
+Photograph|Photograph
+Table|Table
+Engraving|Engraving
+Graph|Graph
+Fine-Art-Reproduction|Drawing, painting

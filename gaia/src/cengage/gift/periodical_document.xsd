@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2005 rel. 3 U (http://www.altova.com) by Gale User (Gale Group) -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:shared="http://www.gale.com/goldschema/shared" xmlns:gift-doc="http://www.gale.com/goldschema/gift-doc" xmlns:vault-link="http://www.gale.com/goldschema/vault-linking" xmlns:meta="http://www.gale.com/goldschema/metadata" xmlns:essay="http://www.gale.com/goldschema/essay" xmlns:media="http://www.gale.com/goldschema/media" targetNamespace="http://www.gale.com/goldschema/gift-doc" elementFormDefault="qualified" attributeFormDefault="unqualified" version="3.0">
+	<xs:import namespace="http://www.gale.com/goldschema/essay" schemaLocation="essay.xsd"/>
+	<xs:import namespace="http://www.gale.com/goldschema/metadata" schemaLocation="metadata.xsd"/>
+	<xs:import namespace="http://www.gale.com/goldschema/vault-linking" schemaLocation="vault_linking.xsd"/>
+	<xs:import namespace="http://www.gale.com/goldschema/media" schemaLocation="media.xsd"/>
+	<xs:import namespace="http://www.gale.com/goldschema/shared" schemaLocation="shared.xsd"/>
+	<xs:annotation id="periodical-document-schema-purpose">
+		<xs:documentation>This schema defines a generic document element that represents a Gale periodical content record and its metadata. All the document schemas share the same target namespace (i.e., are homogenous); defining separate but homogenous document schemas allows customization of the generic document/document-metadata/document-text structure for each content type using the same set of namespaces (document, document metadata, common metadata, and essay modules)</xs:documentation>
+	</xs:annotation>
+	<!--
+	======================================================================
+                           CHANGE HISTORY
+	======================================================================
+	3.0		12/04/2013		js
+	1. Removed the schema owner part.
+	2. Updated the folder path of <xs:import>.
+	3. Externalized element definition of gift-doc:node-metadata and gift-doc:document-metadata; group them with appropriate content 
+		type definition.
+	4. Reorganized the elements and element groups.
+	5. Replaced complexType definition of the "document-titles" element with type="meta:document-titles-type".
+	6. Externalized the element 'metadata'.
+	======================================================================
+-->
+	<!-- 
+	============================================================================   
+                    ELEMENT DECLARATIONS
+	============================================================================   
+	-->
+	<!--                    BODY                                   -->
+	<xs:element name="body">
+		<xs:annotation>
+			<xs:documentation>Wrapper element for the document content; derives definitions from essay and  XHTML modules.</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:group ref="essay:structural-group" minOccurs="0" maxOccurs="unbounded"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<!--                    PAGINATION-GROUP                                   -->
+	<xs:element name="pagination-group">
+		<xs:annotation>
+			<xs:documentation>Wrapper for pagination information.</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="gift-doc:pagination" maxOccurs="unbounded"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<!--                    PAGINATION                                   -->
+	<xs:element name="pagination" type="meta:base-pagination-type">
+		<xs:annotation>
+			<xs:documentation>There are three generic types of pagination: consecutive, nonconsecutive for publications in which advertising 
+				and illustrations interrupt pagination continuity, or system-generated "fake" page numbers that may be used for document ordering.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--                    DOCUMENT                                   -->
+	<xs:element name="document" type="gift-doc:document-type">
+		<xs:annotation>
+			<xs:documentation>Constitutes a Gale content record and its metadata</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:complexType name="document-type">
+		<xs:sequence>
+			<xs:element ref="gift-doc:metadata"/>
+			<xs:element ref="gift-doc:body" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<!--                    METADATA                                   -->
+	<xs:element name="metadata">
+		<xs:annotation>
+			<xs:documentation>Wrapper element for node metadata and document metadata for periodical </xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:group ref="gift-doc:node-document-metadata-group"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<!--                    NODE-METADATA                                   -->
+	<xs:element name="node-metadata" type="gift-doc:node-metadata-type">
+		<xs:annotation>
+			<xs:documentation>Wrapper for node metadata; contains metadata about a periodical record in the context of its parent publication</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:complexType name="node-metadata-type">
+		<xs:all>
+			<xs:element ref="meta:volume-number" minOccurs="0"/>
+			<xs:element ref="meta:issue-number" minOccurs="0"/>
+			<xs:element ref="meta:newspaper-section" minOccurs="0"/>
+			<xs:element ref="gift-doc:pagination-group" minOccurs="0"/>
+			<xs:element ref="meta:document-ids"/>
+			<xs:element ref="meta:descriptive-indexing" minOccurs="0"/>
+		</xs:all>
+	</xs:complexType>
+	<!--                    DOCUMENT-METADATA                                   -->
+	<xs:element name="document-metadata" type="gift-doc:document-metadata-type">
+		<xs:annotation>
+			<xs:documentation>Wrapper for document-level metadata; contains descriptive metadata about a periodical record regardless of where the record is used.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:complexType name="document-metadata-type">
+		<xs:annotation>
+			<xs:documentation>The complex type "document-metadata-type" uses the "all" compositor to allow all its child elements to appear in any order</xs:documentation>
+		</xs:annotation>
+		<xs:all>
+			<xs:element ref="meta:document-ids"/>
+			<xs:element ref="meta:mcode"/>
+			<xs:element ref="gift-doc:document-titles"/>
+			<xs:element ref="meta:publication-date"/>
+			<xs:element ref="meta:authors" minOccurs="0"/>
+			<xs:element ref="meta:editors" minOccurs="0"/>
+			<xs:element ref="meta:illustrators" minOccurs="0"/>
+			<xs:element ref="meta:translators" minOccurs="0"/>
+			<xs:element ref="meta:article-ztags" minOccurs="0"/>
+			<xs:element ref="meta:descriptive-indexing" minOccurs="0"/>
+			<xs:element ref="meta:cartridge-frame-numbers" minOccurs="0"/>
+			<xs:element ref="meta:lexile-score" minOccurs="0"/>
+			<xs:element ref="meta:digital-object-identifier" minOccurs="0"/>
+			<xs:element ref="meta:record-admin-info" minOccurs="0"/>
+			<xs:element ref="shared:media" minOccurs="0"/>
+		</xs:all>
+	</xs:complexType>
+	<!--                    DOCUMENT-TITLES                                   -->
+	<xs:element name="document-titles" type="meta:document-titles-type">
+		<xs:annotation>
+			<xs:documentation>Wrapper for titles of the document e.g. main title and subtitle, sort version of the title etc.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!-- 
+	============================================================================   
+                    ELEMENT GROUPS
+	============================================================================   
+	-->
+	<xs:group name="node-document-metadata-group">
+		<xs:sequence>
+			<xs:element ref="gift-doc:node-metadata"/>
+			<xs:element ref="gift-doc:document-metadata"/>
+		</xs:sequence>
+	</xs:group>	
+</xs:schema>

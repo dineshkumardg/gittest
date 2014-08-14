@@ -1,0 +1,59 @@
+{% extends "qa/base.html" %}
+{% block title %}reports{% endblock %}
+
+{% block content %}
+<h1>reports</h1>
+{% if num_total_items == 0 and num_ingest_errors == 0 %}
+<p>No data available</p>
+{% else %}
+<p>
+</p>
+
+<table class="narrow report_table" style="border-color:lawngreen; background:lightblue">
+<tr>
+    <th class="desc">{{num_total_items}} items processed</th>
+</tr>
+</table>
+
+<table class="wide report_table" style="border-color:lawngreen;">
+<tr>
+    <th class="desc">in qa</th>
+    <th class="desc">outgoing</th>
+    <th class="desc">exporting</th>
+    <th class="desc">released</th>
+</tr>
+<tr>
+    <td><a href="{% url reports_qa %}">{{ num_in_qa }}</a></td>
+    <td>{{ num_ready_for_release }}</td>
+    <td>{{ num_exporting }}</td>
+    <td><a href="{% url reports_released_items %}">{{ num_released }}</a></td>
+</tr>
+</table>
+
+<table class="narrow report_table" style="border-color:red; background:lightcoral">
+<tr>
+    <th class="desc">rejected items</th>
+    <td style="text-align: right"><a href="{% url reports_rejections %}">{{ num_rejected }}</a></td>
+</tr>
+<tr>
+    <th class="desc">item errors</th>
+    <td style="text-align: right"><a href="{% url reports_item_errors %}">{{ num_item_errors }}</a></td>
+</tr>
+<tr>
+    <th class="desc">ingest errors</th>
+    <td style="text-align: right"><a href="{% url reports_ingest_errors %}">{{ num_ingest_errors }} </a></td>
+</tr>
+
+</table>
+
+
+<br />
+<h2>tracking</h2>
+<ul>
+    <li><a href="{% url reports_feed_file %}">feed file reports</a></td>
+</tr>
+</ul>
+
+{% endif %}
+
+{% endblock %}

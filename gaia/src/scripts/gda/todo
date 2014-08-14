@@ -1,0 +1,24 @@
+[11:39:07] Rachel  Turney: module 1 runs up to and including 1979 and module 2 is therefore 1980 and onwards
+= ls | egrep '^cho_[a-z]{4}_(198|199|20).*$' | sort | wc -l
+= ls | egrep '^cho_[a-z]{4}_(198|199|20).*$' | xargs rm -rf
+= ls | egrep '^cho_[a-z]{4}_(198|199|20).*$'| xargs -I{} mv {} m2
+
+===========
+
+use sqlalchemy
+
+pydev code analysys + pycharm analysis
+
+check coverage
+
+===========
+
+-- items that ingested more than once
+SELECT dom_name, count_dom_name
+FROM (
+SELECT dom_name, COUNT(dom_name) AS count_dom_name
+FROM public.item
+GROUP BY dom_name
+ORDER BY COUNT(dom_name) DESC
+) AS ingest_count
+WHERE count_dom_name > 1

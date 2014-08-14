@@ -1,0 +1,61 @@
+NOTE: there is only 1 mcode value for meetings and reports! - its hard coded into the .py
+
+ensure .xlsx all in same font
+
+delete all but 3 columns
+
+delete first / header row in .xlsx
+
+export as is - no semi-colon as delim
+
+don't worry about whitespace between delim
+
+run mcode_import.py
+
+check no duplicate psmid's:
+    SELECT m_codes.psmid, count(*)
+    FROM 
+      public.m_codes
+    GROUP BY m_codes.psmid
+    ORDER BY COUNT(*) DESC;
+
+--
+
+update /home/jsears/GIT_REPOS/gaia/src/qa/models.py
+
+# mcodes
+class MCodes(models.Model):
+    mcode = models.CharField(max_length=4)
+    psmid = models.CharField(max_length=50)
+    publication_title = models.CharField(max_length=250)
+
+    def __unicode__(self):
+        return 'MCodes(id="%s", mcode="%s", psmid="%s", publication_title="%s")' % (self.id, self.mcode, self.psmid, self.publication_title)
+
+    def __str__(self):
+        return safe_formatted_unicode( 'MCodes(id="%s", mcode="%s", psmid="%s", publication_title="%s")', self.id, self.mcode, self.psmid, self.publication_title)
+
+    class Meta:
+        db_table = 'm_codes'
+
+
+jsears@ukandjsears-l2:~/GIT_REPOS/gaia/src/scripts/dev$ source ~/GIT_REPOS/system_test/src/gaia/common/config.sh 
+jsears@ukandjsears-l2:~/GIT_REPOS/gaia/src/scripts/dev$ python ${LOCAL_SRC_DIR}/scripts/dev/manage.py ${CONFIG} syncdb
+
+python manage.py SYSTEM_TEST sqlall qa
+= show sql
+
+NOTE - convert from serial into bigserial?
+http://www.postgresql.org/docs/9.1/static/datatype-numeric.html
+
+CREATE TABLE "m_codes" (
+    "id" bigserial NOT NULL PRIMARY KEY,
+    "mcode" varchar(4) NOT NULL,
+    "psmid" varchar(50) NOT NULL,
+    "publication_title" varchar(250) NOT NULL
+)
+;
+
+put new bit of sql into create_models.sql + a patch file 
+
+run test_working.sh with sanity bit #'d

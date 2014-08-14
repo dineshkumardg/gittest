@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2005 rel. 3 U (http://www.altova.com) by Gale User (Gale Group) -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:dict="http://www.gale.com/goldschema/dictionary" xmlns:essay="http://www.gale.com/goldschema/essay" xmlns:list="http://www.gale.com/goldschema/list" xmlns:pres="http://www.gale.com/goldschema/pres" xmlns:vault-link="http://www.gale.com/goldschema/vault-linking" xmlns:meta="http://www.gale.com/goldschema/metadata" xmlns:addr="http://www.gale.com/goldschema/address" targetNamespace="http://www.gale.com/goldschema/dictionary" elementFormDefault="qualified" attributeFormDefault="unqualified" version="3.0">
+	<xs:annotation id="dictionary-module-schema-purpose">
+		<xs:documentation>This schema provides support to the dictionary-document schema by creating certain lower-level elements and datatypes for use in that schema.</xs:documentation>
+	</xs:annotation>
+	<!--
+	======================================================================
+                           CHANGE HISTORY
+	======================================================================
+	3.0		12/04/2013		js
+	1.	Removed the schema owner part.
+	2.	Updated the folder path of <xs:import>.
+	3.	Removed the complex type model 'presentation-type'.
+	4.	Replaced 'presentation-type' with common-mixed-type-model.
+	5.	Removed the unused element 'work'.
+	6.	Externalized the element 'alternate-term'.
+	7.	Removed the elements alternate-title, alternate-pronunciation, see, myth, character, miscellaneous, biography, given-name, name-in-full, 
+		surname, middle-name, name-prefix, name-suffix, sobriquet, AD-BC, circa and term-date as they are unused.
+	8.	Removed the data models 'Fielded-birth-death-information-type', 'see-type' and 'see-also-type'.
+	======================================================================
+-->
+	<xs:include schemaLocation="gale_datatypes.xsd"/>
+	<xs:import namespace="http://www.gale.com/goldschema/metadata" schemaLocation="metadata.xsd"/>
+	<xs:import namespace="http://www.gale.com/goldschema/essay" schemaLocation="essay.xsd"/>
+	<xs:import namespace="http://www.gale.com/goldschema/list" schemaLocation="list.xsd"/>
+	<xs:import namespace="http://www.gale.com/goldschema/pres" schemaLocation="presentation.xsd"/>
+	<xs:import namespace="http://www.gale.com/goldschema/vault-linking" schemaLocation="vault_linking.xsd"/>
+	<xs:import namespace="http://www.gale.com/goldschema/address" schemaLocation="address.xsd"/>
+	<xs:complexType name="biography-type">
+		<xs:sequence>
+			<xs:element ref="dict:title-pronunciation"/>
+			<xs:element ref="dict:person-name"/>
+			<xs:element ref="dict:alternate-terms" minOccurs="0"/>
+			<xs:element ref="essay:p" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<!-- 
+	============================================================================   
+                    COMPLEX TYPE DECLARATIONS
+	============================================================================   
+	-->
+	<xs:complexType name="introduction-type">
+		<xs:sequence>
+			<xs:element ref="dict:title-pronunciation"/>
+			<xs:element ref="dict:alternate-terms" minOccurs="0"/>
+			<xs:element ref="dict:etymology" minOccurs="0"/>
+			<xs:element ref="essay:p" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="date-type">
+		<xs:all>
+			<xs:element ref="meta:month" minOccurs="0"/>
+			<xs:element ref="meta:day" minOccurs="0"/>
+			<xs:element ref="meta:irregular" minOccurs="0"/>
+			<xs:element ref="meta:year" minOccurs="0"/>
+			<xs:element ref="meta:century" minOccurs="0"/>
+		</xs:all>
+	</xs:complexType>
+	<xs:complexType name="place-type">
+		<xs:choice>
+			<xs:sequence>
+				<xs:element ref="addr:city" minOccurs="0"/>
+				<xs:element ref="addr:state" minOccurs="0"/>
+				<xs:element ref="addr:country" minOccurs="0"/>
+			</xs:sequence>
+			<xs:element ref="dict:composed"/>
+		</xs:choice>
+	</xs:complexType>
+	<xs:complexType name="title-presentation-type">
+		<xs:sequence>
+			<xs:element ref="dict:title"/>
+			<xs:element ref="dict:pronunciation" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="alternate-term-type">
+		<xs:all>
+			<xs:element ref="dict:term" minOccurs="0"/>
+			<xs:element ref="vault-link:vault-link" minOccurs="0"/>
+			<xs:element ref="dict:etymology" minOccurs="0"/>
+			<xs:element ref="dict:pronunciation" minOccurs="0"/>
+			<xs:element ref="dict:composed" minOccurs="0"/>
+		</xs:all>
+		<xs:attribute name="type" type="xs:normalizedString" use="optional">
+			<xs:annotation>
+				<xs:documentation>Indicates type of alternate term, such as British variants</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+	</xs:complexType>
+	<xs:complexType name="alternate-terms-type">
+		<xs:sequence>
+			<xs:element ref="dict:alternate-term" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="birth-information-type">
+		<xs:choice>
+			<xs:sequence>
+				<xs:element ref="dict:birth-date"/>
+				<xs:element ref="dict:birth-place" minOccurs="0"/>
+			</xs:sequence>
+			<xs:element ref="dict:composed"/>
+		</xs:choice>
+	</xs:complexType>
+	<xs:complexType name="death-information-type">
+		<xs:choice>
+			<xs:sequence>
+				<xs:element ref="dict:death-date"/>
+				<xs:element ref="dict:death-place" minOccurs="0"/>
+			</xs:sequence>
+			<xs:element ref="dict:composed"/>
+		</xs:choice>
+	</xs:complexType>
+	<xs:complexType name="term-definition-type">
+		<xs:sequence minOccurs="0">
+			<xs:element ref="dict:usage-label" minOccurs="0"/>
+			<xs:element ref="meta:structured-date" minOccurs="0"/>
+			<xs:element ref="essay:p" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="etymology-type" mixed="true">
+		<xs:sequence minOccurs="0">
+			<xs:element ref="essay:p"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="synonym-type">
+		<xs:sequence minOccurs="0">
+			<xs:element ref="essay:p"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="dictionary-structured-date-type">
+		<xs:all>
+			<xs:element ref="meta:month" minOccurs="0"/>
+			<xs:element ref="meta:day" minOccurs="0"/>
+			<xs:element ref="meta:irregular" minOccurs="0"/>
+			<xs:element ref="meta:year" minOccurs="0"/>
+		</xs:all>
+	</xs:complexType>
+	<xs:complexType name="primary-term-type">
+		<xs:all>
+			<xs:element ref="dict:term"/>
+			<xs:element ref="dict:pronunciation" minOccurs="0"/>
+			<xs:element ref="dict:functional-label" minOccurs="0"/>
+			<xs:element ref="dict:inflection-forms" minOccurs="0"/>
+			<xs:element ref="dict:etymology" minOccurs="0"/>
+			<xs:element ref="dict:term-definition" minOccurs="0"/>
+			<xs:element ref="dict:synonyms" minOccurs="0"/>
+			<xs:element ref="dict:birth-information" minOccurs="0"/>
+			<xs:element ref="dict:death-information" minOccurs="0"/>
+		</xs:all>
+	</xs:complexType>
+	<!-- 
+	============================================================================   
+                    ELEMENT DECLARATIONS
+	============================================================================   
+	-->
+	<!--                    ALTERNATE-TERM                                    -->
+	<xs:element name="alternate-term" type="dict:alternate-term-type">
+		<xs:annotation>
+			<xs:documentation>Captures alternate term.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--                    BIRTH-PLACE                                    -->
+	<xs:element name="birth-place" type="dict:place-type">
+		<xs:annotation>
+			<xs:documentation>Information about a birth location of the person.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--                    BIRTH-DATE                                    -->
+	<xs:element name="birth-date" type="dict:date-type">
+		<xs:annotation>
+			<xs:documentation>Person's birth date</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--                    DEATH-PLACE                                    -->
+	<xs:element name="death-place" type="dict:place-type">
+		<xs:annotation>
+			<xs:documentation>Information about a death location of the person.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--                    DEATH-DATE                                    -->
+	<xs:element name="death-date" type="dict:date-type">
+		<xs:annotation>
+			<xs:documentation>Person's death date</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="structured-date" type="dict:dictionary-structured-date-type">
+		<xs:annotation>
+			<xs:documentation>Wrapper for date components such as day, month or year, or a preformatted date.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--                    PERSON-NAME                                    -->
+	<xs:element name="person-name" type="meta:name-type">
+		<xs:annotation>
+			<xs:documentation>Container element to hold all the name information for an individual such as an author, editor, contributor, etc.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--                    TITLE-PRONUNCIATION                                    -->
+	<xs:element name="title-pronunciation" type="dict:title-presentation-type">
+		<xs:annotation>
+			<xs:documentation>Phoenetical representation of how a word should be pronounced.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--                    TITLE                                    -->
+	<xs:element name="title" type="xs:normalizedString">
+		<xs:annotation>
+			<xs:documentation>The title of a document such as book or the principle title of a chapter, part or section.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="term" type="dict:common-mixed-type-model">
+		<xs:annotation>
+			<xs:documentation>A word or phrase defined within the entry in the dictionary.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--                    COMPOSED                                    -->
+	<xs:element name="composed" type="dict:common-mixed-type-model">
+		<xs:annotation>
+			<xs:documentation>For non-fielded versions of various elements and related information</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--                    FUNCTIONAL-LABEL                                    -->	
+	<xs:element name="functional-label" type="xs:normalizedString">
+		<xs:annotation>
+			<xs:documentation>Captures part of speech</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--                    PRONUNCIATION                                    -->	
+	<xs:element name="pronunciation" type="dict:common-mixed-type-model">
+		<xs:annotation>
+			<xs:documentation>Captures pronunciation of term.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--                    ETYMOLOGY                                    -->	
+	<xs:element name="etymology" type="dict:etymology-type">
+		<xs:annotation>
+			<xs:documentation>Captures the etymology of the term, elementary content calls this "Word History".</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="primary-term" type="dict:primary-term-type">
+		<xs:annotation>
+			<xs:documentation>Primary version of the term.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--                    ALTERNATE-TERMS                                    -->
+	<xs:element name="alternate-terms" type="dict:alternate-terms-type">
+		<xs:annotation>
+			<xs:documentation>Captures alternate term and its pronunciation, if there is one.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--                    BIRTH-INFORMATION                                    -->
+	<xs:element name="birth-information" type="dict:birth-information-type">
+		<xs:annotation>
+			<xs:documentation>Wrapper for of the person’s birth information, including the date and/or location.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--                    DEATH-INFORMATION                                    -->
+	<xs:element name="death-information" type="dict:death-information-type">
+		<xs:annotation>
+			<xs:documentation>Wrapper for of the person’s death information, including the date and/or location.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--                    MONTH                                    -->
+	<xs:element name="month" type="xs:normalizedString">
+		<xs:annotation>
+			<xs:documentation>Calendar month as used in calendar date element.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--                    DAY                                    -->
+	<xs:element name="day" type="xs:normalizedString">
+		<xs:annotation>
+			<xs:documentation>Calendar day as used in calendar date element.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--                    YEAR                                    -->
+	<xs:element name="year" type="xs:normalizedString">
+		<xs:annotation>
+			<xs:documentation>Calendar year as used for example in calendar date element.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--                    CENTURY                                    -->
+	<xs:element name="century" type="xs:normalizedString">
+		<xs:annotation>
+			<xs:documentation>Container for century info as used in calendar date element.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--                    CITY                                    -->
+	<xs:element name="city" type="xs:normalizedString">
+		<xs:annotation>
+			<xs:documentation>City name used in address.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--                    STATE                                    -->
+	<xs:element name="state" type="xs:normalizedString">
+		<xs:annotation>
+			<xs:documentation>State name used in address.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--                    COUNTRY                                    -->
+	<xs:element name="country" type="xs:normalizedString">
+		<xs:annotation>
+			<xs:documentation>Country name used in address.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--                    USAGE-LABEL                                    -->	
+	<xs:element name="usage-label" type="xs:normalizedString">
+		<xs:annotation>
+			<xs:documentation>Notes on how term is used, including special capitalization rules</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--                    INFLECTION-LABEL                                    -->	
+	<xs:element name="inflection-label" type="xs:normalizedString">
+		<xs:annotation>
+			<xs:documentation>Captures the inflection label, (eg. sing., pl. etc).  From "il" tag.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="inflection" type="dict:common-mixed-type-model">
+		<xs:annotation>
+			<xs:documentation>Modification of a term to express different grammatical categories such as tense or number.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--                    INFLECTION-FORM                                    -->	
+	<xs:element name="inflection-form" type="dict:inflection-type">
+		<xs:annotation>
+			<xs:documentation>Wrapper for inflection information.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:complexType name="inflection-type">
+		<xs:sequence>
+			<xs:sequence maxOccurs="unbounded">
+				<xs:element ref="dict:inflection-label" minOccurs="0"/>
+				<xs:element ref="dict:inflection"/>
+				<xs:element ref="dict:pronunciation" minOccurs="0"/>
+			</xs:sequence>
+		</xs:sequence>
+	</xs:complexType>
+	<!--                    INFLECTION-FORMS                                    -->	
+	<xs:element name="inflection-forms">
+		<xs:annotation>
+			<xs:documentation>Captures the terms various inflected forms.</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="dict:inflection-form" maxOccurs="unbounded"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<!--                    SYNONYMS                                    -->
+	<xs:element name="synonyms">
+		<xs:annotation>
+			<xs:documentation>Captures synonyms</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="dict:synonym" minOccurs="0" maxOccurs="unbounded"/>
+				<xs:element ref="dict:composed" minOccurs="0"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<!--                    SYNONYM                                    -->
+	<xs:element name="synonym" type="dict:synonym-type">
+		<xs:annotation>
+			<xs:documentation>A term with the same or similar meaning.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	
+	<!--                    TERM-DEFINITION                                    -->	
+	<xs:element name="term-definition" type="dict:term-definition-type">
+		<xs:annotation>
+			<xs:documentation>Wrapper element used to capture the term's part of speech (noun, verb, adverb) and its definition using essay:p.  </xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--                    COMPOSED-ENTRY                                    -->	
+	<xs:element name="composed-entry" type="dict:composed-entry-type">
+		<xs:annotation>
+			<xs:documentation>Block of pre-composed text containing term definition or any additional information about a term. </xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:complexType name="composed-entry-type">
+		<xs:group ref="essay:structural-group" maxOccurs="unbounded"/>
+	</xs:complexType>
+	<!--                    DICTIONARY-ENTRY                                    -->	
+	<xs:element name="dictionary-entry">
+		<xs:annotation>
+			<xs:documentation>Wrapper for the entry in the dictionary.</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="dict:primary-term"/>
+				<xs:element ref="dict:alternate-terms" minOccurs="0"/>
+				<xs:element ref="dict:composed-entry" minOccurs="0"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

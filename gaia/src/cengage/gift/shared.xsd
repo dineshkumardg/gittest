@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2007 rel. 3 (http://www.altova.com) by Gale Group (Gale Group) -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:mla="http://www.gale.com/goldschema/mla" xmlns:meta="http://www.gale.com/goldschema/metadata" xmlns:vault-link="http://www.gale.com/goldschema/vault-linking" xmlns:media="http://www.gale.com/goldschema/media" xmlns:shared="http://www.gale.com/goldschema/shared" targetNamespace="http://www.gale.com/goldschema/shared" elementFormDefault="qualified" attributeFormDefault="unqualified" version="3.0">
+	<xs:annotation id="shared-schema-purpose">
+		<xs:documentation>This module defines elements that can be used anywhere in the GIFT document structure.</xs:documentation>
+	</xs:annotation>
+	<!--
+	======================================================================
+                           CHANGE HISTORY
+	======================================================================
+	3.0		12/04/2013		js
+	1. Removed the schema owner part.
+	2. Updated the folder path of <xs:import>.
+	3. Reorganized the elements and element groups.
+	======================================================================
+-->
+	<xs:import namespace="http://www.gale.com/goldschema/vault-linking" schemaLocation="vault_linking.xsd"/>
+	<xs:import namespace="http://www.gale.com/goldschema/metadata" schemaLocation="metadata.xsd"/>
+	<xs:import namespace="http://www.gale.com/goldschema/mla" schemaLocation="mla-module.xsd"/>
+	<xs:import namespace="http://www.gale.com/goldschema/media" schemaLocation="media.xsd"/>
+	<!-- 
+	============================================================================   
+                    ELEMENT DECLARATIONS
+	============================================================================   
+	-->
+	<!--                    SPONSOR                    -->
+	<xs:element name="sponsor" type="shared:sponsor-type">
+		<xs:annotation>
+			<xs:documentation>Name of the sponsor.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:complexType name="sponsor-type" mixed="true">
+		<xs:choice minOccurs="0">
+			<xs:element ref="vault-link:vault-link"/>
+		</xs:choice>
+	</xs:complexType>
+	<!--                    SPONSORS                    -->
+	<xs:element name="sponsors">
+		<xs:annotation>
+			<xs:documentation>For Books and Authors content; captures names of sponsors and optionally links to web sites for sponsors.</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="shared:sponsor" maxOccurs="unbounded"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<!--                    ELECTRONIC COMMENT                    -->
+	<xs:element name="electronic-comment" type="shared:electronic-comment-base-type">
+		<xs:annotation>
+			<xs:documentation>Wrapper for metadata describing  electronic resources.</xs:documentation>
+		</xs:annotation>
+	</xs:element>	
+	<xs:complexType name="electronic-comment-base-type" mixed="true">
+		<xs:choice minOccurs="0" maxOccurs="unbounded">
+			<xs:element ref="meta:standard-date"/>
+			<xs:element ref="mla:sponsoring-organization"/>
+			<xs:element ref="vault-link:vault-link"/>
+		</xs:choice>
+	</xs:complexType>
+	<!--                    ELECTRONIC-INFORMATION                    -->
+	<xs:element name="electronic-information">
+		<xs:annotation>
+			<xs:documentation>Wrapper for metadata about a website like the date that a website was last updated.</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="shared:electronic-comment" minOccurs="0"/>
+				<xs:element ref="mla:jstor-link" minOccurs="0"/>
+				<xs:group ref="shared:mla-electronic-group" minOccurs="0"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<!--                    MEDIA                    -->
+	<xs:element name="media">
+		<xs:annotation>
+			<xs:documentation>Wrapper for 1-many media references</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element ref="media:image"/>
+				<xs:element ref="media:audio"/>
+				<xs:element ref="media:video"/>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+	<!-- 
+	============================================================================   
+                    ELEMENT GROUPS
+	============================================================================   
+	-->	
+	<xs:group name="mla-electronic-group">
+		<xs:sequence>
+			<xs:choice minOccurs="0" maxOccurs="unbounded">
+				<xs:element ref="mla:print-electronic-available"/>
+				<xs:element ref="mla:electronic-version-available"/>
+				<xs:element ref="mla:internet-address"/>
+				<xs:element ref="mla:frequency-of-E-publication"/>
+			</xs:choice>
+		</xs:sequence>
+	</xs:group>
+</xs:schema>

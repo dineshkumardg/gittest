@@ -1,0 +1,380 @@
+<gold:document-instance>
+  <gift-doc:document>
+    <gift-doc:metadata>
+      <gift-doc:node-metadata>
+        <meta:descriptive-indexing>
+          <meta:indexing-term>
+            <meta:term>
+              <meta:term-type>PUB_SEG_TYPE</meta:term-type>
+              <meta:term-source>Atlas</meta:term-source>
+              <meta:term-id>14242630</meta:term-id>
+              <meta:term-value>Article</meta:term-value>
+            </meta:term>
+          </meta:indexing-term>
+        </meta:descriptive-indexing>
+        <gift-doc:pagination-group>
+          <gift-doc:pagination>
+            <meta:total-pages>6</meta:total-pages>
+          </gift-doc:pagination>
+        </gift-doc:pagination-group>
+      </gift-doc:node-metadata>
+      <gift-doc:document-metadata>
+        <meta:document-ids>
+          <meta:id type="Gale asset">
+            <meta:value>KGJLMG160018276</meta:value>
+          </meta:id>
+        </meta:document-ids>
+        <meta:bibliographic-ids>
+          <meta:id type="PSM">
+            <meta:value>cho_meet_1922_0010_000_0000</meta:value>
+          </meta:id>
+        </meta:bibliographic-ids>
+        <meta:mcode>5XFF</meta:mcode>
+        <meta:publication-date>
+          <meta:structured-date>
+            <meta:year>1922</meta:year>
+            <meta:month>02</meta:month>
+            <meta:day>21</meta:day>
+            <meta:day-of-week>Monday</meta:day-of-week>
+          </meta:structured-date>
+          <meta:standard-date type="Start date">19220221</meta:standard-date>
+          <meta:standard-date type="End date">19220221</meta:standard-date>
+        </meta:publication-date>
+        <meta:record-admin-info>
+          <meta:standard-date type="Original">20121202</meta:standard-date>
+        </meta:record-admin-info>
+        <gift-doc:document-titles>
+          <meta:title-display>The Washington Conference.</meta:title-display>
+          <meta:title-sort>Washington Conference</meta:title-sort>
+          <meta:title-open-url>Washington Conference</meta:title-open-url>
+          <meta:subtitle>Refugees</meta:subtitle>
+        </gift-doc:document-titles>
+        <meta:publication-title>Chatham House Meetings and Speeches</meta:publication-title>
+        <meta:languages>
+          <meta:language term-id="13858590" ocr="English" ocr-term-id="13858590" primary="Y">English</meta:language>
+        </meta:languages>
+        <meta:ocr-confidence>25.84</meta:ocr-confidence>
+        <meta:authors>
+          <meta:author>
+            <meta:sobriquet>
+              <meta:name>Admiral Chatfield</meta:name>
+            </meta:sobriquet>
+            <meta:composed-name>Admiral Chatfield</meta:composed-name>
+          </meta:author>
+          <meta:author>
+            <meta:structured-name>
+              <meta:prefix>Miss</meta:prefix>
+              <meta:first-name>Sarah</meta:first-name>
+              <meta:middle-name>Jane</meta:middle-name>
+              <meta:last-name>Neate</meta:last-name>
+              <meta:suffix>PHD</meta:suffix>
+            </meta:structured-name>
+            <meta:composed-name>Miss Sarah Jane Neate PHD</meta:composed-name>
+          </meta:author>
+        </meta:authors>
+        <meta:descriptive-indexing>
+          <meta:indexing-term>
+            <meta:term>
+              <meta:term-type>DOC_INFO_TYPE</meta:term-type>
+              <meta:term-source>Atlas</meta:term-source>
+              <meta:term-id>17525832</meta:term-id>
+              <meta:term-value>Meeting transcript</meta:term-value>
+            </meta:term>
+          </meta:indexing-term>
+          <meta:indexing-term>
+            <meta:term>
+              <meta:term-type>CONT_REC_TYPE</meta:term-type>
+              <meta:term-source>Atlas</meta:term-source>
+              <meta:term-id>17234672</meta:term-id>
+              <meta:term-value>Text</meta:term-value>
+            </meta:term>
+          </meta:indexing-term>
+          <meta:indexing-term>
+            <meta:term>
+              <meta:term-type>CONT_TYPE</meta:term-type>
+              <meta:term-source>Atlas</meta:term-source>
+              <meta:term-id>21901545</meta:term-id>
+              <meta:term-value>DVI-Monograph</meta:term-value>
+            </meta:term>
+          </meta:indexing-term>
+          <meta:indexing-term>
+            <meta:term>
+              <meta:term-type>FUNC_TYPE</meta:term-type>
+              <meta:term-source>Atlas</meta:term-source>
+              <meta:term-id>14214546</meta:term-id>
+              <meta:term-value>Megametadocument</meta:term-value>
+            </meta:term>
+          </meta:indexing-term>
+          <meta:indexing-term>
+            <meta:term>
+              <meta:term-type>ART_LANG</meta:term-type>
+              <meta:term-source>Atlas</meta:term-source>
+              <meta:term-id>13858590</meta:term-id>
+              <meta:term-value>English</meta:term-value>
+            </meta:term>
+          </meta:indexing-term>
+        </meta:descriptive-indexing>
+        <meta:source-institution>
+          <meta:institution-name>Chatham House</meta:institution-name>
+          <meta:institution-location>London</meta:institution-location>
+          <meta:copyright-statement>COPYRIGHT Royal Institute of International Affairs</meta:copyright-statement>
+        </meta:source-institution>
+        <meta:holding-institution>
+          <meta:institution-name>Chatham House</meta:institution-name>
+          <meta:institution-location>London</meta:institution-location>
+        </meta:holding-institution>
+        <meta:source-citation-group>
+          <meta:source-citation type="speech">
+            <meta:publication-date>
+              <meta:structured-date>
+                <meta:year>1922</meta:year>
+                <meta:month>02</meta:month>
+                <meta:day>21</meta:day>
+                <meta:day-of-week>Monday</meta:day-of-week>
+              </meta:structured-date>
+              <meta:standard-date type="Start date">19220221</meta:standard-date>
+              <meta:standard-date type="End date">19220221</meta:standard-date>
+            </meta:publication-date>
+            <meta:reference-number>
+              <meta:reference-number-display>RIIA/8/10</meta:reference-number-display>
+            </meta:reference-number>
+            <meta:geo-location>Chatham House, London</meta:geo-location>
+            <meta:organization>Chatham House</meta:organization>
+            <meta:content-date>
+              <meta:structured-date>
+                <meta:year>1922</meta:year>
+                <meta:month>02</meta:month>
+                <meta:day>21</meta:day>
+              </meta:structured-date>
+              <meta:standard-date type="Start date">19220221</meta:standard-date>
+              <meta:standard-date type="End date">19220221</meta:standard-date>
+            </meta:content-date>
+          </meta:source-citation>
+        </meta:source-citation-group>
+        <shared:media>
+          <media:audio filesize="2" data-type="mp3" audio-type="inline">
+            <meta:descriptive-indexing>
+              <meta:indexing-term>
+                <meta:term>
+                  <meta:term-type>DOC_INFO_TYPE</meta:term-type>
+                  <meta:term-source>Atlas</meta:term-source>
+                  <meta:term-id>198465964</meta:term-id>
+                  <meta:term-value>Audio file</meta:term-value>
+                </meta:term>
+              </meta:indexing-term>
+            </meta:descriptive-indexing>
+            <vault-link:vault-link>
+              <vault-link:link-type>external</vault-link:link-type>
+              <vault-link:data-type>mp3</vault-link:data-type>
+              <vault-link:action>point</vault-link:action>
+              <vault-link:where>
+                <vault-link:path>cho_meet_1922_0010_000_0000</vault-link:path>
+              </vault-link:where>
+            </vault-link:vault-link>
+            <media:title>The Washington Conference.</media:title>
+          </media:audio>
+        </shared:media>
+        <meta:product-content-type type="CHO">Meetings and Speeches</meta:product-content-type>
+        <meta:content-filter type="CHO rule">No</meta:content-filter>
+      </gift-doc:document-metadata>
+    </gift-doc:metadata>
+    <gift-doc:body>
+      <essay:div document-segment-type="Body text" term-id="14214508" term-source="Atlas">
+        <essay:div document-segment-type="Page" term-id="21922233" term-source="Atlas">
+          <essay:complex-meta>
+            <meta:page-id-number>0001</meta:page-id-number>
+          </essay:complex-meta>
+          <shared:media>
+            <media:image data-type="jpeg" width="2550" height="4200" image-type="page view" layout="single" color-mode="color" sequence="0001">
+              <vault-link:vault-link>
+                <vault-link:link-type>external</vault-link:link-type>
+                <vault-link:action>point</vault-link:action>
+                <vault-link:where>
+                  <vault-link:path>cho_meet_1922_0010_000_0001</vault-link:path>
+                </vault-link:where>
+              </vault-link:vault-link>
+            </media:image>
+          </shared:media>
+          <vault-link:vault-link>
+            <vault-link:link-type>external</vault-link:link-type>
+            <vault-link:link-category term-id="21902636" term-source="Atlas">DVI page</vault-link:link-category>
+            <vault-link:action>point</vault-link:action>
+            <vault-link:where>
+              <vault-link:path>//gift-doc:document-metadata/meta:document-ids/meta:id[@type="Gale asset"]/meta:value[.="WMBZXS607144637"]</vault-link:path>
+            </vault-link:where>
+            <vault-link:select>
+              <vault-link:document-nodes>
+                <vault-link:target>ancestor::gift-doc:document</vault-link:target>
+              </vault-link:document-nodes>
+            </vault-link:select>
+          </vault-link:vault-link>
+        </essay:div>
+        <essay:div document-segment-type="Page" term-id="21922233" term-source="Atlas">
+          <essay:complex-meta>
+            <meta:page-id-number>0002</meta:page-id-number>
+            <meta:folio>
+              <meta:start-number>[1]</meta:start-number>
+            </meta:folio>
+          </essay:complex-meta>
+          <essay:p>Q t V &quot;lASHINGTQH . COEFEREK.GE&quot; i Meeting held on February 21, 1922 at Rogyl Society of Arts Sir John Jordan in the Chair After a few introductory remarks ;iir John&apos;Jordan called upon Admiral Chatfield to speak. A dmiral Chatf ie Id... Referring to the Chairman&apos;s remarks, he said that if&apos;an agreement had not heen reached in the Pacific, * ith which Sir John Jordan had so much to do, no naval agreement could have been reached. As soon as the agreement was reached concerning the Pacific the delegates were willing to consider the reduction of naval armaments* * The personal contact between the various delegates and advisers contributed largely towards the successful achievements of the a Conference. Especially was this true as regards the naval delegate Sailors the world chver have perhaps the faculty of seeing the other &#9632; point of view wore than a land man, living as they do upon an inter&#172; national element and visiting so many foreign ports. The friend - ship between British and American naval men, which was cemented in the North Sea^, was intensified. With regard to the actual proposals for naval reducti on, every&#172; one present undoubtedly knew what had been agreed upon. The Highest possible credit was due to the Americans for the way in which they had mad&apos;.; their plans. Every nation&apos;s present sea-power had been taken as the basis of the ratios subsequently arrived at. This was open to criticism as some nations might say that their present strength was lower than their plans wished to make It in future, e.g. France, Italy. This; difficulty was overcome when the spirit in which it was advanced was realised. Each nation&apos;s tonnage had been worked out by experts to the minutest detail and was ready for inspection when the delegates arrived in Washington* According to the agreement, the next Conference is to be held in fifteen years, fer.t in the meantime any nation can call a confer&#172; ence at any time if it fears aggression. Further, in eight years&apos; time delegates will meet again to consider any advance in scientific methods that may have occurred. It might be we&amp;l to explain why the delegates decided that it was necessary to have a capital ship tonnage minimum of 35,ooo tons. Many questionshad been asked about this. The British Delegates had come to the conclusion before the Conference that, If this question was raised, the minimum tonnage they could agree to would be 35,000 tons. This was the minimum sixe that.could render battle-- ships defensible against torpedoes ( the development of which was unrestricted by the agreement). The submarine v/as the only question upon which there wad disagree ement, The attitude of the British delegates on this point had been for the total abolition of submarines. This Was a national move&#172; ment - not a naval one. The navy is not afraid - it knows it can cope with submarines. It has done so in the past anci can do so in the future. It was the feeling of the people at home that influeneet the attitude of the British Delegates at -.&apos;ashington. The question lias been asked, why was not the whole naval programme laid down for the Conference carried out?&apos; The answer was that the whole object of those present was to get willing and unanimous agreement on any decision. They knew that if agreement were forced&quot; and unwilling, people would go axvay making mental reservations with the result that their governments won Id not ratify the agreement* As far as the naval .agreement went, it was willing and unanimous. Armaments do not cause war. There were ten wars Involving thirty-three different nations befo1 e 1914, not one of which was caused by armaments, the Boer War, Russo-Fapanese war, etc. Wars are caused by national feeling. When gigantic armaments are built</essay:p>
+          <shared:media>
+            <media:image data-type="jpeg" width="2550" height="4200" image-type="page view" layout="single" color-mode="color" folio="[1]" sequence="0002">
+              <vault-link:vault-link>
+                <vault-link:link-type>external</vault-link:link-type>
+                <vault-link:action>point</vault-link:action>
+                <vault-link:where>
+                  <vault-link:path>cho_meet_1922_0010_000_0002</vault-link:path>
+                </vault-link:where>
+              </vault-link:vault-link>
+            </media:image>
+          </shared:media>
+          <vault-link:vault-link>
+            <vault-link:link-type>external</vault-link:link-type>
+            <vault-link:link-category term-id="21902636" term-source="Atlas">DVI page</vault-link:link-category>
+            <vault-link:action>point</vault-link:action>
+            <vault-link:where>
+              <vault-link:path>//gift-doc:document-metadata/meta:document-ids/meta:id[@type="Gale asset"]/meta:value[.="XWNQME045420165"]</vault-link:path>
+            </vault-link:where>
+            <vault-link:select>
+              <vault-link:document-nodes>
+                <vault-link:target>ancestor::gift-doc:document</vault-link:target>
+              </vault-link:document-nodes>
+            </vault-link:select>
+          </vault-link:vault-link>
+        </essay:div>
+        <essay:div document-segment-type="Page" term-id="21922233" term-source="Atlas">
+          <essay:complex-meta>
+            <meta:page-id-number>0003</meta:page-id-number>
+            <meta:folio>
+              <meta:start-number>2</meta:start-number>
+            </meta:folio>
+          </essay:complex-meta>
+          <essay:p>then danger arises - as In Germany.&apos; But it is the spirit that built those armaments that is responsible. The- Washington Conference did away with the causes of war in the Pacific. The minute that was done everyone wanted to do away with. arms. Everyone went to the Conference in a spirit of cooperation and everyone left feeling that they had had a square deal. To make the next Conference a success, it will be necessary to pass on this spirit of cooperation between nations. J.A. Spender. The view of a journalist at such a Conference is naturally an impressionistic one. He does not have the detailed knowledge of its workings as does the adviser or delegate. He would like first, however, to endorse the conduct of the naval gentlemen at Washington as mentioned by Admiral Chatfield. The results of the naval conference were great results. They saved us from competition with America. The Four Power Pact.gave Great Britain a great opportunity of an honourable withdrawal from the Anglo-Japanese Alliance without offense to our Japanese Allies. It substituted the Anglo- Japanese Alliance and is as satisfactory to the Eastern World as to Great Britain and America. The only regrettable aspect of the Conference was that concerning the attitude between ourselves _.nd the French, The reasons for this was, first, that Mr. Hughes had kept his plan kaxkxmxsxf for naval reduction to himself and &amp;ov a perfectly good reason. As has been stated, the ratios of naval strength proposed were based on the existing, strength of the nations involved, and that this formula of existing strength is always open to suspicion. M. Briand, the highest Frenchman there, had come full of enthusiasm. The plan lodged did not mention France. France was treated as a second-class power* Allowances must be made for the feelings of the French. MasnxatxxasfexkaxhxsxHK HEjaExfcH^feyx&amp;Hxxp&amp;akx M. Briand&apos;s speech, when at last he had an opportunity to make one, was a great misfortune - a cold- douche, while it threw the British and Americans together, it inevitably aet up anti-European comment in the Press. Its effect was somehow to limit the objective of the conference. Until then it had been thought to^taken in land as well a*s naval armament reduction. America had thought that it might have worked its way back into world affairs through the Conference. After M. Briand&apos;s speech and the Submarine Question the administration was checked in its move forward to taking part in European politics. The British owe a great debt of gratitude to Mr. Balfour, whose courage in making decisions without too often referring to&apos; the home government won the admiration of all. The need of referring back to the home governments was a great deterrent_to the progress of the Conference. For instance, if the Japanese delegates had to refer home, it took five days to receive an answer, SKKxhax- and during that time xhsxpEEgKSSxxsiilxJEhs all progress was held up0 xasx&#177;3s.sxK&#177;&#177;x America&apos;s Interest in European affairs will go forward if ia.e is not pressed too much. New York Business men had told him that they.did not want the British debt paid in gold, or goods, or anything. All they want is to see the pound sterling regain its stability. They cannot say this in public because the people In the West and Kiddle West still think of the European Loans just as the French peasant thinks of German reparations. Thinking Americans regret that they cannot stand vv&apos;ith the British and together talk to France.</essay:p>
+          <shared:media>
+            <media:image data-type="jpeg" width="2550" height="4200" image-type="page view" layout="single" color-mode="color" folio="2" sequence="0003">
+              <vault-link:vault-link>
+                <vault-link:link-type>external</vault-link:link-type>
+                <vault-link:action>point</vault-link:action>
+                <vault-link:where>
+                  <vault-link:path>cho_meet_1922_0010_000_0003</vault-link:path>
+                </vault-link:where>
+              </vault-link:vault-link>
+            </media:image>
+          </shared:media>
+          <vault-link:vault-link>
+            <vault-link:link-type>external</vault-link:link-type>
+            <vault-link:link-category term-id="21902636" term-source="Atlas">DVI page</vault-link:link-category>
+            <vault-link:action>point</vault-link:action>
+            <vault-link:where>
+              <vault-link:path>//gift-doc:document-metadata/meta:document-ids/meta:id[@type="Gale asset"]/meta:value[.="IRPBSB813816982"]</vault-link:path>
+            </vault-link:where>
+            <vault-link:select>
+              <vault-link:document-nodes>
+                <vault-link:target>ancestor::gift-doc:document</vault-link:target>
+              </vault-link:document-nodes>
+            </vault-link:select>
+          </vault-link:vault-link>
+        </essay:div>
+        <essay:div document-segment-type="Page" term-id="21922233" term-source="Atlas">
+          <essay:complex-meta>
+            <meta:page-id-number>0004</meta:page-id-number>
+            <meta:folio>
+              <meta:start-number>3</meta:start-number>
+            </meta:folio>
+          </essay:complex-meta>
+          <essay:p>171 Is on Harris. The problem of how to conduct International conferences was not solved by America. Journalists had thought that at Washington,at &#171;uiy rate&gt; the discussions would be carried on publicly. This was not the case. The first and second conferences were in public and there were four subsequent public conferences, but the rest of the work wai done in private committees* The journalist&apos;had to be satisfied with the selected information given hi&quot;.. The following was a typical journalists&apos; day in &quot;Washington: 10.30, Interview with Lord Riddell at which time%# waaegiven auch information as Lord Riddell saw fit; I.00, The President received all the journalists at the White House and talked and answered questions for thirty minutes; 3.00, Second interview with Lord Riddell; 3.30, Went to the Secret a -y of Stat a j 4.30, Went to the Italian and Dutch Delegations, who might have something official to say; or the Japanese would tell the actual facts of the discussion at the Pacific Conference, and the Chinese would teil what SE&amp;feaaSAg: really happened; at 6,0u. there was a reception by members of the British Empire Delegation, which was vary crowded and very hot. Two phrases show the reasons cf the successes effected at the Washington Conference. At the opening of the Conference Harding said &quot;le are glad to sit with you at the table of under&#172; standing and good will&quot;, and the last meeting of the conference exhausted, that spirit. Logically the Americans will have to come back to their 1919 position in world affairs. The second phrase was that of Secretary Hughes, who said, &quot;What we had really prayed for was that the delegates mi gilt come to Washington in a spirit of achievement&quot;. The American delegates at least had resolved that tba Conferaa ce should not end without something having been done. A great dral of the success was due to personalities, ana of these personalities, Kr. Balfour was the principal. Mr. Balfour&apos;s greatness was conspicuously manifested by the way in which he took the second place at the Conference. It was preeminently Secretary Hughes&apos; Conference. Mr. Balfour realised that If this was not so, the Senate might not ratify the agreements reached, .:ui American had said to him that all that was felt about Mr. Balfour over here was felt in rtmerlca. The spirit that contributed to the success of the Conference was duo in no sviall way to the spirit shown by the American Press - with, the exception of the Heafest papers. For instance, at the time of the bubmarine Question, all the New York papers, with the exception of two, supportLithe British view against the American. &quot;* Mr. 3ajpai. What was the part played by the British Empire Delegation at tho Conference? The presence of the delegates from various parts of the British Empire was an experiment in. British. Constitutional History. At Versailles the signification of the British Empire Delegation was different. Th&#169; Empire had been together in war and were then together in peace. As far as Irdia was concerned, neither the navy or Japan was of much importance. In fact, India&apos;s only contribution to the lavy was 5100,000 a year. The Indian delegates went to Washington, however, to sho?/ the spirit that animates every part of the British Empire, British Empire The/Delegates met as often as possible in order to present a united, front. &#171;.ny document signed at the Conference shows this unity. At first the Four Power Pact contained references to the possibility of revolt in India. Jt&#177;xths Upon the representations of the Indian Delegates, this was later omitted.</essay:p>
+          <shared:media>
+            <media:image data-type="jpeg" width="2550" height="4200" image-type="page view" layout="single" color-mode="color" folio="3" sequence="0004">
+              <vault-link:vault-link>
+                <vault-link:link-type>external</vault-link:link-type>
+                <vault-link:action>point</vault-link:action>
+                <vault-link:where>
+                  <vault-link:path>cho_meet_1922_0010_000_0004</vault-link:path>
+                </vault-link:where>
+              </vault-link:vault-link>
+            </media:image>
+          </shared:media>
+          <vault-link:vault-link>
+            <vault-link:link-type>external</vault-link:link-type>
+            <vault-link:link-category term-id="21902636" term-source="Atlas">DVI page</vault-link:link-category>
+            <vault-link:action>point</vault-link:action>
+            <vault-link:where>
+              <vault-link:path>//gift-doc:document-metadata/meta:document-ids/meta:id[@type="Gale asset"]/meta:value[.="UWOAM813790762"]</vault-link:path>
+            </vault-link:where>
+            <vault-link:select>
+              <vault-link:document-nodes>
+                <vault-link:target>ancestor::gift-doc:document</vault-link:target>
+              </vault-link:document-nodes>
+            </vault-link:select>
+          </vault-link:vault-link>
+        </essay:div>
+        <essay:div document-segment-type="Page" term-id="21922233" term-source="Atlas">
+          <essay:complex-meta>
+            <meta:page-id-number>0005</meta:page-id-number>
+            <meta:folio>
+              <meta:start-number>4</meta:start-number>
+            </meta:folio>
+          </essay:complex-meta>
+          <essay:p>India had some interest in the xg3ESBn^iaJbKX3EB2^sa^xK&#177;i.fex^i&#177;&#187;a. revision of the Chinese tariff. The Chinese wanted a 12ir$ fesxxss duty on goods entering China* The British Empire Delegation thought a vm% duty sufficient* Indian goods enter China by way of Burma* and had enjoyed a prefential tariff* China now said that she mast abolish preferential tariff qn any land-borne trade* France objected to this htit an agreement uras reached due to Sir John Jordan* spirit of As a further proof of the/cooperation tithin the British Empire &apos;Delegation, when Sir Maurice Hankey was recalled for some business at home, instead of.another British delegate being made the Secretary of the Delegation, the Secretary for Canada became the Secretary for the B.E*D. gir Jphn Jordan * He would like to give a few of the reasons why Cliina siiouIcTWe considered* Ie first went to China in 1876 and spent some years there before there was any Bacific Question at all. Ho powers occupied the Pacific, except Spain, and Holland* Trouble feegan in the &apos;nineties* In X894 the Chino-Japanese War broke out in which Japan was victorious* Under the terms of the:. settlement, Japan was to receive a large portion of Manchuria* Three Powers, Kussia, Germany and B&apos;rance intervened and prevented Japan from occupying the territory, obliging her to accept an Indemnity instead. These three Powers then wanted payment for their good offices* At the coronation of the Tsar, which was attended by a Chinese official, the Tear arranged with the Chinese that the Siberian Railway should be run through .Manchuria. In 1898 two missionaries i^ere murdered in the province of Shantung* The German and Russian ianperors had correspondence regarding the crime* Germany seized this pretext for taking the finest harbour In China and Russia seised Port Arthur as leased territories, and other seizures followed. At the same time Gormany obtained concession/ for 296 miles of railway, running from S-ia-e^hpw* When the British obtained concessions for Chinese railways, they I always ran them as Chinese government Railways - other countries I ran them, as National Railways* :..T-- &apos; ;/-. All this time the Pacific movement was growing - The united States obtained first the Hawaiin Islands and then the Philippines* -_, &#9632; ,&#8222;... In 1914 Japan came to our assistance.\ She said the best thing to do was to attack Germany in Eia.acfe.ewl, We sent some ships and Japan took possession of the town and railway and remained in possession until the Treaty of Versailles* At that Treaty, all the German rights in Shantung were handed over to Japan. As a matter &lt;Jf fact, the- Chinese-Japanese Pact of 1915 practically handed over these rights to Japan, but China now says that the Pact was forced upon them* During the years 1914-1921 competition and agitation over this question produced in China a National consciousness* That was the position af the question at Washington, and it must be remembered that neither China nor America had 3ignod the Treaty of Versailles* If the Shantung Question were not settled, there was little hope of the Senate ratifying any agreement reached* The Question occupied thirty meetings of three hours each. The province had been in foreign possession for sixteen years* The crux of the whole thing was the railroad* In the end the Japanese agreed to</essay:p>
+          <shared:media>
+            <media:image data-type="jpeg" width="1701" height="2801" image-type="page view" layout="single" color-mode="color" folio="4" sequence="0005">
+              <vault-link:vault-link>
+                <vault-link:link-type>external</vault-link:link-type>
+                <vault-link:action>point</vault-link:action>
+                <vault-link:where>
+                  <vault-link:path>cho_meet_1922_0010_000_0005</vault-link:path>
+                </vault-link:where>
+              </vault-link:vault-link>
+            </media:image>
+          </shared:media>
+          <vault-link:vault-link>
+            <vault-link:link-type>external</vault-link:link-type>
+            <vault-link:link-category term-id="21902636" term-source="Atlas">DVI page</vault-link:link-category>
+            <vault-link:action>point</vault-link:action>
+            <vault-link:where>
+              <vault-link:path>//gift-doc:document-metadata/meta:document-ids/meta:id[@type="Gale asset"]/meta:value[.="DPLLEP668894481"]</vault-link:path>
+            </vault-link:where>
+            <vault-link:select>
+              <vault-link:document-nodes>
+                <vault-link:target>ancestor::gift-doc:document</vault-link:target>
+              </vault-link:document-nodes>
+            </vault-link:select>
+          </vault-link:vault-link>
+        </essay:div>
+        <essay:div document-segment-type="Page" term-id="21922233" term-source="Atlas">
+          <essay:complex-meta>
+            <meta:page-id-number>0006</meta:page-id-number>
+            <meta:folio>
+              <meta:start-number>5</meta:start-number>
+            </meta:folio>
+          </essay:complex-meta>
+          <essay:p>receive Chinese Treasury Bonds as future payment and in the meantime to allow a Chinese traffic manager on the railways. The Pour Power Pact does not exactly take the place of the Anglo-Japanese Alliance. The Nine Power Pact does this. It guarantees the integrity of China.</essay:p>
+          <shared:media>
+            <media:image data-type="jpeg" width="2550" height="4200" image-type="page view" layout="single" color-mode="color" folio="5" sequence="0006">
+              <vault-link:vault-link>
+                <vault-link:link-type>external</vault-link:link-type>
+                <vault-link:action>point</vault-link:action>
+                <vault-link:where>
+                  <vault-link:path>cho_meet_1922_0010_000_0006</vault-link:path>
+                </vault-link:where>
+              </vault-link:vault-link>
+            </media:image>
+          </shared:media>
+          <vault-link:vault-link>
+            <vault-link:link-type>external</vault-link:link-type>
+            <vault-link:link-category term-id="21902636" term-source="Atlas">DVI page</vault-link:link-category>
+            <vault-link:action>point</vault-link:action>
+            <vault-link:where>
+              <vault-link:path>//gift-doc:document-metadata/meta:document-ids/meta:id[@type="Gale asset"]/meta:value[.="UGLNWM063621636"]</vault-link:path>
+            </vault-link:where>
+            <vault-link:select>
+              <vault-link:document-nodes>
+                <vault-link:target>ancestor::gift-doc:document</vault-link:target>
+              </vault-link:document-nodes>
+            </vault-link:select>
+          </vault-link:vault-link>
+        </essay:div>
+      </essay:div>
+    </gift-doc:body>
+  </gift-doc:document>
+</gold:document-instance>
