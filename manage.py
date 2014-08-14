@@ -10,6 +10,7 @@ def usage():
     print 'eg:    manage.py TUSH_PC syncdb'
     print 'eg:    manage.py TUSH_PC sqlall qa'
     print 'eg:    manage.py TUSH_PC sqlall index # for gaia.dom.index App' 
+    print 'eg:    manage.py DG sqlall for using DG config'
 
 if len(sys.argv) == 1:
     usage()
